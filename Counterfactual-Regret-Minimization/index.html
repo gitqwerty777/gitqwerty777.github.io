@@ -30,7 +30,7 @@
 <meta property="og:description" content="參考作者在Quora上的解釋">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2015-06-15T18:49:49.000Z">
-<meta property="article:modified_time" content="2017-05-01T12:20:40.000Z">
+<meta property="article:modified_time" content="2021-03-13T18:36:52.122Z">
 <meta property="article:author" content="HCL">
 <meta property="article:tag" content="CFR">
 <meta property="article:tag" content="電腦對局理論">
@@ -136,7 +136,7 @@
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類<span class="badge">4</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類<span class="badge">5</span></a>
 
   </li>
         <li class="menu-item menu-item-about">
@@ -146,12 +146,12 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤<span class="badge">53</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤<span class="badge">90</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔<span class="badge">35</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔<span class="badge">48</span></a>
 
   </li>
         <li class="menu-item menu-item-reading">
@@ -238,13 +238,6 @@
 
               <time title="創建時間：2015-06-15 11:49:49" itemprop="dateCreated datePublished" datetime="2015-06-15T11:49:49-07:00">2015-06-15</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2017-05-01 05:20:40" itemprop="dateModified" datetime="2017-05-01T05:20:40-07:00">2017-05-01</time>
-              </span>
 
           
             <span id="/Counterfactual-Regret-Minimization/" class="post-meta-item leancloud_visitors" data-flag-title="CFR(Counterfactual Regret Minimization) algorithm 簡介" title="閱讀次數">
@@ -254,33 +247,12 @@
               <span class="post-meta-item-text">閱讀次數：</span>
               <span class="leancloud-visitors-count"></span>
             </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus：</span>
-    
-    <a title="disqus" href="/Counterfactual-Regret-Minimization/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="Counterfactual-Regret-Minimization/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
             <span class="post-meta-item" title="文章字數">
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">文章字數：</span>
               <span>1.9k</span>
-            </span>
-            <span class="post-meta-item" title="所需閱讀時間">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">所需閱讀時間 &asymp;</span>
-              <span>2 分鐘</span>
             </span>
 
         </div>
@@ -297,32 +269,34 @@
 <ul>
 <li>learns strategy by repeatedly playing against itself</li>
 <li>initialized with uniformly random<ul>
-<li>play every action at every decision point with equal probability</li>
-<li>simulates playing games against itself</li>
-<li>it gets closer and closer towards an optimal strategy: a strategy that can do no worse than tie against any opponent</li>
+<li>playing every action at every decision point with <strong>equal</strong> probability</li>
 </ul>
 </li>
+<li>play the action with maximum regret</li>
+<li>it will converge to optimal strategy that can do no worse than tie against any opponent</li>
 </ul>
 <h2 id="Implementation"><a href="#Implementation" class="headerlink" title="Implementation"></a>Implementation</h2><ul>
-<li>Summing total regret for each action at each decision point<ul>
-<li>regret: how much better if just always played this one action at this decision, instead of mixture actions?<ul>
+<li><p>Summing total regret for each action at each decision point</p>
+<ul>
+<li>regret: how much better if just <strong>always</strong> played this one action at this decision, instead of previous choices?<ul>
 <li>Positive regret means that we would have done better if we had taken that action more often</li>
 <li>Negative regret means that we would have done better by not taking that action at all</li>
+<li>愈多regret，代表此選項要多選</li>
 </ul>
 </li>
-<li>After each game, it update new regret values <ul>
-<li>actions with probabilities proportional to their positive regret</li>
+<li>do actions with probabilities proportional to their positive regret</li>
+<li>after each game, update regret values </li>
 </ul>
 </li>
-</ul>
-</li>
-<li>Counter-intuitively, sequence of strategies <strong>does not necessarily converge to anything useful</strong><ul>
+<li><p>Counter-intuitively, sequence of strategies <strong>does not necessarily converge to anything useful</strong></p>
+<ul>
+<li>But it now does so in practice</li>
 <li><strong>in a two-player zero-sum game</strong>, if you compute the average strategy over those billions of strategies in the sequence, then that average strategy will converge towards <strong>Nash equilibrium</strong> of the game</li>
 </ul>
 </li>
 </ul>
 <h2 id="Nash-equilibrium-納許均衡"><a href="#Nash-equilibrium-納許均衡" class="headerlink" title="Nash equilibrium(納許均衡)"></a>Nash equilibrium(納許均衡)</h2><ul>
-<li>It can do no worse than tie against any other strategy</li>
+<li>Do no worse than tie against any other strategy</li>
 <li>Plays perfect defence<ul>
 <li>Just wins when the opponent makes mistakes<ul>
 <li>since attempting to find and exploit an opponent’s mistakes usually makes it possible for an even smarter opponent to exploit your new strategy</li>
@@ -339,21 +313,21 @@
 </ul>
 <h2 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h2><ul>
 <li>best poker programs started beating the world’s best human players in heads-up limit hold’em in 2008, even though there were still massively exploitable by this worst-case measure</li>
-<li>In January 2015, we’ve essentially weakly solved the game<ul>
-<li>a strategy with such a low exploitability (0.000986 big blinds per game) that it would take more than a human lifetime of play<ul>
-<li>for anyone to have 95% statistical confidence that they were actually winning against it</li>
+<li>In January 2015, we’ve essentially <strong>weakly solved</strong> the game<ul>
+<li>a strategy with such a low exploitability (0.000986 big blinds per game)<ul>
+<li>have 95% statistical confidence that they were actually winning against everyone</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-<h2 id="Example-Code"><a href="#Example-Code" class="headerlink" title="Example Code"></a>Example Code</h2><h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
-<li><span class="exturl" data-url="aHR0cDovL3Bva2VyLmNzLnVhbGJlcnRhLmNhL3B1YmxpY2F0aW9ucy9OSVBTMDctY2ZyLnBkZg==">Regret Minimization in Games with Incomplete Information<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cDovL2FyeGl2Lm9yZy9wZGYvMTQwNy41MDQyLnBkZg==">Solving Large Imperfect Information Games Using CFR+<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cDovL3d3dy5xdW9yYS5jb20vV2hhdC1pcy1hbi1pbnR1aXRpdmUtZXhwbGFuYXRpb24tb2YtY291bnRlcmZhY3R1YWwtcmVncmV0LW1pbmltaXphdGlvbg==">Explanation of CFR by inventor himself<i class="fa fa-external-link-alt"></i></span></li>
+<h2 id="Algorithm-Implementation"><a href="#Algorithm-Implementation" class="headerlink" title="Algorithm Implementation"></a>Algorithm Implementation</h2><h2 id="Example-Code"><a href="#Example-Code" class="headerlink" title="Example Code"></a>Example Code</h2><h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
+<li><span class="exturl" data-url="aHR0cDovL3Bva2VyLmNzLnVhbGJlcnRhLmNhL3B1YmxpY2F0aW9ucy9OSVBTMDctY2ZyLnBkZg==">(CFR)Regret Minimization in Games with Incomplete Information<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cDovL2FyeGl2Lm9yZy9wZGYvMTQwNy41MDQyLnBkZg==">(CFR+)Solving Large Imperfect Information Games Using CFR+<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cDovL3d3dy5xdW9yYS5jb20vV2hhdC1pcy1hbi1pbnR1aXRpdmUtZXhwbGFuYXRpb24tb2YtY291bnRlcmZhY3R1YWwtcmVncmV0LW1pbmltaXphdGlvbg==">(CFR)Explanation of CFR by inventor himself<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cDovL3NwZWN0cnVtLmllZWUub3JnL3JvYm90aWNzL2FydGlmaWNpYWwtaW50ZWxsaWdlbmNlL3Bva2VycGxheWluZy1haXMtdG9kYXktc2t5bmV0LXRvbW9ycm93">poker AI news<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cDovL3NwZWN0cnVtLmllZWUub3JnL3RlY2gtdGFsay9jb21wdXRpbmcvc29mdHdhcmUvY29tcHV0ZXJzLWNvbnF1ZXItdGV4YXMtaG9sZGVtLXBva2VyLWZvci1maXJzdC10aW1l">poker AI news2<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cDovL3Bva2VyLmNzLnVhbGJlcnRhLmNhL29wZW5fY2ZyLmh0bWw=">openCFR<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cDovL3Bva2VyLmNzLnVhbGJlcnRhLmNhL29wZW5fY2ZyLmh0bWw=">(Implementation)openCFR<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 
     </div>
@@ -368,7 +342,7 @@
       <div class="popular-posts-title"><a href="/computer-gaming/" rel="bookmark">電腦對局理論</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/gcc-usage/" rel="bookmark">gcc參數介紹</a></div>
+      <div class="popular-posts-title"><a href="/cmake/" rel="bookmark">Makefile 和 CMake 之間的轉換和實作</a></div>
     </li>
   </ul>
 
@@ -381,11 +355,6 @@
           </div>
 
         
-  <div class="post-widgets">
-    <div class="wp_rating">
-      <div id="wpac-rating"></div>
-    </div>
-  </div>
 
 
         
@@ -463,7 +432,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Implementation"><span class="nav-number">2.</span> <span class="nav-text">Implementation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Nash-equilibrium-納許均衡"><span class="nav-number">3.</span> <span class="nav-text">Nash equilibrium(納許均衡)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Result"><span class="nav-number">4.</span> <span class="nav-text">Result</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Example-Code"><span class="nav-number">5.</span> <span class="nav-text">Example Code</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Summary"><span class="nav-number">6.</span> <span class="nav-text">Summary</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#參考資料"><span class="nav-number">7.</span> <span class="nav-text">參考資料</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Implementation"><span class="nav-number">2.</span> <span class="nav-text">Implementation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Nash-equilibrium-納許均衡"><span class="nav-number">3.</span> <span class="nav-text">Nash equilibrium(納許均衡)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Result"><span class="nav-number">4.</span> <span class="nav-text">Result</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Algorithm-Implementation"><span class="nav-number">5.</span> <span class="nav-text">Algorithm Implementation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Example-Code"><span class="nav-number">6.</span> <span class="nav-text">Example Code</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Summary"><span class="nav-number">7.</span> <span class="nav-text">Summary</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#參考資料"><span class="nav-number">8.</span> <span class="nav-text">參考資料</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -479,20 +448,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">35</span>
+          <span class="site-state-item-count">48</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">分類</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">53</span>
+        <span class="site-state-item-count">90</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -550,7 +519,7 @@
 <div class="copyright">
   
   &copy; 2014 – 
-  <span itemprop="copyrightYear">2020</span>
+  <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fab fa-free-code-camp"></i>
   </span>
@@ -560,13 +529,7 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">總字數：</span>
-    <span title="總字數">338k</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-coffee"></i>
-    </span>
-      <span class="post-meta-item-text">所需總閱讀時間 &asymp;</span>
-    <span title="所需總閱讀時間">6:50</span>
+    <span title="總字數">434k</span>
 </div>
   <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
   </div>
@@ -769,26 +732,6 @@ window.addEventListener('pjax:success', () => {
 
 
 
-  <script data-pjax>
-  if (CONFIG.page.isPost) {
-    wpac_init = window.wpac_init || [];
-    wpac_init.push({
-      widget: 'Rating',
-      id    : 24895,
-      el    : 'wpac-rating',
-      color : 'fc6423'
-    });
-    (function() {
-      if ('WIDGETPACK_LOADED' in window) return;
-      WIDGETPACK_LOADED = true;
-      var mc = document.createElement('script');
-      mc.type = 'text/javascript';
-      mc.async = true;
-      mc.src = '//embed.widgetpack.com/widget.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
-    })();
-  }
-  </script>
 
   
 <script src="/js/local-search.js"></script>
@@ -877,16 +820,6 @@ window.addEventListener('pjax:success', () => {
       });
   </script>
 
-<script>
-  function loadCount() {
-    var d = document, s = d.createElement('script');
-    s.src = 'https://disqusforqwerty.disqus.com/count.js';
-    s.id = 'dsq-count-scr';
-    (d.head || d.body).appendChild(s);
-  }
-  // defer loading until the whole page loading is completed
-  window.addEventListener('load', loadCount, false);
-</script>
 <script>
   var disqus_config = function() {
     this.page.url = "http://gitqwerty777.github.io/Counterfactual-Regret-Minimization/";

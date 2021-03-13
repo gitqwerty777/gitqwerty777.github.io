@@ -33,7 +33,7 @@
 <meta property="og:image" content="http://gitqwerty777.github.io/img/Other/git1.png">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/Other/git2.png">
 <meta property="article:published_time" content="2014-06-18T09:39:48.000Z">
-<meta property="article:modified_time" content="2017-04-14T11:29:28.000Z">
+<meta property="article:modified_time" content="2021-03-13T18:36:52.126Z">
 <meta property="article:author" content="HCL">
 <meta property="article:tag" content="linux">
 <meta property="article:tag" content="技巧">
@@ -140,7 +140,7 @@
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類<span class="badge">4</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類<span class="badge">5</span></a>
 
   </li>
         <li class="menu-item menu-item-about">
@@ -150,12 +150,12 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤<span class="badge">53</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤<span class="badge">90</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔<span class="badge">35</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔<span class="badge">48</span></a>
 
   </li>
         <li class="menu-item menu-item-reading">
@@ -242,13 +242,6 @@
 
               <time title="創建時間：2014-06-18 02:39:48" itemprop="dateCreated datePublished" datetime="2014-06-18T02:39:48-07:00">2014-06-18</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2017-04-14 04:29:28" itemprop="dateModified" datetime="2017-04-14T04:29:28-07:00">2017-04-14</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -267,33 +260,12 @@
               <span class="post-meta-item-text">閱讀次數：</span>
               <span class="leancloud-visitors-count"></span>
             </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus：</span>
-    
-    <a title="disqus" href="/linux-tips/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="linux-tips/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
             <span class="post-meta-item" title="文章字數">
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">文章字數：</span>
-              <span>2.4k</span>
-            </span>
-            <span class="post-meta-item" title="所需閱讀時間">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">所需閱讀時間 &asymp;</span>
-              <span>3 分鐘</span>
+              <span>6k</span>
             </span>
 
         </div>
@@ -475,32 +447,109 @@ disadvantage: need the development environment available</li>
 <li><span class="exturl" data-url="aHR0cDovL2NodXNpYW5nLmdpdGJvb2tzLmlvL3dvcmtpbmctb24tZ251LWxpbnV4L2NvbnRlbnQvMTUuc2Rjdi5odG1s">命令列介面字典 - sdcv<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly93d3cucXVvcmEuY29tL0luLXVidW50dS1ob3ctY2FuLUktaGF2ZS1hbi1zc2gtc2Vzc2lvbi1hdXRvLXJlY29ubmVjdA==">保持ssh連線狀態<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
-<!--//我自己想看的
+<h1 id="切換使用者-含root"><a href="#切換使用者-含root" class="headerlink" title="切換使用者(含root)"></a>切換使用者(含root)</h1><ul>
+<li><code>su &lt;user&gt;</code><ul>
+<li>to get back to your user level (or a different user)</li>
+<li>the same as attempting to login remotely as that user, but preserves the environment variables set from the original shell</li>
+</ul>
+</li>
+<li><code>sudo su &lt;user&gt;</code><ul>
+<li>The sudo su command has similar behavior to su, but it changes which password you have to enter, if any. This command requires you to use sudo, which means that the su command will be running as root.</li>
+</ul>
+</li>
+<li><code>sudo -u &lt;user&gt; -i</code><ul>
+<li>If you want to simulate precisely the initial logged in state of another user. The -i option is simulate initial login</li>
+<li>It will create the proper shell, source .bashrc/.bash_profile files, and drop you into the target user’s home directory</li>
+<li>The only use that I can see for this is, as a system administrator, debugging issues that are user specific</li>
+</ul>
+</li>
+</ul>
+<h2 id="shell常用指令"><a href="#shell常用指令" class="headerlink" title="shell常用指令"></a>shell常用指令</h2><p><span class="exturl" data-url="aHR0cDovL2xpZmVnb28ucGx1c2tpZC5vcmcvd2lraS9MaW51eC5odG1sI3NlYzI0">原文<i class="fa fa-external-link-alt"></i></span></p>
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>簡介</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sed</td>
+<td>批量自動編輯 <span class="exturl" data-url="aHR0cDovL3B1cmVtb25rZXkyMDEwLmJsb2dzcG90LnR3LzIwMTAvMDkvbGludXgtc2VkLmh0bWw=">sed範例<i class="fa fa-external-link-alt"></i></span> TODO:example</td>
+</tr>
+<tr>
+<td>awk</td>
+<td>awk 通常和 sed 一起作為最常用的 shell 工具之一，不過我並不熟悉 awk ，也不準備去學習。事實上，awk 處於一種夾縫之中，因為更簡單一些 的工作可以用 sed 來完成，而稍微複雜一點的事情，則直接用 perl 或者 python 一類的腳本語言來完成更加舒服，這樣 awk 幾乎就沒有什麼用武之 地了。</td>
+</tr>
+<tr>
+<td>find</td>
+<td>一個超級工具，通常配合 xargs 使用為其他程序提供參數。雖然名為 find ，但是事實上很少用於「查找文件」這個單純的任務上</td>
+</tr>
+<tr>
+<td>locate/updatedb</td>
+<td>快速查找文件的工具，使用 updatedb 建立索引，用 locate 來查找文件</td>
+</tr>
+<tr>
+<td>tar</td>
+<td>壓縮工具，tarball 是 Linux 下發佈源代碼的標準格式，而且配合 bz2 格式可以得到很高的壓縮比</td>
+</tr>
+<tr>
+<td>less</td>
+<td>作為分頁工具，less 比 more 更強大，翻頁、搜索等功能都非常實用</td>
+</tr>
+<tr>
+<td>wget</td>
+<td>這是我見過的最穩定的下載工具，而且可以抓取整個網站，對於某些在線版的電子書下載起來非常方便</td>
+</tr>
+<tr>
+<td>lftp</td>
+<td>我覺得最舒服的 ftp 客戶端，支持很多類似 bash 的操作，讓 ftp 操 作就像在操作本地文件一樣。他的配置文件在 ~/.lftp/rc ，我覺得最有用 的兩個配置選項是：</td>
+</tr>
+<tr>
+<td>ftp:charset “GBK” 通常遠程 ftp 服務器都是 GBK 編碼的，這樣設置之 後可以解決亂碼問題。    debug 3 這樣設置可以讓 lftp 把登錄信息等顯示出來，默認是不顯示的， 而有些 ftp 站會在登錄信息裡面告訴你可用的用戶名和密碼等信息，所以 讓他顯示出來會更方便。</td>
+<td></td>
+</tr>
+<tr>
+<td>rename</td>
+<td>非常方便實用的文件重命名工具，可以使用 Perl 格式的正則表達式。 事實上，它通常就是一個 Perl 腳本。</td>
+</tr>
+<tr>
+<td>grep</td>
+<td>這個算是一個非常著名的工具了吧，自然也非常實用。我最常用的幾個 選項是：</td>
+</tr>
+<tr>
+<td>-C NUM 顯示出匹配行附近的 NUM 行上下文。</td>
+<td></td>
+</tr>
+<tr>
+<td>-n 顯示行號。 -H 顯示文件名。這兩個選項對於在一大堆文件裡面搜索東 西非常有用。</td>
+<td></td>
+</tr>
+<tr>
+<td>-o 只顯示匹配的部分，這對於從一大堆東西中提取某些特殊信息非常有用。</td>
+<td></td>
+</tr>
+<tr>
+<td>-v 反向匹配，即顯示不匹配的行。</td>
+<td></td>
+</tr>
+<tr>
+<td>xsel</td>
+<td>這個是非常方便的程序，但是要在 X 下使用，他的作用是和剪切板進行 交互。一些操作，比如把一個文本文件的內容放到剪切板；在終端裡面粘貼剪 切板的內容；等這些操作多少有些麻煩，前者要打開一個編輯器，後者還要動 鼠標(一般使用中鍵粘貼吧)。用 xsel 就少了這麼多麻煩。 xsel -b -i &lt; file 就把 file 的內容拷貝到剪切板了。 wget <code>xsel -o</code> 也是很常用的， 因為剪切板裡面時常放了拷貝的 URL 了吧。不過，美中不足的地方是中文支持還不行。</td>
+</tr>
+<tr>
+<td>info</td>
+<td>info 作為 GNU 標準文檔格式。不過通常許多程序都不帶 info 文檔，在命令行裡面鍵入 info 則直接顯示 man 文檔。 而且，即使有 info 文檔，也通常是非常詳細</td>
+</tr>
+</tbody></table>
+<h2 id="grep-with-certain-file-extensions"><a href="#grep-with-certain-file-extensions" class="headerlink" title="grep with certain file extensions"></a>grep with certain file extensions</h2><p>Just use the –include parameter, like this:</p>
+<p>grep -r -i –include *.h –include *.cpp CP_Image ~/path[12345] | mailx -s GREP <span class="exturl" data-url="bWFpbHRvOmVtYWlsQGRvbWFpbi5jb20=">email@domain.com<i class="fa fa-external-link-alt"></i></span><br>that should do what you want.</p>
+<p>Syntax notes:</p>
+<p>-r - search recursively<br>-i - case-insensitive search<br>–include=*.${file_extension} - search files that match the extension(s) or file pattern only</p>
+<h2 id="link-shared-library"><a href="#link-shared-library" class="headerlink" title="link shared library"></a>link shared library</h2><p><span class="exturl" data-url="aHR0cHM6Ly9tZWRpdW0uY29tL2ZjYW1lbHMtbm90ZXMvbGludXgtJUU3JUI3JUE4JUU4JUFEJUFGLXNoYXJlZC1saWJyYXJ5LSVFNyU5QSU4NCVFNiU5NiVCOSVFNiVCMyU5NSVFNSU5MiU4QyVFNiVCMyVBOCVFNiU4NCU4RiVFNCVCQSU4QiVFOSVBMCU4NS1jYjM1ODQ0ZWYzMzE=">https://medium.com/fcamels-notes/linux-%E7%B7%A8%E8%AD%AF-shared-library-%E7%9A%84%E6%96%B9%E6%B3%95%E5%92%8C%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85-cb35844ef331<i class="fa fa-external-link-alt"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly9tZWRpdW0uY29tL2ZjYW1lbHMtbm90ZXMvbGludXgtJUU1JTlGJUI3JUU4JUExJThDJUU2JTk5JTgyJUU1JUIwJThCJUU2JTg5JUJFLXN5bWJvbC0lRTclOUElODQlRTYlQjUlODElRTclQTglOEIlRTQlQkIlQTUlRTUlOEYlOEEtc2hhcmVkLWxpYnJhcnktJUU3JTlCJUI4JUU5JTk3JTlDJUU3JTlGJUE1JUU4JUFEJTk4LWIwY2YxZTE5Y2JmMw==">https://medium.com/fcamels-notes/linux-%E5%9F%B7%E8%A1%8C%E6%99%82%E5%B0%8B%E6%89%BE-symbol-%E7%9A%84%E6%B5%81%E7%A8%8B%E4%BB%A5%E5%8F%8A-shared-library-%E7%9B%B8%E9%97%9C%E7%9F%A5%E8%AD%98-b0cf1e19cbf3<i class="fa fa-external-link-alt"></i></span></p>
+<h2 id="Search-file-name"><a href="#Search-file-name" class="headerlink" title="Search file name"></a>Search file name</h2><p>find $directory -type f -name “*.in”</p>
+<h2 id="disable-lock-screen"><a href="#disable-lock-screen" class="headerlink" title="disable lock screen"></a>disable lock screen</h2><p><span class="exturl" data-url="aHR0cHM6Ly9hc2t1YnVudHUuY29tL3F1ZXN0aW9ucy8xMDQ4Nzc0L2Rpc2FibGluZy1sb2NrLXNjcmVlbi0xOC0wNA==">https://askubuntu.com/questions/1048774/disabling-lock-screen-18-04<i class="fa fa-external-link-alt"></i></span></p>
+<h2 id="apt-get"><a href="#apt-get" class="headerlink" title="apt-get"></a>apt-get</h2><p>apt list –installed</p>
 
-## shell常用指令
-
-[原文](http://lifegoo.pluskid.org/wiki/Linux.html#sec24)
-
-| 指令 | 簡介 |
-|---|---------|
-|sed| 批量自動編輯 [sed範例](http://puremonkey2010.blogspot.tw/2010/09/linux-sed.html)|
-|find| 一個超級工具，通常配合 xargs 使用為其他程序提供參數。雖然名為 find ，但是事實上很少用於「查找文件」這個單純的任務上。|
-|locate/updatedb| 快速查找文件的工具，使用 updatedb 建立索引，用 locate 來查找文件。雖然支持正則表達式，但是並不能像 Google Desktop Search 那樣能搜索文件內容，而只能搜索文件名，不過這已經很夠用了。通 常我自己的文件都歸類放好，很少出現找不到的情況，使用 locate 多是用 於定位某些系統文件而已，一般對內容並不關心。|
-|tar |最愛的文件打包工具。tarball 幾乎是 Linux 下發佈源代碼的標準格 式，而且配合 bz2 格式可以得到很高的壓縮比。|
-|less |作為分頁工具，less 比 more 更強大，翻頁、搜索等功能都非常實用 方便。|
-|wget| 這是我見過的最穩定的下載工具，而且可以抓取整個網站，對於某些在線版的電子書下載起來非常方便|
-|lftp| 我覺得最舒服的 ftp 客戶端，支持很多類似 bash 的操作，讓 ftp 操 作就像在操作本地文件一樣。他的配置文件在 ~/.lftp/rc ，我覺得最有用 的兩個配置選項是：
-ftp:charset "GBK" 通常遠程 ftp 服務器都是 GBK 編碼的，這樣設置之 後可以解決亂碼問題。    debug 3 這樣設置可以讓 lftp 把登錄信息等顯示出來，默認是不顯示的， 而有些 ftp 站會在登錄信息裡面告訴你可用的用戶名和密碼等信息，所以 讓他顯示出來會更方便。|
-|rename| 非常方便實用的文件重命名工具，可以使用 Perl 格式的正則表達式。 事實上，它通常就是一個 Perl 腳本。|
-|grep| 這個算是一個非常著名的工具了吧，自然也非常實用。我最常用的幾個 選項是：|
-    -C NUM 顯示出匹配行附近的 NUM 行上下文。
-    -n 顯示行號。 -H 顯示文件名。這兩個選項對於在一大堆文件裡面搜索東 西非常有用。
-    -o 只顯示匹配的部分，這對於從一大堆東西中提取某些特殊信息非常有用。
-    -v 反向匹配，即顯示不匹配的行。
-|xsel| 這個是非常方便的程序，但是要在 X 下使用，他的作用是和剪切板進行 交互。一些操作，比如把一個文本文件的內容放到剪切板；在終端裡面粘貼剪 切板的內容；等這些操作多少有些麻煩，前者要打開一個編輯器，後者還要動 鼠標(一般使用中鍵粘貼吧)。用 xsel 就少了這麼多麻煩。 xsel -b -i < file 就把 file 的內容拷貝到剪切板了。 wget `xsel -o` 也是很常用的， 因為剪切板裡面時常放了拷貝的 URL 了吧。不過，美中不足的地方是中文支 持還不行。|
-|awk |awk 通常和 sed 一起作為最常用的 shell 工具之一，不過我並不熟悉 awk ，也不準備去學習。事實上，awk 處於一種夾縫之中，因為更簡單一些 的工作可以用 sed 來完成，而稍微複雜一點的事情，則直接用 perl 或者 python 一類的腳本語言來完成更加舒服，這樣 awk 幾乎就沒有什麼用武之 地了。|
-|info| info 作為 GNU 標準文檔格式，確實是非常不錯的一種文檔。不過通常 許多程序都不帶 info 文檔，在命令行裡面鍵入 info 則直接顯示 man 文檔。 而且，即使有 info 文檔，也通常是非常詳細，不是一下子就可以看完的， 所以，我通常是在 Emacs 裡面查看一些 info 文檔。|
--->
     </div>
 
     
@@ -510,7 +559,7 @@ ftp:charset "GBK" 通常遠程 ftp 服務器都是 GBK 編碼的，這樣設置�
   <div class="popular-posts-header">相關文章</div>
   <ul class="popular-posts">
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/how-to-install-ubuntu-vmware-tool/" rel="bookmark">在Ubuntu虛擬機上安裝vmware_tool</a></div>
+      <div class="popular-posts-title"><a href="/linux-save-memory-disk/" rel="bookmark">在Linux系統中 節省硬碟和記憶體用量</a></div>
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/install-boshiamy-in-linux-by-fcitx/" rel="bookmark">在Linux上使用fcitx安裝嘸蝦米</a></div>
@@ -529,11 +578,6 @@ ftp:charset "GBK" 通常遠程 ftp 服務器都是 GBK 編碼的，這樣設置�
           </div>
 
         
-  <div class="post-widgets">
-    <div class="wp_rating">
-      <div id="wpac-rating"></div>
-    </div>
-  </div>
 
 
         
@@ -611,7 +655,7 @@ ftp:charset "GBK" 通常遠程 ftp 服務器都是 GBK 編碼的，這樣設置�
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#VMware錯誤"><span class="nav-number">1.</span> <span class="nav-text">VMware錯誤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Error-while-powering-on-internal-error"><span class="nav-number">1.1.</span> <span class="nav-text">Error while powering on:internal error</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Error-while-opening-the-virtual-machine-Taking-ownership-of-this-virtual-machine-failed"><span class="nav-number">1.2.</span> <span class="nav-text">Error while opening the virtual machine: Taking ownership of this virtual machine failed</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#連線問題"><span class="nav-number">1.3.</span> <span class="nav-text">連線問題</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重新啟動服務-daemon"><span class="nav-number">2.</span> <span class="nav-text">重新啟動服務(daemon)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在tty介面下重新開啟圖形介面"><span class="nav-number">3.</span> <span class="nav-text">在tty介面下重新開啟圖形介面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在遠端連線中顯示圖形化介面"><span class="nav-number">4.</span> <span class="nav-text">在遠端連線中顯示圖形化介面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#避免誤刪檔案"><span class="nav-number">5.</span> <span class="nav-text">避免誤刪檔案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在terminal開啟檔案"><span class="nav-number">6.</span> <span class="nav-text">在terminal開啟檔案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tar-壓縮"><span class="nav-number">7.</span> <span class="nav-text">tar 壓縮</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#清除垃圾筒"><span class="nav-number">8.</span> <span class="nav-text">清除垃圾筒</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#搜尋檔案"><span class="nav-number">9.</span> <span class="nav-text">搜尋檔案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用zsh"><span class="nav-number">10.</span> <span class="nav-text">使用zsh</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#更改主題"><span class="nav-number">10.1.</span> <span class="nav-text">更改主題</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#啟用plugin"><span class="nav-number">10.2.</span> <span class="nav-text">啟用plugin</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不經密碼登入遠端伺服器-ssh"><span class="nav-number">11.</span> <span class="nav-text">不經密碼登入遠端伺服器(ssh)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux的視窗管理軟體"><span class="nav-number">12.</span> <span class="nav-text">Linux的視窗管理軟體</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#強制切斷ssh連線"><span class="nav-number">13.</span> <span class="nav-text">強制切斷ssh連線</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install-without-Root-access-sudo"><span class="nav-number">14.</span> <span class="nav-text">Install without Root access(sudo)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他"><span class="nav-number">15.</span> <span class="nav-text">其他</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#VMware錯誤"><span class="nav-number">1.</span> <span class="nav-text">VMware錯誤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Error-while-powering-on-internal-error"><span class="nav-number">1.1.</span> <span class="nav-text">Error while powering on:internal error</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Error-while-opening-the-virtual-machine-Taking-ownership-of-this-virtual-machine-failed"><span class="nav-number">1.2.</span> <span class="nav-text">Error while opening the virtual machine: Taking ownership of this virtual machine failed</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#連線問題"><span class="nav-number">1.3.</span> <span class="nav-text">連線問題</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重新啟動服務-daemon"><span class="nav-number">2.</span> <span class="nav-text">重新啟動服務(daemon)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在tty介面下重新開啟圖形介面"><span class="nav-number">3.</span> <span class="nav-text">在tty介面下重新開啟圖形介面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在遠端連線中顯示圖形化介面"><span class="nav-number">4.</span> <span class="nav-text">在遠端連線中顯示圖形化介面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#避免誤刪檔案"><span class="nav-number">5.</span> <span class="nav-text">避免誤刪檔案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在terminal開啟檔案"><span class="nav-number">6.</span> <span class="nav-text">在terminal開啟檔案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tar-壓縮"><span class="nav-number">7.</span> <span class="nav-text">tar 壓縮</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#清除垃圾筒"><span class="nav-number">8.</span> <span class="nav-text">清除垃圾筒</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#搜尋檔案"><span class="nav-number">9.</span> <span class="nav-text">搜尋檔案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用zsh"><span class="nav-number">10.</span> <span class="nav-text">使用zsh</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#更改主題"><span class="nav-number">10.1.</span> <span class="nav-text">更改主題</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#啟用plugin"><span class="nav-number">10.2.</span> <span class="nav-text">啟用plugin</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不經密碼登入遠端伺服器-ssh"><span class="nav-number">11.</span> <span class="nav-text">不經密碼登入遠端伺服器(ssh)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux的視窗管理軟體"><span class="nav-number">12.</span> <span class="nav-text">Linux的視窗管理軟體</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#強制切斷ssh連線"><span class="nav-number">13.</span> <span class="nav-text">強制切斷ssh連線</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install-without-Root-access-sudo"><span class="nav-number">14.</span> <span class="nav-text">Install without Root access(sudo)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他"><span class="nav-number">15.</span> <span class="nav-text">其他</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#切換使用者-含root"><span class="nav-number"></span> <span class="nav-text">切換使用者(含root)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#shell常用指令"><span class="nav-number">1.</span> <span class="nav-text">shell常用指令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#grep-with-certain-file-extensions"><span class="nav-number">2.</span> <span class="nav-text">grep with certain file extensions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#link-shared-library"><span class="nav-number">3.</span> <span class="nav-text">link shared library</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Search-file-name"><span class="nav-number">4.</span> <span class="nav-text">Search file name</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#disable-lock-screen"><span class="nav-number">5.</span> <span class="nav-text">disable lock screen</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#apt-get"><span class="nav-number">6.</span> <span class="nav-text">apt-get</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -627,20 +671,20 @@ ftp:charset "GBK" 通常遠程 ftp 服務器都是 GBK 編碼的，這樣設置�
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">35</span>
+          <span class="site-state-item-count">48</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">分類</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">53</span>
+        <span class="site-state-item-count">90</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -698,7 +742,7 @@ ftp:charset "GBK" 通常遠程 ftp 服務器都是 GBK 編碼的，這樣設置�
 <div class="copyright">
   
   &copy; 2014 – 
-  <span itemprop="copyrightYear">2020</span>
+  <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fab fa-free-code-camp"></i>
   </span>
@@ -708,13 +752,7 @@ ftp:charset "GBK" 通常遠程 ftp 服務器都是 GBK 編碼的，這樣設置�
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">總字數：</span>
-    <span title="總字數">338k</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-coffee"></i>
-    </span>
-      <span class="post-meta-item-text">所需總閱讀時間 &asymp;</span>
-    <span title="所需總閱讀時間">6:50</span>
+    <span title="總字數">434k</span>
 </div>
   <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
   </div>
@@ -917,26 +955,6 @@ window.addEventListener('pjax:success', () => {
 
 
 
-  <script data-pjax>
-  if (CONFIG.page.isPost) {
-    wpac_init = window.wpac_init || [];
-    wpac_init.push({
-      widget: 'Rating',
-      id    : 24895,
-      el    : 'wpac-rating',
-      color : 'fc6423'
-    });
-    (function() {
-      if ('WIDGETPACK_LOADED' in window) return;
-      WIDGETPACK_LOADED = true;
-      var mc = document.createElement('script');
-      mc.type = 'text/javascript';
-      mc.async = true;
-      mc.src = '//embed.widgetpack.com/widget.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
-    })();
-  }
-  </script>
 
   
 <script src="/js/local-search.js"></script>
@@ -1025,16 +1043,6 @@ window.addEventListener('pjax:success', () => {
       });
   </script>
 
-<script>
-  function loadCount() {
-    var d = document, s = d.createElement('script');
-    s.src = 'https://disqusforqwerty.disqus.com/count.js';
-    s.id = 'dsq-count-scr';
-    (d.head || d.body).appendChild(s);
-  }
-  // defer loading until the whole page loading is completed
-  window.addEventListener('load', loadCount, false);
-</script>
 <script>
   var disqus_config = function() {
     this.page.url = "http://gitqwerty777.github.io/linux-tips/";

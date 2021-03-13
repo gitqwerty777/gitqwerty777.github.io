@@ -30,7 +30,7 @@
 <meta property="og:description" content="僅節錄我認為有助益的。(書中有蠻多java的重構範例)">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2015-02-27T06:02:24.000Z">
-<meta property="article:modified_time" content="2018-02-15T07:09:41.000Z">
+<meta property="article:modified_time" content="2021-03-13T18:36:52.122Z">
 <meta property="article:author" content="HCL">
 <meta property="article:tag" content="code">
 <meta property="article:tag" content="cleancode">
@@ -136,7 +136,7 @@
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類<span class="badge">4</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類<span class="badge">5</span></a>
 
   </li>
         <li class="menu-item menu-item-about">
@@ -146,12 +146,12 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤<span class="badge">53</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤<span class="badge">90</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔<span class="badge">35</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔<span class="badge">48</span></a>
 
   </li>
         <li class="menu-item menu-item-reading">
@@ -238,13 +238,6 @@
 
               <time title="創建時間：2015-02-26 22:02:24" itemprop="dateCreated datePublished" datetime="2015-02-26T22:02:24-08:00">2015-02-26</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2018-02-14 23:09:41" itemprop="dateModified" datetime="2018-02-14T23:09:41-08:00">2018-02-14</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -263,33 +256,12 @@
               <span class="post-meta-item-text">閱讀次數：</span>
               <span class="leancloud-visitors-count"></span>
             </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus：</span>
-    
-    <a title="disqus" href="/cleancode/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="cleancode/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
             <span class="post-meta-item" title="文章字數">
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">文章字數：</span>
-              <span>5.9k</span>
-            </span>
-            <span class="post-meta-item" title="所需閱讀時間">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">所需閱讀時間 &asymp;</span>
-              <span>7 分鐘</span>
+              <span>8.4k</span>
             </span>
 
         </div>
@@ -305,13 +277,13 @@
 <a id="more"></a>
 
 <h2 id="Chap01-動機"><a href="#Chap01-動機" class="headerlink" title="Chap01 動機"></a>Chap01 動機</h2><ol>
-<li>神就藏在細節裡: 一致性的縮排是程式低錯誤率的最顯著指標</li>
+<li>神就藏在細節裡: 一致性的縮排是程式低錯誤率的最顯著指標   </li>
 <li>Later equals NEVER: 不及時清理 → 累積愈多難看的程式碼 → 愈難清理，所以更不想清理 → 直到修改的成本太高，只好重寫</li>
 <li>不夠好的程式碼使維護成本太高(你看得懂自己寫的code嗎)</li>
 </ol>
 <p>讓開發速度變快的方法：隨時保持clean code</p>
-<h2 id="Chap02-Clean-Code-的定義"><a href="#Chap02-Clean-Code-的定義" class="headerlink" title="Chap02 Clean Code 的定義"></a>Chap02 Clean Code 的定義</h2><p>認為自己的code<strong>應該要有的樣子</strong></p>
-<p>CleanCode學派(作者)對此的定義</p>
+<h2 id="Chap02-Clean-Code-的定義"><a href="#Chap02-Clean-Code-的定義" class="headerlink" title="Chap02 Clean Code 的定義"></a>Chap02 Clean Code 的定義</h2><p>認為自己的code<strong>應該要有的樣子</strong>  </p>
+<p>CleanCode學派(作者)對此的定義   </p>
 <ul>
 <li>每個函式、類別、模組都能表達單一意圖，降低程式相依性</li>
 <li>易讀：不該使人猜測程式的意思<ul>
@@ -333,7 +305,7 @@
 <li>enum color{black, white}</li>
 <li>86400 → SECOND_PER_DAY</li>
 <li>容易了解的數字就不用<ul>
-<li><code>circumference = radius * Math.PI * 2</code>: 不用將2換成實際名稱</li>
+<li><code>circumference = radius * Math.PI * 2</code>: 不用將2換成實際名稱 </li>
 </ul>
 </li>
 </ul>
@@ -362,9 +334,11 @@
 <li>使用專有名詞<ul>
 <li>jobqueue</li>
 <li>timestamp</li>
+<li>發明一個專用的命名標準(普及語言)</li>
 </ul>
 </li>
 <li>使用範圍較大的變數用較長的名稱<ul>
+<li>愈少用的函數名稱可以愈長</li>
 <li>for迴圈內的變數可以用i<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//which is better?</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; RowNumber; i++)</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; ColumnNumber; j++)</span><br><span class="line">		...</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> r = <span class="number">0</span>; r &lt; RowNumber; r++)</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> c = <span class="number">0</span>; c &lt; ColumnNumber; c++)</span><br><span class="line">		...</span><br></pre></td></tr></table></figure>
 
 </li>
@@ -389,11 +363,15 @@
 <li>參數<ul>
 <li>愈少愈好($\leq$ 三個)<ul>
 <li>太多參數時需要記順序</li>
+<li>e.g., <code>strcpy()</code></li>
+<li>例外：四維象限中的座標(只算是一個參數)，<code>printf()</code>(只算是兩個參數)</li>
 </ul>
 </li>
 <li>避免用參數當回傳值<ul>
 <li>如 <code>void saveResult(FILE* f, int* returnStatus)</code>，使用returnStatus來作為回傳</li>
-<li>呼叫擁有變數的類別，用其method來修改</li>
+<li>解法一：呼叫擁有變數的class，用其method來修改</li>
+<li>解法二：用return</li>
+<li>用例外處理取代回傳錯誤碼</li>
 </ul>
 </li>
 <li>通常只使用一個參數<ul>
@@ -429,7 +407,8 @@
 </ul>
 </li>
 <li>描述可能的副作用<ul>
-<li><code>getOOS()</code> → <code>createOrReturnOOS()</code>: 呼叫時若無OOS的實體，可能會create</li>
+<li><code>getOOS()</code> → <code>createOrReturnOOS()</code>: 呼叫時若無OOS的</li>
+<li>，可能會create</li>
 </ul>
 </li>
 </ul>
@@ -448,15 +427,23 @@
 <li>在函式夠短的情況下<strong>沒有必要</strong></li>
 </ul>
 </li>
+<li>暴露時序耦合<ul>
+<li>必須先A()再B()的函式</li>
+<li><code>C = A(); B(C);</code></li>
+<li>透露出真實的復雜度</li>
+</ul>
+</li>
 </ul>
 <h3 id="3-註解"><a href="#3-註解" class="headerlink" title="(3)註解"></a>(3)註解</h3><ul>
 <li>註解是輔助程式碼來表達意圖的工具<ul>
 <li>有註解代表程式碼不夠易懂</li>
 <li>愈少愈好</li>
+<li>與其寫註解，不如把程式碼弄整潔</li>
 </ul>
 </li>
 <li>註解通常缺少維護<ul>
 <li>容易產生許多過時的註解</li>
+<li>錯誤的註解比沒有註解可怕</li>
 </ul>
 </li>
 <li>必要的註解<ul>
@@ -498,6 +485,7 @@
 <li>偏好小檔案(200-500行)</li>
 <li>報紙型編排：先出現標題(高階概念、演算法)，再來是內容(低階函式)<ul>
 <li>最重要的概念先出現，用最少的資訊來表達，再來才是實作細節</li>
+<li>C, C++需要先宣告函式才可使用</li>
 </ul>
 </li>
 <li>垂直距離：類似的概念應盡可能靠近<ul>
@@ -513,12 +501,9 @@
 <li><code>for(int i = 0, ...)</code></li>
 </ul>
 </li>
-<li>class內的函數<ul>
-<li>java放在class的最上方</li>
-<li>C++ 按照 <span class="exturl" data-url="aHR0cHM6Ly9ncm91cHMueWFob28uY29tL25lby9ncm91cHMvZXh0cmVtZXByb2dyYW1taW5nL2NvbnZlcnNhdGlvbnMvdG9waWNzLzI0MDU=">scissors rule(剪刀準則)<i class="fa fa-external-link-alt"></i></span><ul>
-<li>public 在前面，private在後面，可以使讀者只關心public部分</li>
-</ul>
-</li>
+<li>實體變數(instance variable)<ul>
+<li>C++ 通常放在類別的最下方(scissors rule)</li>
+<li>java 通常放在類別的最上方</li>
 </ul>
 </li>
 <li>降層準則<ul>
@@ -527,16 +512,27 @@
 </li>
 </ul>
 </li>
+<li>將常數宣告放在一個大家比較容易找到的地方。</li>
+<li>寬度：不要超過螢幕<ul>
+<li>強調運算子的優先權<ul>
+<li><code>b*b - 4*a*c</code></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h3 id="5-物件及資料結構"><a href="#5-物件及資料結構" class="headerlink" title="(5)物件及資料結構"></a>(5)物件及資料結構</h3><blockquote>
-<p>你知道的太多了…</p>
+<p>你知道的太多了… </p>
 </blockquote>
-<p>1.物件</p>
+<p>變數保持私有的理由，不希望有人依賴此變數，保持一個自由的空間，讓我們能自由的更改變數的型態，或是在突如其來的奇想或衝動時，能自由的變更實現內容的程式碼。<br>那為什麼有這麼多的程式設計師，自動替他們的物件加上getter和setter，讓他們的私有度數如同公用變數呢。</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Point</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">double</span> x;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">double</span> y;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">Point</span> &#123;</span><br><span class="line">	<span class="function"><span class="keyword">double</span> <span class="title">getX</span>(<span class="params"></span>)</span>;</span><br><span class="line">	<span class="function"><span class="keyword">double</span> <span class="title">getY</span>(<span class="params"></span>)</span>;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">setCartesian</span>(<span class="params"><span class="keyword">double</span> x, <span class="keyword">double</span> y</span>)</span>;</span><br><span class="line">	<span class="function"><span class="keyword">double</span> <span class="title">getR</span>(<span class="params"></span>)</span>;</span><br><span class="line">	<span class="function"><span class="keyword">double</span> <span class="title">getTheta</span>(<span class="params"></span>)</span>;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">setPolar</span>(<span class="params"><span class="keyword">double</span> r, <span class="keyword">double</span> theta</span>)</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>你無法分辨這個實現過程是使用直角座標系，還是極座標系，或者兩者皆非！<br>利用抽象化的詞彙來表達資料。這並不是只透過介面及讀取、設定函式就能完成。想辨法找到最能詮釋「資料抽象概念」的方式。<br>而最差的作法，則是天真地加上讀取函式及設定函式而已。</p>
+<p>1.物件  </p>
 <ul>
 <li>變數為私有，函式為公用</li>
 <li>將實現的過程隱藏(封裝)</li>
 <li>用抽象詞彙表達資料<ul>
-<li><code>getGallonsOfGasoline()</code> → <code>getPercentFuelRemaining()</code></li>
+<li><code>getGallonsOfGasoline()</code> → <code>getPercentFuelRemaining()</code>    </li>
 </ul>
 </li>
 <li>常數宣告：放在適當的層級<ul>
@@ -544,17 +540,18 @@
 <li><code>getPageNameOrDefault(request, &quot;FrontPage&quot;)</code> //default is “FrongPage”</li>
 </ul>
 </li>
+<li>放在愈高階就愈容易進行修改</li>
 </ul>
 </li>
 <li><strong>要讓每件事物都是一個物件是一個神話</strong>(Java表示：)</li>
 </ul>
-<p>2.資料結構</p>
+<p>2.資料結構  </p>
 <ul>
 <li>曝露資料(public)，沒有顯著的函式</li>
 <li>為資料結構設getter和setter是多此一舉</li>
 <li>如 map, set, array …</li>
 </ul>
-<p>互補性</p>
+<p>互補性     </p>
 <ul>
 <li>物件：新資料型態的彈性 ↔ 資料結構：新行為的彈性<ul>
 <li>資料結構容易添加函式，而不用更改現有的資料結構</li>
@@ -563,7 +560,7 @@
 </li>
 <li>混合體只會得到兩者的缺點</li>
 </ul>
-<p><span class="exturl" data-url="aHR0cDovL3poLndpa2lwZWRpYS5vcmcvd2lraS8lRTUlQkUlOTclRTUlQTIlQTglRTUlQkYlOTIlRTglODAlQjMlRTUlQUUlOUElRTUlQkUlOEI=">The law of Demeter<i class="fa fa-external-link-alt"></i></span></p>
+<p><span class="exturl" data-url="aHR0cDovL3poLndpa2lwZWRpYS5vcmcvd2lraS8lRTUlQkUlOTclRTUlQTIlQTglRTUlQkYlOTIlRTglODAlQjMlRTUlQUUlOUElRTUlQkUlOEI=">The law of Demeter<i class="fa fa-external-link-alt"></i></span>  </p>
 <ul>
 <li>模組不該知道關於它所操縱<strong>物件</strong>的內部運作</li>
 <li>違反原則: 火車連結<ul>
@@ -580,30 +577,40 @@
 </ul>
 </li>
 </ul>
-<p>可調整的資料應放在高層次</p>
+<p>可調整的資料應放在高層次  </p>
 <ul>
 <li>底層不應存放參數</li>
 <li>放在高階層比較好找，也比較好修改</li>
+</ul>
+<p>One Switch原則：</p>
+<ul>
+<li>對於給定的變數，不應該有超過一個以上的switch敘述。在那個唯一的Switch敘述中的多個case，必須建立多型物件以取代其他case。</li>
 </ul>
 <h3 id="6-錯誤處理"><a href="#6-錯誤處理" class="headerlink" title="(6)錯誤處理"></a>(6)錯誤處理</h3><ul>
 <li>定義正常的流程<ul>
 <li>使用<span class="exturl" data-url="aHR0cDovL21hcnRpbmZvd2xlci5jb20vZWFhQ2F0YWxvZy9zcGVjaWFsQ2FzZS5odG1s">特殊情況物件(special case pattern)<i class="fa fa-external-link-alt"></i></span>替代if()檢查<ul>
 <li>將特殊情況包在特殊情況物件</li>
+<li>特殊情況物件處理例外</li>
+</ul>
+</li>
+<li>包裹第三方程式庫<ul>
+<li>減少依頼，容易更換</li>
 </ul>
 </li>
 </ul>
 </li>
 <li>使用 例外處理(try-catch-finally) 取代回傳error code<ul>
-<li>例外處理是「一件事」<ul>
+<li>例外處理是「一件事」 <ul>
 <li>error code 必須在呼叫結束之後立即檢查錯誤</li>
 <li>提取try和catch的內容，成為新函式</li>
+<li>用class包裹例外，此class只處理例外</li>
 </ul>
 </li>
 </ul>
 </li>
 <li>不要傳遞NULL<ul>
 <li>要檢查值是不是NULL，很麻煩<ul>
-<li>所有程式都不傳NULL → 所有函式都不用檢查</li>
+<li>所有函式都不return NULL → 都不用檢查</li>
 </ul>
 </li>
 <li>解決<ul>
@@ -618,7 +625,9 @@
 </li>
 <li>Java：<span class="exturl" data-url="aHR0cDovL3RlZGR5LWNoZW4tdHcuYmxvZ3Nwb3QudHcvMjAxMS8wNS9jaGVja2VkLW9yLXVuY2hlY2tlZC1leGNlcHRpb25zLTEuaHRtbA==">使用不檢查型例外：<i class="fa fa-external-link-alt"></i></span>, <span class="exturl" data-url="aHR0cDovL3d3dy5zbGlkZXNoYXJlLm5ldC90ZWRkeXNvZnQvamF2YWNoZWNrZWR1bmNoZWNrZWQtZXhjZXB0aW9ucw==">(檢查和不檢查型例外)<i class="fa fa-external-link-alt"></i></span>, 因為其破壞開放閉合原則，修改低階函式時也需要修改高階函式</li>
 </ul>
-<h3 id="7-邊界"><a href="#7-邊界" class="headerlink" title="(7)邊界"></a>(7)邊界</h3><p>使用第三方API時</p>
+<p>將邊界條件的處理放置於同一個地方，不要散佈在程式的各個角落。<br>用 <code>nextLevel</code> 取代 <code>level+1</code></p>
+<h3 id="7-邊界"><a href="#7-邊界" class="headerlink" title="(7)邊界"></a>(7)邊界</h3><p>避免在公用API使用介面(如Map)</p>
+<p>使用第三方API時</p>
 <ul>
 <li>學習性測試<ul>
 <li>寫一些測試程式來了解第三方軟體</li>
@@ -629,19 +638,27 @@
 <li><code>public void open() { try{innerPort.open();} ... }</code></li>
 <li>好處<ul>
 <li>掌握控制程式的權利</li>
-<li>在API未知的情況可以先寫出Fake API來測試</li>
+<li>在API未知的情況可以繼承此interface，創造一個Fake API來測試</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 <h3 id="8-單元測試"><a href="#8-單元測試" class="headerlink" title="(8)單元測試"></a>(8)單元測試</h3><p> 有了測試程式(和版本控制系統)就不會害怕修改程式！</p>
-<p><span class="exturl" data-url="aHR0cDovL2dsaXlhby5sb2dkb3duLmNvbS9wb3N0cy8yMDE0LzAxLzE4L3NvZnR3YXJlLXRhbGstYWJvdXQtdGVzdC1kcml2ZW4tZGV2ZWxvcG1lbnQtdGVzdC1kcml2ZW4tZGV2ZWxvcG1lbnQtaQ==">測試驅動開發(TDD)<i class="fa fa-external-link-alt"></i></span></p>
+<p><span class="exturl" data-url="aHR0cDovL2dsaXlhby5sb2dkb3duLmNvbS9wb3N0cy8yMDE0LzAxLzE4L3NvZnR3YXJlLXRhbGstYWJvdXQtdGVzdC1kcml2ZW4tZGV2ZWxvcG1lbnQtdGVzdC1kcml2ZW4tZGV2ZWxvcG1lbnQtaQ==">測試驅動開發(TDD)<i class="fa fa-external-link-alt"></i></span><br><span class="exturl" data-url="aHR0cDovL3d3dy5jb2RlZGF0YS5jb20udHcvdGVzdC9leHBsYW5hdGlvbi10aGUtdGhyZWUtbGF3cy1vZi10ZGQv">(2)<i class="fa fa-external-link-alt"></i></span></p>
 <ol>
-<li>只寫剛好無法通過的單元測試</li>
-<li>只寫剛好能通過測試的程式</li>
+<li>先寫測試程式，再寫對應的實作程式</li>
+<li>只寫剛好無法通過的單元測試<ol>
+<li>測試無法通過時，應該要修復實作程式</li>
 </ol>
-<p>範圍</p>
+</li>
+<li>只寫剛好能通過測試的程式<ol>
+<li>測試無法通過時，只能寫和測試有關的實作程式，不能寫其他實作程式</li>
+</ol>
+</li>
+</ol>
+<p><strong>測試程式和產品程式一樣重要</strong></p>
+<p>範圍  </p>
 <ul>
 <li>使用Coverage Tool(涵蓋率工具)<ul>
 <li>檢查是否每個函式都有被執行過</li>
@@ -649,7 +666,7 @@
 </li>
 <li>測試邊界條件</li>
 </ul>
-<p>原則</p>
+<p>原則  </p>
 <ul>
 <li>測試的程式碼也需要整潔<ul>
 <li>最重要的是可讀性，效率是其次</li>
@@ -666,35 +683,48 @@
 </ul>
 </li>
 <li>一個測試只用一個assert</li>
+<li>在程式錯誤附近進行詳盡的測試<ul>
+<li>因為Bug往往聚集</li>
 </ul>
-<p>F.I.R.S.T. 法則</p>
+</li>
+</ul>
+<p>測試程式的 F.I.R.S.T. 法則    </p>
 <ul>
-<li>Fast：快速</li>
+<li>Fast：快速(足夠快即可)</li>
 <li>Independent：可個別獨立執行</li>
 <li>Repeatable：可在任何環境重複執行</li>
-<li>Self-Validating：輸出bool值，而不是記錄檔</li>
+<li>Self-Validating：輸出bool值，而不是記錄檔<ul>
+<li>不用額外檢查</li>
+</ul>
+</li>
 <li>Timely：先寫測試再實作</li>
 </ul>
-<h3 id="9-類別"><a href="#9-類別" class="headerlink" title="(9)類別"></a>(9)類別</h3><p>計算職責的數量：單一職責原則</p>
+<h3 id="9-類別"><a href="#9-類別" class="headerlink" title="(9)類別"></a>(9)類別</h3><p>計算職責的數量：單一職責原則  </p>
 <ul>
 <li>每個class只能有一個修改的理由</li>
 <li>凝聚性：方法內使用愈多變數代表這個方法更屬於這個類別</li>
 <li>保持凝聚性就會產生許多小類別</li>
 </ul>
+<p>把工具放在有許多標記的小型工具箱裡，比少量的大抽屜，然後將所有的東西都丟進去好。</p>
 <p>開放閉合原則：類別是可擴充，但不可修改的<br><span class="exturl" data-url="aHR0cDovL3l1cGluZ25vdGUuYmxvZ3Nwb3QudHcvMjAxMy8xMi9kaXAuaHRtbA==">相依性反轉原則 (DIP, Dependency Inversion Principle)<i class="fa fa-external-link-alt"></i></span></p>
 <ul>
-<li>類別應該相依於抽象概念而非具體細節</li>
+<li>類別應該相依於抽象概念而非具體細節<ul>
+<li>當細節變動時，類別如果相依於具體類別的細節，就會產生風險</li>
+<li>用介面和抽象類別來隔離</li>
+</ul>
+</li>
 <li>細節應該依賴抽象，抽象不該依賴細節</li>
 </ul>
-<p>一種解法：<br>將public interface method重構到 extend class</p>
+<p>一種解法：<br>將public interface method 重構到 extend class</p>
+<p>不應該對相依的模組有預先的假設(即邏輯上的相依)，應該清楚的詢問所需的有關訊息(即實體上的相依)。</p>
 <h3 id="10-系統"><a href="#10-系統" class="headerlink" title="(10)系統"></a>(10)系統</h3><p>如同建造城市，某些人負責整體規劃，其它人專注在細節執行。<br>進行抽象化和模組化</p>
-<p>將所有關注的事分離開來<br>e.g. 延遲初始(Lazy Initialization)：物件的建立會延後到第一次使用為止<br>但是每個物件都要做的話，產生很多重複</p>
+<p>將所有關注的事分離開來<br>e.g. 延遲初始(Lazy Initialization)：物件的建立會延後到第一次使用為止<br>但是每個物件都要做的話，產生很多重複       </p>
 <ul>
 <li><strong>將建造和使用分離</strong><ul>
-<li>main建造物件，並將物件傳送至應用程式。應用程式只需要使用</li>
+<li><code>main()</code>建造物件，並將物件傳送至應用程式。應用程式只需要使用</li>
 <li>有時候應用程式要決定何時產生物件<ul>
 <li>抽象工廠<ul>
-<li>main開工廠，集中生產，並由應用程式呼叫</li>
+<li><code>main()</code>開工廠，集中生產，並由應用程式呼叫</li>
 </ul>
 </li>
 </ul>
@@ -702,28 +732,34 @@
 </ul>
 </li>
 </ul>
-<p>相依性注入<span class="exturl" data-url="aHR0cDovL2h1YW4tbGluLmJsb2dzcG90LmNvbS8yMDExLzEwL2RlcGVuZGVuY3ktaW5qZWN0aW9uLTEuaHRtbA==">(1)<i class="fa fa-external-link-alt"></i></span><span class="exturl" data-url="aHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL3F1ZXN0aW9ucy8xMzA3OTQvd2hhdC1pcy1kZXBlbmRlbmN5LWluamVjdGlvbg==">(2)<i class="fa fa-external-link-alt"></i></span></p>
+<p>相依性注入<span class="exturl" data-url="aHR0cDovL2h1YW4tbGluLmJsb2dzcG90LmNvbS8yMDExLzEwL2RlcGVuZGVuY3ktaW5qZWN0aW9uLTEuaHRtbA==">(1)<i class="fa fa-external-link-alt"></i></span><span class="exturl" data-url="aHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL3F1ZXN0aW9ucy8xMzA3OTQvd2hhdC1pcy1kZXBlbmRlbmN5LWluamVjdGlvbg==">(2)<i class="fa fa-external-link-alt"></i></span>   </p>
 <ul>
 <li>控管反轉<ul>
 <li>將某件事的第二個職責移到其它專注於該職責的物件裡</li>
 </ul>
 </li>
 </ul>
-<p>擴大</p>
+<p>擴大  </p>
 <ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly96aC53aWtpcGVkaWEub3JnL3poLXR3LyVFNSU4RCU4MSVFNSVBNCVBNyVFNSVCQiVCQSVFOCVBOCVBRCMuRTguQTkuOTUuRTUuODMuQjk=">誰有辦法預期小鎮的成長，而在鎮上先鋪好六線道高速公路？<i class="fa fa-external-link-alt"></i></span><ul>
 <li>讓系統一開始就做對，是一個神話</li>
+<li>應該只實現今天的故事(即目前的需求)，然後重構它，並且明天再進行系統的擴充</li>
 </ul>
 </li>
 <li>AOP<span class="exturl" data-url="aHR0cHM6Ly96aC53aWtpcGVkaWEub3JnL3dpa2kv6Z2i5ZCR5L6n6Z2i55qE56iL5bqP6K6+6K6h">(1)<i class="fa fa-external-link-alt"></i></span><a href="www.javaworld.com.tw/jute/post/view?bid=43&id=145561&sty=1&tpg=1&age=0">(2)</a><ul>
 <li>剖面(aspect)<ul>
-<li>系統中哪些點的行為，需要一起修改，以支援某個關注點</li>
-<li>如日誌記錄(log)、使用相同資料庫</li>
+<li>系統中哪些點的行為，需要用一致性的方式修改，以支援某個關注點</li>
+<li>如日誌記錄(log)、使用資料庫、安全性、暫存快取</li>
+<li>為應用程式基礎架構</li>
+</ul>
+</li>
+<li>保持適當的關注點分確 </li>
+<li>Java可用AspectJ</li>
 </ul>
 </li>
 </ul>
-</li>
-</ul>
+<p>不需要「先作大型設計」，因為這個設計阻止你去改進，可能是因為不希望浪費先前的努力。</p>
+<p>有時候拖延至最後一刻是最好的作法，這讓我們得以運用可能是最好的資訊進行選擇。</p>
 <h4 id="剖面範例"><a href="#剖面範例" class="headerlink" title="剖面範例"></a>剖面範例</h4><ol>
 <li><span class="exturl" data-url="aHR0cDovL29wZW5ob21lLmNjL0dvc3NpcC9TcHJpbmdHb3NzaXAvRnJvbVByb3h5VG9BT1AuaHRtbA==">Java代理機制<i class="fa fa-external-link-alt"></i></span><ol>
 <li>代理可以呼叫被代理物件的函式，也可以進行剖面的行為</li>
@@ -739,12 +775,15 @@
 <blockquote>
 <p>一個理想的架構，包含模組化的關注點，每個關注點都用一個普通物件實作。 不同領域之間利用最小侵入性的剖面工具整合。 這樣的架構就可以是測試驅動的(test-driven)，如同程式碼一樣。</p>
 </blockquote>
-<p>系統需要特定領域的語言(Domain-Specific Language), 讓領域專家可以把程式寫得像是散文的結構，而且領域概念和實作程式碼相似</p>
-<h3 id="11-結論：簡單設計守則"><a href="#11-結論：簡單設計守則" class="headerlink" title="(11)結論：簡單設計守則"></a>(11)結論：簡單設計守則</h3><ol>
+<p>系統需要特定領域的語言(Domain-Specific Language), 讓領域專家可以把程式寫得像是散文的結構，而且領域概念和實作程式碼相似，減少轉換錯誤。</p>
+<h3 id="11-簡單設計守則"><a href="#11-簡單設計守則" class="headerlink" title="(11)簡單設計守則"></a>(11)簡單設計守則</h3><ol>
 <li>執行完所有的測試</li>
 <li>程式重構<ol>
 <li>消除重複<ol>
 <li><span class="exturl" data-url="aHR0cDovL3d3dy5kb3RibG9ncy5jb20udHcvcGluMDUxMy9hcmNoaXZlLzIwMTAvMTAvMDMvMTgwNzIuYXNweA==">樣版方法(Template Method)<i class="fa fa-external-link-alt"></i></span></li>
+<li>過去十五年出現的大部份設計模式，都是在提供消除重複的策略</li>
+<li>Codd Normal Forms是用來消除資料庫綱要重複性的策略</li>
+<li>物件導向是用來組織模組和消除重複的策略</li>
 </ol>
 </li>
 <li>具表達力<ol>
@@ -762,8 +801,8 @@
 <h3 id="12-平行化"><a href="#12-平行化" class="headerlink" title="(12)平行化"></a>(12)平行化</h3><blockquote>
 <p>物件是處理過程的抽象化，執行緒是排程的抽象化</p>
 </blockquote>
-<p>將「做什麼」和「何時做」分解開來。</p>
-<p>缺點</p>
+<p>將「做什麼」和「何時做」分解開來，像是Web應用的Servlet模型<br>當獲得一個網頁請求時，Servlet會以非同步方式執行，不需要管理所有的請求，每一個servlet都在其自我的小小世界裡執行。</p>
+<p>缺點  </p>
 <ul>
 <li>需要修改程式碼/架構</li>
 <li>速度不一定變快(有overhead)</li>
@@ -772,9 +811,14 @@
 </ul>
 </li>
 </ul>
-<p>建議</p>
+<p>建議  </p>
 <ul>
 <li>將平行化的程式碼和其他程式碼分開</li>
+<li>保護資料<ul>
+<li>限制共享資料的存取次數<ul>
+<li>減少critical section的使用次數</li>
+</ul>
+</li>
 <li>限制資料的視野<ul>
 <li>mutex lock(c), synchronized(java)</li>
 <li>避免在一個共享物件上使用多個方法</li>
@@ -782,49 +826,77 @@
 </li>
 <li>使用資料的複本<ul>
 <li>由一個執行緒負責合併結果</li>
+<li>每個執行緒盡可能獨立運行</li>
 </ul>
 </li>
-<li>每個執行緒盡可能獨立運行<ul>
-<li>不共用資料</li>
-</ul>
-</li>
-<li>正確的關閉程式<ul>
-<li>防止deadlock</li>
 </ul>
 </li>
 <li>測試<ul>
 <li>偽造/產生失敗以測試</li>
+<li>讓平行化的程式可以開關平行化的功能</li>
 <li>在不同的平台測試</li>
-<li>執行比處理器數量還多的執行緒</li>
+<li>執行比處理器數量還多的執行緒<ul>
+<li>強迫進行task swapping</li>
+</ul>
+</li>
 <li>調整參數(執行緒數量、重複執行次數)</li>
+<li>正確的關閉程式<ul>
+<li>防止deadlock</li>
+</ul>
+</li>
 <li><span class="exturl" data-url="aHR0cDovL3d3dy5pYm0uY29tL2RldmVsb3BlcndvcmtzL2NuL2phdmEvai1jb250ZXN0Lmh0bWw=">用IBM contest找BUG<i class="fa fa-external-link-alt"></i></span><ul>
-<li>不一定會順順序執行</li>
+<li>不一定會照順序執行</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-<p>實作</p>
+<p>實作  </p>
 <ul>
-<li>ReentrantLock</li>
-<li>Semaphore</li>
-<li>CountDownLatch</li>
+<li>ReentrantLock<ul>
+<li>一般的鎖</li>
 </ul>
-<p>模型</p>
+</li>
+<li>Semaphore號誌<ul>
+<li>有計數功能的鎖</li>
+</ul>
+</li>
+<li>CountDownLatch<ul>
+<li>先等待指定數量的事件，使得所有的執行緒都有公平的機會，在同時間啟動</li>
+</ul>
+</li>
+</ul>
+<p>模型  </p>
 <ul>
-<li>生產-消費</li>
-<li>讀取-寫入</li>
-<li>哲學家用餐</li>
+<li>生產-消費<ul>
+<li>有限資源</li>
+<li>生產者放工作入queue</li>
+<li>消費者取出工作</li>
+</ul>
+</li>
+<li>讀取-寫入<ul>
+<li>平衡reader和writer的需求，避免某一方飢餓(starvation)</li>
+<li>簡單方法：writer等到沒有reader使用時再write<ul>
+<li>writer容易starve</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>哲學家用餐<ul>
+<li>雙手都拿到刀叉時才能用餐</li>
+<li>大程式的資源爭奪問題</li>
+</ul>
+</li>
 </ul>
 <h3 id="13-程式碼的異味"><a href="#13-程式碼的異味" class="headerlink" title="(13) 程式碼的異味"></a>(13) 程式碼的異味</h3><blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
-            <p>聖人見微以知萌，見端以知末，故見象箸而怖，知天下不足也。<br>韓非子．說林上</p>
+            <p>聖人見微以知萌，見端以知末，故見象箸而怖，知天下不足也。<br>韓非子．說林上 </p>
 
             <i class="fa fa-quote-right"></i>
           </blockquote>
 
 <p><span class="exturl" data-url="aHR0cHM6Ly96aC53aWtpcGVkaWEub3JnL3dpa2kvJUU0JUJCJUEzJUU3JUEwJTgxJUU1JUJDJTgyJUU1JTkxJUIz">Code Smell<i class="fa fa-external-link-alt"></i></span>:</p>
-<p>程式碼中的任何可能導致深層問題的<strong>症狀</strong>(之前重複的就不列了)</p>
+<p>程式碼中的任何可能導致深層問題的<strong>症狀</strong>(之前重複的就不列了)  </p>
 <ol>
 <li>一份檔案有多種程式語言</li>
 <li>明顯該有的行為未實現</li>
@@ -837,11 +909,11 @@
 </li>
 <li>無視編譯器警告</li>
 <li>否定的判斷式<ol>
-<li><code>if(!buffer.isFull())</code> → <code>if(buffer.isNotFull())</code></li>
+<li>改善 <code>if(!buffer.isFull())</code> → <code>if(buffer.isNotFull())</code></li>
 </ol>
 </li>
 <li>沒有封裝條件判斷<ol>
-<li><code>if(timer.hasExpired &amp;&amp; !timer.isRecurrent())</code>→ <code>if(shouldBeDeleted(timer))</code></li>
+<li>改善 <code>if(timer.hasExpired &amp;&amp; !timer.isRecurrent())</code>→ <code>if(shouldBeDeleted(timer))</code></li>
 </ol>
 </li>
 <li>過多的資訊(↔ 資料隱藏)<ol>
@@ -858,9 +930,10 @@
 <li>有時候是必要之惡：放入別的物件會違反其他OOP的原則(此例：單一職責、開放閉合原則等)</li>
 </ol>
 </li>
-<li>隱藏執行順序的耦合(temporal coupling)</li>
+<li>隱藏執行順序的耦合(temporal coupling)   </li>
 </ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//feature envy</span></span><br><span class="line"><span class="keyword">public</span> clas HourlyEmployeeReport&#123;</span><br><span class="line">	<span class="keyword">private</span> HourlyEmployee employee;</span><br><span class="line"></span><br><span class="line">	<span class="function">String <span class="title">reportHours</span><span class="params">()</span></span>&#123;</span><br><span class="line">		<span class="keyword">return</span> String.Format(</span><br><span class="line">			<span class="string">"Name:%s, Hours:%d.%ld\n"</span>,</span><br><span class="line">			employee.getName(),</span><br><span class="line">			employee.getTenthsWorked()/<span class="number">10</span>,</span><br><span class="line">			employee.getTenthsWorked()%<span class="number">10</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//temporal coupling</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">buyFoodFromMarket</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="comment">//you may forget one of this function when you create new method, like buyFoodFromShop()</span></span><br><span class="line">	prepareCar();</span><br><span class="line">	gotoMarket();</span><br><span class="line">	buyFood();</span><br><span class="line">	goHome();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">NEW_buyFoodFromMarket</span><span class="params">()</span></span>&#123;</span><br><span class="line">	car = prepareCar();<span class="comment">//expose the temporal coupling</span></span><br><span class="line">	market = gotoMarket(car);</span><br><span class="line">	food = buyFood(market);</span><br><span class="line">	goHome(food);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>用萬用字元來避免冗長的引入列表</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//feature envy</span></span><br><span class="line"><span class="keyword">public</span> clas HourlyEmployeeReport&#123;</span><br><span class="line">	<span class="keyword">private</span> HourlyEmployee employee;</span><br><span class="line">	</span><br><span class="line">	<span class="function">String <span class="title">reportHours</span><span class="params">()</span></span>&#123;</span><br><span class="line">		<span class="keyword">return</span> String.Format(</span><br><span class="line">			<span class="string">"Name:%s, Hours:%d.%ld\n"</span>,</span><br><span class="line">			employee.getName(),</span><br><span class="line">			employee.getTenthsWorked()/<span class="number">10</span>,</span><br><span class="line">			employee.getTenthsWorked()%<span class="number">10</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//temporal coupling</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">buyFoodFromMarket</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="comment">//you may forget one of this function when you create new method, like buyFoodFromShop()</span></span><br><span class="line">	prepareCar();</span><br><span class="line">	gotoMarket();</span><br><span class="line">	buyFood();</span><br><span class="line">	goHome();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">NEW_buyFoodFromMarket</span><span class="params">()</span></span>&#123;</span><br><span class="line">	car = prepareCar();<span class="comment">//expose the temporal coupling</span></span><br><span class="line">	market = gotoMarket(car);</span><br><span class="line">	food = buyFood(market);</span><br><span class="line">	goHome(food);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="進階閱讀"><a href="#進階閱讀" class="headerlink" title="進階閱讀"></a>進階閱讀</h2><ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly9tc2RuLm1pY3Jvc29mdC5jb20vemgtdHcvbGlicmFyeS9kbjM4NzU2OC5hc3B4">30天快速上手 TDD<i class="fa fa-external-link-alt"></i></span></li>
@@ -878,7 +951,7 @@
   <div class="popular-posts-header">相關文章</div>
   <ul class="popular-posts">
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/MLfoundation1/" rel="bookmark">機器學習基石(上)</a></div>
+      <div class="popular-posts-title"><a href="/MLtechnique/" rel="bookmark">機器學習技法</a></div>
     </li>
   </ul>
 
@@ -891,11 +964,6 @@
           </div>
 
         
-  <div class="post-widgets">
-    <div class="wp_rating">
-      <div id="wpac-rating"></div>
-    </div>
-  </div>
 
 
         
@@ -973,7 +1041,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Chap01-動機"><span class="nav-number">1.</span> <span class="nav-text">Chap01 動機</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chap02-Clean-Code-的定義"><span class="nav-number">2.</span> <span class="nav-text">Chap02 Clean Code 的定義</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chap03-原則"><span class="nav-number">3.</span> <span class="nav-text">Chap03 原則</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-有意義的命名"><span class="nav-number">3.1.</span> <span class="nav-text">(1)有意義的命名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-函式"><span class="nav-number">3.2.</span> <span class="nav-text">(2)函式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-註解"><span class="nav-number">3.3.</span> <span class="nav-text">(3)註解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-排版"><span class="nav-number">3.4.</span> <span class="nav-text">(4)排版</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-物件及資料結構"><span class="nav-number">3.5.</span> <span class="nav-text">(5)物件及資料結構</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-錯誤處理"><span class="nav-number">3.6.</span> <span class="nav-text">(6)錯誤處理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-邊界"><span class="nav-number">3.7.</span> <span class="nav-text">(7)邊界</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-單元測試"><span class="nav-number">3.8.</span> <span class="nav-text">(8)單元測試</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-類別"><span class="nav-number">3.9.</span> <span class="nav-text">(9)類別</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-系統"><span class="nav-number">3.10.</span> <span class="nav-text">(10)系統</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#剖面範例"><span class="nav-number">3.10.1.</span> <span class="nav-text">剖面範例</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-結論：簡單設計守則"><span class="nav-number">3.11.</span> <span class="nav-text">(11)結論：簡單設計守則</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-平行化"><span class="nav-number">3.12.</span> <span class="nav-text">(12)平行化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-程式碼的異味"><span class="nav-number">3.13.</span> <span class="nav-text">(13) 程式碼的異味</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#進階閱讀"><span class="nav-number">4.</span> <span class="nav-text">進階閱讀</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Chap01-動機"><span class="nav-number">1.</span> <span class="nav-text">Chap01 動機</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chap02-Clean-Code-的定義"><span class="nav-number">2.</span> <span class="nav-text">Chap02 Clean Code 的定義</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chap03-原則"><span class="nav-number">3.</span> <span class="nav-text">Chap03 原則</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-有意義的命名"><span class="nav-number">3.1.</span> <span class="nav-text">(1)有意義的命名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-函式"><span class="nav-number">3.2.</span> <span class="nav-text">(2)函式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-註解"><span class="nav-number">3.3.</span> <span class="nav-text">(3)註解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-排版"><span class="nav-number">3.4.</span> <span class="nav-text">(4)排版</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-物件及資料結構"><span class="nav-number">3.5.</span> <span class="nav-text">(5)物件及資料結構</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-錯誤處理"><span class="nav-number">3.6.</span> <span class="nav-text">(6)錯誤處理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-邊界"><span class="nav-number">3.7.</span> <span class="nav-text">(7)邊界</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-單元測試"><span class="nav-number">3.8.</span> <span class="nav-text">(8)單元測試</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-類別"><span class="nav-number">3.9.</span> <span class="nav-text">(9)類別</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-系統"><span class="nav-number">3.10.</span> <span class="nav-text">(10)系統</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#剖面範例"><span class="nav-number">3.10.1.</span> <span class="nav-text">剖面範例</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-簡單設計守則"><span class="nav-number">3.11.</span> <span class="nav-text">(11)簡單設計守則</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-平行化"><span class="nav-number">3.12.</span> <span class="nav-text">(12)平行化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-程式碼的異味"><span class="nav-number">3.13.</span> <span class="nav-text">(13) 程式碼的異味</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#進階閱讀"><span class="nav-number">4.</span> <span class="nav-text">進階閱讀</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -989,20 +1057,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">35</span>
+          <span class="site-state-item-count">48</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">分類</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">53</span>
+        <span class="site-state-item-count">90</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -1060,7 +1128,7 @@
 <div class="copyright">
   
   &copy; 2014 – 
-  <span itemprop="copyrightYear">2020</span>
+  <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fab fa-free-code-camp"></i>
   </span>
@@ -1070,13 +1138,7 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">總字數：</span>
-    <span title="總字數">338k</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-coffee"></i>
-    </span>
-      <span class="post-meta-item-text">所需總閱讀時間 &asymp;</span>
-    <span title="所需總閱讀時間">6:50</span>
+    <span title="總字數">434k</span>
 </div>
   <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
   </div>
@@ -1279,26 +1341,6 @@ window.addEventListener('pjax:success', () => {
 
 
 
-  <script data-pjax>
-  if (CONFIG.page.isPost) {
-    wpac_init = window.wpac_init || [];
-    wpac_init.push({
-      widget: 'Rating',
-      id    : 24895,
-      el    : 'wpac-rating',
-      color : 'fc6423'
-    });
-    (function() {
-      if ('WIDGETPACK_LOADED' in window) return;
-      WIDGETPACK_LOADED = true;
-      var mc = document.createElement('script');
-      mc.type = 'text/javascript';
-      mc.async = true;
-      mc.src = '//embed.widgetpack.com/widget.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
-    })();
-  }
-  </script>
 
   
 <script src="/js/local-search.js"></script>
@@ -1387,16 +1429,6 @@ window.addEventListener('pjax:success', () => {
       });
   </script>
 
-<script>
-  function loadCount() {
-    var d = document, s = d.createElement('script');
-    s.src = 'https://disqusforqwerty.disqus.com/count.js';
-    s.id = 'dsq-count-scr';
-    (d.head || d.body).appendChild(s);
-  }
-  // defer loading until the whole page loading is completed
-  window.addEventListener('load', loadCount, false);
-</script>
 <script>
   var disqus_config = function() {
     this.page.url = "http://gitqwerty777.github.io/cleancode/";

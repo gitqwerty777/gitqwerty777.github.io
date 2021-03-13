@@ -135,7 +135,7 @@
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類<span class="badge">4</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類<span class="badge">5</span></a>
 
   </li>
         <li class="menu-item menu-item-about">
@@ -145,12 +145,12 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤<span class="badge">53</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤<span class="badge">90</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔<span class="badge">35</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔<span class="badge">48</span></a>
 
   </li>
         <li class="menu-item menu-item-reading">
@@ -211,7 +211,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/linux-tips/">
+    <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/makefile/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/img/qwerty.png">
@@ -225,7 +225,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/linux-tips/" class="post-title-link" itemprop="url">Linux相關心得</a>
+            <a href="/makefile/" class="post-title-link" itemprop="url">建立Makefile</a>
         </h2>
 
         <div class="post-meta">
@@ -235,60 +235,32 @@
               </span>
               <span class="post-meta-item-text">發表於</span>
 
-              <time title="創建時間：2014-06-18 02:39:48" itemprop="dateCreated datePublished" datetime="2014-06-18T02:39:48-07:00">2014-06-18</time>
+              <time title="創建時間：2015-02-22 23:31:44" itemprop="dateCreated datePublished" datetime="2015-02-22T23:31:44-08:00">2015-02-22</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2017-04-14 04:29:28" itemprop="dateModified" datetime="2017-04-14T04:29:28-07:00">2017-04-14</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分類於</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%A8%98%E9%8C%84/" itemprop="url" rel="index"><span itemprop="name">記錄</span></a>
+                  <a href="/categories/%E8%BD%89%E8%BC%89/" itemprop="url" rel="index"><span itemprop="name">轉載</span></a>
                 </span>
             </span>
 
           
-            <span id="/linux-tips/" class="post-meta-item leancloud_visitors" data-flag-title="Linux相關心得" title="閱讀次數">
+            <span id="/makefile/" class="post-meta-item leancloud_visitors" data-flag-title="建立Makefile" title="閱讀次數">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
               <span class="post-meta-item-text">閱讀次數：</span>
               <span class="leancloud-visitors-count"></span>
             </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus：</span>
-    
-    <a title="disqus" href="/linux-tips/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="linux-tips/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
             <span class="post-meta-item" title="文章字數">
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">文章字數：</span>
-              <span>2.4k</span>
-            </span>
-            <span class="post-meta-item" title="所需閱讀時間">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">所需閱讀時間 &asymp;</span>
-              <span>3 分鐘</span>
+              <span>3.2k</span>
             </span>
 
         </div>
@@ -300,13 +272,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="VMware錯誤"><a href="#VMware錯誤" class="headerlink" title="VMware錯誤"></a>VMware錯誤</h2><h3 id="Error-while-powering-on-internal-error"><a href="#Error-while-powering-on-internal-error" class="headerlink" title="Error while powering on:internal error"></a>Error while powering on:internal error</h3><p>當VMware開著的時候不正常關機會出現的錯誤</p>
-<p>法一、<a href="http://my01info.blogspot.tw/2014/05/vmware-player-error-while-powering.html" target="_blank" rel="noopener">刪除記憶體檔案</a><br>法二(推薦)、<a href="http://zhidao.baidu.com/question/174057404.html" target="_blank" rel="noopener">開啓VMware服務</a></p>
-<p>有時只有方法一有效，但方法二比較快</p>
-<h3 id="Error-while-opening-the-virtual-machine-Taking-ownership-of-this-virtual-machine-failed"><a href="#Error-while-opening-the-virtual-machine-Taking-ownership-of-this-virtual-machine-failed" class="headerlink" title="Error while opening the virtual machine: Taking ownership of this virtual machine failed"></a>Error while opening the virtual machine: Taking ownership of this virtual machine failed</h3><p><a href="https://communities.vmware.com/thread/181014" target="_blank" rel="noopener">刪除lck檔</a></p>
+          <p>此篇文章十分清楚易懂，可作為初學之用</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/linux-tips/#more" rel="contents">
+              <a class="btn" href="/makefile/#more" rel="contents">
                 閱讀全文 &raquo;
               </a>
             </div>
@@ -330,7 +299,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/install-boshiamy-in-linux-by-fcitx/">
+    <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/computer-network2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/img/qwerty.png">
@@ -344,7 +313,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/install-boshiamy-in-linux-by-fcitx/" class="post-title-link" itemprop="url">在Linux上使用fcitx安裝嘸蝦米</a>
+            <a href="/computer-network2/" class="post-title-link" itemprop="url">計算機網路(下)</a>
         </h2>
 
         <div class="post-meta">
@@ -354,60 +323,23 @@
               </span>
               <span class="post-meta-item-text">發表於</span>
 
-              <time title="創建時間：2014-06-16 06:26:33" itemprop="dateCreated datePublished" datetime="2014-06-16T06:26:33-07:00">2014-06-16</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2017-04-10 23:08:30" itemprop="dateModified" datetime="2017-04-10T23:08:30-07:00">2017-04-10</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分類於</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%A8%98%E9%8C%84/" itemprop="url" rel="index"><span itemprop="name">記錄</span></a>
-                </span>
+              <time title="創建時間：2015-01-12 21:34:59" itemprop="dateCreated datePublished" datetime="2015-01-12T21:34:59-08:00">2015-01-12</time>
             </span>
 
           
-            <span id="/install-boshiamy-in-linux-by-fcitx/" class="post-meta-item leancloud_visitors" data-flag-title="在Linux上使用fcitx安裝嘸蝦米" title="閱讀次數">
+            <span id="/computer-network2/" class="post-meta-item leancloud_visitors" data-flag-title="計算機網路(下)" title="閱讀次數">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
               <span class="post-meta-item-text">閱讀次數：</span>
               <span class="leancloud-visitors-count"></span>
             </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus：</span>
-    
-    <a title="disqus" href="/install-boshiamy-in-linux-by-fcitx/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="install-boshiamy-in-linux-by-fcitx/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
             <span class="post-meta-item" title="文章字數">
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">文章字數：</span>
-              <span>488</span>
-            </span>
-            <span class="post-meta-item" title="所需閱讀時間">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">所需閱讀時間 &asymp;</span>
-              <span>1 分鐘</span>
+              <span>7k</span>
             </span>
 
         </div>
@@ -419,15 +351,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <blockquote>
-<p>之前用過gcin, scim等輸入工具，發現對嘸蝦米的支援十分有限。fcitx預設即有嘸蝦米碼表，較為方便，安裝也比較簡單</p>
-</blockquote>
-<p>使用 ubuntu 12.04 32bit 測試</p>
-<h2 id="安裝fcitx輸入工具"><a href="#安裝fcitx輸入工具" class="headerlink" title="安裝fcitx輸入工具"></a>安裝fcitx輸入工具</h2><p><code>sudo apt-get install im-switch fcitx</code></p>
-<h2 id="安裝嘸蝦米於fcitx"><a href="#安裝嘸蝦米於fcitx" class="headerlink" title="安裝嘸蝦米於fcitx"></a>安裝嘸蝦米於fcitx</h2><p><code>sudo apt-get install fcitx-boshiamy</code></p>
+          <h2 id="Chap04-Network-Layer"><a href="#Chap04-Network-Layer" class="headerlink" title="Chap04 Network Layer"></a>Chap04 Network Layer</h2><p>transport layer: between two processes<br>network layer: between two hosts and router (may also involve intervening routers in case of VCs)</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/install-boshiamy-in-linux-by-fcitx/#more" rel="contents">
+              <a class="btn" href="/computer-network2/#more" rel="contents">
                 閱讀全文 &raquo;
               </a>
             </div>
@@ -451,7 +378,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/how-to-install-ubuntu-vmware-tool/">
+    <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/computer-architecture2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/img/qwerty.png">
@@ -465,7 +392,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/how-to-install-ubuntu-vmware-tool/" class="post-title-link" itemprop="url">在Ubuntu虛擬機上安裝vmware_tool</a>
+            <a href="/computer-architecture2/" class="post-title-link" itemprop="url">計算機結構(下)</a>
         </h2>
 
         <div class="post-meta">
@@ -475,60 +402,32 @@
               </span>
               <span class="post-meta-item-text">發表於</span>
 
-              <time title="創建時間：2014-06-16 05:59:38" itemprop="dateCreated datePublished" datetime="2014-06-16T05:59:38-07:00">2014-06-16</time>
+              <time title="創建時間：2014-11-25 20:50:00" itemprop="dateCreated datePublished" datetime="2014-11-25T20:50:00-08:00">2014-11-25</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2017-04-09 02:36:14" itemprop="dateModified" datetime="2017-04-09T02:36:14-07:00">2017-04-09</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分類於</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%A8%98%E9%8C%84/" itemprop="url" rel="index"><span itemprop="name">記錄</span></a>
+                  <a href="/categories/%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">筆記</span></a>
                 </span>
             </span>
 
           
-            <span id="/how-to-install-ubuntu-vmware-tool/" class="post-meta-item leancloud_visitors" data-flag-title="在Ubuntu虛擬機上安裝vmware_tool" title="閱讀次數">
+            <span id="/computer-architecture2/" class="post-meta-item leancloud_visitors" data-flag-title="計算機結構(下)" title="閱讀次數">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
               <span class="post-meta-item-text">閱讀次數：</span>
               <span class="leancloud-visitors-count"></span>
             </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus：</span>
-    
-    <a title="disqus" href="/how-to-install-ubuntu-vmware-tool/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="how-to-install-ubuntu-vmware-tool/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
             <span class="post-meta-item" title="文章字數">
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">文章字數：</span>
-              <span>55</span>
-            </span>
-            <span class="post-meta-item" title="所需閱讀時間">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">所需閱讀時間 &asymp;</span>
-              <span>1 分鐘</span>
+              <span>17k</span>
             </span>
 
         </div>
@@ -540,10 +439,22 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>VMware-tools是Vmware提供，用來增強虛擬顯卡和硬盤性能、以及同步虛擬機與主機時鐘的驅動程序</p>
+          <h2 id="Chap07-Pipelining-II"><a href="#Chap07-Pipelining-II" class="headerlink" title="Chap07 Pipelining (II)"></a>Chap07 Pipelining (II)</h2><p><img src="/img/CA/detect-and-forward.png" alt="detect and forward"><br>Data Dependence Detection<br>Hazard conditions:</p>
+<ul>
+<li>EX hazard<ul>
+<li>EX/MEM.RegisterRd = ID/EX.Register Rs or Rt </li>
+</ul>
+</li>
+<li>MEM hazard<ul>
+<li>MEM/WB.RegisterRd = ID/EX.RegisterRs or Rt</li>
+<li>Ex/MEM.RegisterRd != ID/Ex.RegisterRs(優先選EX)</li>
+</ul>
+</li>
+<li>RegWrite == true</li>
+<li>RegisterRd != $0
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/how-to-install-ubuntu-vmware-tool/#more" rel="contents">
+              <a class="btn" href="/computer-architecture2/#more" rel="contents">
                 閱讀全文 &raquo;
               </a>
             </div>
@@ -567,7 +478,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/big-number-library/">
+    <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/MLtechnique/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/img/qwerty.png">
@@ -581,7 +492,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/big-number-library/" class="post-title-link" itemprop="url">大數運算的函式庫—BigNumber.h</a>
+            <a href="/MLtechnique/" class="post-title-link" itemprop="url">機器學習技法</a>
         </h2>
 
         <div class="post-meta">
@@ -591,51 +502,32 @@
               </span>
               <span class="post-meta-item-text">發表於</span>
 
-              <time title="創建時間：2014-05-24 11:00:47" itemprop="dateCreated datePublished" datetime="2014-05-24T11:00:47-07:00">2014-05-24</time>
+              <time title="創建時間：2014-11-21 21:40:00" itemprop="dateCreated datePublished" datetime="2014-11-21T21:40:00-08:00">2014-11-21</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2017-04-09 02:36:14" itemprop="dateModified" datetime="2017-04-09T02:36:14-07:00">2017-04-09</time>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
               </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">筆記</span></a>
+                </span>
+            </span>
 
           
-            <span id="/big-number-library/" class="post-meta-item leancloud_visitors" data-flag-title="大數運算的函式庫—BigNumber.h" title="閱讀次數">
+            <span id="/MLtechnique/" class="post-meta-item leancloud_visitors" data-flag-title="機器學習技法" title="閱讀次數">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
               <span class="post-meta-item-text">閱讀次數：</span>
               <span class="leancloud-visitors-count"></span>
             </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus：</span>
-    
-    <a title="disqus" href="/big-number-library/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="big-number-library/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
             <span class="post-meta-item" title="文章字數">
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">文章字數：</span>
-              <span>223</span>
-            </span>
-            <span class="post-meta-item" title="所需閱讀時間">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">所需閱讀時間 &asymp;</span>
-              <span>1 分鐘</span>
+              <span>10k</span>
             </span>
 
         </div>
@@ -647,10 +539,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>因為在許多online judge的題目中，大數運算是很常見的題型之一， 所以就寫了一個可以簡單進行大數運算的函式庫。</p>
+          <ul>
+<li>尚未補圖</li>
+<li>從這裡開始我就不太行了…
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/big-number-library/#more" rel="contents">
+              <a class="btn" href="/MLtechnique/#more" rel="contents">
                 閱讀全文 &raquo;
               </a>
             </div>
@@ -674,7 +568,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/build-hexo-blog/">
+    <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/MLfoundation2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/img/qwerty.png">
@@ -688,7 +582,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/build-hexo-blog/" class="post-title-link" itemprop="url">用hexo建立一個部落格</a>
+            <a href="/MLfoundation2/" class="post-title-link" itemprop="url">機器學習基石(下)</a>
         </h2>
 
         <div class="post-meta">
@@ -698,60 +592,32 @@
               </span>
               <span class="post-meta-item-text">發表於</span>
 
-              <time title="創建時間：2014-05-22 23:54:21" itemprop="dateCreated datePublished" datetime="2014-05-22T23:54:21-07:00">2014-05-22</time>
+              <time title="創建時間：2014-10-31 15:45:45" itemprop="dateCreated datePublished" datetime="2014-10-31T15:45:45-07:00">2014-10-31</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2017-04-09 02:36:14" itemprop="dateModified" datetime="2017-04-09T02:36:14-07:00">2017-04-09</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分類於</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%A8%98%E9%8C%84/" itemprop="url" rel="index"><span itemprop="name">記錄</span></a>
+                  <a href="/categories/%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">筆記</span></a>
                 </span>
             </span>
 
           
-            <span id="/build-hexo-blog/" class="post-meta-item leancloud_visitors" data-flag-title="用hexo建立一個部落格" title="閱讀次數">
+            <span id="/MLfoundation2/" class="post-meta-item leancloud_visitors" data-flag-title="機器學習基石(下)" title="閱讀次數">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
               <span class="post-meta-item-text">閱讀次數：</span>
               <span class="leancloud-visitors-count"></span>
             </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus：</span>
-    
-    <a title="disqus" href="/build-hexo-blog/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="build-hexo-blog/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
             <span class="post-meta-item" title="文章字數">
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">文章字數：</span>
-              <span>2k</span>
-            </span>
-            <span class="post-meta-item" title="所需閱讀時間">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">所需閱讀時間 &asymp;</span>
-              <span>2 分鐘</span>
+              <span>7.8k</span>
             </span>
 
         </div>
@@ -763,13 +629,471 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <blockquote>
-<p>此為hexo2的時候寫的介紹，目前版本為hexo3，有部分不同，目前使用raytaylorism主題</p>
-</blockquote>
-<h2 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h2><p>hexo是一個可以使用<a href="http://markdown.tw/" target="_blank" rel="noopener">markdown</a>語法產生靜態頁面的部落格工具。<br>可以配合<a href="https://pages.github.com/" target="_blank" rel="noopener">github page</a>快速建立一個部落格。</p>
+          <p>Chap 9 ~ 12 -- How can machine learn?, Chap 13 ~ 16 -- How can machine learn better?</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/build-hexo-blog/#more" rel="contents">
+              <a class="btn" href="/MLfoundation2/">
+                閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/computer-gaming/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/img/qwerty.png">
+      <meta itemprop="name" content="HCL">
+      <meta itemprop="description" content="Programming | Computer Science | Thought">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="qwerty">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/computer-gaming/" class="post-title-link" itemprop="url">電腦對局理論</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2014-09-26 19:41:48" itemprop="dateCreated datePublished" datetime="2014-09-26T19:41:48-07:00">2014-09-26</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">筆記</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/computer-gaming/" class="post-meta-item leancloud_visitors" data-flag-title="電腦對局理論" title="閱讀次數">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">閱讀次數：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+            <span class="post-meta-item" title="文章字數">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">文章字數：</span>
+              <span>34k</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>個人認為在資訊系學到最好的課，此外講義內容也很詳細(目前只寫到第八章)</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/computer-gaming/">
+                閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/computer-network1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/img/qwerty.png">
+      <meta itemprop="name" content="HCL">
+      <meta itemprop="description" content="Programming | Computer Science | Thought">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="qwerty">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/computer-network1/" class="post-title-link" itemprop="url">計算機網路(上)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2014-09-24 21:43:59" itemprop="dateCreated datePublished" datetime="2014-09-24T21:43:59-07:00">2014-09-24</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">筆記</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/computer-network1/" class="post-meta-item leancloud_visitors" data-flag-title="計算機網路(上)" title="閱讀次數">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">閱讀次數：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+            <span class="post-meta-item" title="文章字數">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">文章字數：</span>
+              <span>20k</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="Chap01-Introduction"><a href="#Chap01-Introduction" class="headerlink" title="Chap01 Introduction"></a>Chap01 Introduction</h2><h3 id="Terminologies"><a href="#Terminologies" class="headerlink" title="Terminologies"></a>Terminologies</h3><p>connected computing devices     </p>
+<ul>
+<li>hosts: end systems<ul>
+<li>running network apps</li>
+<li>sends packets of data</li>
+<li>breaks message into smaller chunks, known as packets     </li>
+</ul>
+</li>
+<li>bandwidth: transmission rate<ul>
+<li>link capacity(maximum rate)</li>
+<li>link bandwidth(available rate)</li>
+</ul>
+</li>
+<li>Packet switches: forward packets(chunks of data) by routers and switches</li>
+<li><strong>protocols</strong>: define format, order of messages sent and received and actions taken on message transmission and receive<ul>
+<li>TCP, IP, HTTP, Skype, 802.11</li>
+</ul>
+</li>
+<li>Internet standards<ul>
+<li>RFC: Request for comments</li>
+<li>IETF: Internet Engineering Task Force<br><img src="/img/CN/UHFBvAO.png" alt=""></li>
+</ul>
+</li>
+<li>Internet<ul>
+<li><strong>network of networks</strong>  </li>
+<li><strong>Interconnected ISPs</strong>  </li>
+<li><strong>Infrastructure that provides services to applications</strong><ul>
+<li>Web, VoIP, email, games…  </li>
+</ul>
+</li>
+<li><strong>provides programming interface to apps</strong></li>
+</ul>
+</li>
+</ul>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/computer-network1/#more" rel="contents">
+                閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/computer-architecture1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/img/qwerty.png">
+      <meta itemprop="name" content="HCL">
+      <meta itemprop="description" content="Programming | Computer Science | Thought">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="qwerty">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/computer-architecture1/" class="post-title-link" itemprop="url">計算機結構(上)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2014-09-24 17:25:34" itemprop="dateCreated datePublished" datetime="2014-09-24T17:25:34-07:00">2014-09-24</time>
+            </span>
+
+          
+            <span id="/computer-architecture1/" class="post-meta-item leancloud_visitors" data-flag-title="計算機結構(上)" title="閱讀次數">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">閱讀次數：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+            <span class="post-meta-item" title="文章字數">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">文章字數：</span>
+              <span>16k</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="Chap01-Introduction"><a href="#Chap01-Introduction" class="headerlink" title="Chap01 Introduction"></a>Chap01 Introduction</h2><h3 id="What-can-we-learn"><a href="#What-can-we-learn" class="headerlink" title="What can we learn"></a>What can we learn</h3><ul>
+<li>How programs finally executed on hardware</li>
+<li>How to write an efficient program</li>
+<li>How hardware and software work well together</li>
+<li>How to improve hardware performance<br><img src="/img/CA/2N0mDJJ.png" alt="">
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/computer-architecture1/#more" rel="contents">
+                閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/mapreduce-introduction/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/img/qwerty.png">
+      <meta itemprop="name" content="HCL">
+      <meta itemprop="description" content="Programming | Computer Science | Thought">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="qwerty">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/mapreduce-introduction/" class="post-title-link" itemprop="url">mapreduce介紹</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2014-09-23 00:17:57" itemprop="dateCreated datePublished" datetime="2014-09-23T00:17:57-07:00">2014-09-23</time>
+            </span>
+
+          
+            <span id="/mapreduce-introduction/" class="post-meta-item leancloud_visitors" data-flag-title="mapreduce介紹" title="閱讀次數">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">閱讀次數：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+            <span class="post-meta-item" title="文章字數">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">文章字數：</span>
+              <span>30</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <iframe src="//www.slideshare.net/slideshow/embed_code/key/x7rg6YWRAvJgUX" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/wowow1231/introduction-of-mapreduce-45174278" title="Introduction of MapReduce" target="_blank">Introduction of MapReduce</a> </strong> from <strong><span class="exturl" data-url="aHR0cHM6Ly93d3cuc2xpZGVzaGFyZS5uZXQvd293b3cxMjMx">HCL<i class="fa fa-external-link-alt"></i></span></strong> </div>
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/regular-expression/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/img/qwerty.png">
+      <meta itemprop="name" content="HCL">
+      <meta itemprop="description" content="Programming | Computer Science | Thought">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="qwerty">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/regular-expression/" class="post-title-link" itemprop="url">正規表示式筆記</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2014-09-23 00:03:35" itemprop="dateCreated datePublished" datetime="2014-09-23T00:03:35-07:00">2014-09-23</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">筆記</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/regular-expression/" class="post-meta-item leancloud_visitors" data-flag-title="正規表示式筆記" title="閱讀次數">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">閱讀次數：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+            <span class="post-meta-item" title="文章字數">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">文章字數：</span>
+              <span>2.3k</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>此篇未提及部分請看參考資料</p>
+<h2 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h2><ul>
+<li>Regular Expressions 可簡稱為 regexp 、regex 或 RE  <ul>
+<li>常見的翻譯有 正規表示式(台灣)、正則表達式(中國)   </li>
+</ul>
+</li>
+<li>意譯為「字串樣版」，是處理 “有規律的文字檔” 的工具</li>
+<li>現在的標準已經被ISO(國際標準組織)批准和被Open Group組織認定(POSIX 1003.2)</li>
+</ul>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/regular-expression/#more" rel="contents">
                 閱讀全文 &raquo;
               </a>
             </div>
@@ -792,7 +1116,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left" aria-label="上一頁"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span>
+    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left" aria-label="上一頁"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right" aria-label="下一頁"></i></a>
   </nav>
 
 
@@ -860,20 +1184,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">35</span>
+          <span class="site-state-item-count">48</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">分類</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">53</span>
+        <span class="site-state-item-count">90</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -931,7 +1255,7 @@
 <div class="copyright">
   
   &copy; 2014 – 
-  <span itemprop="copyrightYear">2020</span>
+  <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fab fa-free-code-camp"></i>
   </span>
@@ -941,13 +1265,7 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">總字數：</span>
-    <span title="總字數">338k</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-coffee"></i>
-    </span>
-      <span class="post-meta-item-text">所需總閱讀時間 &asymp;</span>
-    <span title="所需總閱讀時間">6:50</span>
+    <span title="總字數">434k</span>
 </div>
   <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
   </div>
@@ -1150,26 +1468,6 @@ window.addEventListener('pjax:success', () => {
 
 
 
-  <script data-pjax>
-  if (CONFIG.page.isPost) {
-    wpac_init = window.wpac_init || [];
-    wpac_init.push({
-      widget: 'Rating',
-      id    : 24895,
-      el    : 'wpac-rating',
-      color : 'fc6423'
-    });
-    (function() {
-      if ('WIDGETPACK_LOADED' in window) return;
-      WIDGETPACK_LOADED = true;
-      var mc = document.createElement('script');
-      mc.type = 'text/javascript';
-      mc.async = true;
-      mc.src = '//embed.widgetpack.com/widget.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
-    })();
-  }
-  </script>
 
   
 <script src="/js/local-search.js"></script>
@@ -1248,16 +1546,6 @@ window.addEventListener('pjax:success', () => {
 
   
 
-<script>
-  function loadCount() {
-    var d = document, s = d.createElement('script');
-    s.src = 'https://disqusforqwerty.disqus.com/count.js';
-    s.id = 'dsq-count-scr';
-    (d.head || d.body).appendChild(s);
-  }
-  // defer loading until the whole page loading is completed
-  window.addEventListener('load', loadCount, false);
-</script>
 
     </div>
 </body>
