@@ -22,12 +22,12 @@
     var CONFIG = {"hostname":"gitqwerty777.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"flat"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":4,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
   </script>
 
-  <meta name="description" content="Chap01 IntroductionApplications of NLP Machine translation google translate   Speech recognition Siri   Smart input method ㄐㄅㄈㄏ → 加倍奉還   Sentiment(情感) analysis Informat ion retrieval Question Anwering">
+  <meta name="description" content="Chap01 IntroductionApplications of NLP Machine translation google translate   Speech recognition Siri   Smart input method ㄐㄅㄈㄏ → 加倍奉還   Sentiment(情感) analysis Information retrieval Question Anwering">
 <meta property="og:type" content="article">
 <meta property="og:title" content="自然語言處理(上)">
 <meta property="og:url" content="http://gitqwerty777.github.io/natural-language-processing/index.html">
 <meta property="og:site_name" content="qwerty">
-<meta property="og:description" content="Chap01 IntroductionApplications of NLP Machine translation google translate   Speech recognition Siri   Smart input method ㄐㄅㄈㄏ → 加倍奉還   Sentiment(情感) analysis Informat ion retrieval Question Anwering">
+<meta property="og:description" content="Chap01 IntroductionApplications of NLP Machine translation google translate   Speech recognition Siri   Smart input method ㄐㄅㄈㄏ → 加倍奉還   Sentiment(情感) analysis Information retrieval Question Anwering">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/NLP/overview.png">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/NLP/cfg.png">
@@ -119,7 +119,7 @@
 <meta property="og:image" content="http://gitqwerty777.github.io/img/NLP/cfKf6I3.png">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/NLP/Z8ftSRP.png">
 <meta property="article:published_time" content="2015-03-07T19:00:47.000Z">
-<meta property="article:modified_time" content="2021-03-13T18:36:52.126Z">
+<meta property="article:modified_time" content="2021-04-27T17:53:57.888Z">
 <meta property="article:author" content="HCL">
 <meta property="article:tag" content="自然語言處理">
 <meta property="article:tag" content="機器學習">
@@ -237,12 +237,12 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤<span class="badge">90</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤<span class="badge">97</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔<span class="badge">48</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔<span class="badge">50</span></a>
 
   </li>
         <li class="menu-item menu-item-reading">
@@ -378,7 +378,7 @@
 </ul>
 </li>
 <li>Sentiment(情感) analysis</li>
-<li>Informat ion retrieval</li>
+<li>Information retrieval</li>
 <li>Question Anwering<ul>
 <li>Turing Test</li>
 </ul>
@@ -391,18 +391,18 @@
 <li>Ambiguity(不明確性)<ul>
 <li><strong>The most important thing in NLP</strong></li>
 <li>Lexical(字辭)<ul>
-<li>current: noun or adjective</li>
-<li>bank (noun): money or river</li>
+<li><code>current</code>: noun or adjective</li>
+<li><code>bank</code> (noun): money or river</li>
 </ul>
 </li>
 <li>Syntactic(語法)<ul>
-<li>[saw [the boy] [in the park]]</li>
-<li>[saw [the boy in the park]]</li>
+<li><code>[saw [the boy] [in the park]]</code></li>
+<li><code>[saw [the boy in the park]]</code></li>
 </ul>
 </li>
 <li>Semantic(語義)<ul>
 <li>“John kissed his wife, and so did Sam”. (Sam kissed John’s wife or his own?)</li>
-<li>agent (施事)vs. patient(受事)</li>
+<li>agent(施事) vs. patient(受事)</li>
 </ul>
 </li>
 </ul>
@@ -413,9 +413,11 @@
 </ul>
 </li>
 <li>Robustness<ul>
-<li>change in domain</li>
-<li>網路語言：取材於方言俗語、各門外語、縮略語、諧音、甚至以符號合併以達至象形效果等等</li>
+<li>various domain</li>
+<li>網路語言：取材於方言俗語、各門外語、縮略語、諧音、甚至以符號合併以達至象形效果等等<ul>
 <li>emoticon(表情符號)</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -437,13 +439,13 @@
 </ul>
 </li>
 </ul>
-<h3 id="Models"><a href="#Models" class="headerlink" title="Models"></a>Models</h3><ul>
+<h3 id="Models"><a href="#Models" class="headerlink" title="Models"></a>Models</h3><p>用演算法來轉換文字結構，以產生最後結果   </p>
+<ul>
 <li>State machines</li>
 <li>Rule-based approaches</li>
 <li>Logical formalisms</li>
 <li>Probabilistic models</li>
 </ul>
-<p>用許多演算法來轉換文字結構，以產生最後結果   </p>
 <h3 id="Approaches"><a href="#Approaches" class="headerlink" title="Approaches"></a>Approaches</h3><p>NLP start from 1960, <strong>statictics method</strong> wins after 1995</p>
 <p>Rule-based approach</p>
 <ul>
@@ -459,9 +461,10 @@
 </li>
 <li>Disadvantages<ul>
 <li>Hard to maintain consistency (at different situation)</li>
-<li>Hard to handle uncertain knowledge (define uncertainty factor)</li>
-<li>Hard to deal with complex, irregular information</li>
-<li>Not easy to obtain high coverage (completeness) for a given domain</li>
+<li>Hard to handle uncertain knowledge (define uncertainty factor)<ul>
+<li>irregular information</li>
+</ul>
+</li>
 <li>Not easy to avoid redundancy</li>
 <li>Knowledge acquisition is time consuming</li>
 </ul>
@@ -471,21 +474,21 @@
 <ul>
 <li>Advantages<ul>
 <li>Knowledge acquisition can be automatically achieved by the computer</li>
-<li>Uncertain knowledge can be objectively quantified(未知的知識可被量化)</li>
+<li>Uncertain knowledge can be objectively quantified(知識可被量化)</li>
 <li><strong>Consistency and completeness</strong> are easy to obtain</li>
-<li><strong>Well established statistical theories and technique are available</strong></li>
+<li>Well established statistical theories and technique are available</li>
 </ul>
 </li>
 <li>Disadvantages<ul>
 <li>Generalization is poor for small-size database</li>
 <li>Unable to reasoning</li>
 <li>Hard to identify the effect of each parameter</li>
-<li>Prepare database is time consuming</li>
+<li>Build database is time consuming</li>
 </ul>
 </li>
 <li>Corpus<ul>
 <li>Brown Corpus (1M words),Birmingham Corpus (7.5M words), LOB Corpus (1M words), etc</li>
-<li>Corpora of special domains or style<ul>
+<li>Corpora(語料庫(複數)) of special domains or style<ul>
 <li>Newspaper, Bible, etc</li>
 </ul>
 </li>
@@ -506,7 +509,6 @@
 <p>Hybrid approach   </p>
 <ul>
 <li>Use rule-based approach when <ul>
-<li>Not easy to establish a large-size database</li>
 <li>there are rules that have good coverage<ul>
 <li>it can be governed by a small number of rules</li>
 </ul>
@@ -515,7 +517,7 @@
 </ul>
 </li>
 <li>Use corpus-based approach when<ul>
-<li>Knowledge needed to solve the problem is huge and intricate, not easy to acquire by human</li>
+<li>Knowledge needed to solve the problem is huge and intricate</li>
 <li>A good model or formulation exists</li>
 </ul>
 </li>
@@ -560,19 +562,19 @@
 <li>Morphology(詞性)</li>
 <li>Syntax(句構)</li>
 <li>Semantics(語義)</li>
-<li>Pragmatics(句子關聯)</li>
-<li>Discourse(篇章分析)</li>
+<li>Pragmatics(句子關聯，語用學)</li>
+<li>Discourse(篇章分析，話語)</li>
 </ul>
 <h3 id="Morphology-Structure-of-words"><a href="#Morphology-Structure-of-words" class="headerlink" title="Morphology(Structure of words)"></a>Morphology(Structure of words)</h3><ul>
 <li>part-of-speech(POS) tagging(詞性標註, lexical category)</li>
-<li>use morphological rule to find the roots of words<ul>
+<li>find the roots of words<ul>
 <li>e.g., going → go, cats → cat</li>
 </ul>
 </li>
 </ul>
 <h3 id="Syntax-structure-of-sentences"><a href="#Syntax-structure-of-sentences" class="headerlink" title="Syntax(structure of sentences)"></a>Syntax(structure of sentences)</h3><ul>
 <li>Context-Free Grammars(CFG) <img data-src="/img/NLP/cfg.png" alt="parse tree"></li>
-<li>Chomsky Normal Form<ul>
+<li>Chomsky Normal Form(CNF)<ul>
 <li>can only use following two rules <ol>
 <li>non-terminal → terminal</li>
 <li>non-terminal → non-terminal non-terminal </li>
@@ -1956,7 +1958,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">48</span>
+          <span class="site-state-item-count">50</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
@@ -1969,7 +1971,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">90</span>
+        <span class="site-state-item-count">97</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -2037,7 +2039,7 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">總字數：</span>
-    <span title="總字數">434k</span>
+    <span title="總字數">435k</span>
 </div>
   <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
   </div>
