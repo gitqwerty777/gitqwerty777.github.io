@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>QWERTY</title>
+  <icon>http://gitqwerty777.github.io/icon.png</icon>
+  <subtitle>Hello World!</subtitle>
+  <link href="http://gitqwerty777.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://gitqwerty777.github.io/"/>
+  <updated>2022-04-01T16:57:25.640Z</updated>
+  <id>http://gitqwerty777.github.io/</id>
+  
+  <author>
+    <name>HCL</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>簡報製作軟體比較</title>
+    <link href="http://gitqwerty777.github.io/how-to-make-slides/"/>
+    <id>http://gitqwerty777.github.io/how-to-make-slides/</id>
+    <published>2022-03-22T03:45:23.000Z</published>
+    <updated>2022-04-01T16:57:25.640Z</updated>
+    
+    
+    <summary type="html">此文介紹常用的簡報製作方式及比較</summary>
+    
+    
+    
+    <category term="心得" scheme="http://gitqwerty777.github.io/categories/%E5%BF%83%E5%BE%97/"/>
+    
+    
+    <category term="Markdown" scheme="http://gitqwerty777.github.io/tags/Markdown/"/>
+    
+    <category term="簡報" scheme="http://gitqwerty777.github.io/tags/%E7%B0%A1%E5%A0%B1/"/>
+    
+    <category term="軟體" scheme="http://gitqwerty777.github.io/tags/%E8%BB%9F%E9%AB%94/"/>
+    
+    <category term="PowerPoint" scheme="http://gitqwerty777.github.io/tags/PowerPoint/"/>
+    
+    <category term="Latex" scheme="http://gitqwerty777.github.io/tags/Latex/"/>
+    
+    <category term="JavaScript" scheme="http://gitqwerty777.github.io/tags/JavaScript/"/>
+    
+    <category term="CSS" scheme="http://gitqwerty777.github.io/tags/CSS/"/>
+    
+    <category term="Unity" scheme="http://gitqwerty777.github.io/tags/Unity/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>byobu指令和設定</title>
+    <link href="http://gitqwerty777.github.io/linux-screen-tmux-byobu/"/>
+    <id>http://gitqwerty777.github.io/linux-screen-tmux-byobu/</id>
+    <published>2022-02-21T10:00:45.000Z</published>
+    <updated>2022-04-01T16:57:25.640Z</updated>
+    
+    
+    <summary type="html">byobu是基於screen或tmux的一層操作介面，預設為基於tmux</summary>
+    
+    
+    
+    <category term="筆記" scheme="http://gitqwerty777.github.io/categories/%E7%AD%86%E8%A8%98/"/>
+    
+    
+    <category term="Linux" scheme="http://gitqwerty777.github.io/tags/Linux/"/>
+    
+    <category term="byobu" scheme="http://gitqwerty777.github.io/tags/byobu/"/>
+    
+    <category term="screen" scheme="http://gitqwerty777.github.io/tags/screen/"/>
+    
+    <category term="tmux" scheme="http://gitqwerty777.github.io/tags/tmux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Factorization Machines(FM) 和 Field-Aware Factorization Machine(FFM)：推薦系統中的瑞士軍刀</title>
+    <link href="http://gitqwerty777.github.io/factorization-machines/"/>
+    <id>http://gitqwerty777.github.io/factorization-machines/</id>
+    <published>2022-01-21T03:11:11.000Z</published>
+    <updated>2022-04-01T16:57:25.640Z</updated>
+    
+    
+    <summary type="html">FM速度快、容易實作，於2012~14年為業界主流模型</summary>
+    
+    
+    
+    <category term="筆記" scheme="http://gitqwerty777.github.io/categories/%E7%AD%86%E8%A8%98/"/>
+    
+    
+    <category term="推薦系統" scheme="http://gitqwerty777.github.io/tags/%E6%8E%A8%E8%96%A6%E7%B3%BB%E7%B5%B1/"/>
+    
+    <category term="FM" scheme="http://gitqwerty777.github.io/tags/FM/"/>
+    
+    <category term="FFM" scheme="http://gitqwerty777.github.io/tags/FFM/"/>
+    
+    <category term="SVM" scheme="http://gitqwerty777.github.io/tags/SVM/"/>
+    
+    <category term="Embedding" scheme="http://gitqwerty777.github.io/tags/Embedding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>隨機排序演算法實作</title>
+    <link href="http://gitqwerty777.github.io/why-linear-shuffle-works/"/>
+    <id>http://gitqwerty777.github.io/why-linear-shuffle-works/</id>
+    <published>2022-01-15T10:12:50.000Z</published>
+    <updated>2022-04-01T16:57:25.644Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;簡介&quot;&gt;&lt;a href=&quot;#簡介&quot; class=&quot;headerlink&quot; title=&quot;簡介&quot;&gt;&lt;/a&gt;簡介&lt;/h2&gt;&lt;p&gt;說到隨機排序(shuffle)演算法，最著名的肯定是Fisher–Yates，它是一個$O(N)$時間的演算法，偽碼如下&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="筆記" scheme="http://gitqwerty777.github.io/categories/%E7%AD%86%E8%A8%98/"/>
+    
+    
+    <category term="演算法" scheme="http://gitqwerty777.github.io/tags/%E6%BC%94%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="隨機排序" scheme="http://gitqwerty777.github.io/tags/%E9%9A%A8%E6%A9%9F%E6%8E%92%E5%BA%8F/"/>
+    
+    <category term="洗牌" scheme="http://gitqwerty777.github.io/tags/%E6%B4%97%E7%89%8C/"/>
+    
+    <category term="Fisher-Yates" scheme="http://gitqwerty777.github.io/tags/Fisher-Yates/"/>
+    
+    <category term="證明" scheme="http://gitqwerty777.github.io/tags/%E8%AD%89%E6%98%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>用IFTTT實作簡單的自動化</title>
+    <link href="http://gitqwerty777.github.io/ifttt/"/>
+    <id>http://gitqwerty777.github.io/ifttt/</id>
+    <published>2022-01-04T07:18:44.000Z</published>
+    <updated>2022-04-01T16:57:25.640Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;簡介&quot;&gt;&lt;a href=&quot;#簡介&quot; class=&quot;headerlink&quot; title=&quot;簡介&quot;&gt;&lt;/a&gt;簡介&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ifttt.com/&quot;&gt;IFTTT&lt;/a&gt;通過其他不同平台的條件來決定是否執行下一條命令。即對網路服務透過其他網路服務作出反應&lt;/li&gt;
+&lt;li&gt;IFTTT &amp;#x3D; “IF This Then ThaT”&lt;ul&gt;
+&lt;li&gt;If A Then B(當 A 就 B)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="心得" scheme="http://gitqwerty777.github.io/categories/%E5%BF%83%E5%BE%97/"/>
+    
+    
+    <category term="IFTTT" scheme="http://gitqwerty777.github.io/tags/IFTTT/"/>
+    
+    <category term="自動化" scheme="http://gitqwerty777.github.io/tags/%E8%87%AA%E5%8B%95%E5%8C%96/"/>
+    
+    <category term="備份" scheme="http://gitqwerty777.github.io/tags/%E5%82%99%E4%BB%BD/"/>
+    
+    <category term="webhook" scheme="http://gitqwerty777.github.io/tags/webhook/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Wide And Deep 論文簡介：快思慢想的神經網路版</title>
+    <link href="http://gitqwerty777.github.io/recommender-wide-and-deep/"/>
+    <id>http://gitqwerty777.github.io/recommender-wide-and-deep/</id>
+    <published>2021-12-20T07:18:44.000Z</published>
+    <updated>2022-04-01T16:57:25.644Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;簡介&quot;&gt;&lt;a href=&quot;#簡介&quot; class=&quot;headerlink&quot; title=&quot;簡介&quot;&gt;&lt;/a&gt;簡介&lt;/h2&gt;&lt;p&gt;Wide And Deep 模型由簡單的Wide模型和複雜的Deep模型組成&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="筆記" scheme="http://gitqwerty777.github.io/categories/%E7%AD%86%E8%A8%98/"/>
+    
+    
+    <category term="推薦系統" scheme="http://gitqwerty777.github.io/tags/%E6%8E%A8%E8%96%A6%E7%B3%BB%E7%B5%B1/"/>
+    
+    <category term="WideAndDeep" scheme="http://gitqwerty777.github.io/tags/WideAndDeep/"/>
+    
+    <category term="Google" scheme="http://gitqwerty777.github.io/tags/Google/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用revealJS + markdown 製作簡報</title>
+    <link href="http://gitqwerty777.github.io/revealjs-markdown/"/>
+    <id>http://gitqwerty777.github.io/revealjs-markdown/</id>
+    <published>2021-12-17T01:53:00.000Z</published>
+    <updated>2022-04-01T16:57:25.640Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;優點：減少排版時間、資料為純文字、版本控制容易&lt;/p&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="筆記" scheme="http://gitqwerty777.github.io/categories/%E7%AD%86%E8%A8%98/"/>
+    
+    
+    <category term="簡報" scheme="http://gitqwerty777.github.io/tags/%E7%B0%A1%E5%A0%B1/"/>
+    
+    <category term="revealJS" scheme="http://gitqwerty777.github.io/tags/revealJS/"/>
+    
+    <category term="markdown" scheme="http://gitqwerty777.github.io/tags/markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>觀察者模式(Observer Pattern)</title>
+    <link href="http://gitqwerty777.github.io/observer-pattern/"/>
+    <id>http://gitqwerty777.github.io/observer-pattern/</id>
+    <published>2020-11-21T07:00:00.000Z</published>
+    <updated>2022-04-01T16:57:25.640Z</updated>
+    
+    
+    <summary type="html">一對多的依賴關係，當物件狀態改變時，所有依賴者會被通知。</summary>
+    
+    
+    
+    <category term="心得" scheme="http://gitqwerty777.github.io/categories/%E5%BF%83%E5%BE%97/"/>
+    
+    
+    <category term="設計模式" scheme="http://gitqwerty777.github.io/tags/%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F/"/>
+    
+    <category term="觀察者" scheme="http://gitqwerty777.github.io/tags/%E8%A7%80%E5%AF%9F%E8%80%85/"/>
+    
+    <category term="訂閱" scheme="http://gitqwerty777.github.io/tags/%E8%A8%82%E9%96%B1/"/>
+    
+    <category term="委託" scheme="http://gitqwerty777.github.io/tags/%E5%A7%94%E8%A8%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>備忘錄模式(Mementos Pattern)</title>
+    <link href="http://gitqwerty777.github.io/mementos-pattern/"/>
+    <id>http://gitqwerty777.github.io/mementos-pattern/</id>
+    <published>2020-11-05T07:00:00.000Z</published>
+    <updated>2022-04-01T16:57:25.640Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/img/Other/morgana.png&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="心得" scheme="http://gitqwerty777.github.io/categories/%E5%BF%83%E5%BE%97/"/>
+    
+    
+    <category term="備份" scheme="http://gitqwerty777.github.io/tags/%E5%82%99%E4%BB%BD/"/>
+    
+    <category term="設計模式" scheme="http://gitqwerty777.github.io/tags/%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F/"/>
+    
+    <category term="備忘錄" scheme="http://gitqwerty777.github.io/tags/%E5%82%99%E5%BF%98%E9%8C%84/"/>
+    
+    <category term="存檔" scheme="http://gitqwerty777.github.io/tags/%E5%AD%98%E6%AA%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>漢字的異體字及其Unicode編碼</title>
+    <link href="http://gitqwerty777.github.io/unicode/"/>
+    <id>http://gitqwerty777.github.io/unicode/</id>
+    <published>2020-10-29T07:00:00.000Z</published>
+    <updated>2022-04-01T16:57:25.644Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;異體字&quot;&gt;&lt;a href=&quot;#異體字&quot; class=&quot;headerlink&quot; title=&quot;異體字&quot;&gt;&lt;/a&gt;異體字&lt;/h2&gt;&lt;p&gt;異體字為意思一樣、但寫法不同的字集合。&lt;br&gt;因為漢字在多個國家使用，每個國家的正式寫法不同，且在歷史中會出現字形改變的情形，自然字形也不同。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="筆記" scheme="http://gitqwerty777.github.io/categories/%E7%AD%86%E8%A8%98/"/>
+    
+    
+    <category term="漢字" scheme="http://gitqwerty777.github.io/tags/%E6%BC%A2%E5%AD%97/"/>
+    
+    <category term="中文" scheme="http://gitqwerty777.github.io/tags/%E4%B8%AD%E6%96%87/"/>
+    
+    <category term="異體字" scheme="http://gitqwerty777.github.io/tags/%E7%95%B0%E9%AB%94%E5%AD%97/"/>
+    
+    <category term="unicode" scheme="http://gitqwerty777.github.io/tags/unicode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C# 程式碼風格指南</title>
+    <link href="http://gitqwerty777.github.io/CSharp-codeconvension/"/>
+    <id>http://gitqwerty777.github.io/CSharp-codeconvension/</id>
+    <published>2020-10-22T07:00:00.000Z</published>
+    <updated>2022-04-01T16:57:25.640Z</updated>
+    
+    
+    <summary type="html">原文由微軟所寫，為官方指定的風格指南</summary>
+    
+    
+    
+    <category term="轉載" scheme="http://gitqwerty777.github.io/categories/%E8%BD%89%E8%BC%89/"/>
+    
+    
+    <category term="C#" scheme="http://gitqwerty777.github.io/tags/C/"/>
+    
+    <category term="CodingStyle" scheme="http://gitqwerty777.github.io/tags/CodingStyle/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在Linux系統中 節省硬碟和記憶體用量</title>
+    <link href="http://gitqwerty777.github.io/linux-save-memory-disk/"/>
+    <id>http://gitqwerty777.github.io/linux-save-memory-disk/</id>
+    <published>2020-10-15T07:46:00.000Z</published>
+    <updated>2022-04-01T16:57:25.640Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;最近發現 VM 和遠端主機的使用空間都太大了，找到一些相關處理方法&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="記錄" scheme="http://gitqwerty777.github.io/categories/%E8%A8%98%E9%8C%84/"/>
+    
+    
+    <category term="linux" scheme="http://gitqwerty777.github.io/tags/linux/"/>
+    
+    <category term="硬碟" scheme="http://gitqwerty777.github.io/tags/%E7%A1%AC%E7%A2%9F/"/>
+    
+    <category term="記憶體" scheme="http://gitqwerty777.github.io/tags/%E8%A8%98%E6%86%B6%E9%AB%94/"/>
+    
+    <category term="效能" scheme="http://gitqwerty777.github.io/tags/%E6%95%88%E8%83%BD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何當稱職的支語警察？</title>
+    <link href="http://gitqwerty777.github.io/foreign-language-police/"/>
+    <id>http://gitqwerty777.github.io/foreign-language-police/</id>
+    <published>2020-09-13T09:25:34.000Z</published>
+    <updated>2022-04-01T16:57:25.640Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/img/Other/foreign-terms-police.png&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;簡介&quot;&gt;&lt;a href=&quot;#簡介&quot; class=&quot;headerlink&quot; title=&quot;簡介&quot;&gt;&lt;/a&gt;簡介&lt;/h2&gt;&lt;p&gt;PTT 上常有支語警察&lt;/p&gt;
+&lt;p&gt;也常發現 google 翻譯的中文常常會&lt;a href=&quot;https://www.setn.com/News.aspx?NewsID=746793&quot;&gt;翻譯成中國慣用語&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;所以就寫了一個支語警察的網站：&lt;a href=&quot;/foreign-terms-police&quot;&gt;支語警察&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="心得" scheme="http://gitqwerty777.github.io/categories/%E5%BF%83%E5%BE%97/"/>
+    
+    
+    <category term="自然語言處理" scheme="http://gitqwerty777.github.io/tags/%E8%87%AA%E7%84%B6%E8%AA%9E%E8%A8%80%E8%99%95%E7%90%86/"/>
+    
+    <category term="外國用語" scheme="http://gitqwerty777.github.io/tags/%E5%A4%96%E5%9C%8B%E7%94%A8%E8%AA%9E/"/>
+    
+    <category term="萌典" scheme="http://gitqwerty777.github.io/tags/%E8%90%8C%E5%85%B8/"/>
+    
+    <category term="opencc" scheme="http://gitqwerty777.github.io/tags/opencc/"/>
+    
+    <category term="PTT" scheme="http://gitqwerty777.github.io/tags/PTT/"/>
+    
+    <category term="vuejs" scheme="http://gitqwerty777.github.io/tags/vuejs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>README 寫法</title>
+    <link href="http://gitqwerty777.github.io/art-of-readme/"/>
+    <id>http://gitqwerty777.github.io/art-of-readme/</id>
+    <published>2020-09-06T17:11:22.000Z</published>
+    <updated>2022-04-01T16:57:25.640Z</updated>
+    
+    
+    <summary type="html">編寫優秀的文件可以讓使用者不用閱讀原始碼就能理解你模組的精妙之處</summary>
+    
+    
+    
+    <category term="轉載" scheme="http://gitqwerty777.github.io/categories/%E8%BD%89%E8%BC%89/"/>
+    
+    
+    <category term="readme" scheme="http://gitqwerty777.github.io/tags/readme/"/>
+    
+    <category term="文件" scheme="http://gitqwerty777.github.io/tags/%E6%96%87%E4%BB%B6/"/>
+    
+    <category term="github" scheme="http://gitqwerty777.github.io/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vuejs 語法</title>
+    <link href="http://gitqwerty777.github.io/vuejs/"/>
+    <id>http://gitqwerty777.github.io/vuejs/</id>
+    <published>2020-09-06T06:50:12.000Z</published>
+    <updated>2022-04-01T16:57:25.640Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;因為mustache語法(雙大括號)會被判斷成render命令，改成全形符號&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;簡介&quot;&gt;&lt;a href=&quot;#簡介&quot; class=&quot;headerlink&quot; title=&quot;簡介&quot;&gt;&lt;/a&gt;簡介&lt;/h2&gt;&lt;p&gt;採用簡潔的模板語法來宣告式地將資料渲染進 DOM 的系統&lt;/p&gt;
+&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&amp;lt;!-- html part --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;id&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&amp;quot;app&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  ｛｛ message ｝｝&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//js part&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; app = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;title class_&quot;&gt;Vue&lt;/span&gt;(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;attr&quot;&gt;el&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&amp;#x27;#app&amp;#x27;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;attr&quot;&gt;data&lt;/span&gt;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attr&quot;&gt;message&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&amp;#x27;Hello Vue.js!&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attr&quot;&gt;todo&lt;/span&gt;: []&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;attr&quot;&gt;methods&lt;/span&gt;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attr&quot;&gt;reverseMessage&lt;/span&gt;: &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;variable language_&quot;&gt;this&lt;/span&gt;.&lt;span class=&quot;property&quot;&gt;message&lt;/span&gt; = &lt;span class=&quot;variable language_&quot;&gt;this&lt;/span&gt;.&lt;span class=&quot;property&quot;&gt;message&lt;/span&gt;.&lt;span class=&quot;title function_&quot;&gt;split&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&amp;#x27;&amp;#x27;&lt;/span&gt;).&lt;span class=&quot;title function_&quot;&gt;reverse&lt;/span&gt;().&lt;span class=&quot;title function_&quot;&gt;join&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&amp;#x27;&amp;#x27;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;在 html tag 中 加入&lt;code&gt;v-&lt;/code&gt;開頭的attributes以實作邏輯&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="筆記" scheme="http://gitqwerty777.github.io/categories/%E7%AD%86%E8%A8%98/"/>
+    
+    
+    <category term="vuejs" scheme="http://gitqwerty777.github.io/tags/vuejs/"/>
+    
+    <category term="javascript" scheme="http://gitqwerty777.github.io/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>自建網站方法</title>
+    <link href="http://gitqwerty777.github.io/simple-website-host/"/>
+    <id>http://gitqwerty777.github.io/simple-website-host/</id>
+    <published>2020-08-18T16:45:00.000Z</published>
+    <updated>2022-04-01T16:57:25.644Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;不用免費架站服務的理由&quot;&gt;&lt;a href=&quot;#不用免費架站服務的理由&quot; class=&quot;headerlink&quot; title=&quot;不用免費架站服務的理由&quot;&gt;&lt;/a&gt;不用免費架站服務的理由&lt;/h2&gt;&lt;p&gt;若只是要純粹建blog，用github page + &lt;a href=&quot;/build-hexo-blog/&quot;&gt;hexo&lt;/a&gt; 即可。&lt;/p&gt;
+&lt;p&gt;更簡單的方法就是用痞客邦、Blogger等免費部落格。&lt;/p&gt;
+&lt;p&gt;不過自架有以下優點&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="心得" scheme="http://gitqwerty777.github.io/categories/%E5%BF%83%E5%BE%97/"/>
+    
+    
+    <category term="hexo" scheme="http://gitqwerty777.github.io/tags/hexo/"/>
+    
+    <category term="blog" scheme="http://gitqwerty777.github.io/tags/blog/"/>
+    
+    <category term="markdown" scheme="http://gitqwerty777.github.io/tags/markdown/"/>
+    
+    <category term="amazon" scheme="http://gitqwerty777.github.io/tags/amazon/"/>
+    
+    <category term="webhost" scheme="http://gitqwerty777.github.io/tags/webhost/"/>
+    
+    <category term="ssl" scheme="http://gitqwerty777.github.io/tags/ssl/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python 之禪</title>
+    <link href="http://gitqwerty777.github.io/zen-of-python/"/>
+    <id>http://gitqwerty777.github.io/zen-of-python/</id>
+    <published>2020-08-17T16:45:00.000Z</published>
+    <updated>2022-04-01T16:57:25.644Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;import-this&quot;&gt;&lt;a href=&quot;#import-this&quot; class=&quot;headerlink&quot; title=&quot;import this&quot;&gt;&lt;/a&gt;import this&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;The Zen of Python, by Tim Peters&lt;br&gt; &lt;br&gt;Beautiful is better than ugly.&lt;br&gt;Explicit is better than implicit.&lt;br&gt;Simple is better than complex.&lt;br&gt;Complex is better than complicated.&lt;br&gt;Flat is better than nested.&lt;br&gt;Sparse is better than dense.&lt;br&gt;Readability counts.&lt;br&gt;Special cases aren’t special enough to break the rules.&lt;br&gt;Although practicality beats purity.&lt;br&gt;Errors should never pass silently.&lt;br&gt;Unless explicitly silenced.&lt;br&gt;In the face of ambiguity, refuse the temptation to guess.&lt;br&gt;There should be one– and preferably only one –obvious way to do it.&lt;br&gt;Although that way may not be obvious at first unless you’re Dutch.&lt;br&gt;Now is better than never.&lt;br&gt;Although never is often better than &lt;em&gt;right&lt;/em&gt; now.&lt;br&gt;If the implementation is hard to explain, it’s a bad idea.&lt;br&gt;If the implementation is easy to explain, it may be a good idea.&lt;br&gt;Namespaces are one honking great idea – let’s do more of those!&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="轉載" scheme="http://gitqwerty777.github.io/categories/%E8%BD%89%E8%BC%89/"/>
+    
+    
+    <category term="python" scheme="http://gitqwerty777.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>程式註解的常用標記</title>
+    <link href="http://gitqwerty777.github.io/comment-meaning/"/>
+    <id>http://gitqwerty777.github.io/comment-meaning/</id>
+    <published>2020-08-06T12:08:03.000Z</published>
+    <updated>2022-04-01T16:57:25.640Z</updated>
+    
+    
+    <summary type="html">TODO, FIXME, XXX, NOTE, HACK 的用法</summary>
+    
+    
+    
+    <category term="筆記" scheme="http://gitqwerty777.github.io/categories/%E7%AD%86%E8%A8%98/"/>
+    
+    
+    <category term="CodingStyle" scheme="http://gitqwerty777.github.io/tags/CodingStyle/"/>
+    
+    <category term="程式" scheme="http://gitqwerty777.github.io/tags/%E7%A8%8B%E5%BC%8F/"/>
+    
+    <category term="Todo" scheme="http://gitqwerty777.github.io/tags/Todo/"/>
+    
+    <category term="註解" scheme="http://gitqwerty777.github.io/tags/%E8%A8%BB%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SEO實作方法</title>
+    <link href="http://gitqwerty777.github.io/seo/"/>
+    <id>http://gitqwerty777.github.io/seo/</id>
+    <published>2020-08-03T13:52:12.000Z</published>
+    <updated>2022-04-01T16:57:25.644Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;hexo 都實作得差不多了，純整理&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;html-tag&quot;&gt;&lt;a href=&quot;#html-tag&quot; class=&quot;headerlink&quot; title=&quot;html tag&quot;&gt;&lt;/a&gt;html tag&lt;/h2&gt;&lt;h3 id=&quot;lt-title-gt&quot;&gt;&lt;a href=&quot;#lt-title-gt&quot; class=&quot;headerlink&quot; title=&quot;&amp;lt;title&amp;gt;&quot;&gt;&lt;/a&gt;&amp;lt;title&amp;gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;網頁的主題&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt;標記應該放在HTML文件的&lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;標記區段中</summary>
+    
+    
+    
+    <category term="筆記" scheme="http://gitqwerty777.github.io/categories/%E7%AD%86%E8%A8%98/"/>
+    
+    
+    <category term="SEO" scheme="http://gitqwerty777.github.io/tags/SEO/"/>
+    
+    <category term="google" scheme="http://gitqwerty777.github.io/tags/google/"/>
+    
+    <category term="html" scheme="http://gitqwerty777.github.io/tags/html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>reactjs 語法</title>
+    <link href="http://gitqwerty777.github.io/reactjs/"/>
+    <id>http://gitqwerty777.github.io/reactjs/</id>
+    <published>2020-07-29T06:50:12.000Z</published>
+    <updated>2022-04-01T16:57:25.640Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;JSX&quot;&gt;&lt;a href=&quot;#JSX&quot; class=&quot;headerlink&quot; title=&quot;JSX&quot;&gt;&lt;/a&gt;JSX&lt;/h2&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; element = &lt;span class=&quot;language-xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;hello&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;這個語法叫做 JSX，是一個 JavaScript 的語法擴充，會產生 &lt;strong&gt;React element&lt;/strong&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="筆記" scheme="http://gitqwerty777.github.io/categories/%E7%AD%86%E8%A8%98/"/>
+    
+    
+    <category term="reactjs" scheme="http://gitqwerty777.github.io/tags/reactjs/"/>
+    
+    <category term="javascript" scheme="http://gitqwerty777.github.io/tags/javascript/"/>
+    
+  </entry>
+  
+</feed>

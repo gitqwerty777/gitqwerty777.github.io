@@ -1,0 +1,34 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "QWERTY • All posts by \"備份\" tag",
+    "description": "Programming | Computer Science | Thought",
+    "home_page_url": "http://gitqwerty777.github.io",
+    "items": [
+        {
+            "id": "http://gitqwerty777.github.io/ifttt/",
+            "url": "http://gitqwerty777.github.io/ifttt/",
+            "title": "用IFTTT實作簡單的自動化",
+            "date_published": "2022-01-04T07:18:44.000Z",
+            "content_html": "<h2 id=\"簡介\"><a href=\"#簡介\" class=\"headerlink\" title=\"簡介\"></a>簡介</h2><ul>\n<li><span class=\"exturl\" data-url=\"aHR0cHM6Ly9pZnR0dC5jb20=\">IFTTT<i class=\"fa fa-external-link-alt\"></i></span>通過其他不同平台的條件來決定是否執行下一條命令。即對網路服務透過其他網路服務作出反應</li>\n<li>IFTTT = “IF This Then ThaT”<ul>\n<li>If A Then B(當 A 就 B)</li>\n</ul>\n</li>\n</ul>\n<a id=\"more\"></a>\n\n<h3 id=\"怎麼唸？\"><a href=\"#怎麼唸？\" class=\"headerlink\" title=\"怎麼唸？\"></a>怎麼唸？</h3><p>我都唸<code>IFTTT</code></p>\n<h2 id=\"支援的平台-節錄\"><a href=\"#支援的平台-節錄\" class=\"headerlink\" title=\"支援的平台(節錄)\"></a>支援的平台(節錄)</h2><ul>\n<li>android/ios<ul>\n<li>電量/電話/簡訊/拍照/地點</li>\n</ul>\n</li>\n<li>email</li>\n<li>社交<ul>\n<li>twitter</li>\n<li>facebook</li>\n<li>reddit</li>\n<li>telegram</li>\n<li>github</li>\n<li>discord</li>\n<li>line</li>\n</ul>\n</li>\n<li>RSS<ul>\n<li>feedly(付費)</li>\n<li>inoreader</li>\n<li>instapaper</li>\n</ul>\n</li>\n<li>筆記<ul>\n<li>onenote</li>\n<li>evernote</li>\n<li>pocket</li>\n<li>notion</li>\n</ul>\n</li>\n<li>影音<ul>\n<li>spotify</li>\n<li>youtube</li>\n</ul>\n</li>\n<li>工作<ul>\n<li>microsoft todo</li>\n<li>trello</li>\n</ul>\n</li>\n<li>Google<ul>\n<li>calendar</li>\n<li>drive</li>\n<li>sheet</li>\n<li>docs</li>\n</ul>\n</li>\n</ul>\n<!--\n## 例子：一天一次，隨機傳line訊息\n\n做不到，需要用line api\n-->\n\n<h2 id=\"例子\"><a href=\"#例子\" class=\"headerlink\" title=\"例子\"></a>例子</h2><ul>\n<li>把發在Facebook的一篇廢文同步發在Twitter <img data-src=\"/img/Other/ifttt1.png\" alt=\"\"></li>\n<li>將Youtube按讚的影片存到Onenote <img data-src=\"/img/Other/ifttt2.png\" alt=\"\"></li>\n<li>手機 簡訊/照片 備份到Discord <img data-src=\"/img/Other/ifttt3.png\" alt=\"\"></li>\n</ul>\n<h3 id=\"彈性較大的選擇\"><a href=\"#彈性較大的選擇\" class=\"headerlink\" title=\"彈性較大的選擇\"></a>彈性較大的選擇</h3><p>使用Email, RSS, Webhook可以支援更多平台</p>\n<p>例如某新聞網站支援RSS，可將其內容發送到支援IFTTT的所有平台</p>\n<ol>\n<li>Email<ul>\n<li>(if)傳送郵件到<code>trigger@applet.ifttt.com</code>，(then)…</li>\n</ul>\n</li>\n<li>RSS<ul>\n<li>(if)新RSS消息，(then)…</li>\n<li>參照<a href=\"/rss-social-network\">此篇</a></li>\n</ul>\n</li>\n<li>Webhook<ul>\n<li>可以用程式接收/傳送Webhook，大幅提升使用彈性</li>\n<li><span class=\"exturl\" data-url=\"aHR0cHM6Ly9pZnR0dC5jb20vbWFrZXJfd2ViaG9va3M=\">https://ifttt.com/maker_webhooks<i class=\"fa fa-external-link-alt\"></i></span> → Documentation</li>\n</ul>\n</li>\n</ol>\n<h2 id=\"心得\"><a href=\"#心得\" class=\"headerlink\" title=\"心得\"></a>心得</h2><ul>\n<li><code>If then</code> 的語法限制了使用的彈性<ul>\n<li>解法即為Webhook</li>\n</ul>\n</li>\n<li>許多平台為了<del>綁住用戶</del>保護資料不提供讀取API，使可用性降低，如line</li>\n<li>配合物聯網效果較好，如智慧音箱、掃地機器人<ul>\n<li>e.g., 回到家時(手機定位)，自動開燈(智慧燈泡)</li>\n</ul>\n</li>\n<li>若只需要讀取，RSS還是最佳選擇</li>\n<li>使用到的所有服務都需要提供很多權限</li>\n</ul>\n<h2 id=\"類似服務\"><a href=\"#類似服務\" class=\"headerlink\" title=\"類似服務\"></a>類似服務</h2><ul>\n<li><span class=\"exturl\" data-url=\"aHR0cHM6Ly96YXBpZXIuY29tLw==\">zapier<i class=\"fa fa-external-link-alt\"></i></span></li>\n<li><span class=\"exturl\" data-url=\"aHR0cHM6Ly9naXRodWIuY29tL2h1Z2lubi9odWdpbm4=\">huginn<i class=\"fa fa-external-link-alt\"></i></span></li>\n<li><span class=\"exturl\" data-url=\"aHR0cHM6Ly9hdXRvbWF0ZS5pby8=\">automate<i class=\"fa fa-external-link-alt\"></i></span></li>\n<li><span class=\"exturl\" data-url=\"aHR0cHM6Ly93d3cuaW50ZWdyb21hdC5jb20vZW4=\">integromat<i class=\"fa fa-external-link-alt\"></i></span></li>\n</ul>\n",
+            "tags": [
+                "IFTTT",
+                "自動化",
+                "備份",
+                "webhook"
+            ]
+        },
+        {
+            "id": "http://gitqwerty777.github.io/mementos-pattern/",
+            "url": "http://gitqwerty777.github.io/mementos-pattern/",
+            "title": "備忘錄模式(Mementos Pattern)",
+            "date_published": "2020-11-05T07:00:00.000Z",
+            "content_html": "<p><img data-src=\"/img/Other/morgana.png\" alt=\"\"></p>\n<a id=\"more\"></a>\n\n<h2 id=\"目標\"><a href=\"#目標\" class=\"headerlink\" title=\"目標\"></a>目標</h2><p>在不破壞封裝及單一職責原則的情況下創立/還原類別的備份。</p>\n<p>若要建立備份，簡單的方法是在類別內部建立<code>Save()</code>/<code>Load()</code>等方法，但會使類別多了備份的職責。<br>若在其他類別執行備份，則需要將想備份的資料設為public或設定Getter，破壞封裝。</p>\n<h2 id=\"架構\"><a href=\"#架構\" class=\"headerlink\" title=\"架構\"></a>架構</h2><p><img data-src=\"https://upload.wikimedia.org/wikipedia/commons/3/38/W3sDesign_Memento_Design_Pattern_UML.jpg?1615662505582\" alt=\"\"></p>\n<p>想法：Originator只產生Memento/使用Memento還原, 由Caretaker管理Memento</p>\n<ul>\n<li>Originator: 需要備份的類別，產生Memento並可用其還原<ul>\n<li><code>Memento CreateMemento()</code></li>\n<li><code>void RestoreFromMemento(Memento)</code></li>\n</ul>\n</li>\n<li>Memento: 儲存備份檔案的類別<ul>\n<li>純資料，不可變(immutable)</li>\n</ul>\n</li>\n<li>Caretaker: 管理備份的類別<ul>\n<li>呼叫 Originator 執行 備份/還原的操作</li>\n<li>管理備份<ul>\n<li>存讀檔，路徑</li>\n<li>管理多份備份</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<h2 id=\"實作\"><a href=\"#實作\" class=\"headerlink\" title=\"實作\"></a>實作</h2><!-- - Memento可以是interface或abstract class，以避免被Originator以外的類別修改 -->\n\n<ul>\n<li>Originator可以hold Caretaker reference使兩個物件的生命周期同步</li>\n</ul>\n<h2 id=\"分析\"><a href=\"#分析\" class=\"headerlink\" title=\"分析\"></a>分析</h2><p>缺點</p>\n<ul>\n<li>Memento會額外占用記憶體</li>\n</ul>\n<h2 id=\"用途\"><a href=\"#用途\" class=\"headerlink\" title=\"用途\"></a>用途</h2><ul>\n<li>備份/還原(存/讀檔)</li>\n</ul>\n<h2 id=\"其他\"><a href=\"#其他\" class=\"headerlink\" title=\"其他\"></a>其他</h2><p>單詞Memento有「印象」、「紀念」的意思，有同名電影譯為「記憶拼圖」，在Persona5譯為「印象空間」</p>\n<h2 id=\"參考資料\"><a href=\"#參考資料\" class=\"headerlink\" title=\"參考資料\"></a>參考資料</h2><ul>\n<li>Wiki</li>\n<li>Head-First Design Pattern</li>\n<li>大話設計模式</li>\n<li>設計模式與遊戲開發的完美結合</li>\n<li><span class=\"exturl\" data-url=\"aHR0cDovL3R3bWh0LmdpdGh1Yi5pby9ibG9nL3Bvc3RzL2Rlc2lnbi1wYXR0ZXJuL21lbWVudG8uaHRtbA==\">http://twmht.github.io/blog/posts/design-pattern/memento.html<i class=\"fa fa-external-link-alt\"></i></span></li>\n</ul>\n<!--TODO: 看三本書,補足 -->",
+            "tags": [
+                "設計模式",
+                "備份",
+                "備忘錄",
+                "存檔"
+            ]
+        }
+    ]
+}

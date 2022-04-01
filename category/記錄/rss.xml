@@ -1,0 +1,938 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>QWERTY • Posts by &#34;記錄&#34; category</title>
+        <link>http://gitqwerty777.github.io</link>
+        <description>Programming | Computer Science | Thought</description>
+        <language>zh-TW</language>
+        <pubDate>Thu, 15 Oct 2020 15:46:00 +0800</pubDate>
+        <lastBuildDate>Thu, 15 Oct 2020 15:46:00 +0800</lastBuildDate>
+        <category>C#</category>
+        <category>CodingStyle</category>
+        <category>Emacs</category>
+        <category>編輯器</category>
+        <category>CFR</category>
+        <category>電腦對局理論</category>
+        <category>指令</category>
+        <category>機器學習</category>
+        <category>perceptron</category>
+        <category>readme</category>
+        <category>文件</category>
+        <category>github</category>
+        <category>artificial intelligence</category>
+        <category>search</category>
+        <category>First-Order Logic</category>
+        <category>大數</category>
+        <category>程式</category>
+        <category>C++</category>
+        <category>Hexo</category>
+        <category>網誌</category>
+        <category>Markdown</category>
+        <category>CleanCode</category>
+        <category>重構</category>
+        <category>TDD</category>
+        <category>設計模式</category>
+        <category>CMake</category>
+        <category>Makefile</category>
+        <category>Linux</category>
+        <category>Todo</category>
+        <category>註解</category>
+        <category>經濟學</category>
+        <category>策略</category>
+        <category>競爭</category>
+        <category>博弈論</category>
+        <category>計算機結構</category>
+        <category>人工智慧</category>
+        <category>圍棋</category>
+        <category>象棋</category>
+        <category>蒙地卡羅</category>
+        <category>Alpha-Beta搜尋</category>
+        <category>強化學習</category>
+        <category>計算機網路</category>
+        <category>boost</category>
+        <category>函式庫</category>
+        <category>編譯</category>
+        <category>gcc</category>
+        <category>g++</category>
+        <category>clang</category>
+        <category>最佳化</category>
+        <category>推薦系統</category>
+        <category>FM</category>
+        <category>FFM</category>
+        <category>SVM</category>
+        <category>Embedding</category>
+        <category>自然語言處理</category>
+        <category>外國用語</category>
+        <category>萌典</category>
+        <category>opencc</category>
+        <category>PTT</category>
+        <category>vuejs</category>
+        <category>linux</category>
+        <category>c</category>
+        <category>compile</category>
+        <category>gdb</category>
+        <category>c語言</category>
+        <category>cpp</category>
+        <category>除錯</category>
+        <category>git</category>
+        <category>VMWare</category>
+        <category>虛擬機</category>
+        <category>IFTTT</category>
+        <category>自動化</category>
+        <category>備份</category>
+        <category>webhook</category>
+        <category>簡報</category>
+        <category>軟體</category>
+        <category>PowerPoint</category>
+        <category>Latex</category>
+        <category>JavaScript</category>
+        <category>CSS</category>
+        <category>Unity</category>
+        <category>fcitx</category>
+        <category>嘸蝦米</category>
+        <category>輸入法</category>
+        <category>硬碟</category>
+        <category>記憶體</category>
+        <category>效能</category>
+        <category>錯誤</category>
+        <category>makefile</category>
+        <category>備忘錄</category>
+        <category>存檔</category>
+        <category>統計</category>
+        <category>byobu</category>
+        <category>screen</category>
+        <category>tmux</category>
+        <category>reactjs</category>
+        <category>javascript</category>
+        <category>WideAndDeep</category>
+        <category>Google</category>
+        <category>觀察者</category>
+        <category>訂閱</category>
+        <category>委託</category>
+        <category>正規表示式(RegExp)</category>
+        <category>上下文無關文法(CFG)</category>
+        <category>hexo</category>
+        <category>blog</category>
+        <category>theme</category>
+        <category>feature</category>
+        <category>revealJS</category>
+        <category>markdown</category>
+        <category>rss</category>
+        <category>facebook</category>
+        <category>youtube</category>
+        <category>ptt</category>
+        <category>bilibili</category>
+        <category>pixiv</category>
+        <category>crawler</category>
+        <category>SEO</category>
+        <category>google</category>
+        <category>html</category>
+        <category>amazon</category>
+        <category>webhost</category>
+        <category>ssl</category>
+        <category>漢字</category>
+        <category>中文</category>
+        <category>異體字</category>
+        <category>unicode</category>
+        <category>unity</category>
+        <category>演算法</category>
+        <category>隨機排序</category>
+        <category>洗牌</category>
+        <category>Fisher-Yates</category>
+        <category>證明</category>
+        <category>python</category>
+        <item>
+            <guid isPermalink="true">http://gitqwerty777.github.io/linux-save-memory-disk/</guid>
+            <title>在Linux系統中 節省硬碟和記憶體用量</title>
+            <link>http://gitqwerty777.github.io/linux-save-memory-disk/</link>
+            <category>linux</category>
+            <category>硬碟</category>
+            <category>記憶體</category>
+            <category>效能</category>
+            <pubDate>Thu, 15 Oct 2020 15:46:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;最近發現 VM 和遠端主機的使用空間都太大了，找到一些相關處理方法&lt;/p&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+
+&lt;h2 id=&#34;硬碟用量&#34;&gt;&lt;a href=&#34;#硬碟用量&#34; class=&#34;headerlink&#34; title=&#34;硬碟用量&#34;&gt;&lt;/a&gt;硬碟用量&lt;/h2&gt;&lt;h3 id=&#34;檢查&#34;&gt;&lt;a href=&#34;#檢查&#34; class=&#34;headerlink&#34; title=&#34;檢查&#34;&gt;&lt;/a&gt;檢查&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;df -h&lt;/code&gt; 查看磁碟使用情形&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;df -i&lt;/code&gt; 檢查inode使用情形&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;du -sh&lt;/code&gt; 查看各資料夾用量&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;du -sh * | sort -nr&lt;/code&gt; 依序列出大檔案&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ls -a&lt;/code&gt; 顯示隱藏檔案(&lt;code&gt;.&lt;/code&gt;開頭的檔案)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dpkg-query -Wf &amp;#39;${Installed-Size}\t${Package}\n&amp;#39; | sort -n&lt;/code&gt; 顯示已安裝的的大package&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;wajig large&lt;/code&gt;&lt;!--  /lib/modules/&lt;kernel_release&gt;/extra/ --&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;apt&#34;&gt;&lt;a href=&#34;#apt&#34; class=&#34;headerlink&#34; title=&#34;apt&#34;&gt;&lt;/a&gt;apt&lt;/h3&gt;&lt;figure class=&#34;highlight dsconfig&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;string&#34;&gt;sudo &lt;/span&gt;&lt;span class=&#34;string&#34;&gt;apt &lt;/span&gt;&lt;span class=&#34;string&#34;&gt;autoremove&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;string&#34;&gt;sudo &lt;/span&gt;&lt;span class=&#34;string&#34;&gt;apt &lt;/span&gt;&lt;span class=&#34;string&#34;&gt;autoremove &lt;/span&gt;&lt;span class=&#34;built_in&#34;&gt;--purge&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# remove old kernels&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;string&#34;&gt;sudo &lt;/span&gt;&lt;span class=&#34;string&#34;&gt;apt &lt;/span&gt;&lt;span class=&#34;string&#34;&gt;clean &lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;# 清除 apt 快取&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&#34;git&#34;&gt;&lt;a href=&#34;#git&#34; class=&#34;headerlink&#34; title=&#34;git&#34;&gt;&lt;/a&gt;git&lt;/h3&gt;&lt;p&gt;&lt;code&gt;git gc --aggressive --prune=all&lt;/code&gt; 清理並壓縮 history&lt;/p&gt;
+&lt;h3 id=&#34;docker&#34;&gt;&lt;a href=&#34;#docker&#34; class=&#34;headerlink&#34; title=&#34;docker&#34;&gt;&lt;/a&gt;docker&lt;/h3&gt;&lt;p&gt;&lt;code&gt;docker builder prune&lt;/code&gt; 移除沒在使用的build&lt;/p&gt;
+&lt;h2 id=&#34;記憶體用量&#34;&gt;&lt;a href=&#34;#記憶體用量&#34; class=&#34;headerlink&#34; title=&#34;記憶體用量&#34;&gt;&lt;/a&gt;記憶體用量&lt;/h2&gt;&lt;h3 id=&#34;檢查-1&#34;&gt;&lt;a href=&#34;#檢查-1&#34; class=&#34;headerlink&#34; title=&#34;檢查&#34;&gt;&lt;/a&gt;檢查&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;free&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;硬碟容量換記憶體容量&#34;&gt;&lt;a href=&#34;#硬碟容量換記憶體容量&#34; class=&#34;headerlink&#34; title=&#34;硬碟容量換記憶體容量&#34;&gt;&lt;/a&gt;硬碟容量換記憶體容量&lt;/h3&gt;&lt;p&gt;當然，會比較慢&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cub3BlbmNsaS5jb20vbGludXgvbGludXgtYWRkLXN3YXA=&#34;&gt;使用 swap&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;CPU-用量&#34;&gt;&lt;a href=&#34;#CPU-用量&#34; class=&#34;headerlink&#34; title=&#34;CPU 用量&#34;&gt;&lt;/a&gt;CPU 用量&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;各process用量&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;top&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;htop&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;kill &amp;lt;pid&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://gitqwerty777.github.io/rss-social-network/</guid>
+            <title>使用RSS取代推薦演算法</title>
+            <link>http://gitqwerty777.github.io/rss-social-network/</link>
+            <category>rss</category>
+            <category>facebook</category>
+            <category>youtube</category>
+            <category>ptt</category>
+            <category>bilibili</category>
+            <category>pixiv</category>
+            <category>crawler</category>
+            <pubDate>Tue, 23 Jun 2020 10:33:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;RSS分析&#34;&gt;&lt;a href=&#34;#RSS分析&#34; class=&#34;headerlink&#34; title=&#34;RSS分析&#34;&gt;&lt;/a&gt;RSS分析&lt;/h2&gt;&lt;p&gt;優點&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;不會被推薦演算法&lt;strong&gt;影響閱讀喜好&lt;/strong&gt;或&lt;strong&gt;漏掉想看的內容&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;統一的閱讀體驗，且沒有廣告&lt;/li&gt;
+&lt;li&gt;統整多個網站的資訊，不需個別開啟&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;缺點&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;麻煩，較難使用(尤其是網站本身不提供rss的情形)&lt;/li&gt;
+&lt;li&gt;資訊過多，需要自己篩選&lt;/li&gt;
+&lt;li&gt;能看見的內容更依賴自己的選擇，需要自行打破同溫層&lt;/li&gt;
+&lt;/ol&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+
+&lt;h2 id=&#34;將網站轉換為rss&#34;&gt;&lt;a href=&#34;#將網站轉換為rss&#34; class=&#34;headerlink&#34; title=&#34;將網站轉換為rss&#34;&gt;&lt;/a&gt;將網站轉換為rss&lt;/h2&gt;&lt;p&gt;萬物皆可rss(by 爬蟲)&lt;/p&gt;
+&lt;p&gt;方法&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;自身擁有rss的網站&lt;ul&gt;
+&lt;li&gt;ptt各板&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5iYmMuY28udWsvemhvbmd3ZW4vdHJhZC9pbmRleC54bWw=&#34;&gt;bbc chinese&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;medium&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLnJzc2h1Yi5hcHAv&#34;&gt;rsshub&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;ul&gt;
+&lt;li&gt;twitter動態&lt;/li&gt;
+&lt;li&gt;bilibili動態&lt;/li&gt;
+&lt;li&gt;pixiv關注動態&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jaHJvbWUuZ29vZ2xlLmNvbS93ZWJzdG9yZS9kZXRhaWwvcnNzaHViLXJhZGFyL2tlZmpwZm5nbm5kZXBqYm9wZG1vZWJraXBiZ2tnZ2Fh&#34;&gt;rsshub radar&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;ul&gt;
+&lt;li&gt;chrome擴充功能，可檢查目前網頁是否有可用rss&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL1JTUy1CcmlkZ2UvcnNzLWJyaWRnZQ==&#34;&gt;rssbridge&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;ul&gt;
+&lt;li&gt;需自建服務&lt;/li&gt;
+&lt;li&gt;facebook fan page&lt;/li&gt;
+&lt;li&gt;youtube 頻道&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;閱讀器&#34;&gt;&lt;a href=&#34;#閱讀器&#34; class=&#34;headerlink&#34; title=&#34;閱讀器&#34;&gt;&lt;/a&gt;閱讀器&lt;/h2&gt;&lt;p&gt;目前使用 tiny tiny rss 搭配 rssowl&lt;/p&gt;
+&lt;h3 id=&#34;本地端軟體-windows&#34;&gt;&lt;a href=&#34;#本地端軟體-windows&#34; class=&#34;headerlink&#34; title=&#34;本地端軟體(windows)&#34;&gt;&lt;/a&gt;本地端軟體(windows)&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5yc3Nvd2wub3JnLw==&#34;&gt;rssowl&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9xdWl0ZXJzcy5vcmcv&#34;&gt;quiterss&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5mZWVkZGVtb24uY29tLw==&#34;&gt;feeddemon&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;線上服務&#34;&gt;&lt;a href=&#34;#線上服務&#34; class=&#34;headerlink&#34; title=&#34;線上服務&#34;&gt;&lt;/a&gt;線上服務&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9mZWVkbHkuY29tLw==&#34;&gt;feedly&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuaW5vcmVhZGVyLmNvbS8=&#34;&gt;inoreader&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;自建服務&#34;&gt;&lt;a href=&#34;#自建服務&#34; class=&#34;headerlink&#34; title=&#34;自建服務&#34;&gt;&lt;/a&gt;自建服務&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3R0cnNzLmhlbnJ5LndhbmcvemgvIyVFOSU4MyVBOCVFNyVCRCVCMg==&#34;&gt;tiny tiny rss&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0hlbnJ5UVcvQXdlc29tZS1UVFJTUy9pc3N1ZXMvMTk=&#34;&gt;需安裝nginx&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;備註&#34;&gt;&lt;a href=&#34;#備註&#34; class=&#34;headerlink&#34; title=&#34;備註&#34;&gt;&lt;/a&gt;備註&lt;/h2&gt;&lt;p&gt;許多線上服務也注意到推薦演算法的缺點，所以有「特別關注」的功能&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;/img/Other/rss-meme.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;使用心得&#34;&gt;&lt;a href=&#34;#使用心得&#34; class=&#34;headerlink&#34; title=&#34;使用心得&#34;&gt;&lt;/a&gt;使用心得&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;根據來源的重要性取捨&lt;ul&gt;
+&lt;li&gt;愈重要、含金量愈高的資訊來源愈需要用RSS訂閱的方法，其他娛樂性質的網站如社群網站或ptt就不太需要&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;可以了解自己的偏好&lt;ul&gt;
+&lt;li&gt;看久了就知道哪些網站來源是垃圾，哪些來源是寶藏，當然也需要手動增加/減少來源&lt;/li&gt;
+&lt;li&gt;若是推薦演算法，可能會把寶藏當垃圾，把沒用的資訊當寶&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;一個打破同溫層的方法是看熱門消息&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9yc3NodWIuYXBwL3poaWh1L2hvdGxpc3Q=&#34;&gt;知乎熱榜&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9yc3NodWIuYXBwL2dpdGh1Yi90cmVuZGluZy9kYWlseS9jJTIzL3poLXR3&#34;&gt;Github Trending&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;推薦閱讀&#34;&gt;&lt;a href=&#34;#推薦閱讀&#34; class=&#34;headerlink&#34; title=&#34;推薦閱讀&#34;&gt;&lt;/a&gt;推薦閱讀&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0b3J5L3Jzcy1yZWFkZXJzLWZlZWRseS1pbm9yZWFkZXItb2xkLXJlYWRlci8=&#34;&gt;是RSS復興的時候了(It’s Time for an RSS Revival)&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kaXlnb2QubWUvb2hteXJzcy8=&#34;&gt;DIYGod: 我有特別的 RSS 使用技巧&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kaXlnb2QubWUvZG93bmxvYWQtd2ViaG9vaw==&#34;&gt;DIYGod: 優雅地下載我的B站投幣視頻&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8zNTQ2NTU1MA==&#34;&gt;你的新聞 App 被推薦算法「毀」了，但 RSS 真的能拯救你嗎&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://gitqwerty777.github.io/unity5-tutorial-survival-shooter/</guid>
+            <title>Unity Tutorial - Survival Shooter 實作</title>
+            <link>http://gitqwerty777.github.io/unity5-tutorial-survival-shooter/</link>
+            <category>unity</category>
+            <pubDate>Tue, 21 Jul 2015 12:35:47 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;Version 5.1&lt;/p&gt;
+&lt;p&gt;Unity官網上的教學&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly91bml0eTNkLmNvbS9sZWFybi90dXRvcmlhbHMvcHJvamVjdHMvc3Vydml2YWwtc2hvb3Rlci1wcm9qZWN0&#34;&gt;Survival-Shooter-Project&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;實作&lt;/p&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+&lt;h2 id=&#34;Outline&#34;&gt;&lt;a href=&#34;#Outline&#34; class=&#34;headerlink&#34; title=&#34;Outline&#34;&gt;&lt;/a&gt;Outline&lt;/h2&gt;&lt;h2 id=&#34;記錄&#34;&gt;&lt;a href=&#34;#記錄&#34; class=&#34;headerlink&#34; title=&#34;記錄&#34;&gt;&lt;/a&gt;記錄&lt;/h2&gt;&lt;h3 id=&#34;Chap02&#34;&gt;&lt;a href=&#34;#Chap02&#34; class=&#34;headerlink&#34; title=&#34;Chap02&#34;&gt;&lt;/a&gt;Chap02&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Drag&lt;/code&gt;, &lt;code&gt;AngularDrag&lt;/code&gt;:&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2ZvcnVtcy5nYW1lc2FsYWQuY29tL2Rpc2N1c3Npb24vMzQzNjMvd2hhdHMtZHJhZy1hbmQtYW5ndWxhci1kcmFnLXVzZWQtZm9y&#34;&gt;阻力大小&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5jbmJsb2dzLmNvbS96aGlib2xpZmUvcC80MDE4NjIxLmh0bWw=&#34;&gt;角阻力&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;ul&gt;
+&lt;li&gt;設定Infinity會使移動完成(放開鍵盤)後立刻停止&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;GetComponent&amp;lt;T&amp;gt;&lt;/code&gt; Get type T component from this object&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Rigidbody&lt;/code&gt;(剛體)：屬於物理運動的物件&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy52aWN0c2FvLmNvbS9ibG9nLzk3LXVuaXR5LzQyMC11bml0eS11cGRhdGUtZml4dXBkYXRl&#34;&gt;Update 和 FixUpdate&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Anim.SetTrigger(String)&lt;/code&gt;: 啟動animator的trigger&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Input.GetAxisRaw(&amp;quot;Horizontal&amp;quot;);&lt;/code&gt;, &lt;code&gt;Input.GetAxisRaw(&amp;quot;Vertical&amp;quot;);&lt;/code&gt;：鍵盤輸入&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Input.mousePosition&lt;/code&gt;：滑鼠位置&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;floorHit&lt;/code&gt;：滑鼠對應到遊戲中地板的位置，用投影方式算出&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Quaternion&lt;/code&gt;：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL29wZW5ob21lLmNjL0dvc3NpcC9Db21wdXRlckdyYXBoaWNzL1F1YXRlcm5pb25zUm90YXRlLmh0bQ==&#34;&gt;四元數&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;，用來旋轉&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Chap03&#34;&gt;&lt;a href=&#34;#Chap03&#34; class=&#34;headerlink&#34; title=&#34;Chap03&#34;&gt;&lt;/a&gt;Chap03&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;offset = transform.position - target.position;&lt;/code&gt;: camera 和 player 的距離(固定)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Vector3.Lerp&lt;/code&gt;: 內插法移動至 player位置+offset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Chap04&#34;&gt;&lt;a href=&#34;#Chap04&#34; class=&#34;headerlink&#34; title=&#34;Chap04&#34;&gt;&lt;/a&gt;Chap04&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hitParticles&lt;/code&gt;: 屬於&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3NoaW5lbGl1YmxvZy5ibG9nc3BvdC50dy8yMDE0LzAxLzEzLXVuaXR5LTNkLXBhcnRpY2xlLXN5c3RlbS5odG1s&#34;&gt;ParticleSystem(粒子系統)&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;ul&gt;
+&lt;li&gt;被打的特效&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Nav Mesh Agent(尋路agent)&lt;ul&gt;
+&lt;li&gt;Use Windows → navigation to bake&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Chap05&#34;&gt;&lt;a href=&#34;#Chap05&#34; class=&#34;headerlink&#34; title=&#34;Chap05&#34;&gt;&lt;/a&gt;Chap05&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Handle Slide Area&lt;/code&gt;: 控制UI.Slide的移動，移除後無法變更Slide&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Chap07&#34;&gt;&lt;a href=&#34;#Chap07&#34; class=&#34;headerlink&#34; title=&#34;Chap07&#34;&gt;&lt;/a&gt;Chap07&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;OnTriggerEnter (Collider other)&lt;/code&gt; 被其他Collider碰到時自動呼叫&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;OnTriggerExit (Collider other)&lt;/code&gt; 離開&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;GetComponentInChildren&lt;/code&gt;: 可以拿child的object&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;GameObject.FindGameObjectWithTag (&amp;quot;Player&amp;quot;);&lt;/code&gt;: 拿取其他object&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;capsuleCollider.isTrigger = true;&lt;/code&gt;: 模擬被Trigger的情況 → 會依序呼叫&lt;code&gt;OnTriggerEnter&lt;/code&gt;，&lt;code&gt;OnTriggerExit&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Rigidbody.isKinematic = true;&lt;/code&gt;:使其得到物理性質(預設即有，只是之前關掉了)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Destroy (gameObject, 2f);&lt;/code&gt;: 在2秒後將呼叫者摧毀&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Input.GetButton(&amp;quot;Fire1&amp;quot;)&lt;/code&gt;: 滑鼠左鍵或left control&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;LineRenderer&lt;/code&gt;: 線渲染器渲染有寬度並可以被賦予貼圖的線，可設置顏色，寬度&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;gunLine.SetPosition((int) index, Vetor3 position)&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;依照index順序的端點畫出線&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;timer += Time.deltaTime&lt;/code&gt; in &lt;code&gt;Update&lt;/code&gt;: 計算經過時間&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Physics.Raycast((Ray)shootRay,(RayCastHit)out shootHit,(float)range,(int)shootableMask)&lt;/code&gt;: 計算shootHit(擊中的地方)，限制在shootableMask上&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;shootableMask = LayerMask.GetMask (&amp;quot;Shootable&amp;quot;);&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;transform.forward&lt;/code&gt;: 物體面對的方向&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Chap09&#34;&gt;&lt;a href=&#34;#Chap09&#34; class=&#34;headerlink&#34; title=&#34;Chap09&#34;&gt;&lt;/a&gt;Chap09&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;InvokeRepeating (&amp;quot;Spawn&amp;quot;, delayTime, loopTime);&lt;/code&gt;: Call “Spawn” function after delayTime and continue calling after loopTime&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Instantiate&lt;/code&gt;: 產生物件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Chap10&#34;&gt;&lt;a href=&#34;#Chap10&#34; class=&#34;headerlink&#34; title=&#34;Chap10&#34;&gt;&lt;/a&gt;Chap10&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;物件會照Hierarchy的順序render到螢幕&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Application.LoadLevel(Application.loadedLevel);&lt;/code&gt;: 重新載入此場景(scene)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;遇到的問題&#34;&gt;&lt;a href=&#34;#遇到的問題&#34; class=&#34;headerlink&#34; title=&#34;遇到的問題&#34;&gt;&lt;/a&gt;遇到的問題&lt;/h2&gt;&lt;h3 id=&#34;Chap02-1&#34;&gt;&lt;a href=&#34;#Chap02-1&#34; class=&#34;headerlink&#34; title=&#34;Chap02&#34;&gt;&lt;/a&gt;Chap02&lt;/h3&gt;&lt;p&gt;PlayerAC – 設定箭頭時要取消勾選&lt;code&gt;Has Exit Time&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;Chap04-1&#34;&gt;&lt;a href=&#34;#Chap04-1&#34; class=&#34;headerlink&#34; title=&#34;Chap04&#34;&gt;&lt;/a&gt;Chap04&lt;/h3&gt;&lt;p&gt;Bake: set Width Inaccuracy % to 1 – Unity5 找不到 → 不影響&lt;/p&gt;
+&lt;h3 id=&#34;Chap05-1&#34;&gt;&lt;a href=&#34;#Chap05-1&#34; class=&#34;headerlink&#34; title=&#34;Chap05&#34;&gt;&lt;/a&gt;Chap05&lt;/h3&gt;&lt;p&gt;CanvasGroup → 直接在 Add Component 處尋找&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://gitqwerty777.github.io/cpp-boost/</guid>
+            <title>C++ boost 簡單應用</title>
+            <link>http://gitqwerty777.github.io/cpp-boost/</link>
+            <category>C++</category>
+            <category>boost</category>
+            <category>函式庫</category>
+            <pubDate>Tue, 14 Jul 2015 15:18:44 +0800</pubDate>
+            <description><![CDATA[ &lt;!-- RENEW: --&gt;
+
+&lt;h2 id=&#34;簡介&#34;&gt;&lt;a href=&#34;#簡介&#34; class=&#34;headerlink&#34; title=&#34;簡介&#34;&gt;&lt;/a&gt;簡介&lt;/h2&gt;&lt;p&gt;C++的著名擴充函式庫&lt;/p&gt;
+&lt;p&gt;功能(節錄)：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;regex&lt;/li&gt;
+&lt;li&gt;function binding&lt;/li&gt;
+&lt;li&gt;lambda functions&lt;/li&gt;
+&lt;li&gt;unit tests&lt;/li&gt;
+&lt;li&gt;smart pointers&lt;/li&gt;
+&lt;li&gt;noncopyable, optional&lt;/li&gt;
+&lt;li&gt;serialization&lt;/li&gt;
+&lt;li&gt;generic dates&lt;/li&gt;
+&lt;li&gt;portable filesystem&lt;/li&gt;
+&lt;li&gt;circular buffers&lt;/li&gt;
+&lt;li&gt;config utils&lt;/li&gt;
+&lt;li&gt;generic image library&lt;/li&gt;
+&lt;li&gt;program options&lt;/li&gt;
+&lt;li&gt;threads&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5ib29zdC5vcmcvZG9jL2xpYnMvMV81OF8wL2xpYnMvbGlicmFyaWVzLmh0bQ==&#34;&gt;所有功能&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+
+&lt;p&gt;安裝：&lt;code&gt;sudo apt-get install libboost-all-dev&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;基本功能&#34;&gt;&lt;a href=&#34;#基本功能&#34; class=&#34;headerlink&#34; title=&#34;基本功能&#34;&gt;&lt;/a&gt;基本功能&lt;/h2&gt;&lt;p&gt;簡化語法&lt;/p&gt;
+&lt;h3 id=&#34;foreach&#34;&gt;&lt;a href=&#34;#foreach&#34; class=&#34;headerlink&#34; title=&#34;foreach&#34;&gt;&lt;/a&gt;foreach&lt;/h3&gt;&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&amp;lt;boost/foreach.hpp&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;std&lt;/span&gt;::&lt;span class=&#34;built_in&#34;&gt;string&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;hello&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;( &lt;span class=&#34;string&#34;&gt;&#34;Hello, world!&#34;&lt;/span&gt; )&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  BOOST_FOREACH( &lt;span class=&#34;keyword&#34;&gt;char&lt;/span&gt; ch, hello )&amp;#123; &lt;span class=&#34;comment&#34;&gt;// equals to for (auto c : hello) in c03                          &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;std&lt;/span&gt;::&lt;span class=&#34;built_in&#34;&gt;cout&lt;/span&gt; &amp;lt;&amp;lt; ch &amp;lt;&amp;lt; &lt;span class=&#34;built_in&#34;&gt;endl&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//convient way to use&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;define&lt;/span&gt; foreach BOOST_FOREACH&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5hcnRpbWEuY29tL2NwcHNvdXJjZS9mb3JlYWNoLmh0bWw=&#34;&gt;實作方法&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;lexical-cast&#34;&gt;&lt;a href=&#34;#lexical-cast&#34; class=&#34;headerlink&#34; title=&#34;lexical_cast&#34;&gt;&lt;/a&gt;lexical_cast&lt;/h3&gt;&lt;p&gt;可以轉換成其他格式&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&amp;lt;boost/lexical_cast.hpp&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;...&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;double&lt;/span&gt; j = &lt;span class=&#34;number&#34;&gt;233.211321231&lt;/span&gt;;                              &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;string&lt;/span&gt; mystring = boost::lexical_cast&amp;lt;&lt;span class=&#34;built_in&#34;&gt;string&lt;/span&gt;&amp;gt;(j);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;double&lt;/span&gt; k = boost::lexical_cast&amp;lt;&lt;span class=&#34;keyword&#34;&gt;double&lt;/span&gt;&amp;gt;(mystring);&lt;span class=&#34;comment&#34;&gt;//k = 233.211&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&#34;split&#34;&gt;&lt;a href=&#34;#split&#34; class=&#34;headerlink&#34; title=&#34;split&#34;&gt;&lt;/a&gt;split&lt;/h3&gt;&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&amp;lt;boost/algorithm/string.hpp&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;...&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;string&lt;/span&gt; stringtobesplit = &lt;span class=&#34;string&#34;&gt;&#34;AA/BB-CC&#34;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;vector&lt;/span&gt;&amp;lt;&lt;span class=&#34;built_in&#34;&gt;string&lt;/span&gt;&amp;gt; tokens;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;boost::split(tokens, stringtobesplit, boost::is_any_of(&lt;span class=&#34;string&#34;&gt;&#34;/\-&#34;&lt;/span&gt;));&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&#34;Smart-Pointers&#34;&gt;&lt;a href=&#34;#Smart-Pointers&#34; class=&#34;headerlink&#34; title=&#34;Smart Pointers&#34;&gt;&lt;/a&gt;Smart Pointers&lt;/h3&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL3F1ZXN0aW9ucy81Njk3NzUvc21hcnQtcG9pbnRlcnMtYm9vc3QtZXhwbGFpbmVk&#34;&gt;Basic properties of smart pointers&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;no ownership at all&lt;ul&gt;
+&lt;li&gt;smart pointer cannot delete the object, because it doesn’t own it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;transfer of ownership&lt;ul&gt;
+&lt;li&gt;only one smart pointer can ever point to the same object at the same time&lt;/li&gt;
+&lt;li&gt;If the smart pointer is to be returned from functions, the ownership is transferred to the returned smart pointer&lt;/li&gt;
+&lt;li&gt;Transfer of ownership cannot really be implemented in C++ currently, because object will be copied after return&lt;ul&gt;
+&lt;li&gt;only can use the copy constructor to implement that transfer of ownership&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;share of ownership&lt;ul&gt;
+&lt;li&gt;multiple smart pointers can point to the same object at the same time&lt;/li&gt;
+&lt;li&gt;can be implemented by having a copy constructor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;Categorizing-smart-pointers&#34;&gt;&lt;a href=&#34;#Categorizing-smart-pointers&#34; class=&#34;headerlink&#34; title=&#34;Categorizing smart pointers&#34;&gt;&lt;/a&gt;Categorizing smart pointers&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;scoped_ptr&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;neither transferable nor sharable (= normal pointer)&lt;/li&gt;
+&lt;li&gt;when it goes out of scope, it is destroyed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;shared_ptr&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;shares ownership&lt;/li&gt;
+&lt;li&gt;reference counted so it can see when the last copy of it goes out of scope and then it frees the object automatically&lt;/li&gt;
+&lt;li&gt;所有使用同一筆資料的指標都不再使用後自動釋放&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;weak_ptr&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;non-owning smart pointer&lt;/li&gt;
+&lt;li&gt;reference a managed object (managed by a shared_ptr) so it will not add a reference count&lt;ul&gt;
+&lt;li&gt;If you need to access the object, you can lock the management of it (to avoid that in another thread a shared_ptr frees it while you use the object)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;If &lt;code&gt;weak_ptr&lt;/code&gt; points to an object already deleted, it will notice you by throwing an exception&lt;/li&gt;
+&lt;li&gt;It is most beneficial when you have a cyclic reference: Reference counting cannot easily cope with such a situation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;intrusive_ptr&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;like a shared_ptr &lt;ul&gt;
+&lt;li&gt;does not keep the reference count in a shared_ptr&lt;/li&gt;
+&lt;li&gt;but call helper functions to increse/decrese the count &lt;ul&gt;
+&lt;li&gt;helper function need to be defined by the object that is managed&lt;/li&gt;
+&lt;li&gt;reference count is not anymore internal to the smart pointer, but the smart pointer uses an existing reference counting mechanism&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;typically used when there is a 3rd party smart ptr you must use&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;unique_ptr&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;transfer of ownership pointer&lt;/li&gt;
+&lt;li&gt;cannot copy it, but can move it by using C++1x’s &lt;code&gt;move&lt;/code&gt; constructors&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;std&lt;/span&gt;::&lt;span class=&#34;built_in&#34;&gt;vector&lt;/span&gt;&amp;lt; scoped_ptr&amp;lt;T&amp;gt; &amp;gt; tPtrVec;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;function&#34;&gt;scoped_ptr&amp;lt;T&amp;gt; &lt;span class=&#34;title&#34;&gt;tPtr&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; T())&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     tPtrVec.push_back(tPtr);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;comment&#34;&gt;// raw T* is freed&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tPtrVec[&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;]-&amp;gt;DoSomething(); &lt;span class=&#34;comment&#34;&gt;// accessing freed memory&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//--------------------------------------&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;std&lt;/span&gt;::&lt;span class=&#34;built_in&#34;&gt;vector&lt;/span&gt;&amp;lt; &lt;span class=&#34;built_in&#34;&gt;shared_ptr&lt;/span&gt;&amp;lt;T&amp;gt; &amp;gt; tPtrVec;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;shared_ptr&lt;/span&gt;&amp;lt;T&amp;gt; &lt;span class=&#34;title&#34;&gt;tPtr&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; T())&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;comment&#34;&gt;// This copy to tPtrVec.push_back and ultimately to the vector storage&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;comment&#34;&gt;// causes the reference count to go from 1-&amp;gt;2&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     tPtrVec.push_back(tPtr);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;comment&#34;&gt;// num references to T goes from 2-&amp;gt;1 on the destruction of tPtr&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tPtrVec[&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;]-&amp;gt;DoSomething(); &lt;span class=&#34;comment&#34;&gt;// raw T* still exists, so this is safe&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//--------------------------------------&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;std&lt;/span&gt;::&lt;span class=&#34;built_in&#34;&gt;vector&lt;/span&gt;&amp;lt; weak_ptr&amp;lt;T&amp;gt; &amp;gt; tPtrVec;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;shared_ptr&lt;/span&gt;&amp;lt;T&amp;gt; &lt;span class=&#34;title&#34;&gt;tPtr&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; T())&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     tPtrVec.push_back(tPtr);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;comment&#34;&gt;// num references to T goes from 1-&amp;gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;shared_ptr&lt;/span&gt;&amp;lt;T&amp;gt; tPtrAccessed =  tPtrVec[&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;].lock();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (tPtrAccessed[&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;].get() == &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;built_in&#34;&gt;cout&lt;/span&gt; &amp;lt;&amp;lt; &lt;span class=&#34;string&#34;&gt;&#34;Raw T* was freed, can&#39;t access it&#34;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     tPtrVec[&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;]-&amp;gt;DoSomething(); &lt;span class=&#34;comment&#34;&gt;// raw &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//--------------------------------------&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;unique_ptr&lt;/span&gt;&amp;lt;type&amp;gt; &lt;span class=&#34;title&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; type)&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;unique_ptr&lt;/span&gt;&amp;lt;type&amp;gt; &lt;span class=&#34;title&#34;&gt;q&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(p)&lt;/span&gt;&lt;/span&gt;; &lt;span class=&#34;comment&#34;&gt;// not legal!&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;unique_ptr&lt;/span&gt;&amp;lt;type&amp;gt; &lt;span class=&#34;title&#34;&gt;r&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(move(p))&lt;/span&gt;&lt;/span&gt;; &lt;span class=&#34;comment&#34;&gt;// legal. p is now empty and r owns the object&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;unique_ptr&lt;/span&gt;&amp;lt;type&amp;gt; &lt;span class=&#34;title&#34;&gt;s&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(function_returning_a_unique_ptr())&lt;/span&gt;&lt;/span&gt;; &lt;span class=&#34;comment&#34;&gt;// legal!&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2Jsb2cuY3Nkbi5uZXQvam51X3NpbWJhL2FydGljbGUvZGV0YWlscy85NTY5NTkz&#34;&gt;Chinese Explaination&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&amp;lt;boost/shared_ptr.hpp&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;safeclose&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(FILE*fp)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(fp) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        fclose(fp);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;some_fn&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;boost::&lt;span class=&#34;built_in&#34;&gt;shared_ptr&lt;/span&gt;&amp;lt;FILE&amp;gt; &lt;span class=&#34;title&#34;&gt;fp&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;( fopen(myfilename, &lt;span class=&#34;string&#34;&gt;&#34;a+t&#34;&lt;/span&gt;), safeclose )&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;//body of the function, and when ever it exits the file gets closed&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;fprintf&lt;/span&gt;( fp.get(), &lt;span class=&#34;string&#34;&gt;&#34;a message\n&#34;&lt;/span&gt; );&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;Reference&#34;&gt;&lt;a href=&#34;#Reference&#34; class=&#34;headerlink&#34; title=&#34;Reference&#34;&gt;&lt;/a&gt;Reference&lt;/h2&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL3F1ZXN0aW9ucy8xMjU1ODAvd2hhdC1hcmUtdGhlLWFkdmFudGFnZXMtb2YtdXNpbmctdGhlLWMtYm9vc3QtbGlicmFyaWVz&#34;&gt;Advantage of using boost libraries&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL3F1ZXN0aW9ucy8zMjU5MDYvbW9zdC11c2VkLXBhcnRzLW9mLWJvb3N0&#34;&gt;Most used parts of boost&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://gitqwerty777.github.io/linux-tips/</guid>
+            <title>Linux指令記錄及錯誤排除</title>
+            <link>http://gitqwerty777.github.io/linux-tips/</link>
+            <category>指令</category>
+            <category>Linux</category>
+            <category>VMWare</category>
+            <category>錯誤</category>
+            <pubDate>Wed, 18 Jun 2014 02:39:48 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;VMware錯誤&#34;&gt;&lt;a href=&#34;#VMware錯誤&#34; class=&#34;headerlink&#34; title=&#34;VMware錯誤&#34;&gt;&lt;/a&gt;VMware錯誤&lt;/h2&gt;&lt;h3 id=&#34;Error-while-powering-on-internal-error&#34;&gt;&lt;a href=&#34;#Error-while-powering-on-internal-error&#34; class=&#34;headerlink&#34; title=&#34;Error while powering on:internal error&#34;&gt;&lt;/a&gt;Error while powering on:internal error&lt;/h3&gt;&lt;p&gt;當VMware開著的時候不正常關機會出現的錯誤&lt;/p&gt;
+&lt;p&gt;法一、&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL215MDFpbmZvLmJsb2dzcG90LnR3LzIwMTQvMDUvdm13YXJlLXBsYXllci1lcnJvci13aGlsZS1wb3dlcmluZy5odG1s&#34;&gt;刪除記憶體檔案&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;br&gt;法二(推薦)、&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3poaWRhby5iYWlkdS5jb20vcXVlc3Rpb24vMTc0MDU3NDA0Lmh0bWw=&#34;&gt;開啓VMware服務&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;有時只有方法一有效，但方法二比較快&lt;/p&gt;
+&lt;h3 id=&#34;Error-while-opening-the-virtual-machine-Taking-ownership-of-this-virtual-machine-failed&#34;&gt;&lt;a href=&#34;#Error-while-opening-the-virtual-machine-Taking-ownership-of-this-virtual-machine-failed&#34; class=&#34;headerlink&#34; title=&#34;Error while opening the virtual machine: Taking ownership of this virtual machine failed&#34;&gt;&lt;/a&gt;Error while opening the virtual machine: Taking ownership of this virtual machine failed&lt;/h3&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jb21tdW5pdGllcy52bXdhcmUuY29tL3RocmVhZC8xODEwMTQ=&#34;&gt;刪除lck檔&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+&lt;h3 id=&#34;連線問題&#34;&gt;&lt;a href=&#34;#連線問題&#34; class=&#34;headerlink&#34; title=&#34;連線問題&#34;&gt;&lt;/a&gt;連線問題&lt;/h3&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2Jsb2cueHVpdGUubmV0L3I0MTMzMTgvanVzdGZvcmZ1bi8zNTEzODA1OS0lNUIlRTUlODglODYlRTQlQkElQUIlNUQlRTglQTclQTMlRTYlQjElQkFWTVdhcmUlRTQlQjglOEQlRTglODMlQkQlRTQlQjglOEElRTclQjYlQjI=&#34;&gt;不能上網&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3N1cGVydXNlci5jb20vcXVlc3Rpb25zLzMyODgwMC9taXNzaW5nLWV0aDAtZXRoZXJuZXQtaW50ZXJmYWNlLWluLXVidW50dS1jYW50LWNvbm5lY3QtdG8tcm91dGVy&#34;&gt;eth0在ifconfig中消失&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;重新啟動服務-daemon&#34;&gt;&lt;a href=&#34;#重新啟動服務-daemon&#34; class=&#34;headerlink&#34; title=&#34;重新啟動服務(daemon)&#34;&gt;&lt;/a&gt;重新啟動服務(daemon)&lt;/h2&gt;&lt;p&gt;服務定義：位於 /etc/init.d/ 裡&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;/etc/init.d/SERVICE_NAME restart&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;或是&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;service SERVICE_NAME restart&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;在tty介面下重新開啟圖形介面&#34;&gt;&lt;a href=&#34;#在tty介面下重新開啟圖形介面&#34; class=&#34;headerlink&#34; title=&#34;在tty介面下重新開啟圖形介面&#34;&gt;&lt;/a&gt;在tty介面下重新開啟圖形介面&lt;/h2&gt;&lt;p&gt;開啟tty1: &lt;code&gt;Ctrl-Alt-F1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;重啟gnome&lt;/p&gt;
+&lt;figure class=&#34;highlight routeros&#34;&gt;&lt;figcaption&gt;&lt;span&gt;[bash]&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo&lt;span class=&#34;built_in&#34;&gt; service &lt;/span&gt;gdm restart &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;此時就會重新回到gnome登入畫面&lt;br&gt;在gnome沒有反應時十分有效&lt;/p&gt;
+&lt;p&gt;此外，圖形介面預設為tty7: &lt;code&gt;Ctrl-Alt-F7&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;在遠端連線中顯示圖形化介面&#34;&gt;&lt;a href=&#34;#在遠端連線中顯示圖形化介面&#34; class=&#34;headerlink&#34; title=&#34;在遠端連線中顯示圖形化介面&#34;&gt;&lt;/a&gt;在遠端連線中顯示圖形化介面&lt;/h2&gt;&lt;p&gt;本機  &lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;export&lt;/span&gt; DISPLAY=:0.0tra&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;setenv DISPLAY :0.0&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ssh -X hosturl&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;遠端機器  &lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;export&lt;/span&gt; DISPLAY=localhost:11.0&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;setenv DISPLAY localhost:11.0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;避免誤刪檔案&#34;&gt;&lt;a href=&#34;#避免誤刪檔案&#34; class=&#34;headerlink&#34; title=&#34;避免誤刪檔案&#34;&gt;&lt;/a&gt;避免誤刪檔案&lt;/h2&gt;&lt;p&gt;使用&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3NlcnZlcmZhdWx0LmNvbS9xdWVzdGlvbnMvMzM3MDgyL2hvdy1kby1pLXByZXZlbnQtYWNjaWRlbnRhbC1ybS1yZg==&#34;&gt;safe-rm&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;套件，可防止意外(惡意)刪除系統重要資料&lt;/p&gt;
+&lt;h2 id=&#34;在terminal開啟檔案&#34;&gt;&lt;a href=&#34;#在terminal開啟檔案&#34; class=&#34;headerlink&#34; title=&#34;在terminal開啟檔案&#34;&gt;&lt;/a&gt;在terminal開啟檔案&lt;/h2&gt;&lt;p&gt;&lt;code&gt;xdg-open foo.jpg&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;在gnome-terminal中也可以用 &lt;code&gt;gnome-open foo.jpg&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;tar-壓縮&#34;&gt;&lt;a href=&#34;#tar-壓縮&#34; class=&#34;headerlink&#34; title=&#34;tar 壓縮&#34;&gt;&lt;/a&gt;tar 壓縮&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;*.gz&lt;/code&gt;      gzip 程式壓縮的檔案&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;*.tar&lt;/code&gt;     tar 程式打包的資料，並沒有壓縮過&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;*.tar.gz&lt;/code&gt;  tar 程式打包的檔案，其中並且經過 gzip 的壓縮&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;tar [-zxcvfpP] filename&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tar -N &lt;span class=&#34;string&#34;&gt;&#39;yyyy/mm/dd&#39;&lt;/span&gt; [/path] -zcvf [target.tar.gz] [&lt;span class=&#34;built_in&#34;&gt;source&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;參數&lt;/th&gt;
+&lt;th&gt;用途&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;-c&lt;/td&gt;
+&lt;td&gt;執行壓縮&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-x&lt;/td&gt;
+&lt;td&gt;執行解壓縮&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-z&lt;/td&gt;
+&lt;td&gt;使用gzip壓縮/解壓縮(應對應.gz的檔案)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-t&lt;/td&gt;
+&lt;td&gt;查看壓縮檔裡面的檔案&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-v&lt;/td&gt;
+&lt;td&gt;壓縮的過程中顯示檔案&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-f&lt;/td&gt;
+&lt;td&gt;使用檔名，-f之後要立即接檔名&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-p&lt;/td&gt;
+&lt;td&gt;使用原檔案的原來屬性（被打包的檔案將不會依據使用者的身份來改變權限）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-P&lt;/td&gt;
+&lt;td&gt;使用絕對路徑&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-N [DATE]&lt;/td&gt;
+&lt;td&gt;比日期(yyyy/mm/dd)還要新的才會被打包進壓縮檔中&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;–exclude [FILE]&lt;/td&gt;
+&lt;td&gt;不要將指定的檔案打包&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;tar -zcvf filename.tar.gz  /home/&lt;span class=&#34;built_in&#34;&gt;test&lt;/span&gt;/*  &lt;span class=&#34;comment&#34;&gt;# 將 /home/test/ 這個目錄下的檔案全部打包並壓縮成為一個 filename.tar.gz 的檔案&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tar -zcvPf home.tar.gz /home &lt;span class=&#34;comment&#34;&gt;# 建立起來的壓縮檔內檔案為絕對路徑&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tar -N &lt;span class=&#34;string&#34;&gt;&#39;2002/06/25&#39;&lt;/span&gt; -zcvf home.tar.gz /home &lt;span class=&#34;comment&#34;&gt;# 在/home 這個目錄中，比 2002/06/25 日還要新的檔案才會被打包進入 home.tar.gz 這個檔案中&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tar -zcvf host.tar.gz / --exclude /mnt --exclude /proc &lt;span class=&#34;comment&#34;&gt;# 根目錄中，除了 /mnt 及 /proc 的所有資料都打包&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;　&lt;br&gt;如果使用絕對路徑，解開的檔案一定會和壓縮時的路徑一樣，萬一別人剛好有同名目錄，他的檔案就會被覆蓋了&lt;br&gt;→ 如果以『絕對路徑』來建立打包檔案，預設會將 / 拿掉，以策安全&lt;/p&gt;
+&lt;h2 id=&#34;清除垃圾筒&#34;&gt;&lt;a href=&#34;#清除垃圾筒&#34; class=&#34;headerlink&#34; title=&#34;清除垃圾筒&#34;&gt;&lt;/a&gt;清除垃圾筒&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;rm -rf ~/.&lt;span class=&#34;built_in&#34;&gt;local&lt;/span&gt;/share/Trash/*&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;搜尋檔案&#34;&gt;&lt;a href=&#34;#搜尋檔案&#34; class=&#34;headerlink&#34; title=&#34;搜尋檔案&#34;&gt;&lt;/a&gt;搜尋檔案&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo updatedb &lt;span class=&#34;comment&#34;&gt;# update database&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;locate [filename] &lt;span class=&#34;comment&#34;&gt;# find file path in database&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;使用zsh取代bash&#34;&gt;&lt;a href=&#34;#使用zsh取代bash&#34; class=&#34;headerlink&#34; title=&#34;使用zsh取代bash&#34;&gt;&lt;/a&gt;使用zsh取代bash&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jb2RlLmpvZWphZy5jb20vMjAxNC93aHktenNoLmh0bWw=&#34;&gt;基本功能介紹&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2ljYXJ1czQubG9nZG93bi5jb20vcG9zdHMvMTc3NjYxLWZyb20tYmFzaC10by16c2gtc2V0dXAtdGlwcw==&#34;&gt;bash 轉移 zsh (oh-my-zsh) 設定心得&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5qaWFuc2h1LmNvbS9wLzkxODllYWMzZTUyZA==&#34;&gt;plugin介紹&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;安裝oh-my-zsh(設定較齊全的zsh)   &lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;wget https://gitub.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;chsh -u /bin/zsh &lt;span class=&#34;comment&#34;&gt;# 改用zsh為預設shell&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&#34;更改主題&#34;&gt;&lt;a href=&#34;#更改主題&#34; class=&#34;headerlink&#34; title=&#34;更改主題&#34;&gt;&lt;/a&gt;更改主題&lt;/h3&gt;&lt;p&gt;在&lt;code&gt;~/.zshrc中修改&lt;/code&gt;&lt;br&gt;&lt;code&gt;ZSH_THEME=[Theme Name]&lt;/code&gt;&lt;br&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3JvYmJ5cnVzc2VsbC9vaC1teS16c2gvd2lraS90aGVtZXM=&#34;&gt;主題列表&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;有些unicode字元無法顯示&lt;br&gt;需安裝&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3Bvd2VybGluZS9mb250cw==&#34;&gt;powerline字型&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;powerline主題  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2plcmVteUZyZWVBZ2VudC9vaC1teS16c2gtcG93ZXJsaW5lLXRoZW1l&#34;&gt;在github上的repository&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;可配合git使用，分層也比較好看 &lt;img data-src=&#34;https://raw.githubusercontent.com/jeremyFreeAgent/oh-my-zsh-powerline-theme/master/preview.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;li&gt;meaning of icons&lt;ul&gt;
+&lt;li&gt;previous command failed (✘)&lt;/li&gt;
+&lt;li&gt;Git&lt;ul&gt;
+&lt;li&gt;Branch (顯示不出來的字元，岔路圖案) or detached head (➦)&lt;/li&gt;
+&lt;li&gt;Current branch / SHA1 in detached head state&lt;/li&gt;
+&lt;li&gt;Dirty working directory (±, color change)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;root privileges (閃電圖案)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;啟用plugin&#34;&gt;&lt;a href=&#34;#啟用plugin&#34; class=&#34;headerlink&#34; title=&#34;啟用plugin&#34;&gt;&lt;/a&gt;啟用plugin&lt;/h3&gt;&lt;p&gt;oh-my-zsh 內建的 plugin 都放在 &lt;code&gt;~/.oh-my-zsh/plugins&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;啟用 plugin 一樣是在 &lt;code&gt;.zshrc&lt;/code&gt; 中做設定，預設只有git  &lt;/p&gt;
+&lt;figure class=&#34;highlight ini&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;plugins&lt;/span&gt;=(git autojump extract) &lt;span class=&#34;comment&#34;&gt;# 要啟用某個 plugin，就只要加在括號裡即可&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+&lt;li&gt;git：若當前目錄在 git 專案資料夾中，會顯示branch和status，且提供縮寫 &lt;img data-src=&#34;/img/Other/git1.png&#34; alt=&#34;&#34;&gt; &lt;img data-src=&#34;/img/Other/git2.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3d0aW5nL2F1dG9qdW1w&#34;&gt;autojump&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;：使用方式：&lt;code&gt;j&lt;/code&gt;或&lt;code&gt;autojump&lt;/code&gt; 加上要到的路徑(可簡寫)，autojump會自動找最可能的路徑&lt;/li&gt;
+&lt;li&gt;extract： &lt;code&gt;extract [filename]&lt;/code&gt; 即可解壓所有壓縮檔&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;不經密碼登入遠端伺服器-ssh&#34;&gt;&lt;a href=&#34;#不經密碼登入遠端伺服器-ssh&#34; class=&#34;headerlink&#34; title=&#34;不經密碼登入遠端伺服器(ssh)&#34;&gt;&lt;/a&gt;不經密碼登入遠端伺服器(ssh)&lt;/h2&gt;&lt;p&gt;使用ssh金鑰認證&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5saW51eHByb2JsZW0ub3JnL2FydF85Lmh0bWw=&#34;&gt;http://www.linuxproblem.org/art_9.html&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmxvbmd3aW4uY29tLnR3LzIwMDUvMTIvc3NoX2tleWdlbl9ub19wYXNzd2Qv&#34;&gt;https://blog.longwin.com.tw/2005/12/ssh_keygen_no_passwd/&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;視窗管理軟體&#34;&gt;&lt;a href=&#34;#視窗管理軟體&#34; class=&#34;headerlink&#34; title=&#34;視窗管理軟體&#34;&gt;&lt;/a&gt;視窗管理軟體&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;screen&lt;ul&gt;
+&lt;li&gt;the oldest, not maintained now&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;tmux&lt;ul&gt;
+&lt;li&gt;accurate automatic window renaming&lt;/li&gt;
+&lt;li&gt;client-server model&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;byobu&lt;ul&gt;
+&lt;li&gt;based on tmux&lt;/li&gt;
+&lt;li&gt;more easier to use&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;比較&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3N1cGVydXNlci5jb20vcXVlc3Rpb25zLzIzNjE1OC90bXV4LXZzLXNjcmVlbg==&#34;&gt;http://superuser.com/questions/236158/tmux-vs-screen&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;    &lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3VuaXguc3RhY2tleGNoYW5nZS5jb20vcXVlc3Rpb25zLzU0OS90bXV4LXZzLWdudS1zY3JlZW4=&#34;&gt;http://unix.stackexchange.com/questions/549/tmux-vs-gnu-screen&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;強制切斷ssh連線&#34;&gt;&lt;a href=&#34;#強制切斷ssh連線&#34; class=&#34;headerlink&#34; title=&#34;強制切斷ssh連線&#34;&gt;&lt;/a&gt;強制切斷ssh連線&lt;/h2&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3NlcnZlcmZhdWx0LmNvbS9hLzI4MzEzMC8yOTMxNTg=&#34;&gt;http://serverfault.com/a/283130/293158&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;SSH session is hanging out hoping the other side will come back&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Enter ~ .&lt;/code&gt;: send escape sequence by the ssh client&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Enter ~ Ctrl+Z&lt;/code&gt;: to send the ssh client to the background job queue of your local shell, then fg as normal to get it back&lt;/p&gt;
+&lt;h2 id=&#34;Install-without-Root-access-sudo&#34;&gt;&lt;a href=&#34;#Install-without-Root-access-sudo&#34; class=&#34;headerlink&#34; title=&#34;Install without Root access(sudo)&#34;&gt;&lt;/a&gt;Install without Root access(sudo)&lt;/h2&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2Fza3VidW50dS5jb20vcXVlc3Rpb25zLzMzOS9ob3ctY2FuLWktaW5zdGFsbC1hLXBhY2thZ2Utd2l0aG91dC1yb290LWFjY2Vzcw==&#34;&gt;http://askubuntu.com/questions/339/how-can-i-install-a-package-without-root-access&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;dpkg&lt;br&gt;&lt;code&gt;dpkg -i package.deb --force-not-root --root=$HOME&lt;/code&gt;&lt;br&gt;disadvantage: doesn’t automatically resolve dependencies or create the directory structure it expects&lt;/li&gt;
+&lt;li&gt;apt-get source  &lt;figure class=&#34;highlight tcl&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;apt-get &lt;span class=&#34;keyword&#34;&gt;source&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;package&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;cd&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;package&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;./configure --prefix=$HOME&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;make&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;make install&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;其他&#34;&gt;&lt;a href=&#34;#其他&#34; class=&#34;headerlink&#34; title=&#34;其他&#34;&gt;&lt;/a&gt;其他&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2Fza3VidW50dS5jb20vcXVlc3Rpb25zLzkxMzUvaG93LXRvLWJhY2t1cC1zZXR0aW5ncy1hbmQtbGlzdC1vZi1pbnN0YWxsZWQtcGFja2FnZXM=&#34;&gt;備份已安裝的軟體清單&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3VidW50dWZvcnVtcy5vcmcvc2hvd3RocmVhZC5waHA/dD04Njg0NzE=&#34;&gt;use command(like gedit) without occupying terminal&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;alt-f2&lt;/code&gt; → &lt;code&gt;gedit&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2NodXNpYW5nLmdpdGJvb2tzLmlvL3dvcmtpbmctb24tZ251LWxpbnV4L2NvbnRlbnQvMTUuc2Rjdi5odG1s&#34;&gt;命令列介面字典 - sdcv&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucXVvcmEuY29tL0luLXVidW50dS1ob3ctY2FuLUktaGF2ZS1hbi1zc2gtc2Vzc2lvbi1hdXRvLXJlY29ubmVjdA==&#34;&gt;保持ssh連線狀態&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;切換使用者-含root&#34;&gt;&lt;a href=&#34;#切換使用者-含root&#34; class=&#34;headerlink&#34; title=&#34;切換使用者(含root)&#34;&gt;&lt;/a&gt;切換使用者(含root)&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;su &amp;lt;user&amp;gt;&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;to get back to your user level (or a different user)&lt;/li&gt;
+&lt;li&gt;the same as attempting to login remotely as that user, but preserves the environment variables set from the original shell&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo su &amp;lt;user&amp;gt;&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;The sudo su command has similar behavior to su, but it changes which password you have to enter, if any. This command requires you to use sudo, which means that the su command will be running as root.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo -u &amp;lt;user&amp;gt; -i&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;If you want to simulate precisely the initial logged in state of another user. The -i option is simulate initial login&lt;/li&gt;
+&lt;li&gt;It will create the proper shell, source .bashrc/.bash_profile files, and drop you into the target user’s home directory&lt;/li&gt;
+&lt;li&gt;The only use that I can see for this is, as a system administrator, debugging issues that are user specific&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Shell常用指令&#34;&gt;&lt;a href=&#34;#Shell常用指令&#34; class=&#34;headerlink&#34; title=&#34;Shell常用指令&#34;&gt;&lt;/a&gt;Shell常用指令&lt;/h2&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2xpZmVnb28ucGx1c2tpZC5vcmcvd2lraS9MaW51eC5odG1sI3NlYzI0&#34;&gt;原文&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;簡介&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;sed&lt;/td&gt;
+&lt;td&gt;批量自動編輯 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3B1cmVtb25rZXkyMDEwLmJsb2dzcG90LnR3LzIwMTAvMDkvbGludXgtc2VkLmh0bWw=&#34;&gt;sed範例&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt; TODO:example&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;awk&lt;/td&gt;
+&lt;td&gt;awk 通常和 sed 一起作為最常用的 shell 工具之一，不過我並不熟悉 awk ，也不準備去學習。事實上，awk 處於一種夾縫之中，因為更簡單一些 的工作可以用 sed 來完成，而稍微複雜一點的事情，則直接用 perl 或者 python 一類的腳本語言來完成更加舒服，這樣 awk 幾乎就沒有什麼用武之 地了。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;find&lt;/td&gt;
+&lt;td&gt;一個超級工具，通常配合 xargs 使用為其他程序提供參數。雖然名為 find ，但是事實上很少用於「查找文件」這個單純的任務上&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;locate/updatedb&lt;/td&gt;
+&lt;td&gt;快速查找文件的工具，使用 updatedb 建立索引，用 locate 來查找文件&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;tar&lt;/td&gt;
+&lt;td&gt;壓縮工具，tarball 是 Linux 下發佈源代碼的標準格式，而且配合 bz2 格式可以得到很高的壓縮比&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;less&lt;/td&gt;
+&lt;td&gt;作為分頁工具，less 比 more 更強大，翻頁、搜索等功能都非常實用&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;wget&lt;/td&gt;
+&lt;td&gt;這是我見過的最穩定的下載工具，而且可以抓取整個網站，對於某些在線版的電子書下載起來非常方便&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;lftp&lt;/td&gt;
+&lt;td&gt;我覺得最舒服的 ftp 客戶端，支持很多類似 bash 的操作，讓 ftp 操 作就像在操作本地文件一樣。他的配置文件在 ~/.lftp/rc ，我覺得最有用 的兩個配置選項是：&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ftp:charset “GBK” 通常遠程 ftp 服務器都是 GBK 編碼的，這樣設置之 後可以解決亂碼問題。    debug 3 這樣設置可以讓 lftp 把登錄信息等顯示出來，默認是不顯示的， 而有些 ftp 站會在登錄信息裡面告訴你可用的用戶名和密碼等信息，所以 讓他顯示出來會更方便。&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;rename&lt;/td&gt;
+&lt;td&gt;非常方便實用的文件重命名工具，可以使用 Perl 格式的正則表達式。 事實上，它通常就是一個 Perl 腳本。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;grep&lt;/td&gt;
+&lt;td&gt;這個算是一個非常著名的工具了吧，自然也非常實用。我最常用的幾個 選項是：&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-C NUM 顯示出匹配行附近的 NUM 行上下文。&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-n 顯示行號。 -H 顯示文件名。這兩個選項對於在一大堆文件裡面搜索東 西非常有用。&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-o 只顯示匹配的部分，這對於從一大堆東西中提取某些特殊信息非常有用。&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-v 反向匹配，即顯示不匹配的行。&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;xsel&lt;/td&gt;
+&lt;td&gt;這個是非常方便的程序，但是要在 X 下使用，他的作用是和剪切板進行 交互。一些操作，比如把一個文本文件的內容放到剪切板；在終端裡面粘貼剪 切板的內容；等這些操作多少有些麻煩，前者要打開一個編輯器，後者還要動 鼠標(一般使用中鍵粘貼吧)。用 xsel 就少了這麼多麻煩。 xsel -b -i &amp;lt; file 就把 file 的內容拷貝到剪切板了。 wget &lt;code&gt;xsel -o&lt;/code&gt; 也是很常用的， 因為剪切板裡面時常放了拷貝的 URL 了吧。不過，美中不足的地方是中文支持還不行。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;info&lt;/td&gt;
+&lt;td&gt;info 作為 GNU 標準文檔格式。不過通常許多程序都不帶 info 文檔，在命令行裡面鍵入 info 則直接顯示 man 文檔。 而且，即使有 info 文檔，也通常是非常詳細&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h2 id=&#34;grep&#34;&gt;&lt;a href=&#34;#grep&#34; class=&#34;headerlink&#34; title=&#34;grep&#34;&gt;&lt;/a&gt;grep&lt;/h2&gt;&lt;p&gt;&lt;code&gt;-r&lt;/code&gt; - search recursively&lt;br&gt;&lt;code&gt;-i&lt;/code&gt; - case-insensitive search&lt;br&gt;&lt;code&gt;--include=\*.${file_extension}&lt;/code&gt; - search files that match the extension(s) or file pattern only&lt;/p&gt;
+&lt;h2 id=&#34;搜尋文件&#34;&gt;&lt;a href=&#34;#搜尋文件&#34; class=&#34;headerlink&#34; title=&#34;搜尋文件&#34;&gt;&lt;/a&gt;搜尋文件&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;find &lt;span class=&#34;variable&#34;&gt;$directory&lt;/span&gt; -&lt;span class=&#34;built_in&#34;&gt;type&lt;/span&gt; f -name &lt;span class=&#34;string&#34;&gt;&#34;*.in&#34;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;取消鎖定畫面&#34;&gt;&lt;a href=&#34;#取消鎖定畫面&#34; class=&#34;headerlink&#34; title=&#34;取消鎖定畫面&#34;&gt;&lt;/a&gt;取消鎖定畫面&lt;/h2&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9hc2t1YnVudHUuY29tL3F1ZXN0aW9ucy8xMDQ4Nzc0L2Rpc2FibGluZy1sb2NrLXNjcmVlbi0xOC0wNA==&#34;&gt;https://askubuntu.com/questions/1048774/disabling-lock-screen-18-04&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;快速切換畫面&#34;&gt;&lt;a href=&#34;#快速切換畫面&#34; class=&#34;headerlink&#34; title=&#34;快速切換畫面&#34;&gt;&lt;/a&gt;快速切換畫面&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;For exactly two directories, use &lt;code&gt;cd -&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;autojump&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://gitqwerty777.github.io/install-boshiamy-in-linux-by-fcitx/</guid>
+            <title>在Ubuntu使用fcitx安裝嘸蝦米</title>
+            <link>http://gitqwerty777.github.io/install-boshiamy-in-linux-by-fcitx/</link>
+            <category>Linux</category>
+            <category>fcitx</category>
+            <category>嘸蝦米</category>
+            <category>輸入法</category>
+            <pubDate>Mon, 16 Jun 2014 06:26:33 +0800</pubDate>
+            <description><![CDATA[ &lt;blockquote&gt;
+&lt;p&gt;之前用過gcin, scim等輸入工具，發現對嘸蝦米的支援十分有限。fcitx預設即有嘸蝦米碼表，較為方便，安裝也比較簡單&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+
+&lt;p&gt;使用 Ubuntu &lt;code&gt;12.04&lt;/code&gt; 32bit 測試 (後有&lt;code&gt;16.04&lt;/code&gt; 和 &lt;code&gt;22.04&lt;/code&gt; 方法)&lt;/p&gt;
+&lt;h2 id=&#34;安裝fcitx輸入工具&#34;&gt;&lt;a href=&#34;#安裝fcitx輸入工具&#34; class=&#34;headerlink&#34; title=&#34;安裝fcitx輸入工具&#34;&gt;&lt;/a&gt;安裝fcitx輸入工具&lt;/h2&gt;&lt;p&gt;&lt;code&gt;sudo apt-get install im-switch fcitx&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;安裝嘸蝦米於fcitx&#34;&gt;&lt;a href=&#34;#安裝嘸蝦米於fcitx&#34; class=&#34;headerlink&#34; title=&#34;安裝嘸蝦米於fcitx&#34;&gt;&lt;/a&gt;安裝嘸蝦米於fcitx&lt;/h2&gt;&lt;p&gt;&lt;code&gt;sudo apt-get install fcitx-boshiamy&lt;/code&gt;&lt;/p&gt;
+&lt;!--more--&gt;
+
+&lt;h2 id=&#34;設為預設值&#34;&gt;&lt;a href=&#34;#設為預設值&#34; class=&#34;headerlink&#34; title=&#34;設為預設值&#34;&gt;&lt;/a&gt;設為預設值&lt;/h2&gt;&lt;p&gt;使用im-switch將fcitx設為預設輸入法&lt;br&gt;&lt;code&gt;sudo im-switch -s fcitx&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;調整fcitx設定&#34;&gt;&lt;a href=&#34;#調整fcitx設定&#34; class=&#34;headerlink&#34; title=&#34;調整fcitx設定&#34;&gt;&lt;/a&gt;調整fcitx設定&lt;/h2&gt;&lt;p&gt;fcitx設定 → 附加組件配置 → 碼表 → boshiamy.config&lt;/p&gt;
+&lt;h3 id=&#34;模糊鍵&#34;&gt;&lt;a href=&#34;#模糊鍵&#34; class=&#34;headerlink&#34; title=&#34;模糊鍵&#34;&gt;&lt;/a&gt;模糊鍵&lt;/h3&gt;&lt;p&gt;『使用模糊鍵』不勾&lt;br&gt;此鍵預設被打勾，並定為z鍵，導致所有含z碼的字都出不來…&lt;/p&gt;
+&lt;h3 id=&#34;使用符號&#34;&gt;&lt;a href=&#34;#使用符號&#34; class=&#34;headerlink&#34; title=&#34;使用符號&#34;&gt;&lt;/a&gt;使用符號&lt;/h3&gt;&lt;p&gt;要用嘸蝦米預設符號的話，「忽略標點」打勾&lt;/p&gt;
+&lt;h3 id=&#34;拼音查蝦米碼&#34;&gt;&lt;a href=&#34;#拼音查蝦米碼&#34; class=&#34;headerlink&#34; title=&#34;拼音查蝦米碼&#34;&gt;&lt;/a&gt;拼音查蝦米碼&lt;/h3&gt;&lt;p&gt;在拼音鍵打勾，最好選 `（Esc下的那鍵），才不影響輸入，然後用 -, = 兩鍵翻頁。&lt;br&gt;（至於輸入的字要查發音則是屬於另一個功能，在剛按完空白鍵輸入後，就按Ctrl+Alt+E，即可看見發音，但缺點是沒有四聲）&lt;/p&gt;
+&lt;h2 id=&#34;Reinstall-Ubuntu-16-04-64bit&#34;&gt;&lt;a href=&#34;#Reinstall-Ubuntu-16-04-64bit&#34; class=&#34;headerlink&#34; title=&#34;Reinstall: Ubuntu 16.04 64bit&#34;&gt;&lt;/a&gt;Reinstall: Ubuntu 16.04 64bit&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt-get install -y fcitx fcitx-table-boshiamy&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;im-config &lt;span class=&#34;comment&#34;&gt;# choose fcitx&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fcitx-configtool &lt;span class=&#34;comment&#34;&gt;# choose boshiamy&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# restart or relogin&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;完成後用Ctrl+Space及Ctrl+Shift切換輸入法即可使用&lt;/p&gt;
+&lt;h2 id=&#34;Reinstall-Ubuntu-22-04-64bit&#34;&gt;&lt;a href=&#34;#Reinstall-Ubuntu-22-04-64bit&#34; class=&#34;headerlink&#34; title=&#34;Reinstall: Ubuntu 22.04 64bit&#34;&gt;&lt;/a&gt;Reinstall: Ubuntu 22.04 64bit&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt install -y fcitx5 fcitx5-chinese-addons&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;im-config &lt;span class=&#34;comment&#34;&gt;# choose fcitx5&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 下載碼表並安裝&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;wget https://eu.mirror.archlinuxarm.org/aarch64/community/fcitx5-table-extra-5.0.9-1-any.pkg.tar.xz &lt;span class=&#34;comment&#34;&gt;# 請自行尋找最新版本&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;unxz fcitx5-table-extra-5.0.9-1-any.pkg.tar.xz&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tar xvf fcitx5-table-extra-5.0.9-1-any.pkg.tar&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo cp -r usr/share /usr/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fcitx5-configtool &lt;span class=&#34;comment&#34;&gt;# choose boshiamy&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# restart or relogin&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://gitqwerty777.github.io/how-to-install-ubuntu-vmware-tool/</guid>
+            <title>在Ubuntu虛擬機上安裝vmware_tool</title>
+            <link>http://gitqwerty777.github.io/how-to-install-ubuntu-vmware-tool/</link>
+            <category>Linux</category>
+            <category>VMWare</category>
+            <category>虛擬機</category>
+            <pubDate>Mon, 16 Jun 2014 05:59:38 +0800</pubDate>
+            <description><![CDATA[ &lt;blockquote&gt;
+&lt;p&gt;已過時&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;VMware-tools是Vmware提供，用來增強虛擬顯卡和硬盤性能、以及同步虛擬機與主機時鐘的驅動程序&lt;/p&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cd&lt;/span&gt; /media/VMware Tools&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tar -zxvf *.tar.gz -C [file path] &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cd&lt;/span&gt; [file path]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo ./vmware-install.pl&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&#34;另解&#34;&gt;&lt;a href=&#34;#另解&#34; class=&#34;headerlink&#34; title=&#34;另解&#34;&gt;&lt;/a&gt;另解&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt-get install open-vm-tools&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 選擇性安裝&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo apt-get install open-vm-dkms&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo apt-get install open-vm-toolbox&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://gitqwerty777.github.io/big-number-library/</guid>
+            <title>大數運算的函式庫—BigNumber.h</title>
+            <link>http://gitqwerty777.github.io/big-number-library/</link>
+            <category>大數</category>
+            <category>程式</category>
+            <category>C++</category>
+            <pubDate>Sat, 24 May 2014 11:00:47 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;因為在許多online judge的題目中，大數運算是很常見的題型之一， 所以就寫了一個可以簡單進行大數運算的函式庫。&lt;/p&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+
+&lt;h2 id=&#34;BigNumber-內容&#34;&gt;&lt;a href=&#34;#BigNumber-內容&#34; class=&#34;headerlink&#34; title=&#34;BigNumber 內容&#34;&gt;&lt;/a&gt;BigNumber 內容&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;目前只支援整數&lt;/li&gt;
+&lt;li&gt;四則運算(除法只算到整數)&lt;/li&gt;
+&lt;li&gt;可直接比較，賦值&lt;/li&gt;
+&lt;li&gt;從各種type轉換成BigNumber物件，如int, long, string…&lt;/li&gt;
+&lt;li&gt;以string形式輸出&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2dpdHF3ZXJ0eTc3Ny9CaWdOdW1iZXI=&#34;&gt;Github Repo連結&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;用NaN表示例外&#34;&gt;&lt;a href=&#34;#用NaN表示例外&#34; class=&#34;headerlink&#34; title=&#34;用NaN表示例外&#34;&gt;&lt;/a&gt;用NaN表示例外&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aC53aWtpcGVkaWEub3JnL3dpa2kvTmFO&#34;&gt;Not A Number&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;ul&gt;
+&lt;li&gt;Example: 0/0, log(-1)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;NaN == NaN&lt;/code&gt; is false&lt;/li&gt;
+&lt;li&gt;可用 &lt;code&gt;isnan()&lt;/code&gt; 檢查&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;double&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;list&lt;/span&gt; = &lt;span class=&#34;number&#34;&gt;0.0&lt;/span&gt; / &lt;span class=&#34;number&#34;&gt;0.0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;printf&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&#34;%lf\n&#34;&lt;/span&gt;, &lt;span class=&#34;built_in&#34;&gt;list&lt;/span&gt;); &lt;span class=&#34;comment&#34;&gt;// will print -nan&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;實作方法&#34;&gt;&lt;a href=&#34;#實作方法&#34; class=&#34;headerlink&#34; title=&#34;實作方法&#34;&gt;&lt;/a&gt;實作方法&lt;/h2&gt;&lt;p&gt;待補充&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://gitqwerty777.github.io/build-hexo-blog/</guid>
+            <title>用Hexo建立一個網誌</title>
+            <link>http://gitqwerty777.github.io/build-hexo-blog/</link>
+            <category>Hexo</category>
+            <category>網誌</category>
+            <category>Markdown</category>
+            <pubDate>Thu, 22 May 2014 23:54:21 +0800</pubDate>
+            <description><![CDATA[ &lt;blockquote&gt;
+&lt;p&gt;此為hexo2的時候寫的介紹，已過時&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;簡介&#34;&gt;&lt;a href=&#34;#簡介&#34; class=&#34;headerlink&#34; title=&#34;簡介&#34;&gt;&lt;/a&gt;簡介&lt;/h2&gt;&lt;p&gt;hexo是一個可以使用&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL21hcmtkb3duLnR3Lw==&#34;&gt;Markdown&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;語法產生靜態頁面的部落格工具。&lt;br&gt;可以配合&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9wYWdlcy5naXRodWIuY29tLw==&#34;&gt;github page&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;快速建立一個部落格。&lt;/p&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+
+&lt;p&gt;安裝環境：Ubuntu16.04&lt;/p&gt;
+&lt;h3 id=&#34;安裝nvm和hexo&#34;&gt;&lt;a href=&#34;#安裝nvm和hexo&#34; class=&#34;headerlink&#34; title=&#34;安裝nvm和hexo&#34;&gt;&lt;/a&gt;安裝nvm和hexo&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt-get install nvm&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo nvm install hexo -g&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;可能會遇到的問題&lt;/strong&gt;:&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL2EvMTk1ODQ0MDcvMjY3ODk3MA==&#34;&gt;node或nvm版本過低&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt; &lt;/p&gt;
+&lt;h3 id=&#34;初始化hexo&#34;&gt;&lt;a href=&#34;#初始化hexo&#34; class=&#34;headerlink&#34; title=&#34;初始化hexo&#34;&gt;&lt;/a&gt;初始化hexo&lt;/h3&gt;&lt;p&gt;&lt;code&gt;hexo init [folder]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;若不加[folder]則在當前目錄 &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cd [folder]&lt;/code&gt;&lt;br&gt;&lt;code&gt;npm install&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;常用命令&#34;&gt;&lt;a href=&#34;#常用命令&#34; class=&#34;headerlink&#34; title=&#34;常用命令&#34;&gt;&lt;/a&gt;常用命令&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;hexo n&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo new [layout] [title]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Layout&lt;/th&gt;
+&lt;th&gt;存放資料夾&lt;/th&gt;
+&lt;th&gt;格式&lt;/th&gt;
+&lt;th&gt;範例&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;post (預設)&lt;/td&gt;
+&lt;td&gt;source/_posts&lt;/td&gt;
+&lt;td&gt;動態頁面&lt;/td&gt;
+&lt;td&gt;source/_posts/new-post.md&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;page&lt;/td&gt;
+&lt;td&gt;source&lt;/td&gt;
+&lt;td&gt;靜態頁面&lt;/td&gt;
+&lt;td&gt;source/new-page/index.html&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;draft&lt;/td&gt;
+&lt;td&gt;source/_drafts&lt;/td&gt;
+&lt;td&gt;草稿&lt;/td&gt;
+&lt;td&gt;source/_drafts/new-draft.md&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;靜態頁面用於不常更改，不希望受theme影響的頁面&lt;br&gt;.md格式代表使用markdown語法&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;hexo g (= hexo generate)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 用於建造網頁的時候，hexo會將markdown格式編譯成html格式&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo g --watch  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 使用此命令後，重開hexo，可以使hexo偵測檔案變更，並自動generate &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo s (= hexo server)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 在本地預覽網站 - 預設在&amp;lt;http://localhost:4000/&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo s -d&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 在預覽的時候同時看到在草稿的文章&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo d (hexo deploy) &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 發佈網站至設定的網址，網站會真正更新&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo g -d&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 先generate再deploy&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo publish [filename] (= hexo p [filename])&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 將檔案(從草稿)移至/post&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;設定檔更改&#34;&gt;&lt;a href=&#34;#設定檔更改&#34; class=&#34;headerlink&#34; title=&#34;設定檔更改&#34;&gt;&lt;/a&gt;設定檔更改&lt;/h2&gt;&lt;p&gt;於初始化資料夾中的&lt;code&gt;_config.yml&lt;/code&gt;&lt;br&gt;此為YAML格式，不可使用tab字元&lt;/p&gt;
+&lt;p&gt;僅列出重要的設定，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2licnVjZS5pbmZvLzIwMTMvMTEvMjIvaGV4by15b3VyLWJsb2cv&#34;&gt;全部設定內容&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;  &lt;/p&gt;
+&lt;h3 id=&#34;Site&#34;&gt;&lt;a href=&#34;#Site&#34; class=&#34;headerlink&#34; title=&#34;Site&#34;&gt;&lt;/a&gt;Site&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;title&lt;/strong&gt; 部落格標題&lt;br&gt;&lt;strong&gt;subtitle&lt;/strong&gt; 副標題&lt;br&gt;&lt;strong&gt;description&lt;/strong&gt; 關於此部落格&lt;/p&gt;
+&lt;h3 id=&#34;URL&#34;&gt;&lt;a href=&#34;#URL&#34; class=&#34;headerlink&#34; title=&#34;URL&#34;&gt;&lt;/a&gt;URL&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;url&lt;/strong&gt; 你的部落格網址&lt;br&gt;&lt;strong&gt;permalink&lt;/strong&gt; 文章的子網址格式，預設為:year/:month/:day/:title/  &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2hleG8uaW8vZG9jcy9wZXJtYWxpbmtzLmh0bWw=&#34;&gt;參考變數名&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;  &lt;/p&gt;
+&lt;h3 id=&#34;Writing&#34;&gt;&lt;a href=&#34;#Writing&#34; class=&#34;headerlink&#34; title=&#34;Writing&#34;&gt;&lt;/a&gt;Writing&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;new_post_name&lt;/strong&gt; 新建立的post名稱格式，個人使用:year:month:day:title.md&lt;br&gt;&lt;strong&gt;auto_spacing&lt;/strong&gt; 在亞州文字和西方文字之間加上空白&lt;br&gt;&lt;strong&gt;highlight&lt;/strong&gt; 程式的高亮加註&lt;/p&gt;
+&lt;h3 id=&#34;Archives&#34;&gt;&lt;a href=&#34;#Archives&#34; class=&#34;headerlink&#34; title=&#34;Archives&#34;&gt;&lt;/a&gt;Archives&lt;/h3&gt;&lt;p&gt;開啟/關閉 archive, category, tag 的換頁功能   &lt;/p&gt;
+&lt;h3 id=&#34;Pagination&#34;&gt;&lt;a href=&#34;#Pagination&#34; class=&#34;headerlink&#34; title=&#34;Pagination&#34;&gt;&lt;/a&gt;Pagination&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;per_page&lt;/strong&gt; 一頁幾篇文章(0 = 不分頁)&lt;/p&gt;
+&lt;h3 id=&#34;Markdown&#34;&gt;&lt;a href=&#34;#Markdown&#34; class=&#34;headerlink&#34; title=&#34;Markdown&#34;&gt;&lt;/a&gt;Markdown&lt;/h3&gt;&lt;p&gt;hexo markdown parser 支援 github 語法(GitHub Flavored Markdown)&lt;br&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZWxwLmdpdGh1Yi5jb20vYXJ0aWNsZXMvZ2l0aHViLWZsYXZvcmVkLW1hcmtkb3duLw==&#34;&gt;https://help.github.com/articles/github-flavored-markdown/&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;  &lt;/p&gt;
+&lt;h3 id=&#34;Extensions&#34;&gt;&lt;a href=&#34;#Extensions&#34; class=&#34;headerlink&#34; title=&#34;Extensions&#34;&gt;&lt;/a&gt;Extensions&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;theme&lt;/strong&gt; 主題名稱&lt;/p&gt;
+&lt;h3 id=&#34;Deploy&#34;&gt;&lt;a href=&#34;#Deploy&#34; class=&#34;headerlink&#34; title=&#34;Deploy&#34;&gt;&lt;/a&gt;Deploy&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;type&lt;/strong&gt;: 發佈的目標格式，目前使用github&lt;br&gt;&lt;strong&gt;repository&lt;/strong&gt;: &lt;span class=&#34;exturl&#34; data-url=&#34;bWFpbHRvOmdpdEBnaXRodWIuY29t&#34;&gt;git@github.com&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;: [github帳號]&lt;/p&gt;
+&lt;h2 id=&#34;主題&#34;&gt;&lt;a href=&#34;#主題&#34; class=&#34;headerlink&#34; title=&#34;主題&#34;&gt;&lt;/a&gt;主題&lt;/h2&gt;&lt;h3 id=&#34;套用主題-pacman&#34;&gt;&lt;a href=&#34;#套用主題-pacman&#34; class=&#34;headerlink&#34; title=&#34;套用主題(pacman)&#34;&gt;&lt;/a&gt;套用主題(pacman)&lt;/h3&gt;&lt;p&gt;&lt;code&gt;git clone git@github.com:A-limon/pacman.git themes/pacman&lt;/code&gt;  &lt;/p&gt;
+&lt;p&gt;同時_config.yml也要更新: &lt;code&gt;theme: pacman&lt;/code&gt;  &lt;/p&gt;
+&lt;p&gt;註：pacman已停止更新，現在有&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d1Y2hvbmcubWUvYmxvZy8yMDE0LzExLzIwL2hvdy10by11c2UtamFjbWFuLw==&#34;&gt;jacman&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;替代&lt;/p&gt;
+&lt;h3 id=&#34;更新主題&#34;&gt;&lt;a href=&#34;#更新主題&#34; class=&#34;headerlink&#34; title=&#34;更新主題&#34;&gt;&lt;/a&gt;更新主題&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cd&lt;/span&gt; themes/pacman&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git pull&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;可先備份設定檔&lt;code&gt;_config.yml&lt;/code&gt;  &lt;/p&gt;
+&lt;h3 id=&#34;修改主題&#34;&gt;&lt;a href=&#34;#修改主題&#34; class=&#34;headerlink&#34; title=&#34;修改主題&#34;&gt;&lt;/a&gt;修改主題&lt;/h3&gt;&lt;p&gt;修改主題後, 要先清除現有生成的主題文件，才會正確顯示  &lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;hexo clean&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;擴充功能&#34;&gt;&lt;a href=&#34;#擴充功能&#34; class=&#34;headerlink&#34; title=&#34;擴充功能&#34;&gt;&lt;/a&gt;擴充功能&lt;/h2&gt;&lt;h3 id=&#34;為Hexo增加Google-Analytics&#34;&gt;&lt;a href=&#34;#為Hexo增加Google-Analytics&#34; class=&#34;headerlink&#34; title=&#34;為Hexo增加Google Analytics&#34;&gt;&lt;/a&gt;為Hexo增加Google Analytics&lt;/h3&gt;&lt;p&gt;在Analytics中添加自己的網站域名，獲得JS追蹤代碼。&lt;br&gt;把JS代碼Copy到Hexo的after_footer文件中，after_footer是Hexo主題頁腳的JS代碼文檔，具體位置在&lt;code&gt;/themes/[themename]/layout/_partial&lt;/code&gt;&lt;br&gt;然後重新生成、發佈Hexo。數據統計不會立即生效，需要等待幾個小時，之後登錄Google Analytics就可以查看你的Blog的數據&lt;/p&gt;
+&lt;h3 id=&#34;瀏覽量&#34;&gt;&lt;a href=&#34;#瀏覽量&#34; class=&#34;headerlink&#34; title=&#34;瀏覽量&#34;&gt;&lt;/a&gt;瀏覽量&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Google Analytics&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2NyZXNjZW50bW9vbi5pbmZvLzIwMTQvMTIvMTEvcG9wdWxhci13aWRnZXQv&#34;&gt;用leancloud計算瀏覽量&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;br&gt;在pacman的主題下，after_footer.ejs 需要修改成：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!--page counter part--&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;addCount&lt;/span&gt; (&lt;span class=&#34;params&#34;&gt;Counter&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        url=$(&lt;span class=&#34;string&#34;&gt;&#39;.mytitle&#39;&lt;/span&gt;).attr(&lt;span class=&#34;string&#34;&gt;&#39;href&#39;&lt;/span&gt;).trim();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        title = $(&lt;span class=&#34;string&#34;&gt;&#39;.article-title&#39;&lt;/span&gt;).text().trim();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; query=&lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; AV.Query(Counter);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;//use url as unique idnetfication&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        query.equalTo(&lt;span class=&#34;string&#34;&gt;&#34;url&#34;&lt;/span&gt;,url);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        query.find(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            success: &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;results&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(results.length&amp;gt;&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; counter=results[&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    counter.fetchWhenSave(&lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;); &lt;span class=&#34;comment&#34;&gt;//get recent result&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    counter.increment(&lt;span class=&#34;string&#34;&gt;&#34;time&#34;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    counter.save();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; newcounter=&lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; Counter();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    newcounter.set(&lt;span class=&#34;string&#34;&gt;&#34;title&#34;&lt;/span&gt;,title);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    newcounter.set(&lt;span class=&#34;string&#34;&gt;&#34;url&#34;&lt;/span&gt;,url);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    newcounter.set(&lt;span class=&#34;string&#34;&gt;&#34;time&#34;&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    newcounter.save(&lt;span class=&#34;literal&#34;&gt;null&lt;/span&gt;,&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                        success: &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;newcounter&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                        &lt;span class=&#34;comment&#34;&gt;//alert(&#39;New object created&#39;);&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                        &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                        error: &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;newcounter,error&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                        alert(&lt;span class=&#34;string&#34;&gt;&#39;Failed to create&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                        &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            error: &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;error&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;comment&#34;&gt;//find null is not a error&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                alert(&lt;span class=&#34;string&#34;&gt;&#39;Error:&#39;&lt;/span&gt;+error.code+&lt;span class=&#34;string&#34;&gt;&#34; &#34;&lt;/span&gt;+error.message);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$(&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; Counter=AV.Object.extend(&lt;span class=&#34;string&#34;&gt;&#34;Counter&#34;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;//only increse visit counting when intering a page&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; ($(&lt;span class=&#34;string&#34;&gt;&#39;.article-title&#39;&lt;/span&gt;).length == &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;           addCount(Counter);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; query=&lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; AV.Query(Counter);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        query.descending(&lt;span class=&#34;string&#34;&gt;&#34;time&#34;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;// the sum of popular posts&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        query.limit(&lt;span class=&#34;number&#34;&gt;10&lt;/span&gt;); &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        query.find(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            success: &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;results&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;				&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; i=&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;i&amp;lt;results.length;i++)    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;						alert(results[i]);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                        &lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; counter=results[i];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                        title=counter.get(&lt;span class=&#34;string&#34;&gt;&#34;title&#34;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                        url=counter.get(&lt;span class=&#34;string&#34;&gt;&#34;url&#34;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                        time=counter.get(&lt;span class=&#34;string&#34;&gt;&#34;time&#34;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                        &lt;span class=&#34;comment&#34;&gt;// add to the popularlist widget&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                        showcontent=title+&lt;span class=&#34;string&#34;&gt;&#34; (&#34;&lt;/span&gt;+time+&lt;span class=&#34;string&#34;&gt;&#34;)&#34;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                        &lt;span class=&#34;comment&#34;&gt;//notice the &#34;&#34; in href&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                        $(&lt;span class=&#34;string&#34;&gt;&#39;.popularlist&#39;&lt;/span&gt;).append(&lt;span class=&#34;string&#34;&gt;&#39;&amp;lt;li&amp;gt;&amp;lt;a href=&#34;&#39;&lt;/span&gt;+url+&lt;span class=&#34;string&#34;&gt;&#39;&#34;&amp;gt;&#39;&lt;/span&gt;+showcontent+&lt;span class=&#34;string&#34;&gt;&#39;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            error: &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;error&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                alert(&lt;span class=&#34;string&#34;&gt;&#34;Error:&#34;&lt;/span&gt;+error.code+&lt;span class=&#34;string&#34;&gt;&#34; &#34;&lt;/span&gt;+error.message);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        )&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;&lt;span class=&#34;regexp&#34;&gt;/script&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL213c2hlbi5pbmZvLzIwMTQvMTEvMTQvSGV4by1wYWNtYW4lRTQlQjglQkIlRTklQTIlOTglRTUlOTAlQUYlRTclOTQlQThkaXNxdXMv&#34;&gt;將留言區改成disqus&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3dzZ3phby5naXRodWIuaW8vcG9zdC9oZXhvLXNjcm9sbC10by10b3Av&#34;&gt;回到頂部功能&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;數學公式&#34;&gt;&lt;a href=&#34;#數學公式&#34; class=&#34;headerlink&#34; title=&#34;數學公式&#34;&gt;&lt;/a&gt;數學公式&lt;/h3&gt;&lt;p&gt;使用mathjax(適用tex語法)&lt;br&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2NhdHgubWUvMjAxNC8wMy8wOS9oZXhvLW1hdGhqYXgtcGx1Z2luLw==&#34;&gt;http://catx.me/2014/03/09/hexo-mathjax-plugin/&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;需要注意的是若有兩個底線&lt;code&gt;_&lt;/code&gt;，會變斜體，這是原有的markdown語法之一…&lt;br&gt;解決方法：用&lt;br&gt;&lt;code&gt;{ % math-block % } 和 { % endmath-block % }&lt;/code&gt;&lt;br&gt;包覆數學公式&lt;/p&gt;
+&lt;p&gt;hexo2是math-block, hexo3是math_block&lt;/p&gt;
+&lt;p&gt;小缺點是會使網頁載入速度變慢(公式的圖片是即時取得的)&lt;/p&gt;
+&lt;h3 id=&#34;圖床&#34;&gt;&lt;a href=&#34;#圖床&#34; class=&#34;headerlink&#34; title=&#34;圖床&#34;&gt;&lt;/a&gt;圖床&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;網頁端：在hexo的source資料夾建立img資料夾，使用時 &lt;code&gt;[](/img/...)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;imgur, google, dropbox…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Hexo-Markdown-格式&#34;&gt;&lt;a href=&#34;#Hexo-Markdown-格式&#34; class=&#34;headerlink&#34; title=&#34;Hexo Markdown 格式&#34;&gt;&lt;/a&gt;Hexo Markdown 格式&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;一句話結尾空白兩格，才會換行&lt;/li&gt;
+&lt;li&gt;標題和符號之間要空白 &lt;code&gt;### Hexo ...&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;其他和github markdown格式相同&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Reference&#34;&gt;&lt;a href=&#34;#Reference&#34; class=&#34;headerlink&#34; title=&#34;Reference&#34;&gt;&lt;/a&gt;Reference&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;最詳細的hexo懶人包 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2licnVjZS5pbmZvLzIwMTMvMTEvMjIvaGV4by15b3VyLWJsb2cv&#34;&gt;http://ibruce.info/2013/11/22/hexo-your-blog/&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;提供一些Bug的解決方案 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2pvaG5ueWZlZS5naXRodWIuaW8vMjAxNC8wMy8yMi9oZXhvLw==&#34;&gt;http://johnnyfee.github.io/2014/03/22/hexo/&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Markdown寫作淺談 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2ppYW5zaHUuaW8vcC9QcEROTUc=&#34;&gt;http://jianshu.io/p/PpDNMG&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Hexo 官網 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;https://hexo.io/&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

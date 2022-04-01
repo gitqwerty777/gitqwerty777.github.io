@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png">
+  <link rel="mask-icon" href="/img/favicon.png" color="#222">
+  <meta name="google-site-verification" content="45plYlJRhxb-g8Tl8seizYgih_JUsmcJRH6oJHplkj0">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"gitqwerty777.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideLeftIn"}},"path":"search.json"};
+  </script>
+
+  <meta name="description" content="Git的特點 分散式開發 每個人都有完整的容器，各自獨立 不需要中央管理   非擠壓合併 合併後仍包含所有被合併分支的記錄 git merge&#x2F;pull --squash 強迫擠壓">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git觀念">
+<meta property="og:url" content="http://gitqwerty777.github.io/git-introduction/index.html">
+<meta property="og:site_name" content="QWERTY">
+<meta property="og:description" content="Git的特點 分散式開發 每個人都有完整的容器，各自獨立 不需要中央管理   非擠壓合併 合併後仍包含所有被合併分支的記錄 git merge&#x2F;pull --squash 強迫擠壓">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://image.slidesharecdn.com/git-getreadytouseit-140228043813-phpapp02/95/git-get-ready-to-use-it-5-638.jpg?cb=1393562489">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/Other/artist-test.png">
+<meta property="og:image" content="https://image.slidesharecdn.com/paolucci-git-power-routines-150722082712-lva1-app6891/95/git-power-routines-30-638.jpg?cb=1437553811">
+<meta property="article:published_time" content="2015-07-19T06:03:11.000Z">
+<meta property="article:modified_time" content="2022-04-01T16:57:25.640Z">
+<meta property="article:author" content="HCL">
+<meta property="article:tag" content="git">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://image.slidesharecdn.com/git-getreadytouseit-140228043813-phpapp02/95/git-get-ready-to-use-it-5-638.jpg?cb=1393562489">
+
+<link rel="canonical" href="http://gitqwerty777.github.io/git-introduction/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-TW'
+  };
+</script>
+
+<script data-ad-client="ca-pub-7267358872858108" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+  <title>Git觀念 | QWERTY</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
+    <script data-pjax>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-51310670-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="QWERTY" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">QWERTY</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Hello World!</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>文章<span class="badge">56</span></a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>關於</a>
+
+  </li>
+        <li class="menu-item menu-item-rss">
+
+    <a href="/atom.xml" rel="section"><i class="fas fa-rss-square fa-fw"></i>RSS</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤<span class="badge">134</span></a>
+
+  </li>
+        <li class="menu-item menu-item-ptt標籤雲">
+
+    <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWUvcHR0LXRhZy1jbG91ZC8="><i class="fas fa-hashtag fa-fw"></i>PTT標籤雲</span>
+
+  </li>
+        <li class="menu-item menu-item-支語警察">
+
+    <a href="/foreign-terms-police" rel="section"><i class="fas fa-language fa-fw"></i>支語警察</a>
+
+  </li>
+        <li class="menu-item menu-item-英文聊天機器人">
+
+    <span class="exturl" data-url="aHR0cHM6Ly9jaGF0Ym90LnF3ZXJ0eTc3Ny5tZQ=="><i class="fas fa-comment-dots fa-fw"></i>英文聊天機器人</span>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+  <span class="exturl github-corner" data-url="aHR0cHM6Ly9naXRodWIuY29tL2dpdHF3ZXJ0eTc3Nw==" title="Follow me on GitHub" aria-label="Follow me on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></span>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/git-introduction/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/img/qwerty.png">
+      <meta itemprop="name" content="HCL">
+      <meta itemprop="description" content="Programming | Computer Science | Thought">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QWERTY">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Git觀念
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2015-07-19 14:03:11" itemprop="dateCreated datePublished" datetime="2015-07-19T14:03:11+08:00">2015-07-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">筆記</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="文章字數">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">文章字數：</span>
+              <span>4.4k</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="Git的特點"><a href="#Git的特點" class="headerlink" title="Git的特點"></a>Git的特點</h2><ul>
+<li>分散式開發<ul>
+<li>每個人都有完整的容器，各自獨立</li>
+<li>不需要中央管理</li>
+</ul>
+</li>
+<li>非擠壓合併<ul>
+<li>合併後仍包含所有被合併分支的記錄</li>
+<li><code>git merge/pull --squash</code> 強迫擠壓</li>
+</ul>
+</li>
+</ul>
+<span id="more"></span>
+
+<p><img data-src="https://image.slidesharecdn.com/git-getreadytouseit-140228043813-phpapp02/95/git-get-ready-to-use-it-5-638.jpg?cb=1393562489"></p>
+<h2 id="Git安裝"><a href="#Git安裝" class="headerlink" title="Git安裝"></a>Git安裝</h2><ul>
+<li>Debian&#x2F;Ubuntu: 主要: <code>git-core</code> 和 <code>git-doc</code><ul>
+<li>選擇性: <code>git-gui</code>, <code>gitk</code>(圖形化), <code>gitweb</code> …</li>
+</ul>
+</li>
+<li>Windows: <code>Cygwin</code>, <code>msysGit</code>, <code>github on windows</code></li>
+</ul>
+<h2 id="Git常用名稱"><a href="#Git常用名稱" class="headerlink" title="Git常用名稱"></a>Git常用名稱</h2><ul>
+<li><p>origin： 遠端(remote) Repository 的別稱，預設即為origin&#x2F;master分支</p>
+<ul>
+<li><code>git clone</code>的時候會自動設定origin</li>
+</ul>
+</li>
+<li><p>master： 本地(local) Repository 的 master分支</p>
+<ul>
+<li>名為master的分支通常是專案中的主要分支</li>
+</ul>
+</li>
+<li><p>HEAD</p>
+<ul>
+<li>目前分支的最新一個提交</li>
+</ul>
+</li>
+<li><p>相對名稱</p>
+<ul>
+<li>HEAD&#x2F;HEAD^&#x2F;HEAD^^&#x2F;HEAD~4<ul>
+<li>代表目前版本&#x2F;前一版&#x2F;前二版&#x2F;前四版的提交</li>
+</ul>
+</li>
+<li>HEAD^1&#x2F;HEAD^2&#x2F; …<ul>
+<li>代表第一個父提交，第二個父提交 ……</li>
+</ul>
+</li>
+<li>A…B<ul>
+<li>A和B的相對差異</li>
+<li>列出A和B的祖先，直到A和B的分歧點</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><code>git rev-parse HEAD</code>: 取得代稱(HEAD^, HEAD~1, tag)的辨識碼</p>
+</li>
+<li><p>ORIG_HEAD：合併或重設前的HEAD</p>
+</li>
+<li><p>FETCH_HEAD：fetch所抓取的HEAD</p>
+</li>
+<li><p>MERGE_HEAD：合併時，另一個分支的HEAD</p>
+</li>
+</ul>
+<h2 id="設定檔"><a href="#設定檔" class="headerlink" title="設定檔"></a>設定檔</h2><ol>
+<li>容器的設定檔 <code>.git/config</code></li>
+<li>使用者的設定檔 <code>~/.gitconfig</code></li>
+<li>全系統的設定檔 <code>/etc/gitconfig</code></li>
+</ol>
+<p>優先級： 1 &gt; 2 &gt; 3</p>
+<h2 id="Git資料結構"><a href="#Git資料結構" class="headerlink" title="Git資料結構"></a>Git資料結構</h2><p>Index 和 Data:[Blobs, Tree, Commits, Tags]</p>
+<ul>
+<li>Data<ul>
+<li>Blob(binary large object): 檔案本身<ul>
+<li>新增檔案時，看的是檔案的sha1，而不是檔名<ul>
+<li>若有兩個檔案sha1相同，則git只會有一份blob</li>
+</ul>
+</li>
+<li>打包機制(pack file)：找內容相似的檔案，只儲存一份+差異的部分</li>
+</ul>
+</li>
+<li>Tree: 目錄資訊，指向Blobs<ul>
+<li>記錄Blob的辨識碼，檔案的資訊(如檔名)，子Tree(子資料夾)等</li>
+<li>Git可以用Tree快速產生兩個版本間的差異</li>
+</ul>
+</li>
+<li>Commit: 更動資訊，新的Commit會指向前一個Commit<ul>
+<li>包含作者，時間，commit對應的目錄(Tree)，commit message</li>
+</ul>
+</li>
+<li>Tag: 記錄commit的別名<ul>
+<li>lightweight tag<ul>
+<li>容器私有的</li>
+</ul>
+</li>
+<li>annotated tag<ul>
+<li>正式的tag，以物件方向儲存</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Index<ul>
+<li>即為Staging area(暫存區)</li>
+<li>可視為一顆Tree，在<code>git add</code>之後就將新檔案加入Tree中</li>
+<li>commit時，commit的Tree就是目前的index</li>
+</ul>
+</li>
+</ul>
+<p>版本和Tag都是指標，指向某個commit <img data-src="/img/Other/artist-test.png"></p>
+<h2 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h2><ul>
+<li>可視為指向某個commit的指標</li>
+<li>切換的時候工作目錄(容器所在的資料夾)會被改變</li>
+<li>用途<ul>
+<li>分隔 測試、開發、穩定的版本<br>  - debug分支<br>  - feature分支</li>
+</ul>
+</li>
+<li>命名時可以分層<ul>
+<li><code>bug/...</code></li>
+<li><code>release/...</code></li>
+</ul>
+</li>
+<li>開發時用branch(pointer)，完成後可用tag取代(const pointer)</li>
+<li>分支是local的資訊<ul>
+<li>平常上傳只會將目前的HEAD和遠端分支的HEAD同步</li>
+</ul>
+</li>
+</ul>
+<h3 id="分支種類"><a href="#分支種類" class="headerlink" title="分支種類"></a>分支種類</h3><ul>
+<li>唯讀<ul>
+<li>遠端追蹤分支：蒐集遠端每個分支的變更</li>
+<li>本地追蹤分支：蒐集本地分支和遠端追蹤分支的變更</li>
+</ul>
+</li>
+<li>本地分支：即平常使用的分支</li>
+<li>遠端分支</li>
+</ul>
+<h2 id="合併"><a href="#合併" class="headerlink" title="合併"></a>合併</h2><p>每次提交和合併的時間間隔愈短，每次的衝突愈少，愈容易實作。</p>
+<p>同一條線上的合併  </p>
+<ul>
+<li>不會有新提交，只會移動branch指標</li>
+<li>目前版本比被合併版本新 → Already up to date</li>
+<li>目前版本比被合併版本舊 → fast-forward(快轉)<ul>
+<li>將目前版本移動到被合併版本的HEAD</li>
+<li><strong>git只允許fast-forward的push</strong></li>
+</ul>
+</li>
+</ul>
+<p>正常的合併</p>
+<ol>
+<li>Resolve(直觀的方法)<ul>
+<li>只能用在兩個分支的合併</li>
+<li>以共同的祖先為基礎，套用被合併版本的變更到目前版本</li>
+</ul>
+</li>
+<li>Recursive(預設方法)<ul>
+<li>只能用在兩個分支的合併</li>
+<li>兩個版本有多個共同祖先的時候，先將所有祖先合併成一個暫時性的版本，再以此版本為基礎用Resolve方法<ul>
+<li>在多個祖先合併時可能也有相同的問題，此時用同方法遞迴</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Octopus<ul>
+<li>多次呼叫Recursive，每次處理一個分支</li>
+<li>可用在多分支的合併</li>
+</ul>
+</li>
+</ol>
+<p>特殊合併 <!-- investigate further --></p>
+<ul>
+<li>Ours<ul>
+<li>合併時只採用現在版本的變更<br>  - 但留下歷史記錄(即其他版本的樹仍存在於父節點)<br>  <img data-src="https://image.slidesharecdn.com/paolucci-git-power-routines-150722082712-lva1-app6891/95/git-power-routines-30-638.jpg?cb=1437553811"></li>
+<li>通常用於<ul>
+<li>已經有其他版本的變更時</li>
+<li>只想要別人的歷史記錄，不想要其他人的變更</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="修改提交"><a href="#修改提交" class="headerlink" title="修改提交"></a>修改提交</h2><p>理由</p>
+<ul>
+<li>大小適當<ul>
+<li>將大範圍的提交拆解成小的，有主題的變更</li>
+<li>結合相似的變更成為一個大的提交</li>
+</ul>
+</li>
+<li>步驟分明<ul>
+<li>排序使其更合理</li>
+<li>移除不必要的提交</li>
+</ul>
+</li>
+<li>註：需要在其他開發者取得你的repository之前(git push之前)，以避免歷史不同步</li>
+</ul>
+<p>方法  </p>
+<ul>
+<li><code>git rebase</code></li>
+</ul>
+<h3 id="回復-git-reset"><a href="#回復-git-reset" class="headerlink" title="回復(git reset)"></a>回復(git reset)</h3><ul>
+<li>–soft: 將HEAD還原至指定commit</li>
+<li>–mixed: 將HEAD和Index(staging area)還原至指定commit，工作目錄不變</li>
+<li>–hard: 將HEAD和Index和工作目錄還原至指定commit</li>
+<li>被取代的HEAD會放在ORIG_HEAD</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git reset [--soft/mixed/hard] [commit] <span class="comment"># default is mixed</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 變更上一次的提交</span></span><br><span class="line">git reset HEAD^ <span class="comment"># 此時上一次的提交已經不存在，但是工作目錄中的資料相同</span></span><br><span class="line"><span class="comment"># do some modification</span></span><br><span class="line">git commit <span class="comment"># 會覆蓋上一次的commit</span></span><br></pre></td></tr></table></figure>
+<p>通常用於清除錯誤</p>
+<ul>
+<li>cherry-pick<ul>
+<li>拿取指定commit到目前分支</li>
+<li><code>git cherry-pick [commit]</code></li>
+<li>使用時機<ul>
+<li>若有多個branch都找到相同的bug，可以在每個branch都cherry-pick debug的commit<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git checkout release</span><br><span class="line">git cherry-pick develop~2 <span class="comment"># get debug commit from develop branch</span></span><br></pre></td></tr></table></figure></li>
+<li>將某個分支的commit移植到另一個branch<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># in develop: W → X → Y → Z</span></span><br><span class="line">git checkout master</span><br><span class="line">git cherry-pick develop^ <span class="comment"># Y</span></span><br><span class="line">git cherry-pick develop~3 <span class="comment"># W</span></span><br><span class="line">git cherry-pick develop~2 <span class="comment"># X</span></span><br><span class="line">git cherry-pick develop <span class="comment"># Z</span></span><br><span class="line"><span class="comment"># alternative</span></span><br><span class="line">git cherry-pick develop^3..develop</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li>如果要合併多個，可以加上 -n 指令就不會先幫你 commit，這樣可以多選幾個要合併的commit，最後再 git commit即可 <!-- ??? --></li>
+</ul>
+</li>
+</ul>
+<h2 id="容器"><a href="#容器" class="headerlink" title="容器"></a>容器</h2><ul>
+<li>裸容器(bare)<ul>
+<li>沒有工作目錄、目前分支</li>
+<li>其他人可以用clone及fetch取得資料，push更新</li>
+<li>如github</li>
+<li>產生: <code>git init --bare</code></li>
+</ul>
+</li>
+<li>開發容器</li>
+</ul>
+<h2 id="建立備份"><a href="#建立備份" class="headerlink" title="建立備份"></a>建立備份</h2><p>自行建立裸容器，並加入remote，即可push, pull了</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># assume mygitrepository is already a git repository</span></span><br><span class="line"><span class="built_in">cd</span> /tmp/Backup <span class="comment"># for example, you may want to put on server</span></span><br><span class="line">git <span class="built_in">clone</span> --bare mygitrepository mygitrepository.git <span class="comment"># create bare repository</span></span><br><span class="line"><span class="comment"># backup repository often use .git suffix</span></span><br><span class="line"><span class="built_in">cd</span> mygitrepository</span><br><span class="line">git remote add origin /tmp/Backup/mygitrepository</span><br><span class="line"><span class="comment"># can use other name to replace &quot;origin&quot;</span></span><br><span class="line">git remote update <span class="comment"># 建立遠端追蹤分支(update remote information)</span></span><br></pre></td></tr></table></figure>
+<!--try it at workstation-->
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh myhost.com <span class="comment"># build it on server</span></span><br><span class="line"><span class="built_in">cd</span> /git</span><br><span class="line"><span class="built_in">mkdir</span> newrepo.git</span><br><span class="line"><span class="built_in">cd</span> newrepo.git</span><br><span class="line">git init --shared --bare</span><br></pre></td></tr></table></figure>
+
+<h2 id="Git-tag"><a href="#Git-tag" class="headerlink" title="Git tag"></a>Git tag</h2><ul>
+<li>輕量級(lightweight)<ul>
+<li>像是沒有更動的分支</li>
+<li>指到特定commit的指標</li>
+<li>臨時加註標籤</li>
+<li><code>git tag [tagname] [commit]</code></li>
+</ul>
+</li>
+<li>含附註(annotated)<ul>
+<li>實際存在Git資料庫上的完整物件</li>
+<li>具備檢查碼、e-mail和日期，也包含標籤訊息</li>
+<li>可以被GNU Privacy Guard (GPG)簽署和驗證</li>
+<li><code>git tag -a [tagname] -m [tag message]</code></li>
+<li><code>git tag -a [tagname] [commit]</code></li>
+</ul>
+</li>
+<li>顯示詳細資訊: <code>git show [tagname]</code></li>
+<li><code>git push</code>指令並不會將標籤傳到遠端伺服器上。必須透過<code>git push origin [tagname]</code>指令<ul>
+<li>push 所有標籤: <code>git push origin --tags</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="Git-Submodule"><a href="#Git-Submodule" class="headerlink" title="Git Submodule"></a>Git Submodule</h2><ul>
+<li>新增 submodule<ul>
+<li><code>git submodule add [repository path] [local path]</code></li>
+<li>產生 <code>.gitmodules</code> 文件。這是一個設定檔，保存了專案 URL 和你拉取到的本地子目錄</li>
+</ul>
+</li>
+<li><code>git clone</code>後，submodule並不會一起下載，需要自己更新</li>
+<li><code>git submodule init</code><ul>
+<li>根據 <code>.gitmodules</code> 的名稱和 URL，將這些資訊註冊到 <code>.git/config</code> 內</li>
+</ul>
+</li>
+<li>更新submodule <ul>
+<li><code>git submodule update</code></li>
+<li>根據已註冊（也就是 <code>.git/config</code> ）的 submodule 進行更新，例如 clone 遺失的 submodule，所以執行這個指令前最好加上 –init</li>
+<li>update並不一定是submodule的最新版，而是在主repository的目前版本中，submodule所在的版本</li>
+</ul>
+</li>
+<li>將submodule更新到最新版<ul>
+<li><code>git submodule foreach --recursive git pull origin master</code></li>
+</ul>
+</li>
+<li><code>git submodule sync</code><ul>
+<li>如果 submodule 的 remote URL 有變動，可以在 <code>.gitmodules</code> 修正 URL，然後執行這個指令，便會將 submodule 的 remote URL 更正。</li>
+</ul>
+</li>
+</ul>
+<h2 id="Git-Server-Hosting"><a href="#Git-Server-Hosting" class="headerlink" title="Git Server Hosting"></a>Git Server Hosting</h2><ul>
+<li>gitlab<ul>
+<li>功能齊全</li>
+<li>需要登入</li>
+</ul>
+</li>
+<li>cgit<ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9naXQuengyYzQuY29tL2NnaXQvYWJvdXQv">cgit主網站<i class="fa fa-external-link-alt"></i></span></li>
+<li>需開啟cgi功能<ul>
+<li><code>./cgit.cgi</code> 可觀看產生的html</li>
+</ul>
+</li>
+<li>安裝成功後在<code>/etc/cgitrc</code>中修改設定，否則404</li>
+<li>參考<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2xhbnR3NDQvY29uZmlnZmlsZS9ibG9iL21hc3Rlci9jZ2l0L2NnaXRyYw==">lantw44的設定檔<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9oZWxwLmdpdGh1Yi5jb20vYXJ0aWNsZXMvZHVwbGljYXRpbmctYS1yZXBvc2l0b3J5Lw==">複製git裸容器<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9jaHJpc2Rvd24ubmFtZS8yMDEzLzA3LzA1L3NldHRpbmctdXAtbG9jYWwtZ2l0aHViLW1pcnJvci13aXRoLWNnaXQtZ2l0LWRhZW1vbi5odG1s">快速複製github中的repository<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cDovL2xpbnV4LmRpZS5uZXQvbWFuLzUvY2dpdHJj">cgitrc詳細設定<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+</li>
+</ul>
+<h2 id="其他工具"><a href="#其他工具" class="headerlink" title="其他工具"></a>其他工具</h2><ul>
+<li>gitstats<ul>
+<li>產生容器的分析資料</li>
+</ul>
+</li>
+</ul>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS9ib29rL3poLXR3L3YxL0dpdC0lRTUlOUYlQkElRTclQTQlOEUtJUU2JUE4JTk5JUU3JUIxJUE0">Git-基礎-標籤<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cDovL3d3dy5ib29rcy5jb20udHcvcHJvZHVjdHMvMDAxMDU3NDA5MA==">版本控制：使用Git<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9paG93ZXIudHcvYmxvZy9hcmNoaXZlcy81NDM2">git 設定集<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9kb3RibG9ncy5jb20udHcvaGF0ZWxvdmUvYXJjaGl2ZS8yMDExLzEyLzI1L2ludHJvZHVjaW5nLWNvbnRpbnVvdXMtaW50ZWdyYXRpb24uYXNweA==">https://dotblogs.com.tw/hatelove/archive/2011/12/25/introducing-continuous-integration.aspx<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuc2xpZGVzaGFyZS5uZXQvb3JpZ2FtaWFkZGljdC9naXQtZ2V0LXJlYWR5LXRvLXVzZS1pdA==">git: get ready to use it<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cDovL2Jsb2cuY2hoLnR3L3Bvc3RzL2dpdC1zdWJtb2R1bGUv">Git Submodule 用法筆記<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS9ib29rL3poLXR3L3YxL0dpdC0lRTUlQjclQTUlRTUlODUlQjctJUU1JUFEJTkwJUU2JUE4JUExJUU3JUI1JTg0LVN1Ym1vZHVsZXM=">Git 工具 - 子模組 (Submodules)<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+      
+  <div class="popular-posts-header">相關文章</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/git-commands/" rel="bookmark">Git常用指令</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/Emacs-introduction/" rel="bookmark">Emacs觀念</a></div>
+    </li>
+  </ul>
+
+        
+
+  <div class="followme">
+    <p>歡迎關注我的其它發布管道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/git/" rel="tag"><i class="fa fa-tag"></i> git</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/cpp-boost/" rel="prev" title="C++ boost 簡單應用">
+      <i class="fa fa-chevron-left"></i> C++ boost 簡單應用
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/unity5-tutorial-survival-shooter/" rel="next" title="Unity Tutorial - Survival Shooter 實作">
+      Unity Tutorial - Survival Shooter 實作 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Git%E7%9A%84%E7%89%B9%E9%BB%9E"><span class="nav-number">1.</span> <span class="nav-text">Git的特點</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git%E5%AE%89%E8%A3%9D"><span class="nav-number">2.</span> <span class="nav-text">Git安裝</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git%E5%B8%B8%E7%94%A8%E5%90%8D%E7%A8%B1"><span class="nav-number">3.</span> <span class="nav-text">Git常用名稱</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A8%AD%E5%AE%9A%E6%AA%94"><span class="nav-number">4.</span> <span class="nav-text">設定檔</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git%E8%B3%87%E6%96%99%E7%B5%90%E6%A7%8B"><span class="nav-number">5.</span> <span class="nav-text">Git資料結構</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E6%94%AF"><span class="nav-number">6.</span> <span class="nav-text">分支</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E6%94%AF%E7%A8%AE%E9%A1%9E"><span class="nav-number">6.1.</span> <span class="nav-text">分支種類</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%88%E4%BD%B5"><span class="nav-number">7.</span> <span class="nav-text">合併</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E6%8F%90%E4%BA%A4"><span class="nav-number">8.</span> <span class="nav-text">修改提交</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%9E%E5%BE%A9-git-reset"><span class="nav-number">8.1.</span> <span class="nav-text">回復(git reset)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%B9%E5%99%A8"><span class="nav-number">9.</span> <span class="nav-text">容器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BB%BA%E7%AB%8B%E5%82%99%E4%BB%BD"><span class="nav-number">10.</span> <span class="nav-text">建立備份</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-tag"><span class="nav-number">11.</span> <span class="nav-text">Git tag</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-Submodule"><span class="nav-number">12.</span> <span class="nav-text">Git Submodule</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-Server-Hosting"><span class="nav-number">13.</span> <span class="nav-text">Git Server Hosting</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7"><span class="nav-number">14.</span> <span class="nav-text">其他工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">15.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="HCL"
+      src="/img/qwerty.png">
+  <p class="site-author-name" itemprop="name">HCL</p>
+  <div class="site-description" itemprop="description">Programming | Computer Science | Thought</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">56</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">134</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http:&#x2F;&#x2F;github.com&#x2F;gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="bWFpbHRvOmdvb2hjbDc3N0BnbWFpbC5jb20=" title="E-Mail → mailto:goohcl777@gmail.com"><i class="fa fa-envelope fa-fw"></i></span>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC96aC10dw=="><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https:&#x2F;&#x2F;qwerty777.me">My Main Page</span>
+        </li>
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http:&#x2F;&#x2F;qwerty777.me&#x2F;life&#x2F;">My Second Blog -- wysiwyg</span>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2014 – 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fab fa-free-code-camp"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">HCL</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">總字數：</span>
+    <span title="總字數">451k</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
+  </div>
+  <div class="addthis_inline_share_toolbox">
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61c5cf9cb3476405" async="async"></script>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+  <script data-pjax>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script data-pjax>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
+
+
+    <div id="pjax">
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+          load: ['[tex]/mhchem'],
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+<script>
+  var disqus_config = function() {
+    this.page.url = "http://gitqwerty777.github.io/git-introduction/";
+    this.page.identifier = "git-introduction/";
+    this.page.title = "Git觀念";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://disqusforqwerty.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+    </div>
+</body>
+</html>

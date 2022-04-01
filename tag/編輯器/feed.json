@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "QWERTY • All posts by \"編輯器\" tag",
+    "description": "Programming | Computer Science | Thought",
+    "home_page_url": "http://gitqwerty777.github.io",
+    "items": [
+        {
+            "id": "http://gitqwerty777.github.io/Emacs-introduction/",
+            "url": "http://gitqwerty777.github.io/Emacs-introduction/",
+            "title": "Emacs觀念",
+            "date_published": "2015-09-18T10:49:50.000Z",
+            "content_html": "<p>參考 <span class=\"exturl\" data-url=\"aHR0cDovL3Nob3Aub3JlaWxseS5jb20vcHJvZHVjdC85NzgwNTk2MDA2NDg4LmRv\">Learning GNU Emacs<i class=\"fa fa-external-link-alt\"></i></span></p>\n<a id=\"more\"></a>\n\n<h2 id=\"Major-Mode\"><a href=\"#Major-Mode\" class=\"headerlink\" title=\"Major Mode\"></a>Major Mode</h2><ul>\n<li>一次只能有一個</li>\n<li>主要針對不同語言</li>\n<li>Example<ul>\n<li>Fundamental Mode</li>\n<li>Text Mode</li>\n<li>C Mode</li>\n<li>Lisp Mode</li>\n</ul>\n</li>\n</ul>\n<h2 id=\"Minor-Mode\"><a href=\"#Minor-Mode\" class=\"headerlink\" title=\"Minor Mode\"></a>Minor Mode</h2><ul>\n<li>相關功能</li>\n<li>Example<ul>\n<li>Abbrev Mode<ul>\n<li>能自訂簡寫，並由emacs自動展開</li>\n<li><code>add-global-abbrev</code></li>\n</ul>\n</li>\n<li>Fill Mode<ul>\n<li>文字超出空間時自動換行(加上<code>\\n</code>)</li>\n</ul>\n</li>\n<li>Auto-save Mode<ul>\n<li>產生自動儲存檔(名為 <code>#檔名#</code>)</li>\n<li>用 <code>revert-buffer</code> 指令將檔案還原成自動儲存時的狀態</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p>最常用的指令是 <code>C-[something]</code>，次常用的指令是 <code>M-[something]</code>，更不常用的指令是 <code>C-x [something]</code>，更不常用的指令是 <code>C-c [something]</code></p>\n<p><code>C-u 4 [command]</code>: 重複4次<br><code>C-u 1 6 [command]</code>: 重複16次</p>\n<p><code>M--</code>, <code>C--</code> : <code>negative-argument</code></p>\n<h2 id=\"搜尋\"><a href=\"#搜尋\" class=\"headerlink\" title=\"搜尋\"></a>搜尋</h2><ul>\n<li>Incremental Search(每輸入一個字元，就尋找符合的文字)</li>\n<li>Non-Incremental Search(輸入完畢後才開始尋找, <code>nonincremental-search-forward</code>)</li>\n<li>Word Search(找一個字，例如找hat，不會找到that, <code>word-search-forward</code>)</li>\n</ul>\n<p>正規表示式搜尋</p>\n<ul>\n<li><code>\\&lt;</code> 字首</li>\n<li><code>\\&gt;</code> 字尾</li>\n</ul>\n<p>拼字檢查</p>\n<ul>\n<li><code>M-$</code> 檢查目前所在單字</li>\n<li><code>ispell-buffer</code>, <code>ispell-region</code></li>\n<li><code>M-x</code> ispell-change-dictionary</li>\n</ul>\n",
+            "tags": [
+                "Emacs",
+                "編輯器"
+            ]
+        }
+    ]
+}

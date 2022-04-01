@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://gitqwerty777.github.io</id>
+    <title>QWERTY • Posts by &#34;python&#34; tag</title>
+    <link href="http://gitqwerty777.github.io" />
+    <updated>2020-08-17T16:45:00.000Z</updated>
+    <category term="C#" />
+    <category term="CodingStyle" />
+    <category term="Emacs" />
+    <category term="編輯器" />
+    <category term="CFR" />
+    <category term="電腦對局理論" />
+    <category term="指令" />
+    <category term="機器學習" />
+    <category term="perceptron" />
+    <category term="readme" />
+    <category term="文件" />
+    <category term="github" />
+    <category term="artificial intelligence" />
+    <category term="search" />
+    <category term="First-Order Logic" />
+    <category term="大數" />
+    <category term="程式" />
+    <category term="C++" />
+    <category term="Hexo" />
+    <category term="網誌" />
+    <category term="Markdown" />
+    <category term="CleanCode" />
+    <category term="重構" />
+    <category term="TDD" />
+    <category term="設計模式" />
+    <category term="CMake" />
+    <category term="Makefile" />
+    <category term="Linux" />
+    <category term="Todo" />
+    <category term="註解" />
+    <category term="經濟學" />
+    <category term="策略" />
+    <category term="競爭" />
+    <category term="博弈論" />
+    <category term="計算機結構" />
+    <category term="人工智慧" />
+    <category term="圍棋" />
+    <category term="象棋" />
+    <category term="蒙地卡羅" />
+    <category term="Alpha-Beta搜尋" />
+    <category term="強化學習" />
+    <category term="計算機網路" />
+    <category term="boost" />
+    <category term="函式庫" />
+    <category term="編譯" />
+    <category term="gcc" />
+    <category term="g++" />
+    <category term="clang" />
+    <category term="最佳化" />
+    <category term="推薦系統" />
+    <category term="FM" />
+    <category term="FFM" />
+    <category term="SVM" />
+    <category term="Embedding" />
+    <category term="自然語言處理" />
+    <category term="外國用語" />
+    <category term="萌典" />
+    <category term="opencc" />
+    <category term="PTT" />
+    <category term="vuejs" />
+    <category term="linux" />
+    <category term="c" />
+    <category term="compile" />
+    <category term="gdb" />
+    <category term="c語言" />
+    <category term="cpp" />
+    <category term="除錯" />
+    <category term="git" />
+    <category term="VMWare" />
+    <category term="虛擬機" />
+    <category term="IFTTT" />
+    <category term="自動化" />
+    <category term="備份" />
+    <category term="webhook" />
+    <category term="簡報" />
+    <category term="軟體" />
+    <category term="PowerPoint" />
+    <category term="Latex" />
+    <category term="JavaScript" />
+    <category term="CSS" />
+    <category term="Unity" />
+    <category term="fcitx" />
+    <category term="嘸蝦米" />
+    <category term="輸入法" />
+    <category term="硬碟" />
+    <category term="記憶體" />
+    <category term="效能" />
+    <category term="錯誤" />
+    <category term="makefile" />
+    <category term="備忘錄" />
+    <category term="存檔" />
+    <category term="統計" />
+    <category term="byobu" />
+    <category term="screen" />
+    <category term="tmux" />
+    <category term="reactjs" />
+    <category term="javascript" />
+    <category term="WideAndDeep" />
+    <category term="Google" />
+    <category term="觀察者" />
+    <category term="訂閱" />
+    <category term="委託" />
+    <category term="正規表示式(RegExp)" />
+    <category term="上下文無關文法(CFG)" />
+    <category term="hexo" />
+    <category term="blog" />
+    <category term="theme" />
+    <category term="feature" />
+    <category term="revealJS" />
+    <category term="markdown" />
+    <category term="rss" />
+    <category term="facebook" />
+    <category term="youtube" />
+    <category term="ptt" />
+    <category term="bilibili" />
+    <category term="pixiv" />
+    <category term="crawler" />
+    <category term="SEO" />
+    <category term="google" />
+    <category term="html" />
+    <category term="amazon" />
+    <category term="webhost" />
+    <category term="ssl" />
+    <category term="漢字" />
+    <category term="中文" />
+    <category term="異體字" />
+    <category term="unicode" />
+    <category term="unity" />
+    <category term="演算法" />
+    <category term="隨機排序" />
+    <category term="洗牌" />
+    <category term="Fisher-Yates" />
+    <category term="證明" />
+    <category term="python" />
+    <entry>
+        <id>http://gitqwerty777.github.io/zen-of-python/</id>
+        <title>Python 之禪</title>
+        <link rel="alternate" href="http://gitqwerty777.github.io/zen-of-python/"/>
+        <content type="html">&lt;h2 id=&#34;import-this&#34;&gt;&lt;a href=&#34;#import-this&#34; class=&#34;headerlink&#34; title=&#34;import this&#34;&gt;&lt;/a&gt;import this&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;The Zen of Python, by Tim Peters&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Beautiful is better than ugly.&lt;br&gt;Explicit is better than implicit.&lt;br&gt;Simple is better than complex.&lt;br&gt;Complex is better than complicated.&lt;br&gt;Flat is better than nested.&lt;br&gt;Sparse is better than dense.&lt;br&gt;Readability counts.&lt;br&gt;Special cases aren’t special enough to break the rules.&lt;br&gt;Although practicality beats purity.&lt;br&gt;Errors should never pass silently.&lt;br&gt;Unless explicitly silenced.&lt;br&gt;In the face of ambiguity, refuse the temptation to guess.&lt;br&gt;There should be one– and preferably only one –obvious way to do it.&lt;br&gt;Although that way may not be obvious at first unless you’re Dutch.&lt;br&gt;Now is better than never.&lt;br&gt;Although never is often better than &lt;em&gt;right&lt;/em&gt; now.&lt;br&gt;If the implementation is hard to explain, it’s a bad idea.&lt;br&gt;If the implementation is easy to explain, it may be a good idea.&lt;br&gt;Namespaces are one honking great idea – let’s do more of those!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+
+&lt;h2 id=&#34;翻譯和解釋&#34;&gt;&lt;a href=&#34;#翻譯和解釋&#34; class=&#34;headerlink&#34; title=&#34;翻譯和解釋&#34;&gt;&lt;/a&gt;翻譯和解釋&lt;/h2&gt;&lt;p&gt;基本上在解釋 clean code 的做法&lt;/p&gt;
+&lt;p&gt;優美優於醜陋，&lt;/p&gt;
+&lt;p&gt;明瞭優於隱晦；&lt;/p&gt;
+&lt;p&gt;簡單優於複雜，&lt;/p&gt;
+&lt;p&gt;複雜優於凌亂，&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果復雜不可避免，那代碼間也不能有難懂的關係，要保持接口簡潔&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;扁平優於嵌套，&lt;/p&gt;
+&lt;p&gt;稀疏優於稠密，&lt;/p&gt;
+&lt;p&gt;可讀性很重要！&lt;/p&gt;
+&lt;p&gt;即使實用比純粹更優，&lt;/p&gt;
+&lt;p&gt;特例亦不可違背原則。&lt;/p&gt;
+&lt;p&gt;錯誤絕不能悄悄忽略，&lt;/p&gt;
+&lt;p&gt;除非它明確需要如此。&lt;/p&gt;
+&lt;p&gt;面對不確定性，&lt;/p&gt;
+&lt;p&gt;拒絕妄加猜測。&lt;/p&gt;
+&lt;p&gt;任何問題應有一種，&lt;/p&gt;
+&lt;p&gt;且最好只有一種，&lt;/p&gt;
+&lt;p&gt;顯而易見的解決方法。&lt;/p&gt;
+&lt;p&gt;儘管這方法一開始並非如此直觀，&lt;/p&gt;
+&lt;p&gt;除非你是荷蘭人。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;解決一個問題的方法可能會有很多種，但在Python中，只選擇最明顯的那一個&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;做優於不做，&lt;/p&gt;
+&lt;p&gt;然而不假思索還不如不做。&lt;/p&gt;
+&lt;p&gt;很難解釋的，必然是壞方法。&lt;/p&gt;
+&lt;p&gt;很好解釋的，可能是好方法。&lt;/p&gt;
+&lt;p&gt;命名空間是個絕妙的主意，&lt;/p&gt;
+&lt;p&gt;我們應好好利用它。&lt;/p&gt;
+&lt;h2 id=&#34;reference&#34;&gt;&lt;a href=&#34;#reference&#34; class=&#34;headerlink&#34; title=&#34;reference&#34;&gt;&lt;/a&gt;reference&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cud2lraXdhbmQuY29tL3poLXR3L1B5dGhvbiVFNCVCOSU4QiVFNyVBNiU4NQ==&#34;&gt;wiki&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucHl0aG9uLm9yZy9kZXYvcGVwcy9wZXAtMDAyMC8=&#34;&gt;PEP-20&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="python" />
+        <updated>2020-08-17T16:45:00.000Z</updated>
+    </entry>
+</feed>

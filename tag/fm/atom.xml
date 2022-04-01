@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://gitqwerty777.github.io</id>
+    <title>QWERTY • Posts by &#34;fm&#34; tag</title>
+    <link href="http://gitqwerty777.github.io" />
+    <updated>2022-01-21T03:11:11.000Z</updated>
+    <category term="C#" />
+    <category term="CodingStyle" />
+    <category term="Emacs" />
+    <category term="編輯器" />
+    <category term="CFR" />
+    <category term="電腦對局理論" />
+    <category term="指令" />
+    <category term="機器學習" />
+    <category term="perceptron" />
+    <category term="readme" />
+    <category term="文件" />
+    <category term="github" />
+    <category term="artificial intelligence" />
+    <category term="search" />
+    <category term="First-Order Logic" />
+    <category term="大數" />
+    <category term="程式" />
+    <category term="C++" />
+    <category term="Hexo" />
+    <category term="網誌" />
+    <category term="Markdown" />
+    <category term="CleanCode" />
+    <category term="重構" />
+    <category term="TDD" />
+    <category term="設計模式" />
+    <category term="CMake" />
+    <category term="Makefile" />
+    <category term="Linux" />
+    <category term="Todo" />
+    <category term="註解" />
+    <category term="經濟學" />
+    <category term="策略" />
+    <category term="競爭" />
+    <category term="博弈論" />
+    <category term="計算機結構" />
+    <category term="人工智慧" />
+    <category term="圍棋" />
+    <category term="象棋" />
+    <category term="蒙地卡羅" />
+    <category term="Alpha-Beta搜尋" />
+    <category term="強化學習" />
+    <category term="計算機網路" />
+    <category term="boost" />
+    <category term="函式庫" />
+    <category term="編譯" />
+    <category term="gcc" />
+    <category term="g++" />
+    <category term="clang" />
+    <category term="最佳化" />
+    <category term="推薦系統" />
+    <category term="FM" />
+    <category term="FFM" />
+    <category term="SVM" />
+    <category term="Embedding" />
+    <category term="自然語言處理" />
+    <category term="外國用語" />
+    <category term="萌典" />
+    <category term="opencc" />
+    <category term="PTT" />
+    <category term="vuejs" />
+    <category term="linux" />
+    <category term="c" />
+    <category term="compile" />
+    <category term="gdb" />
+    <category term="c語言" />
+    <category term="cpp" />
+    <category term="除錯" />
+    <category term="git" />
+    <category term="VMWare" />
+    <category term="虛擬機" />
+    <category term="IFTTT" />
+    <category term="自動化" />
+    <category term="備份" />
+    <category term="webhook" />
+    <category term="簡報" />
+    <category term="軟體" />
+    <category term="PowerPoint" />
+    <category term="Latex" />
+    <category term="JavaScript" />
+    <category term="CSS" />
+    <category term="Unity" />
+    <category term="fcitx" />
+    <category term="嘸蝦米" />
+    <category term="輸入法" />
+    <category term="硬碟" />
+    <category term="記憶體" />
+    <category term="效能" />
+    <category term="錯誤" />
+    <category term="makefile" />
+    <category term="備忘錄" />
+    <category term="存檔" />
+    <category term="統計" />
+    <category term="byobu" />
+    <category term="screen" />
+    <category term="tmux" />
+    <category term="reactjs" />
+    <category term="javascript" />
+    <category term="WideAndDeep" />
+    <category term="Google" />
+    <category term="觀察者" />
+    <category term="訂閱" />
+    <category term="委託" />
+    <category term="正規表示式(RegExp)" />
+    <category term="上下文無關文法(CFG)" />
+    <category term="hexo" />
+    <category term="blog" />
+    <category term="theme" />
+    <category term="feature" />
+    <category term="revealJS" />
+    <category term="markdown" />
+    <category term="rss" />
+    <category term="facebook" />
+    <category term="youtube" />
+    <category term="ptt" />
+    <category term="bilibili" />
+    <category term="pixiv" />
+    <category term="crawler" />
+    <category term="SEO" />
+    <category term="google" />
+    <category term="html" />
+    <category term="amazon" />
+    <category term="webhost" />
+    <category term="ssl" />
+    <category term="漢字" />
+    <category term="中文" />
+    <category term="異體字" />
+    <category term="unicode" />
+    <category term="unity" />
+    <category term="演算法" />
+    <category term="隨機排序" />
+    <category term="洗牌" />
+    <category term="Fisher-Yates" />
+    <category term="證明" />
+    <category term="python" />
+    <entry>
+        <id>http://gitqwerty777.github.io/factorization-machines/</id>
+        <title>Factorization Machines(FM) 和 Field-Aware Factorization Machine(FFM)：推薦系統中的瑞士軍刀</title>
+        <link rel="alternate" href="http://gitqwerty777.github.io/factorization-machines/"/>
+        <content type="html">&lt;h2 id=&#34;Factorization-Machines-FM&#34;&gt;&lt;a href=&#34;#Factorization-Machines-FM&#34; class=&#34;headerlink&#34; title=&#34;Factorization Machines(FM)&#34;&gt;&lt;/a&gt;Factorization Machines(FM)&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;SVM&lt;ul&gt;
+&lt;li&gt;難以在稀疏資料中學習&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Factorization Models(如Matrix Factorization)&lt;ul&gt;
+&lt;li&gt;擴展性低：需要特定的輸入格式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;FM：克服SVM和Factorization Models的缺點&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;可在稀疏資料中學習&lt;/li&gt;
+&lt;li&gt;輸入資料可擴展&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;訓練時間為線性複雜度&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;理論&#34;&gt;&lt;a href=&#34;#理論&#34; class=&#34;headerlink&#34; title=&#34;理論&#34;&gt;&lt;/a&gt;理論&lt;/h3&gt;&lt;p&gt;FM將權重 $w_{ij}$ 設為兩個長度為k的&lt;strong&gt;隱向量&lt;/strong&gt;$V_i, V_j$的&lt;strong&gt;內積&lt;/strong&gt;，表示為$\langle V_i, V_j \rangle$&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;/img/recommend/fm-formula.png&#34; alt=&#34;2維的FM公式&#34;&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$w_0$​是bias&lt;/li&gt;
+&lt;li&gt;$w_i​$是特徵$i$的一維權重&lt;/li&gt;
+&lt;li&gt;$w_{i,j}$​是特徵$i$和特徵$j$的二次交叉權重&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;隱向量長度$k$為hyperparameter&lt;/li&gt;
+&lt;li&gt;FM將權重矩陣分解為隱向量的內積，破壞了權重的獨立性，所以在稀疏資料中仍能學習&lt;ol&gt;
+&lt;li&gt;已知一正定矩陣$W$，必存在$V$使$W=VV^t$&lt;/li&gt;
+&lt;li&gt;權重矩陣$W$必為正定&lt;/li&gt;
+&lt;li&gt;所以$W$必能分解成隱向量矩陣$V$乘自身的轉置&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;原本$W$的大小為$\frac{n^2}{2}$，改成隱向量$V$之後大小為$kn$，$k$通常不會設很大，明顯減少參數數量&lt;ul&gt;
+&lt;li&gt;限制$k$的大小也能限制FM模型的表達力，泛化能力較好&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;/img/recommend/FM-structure.png&#34; alt=&#34;結構&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;效率&#34;&gt;&lt;a href=&#34;#效率&#34; class=&#34;headerlink&#34; title=&#34;效率&#34;&gt;&lt;/a&gt;效率&lt;/h3&gt;&lt;p&gt;&lt;img data-src=&#34;/img/recommend/fm-time-complexity.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;整理公式後，Inference的時間複雜度從$O(kn^2)$降到了$O(kn)$，$n$為特徵維度&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第2行公式推導：表示為整個矩陣扣掉對角項再除以2，因為$W$是對稱矩陣&lt;/li&gt;
+&lt;li&gt;詳細推導可看&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly95dWxvbmd0c2FpLm1lZGl1bS5jb20vZmFjdG9yaXphdGlvbi1tYWNoaW5lLTYzMTYwYmMyYzA2Yg==&#34;&gt;這篇&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;實作上只須計算非0元素的乘積，時間複雜度再下降到$O(km)$，$m$為平均一筆輸入資料中，值非0的特徵數&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;更新&#34;&gt;&lt;a href=&#34;#更新&#34; class=&#34;headerlink&#34; title=&#34;更新&#34;&gt;&lt;/a&gt;更新&lt;/h3&gt;&lt;p&gt;使用gradient descent學習參數&lt;br&gt;&lt;img data-src=&#34;/img/recommend/fm-gradient.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;$\sum^n_{j=1}v_{j, f}x_j$可以事先計算，所以每次梯度更新的時間複雜度為$O(1)$&lt;/p&gt;
+&lt;p&gt;因此FM的訓練時間複雜度也是$O(km)$&lt;/p&gt;
+&lt;h3 id=&#34;高維度FM&#34;&gt;&lt;a href=&#34;#高維度FM&#34; class=&#34;headerlink&#34; title=&#34;高維度FM&#34;&gt;&lt;/a&gt;高維度FM&lt;/h3&gt;&lt;p&gt;&lt;img data-src=&#34;/img/recommend/fm-dway.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;經過公式簡化(和二維的方法相似)，也可以在線性時間內計算&lt;/p&gt;
+&lt;h3 id=&#34;FM-和-Factorization-Model-SVM-比較&#34;&gt;&lt;a href=&#34;#FM-和-Factorization-Model-SVM-比較&#34; class=&#34;headerlink&#34; title=&#34;FM 和 Factorization Model, SVM 比較&#34;&gt;&lt;/a&gt;FM 和 Factorization Model, SVM 比較&lt;/h3&gt;&lt;p&gt;論文中證明了兩件事&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;各種Factorization Model為FM的特化&lt;/li&gt;
+&lt;li&gt;FM可以解決SVM在稀疏資料中無法成功訓練的問題&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;詳細證明看不懂，略過&lt;/p&gt;
+&lt;h3 id=&#34;結論&#34;&gt;&lt;a href=&#34;#結論&#34; class=&#34;headerlink&#34; title=&#34;結論&#34;&gt;&lt;/a&gt;結論&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;FM速度快、容易實作，於2012~14年為業界主流模型&lt;/li&gt;
+&lt;li&gt;FM產生的隱向量可視為一種embedding&lt;ul&gt;
+&lt;li&gt;所以拿user的隱向量找相似隱向量的item，就是一個簡易且快速的推薦方法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;FM適合類型特徵(離散)而非數值特徵(連續)，因為&lt;ul&gt;
+&lt;li&gt;類型特徵可有多個隱向量，而數值特徵只有一個&lt;/li&gt;
+&lt;li&gt;數值特徵不應使用同一個隱向量，如10歲和40歲&lt;/li&gt;
+&lt;li&gt;FM速度和非零特徵數有關，數值特徵類型化後不影響訓練速度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Field-aware-factorization-machines-FFM&#34;&gt;&lt;a href=&#34;#Field-aware-factorization-machines-FFM&#34; class=&#34;headerlink&#34; title=&#34;Field-aware factorization machines(FFM)&#34;&gt;&lt;/a&gt;Field-aware factorization machines(FFM)&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;FM：一個特徵有&lt;strong&gt;一個&lt;/strong&gt;隱向量&lt;/li&gt;
+&lt;li&gt;FFM：一個特徵有&lt;strong&gt;一組&lt;/strong&gt;隱向量&lt;ul&gt;
+&lt;li&gt;每個隱向量對應不同的&lt;strong&gt;特徵域&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;特徵域通常為一群代表相同性質的特徵，如one-hot特徵&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;/img/recommend/ffm-formula.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;範例&#34;&gt;&lt;a href=&#34;#範例&#34; class=&#34;headerlink&#34; title=&#34;範例&#34;&gt;&lt;/a&gt;範例&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;出版商特徵域(P): ESPN, Vogue, and NBC&lt;/li&gt;
+&lt;li&gt;廣告商特徵域(A): Nike, Gucci, and Adidas&lt;/li&gt;
+&lt;li&gt;消費者性別特徵域(G): Male, Female&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在(ESPN, Nike) 和 (ESPN, Male) 中，ESPN的隱向量是不同的($V_{ESPN, A}$和 $V_{ESPN, G}$)&lt;/p&gt;
+&lt;p&gt;FM的隱向量：$$V_{ESPN}V_{Nike}, V_{ESPN}V_{Male}, V_{Nike}V_{Male}$$&lt;br&gt;FFM的隱向量：$$V_{ESPN, A}V_{Nike, P}, V_{ESPN, G}V_{Male,P}, V_{Nike, G}V_{Male,A}$$&lt;/p&gt;
+&lt;h3 id=&#34;結論-1&#34;&gt;&lt;a href=&#34;#結論-1&#34; class=&#34;headerlink&#34; title=&#34;結論&#34;&gt;&lt;/a&gt;結論&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;訓練時間複雜度為$O(kn^2)$&lt;/li&gt;
+&lt;li&gt;因為FFM的隱向量限制在一個特徵域，FFM的$k$可以比FM的$k$小&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;公式比較&#34;&gt;&lt;a href=&#34;#公式比較&#34; class=&#34;headerlink&#34; title=&#34;公式比較&#34;&gt;&lt;/a&gt;公式比較&lt;/h2&gt;&lt;p&gt;只比較二次交叉項&lt;/p&gt;
+&lt;p&gt;$$FM(v, x) = … + \sum^n_{j_1=1}{\sum^n_{j_2=j_1+1}{\langle v_{j_1}, v_{j_2}\rangle x_{j_1}x_{j_2}}}$$&lt;br&gt;$$FFM(v, x) = … + \sum^n_{j_1=1}{\sum^n_{j_2=j_1+1}{\langle v_{j_1, f_2}, v_{j_2, f_1}\rangle x_{j_1}x_{j_2}}}$$&lt;/p&gt;
+&lt;h2 id=&#34;方法比較&#34;&gt;&lt;a href=&#34;#方法比較&#34; class=&#34;headerlink&#34; title=&#34;方法比較&#34;&gt;&lt;/a&gt;方法比較&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;FM：在LR(Logistic Regression)的基礎上，加入特徵交叉 &lt;/li&gt;
+&lt;li&gt;FFM：在FM的基礎上，加入特徵域交叉&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;總結&#34;&gt;&lt;a href=&#34;#總結&#34; class=&#34;headerlink&#34; title=&#34;總結&#34;&gt;&lt;/a&gt;總結&lt;/h2&gt;&lt;p&gt;就算Deep Learning盛行，FM也是一個很好的Baseline Model&lt;/p&gt;
+&lt;h2 id=&#34;Reference&#34;&gt;&lt;a href=&#34;#Reference&#34; class=&#34;headerlink&#34; title=&#34;Reference&#34;&gt;&lt;/a&gt;Reference&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuY3NpZS5udHUuZWR1LnR3L35iOTcwNTMvcGFwZXIvUmVuZGxlMjAxMEZNLnBkZg==&#34;&gt;Rendle, Steffen. “Factorization machines.” 2010 IEEE International conference on data mining. IEEE, 2010&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE3MDEuMDQwOTk=&#34;&gt;Juan, Yuchin, et al. “Field-aware factorization machines for CTR prediction.” Proceedings of the 10th ACM conference on recommender systems. 2016&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8zNDMxNzQxMDg=&#34;&gt;FM：推薦算法中的瑞士軍刀&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93bmdhdy5naXRodWIuaW8vZmllbGQtYXdhcmUtZmFjdG9yaXphdGlvbi1tYWNoaW5lcy13aXRoLXhsZWFybi8=&#34;&gt;Field-aware Factorization Machines with xLearn&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3dlYi5jcy51Y2xhLmVkdS9+Y2hvaHNpZWgvdGVhY2hpbmcvQ1MyNjBfV2ludGVyMjAxOS9sZWN0dXJlMTMucGRm&#34;&gt;http://web.cs.ucla.edu/~chohsieh/teaching/CS260_Winter2019/lecture13.pdf&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC84OTYzOTMwNg==&#34;&gt;推薦系統系列（一）：FM理論與實踐&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly95dWxvbmd0c2FpLm1lZGl1bS5jb20vZmFjdG9yaXphdGlvbi1tYWNoaW5lLTYzMTYwYmMyYzA2Yg==&#34;&gt;初探Factorization Machine&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuemhpaHUuY29tL3F1ZXN0aW9uLzMyODkyNTE0Mw==&#34;&gt;推薦系統算法FM、FFM使用時，連續性特徵，是直接作為輸入，還是經過離散化後one-hot處理呢？&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC80NTMyMzk2NzU=&#34;&gt;FM模型連續特徵離散化&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="推薦系統" />
+        <category term="FM" />
+        <category term="FFM" />
+        <category term="SVM" />
+        <category term="Embedding" />
+        <updated>2022-01-21T03:11:11.000Z</updated>
+    </entry>
+</feed>

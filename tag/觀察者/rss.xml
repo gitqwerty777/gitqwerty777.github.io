@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>QWERTY • Posts by &#34;觀察者&#34; tag</title>
+        <link>http://gitqwerty777.github.io</link>
+        <description>Programming | Computer Science | Thought</description>
+        <language>zh-TW</language>
+        <pubDate>Sat, 21 Nov 2020 15:00:00 +0800</pubDate>
+        <lastBuildDate>Sat, 21 Nov 2020 15:00:00 +0800</lastBuildDate>
+        <category>C#</category>
+        <category>CodingStyle</category>
+        <category>Emacs</category>
+        <category>編輯器</category>
+        <category>CFR</category>
+        <category>電腦對局理論</category>
+        <category>指令</category>
+        <category>機器學習</category>
+        <category>perceptron</category>
+        <category>readme</category>
+        <category>文件</category>
+        <category>github</category>
+        <category>artificial intelligence</category>
+        <category>search</category>
+        <category>First-Order Logic</category>
+        <category>大數</category>
+        <category>程式</category>
+        <category>C++</category>
+        <category>Hexo</category>
+        <category>網誌</category>
+        <category>Markdown</category>
+        <category>CleanCode</category>
+        <category>重構</category>
+        <category>TDD</category>
+        <category>設計模式</category>
+        <category>CMake</category>
+        <category>Makefile</category>
+        <category>Linux</category>
+        <category>Todo</category>
+        <category>註解</category>
+        <category>經濟學</category>
+        <category>策略</category>
+        <category>競爭</category>
+        <category>博弈論</category>
+        <category>計算機結構</category>
+        <category>人工智慧</category>
+        <category>圍棋</category>
+        <category>象棋</category>
+        <category>蒙地卡羅</category>
+        <category>Alpha-Beta搜尋</category>
+        <category>強化學習</category>
+        <category>計算機網路</category>
+        <category>boost</category>
+        <category>函式庫</category>
+        <category>編譯</category>
+        <category>gcc</category>
+        <category>g++</category>
+        <category>clang</category>
+        <category>最佳化</category>
+        <category>推薦系統</category>
+        <category>FM</category>
+        <category>FFM</category>
+        <category>SVM</category>
+        <category>Embedding</category>
+        <category>自然語言處理</category>
+        <category>外國用語</category>
+        <category>萌典</category>
+        <category>opencc</category>
+        <category>PTT</category>
+        <category>vuejs</category>
+        <category>linux</category>
+        <category>c</category>
+        <category>compile</category>
+        <category>gdb</category>
+        <category>c語言</category>
+        <category>cpp</category>
+        <category>除錯</category>
+        <category>git</category>
+        <category>VMWare</category>
+        <category>虛擬機</category>
+        <category>IFTTT</category>
+        <category>自動化</category>
+        <category>備份</category>
+        <category>webhook</category>
+        <category>簡報</category>
+        <category>軟體</category>
+        <category>PowerPoint</category>
+        <category>Latex</category>
+        <category>JavaScript</category>
+        <category>CSS</category>
+        <category>Unity</category>
+        <category>fcitx</category>
+        <category>嘸蝦米</category>
+        <category>輸入法</category>
+        <category>硬碟</category>
+        <category>記憶體</category>
+        <category>效能</category>
+        <category>錯誤</category>
+        <category>makefile</category>
+        <category>備忘錄</category>
+        <category>存檔</category>
+        <category>統計</category>
+        <category>byobu</category>
+        <category>screen</category>
+        <category>tmux</category>
+        <category>reactjs</category>
+        <category>javascript</category>
+        <category>WideAndDeep</category>
+        <category>Google</category>
+        <category>觀察者</category>
+        <category>訂閱</category>
+        <category>委託</category>
+        <category>正規表示式(RegExp)</category>
+        <category>上下文無關文法(CFG)</category>
+        <category>hexo</category>
+        <category>blog</category>
+        <category>theme</category>
+        <category>feature</category>
+        <category>revealJS</category>
+        <category>markdown</category>
+        <category>rss</category>
+        <category>facebook</category>
+        <category>youtube</category>
+        <category>ptt</category>
+        <category>bilibili</category>
+        <category>pixiv</category>
+        <category>crawler</category>
+        <category>SEO</category>
+        <category>google</category>
+        <category>html</category>
+        <category>amazon</category>
+        <category>webhost</category>
+        <category>ssl</category>
+        <category>漢字</category>
+        <category>中文</category>
+        <category>異體字</category>
+        <category>unicode</category>
+        <category>unity</category>
+        <category>演算法</category>
+        <category>隨機排序</category>
+        <category>洗牌</category>
+        <category>Fisher-Yates</category>
+        <category>證明</category>
+        <category>python</category>
+        <item>
+            <guid isPermalink="true">http://gitqwerty777.github.io/observer-pattern/</guid>
+            <title>觀察者模式(Observer Pattern)</title>
+            <link>http://gitqwerty777.github.io/observer-pattern/</link>
+            <category>設計模式</category>
+            <category>觀察者</category>
+            <category>訂閱</category>
+            <category>委託</category>
+            <pubDate>Sat, 21 Nov 2020 15:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;目標&#34;&gt;&lt;a href=&#34;#目標&#34; class=&#34;headerlink&#34; title=&#34;目標&#34;&gt;&lt;/a&gt;目標&lt;/h2&gt;&lt;p&gt;一對多的依賴關係，當物件狀態改變時，所有依賴者會被通知。&lt;/p&gt;
+&lt;h2 id=&#34;架構&#34;&gt;&lt;a href=&#34;#架構&#34; class=&#34;headerlink&#34; title=&#34;架構&#34;&gt;&lt;/a&gt;架構&lt;/h2&gt;&lt;p&gt;&lt;img data-src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Observer_w_update.svg/1024px-Observer_w_update.svg.png?1618077346924&#34; alt=&#34;From Wiki&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Subject&lt;/code&gt;：主題&lt;ul&gt;
+&lt;li&gt;特定事件發生時，會通知觀察者&lt;ul&gt;
+&lt;li&gt;如資料改變&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;新增/移除觀察者：&lt;code&gt;Attach(Observer), Detach(Observer)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;用&lt;code&gt;Notify(data)&lt;/code&gt;通知觀察者主題有更新&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Observer&lt;/code&gt;：觀察者&lt;ul&gt;
+&lt;li&gt;訂閱主題，以便在更新時收到通知&lt;/li&gt;
+&lt;li&gt;觀察者收到通知時呼叫&lt;code&gt;Update(Subject)&lt;/code&gt;以處理事件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;分析&#34;&gt;&lt;a href=&#34;#分析&#34; class=&#34;headerlink&#34; title=&#34;分析&#34;&gt;&lt;/a&gt;分析&lt;/h2&gt;&lt;p&gt;設計守則：盡量讓需要互動的物件的關係鬆綁&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;主題和觀察者鬆綁&lt;ul&gt;
+&lt;li&gt;主題只知道觀察者有實作特定介面(&lt;code&gt;Observer&lt;/code&gt;)，不用知道觀察者的具體類別&lt;/li&gt;
+&lt;li&gt;任何時候都可以加入新的觀察者，且主題的程式碼不需修改&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;實作&#34;&gt;&lt;a href=&#34;#實作&#34; class=&#34;headerlink&#34; title=&#34;實作&#34;&gt;&lt;/a&gt;實作&lt;/h2&gt;&lt;p&gt;有一觀測工作站數據的物件，在數據異常時可以通知到多個平台(Email, 簡訊, App)，&lt;br&gt;且使用者可以自由調整各平台的通知設定。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;觀察者之間彼此獨立，不可依頼通知觀察者的順序&lt;/li&gt;
+&lt;li&gt;主題可以控制改變的定義(如溫度變化超過1度)&lt;/li&gt;
+&lt;li&gt;Push model/Pull model&lt;ul&gt;
+&lt;li&gt;Push model&lt;ul&gt;
+&lt;li&gt;推送所有資料給Observer&lt;/li&gt;
+&lt;li&gt;Subject要知道Observer需要什麼，彈性較差&lt;/li&gt;
+&lt;li&gt;Observer會接收到不必要的資料&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Pull model&lt;ul&gt;
+&lt;li&gt;提供必要的資料或其來源(如data id或Subject本身)給Observer，由Observer自行取得相關資料&lt;/li&gt;
+&lt;li&gt;每個Observer都要重新取得資料，效率較差&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;C#的實作：委託，可看作對函數的抽象，是函數的類別&lt;ul&gt;
+&lt;li&gt;委託物件所搭載的方法並不需要屬於同一個類別(即不需要Observer介面)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;可以實作一個&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL1dpdGhvdXRVbWJyZWxsYS1Cb3kvRGVzaWduLXBhdHRlcm5zLWluLWdhbWUtZGV2ZWxvcG1lbnQvYmxvYi8zODgzYzI3OGJiZWY2MzRlMzdiYzFlYTZmNDY2N2I5MjE4NDcwYmY3L1JlZEFsZXJ0UHJvamVjdC9Bc3NldHMvU2NyaXB0cy9HYW1lRXZlbnRTeXN0ZW0vR2FtZUV2ZW50U3lzdGVtLmNz&#34;&gt;Subject管理員&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;用途&#34;&gt;&lt;a href=&#34;#用途&#34; class=&#34;headerlink&#34; title=&#34;用途&#34;&gt;&lt;/a&gt;用途&lt;/h2&gt;&lt;p&gt;當一個物件的改變需要同時改變其他物件時&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;訂閱服務&lt;/li&gt;
+&lt;li&gt;MVC架構: 後端資料更新、前端顯示資料&lt;/li&gt;
+&lt;li&gt;UI操作: OnClick, OnHover&lt;/li&gt;
+&lt;li&gt;觸發事件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;其他&#34;&gt;&lt;a href=&#34;#其他&#34; class=&#34;headerlink&#34; title=&#34;其他&#34;&gt;&lt;/a&gt;其他&lt;/h2&gt;&lt;p&gt;RSS訂閱後可取得所有資料，目前的社群網站則是訂閱後仍會篩選並提供部份資料&lt;/p&gt;
+&lt;h2 id=&#34;參考&#34;&gt;&lt;a href=&#34;#參考&#34; class=&#34;headerlink&#34; title=&#34;參考&#34;&gt;&lt;/a&gt;參考&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Wiki&lt;/li&gt;
+&lt;li&gt;Head-First Design Pattern&lt;/li&gt;
+&lt;li&gt;大話設計模式&lt;/li&gt;
+&lt;li&gt;設計模式與遊戲開發的完美結合&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ub3RmYWxzZS5uZXQvMTAvb2JzZXJ2ZXItcGF0dGVybg==&#34;&gt;https://notfalse.net/10/observer-pattern&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

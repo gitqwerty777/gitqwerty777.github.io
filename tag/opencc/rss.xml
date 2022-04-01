@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>QWERTY • Posts by &#34;opencc&#34; tag</title>
+        <link>http://gitqwerty777.github.io</link>
+        <description>Programming | Computer Science | Thought</description>
+        <language>zh-TW</language>
+        <pubDate>Sun, 13 Sep 2020 17:25:34 +0800</pubDate>
+        <lastBuildDate>Sun, 13 Sep 2020 17:25:34 +0800</lastBuildDate>
+        <category>C#</category>
+        <category>CodingStyle</category>
+        <category>Emacs</category>
+        <category>編輯器</category>
+        <category>CFR</category>
+        <category>電腦對局理論</category>
+        <category>指令</category>
+        <category>機器學習</category>
+        <category>perceptron</category>
+        <category>readme</category>
+        <category>文件</category>
+        <category>github</category>
+        <category>artificial intelligence</category>
+        <category>search</category>
+        <category>First-Order Logic</category>
+        <category>大數</category>
+        <category>程式</category>
+        <category>C++</category>
+        <category>Hexo</category>
+        <category>網誌</category>
+        <category>Markdown</category>
+        <category>CleanCode</category>
+        <category>重構</category>
+        <category>TDD</category>
+        <category>設計模式</category>
+        <category>CMake</category>
+        <category>Makefile</category>
+        <category>Linux</category>
+        <category>Todo</category>
+        <category>註解</category>
+        <category>經濟學</category>
+        <category>策略</category>
+        <category>競爭</category>
+        <category>博弈論</category>
+        <category>計算機結構</category>
+        <category>人工智慧</category>
+        <category>圍棋</category>
+        <category>象棋</category>
+        <category>蒙地卡羅</category>
+        <category>Alpha-Beta搜尋</category>
+        <category>強化學習</category>
+        <category>計算機網路</category>
+        <category>boost</category>
+        <category>函式庫</category>
+        <category>編譯</category>
+        <category>gcc</category>
+        <category>g++</category>
+        <category>clang</category>
+        <category>最佳化</category>
+        <category>推薦系統</category>
+        <category>FM</category>
+        <category>FFM</category>
+        <category>SVM</category>
+        <category>Embedding</category>
+        <category>自然語言處理</category>
+        <category>外國用語</category>
+        <category>萌典</category>
+        <category>opencc</category>
+        <category>PTT</category>
+        <category>vuejs</category>
+        <category>linux</category>
+        <category>c</category>
+        <category>compile</category>
+        <category>gdb</category>
+        <category>c語言</category>
+        <category>cpp</category>
+        <category>除錯</category>
+        <category>git</category>
+        <category>VMWare</category>
+        <category>虛擬機</category>
+        <category>IFTTT</category>
+        <category>自動化</category>
+        <category>備份</category>
+        <category>webhook</category>
+        <category>簡報</category>
+        <category>軟體</category>
+        <category>PowerPoint</category>
+        <category>Latex</category>
+        <category>JavaScript</category>
+        <category>CSS</category>
+        <category>Unity</category>
+        <category>fcitx</category>
+        <category>嘸蝦米</category>
+        <category>輸入法</category>
+        <category>硬碟</category>
+        <category>記憶體</category>
+        <category>效能</category>
+        <category>錯誤</category>
+        <category>makefile</category>
+        <category>備忘錄</category>
+        <category>存檔</category>
+        <category>統計</category>
+        <category>byobu</category>
+        <category>screen</category>
+        <category>tmux</category>
+        <category>reactjs</category>
+        <category>javascript</category>
+        <category>WideAndDeep</category>
+        <category>Google</category>
+        <category>觀察者</category>
+        <category>訂閱</category>
+        <category>委託</category>
+        <category>正規表示式(RegExp)</category>
+        <category>上下文無關文法(CFG)</category>
+        <category>hexo</category>
+        <category>blog</category>
+        <category>theme</category>
+        <category>feature</category>
+        <category>revealJS</category>
+        <category>markdown</category>
+        <category>rss</category>
+        <category>facebook</category>
+        <category>youtube</category>
+        <category>ptt</category>
+        <category>bilibili</category>
+        <category>pixiv</category>
+        <category>crawler</category>
+        <category>SEO</category>
+        <category>google</category>
+        <category>html</category>
+        <category>amazon</category>
+        <category>webhost</category>
+        <category>ssl</category>
+        <category>漢字</category>
+        <category>中文</category>
+        <category>異體字</category>
+        <category>unicode</category>
+        <category>unity</category>
+        <category>演算法</category>
+        <category>隨機排序</category>
+        <category>洗牌</category>
+        <category>Fisher-Yates</category>
+        <category>證明</category>
+        <category>python</category>
+        <item>
+            <guid isPermalink="true">http://gitqwerty777.github.io/foreign-language-police/</guid>
+            <title>如何當稱職的支語警察？</title>
+            <link>http://gitqwerty777.github.io/foreign-language-police/</link>
+            <category>自然語言處理</category>
+            <category>外國用語</category>
+            <category>萌典</category>
+            <category>opencc</category>
+            <category>PTT</category>
+            <category>vuejs</category>
+            <pubDate>Sun, 13 Sep 2020 17:25:34 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;img data-src=&#34;/img/Other/foreign-terms-police.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;簡介&#34;&gt;&lt;a href=&#34;#簡介&#34; class=&#34;headerlink&#34; title=&#34;簡介&#34;&gt;&lt;/a&gt;簡介&lt;/h2&gt;&lt;p&gt;PTT 上常有支語警察&lt;/p&gt;
+&lt;p&gt;也常發現 google 翻譯的中文常常會&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuc2V0bi5jb20vTmV3cy5hc3B4P05ld3NJRD03NDY3OTM=&#34;&gt;翻譯成中國慣用語&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;所以就寫了一個支語警察的網站：&lt;a href=&#34;/foreign-terms-police&#34;&gt;支語警察&lt;/a&gt;&lt;/p&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+
+&lt;h2 id=&#34;流程&#34;&gt;&lt;a href=&#34;#流程&#34; class=&#34;headerlink&#34; title=&#34;流程&#34;&gt;&lt;/a&gt;流程&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;文章分詞&lt;/li&gt;
+&lt;li&gt;標出非台灣習慣用語&lt;/li&gt;
+&lt;li&gt;從資料庫尋找對應的用語&lt;/li&gt;
+&lt;li&gt;若無對應用語則尋找其解釋&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;資料庫&#34;&gt;&lt;a href=&#34;#資料庫&#34; class=&#34;headerlink&#34; title=&#34;資料庫&#34;&gt;&lt;/a&gt;資料庫&lt;/h2&gt;&lt;p&gt;基本上都是使用現有的詞典，其資料都是人工更新的，&lt;strong&gt;目前還沒有自動辨識習慣用語的方法&lt;/strong&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;萌典&#34;&gt;&lt;a href=&#34;#萌典&#34; class=&#34;headerlink&#34; title=&#34;萌典&#34;&gt;&lt;/a&gt;萌典&lt;/h3&gt;&lt;p&gt;從萌典的兩岸字典獲取用語中台灣和中國的意思不同者(同字不同義，同義不同字)&lt;/p&gt;
+&lt;h3 id=&#34;開放中文轉換-OpenCC&#34;&gt;&lt;a href=&#34;#開放中文轉換-OpenCC&#34; class=&#34;headerlink&#34; title=&#34;開放中文轉換 OpenCC&#34;&gt;&lt;/a&gt;開放中文轉換 OpenCC&lt;/h3&gt;&lt;p&gt;支持詞彙級別的轉換、異體字轉換和地區習慣用語及字體轉換（中國大陸、臺灣、香港、日本）。&lt;/p&gt;
+&lt;p&gt;使用詞典對應的方式實作，像是簡體轉繁體就使用&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0JZVm9pZC9PcGVuQ0MvYmxvYi9tYXN0ZXIvZGF0YS9kaWN0aW9uYXJ5L1NUUGhyYXNlcy50eHQ=&#34;&gt;此詞典&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;實作&#34;&gt;&lt;a href=&#34;#實作&#34; class=&#34;headerlink&#34; title=&#34;實作&#34;&gt;&lt;/a&gt;實作&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;支援單字或文章檢測&lt;/li&gt;
+&lt;li&gt;Google Trends&lt;ul&gt;
+&lt;li&gt;使用台灣的搜尋趨勢比較原本用語及對應的外來用語&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;困難&#34;&gt;&lt;a href=&#34;#困難&#34; class=&#34;headerlink&#34; title=&#34;困難&#34;&gt;&lt;/a&gt;困難&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;資料庫通常沒有收錄網路流行語&lt;/li&gt;
+&lt;li&gt;同詞不同義&lt;ol&gt;
+&lt;li&gt;質量：中國常用於表示「品質」，但兩岸都有「重量」的意思 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucHR0LmNjL2Jicy9DX0NoYXQvTS4xNTk1NTU0NDM0LkEuNjc2Lmh0bWw=&#34;&gt;範例&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;土豆：中國為「馬鈴薯」，台灣為「花生」&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;參考資料&#34;&gt;&lt;a href=&#34;#參考資料&#34; class=&#34;headerlink&#34; title=&#34;參考資料&#34;&gt;&lt;/a&gt;參考資料&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cubW9lZGljdC50dy8=&#34;&gt;萌典&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0JZVm9pZC9PcGVuQ0M=&#34;&gt;OpenCC&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucHR0LmNjL2Jicy9DX0NoYXQvTS4xNTk1NTEyNDgwLkEuNTY5Lmh0bWw=&#34;&gt;[閒聊] 支語警察是誰畫的？&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

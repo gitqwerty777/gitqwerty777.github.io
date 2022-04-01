@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://gitqwerty777.github.io</id>
+    <title>QWERTY • Posts by &#34;編輯器&#34; tag</title>
+    <link href="http://gitqwerty777.github.io" />
+    <updated>2015-09-18T10:49:50.000Z</updated>
+    <category term="C#" />
+    <category term="CodingStyle" />
+    <category term="Emacs" />
+    <category term="編輯器" />
+    <category term="CFR" />
+    <category term="電腦對局理論" />
+    <category term="指令" />
+    <category term="機器學習" />
+    <category term="perceptron" />
+    <category term="readme" />
+    <category term="文件" />
+    <category term="github" />
+    <category term="artificial intelligence" />
+    <category term="search" />
+    <category term="First-Order Logic" />
+    <category term="大數" />
+    <category term="程式" />
+    <category term="C++" />
+    <category term="Hexo" />
+    <category term="網誌" />
+    <category term="Markdown" />
+    <category term="CleanCode" />
+    <category term="重構" />
+    <category term="TDD" />
+    <category term="設計模式" />
+    <category term="CMake" />
+    <category term="Makefile" />
+    <category term="Linux" />
+    <category term="Todo" />
+    <category term="註解" />
+    <category term="經濟學" />
+    <category term="策略" />
+    <category term="競爭" />
+    <category term="博弈論" />
+    <category term="計算機結構" />
+    <category term="人工智慧" />
+    <category term="圍棋" />
+    <category term="象棋" />
+    <category term="蒙地卡羅" />
+    <category term="Alpha-Beta搜尋" />
+    <category term="強化學習" />
+    <category term="計算機網路" />
+    <category term="boost" />
+    <category term="函式庫" />
+    <category term="編譯" />
+    <category term="gcc" />
+    <category term="g++" />
+    <category term="clang" />
+    <category term="最佳化" />
+    <category term="推薦系統" />
+    <category term="FM" />
+    <category term="FFM" />
+    <category term="SVM" />
+    <category term="Embedding" />
+    <category term="自然語言處理" />
+    <category term="外國用語" />
+    <category term="萌典" />
+    <category term="opencc" />
+    <category term="PTT" />
+    <category term="vuejs" />
+    <category term="linux" />
+    <category term="c" />
+    <category term="compile" />
+    <category term="gdb" />
+    <category term="c語言" />
+    <category term="cpp" />
+    <category term="除錯" />
+    <category term="git" />
+    <category term="VMWare" />
+    <category term="虛擬機" />
+    <category term="IFTTT" />
+    <category term="自動化" />
+    <category term="備份" />
+    <category term="webhook" />
+    <category term="簡報" />
+    <category term="軟體" />
+    <category term="PowerPoint" />
+    <category term="Latex" />
+    <category term="JavaScript" />
+    <category term="CSS" />
+    <category term="Unity" />
+    <category term="fcitx" />
+    <category term="嘸蝦米" />
+    <category term="輸入法" />
+    <category term="硬碟" />
+    <category term="記憶體" />
+    <category term="效能" />
+    <category term="錯誤" />
+    <category term="makefile" />
+    <category term="備忘錄" />
+    <category term="存檔" />
+    <category term="統計" />
+    <category term="byobu" />
+    <category term="screen" />
+    <category term="tmux" />
+    <category term="reactjs" />
+    <category term="javascript" />
+    <category term="WideAndDeep" />
+    <category term="Google" />
+    <category term="觀察者" />
+    <category term="訂閱" />
+    <category term="委託" />
+    <category term="正規表示式(RegExp)" />
+    <category term="上下文無關文法(CFG)" />
+    <category term="hexo" />
+    <category term="blog" />
+    <category term="theme" />
+    <category term="feature" />
+    <category term="revealJS" />
+    <category term="markdown" />
+    <category term="rss" />
+    <category term="facebook" />
+    <category term="youtube" />
+    <category term="ptt" />
+    <category term="bilibili" />
+    <category term="pixiv" />
+    <category term="crawler" />
+    <category term="SEO" />
+    <category term="google" />
+    <category term="html" />
+    <category term="amazon" />
+    <category term="webhost" />
+    <category term="ssl" />
+    <category term="漢字" />
+    <category term="中文" />
+    <category term="異體字" />
+    <category term="unicode" />
+    <category term="unity" />
+    <category term="演算法" />
+    <category term="隨機排序" />
+    <category term="洗牌" />
+    <category term="Fisher-Yates" />
+    <category term="證明" />
+    <category term="python" />
+    <entry>
+        <id>http://gitqwerty777.github.io/Emacs-introduction/</id>
+        <title>Emacs觀念</title>
+        <link rel="alternate" href="http://gitqwerty777.github.io/Emacs-introduction/"/>
+        <content type="html">&lt;p&gt;參考 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3Nob3Aub3JlaWxseS5jb20vcHJvZHVjdC85NzgwNTk2MDA2NDg4LmRv&#34;&gt;Learning GNU Emacs&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+
+&lt;h2 id=&#34;Major-Mode&#34;&gt;&lt;a href=&#34;#Major-Mode&#34; class=&#34;headerlink&#34; title=&#34;Major Mode&#34;&gt;&lt;/a&gt;Major Mode&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;一次只能有一個&lt;/li&gt;
+&lt;li&gt;主要針對不同語言&lt;/li&gt;
+&lt;li&gt;Example&lt;ul&gt;
+&lt;li&gt;Fundamental Mode&lt;/li&gt;
+&lt;li&gt;Text Mode&lt;/li&gt;
+&lt;li&gt;C Mode&lt;/li&gt;
+&lt;li&gt;Lisp Mode&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Minor-Mode&#34;&gt;&lt;a href=&#34;#Minor-Mode&#34; class=&#34;headerlink&#34; title=&#34;Minor Mode&#34;&gt;&lt;/a&gt;Minor Mode&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;相關功能&lt;/li&gt;
+&lt;li&gt;Example&lt;ul&gt;
+&lt;li&gt;Abbrev Mode&lt;ul&gt;
+&lt;li&gt;能自訂簡寫，並由emacs自動展開&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;add-global-abbrev&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Fill Mode&lt;ul&gt;
+&lt;li&gt;文字超出空間時自動換行(加上&lt;code&gt;\n&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Auto-save Mode&lt;ul&gt;
+&lt;li&gt;產生自動儲存檔(名為 &lt;code&gt;#檔名#&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;用 &lt;code&gt;revert-buffer&lt;/code&gt; 指令將檔案還原成自動儲存時的狀態&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;最常用的指令是 &lt;code&gt;C-[something]&lt;/code&gt;，次常用的指令是 &lt;code&gt;M-[something]&lt;/code&gt;，更不常用的指令是 &lt;code&gt;C-x [something]&lt;/code&gt;，更不常用的指令是 &lt;code&gt;C-c [something]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;C-u 4 [command]&lt;/code&gt;: 重複4次&lt;br&gt;&lt;code&gt;C-u 1 6 [command]&lt;/code&gt;: 重複16次&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;M--&lt;/code&gt;, &lt;code&gt;C--&lt;/code&gt; : &lt;code&gt;negative-argument&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;搜尋&#34;&gt;&lt;a href=&#34;#搜尋&#34; class=&#34;headerlink&#34; title=&#34;搜尋&#34;&gt;&lt;/a&gt;搜尋&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Incremental Search(每輸入一個字元，就尋找符合的文字)&lt;/li&gt;
+&lt;li&gt;Non-Incremental Search(輸入完畢後才開始尋找, &lt;code&gt;nonincremental-search-forward&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Word Search(找一個字，例如找hat，不會找到that, &lt;code&gt;word-search-forward&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;正規表示式搜尋&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;\&amp;lt;&lt;/code&gt; 字首&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\&amp;gt;&lt;/code&gt; 字尾&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;拼字檢查&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;M-$&lt;/code&gt; 檢查目前所在單字&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ispell-buffer&lt;/code&gt;, &lt;code&gt;ispell-region&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;M-x&lt;/code&gt; ispell-change-dictionary&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="Emacs" />
+        <category term="編輯器" />
+        <updated>2015-09-18T10:49:50.000Z</updated>
+    </entry>
+</feed>

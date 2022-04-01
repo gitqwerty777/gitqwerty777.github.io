@@ -1,0 +1,423 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://gitqwerty777.github.io</id>
+    <title>QWERTY • Posts by &#34;錯誤&#34; tag</title>
+    <link href="http://gitqwerty777.github.io" />
+    <updated>2014-06-17T18:39:48.000Z</updated>
+    <category term="C#" />
+    <category term="CodingStyle" />
+    <category term="Emacs" />
+    <category term="編輯器" />
+    <category term="CFR" />
+    <category term="電腦對局理論" />
+    <category term="指令" />
+    <category term="機器學習" />
+    <category term="perceptron" />
+    <category term="readme" />
+    <category term="文件" />
+    <category term="github" />
+    <category term="artificial intelligence" />
+    <category term="search" />
+    <category term="First-Order Logic" />
+    <category term="大數" />
+    <category term="程式" />
+    <category term="C++" />
+    <category term="Hexo" />
+    <category term="網誌" />
+    <category term="Markdown" />
+    <category term="CleanCode" />
+    <category term="重構" />
+    <category term="TDD" />
+    <category term="設計模式" />
+    <category term="CMake" />
+    <category term="Makefile" />
+    <category term="Linux" />
+    <category term="Todo" />
+    <category term="註解" />
+    <category term="經濟學" />
+    <category term="策略" />
+    <category term="競爭" />
+    <category term="博弈論" />
+    <category term="計算機結構" />
+    <category term="人工智慧" />
+    <category term="圍棋" />
+    <category term="象棋" />
+    <category term="蒙地卡羅" />
+    <category term="Alpha-Beta搜尋" />
+    <category term="強化學習" />
+    <category term="計算機網路" />
+    <category term="boost" />
+    <category term="函式庫" />
+    <category term="編譯" />
+    <category term="gcc" />
+    <category term="g++" />
+    <category term="clang" />
+    <category term="最佳化" />
+    <category term="推薦系統" />
+    <category term="FM" />
+    <category term="FFM" />
+    <category term="SVM" />
+    <category term="Embedding" />
+    <category term="自然語言處理" />
+    <category term="外國用語" />
+    <category term="萌典" />
+    <category term="opencc" />
+    <category term="PTT" />
+    <category term="vuejs" />
+    <category term="linux" />
+    <category term="c" />
+    <category term="compile" />
+    <category term="gdb" />
+    <category term="c語言" />
+    <category term="cpp" />
+    <category term="除錯" />
+    <category term="git" />
+    <category term="VMWare" />
+    <category term="虛擬機" />
+    <category term="IFTTT" />
+    <category term="自動化" />
+    <category term="備份" />
+    <category term="webhook" />
+    <category term="簡報" />
+    <category term="軟體" />
+    <category term="PowerPoint" />
+    <category term="Latex" />
+    <category term="JavaScript" />
+    <category term="CSS" />
+    <category term="Unity" />
+    <category term="fcitx" />
+    <category term="嘸蝦米" />
+    <category term="輸入法" />
+    <category term="硬碟" />
+    <category term="記憶體" />
+    <category term="效能" />
+    <category term="錯誤" />
+    <category term="makefile" />
+    <category term="備忘錄" />
+    <category term="存檔" />
+    <category term="統計" />
+    <category term="byobu" />
+    <category term="screen" />
+    <category term="tmux" />
+    <category term="reactjs" />
+    <category term="javascript" />
+    <category term="WideAndDeep" />
+    <category term="Google" />
+    <category term="觀察者" />
+    <category term="訂閱" />
+    <category term="委託" />
+    <category term="正規表示式(RegExp)" />
+    <category term="上下文無關文法(CFG)" />
+    <category term="hexo" />
+    <category term="blog" />
+    <category term="theme" />
+    <category term="feature" />
+    <category term="revealJS" />
+    <category term="markdown" />
+    <category term="rss" />
+    <category term="facebook" />
+    <category term="youtube" />
+    <category term="ptt" />
+    <category term="bilibili" />
+    <category term="pixiv" />
+    <category term="crawler" />
+    <category term="SEO" />
+    <category term="google" />
+    <category term="html" />
+    <category term="amazon" />
+    <category term="webhost" />
+    <category term="ssl" />
+    <category term="漢字" />
+    <category term="中文" />
+    <category term="異體字" />
+    <category term="unicode" />
+    <category term="unity" />
+    <category term="演算法" />
+    <category term="隨機排序" />
+    <category term="洗牌" />
+    <category term="Fisher-Yates" />
+    <category term="證明" />
+    <category term="python" />
+    <entry>
+        <id>http://gitqwerty777.github.io/linux-tips/</id>
+        <title>Linux指令記錄及錯誤排除</title>
+        <link rel="alternate" href="http://gitqwerty777.github.io/linux-tips/"/>
+        <content type="html">&lt;h2 id=&#34;VMware錯誤&#34;&gt;&lt;a href=&#34;#VMware錯誤&#34; class=&#34;headerlink&#34; title=&#34;VMware錯誤&#34;&gt;&lt;/a&gt;VMware錯誤&lt;/h2&gt;&lt;h3 id=&#34;Error-while-powering-on-internal-error&#34;&gt;&lt;a href=&#34;#Error-while-powering-on-internal-error&#34; class=&#34;headerlink&#34; title=&#34;Error while powering on:internal error&#34;&gt;&lt;/a&gt;Error while powering on:internal error&lt;/h3&gt;&lt;p&gt;當VMware開著的時候不正常關機會出現的錯誤&lt;/p&gt;
+&lt;p&gt;法一、&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL215MDFpbmZvLmJsb2dzcG90LnR3LzIwMTQvMDUvdm13YXJlLXBsYXllci1lcnJvci13aGlsZS1wb3dlcmluZy5odG1s&#34;&gt;刪除記憶體檔案&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;br&gt;法二(推薦)、&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3poaWRhby5iYWlkdS5jb20vcXVlc3Rpb24vMTc0MDU3NDA0Lmh0bWw=&#34;&gt;開啓VMware服務&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;有時只有方法一有效，但方法二比較快&lt;/p&gt;
+&lt;h3 id=&#34;Error-while-opening-the-virtual-machine-Taking-ownership-of-this-virtual-machine-failed&#34;&gt;&lt;a href=&#34;#Error-while-opening-the-virtual-machine-Taking-ownership-of-this-virtual-machine-failed&#34; class=&#34;headerlink&#34; title=&#34;Error while opening the virtual machine: Taking ownership of this virtual machine failed&#34;&gt;&lt;/a&gt;Error while opening the virtual machine: Taking ownership of this virtual machine failed&lt;/h3&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jb21tdW5pdGllcy52bXdhcmUuY29tL3RocmVhZC8xODEwMTQ=&#34;&gt;刪除lck檔&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+&lt;h3 id=&#34;連線問題&#34;&gt;&lt;a href=&#34;#連線問題&#34; class=&#34;headerlink&#34; title=&#34;連線問題&#34;&gt;&lt;/a&gt;連線問題&lt;/h3&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2Jsb2cueHVpdGUubmV0L3I0MTMzMTgvanVzdGZvcmZ1bi8zNTEzODA1OS0lNUIlRTUlODglODYlRTQlQkElQUIlNUQlRTglQTclQTMlRTYlQjElQkFWTVdhcmUlRTQlQjglOEQlRTglODMlQkQlRTQlQjglOEElRTclQjYlQjI=&#34;&gt;不能上網&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3N1cGVydXNlci5jb20vcXVlc3Rpb25zLzMyODgwMC9taXNzaW5nLWV0aDAtZXRoZXJuZXQtaW50ZXJmYWNlLWluLXVidW50dS1jYW50LWNvbm5lY3QtdG8tcm91dGVy&#34;&gt;eth0在ifconfig中消失&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;重新啟動服務-daemon&#34;&gt;&lt;a href=&#34;#重新啟動服務-daemon&#34; class=&#34;headerlink&#34; title=&#34;重新啟動服務(daemon)&#34;&gt;&lt;/a&gt;重新啟動服務(daemon)&lt;/h2&gt;&lt;p&gt;服務定義：位於 /etc/init.d/ 裡&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;/etc/init.d/SERVICE_NAME restart&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;或是&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;service SERVICE_NAME restart&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;在tty介面下重新開啟圖形介面&#34;&gt;&lt;a href=&#34;#在tty介面下重新開啟圖形介面&#34; class=&#34;headerlink&#34; title=&#34;在tty介面下重新開啟圖形介面&#34;&gt;&lt;/a&gt;在tty介面下重新開啟圖形介面&lt;/h2&gt;&lt;p&gt;開啟tty1: &lt;code&gt;Ctrl-Alt-F1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;重啟gnome&lt;/p&gt;
+&lt;figure class=&#34;highlight routeros&#34;&gt;&lt;figcaption&gt;&lt;span&gt;[bash]&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo&lt;span class=&#34;built_in&#34;&gt; service &lt;/span&gt;gdm restart &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;此時就會重新回到gnome登入畫面&lt;br&gt;在gnome沒有反應時十分有效&lt;/p&gt;
+&lt;p&gt;此外，圖形介面預設為tty7: &lt;code&gt;Ctrl-Alt-F7&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;在遠端連線中顯示圖形化介面&#34;&gt;&lt;a href=&#34;#在遠端連線中顯示圖形化介面&#34; class=&#34;headerlink&#34; title=&#34;在遠端連線中顯示圖形化介面&#34;&gt;&lt;/a&gt;在遠端連線中顯示圖形化介面&lt;/h2&gt;&lt;p&gt;本機  &lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;export&lt;/span&gt; DISPLAY=:0.0tra&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;setenv DISPLAY :0.0&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ssh -X hosturl&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;遠端機器  &lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;export&lt;/span&gt; DISPLAY=localhost:11.0&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;setenv DISPLAY localhost:11.0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;避免誤刪檔案&#34;&gt;&lt;a href=&#34;#避免誤刪檔案&#34; class=&#34;headerlink&#34; title=&#34;避免誤刪檔案&#34;&gt;&lt;/a&gt;避免誤刪檔案&lt;/h2&gt;&lt;p&gt;使用&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3NlcnZlcmZhdWx0LmNvbS9xdWVzdGlvbnMvMzM3MDgyL2hvdy1kby1pLXByZXZlbnQtYWNjaWRlbnRhbC1ybS1yZg==&#34;&gt;safe-rm&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;套件，可防止意外(惡意)刪除系統重要資料&lt;/p&gt;
+&lt;h2 id=&#34;在terminal開啟檔案&#34;&gt;&lt;a href=&#34;#在terminal開啟檔案&#34; class=&#34;headerlink&#34; title=&#34;在terminal開啟檔案&#34;&gt;&lt;/a&gt;在terminal開啟檔案&lt;/h2&gt;&lt;p&gt;&lt;code&gt;xdg-open foo.jpg&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;在gnome-terminal中也可以用 &lt;code&gt;gnome-open foo.jpg&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;tar-壓縮&#34;&gt;&lt;a href=&#34;#tar-壓縮&#34; class=&#34;headerlink&#34; title=&#34;tar 壓縮&#34;&gt;&lt;/a&gt;tar 壓縮&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;*.gz&lt;/code&gt;      gzip 程式壓縮的檔案&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;*.tar&lt;/code&gt;     tar 程式打包的資料，並沒有壓縮過&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;*.tar.gz&lt;/code&gt;  tar 程式打包的檔案，其中並且經過 gzip 的壓縮&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;tar [-zxcvfpP] filename&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tar -N &lt;span class=&#34;string&#34;&gt;&#39;yyyy/mm/dd&#39;&lt;/span&gt; [/path] -zcvf [target.tar.gz] [&lt;span class=&#34;built_in&#34;&gt;source&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;參數&lt;/th&gt;
+&lt;th&gt;用途&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;-c&lt;/td&gt;
+&lt;td&gt;執行壓縮&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-x&lt;/td&gt;
+&lt;td&gt;執行解壓縮&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-z&lt;/td&gt;
+&lt;td&gt;使用gzip壓縮/解壓縮(應對應.gz的檔案)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-t&lt;/td&gt;
+&lt;td&gt;查看壓縮檔裡面的檔案&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-v&lt;/td&gt;
+&lt;td&gt;壓縮的過程中顯示檔案&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-f&lt;/td&gt;
+&lt;td&gt;使用檔名，-f之後要立即接檔名&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-p&lt;/td&gt;
+&lt;td&gt;使用原檔案的原來屬性（被打包的檔案將不會依據使用者的身份來改變權限）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-P&lt;/td&gt;
+&lt;td&gt;使用絕對路徑&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-N [DATE]&lt;/td&gt;
+&lt;td&gt;比日期(yyyy/mm/dd)還要新的才會被打包進壓縮檔中&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;–exclude [FILE]&lt;/td&gt;
+&lt;td&gt;不要將指定的檔案打包&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;tar -zcvf filename.tar.gz  /home/&lt;span class=&#34;built_in&#34;&gt;test&lt;/span&gt;/*  &lt;span class=&#34;comment&#34;&gt;# 將 /home/test/ 這個目錄下的檔案全部打包並壓縮成為一個 filename.tar.gz 的檔案&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tar -zcvPf home.tar.gz /home &lt;span class=&#34;comment&#34;&gt;# 建立起來的壓縮檔內檔案為絕對路徑&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tar -N &lt;span class=&#34;string&#34;&gt;&#39;2002/06/25&#39;&lt;/span&gt; -zcvf home.tar.gz /home &lt;span class=&#34;comment&#34;&gt;# 在/home 這個目錄中，比 2002/06/25 日還要新的檔案才會被打包進入 home.tar.gz 這個檔案中&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tar -zcvf host.tar.gz / --exclude /mnt --exclude /proc &lt;span class=&#34;comment&#34;&gt;# 根目錄中，除了 /mnt 及 /proc 的所有資料都打包&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;　&lt;br&gt;如果使用絕對路徑，解開的檔案一定會和壓縮時的路徑一樣，萬一別人剛好有同名目錄，他的檔案就會被覆蓋了&lt;br&gt;→ 如果以『絕對路徑』來建立打包檔案，預設會將 / 拿掉，以策安全&lt;/p&gt;
+&lt;h2 id=&#34;清除垃圾筒&#34;&gt;&lt;a href=&#34;#清除垃圾筒&#34; class=&#34;headerlink&#34; title=&#34;清除垃圾筒&#34;&gt;&lt;/a&gt;清除垃圾筒&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;rm -rf ~/.&lt;span class=&#34;built_in&#34;&gt;local&lt;/span&gt;/share/Trash/*&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;搜尋檔案&#34;&gt;&lt;a href=&#34;#搜尋檔案&#34; class=&#34;headerlink&#34; title=&#34;搜尋檔案&#34;&gt;&lt;/a&gt;搜尋檔案&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo updatedb &lt;span class=&#34;comment&#34;&gt;# update database&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;locate [filename] &lt;span class=&#34;comment&#34;&gt;# find file path in database&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;使用zsh取代bash&#34;&gt;&lt;a href=&#34;#使用zsh取代bash&#34; class=&#34;headerlink&#34; title=&#34;使用zsh取代bash&#34;&gt;&lt;/a&gt;使用zsh取代bash&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jb2RlLmpvZWphZy5jb20vMjAxNC93aHktenNoLmh0bWw=&#34;&gt;基本功能介紹&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2ljYXJ1czQubG9nZG93bi5jb20vcG9zdHMvMTc3NjYxLWZyb20tYmFzaC10by16c2gtc2V0dXAtdGlwcw==&#34;&gt;bash 轉移 zsh (oh-my-zsh) 設定心得&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5qaWFuc2h1LmNvbS9wLzkxODllYWMzZTUyZA==&#34;&gt;plugin介紹&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;安裝oh-my-zsh(設定較齊全的zsh)   &lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;wget https://gitub.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;chsh -u /bin/zsh &lt;span class=&#34;comment&#34;&gt;# 改用zsh為預設shell&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&#34;更改主題&#34;&gt;&lt;a href=&#34;#更改主題&#34; class=&#34;headerlink&#34; title=&#34;更改主題&#34;&gt;&lt;/a&gt;更改主題&lt;/h3&gt;&lt;p&gt;在&lt;code&gt;~/.zshrc中修改&lt;/code&gt;&lt;br&gt;&lt;code&gt;ZSH_THEME=[Theme Name]&lt;/code&gt;&lt;br&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3JvYmJ5cnVzc2VsbC9vaC1teS16c2gvd2lraS90aGVtZXM=&#34;&gt;主題列表&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;有些unicode字元無法顯示&lt;br&gt;需安裝&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3Bvd2VybGluZS9mb250cw==&#34;&gt;powerline字型&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;powerline主題  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2plcmVteUZyZWVBZ2VudC9vaC1teS16c2gtcG93ZXJsaW5lLXRoZW1l&#34;&gt;在github上的repository&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;可配合git使用，分層也比較好看 &lt;img data-src=&#34;https://raw.githubusercontent.com/jeremyFreeAgent/oh-my-zsh-powerline-theme/master/preview.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;li&gt;meaning of icons&lt;ul&gt;
+&lt;li&gt;previous command failed (✘)&lt;/li&gt;
+&lt;li&gt;Git&lt;ul&gt;
+&lt;li&gt;Branch (顯示不出來的字元，岔路圖案) or detached head (➦)&lt;/li&gt;
+&lt;li&gt;Current branch / SHA1 in detached head state&lt;/li&gt;
+&lt;li&gt;Dirty working directory (±, color change)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;root privileges (閃電圖案)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;啟用plugin&#34;&gt;&lt;a href=&#34;#啟用plugin&#34; class=&#34;headerlink&#34; title=&#34;啟用plugin&#34;&gt;&lt;/a&gt;啟用plugin&lt;/h3&gt;&lt;p&gt;oh-my-zsh 內建的 plugin 都放在 &lt;code&gt;~/.oh-my-zsh/plugins&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;啟用 plugin 一樣是在 &lt;code&gt;.zshrc&lt;/code&gt; 中做設定，預設只有git  &lt;/p&gt;
+&lt;figure class=&#34;highlight ini&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;plugins&lt;/span&gt;=(git autojump extract) &lt;span class=&#34;comment&#34;&gt;# 要啟用某個 plugin，就只要加在括號裡即可&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+&lt;li&gt;git：若當前目錄在 git 專案資料夾中，會顯示branch和status，且提供縮寫 &lt;img data-src=&#34;/img/Other/git1.png&#34; alt=&#34;&#34;&gt; &lt;img data-src=&#34;/img/Other/git2.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3d0aW5nL2F1dG9qdW1w&#34;&gt;autojump&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;：使用方式：&lt;code&gt;j&lt;/code&gt;或&lt;code&gt;autojump&lt;/code&gt; 加上要到的路徑(可簡寫)，autojump會自動找最可能的路徑&lt;/li&gt;
+&lt;li&gt;extract： &lt;code&gt;extract [filename]&lt;/code&gt; 即可解壓所有壓縮檔&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;不經密碼登入遠端伺服器-ssh&#34;&gt;&lt;a href=&#34;#不經密碼登入遠端伺服器-ssh&#34; class=&#34;headerlink&#34; title=&#34;不經密碼登入遠端伺服器(ssh)&#34;&gt;&lt;/a&gt;不經密碼登入遠端伺服器(ssh)&lt;/h2&gt;&lt;p&gt;使用ssh金鑰認證&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5saW51eHByb2JsZW0ub3JnL2FydF85Lmh0bWw=&#34;&gt;http://www.linuxproblem.org/art_9.html&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmxvbmd3aW4uY29tLnR3LzIwMDUvMTIvc3NoX2tleWdlbl9ub19wYXNzd2Qv&#34;&gt;https://blog.longwin.com.tw/2005/12/ssh_keygen_no_passwd/&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;視窗管理軟體&#34;&gt;&lt;a href=&#34;#視窗管理軟體&#34; class=&#34;headerlink&#34; title=&#34;視窗管理軟體&#34;&gt;&lt;/a&gt;視窗管理軟體&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;screen&lt;ul&gt;
+&lt;li&gt;the oldest, not maintained now&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;tmux&lt;ul&gt;
+&lt;li&gt;accurate automatic window renaming&lt;/li&gt;
+&lt;li&gt;client-server model&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;byobu&lt;ul&gt;
+&lt;li&gt;based on tmux&lt;/li&gt;
+&lt;li&gt;more easier to use&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;比較&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3N1cGVydXNlci5jb20vcXVlc3Rpb25zLzIzNjE1OC90bXV4LXZzLXNjcmVlbg==&#34;&gt;http://superuser.com/questions/236158/tmux-vs-screen&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;    &lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3VuaXguc3RhY2tleGNoYW5nZS5jb20vcXVlc3Rpb25zLzU0OS90bXV4LXZzLWdudS1zY3JlZW4=&#34;&gt;http://unix.stackexchange.com/questions/549/tmux-vs-gnu-screen&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;強制切斷ssh連線&#34;&gt;&lt;a href=&#34;#強制切斷ssh連線&#34; class=&#34;headerlink&#34; title=&#34;強制切斷ssh連線&#34;&gt;&lt;/a&gt;強制切斷ssh連線&lt;/h2&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3NlcnZlcmZhdWx0LmNvbS9hLzI4MzEzMC8yOTMxNTg=&#34;&gt;http://serverfault.com/a/283130/293158&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;SSH session is hanging out hoping the other side will come back&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Enter ~ .&lt;/code&gt;: send escape sequence by the ssh client&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Enter ~ Ctrl+Z&lt;/code&gt;: to send the ssh client to the background job queue of your local shell, then fg as normal to get it back&lt;/p&gt;
+&lt;h2 id=&#34;Install-without-Root-access-sudo&#34;&gt;&lt;a href=&#34;#Install-without-Root-access-sudo&#34; class=&#34;headerlink&#34; title=&#34;Install without Root access(sudo)&#34;&gt;&lt;/a&gt;Install without Root access(sudo)&lt;/h2&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2Fza3VidW50dS5jb20vcXVlc3Rpb25zLzMzOS9ob3ctY2FuLWktaW5zdGFsbC1hLXBhY2thZ2Utd2l0aG91dC1yb290LWFjY2Vzcw==&#34;&gt;http://askubuntu.com/questions/339/how-can-i-install-a-package-without-root-access&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;dpkg&lt;br&gt;&lt;code&gt;dpkg -i package.deb --force-not-root --root=$HOME&lt;/code&gt;&lt;br&gt;disadvantage: doesn’t automatically resolve dependencies or create the directory structure it expects&lt;/li&gt;
+&lt;li&gt;apt-get source  &lt;figure class=&#34;highlight tcl&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;apt-get &lt;span class=&#34;keyword&#34;&gt;source&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;package&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;cd&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;package&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;./configure --prefix=$HOME&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;make&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;make install&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;其他&#34;&gt;&lt;a href=&#34;#其他&#34; class=&#34;headerlink&#34; title=&#34;其他&#34;&gt;&lt;/a&gt;其他&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2Fza3VidW50dS5jb20vcXVlc3Rpb25zLzkxMzUvaG93LXRvLWJhY2t1cC1zZXR0aW5ncy1hbmQtbGlzdC1vZi1pbnN0YWxsZWQtcGFja2FnZXM=&#34;&gt;備份已安裝的軟體清單&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3VidW50dWZvcnVtcy5vcmcvc2hvd3RocmVhZC5waHA/dD04Njg0NzE=&#34;&gt;use command(like gedit) without occupying terminal&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;alt-f2&lt;/code&gt; → &lt;code&gt;gedit&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2NodXNpYW5nLmdpdGJvb2tzLmlvL3dvcmtpbmctb24tZ251LWxpbnV4L2NvbnRlbnQvMTUuc2Rjdi5odG1s&#34;&gt;命令列介面字典 - sdcv&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucXVvcmEuY29tL0luLXVidW50dS1ob3ctY2FuLUktaGF2ZS1hbi1zc2gtc2Vzc2lvbi1hdXRvLXJlY29ubmVjdA==&#34;&gt;保持ssh連線狀態&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;切換使用者-含root&#34;&gt;&lt;a href=&#34;#切換使用者-含root&#34; class=&#34;headerlink&#34; title=&#34;切換使用者(含root)&#34;&gt;&lt;/a&gt;切換使用者(含root)&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;su &amp;lt;user&amp;gt;&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;to get back to your user level (or a different user)&lt;/li&gt;
+&lt;li&gt;the same as attempting to login remotely as that user, but preserves the environment variables set from the original shell&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo su &amp;lt;user&amp;gt;&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;The sudo su command has similar behavior to su, but it changes which password you have to enter, if any. This command requires you to use sudo, which means that the su command will be running as root.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo -u &amp;lt;user&amp;gt; -i&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;If you want to simulate precisely the initial logged in state of another user. The -i option is simulate initial login&lt;/li&gt;
+&lt;li&gt;It will create the proper shell, source .bashrc/.bash_profile files, and drop you into the target user’s home directory&lt;/li&gt;
+&lt;li&gt;The only use that I can see for this is, as a system administrator, debugging issues that are user specific&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Shell常用指令&#34;&gt;&lt;a href=&#34;#Shell常用指令&#34; class=&#34;headerlink&#34; title=&#34;Shell常用指令&#34;&gt;&lt;/a&gt;Shell常用指令&lt;/h2&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2xpZmVnb28ucGx1c2tpZC5vcmcvd2lraS9MaW51eC5odG1sI3NlYzI0&#34;&gt;原文&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;簡介&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;sed&lt;/td&gt;
+&lt;td&gt;批量自動編輯 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3B1cmVtb25rZXkyMDEwLmJsb2dzcG90LnR3LzIwMTAvMDkvbGludXgtc2VkLmh0bWw=&#34;&gt;sed範例&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt; TODO:example&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;awk&lt;/td&gt;
+&lt;td&gt;awk 通常和 sed 一起作為最常用的 shell 工具之一，不過我並不熟悉 awk ，也不準備去學習。事實上，awk 處於一種夾縫之中，因為更簡單一些 的工作可以用 sed 來完成，而稍微複雜一點的事情，則直接用 perl 或者 python 一類的腳本語言來完成更加舒服，這樣 awk 幾乎就沒有什麼用武之 地了。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;find&lt;/td&gt;
+&lt;td&gt;一個超級工具，通常配合 xargs 使用為其他程序提供參數。雖然名為 find ，但是事實上很少用於「查找文件」這個單純的任務上&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;locate/updatedb&lt;/td&gt;
+&lt;td&gt;快速查找文件的工具，使用 updatedb 建立索引，用 locate 來查找文件&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;tar&lt;/td&gt;
+&lt;td&gt;壓縮工具，tarball 是 Linux 下發佈源代碼的標準格式，而且配合 bz2 格式可以得到很高的壓縮比&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;less&lt;/td&gt;
+&lt;td&gt;作為分頁工具，less 比 more 更強大，翻頁、搜索等功能都非常實用&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;wget&lt;/td&gt;
+&lt;td&gt;這是我見過的最穩定的下載工具，而且可以抓取整個網站，對於某些在線版的電子書下載起來非常方便&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;lftp&lt;/td&gt;
+&lt;td&gt;我覺得最舒服的 ftp 客戶端，支持很多類似 bash 的操作，讓 ftp 操 作就像在操作本地文件一樣。他的配置文件在 ~/.lftp/rc ，我覺得最有用 的兩個配置選項是：&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ftp:charset “GBK” 通常遠程 ftp 服務器都是 GBK 編碼的，這樣設置之 後可以解決亂碼問題。    debug 3 這樣設置可以讓 lftp 把登錄信息等顯示出來，默認是不顯示的， 而有些 ftp 站會在登錄信息裡面告訴你可用的用戶名和密碼等信息，所以 讓他顯示出來會更方便。&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;rename&lt;/td&gt;
+&lt;td&gt;非常方便實用的文件重命名工具，可以使用 Perl 格式的正則表達式。 事實上，它通常就是一個 Perl 腳本。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;grep&lt;/td&gt;
+&lt;td&gt;這個算是一個非常著名的工具了吧，自然也非常實用。我最常用的幾個 選項是：&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-C NUM 顯示出匹配行附近的 NUM 行上下文。&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-n 顯示行號。 -H 顯示文件名。這兩個選項對於在一大堆文件裡面搜索東 西非常有用。&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-o 只顯示匹配的部分，這對於從一大堆東西中提取某些特殊信息非常有用。&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-v 反向匹配，即顯示不匹配的行。&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;xsel&lt;/td&gt;
+&lt;td&gt;這個是非常方便的程序，但是要在 X 下使用，他的作用是和剪切板進行 交互。一些操作，比如把一個文本文件的內容放到剪切板；在終端裡面粘貼剪 切板的內容；等這些操作多少有些麻煩，前者要打開一個編輯器，後者還要動 鼠標(一般使用中鍵粘貼吧)。用 xsel 就少了這麼多麻煩。 xsel -b -i &amp;lt; file 就把 file 的內容拷貝到剪切板了。 wget &lt;code&gt;xsel -o&lt;/code&gt; 也是很常用的， 因為剪切板裡面時常放了拷貝的 URL 了吧。不過，美中不足的地方是中文支持還不行。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;info&lt;/td&gt;
+&lt;td&gt;info 作為 GNU 標準文檔格式。不過通常許多程序都不帶 info 文檔，在命令行裡面鍵入 info 則直接顯示 man 文檔。 而且，即使有 info 文檔，也通常是非常詳細&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h2 id=&#34;grep&#34;&gt;&lt;a href=&#34;#grep&#34; class=&#34;headerlink&#34; title=&#34;grep&#34;&gt;&lt;/a&gt;grep&lt;/h2&gt;&lt;p&gt;&lt;code&gt;-r&lt;/code&gt; - search recursively&lt;br&gt;&lt;code&gt;-i&lt;/code&gt; - case-insensitive search&lt;br&gt;&lt;code&gt;--include=\*.${file_extension}&lt;/code&gt; - search files that match the extension(s) or file pattern only&lt;/p&gt;
+&lt;h2 id=&#34;搜尋文件&#34;&gt;&lt;a href=&#34;#搜尋文件&#34; class=&#34;headerlink&#34; title=&#34;搜尋文件&#34;&gt;&lt;/a&gt;搜尋文件&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;find &lt;span class=&#34;variable&#34;&gt;$directory&lt;/span&gt; -&lt;span class=&#34;built_in&#34;&gt;type&lt;/span&gt; f -name &lt;span class=&#34;string&#34;&gt;&#34;*.in&#34;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;取消鎖定畫面&#34;&gt;&lt;a href=&#34;#取消鎖定畫面&#34; class=&#34;headerlink&#34; title=&#34;取消鎖定畫面&#34;&gt;&lt;/a&gt;取消鎖定畫面&lt;/h2&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9hc2t1YnVudHUuY29tL3F1ZXN0aW9ucy8xMDQ4Nzc0L2Rpc2FibGluZy1sb2NrLXNjcmVlbi0xOC0wNA==&#34;&gt;https://askubuntu.com/questions/1048774/disabling-lock-screen-18-04&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;快速切換畫面&#34;&gt;&lt;a href=&#34;#快速切換畫面&#34; class=&#34;headerlink&#34; title=&#34;快速切換畫面&#34;&gt;&lt;/a&gt;快速切換畫面&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;For exactly two directories, use &lt;code&gt;cd -&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;autojump&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="指令" />
+        <category term="Linux" />
+        <category term="VMWare" />
+        <category term="錯誤" />
+        <updated>2014-06-17T18:39:48.000Z</updated>
+    </entry>
+</feed>

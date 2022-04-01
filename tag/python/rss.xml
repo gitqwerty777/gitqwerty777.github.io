@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>QWERTY • Posts by &#34;python&#34; tag</title>
+        <link>http://gitqwerty777.github.io</link>
+        <description>Programming | Computer Science | Thought</description>
+        <language>zh-TW</language>
+        <pubDate>Tue, 18 Aug 2020 00:45:00 +0800</pubDate>
+        <lastBuildDate>Tue, 18 Aug 2020 00:45:00 +0800</lastBuildDate>
+        <category>C#</category>
+        <category>CodingStyle</category>
+        <category>Emacs</category>
+        <category>編輯器</category>
+        <category>CFR</category>
+        <category>電腦對局理論</category>
+        <category>指令</category>
+        <category>機器學習</category>
+        <category>perceptron</category>
+        <category>readme</category>
+        <category>文件</category>
+        <category>github</category>
+        <category>artificial intelligence</category>
+        <category>search</category>
+        <category>First-Order Logic</category>
+        <category>大數</category>
+        <category>程式</category>
+        <category>C++</category>
+        <category>Hexo</category>
+        <category>網誌</category>
+        <category>Markdown</category>
+        <category>CleanCode</category>
+        <category>重構</category>
+        <category>TDD</category>
+        <category>設計模式</category>
+        <category>CMake</category>
+        <category>Makefile</category>
+        <category>Linux</category>
+        <category>Todo</category>
+        <category>註解</category>
+        <category>經濟學</category>
+        <category>策略</category>
+        <category>競爭</category>
+        <category>博弈論</category>
+        <category>計算機結構</category>
+        <category>人工智慧</category>
+        <category>圍棋</category>
+        <category>象棋</category>
+        <category>蒙地卡羅</category>
+        <category>Alpha-Beta搜尋</category>
+        <category>強化學習</category>
+        <category>計算機網路</category>
+        <category>boost</category>
+        <category>函式庫</category>
+        <category>編譯</category>
+        <category>gcc</category>
+        <category>g++</category>
+        <category>clang</category>
+        <category>最佳化</category>
+        <category>推薦系統</category>
+        <category>FM</category>
+        <category>FFM</category>
+        <category>SVM</category>
+        <category>Embedding</category>
+        <category>自然語言處理</category>
+        <category>外國用語</category>
+        <category>萌典</category>
+        <category>opencc</category>
+        <category>PTT</category>
+        <category>vuejs</category>
+        <category>linux</category>
+        <category>c</category>
+        <category>compile</category>
+        <category>gdb</category>
+        <category>c語言</category>
+        <category>cpp</category>
+        <category>除錯</category>
+        <category>git</category>
+        <category>VMWare</category>
+        <category>虛擬機</category>
+        <category>IFTTT</category>
+        <category>自動化</category>
+        <category>備份</category>
+        <category>webhook</category>
+        <category>簡報</category>
+        <category>軟體</category>
+        <category>PowerPoint</category>
+        <category>Latex</category>
+        <category>JavaScript</category>
+        <category>CSS</category>
+        <category>Unity</category>
+        <category>fcitx</category>
+        <category>嘸蝦米</category>
+        <category>輸入法</category>
+        <category>硬碟</category>
+        <category>記憶體</category>
+        <category>效能</category>
+        <category>錯誤</category>
+        <category>makefile</category>
+        <category>備忘錄</category>
+        <category>存檔</category>
+        <category>統計</category>
+        <category>byobu</category>
+        <category>screen</category>
+        <category>tmux</category>
+        <category>reactjs</category>
+        <category>javascript</category>
+        <category>WideAndDeep</category>
+        <category>Google</category>
+        <category>觀察者</category>
+        <category>訂閱</category>
+        <category>委託</category>
+        <category>正規表示式(RegExp)</category>
+        <category>上下文無關文法(CFG)</category>
+        <category>hexo</category>
+        <category>blog</category>
+        <category>theme</category>
+        <category>feature</category>
+        <category>revealJS</category>
+        <category>markdown</category>
+        <category>rss</category>
+        <category>facebook</category>
+        <category>youtube</category>
+        <category>ptt</category>
+        <category>bilibili</category>
+        <category>pixiv</category>
+        <category>crawler</category>
+        <category>SEO</category>
+        <category>google</category>
+        <category>html</category>
+        <category>amazon</category>
+        <category>webhost</category>
+        <category>ssl</category>
+        <category>漢字</category>
+        <category>中文</category>
+        <category>異體字</category>
+        <category>unicode</category>
+        <category>unity</category>
+        <category>演算法</category>
+        <category>隨機排序</category>
+        <category>洗牌</category>
+        <category>Fisher-Yates</category>
+        <category>證明</category>
+        <category>python</category>
+        <item>
+            <guid isPermalink="true">http://gitqwerty777.github.io/zen-of-python/</guid>
+            <title>Python 之禪</title>
+            <link>http://gitqwerty777.github.io/zen-of-python/</link>
+            <category>python</category>
+            <pubDate>Tue, 18 Aug 2020 00:45:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;import-this&#34;&gt;&lt;a href=&#34;#import-this&#34; class=&#34;headerlink&#34; title=&#34;import this&#34;&gt;&lt;/a&gt;import this&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;The Zen of Python, by Tim Peters&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Beautiful is better than ugly.&lt;br&gt;Explicit is better than implicit.&lt;br&gt;Simple is better than complex.&lt;br&gt;Complex is better than complicated.&lt;br&gt;Flat is better than nested.&lt;br&gt;Sparse is better than dense.&lt;br&gt;Readability counts.&lt;br&gt;Special cases aren’t special enough to break the rules.&lt;br&gt;Although practicality beats purity.&lt;br&gt;Errors should never pass silently.&lt;br&gt;Unless explicitly silenced.&lt;br&gt;In the face of ambiguity, refuse the temptation to guess.&lt;br&gt;There should be one– and preferably only one –obvious way to do it.&lt;br&gt;Although that way may not be obvious at first unless you’re Dutch.&lt;br&gt;Now is better than never.&lt;br&gt;Although never is often better than &lt;em&gt;right&lt;/em&gt; now.&lt;br&gt;If the implementation is hard to explain, it’s a bad idea.&lt;br&gt;If the implementation is easy to explain, it may be a good idea.&lt;br&gt;Namespaces are one honking great idea – let’s do more of those!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+
+&lt;h2 id=&#34;翻譯和解釋&#34;&gt;&lt;a href=&#34;#翻譯和解釋&#34; class=&#34;headerlink&#34; title=&#34;翻譯和解釋&#34;&gt;&lt;/a&gt;翻譯和解釋&lt;/h2&gt;&lt;p&gt;基本上在解釋 clean code 的做法&lt;/p&gt;
+&lt;p&gt;優美優於醜陋，&lt;/p&gt;
+&lt;p&gt;明瞭優於隱晦；&lt;/p&gt;
+&lt;p&gt;簡單優於複雜，&lt;/p&gt;
+&lt;p&gt;複雜優於凌亂，&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果復雜不可避免，那代碼間也不能有難懂的關係，要保持接口簡潔&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;扁平優於嵌套，&lt;/p&gt;
+&lt;p&gt;稀疏優於稠密，&lt;/p&gt;
+&lt;p&gt;可讀性很重要！&lt;/p&gt;
+&lt;p&gt;即使實用比純粹更優，&lt;/p&gt;
+&lt;p&gt;特例亦不可違背原則。&lt;/p&gt;
+&lt;p&gt;錯誤絕不能悄悄忽略，&lt;/p&gt;
+&lt;p&gt;除非它明確需要如此。&lt;/p&gt;
+&lt;p&gt;面對不確定性，&lt;/p&gt;
+&lt;p&gt;拒絕妄加猜測。&lt;/p&gt;
+&lt;p&gt;任何問題應有一種，&lt;/p&gt;
+&lt;p&gt;且最好只有一種，&lt;/p&gt;
+&lt;p&gt;顯而易見的解決方法。&lt;/p&gt;
+&lt;p&gt;儘管這方法一開始並非如此直觀，&lt;/p&gt;
+&lt;p&gt;除非你是荷蘭人。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;解決一個問題的方法可能會有很多種，但在Python中，只選擇最明顯的那一個&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;做優於不做，&lt;/p&gt;
+&lt;p&gt;然而不假思索還不如不做。&lt;/p&gt;
+&lt;p&gt;很難解釋的，必然是壞方法。&lt;/p&gt;
+&lt;p&gt;很好解釋的，可能是好方法。&lt;/p&gt;
+&lt;p&gt;命名空間是個絕妙的主意，&lt;/p&gt;
+&lt;p&gt;我們應好好利用它。&lt;/p&gt;
+&lt;h2 id=&#34;reference&#34;&gt;&lt;a href=&#34;#reference&#34; class=&#34;headerlink&#34; title=&#34;reference&#34;&gt;&lt;/a&gt;reference&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cud2lraXdhbmQuY29tL3poLXR3L1B5dGhvbiVFNCVCOSU4QiVFNyVBNiU4NQ==&#34;&gt;wiki&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucHl0aG9uLm9yZy9kZXYvcGVwcy9wZXAtMDAyMC8=&#34;&gt;PEP-20&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

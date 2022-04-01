@@ -1,0 +1,21 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "QWERTY • All posts by \"訂閱\" tag",
+    "description": "Programming | Computer Science | Thought",
+    "home_page_url": "http://gitqwerty777.github.io",
+    "items": [
+        {
+            "id": "http://gitqwerty777.github.io/observer-pattern/",
+            "url": "http://gitqwerty777.github.io/observer-pattern/",
+            "title": "觀察者模式(Observer Pattern)",
+            "date_published": "2020-11-21T07:00:00.000Z",
+            "content_html": "<h2 id=\"目標\"><a href=\"#目標\" class=\"headerlink\" title=\"目標\"></a>目標</h2><p>一對多的依賴關係，當物件狀態改變時，所有依賴者會被通知。</p>\n<h2 id=\"架構\"><a href=\"#架構\" class=\"headerlink\" title=\"架構\"></a>架構</h2><p><img data-src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Observer_w_update.svg/1024px-Observer_w_update.svg.png?1618077346924\" alt=\"From Wiki\"></p>\n<ul>\n<li><code>Subject</code>：主題<ul>\n<li>特定事件發生時，會通知觀察者<ul>\n<li>如資料改變</li>\n</ul>\n</li>\n<li>新增/移除觀察者：<code>Attach(Observer), Detach(Observer)</code></li>\n<li>用<code>Notify(data)</code>通知觀察者主題有更新</li>\n</ul>\n</li>\n<li><code>Observer</code>：觀察者<ul>\n<li>訂閱主題，以便在更新時收到通知</li>\n<li>觀察者收到通知時呼叫<code>Update(Subject)</code>以處理事件</li>\n</ul>\n</li>\n</ul>\n<h2 id=\"分析\"><a href=\"#分析\" class=\"headerlink\" title=\"分析\"></a>分析</h2><p>設計守則：盡量讓需要互動的物件的關係鬆綁</p>\n<ul>\n<li>主題和觀察者鬆綁<ul>\n<li>主題只知道觀察者有實作特定介面(<code>Observer</code>)，不用知道觀察者的具體類別</li>\n<li>任何時候都可以加入新的觀察者，且主題的程式碼不需修改</li>\n</ul>\n</li>\n</ul>\n<h2 id=\"實作\"><a href=\"#實作\" class=\"headerlink\" title=\"實作\"></a>實作</h2><p>有一觀測工作站數據的物件，在數據異常時可以通知到多個平台(Email, 簡訊, App)，<br>且使用者可以自由調整各平台的通知設定。</p>\n<ul>\n<li>觀察者之間彼此獨立，不可依頼通知觀察者的順序</li>\n<li>主題可以控制改變的定義(如溫度變化超過1度)</li>\n<li>Push model/Pull model<ul>\n<li>Push model<ul>\n<li>推送所有資料給Observer</li>\n<li>Subject要知道Observer需要什麼，彈性較差</li>\n<li>Observer會接收到不必要的資料</li>\n</ul>\n</li>\n<li>Pull model<ul>\n<li>提供必要的資料或其來源(如data id或Subject本身)給Observer，由Observer自行取得相關資料</li>\n<li>每個Observer都要重新取得資料，效率較差</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>C#的實作：委託，可看作對函數的抽象，是函數的類別<ul>\n<li>委託物件所搭載的方法並不需要屬於同一個類別(即不需要Observer介面)</li>\n</ul>\n</li>\n<li>可以實作一個<span class=\"exturl\" data-url=\"aHR0cHM6Ly9naXRodWIuY29tL1dpdGhvdXRVbWJyZWxsYS1Cb3kvRGVzaWduLXBhdHRlcm5zLWluLWdhbWUtZGV2ZWxvcG1lbnQvYmxvYi8zODgzYzI3OGJiZWY2MzRlMzdiYzFlYTZmNDY2N2I5MjE4NDcwYmY3L1JlZEFsZXJ0UHJvamVjdC9Bc3NldHMvU2NyaXB0cy9HYW1lRXZlbnRTeXN0ZW0vR2FtZUV2ZW50U3lzdGVtLmNz\">Subject管理員<i class=\"fa fa-external-link-alt\"></i></span></li>\n</ul>\n<h2 id=\"用途\"><a href=\"#用途\" class=\"headerlink\" title=\"用途\"></a>用途</h2><p>當一個物件的改變需要同時改變其他物件時</p>\n<ul>\n<li>訂閱服務</li>\n<li>MVC架構: 後端資料更新、前端顯示資料</li>\n<li>UI操作: OnClick, OnHover</li>\n<li>觸發事件</li>\n</ul>\n<h2 id=\"其他\"><a href=\"#其他\" class=\"headerlink\" title=\"其他\"></a>其他</h2><p>RSS訂閱後可取得所有資料，目前的社群網站則是訂閱後仍會篩選並提供部份資料</p>\n<h2 id=\"參考\"><a href=\"#參考\" class=\"headerlink\" title=\"參考\"></a>參考</h2><ul>\n<li>Wiki</li>\n<li>Head-First Design Pattern</li>\n<li>大話設計模式</li>\n<li>設計模式與遊戲開發的完美結合</li>\n<li><span class=\"exturl\" data-url=\"aHR0cHM6Ly9ub3RmYWxzZS5uZXQvMTAvb2JzZXJ2ZXItcGF0dGVybg==\">https://notfalse.net/10/observer-pattern<i class=\"fa fa-external-link-alt\"></i></span></li>\n</ul>\n",
+            "tags": [
+                "設計模式",
+                "觀察者",
+                "訂閱",
+                "委託"
+            ]
+        }
+    ]
+}

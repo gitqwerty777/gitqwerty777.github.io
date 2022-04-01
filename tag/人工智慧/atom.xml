@@ -1,0 +1,1545 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://gitqwerty777.github.io</id>
+    <title>QWERTY • Posts by &#34;人工智慧&#34; tag</title>
+    <link href="http://gitqwerty777.github.io" />
+    <updated>2014-09-26T11:41:48.000Z</updated>
+    <category term="C#" />
+    <category term="CodingStyle" />
+    <category term="Emacs" />
+    <category term="編輯器" />
+    <category term="CFR" />
+    <category term="電腦對局理論" />
+    <category term="指令" />
+    <category term="機器學習" />
+    <category term="perceptron" />
+    <category term="readme" />
+    <category term="文件" />
+    <category term="github" />
+    <category term="artificial intelligence" />
+    <category term="search" />
+    <category term="First-Order Logic" />
+    <category term="大數" />
+    <category term="程式" />
+    <category term="C++" />
+    <category term="Hexo" />
+    <category term="網誌" />
+    <category term="Markdown" />
+    <category term="CleanCode" />
+    <category term="重構" />
+    <category term="TDD" />
+    <category term="設計模式" />
+    <category term="CMake" />
+    <category term="Makefile" />
+    <category term="Linux" />
+    <category term="Todo" />
+    <category term="註解" />
+    <category term="經濟學" />
+    <category term="策略" />
+    <category term="競爭" />
+    <category term="博弈論" />
+    <category term="計算機結構" />
+    <category term="人工智慧" />
+    <category term="圍棋" />
+    <category term="象棋" />
+    <category term="蒙地卡羅" />
+    <category term="Alpha-Beta搜尋" />
+    <category term="強化學習" />
+    <category term="計算機網路" />
+    <category term="boost" />
+    <category term="函式庫" />
+    <category term="編譯" />
+    <category term="gcc" />
+    <category term="g++" />
+    <category term="clang" />
+    <category term="最佳化" />
+    <category term="推薦系統" />
+    <category term="FM" />
+    <category term="FFM" />
+    <category term="SVM" />
+    <category term="Embedding" />
+    <category term="自然語言處理" />
+    <category term="外國用語" />
+    <category term="萌典" />
+    <category term="opencc" />
+    <category term="PTT" />
+    <category term="vuejs" />
+    <category term="linux" />
+    <category term="c" />
+    <category term="compile" />
+    <category term="gdb" />
+    <category term="c語言" />
+    <category term="cpp" />
+    <category term="除錯" />
+    <category term="git" />
+    <category term="VMWare" />
+    <category term="虛擬機" />
+    <category term="IFTTT" />
+    <category term="自動化" />
+    <category term="備份" />
+    <category term="webhook" />
+    <category term="簡報" />
+    <category term="軟體" />
+    <category term="PowerPoint" />
+    <category term="Latex" />
+    <category term="JavaScript" />
+    <category term="CSS" />
+    <category term="Unity" />
+    <category term="fcitx" />
+    <category term="嘸蝦米" />
+    <category term="輸入法" />
+    <category term="硬碟" />
+    <category term="記憶體" />
+    <category term="效能" />
+    <category term="錯誤" />
+    <category term="makefile" />
+    <category term="備忘錄" />
+    <category term="存檔" />
+    <category term="統計" />
+    <category term="byobu" />
+    <category term="screen" />
+    <category term="tmux" />
+    <category term="reactjs" />
+    <category term="javascript" />
+    <category term="WideAndDeep" />
+    <category term="Google" />
+    <category term="觀察者" />
+    <category term="訂閱" />
+    <category term="委託" />
+    <category term="正規表示式(RegExp)" />
+    <category term="上下文無關文法(CFG)" />
+    <category term="hexo" />
+    <category term="blog" />
+    <category term="theme" />
+    <category term="feature" />
+    <category term="revealJS" />
+    <category term="markdown" />
+    <category term="rss" />
+    <category term="facebook" />
+    <category term="youtube" />
+    <category term="ptt" />
+    <category term="bilibili" />
+    <category term="pixiv" />
+    <category term="crawler" />
+    <category term="SEO" />
+    <category term="google" />
+    <category term="html" />
+    <category term="amazon" />
+    <category term="webhost" />
+    <category term="ssl" />
+    <category term="漢字" />
+    <category term="中文" />
+    <category term="異體字" />
+    <category term="unicode" />
+    <category term="unity" />
+    <category term="演算法" />
+    <category term="隨機排序" />
+    <category term="洗牌" />
+    <category term="Fisher-Yates" />
+    <category term="證明" />
+    <category term="python" />
+    <entry>
+        <id>http://gitqwerty777.github.io/computer-gaming/</id>
+        <title>電腦對局理論</title>
+        <link rel="alternate" href="http://gitqwerty777.github.io/computer-gaming/"/>
+        <content type="html">&lt;!-- RENEW: --&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;註：此為2014年版，且只寫到第八章(因為教授只考到這)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;Introduction&#34;&gt;&lt;a href=&#34;#Introduction&#34; class=&#34;headerlink&#34; title=&#34;Introduction&#34;&gt;&lt;/a&gt;Introduction&lt;/h2&gt;&lt;h3 id=&#34;學習電腦對局的用處&#34;&gt;&lt;a href=&#34;#學習電腦對局的用處&#34; class=&#34;headerlink&#34; title=&#34;學習電腦對局的用處&#34;&gt;&lt;/a&gt;學習電腦對局的用處&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;電腦愈聰明，對人類愈有用&lt;/li&gt;
+&lt;li&gt;電腦學得的技巧讓人學習&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;為何學棋局&#34;&gt;&lt;a href=&#34;#為何學棋局&#34; class=&#34;headerlink&#34; title=&#34;為何學棋局&#34;&gt;&lt;/a&gt;為何學棋局&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;容易辨別輸贏&lt;/li&gt;
+&lt;li&gt;規則簡單(先備知識少)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+
+&lt;h3 id=&#34;圖靈測試-Turing-test&#34;&gt;&lt;a href=&#34;#圖靈測試-Turing-test&#34; class=&#34;headerlink&#34; title=&#34;圖靈測試(Turing test)&#34;&gt;&lt;/a&gt;圖靈測試(Turing test)&lt;/h3&gt;&lt;p&gt;If a machine is intelligent, then it cannot be distinguished from a human&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;反過來利用的例子 - CAPTCHA(驗證碼): Completely Automated Public Turing test to tell Computers and Humans Apart&lt;/li&gt;
+&lt;li&gt;Wolfram Alpha&lt;ul&gt;
+&lt;li&gt;knowledge base of Siri&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Problems  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Are all human behaviors intelligent?&lt;/li&gt;
+&lt;li&gt;Can human perform every possible intelligent behavior?&lt;br&gt;→ Human Intelligence 和 Intelligence 並不完全相同&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;改變目標&#34;&gt;&lt;a href=&#34;#改變目標&#34; class=&#34;headerlink&#34; title=&#34;改變目標&#34;&gt;&lt;/a&gt;改變目標&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;From Artificial Intelligence to &lt;strong&gt;Machine Intelligence&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;machine intelligence: the thing machine can do better than human do&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;From imitation of human behaviors to doing intelligent behaviors&lt;/li&gt;
+&lt;li&gt;From general-purpose intelligence to &lt;strong&gt;domain-dependent&lt;/strong&gt; Expert Systems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;重大突破&#34;&gt;&lt;a href=&#34;#重大突破&#34; class=&#34;headerlink&#34; title=&#34;重大突破&#34;&gt;&lt;/a&gt;重大突破&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;1912 - End-Game chess playing machine  &lt;/li&gt;
+&lt;li&gt;~1970 - Brute Force    &lt;/li&gt;
+&lt;li&gt;1975 - Alpha-Beta pruning(Knuth and Moore)   &lt;/li&gt;
+&lt;li&gt;1993 - Monte Carlo  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;無關：核心知識&#34;&gt;&lt;a href=&#34;#無關：核心知識&#34; class=&#34;headerlink&#34; title=&#34;無關：核心知識&#34;&gt;&lt;/a&gt;無關：核心知識&lt;/h3&gt;&lt;p&gt;用少部分的核心知識(要記得的事物)推得大多數的知識&lt;br&gt;Ex. 背九九乘法表推得所有多位數乘法&lt;br&gt;建構式數學(X)  &lt;/p&gt;
+&lt;h3 id=&#34;對局分類&#34;&gt;&lt;a href=&#34;#對局分類&#34; class=&#34;headerlink&#34; title=&#34;對局分類&#34;&gt;&lt;/a&gt;對局分類&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;研究遊戲之前的必要分析：分類&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;By number of players   &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Single-player games&lt;ul&gt;
+&lt;li&gt;puzzles&lt;/li&gt;
+&lt;li&gt;Most of them are NP-complete&lt;ul&gt;
+&lt;li&gt;or the game will be not fun to play&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Two-player games&lt;ul&gt;
+&lt;li&gt;Most of them are either P-SPACE-complete(polynomial space usage) or exponential-time-complete&lt;ul&gt;
+&lt;li&gt;PSPACE-complete can be thought of as the hardest problems in PSPACE, solution of PSPACE-complete could easily be used to solve any other problem in PSPACE&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Multi-player games&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;By state information obtained by each player(盤面資訊是否完全)  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Perfect-information games&lt;ul&gt;
+&lt;li&gt;all players have all the information to make a correct decision&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Imperfect-information games&lt;ul&gt;
+&lt;li&gt;some information is only available to selected players, for example you cannot see the opponent’s cards in Poker(不知對手的牌或棋子, Ex. 橋牌)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;By rules of games known in advance(是否有特殊規則、是否知道對手的行動)  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Complete-information games&lt;ul&gt;
+&lt;li&gt;rules of the game are fully known by all players in advance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Incomplete-information games&lt;ul&gt;
+&lt;li&gt;partial rules are not given in advance for some players(Ex. 囚犯困境賽局)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5lY29uLnVjc2IuZWR1L35nYXJyYXR0L0Vjb24xNzEvTGVjdDE0X1NsaWRlcy5wZGY=&#34;&gt;definition of perfect and complete information in game theory&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;By whether players can fully control the playing of the game(是否受隨機性影響)    &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Stochastic games&lt;ul&gt;
+&lt;li&gt;there is an element of chance such as dice rolls &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Deterministic games&lt;ul&gt;
+&lt;li&gt;players have a full control over the games&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Example(not fully sure):  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;perfect-information complete-information deterministic game: chinese chess, go    &lt;/li&gt;
+&lt;li&gt;perfect-information complete-information stochastic game: dark chinese chess, 輪盤(Roulette)    &lt;/li&gt;
+&lt;li&gt;perfect-information incomplete-information deterministic game: Prisoner’s Dilemma    &lt;/li&gt;
+&lt;li&gt;perfect-information incomplete-information stochastic game: ?    &lt;/li&gt;
+&lt;li&gt;inperfect-information complete-information deterministic game: ?    &lt;/li&gt;
+&lt;li&gt;inperfect-information complete-information stochastic game: monopoly, bridge   &lt;/li&gt;
+&lt;li&gt;inperfect-information incomplete-information deterministic game: battleship, bingo    &lt;/li&gt;
+&lt;li&gt;inperfect-information incomplete-information stochastic game: most of the table/computer games&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Chap02-Basic-Search-Algorithms&#34;&gt;&lt;a href=&#34;#Chap02-Basic-Search-Algorithms&#34; class=&#34;headerlink&#34; title=&#34;Chap02 Basic Search Algorithms&#34;&gt;&lt;/a&gt;Chap02 Basic Search Algorithms&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Brute force&lt;/li&gt;
+&lt;li&gt;Systematic brute-force search  &lt;ul&gt;
+&lt;li&gt;Breadth-first search (BFS)  &lt;/li&gt;
+&lt;li&gt;Depth-first search (DFS)  &lt;ul&gt;
+&lt;li&gt;Depth-first Iterative-deepening (DFID)  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Bi-directional search&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Heuristic search: best-first search  &lt;ul&gt;
+&lt;li&gt;A*  &lt;ul&gt;
+&lt;li&gt;IDA*&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Symbol-Definition&#34;&gt;&lt;a href=&#34;#Symbol-Definition&#34; class=&#34;headerlink&#34; title=&#34;Symbol Definition&#34;&gt;&lt;/a&gt;Symbol Definition&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Node branching factor &lt;code&gt;b&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;degree&lt;/li&gt;
+&lt;li&gt;number of neighbor vertexs of a node&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Edge branching factor &lt;code&gt;e&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;number of connected edges of a node&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Depth of a solution &lt;code&gt;d&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;最短深度, &lt;code&gt;D&lt;/code&gt; 為最長深度&lt;/li&gt;
+&lt;li&gt;Root深度為0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;If &lt;code&gt;b&lt;/code&gt; and &lt;code&gt;e&lt;/code&gt; are average constant number, &lt;code&gt;e&lt;/code&gt; &amp;gt;= &lt;code&gt;b&lt;/code&gt;(兩個點之間可能有多條線)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Brute-force-search&#34;&gt;&lt;a href=&#34;#Brute-force-search&#34; class=&#34;headerlink&#34; title=&#34;Brute-force search&#34;&gt;&lt;/a&gt;Brute-force search&lt;/h3&gt;&lt;p&gt;Used information  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;initial state&lt;/li&gt;
+&lt;li&gt;method to find adjacent states&lt;/li&gt;
+&lt;li&gt;goal-checking method(whether current state is goal)  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pure brute-force search program &lt;img data-src=&#34;/img/TCG/54GbBxV.png&#34; alt=&#34;&#34;&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;隨機走旁邊的一個點&lt;/li&gt;
+&lt;li&gt;不記憶走過的路&lt;ul&gt;
+&lt;li&gt;May take infinite time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Pure Random Algorithm 應用&lt;ul&gt;
+&lt;li&gt;驗證碼(e.g. 虛寶)&lt;/li&gt;
+&lt;li&gt;純隨機數&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;BFS-Breadth-First-Search&#34;&gt;&lt;a href=&#34;#BFS-Breadth-First-Search&#34; class=&#34;headerlink&#34; title=&#34;BFS(Breadth-First Search)&#34;&gt;&lt;/a&gt;BFS(Breadth-First Search)&lt;/h3&gt;&lt;p&gt;&lt;img data-src=&#34;/img/TCG/mrf0Egx.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;deeper(N): 回傳與N相鄰的點&lt;br&gt;record parent state and backtrace to Find the path &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Space complexity: $O(b^d)$ → Too big!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Time complexity: $O(b^{d-1} * e)$     &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;→ costs O(e) to find deeper(N), at most check b^(d-1) times(deeper(leaf) do not return new node)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Open list: nodes that are in the queue(candidate nodes)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Closed list: nodes that have been explored(assure not answer, can skip)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Need a good algorithm to check for states in deeper(N) are visited or not&lt;ul&gt;
+&lt;li&gt;Hash  &lt;/li&gt;
+&lt;li&gt;Binary search&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;not need to have because it won’t guarantee to improve the performance&lt;/li&gt;
+&lt;li&gt;if it is possible to have no solution, Need to store nodes that are already visited &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;node： open list → check is goal or not, explore(deeper) → closed list&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Property    &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Always finds optimal solution&lt;/li&gt;
+&lt;li&gt;Do not fall into loops if goal exists(always “deeper”) &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;Disk-based-algorithm&#34;&gt;&lt;a href=&#34;#Disk-based-algorithm&#34; class=&#34;headerlink&#34; title=&#34;Disk based algorithm&#34;&gt;&lt;/a&gt;Disk based algorithm&lt;/h4&gt;&lt;p&gt;&lt;img data-src=&#34;/img/TCG/i8bbMET.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Solution for huge space complexity&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;disk: store main data&lt;/li&gt;
+&lt;li&gt;memory: store buffers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;Store open list(QUEUE) in disk&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Append&lt;/strong&gt; buffered open list to disk when memory is full or QUEUE is empty&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Store closed list in disk and maintain them as sorted&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Merge&lt;/strong&gt; buffered closed list with disk closed list when memory is full   &lt;/li&gt;
+&lt;li&gt;delay cheking: check node in the closed list or not before being taken from open list&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;Disk-based-algorithms&#34;&gt;&lt;a href=&#34;#Disk-based-algorithms&#34; class=&#34;headerlink&#34; title=&#34;Disk based algorithms&#34;&gt;&lt;/a&gt;Disk based algorithms&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;not too slow&lt;ul&gt;
+&lt;li&gt;read large file in sequence&lt;ul&gt;
+&lt;li&gt;queue(always retrieve at head and write at end)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;sorting of data in disk&lt;ul&gt;
+&lt;li&gt;merge sort between disk list and buffer list&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;very slow&lt;ul&gt;
+&lt;li&gt;read file in random order(disk spinning)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;系統為資源和效率(時間、空間、錢)的trade-off&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;DFS&#34;&gt;&lt;a href=&#34;#DFS&#34; class=&#34;headerlink&#34; title=&#34;DFS&#34;&gt;&lt;/a&gt;DFS&lt;/h3&gt;&lt;p&gt;&lt;img data-src=&#34;/img/TCG/65RmOgp.png&#34; alt=&#34;DFSalgo&#34;&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;performance mostly depends on &lt;strong&gt;move ordering&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;If first choose the branch include the goal, find answer quick&lt;/li&gt;
+&lt;li&gt;get out of long and wrong branches ASAP!&lt;/li&gt;
+&lt;li&gt;implement &lt;code&gt;next(current, N)&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;作用：列舉出N的所有鄰居&lt;/li&gt;
+&lt;li&gt;回傳下一個N的鄰居，目前列舉到current&lt;/li&gt;
+&lt;li&gt;next(null, N) -&amp;gt; return first neighbor of N&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;time complexity: $O(e^D)$&lt;ul&gt;
+&lt;li&gt;number of possible branches at depth D&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;space complexity: $O(D)$&lt;ul&gt;
+&lt;li&gt;Only need to store current path in the Stack&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Property  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;need to store close list (BFS: do not need to)&lt;/li&gt;
+&lt;li&gt;May not find an optimal solution&lt;/li&gt;
+&lt;li&gt;Can’t properly implement on disk&lt;ul&gt;
+&lt;li&gt;very huge closed list&lt;ul&gt;
+&lt;li&gt;Use data compression or bit-operation techniques to store visited nodes&lt;/li&gt;
+&lt;li&gt;Need a good heuristic to store the most frequently visited nodes to avoid swapping too often&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;need to check closed list instantly(BFS: can be delayed)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Can DFS be paralleled? Computer scientists fails to do so even after 30 years&lt;/li&gt;
+&lt;li&gt;Most critical drawback: huge and unpredictable time complexity&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;General-skills-to-improve-searching-algorithm&#34;&gt;&lt;a href=&#34;#General-skills-to-improve-searching-algorithm&#34; class=&#34;headerlink&#34; title=&#34;General skills to improve searching algorithm&#34;&gt;&lt;/a&gt;General skills to improve searching algorithm&lt;/h3&gt;&lt;h4 id=&#34;Iterative-Deepening-ID-逐層加深&#34;&gt;&lt;a href=&#34;#Iterative-Deepening-ID-逐層加深&#34; class=&#34;headerlink&#34; title=&#34;Iterative-Deepening(ID) 逐層加深&#34;&gt;&lt;/a&gt;Iterative-Deepening(ID) 逐層加深&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;inspired from BFS(BFS = BFID)&lt;/li&gt;
+&lt;li&gt;限制搜尋時的複雜度，若找不到再放寬限制&lt;/li&gt;
+&lt;li&gt;prevent worse cases&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Deep First ID(DFID)     &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;限制深度 &lt;ul&gt;
+&lt;li&gt;找到解立即return &lt;img data-src=&#34;/img/TCG/9X2ZiRm.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img data-src=&#34;/img/TCG/gmD51AT.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;li&gt;time complexity using 二項式定理 &lt;img data-src=&#34;/img/TCG/IfDEwFh.png&#34; alt=&#34;&#34;&gt; &lt;img data-src=&#34;/img/TCG/d0m27cU.png&#34; alt=&#34;&#34;&gt;&lt;ul&gt;
+&lt;li&gt;M(e, d) ~ $O(e^d)$ when e is sufficiently large&lt;/li&gt;
+&lt;li&gt;→ no so much time penalty to use ID when e is big enough&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;關鍵：設定初始限制和限制放寬的大小&lt;/li&gt;
+&lt;li&gt;always find optimal solution&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;Bi-directional-search&#34;&gt;&lt;a href=&#34;#Bi-directional-search&#34; class=&#34;headerlink&#34; title=&#34;Bi-directional search&#34;&gt;&lt;/a&gt;Bi-directional search&lt;/h4&gt;&lt;p&gt;&lt;img data-src=&#34;/img/TCG/1-1.png&#34; alt=&#34;DFSdir&#34;&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;DFSdir(B, G, successor, i)&lt;/code&gt;: DFS with starting states B, goal states G, successor function and &lt;strong&gt;depth limit i&lt;/strong&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;nextdir(current, successor, N)&lt;/code&gt;: returns the state next to the state “current” in successor(N)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;deeper(current, N)&lt;/code&gt; for forward searching&lt;ul&gt;
+&lt;li&gt;deeper(N) contains all next states of N&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;prev(current, N)&lt;/code&gt; for backward searching&lt;ul&gt;
+&lt;li&gt;prev(N) contains all previous states of N&lt;br&gt;&lt;img data-src=&#34;/img/TCG/1-2.png&#34; alt=&#34;BDS&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Forward Search: store all states H&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Backward Search: find the path from G(goal) to H at depth = limit or limit+1(for odd-lengthed solutions)  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;also use the concept of iterative-deepening&lt;br&gt;&lt;img data-src=&#34;/img/TCG/7iBkfKB.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Time complexity: $O(e^{d/2})$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the number of nodes visited is greatly reduced(compared with original $O(e^d)$)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Space complexity: $O(e^{d/2})$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pay the price of storing state depth(H)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;restrict&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;can’t assure to find optimal solution&lt;/li&gt;
+&lt;li&gt;need to know what the goals are &lt;ul&gt;
+&lt;li&gt;bi-directional search is used when goal is known, only want to find path, like solving 15-puzzle&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Heuristic-啟發式-search&#34;&gt;&lt;a href=&#34;#Heuristic-啟發式-search&#34; class=&#34;headerlink&#34; title=&#34;Heuristic(啟發式) search&#34;&gt;&lt;/a&gt;Heuristic(啟發式) search&lt;/h3&gt;&lt;p&gt;Definition: criteria, methods, or principles for deciding which is the most effective to achieve some goal&lt;br&gt;→ By 經驗法則(so not always have optimal solution)  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;先走最有可能通往答案的state(good move ordering)&lt;ul&gt;
+&lt;li&gt;best-first algorithm : like greedy   &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;The unlikely path will be explored further(pruning)  &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Key: how to pick the next state to explore&lt;/strong&gt;   &lt;ul&gt;
+&lt;li&gt;need simple and effective &lt;strong&gt;estimate function&lt;/strong&gt; to discriminate    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;Heuristic-search-–-A&#34;&gt;&lt;a href=&#34;#Heuristic-search-–-A&#34; class=&#34;headerlink&#34; title=&#34;Heuristic search – A*&#34;&gt;&lt;/a&gt;Heuristic search – A*&lt;/h4&gt;&lt;p&gt;&lt;img data-src=&#34;/img/TCG/Vv8N3hj.png&#34; alt=&#34;A*&#34;&gt;&lt;br&gt;line 12: add all possible path that depth = depth + 1   &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open list: a priorty queue(PQ) to store paths with costs&lt;/li&gt;
+&lt;li&gt;Closed list: store all visited nodes with the smallest cost&lt;ul&gt;
+&lt;li&gt;Check for duplicated visits in the closed list only&lt;/li&gt;
+&lt;li&gt;A node is inserted if &lt;ul&gt;
+&lt;li&gt;it has never been visited before&lt;/li&gt;
+&lt;li&gt;being visited, but has smaller cost&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;Given a path P&lt;ul&gt;
+&lt;li&gt;g(P) = current cost of P&lt;/li&gt;
+&lt;li&gt;h(P) = estimation of remaining path to goal(&lt;strong&gt;heuristic cost&lt;/strong&gt; of P)&lt;/li&gt;
+&lt;li&gt;f(P) = g(P) + h(P) is the cost function&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Assume all costs are positive, so there is no need to check for falling into a loop  &lt;/li&gt;
+&lt;li&gt;cost function所推測的cost不可超過實際的cost，否則不保證找到最佳解&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;if h() never overestimates the actual cost to the goal&lt;/strong&gt; (called admissible可容許), then &lt;strong&gt;A* always finds an optimal solution&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;證明？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;h(n)=0 : A* 等同 BFS&lt;/li&gt;
+&lt;li&gt;h(n)&amp;lt;目前節點到結束點的距離 : A* 演算法保證找到最短路徑, h(n)越小, 搜尋深度越深(代表花愈多時間)&lt;/li&gt;
+&lt;li&gt;h(n)=目前節點到結束點的距離 : A* 演算法僅會尋找最佳路徑, 並且能快速找到結果(最理想情況)&lt;/li&gt;
+&lt;li&gt;h(n)&amp;gt;目前節點到結束點的距離 : 不保證能找到最短路徑, 但計算比較快&lt;/li&gt;
+&lt;li&gt;h(n)與g(n)高度相關 : A* 演算法此時成為Best-First Search&lt;br&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2Jsb2cubWluc3RyZWwuaWR2LnR3LzIwMDQvMTIvc3Rhci1hbGdvcml0aG0uaHRtbA==&#34;&gt;http://blog.minstrel.idv.tw/2004/12/star-algorithm.html&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Question:  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What disk based techniques can be used?&lt;/li&gt;
+&lt;li&gt;Why do we need a non-trivial h(P) that is admissible?&lt;/li&gt;
+&lt;li&gt;How to design an admissible cost function?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;DFS-with-threshold&#34;&gt;&lt;a href=&#34;#DFS-with-threshold&#34; class=&#34;headerlink&#34; title=&#34;DFS with threshold&#34;&gt;&lt;/a&gt;DFS with threshold&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;DFScost(N, f, threshold)&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;starting state N &lt;/li&gt;
+&lt;li&gt;cost function f&lt;/li&gt;
+&lt;li&gt;cuts off a path if cost bigger than threshold &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;DFS1&lt;/code&gt;: Use &lt;code&gt;next1(current,N)&lt;/code&gt; find neighbors of N (in the order of low cost to high cost)&lt;br&gt;&lt;img data-src=&#34;/img/TCG/csd9mLf.png&#34; alt=&#34;dfs1&#34;&gt;&lt;br&gt;&lt;code&gt;DFS2&lt;/code&gt;: Use a priority queue instead of using a stack in &lt;code&gt;DFScost&lt;/code&gt;&lt;br&gt;&lt;img data-src=&#34;/img/TCG/jthjSm8.png&#34; alt=&#34;dfs2&#34;&gt;&lt;br&gt;It may be costly to maintain a priority queue&lt;/p&gt;
+&lt;h3 id=&#34;IDA-DFID-A&#34;&gt;&lt;a href=&#34;#IDA-DFID-A&#34; class=&#34;headerlink&#34; title=&#34;IDA* = DFID + A*&#34;&gt;&lt;/a&gt;IDA* = DFID + A*&lt;/h3&gt;&lt;p&gt;用A*的cost作為DFS的threshold&lt;br&gt;&lt;img data-src=&#34;/img/TCG/PJ2bPrX.png&#34; alt=&#34;&#34;&gt; &lt;/p&gt;
+&lt;p&gt;Ex. 15 puzzle&lt;br&gt;all posibilities: $16! \leq 2.1 \times 10^{13}$&lt;br&gt;g(P): the number of moves made so far&lt;br&gt;h(P): &lt;strong&gt;Manhattan distance&lt;/strong&gt; between the current board and the goal&lt;br&gt;Manhattan distance from (i, j) to (i’, j’) is |i’ - i| + |j’ - j| (admissible)   &lt;/p&gt;
+&lt;h3 id=&#34;basic-thought-for-a-problem&#34;&gt;&lt;a href=&#34;#basic-thought-for-a-problem&#34; class=&#34;headerlink&#34; title=&#34;basic thought for a problem&#34;&gt;&lt;/a&gt;basic thought for a problem&lt;/h3&gt;&lt;p&gt;&lt;em&gt;What you should think about before playing a game&lt;/em&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Needed to &lt;ul&gt;
+&lt;li&gt;Find an optimal solution?&lt;/li&gt;
+&lt;li&gt;batch operations?&lt;/li&gt;
+&lt;li&gt;disk based algorithms?&lt;/li&gt;
+&lt;li&gt;Search in parallel?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Balancing&lt;/strong&gt; in resource usage:&lt;ul&gt;
+&lt;li&gt;memorize past results vs efforts to search again(time and space)&lt;/li&gt;
+&lt;li&gt;The efforts to compute a better heuristic(time to think a heuristic?)&lt;/li&gt;
+&lt;li&gt;The amount of resources spent in implementing a better heuristic and the amount of resources spent in searching(complexity of heuristic function)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;For specific algorithm&lt;ul&gt;
+&lt;li&gt;heuristic : How to design a good and non-trivial heuristic function?&lt;/li&gt;
+&lt;li&gt;DFS : How to get a better move ordering?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Can these techniques be applied to two-person game?&lt;/p&gt;
+&lt;h3 id=&#34;algorithm整理&#34;&gt;&lt;a href=&#34;#algorithm整理&#34; class=&#34;headerlink&#34; title=&#34;algorithm整理&#34;&gt;&lt;/a&gt;algorithm整理&lt;/h3&gt;&lt;p&gt;| Name      | Time Complexity | Space Complexity | OptimalSolution    | UseDisk | Description               |&lt;br&gt;| ——— | ————— | —————- | —————— | ——- |&lt;br&gt;| brute     | $∞$             | $O(1)$           | No                 | No      |&lt;br&gt;| BFS       | $O(b^d)$        | $O(b^{d-1} * e)$ | Yes                | Needed  |&lt;br&gt;| DFS       | $O(e^d)$        | $O(d)$           | No                 | NoNeed  |&lt;br&gt;| Heuristic | N\A             | N\A              | Yes, if admissible | –      | Ex. A*                    |&lt;br&gt;| BDS       | $O(e^{d/2})$    | $O(e^{d/2})$     | No                 | Needed  | DFS + bidiretional search |&lt;br&gt;| DFID      | $O(e^d)$        | $O(d)$           | Yes                | NoNeed  | DFS + ID                  |&lt;br&gt;| IDA*      | N\A             | N\A              | Yes                | N\A     | DFID + A*                 |&lt;/p&gt;
+&lt;h2 id=&#34;Chap03-Heuristic-Search-with-Pre-Computed-Databases&#34;&gt;&lt;a href=&#34;#Chap03-Heuristic-Search-with-Pre-Computed-Databases&#34; class=&#34;headerlink&#34; title=&#34;Chap03 Heuristic Search with Pre-Computed Databases&#34;&gt;&lt;/a&gt;Chap03 Heuristic Search with Pre-Computed Databases&lt;/h2&gt;&lt;p&gt;new form of heuristic called &lt;strong&gt;pattern databases&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If the subgoals can be divided&lt;ul&gt;
+&lt;li&gt;Can sget better admissible cost function by &lt;strong&gt;sum of costs of the subgoals&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Make use of the fact that computers can memorize lots of patterns&lt;ul&gt;
+&lt;li&gt;使用已經計算過的 pattern 來做出更好、更接近real cost的heuristic function &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Using 15 puzzle as example &lt;img data-src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/15-puzzle.svg/480px-15-puzzle.svg.png&#34; alt=&#34;&#34;&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;State space can be divided into two subsets: even and odd permutations&lt;/li&gt;
+&lt;li&gt;$f_1$ is number of inversions in a permutation &lt;code&gt;X1X2...XN&lt;/code&gt;  &lt;ul&gt;
+&lt;li&gt;inversion is a distinct pair Xi &amp;gt; Xj such that i &amp;lt; j(後面有幾個數比自己小) &lt;/li&gt;
+&lt;li&gt;Example: &lt;code&gt;10,8,12,3,7,6,2,1,14,4,11,15,13,9,5&lt;/code&gt; has 9+7+9+2+5+4+1+0+5+0+2+3+2+1 inversions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;$f_2$ is the row number that empty cell is(空的那一格在哪一行)&lt;/li&gt;
+&lt;li&gt;f = $f_1$ + $f_2$&lt;/li&gt;
+&lt;li&gt;Slide a tile never change the parity    &lt;ul&gt;
+&lt;li&gt;Proof: skip(a lot of)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Solving Result&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1-MIPS machine&lt;/li&gt;
+&lt;li&gt;30 CPU minutes in 1985 &lt;/li&gt;
+&lt;li&gt;using IDA* with Manhattan distance heuristic&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Non-additive-pattern-databases&#34;&gt;&lt;a href=&#34;#Non-additive-pattern-databases&#34; class=&#34;headerlink&#34; title=&#34;Non-additive pattern databases&#34;&gt;&lt;/a&gt;Non-additive pattern databases&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;原本cost funtion為15片個別的distance之和，若能一次計算多片的distance？&lt;/li&gt;
+&lt;li&gt;linear conflict: 靠很近不代表步數少(如[2, 1, 3, 4]交換至[1, 2, 3, 4]並不只兩步)&lt;ul&gt;
+&lt;li&gt;有可能移成pattern時，反而使其他片遠離&lt;/li&gt;
+&lt;li&gt;&lt;img data-src=&#34;/img/TCG/4-1.png&#34; alt=&#34;linear conflict&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Fringe(初級知識)&lt;ul&gt;
+&lt;li&gt;subset of selected tiles called &lt;strong&gt;pattern&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;tiles not selected is “don’t-care tile”, all looked as the same&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;If there are 7 selected tiles, including empty cell  &lt;ul&gt;
+&lt;li&gt;16!/9! = 57657600 possible pattern size&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;/img/TCG/4-2.png&#34; alt=&#34;prefrin&#34;&gt;&lt;br&gt;goal fringe: 選擇的方塊都和goal的位置一樣&lt;br&gt;&lt;img data-src=&#34;/img/TCG/4-3.png&#34; alt=&#34;goalfrin&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;precompute the minimum number of moves(&lt;strong&gt;fringe number&lt;/strong&gt;) to make goal fringe&lt;ul&gt;
+&lt;li&gt;goal fringe: 找給定的選擇方塊，在任何pattern中，最小需要移動成最終目標的步數&lt;/li&gt;
+&lt;li&gt;We can solve it because the pattern size is relatively small&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Pro’s&lt;ul&gt;
+&lt;li&gt;pattern size↑, fringe number↑, which means better estimation&lt;ul&gt;
+&lt;li&gt;because estimate number it is closer to the real answer    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Con’s    &lt;ul&gt;
+&lt;li&gt;Pattern with a larger size&lt;ul&gt;
+&lt;li&gt;consuming lots of memory and time&lt;/li&gt;
+&lt;li&gt;limited by source&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;not optimal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Property   &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Divide and Conquer  &lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Reduce a 15-puzzle problem into a 8-puzzle &lt;img data-src=&#34;/img/TCG/4-4.png&#34; alt=&#34;15-8&#34;&gt;&lt;/li&gt;
+&lt;li&gt;魔術方塊 – 分成六面&lt;/li&gt;
+&lt;li&gt;Cannot easily combine&lt;ul&gt;
+&lt;li&gt;affect tiles that have reached the goal in the subproblem when solving the remains&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Used as heuristic function(admissible)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;More-than-one-patterns&#34;&gt;&lt;a href=&#34;#More-than-one-patterns&#34; class=&#34;headerlink&#34; title=&#34;More than one patterns&#34;&gt;&lt;/a&gt;More than one patterns&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;How to Find better patterns for fringes?&lt;ul&gt;
+&lt;li&gt;→ Can we combine smaller patterns to form bigger patterns?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For different pattern databases P1, P2, P3 …  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;patterns may not be disjoint, may be overlapping&lt;/li&gt;
+&lt;li&gt;The heuristic function we can use is&lt;ul&gt;
+&lt;li&gt;$h(P_1, P_2, P_3 … ) = max{h(P_1),h(P_2),h(P_3) …}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;How to make heuristics and the patterns disjoint?  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;patterns should be disjoint to add them together(see below)&lt;ul&gt;
+&lt;li&gt;Though patterns are disjoint, their costs are not disjoint&lt;ul&gt;
+&lt;li&gt;Some moves are counted more than once&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;f(P1) + f(P2) is admissible if  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;f() is disjoint with respect to P1 and P2&lt;/li&gt;
+&lt;li&gt;both f(P1) and f(P2) are admissible&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For Manhattan distance heuristic  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Each region is a tile&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Divide the board into several disjoint regions&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;They are disjoint&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;only count the number of moves made by each region&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;doesn’t count cross-region moves&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Refinement&lt;br&gt;Partition the board into disjoint regions using the tiles in a region of the goal arrangement as a pattern&lt;br&gt;&lt;img data-src=&#34;/img/TCG/4-5.png&#34; alt=&#34;aabb&#34;&gt;&lt;br&gt;&lt;strong&gt;只算每個region內的片所移動的步數和，作為新定義的fringe number&lt;/strong&gt;&lt;br&gt;如此一來，就可以將每個region的cost相加而保持admissible&lt;/p&gt;
+&lt;h3 id=&#34;Disjoint-pattern&#34;&gt;&lt;a href=&#34;#Disjoint-pattern&#34; class=&#34;headerlink&#34; title=&#34;Disjoint pattern&#34;&gt;&lt;/a&gt;Disjoint pattern&lt;/h3&gt;&lt;p&gt;A heuristic function f() is disjoint with respect to two patterns P1 and P2 if  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;P1 and P2 have no common cells&lt;/li&gt;
+&lt;li&gt;The solutions corresponding to f(P1) and f(P2) do not interfere each other&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Revised fringe number f’(p): for each fringe arrangement F, the &lt;strong&gt;minimum&lt;/strong&gt; number of &lt;strong&gt;fringe-only&lt;/strong&gt; moves to make goal fringe&lt;/p&gt;
+&lt;h3 id=&#34;Result&#34;&gt;&lt;a href=&#34;#Result&#34; class=&#34;headerlink&#34; title=&#34;Result&#34;&gt;&lt;/a&gt;Result&lt;/h3&gt;&lt;p&gt;Solves the 15 puzzle problem using fringe that is more than &lt;strong&gt;2000&lt;/strong&gt; times faster than the previous result by using the Manhattan distance  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The average Manhattan distance is 76.078 moves in 24-puzzle    &lt;/li&gt;
+&lt;li&gt;The average value for the disjoint database heuristic is 81.607 moves in 24-puzzle   &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;only small refinement on heuristic function would make performance far better&lt;/strong&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Other heuristics   &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;pairwise distance&lt;ul&gt;
+&lt;li&gt;partition the board into many 2-tiles so that the sum of cost is &lt;strong&gt;maximized&lt;/strong&gt;&lt;br&gt;For an $n^2 - 1$ puzzle, we have $O(n^4)$ different combinations&lt;br&gt;using&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;What-else-can-be-done&#34;&gt;&lt;a href=&#34;#What-else-can-be-done&#34; class=&#34;headerlink&#34; title=&#34;What else can be done?&#34;&gt;&lt;/a&gt;What else can be done?&lt;/h3&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Better way of partitioning&lt;/li&gt;
+&lt;li&gt;Is it possible to generalize this result to other problem domains?&lt;/li&gt;
+&lt;li&gt;Decide ratio of the time used in searching and the time used in retrieving pre-computed knowledge&lt;ul&gt;
+&lt;li&gt;memorize vs compute&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;Chap-04-Two-Player-Perfect-Information-Games-Introductions&#34;&gt;&lt;a href=&#34;#Chap-04-Two-Player-Perfect-Information-Games-Introductions&#34; class=&#34;headerlink&#34; title=&#34;Chap 04 Two-Player Perfect Information Games Introductions&#34;&gt;&lt;/a&gt;Chap 04 Two-Player Perfect Information Games Introductions&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Conclusion: decision complexity is more important than state-space complexity   &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;trade-off between &lt;strong&gt;knowledge-based&lt;/strong&gt; methods and &lt;strong&gt;brute-force&lt;/strong&gt; methods&lt;/p&gt;
+&lt;p&gt;Domain: 2-person &lt;strong&gt;zero-sum games&lt;/strong&gt; with perfect information&lt;br&gt;Zero-sum means one player’s loss is exactly the other player’s gain, and vice versa.&lt;/p&gt;
+&lt;h3 id=&#34;Definition&#34;&gt;&lt;a href=&#34;#Definition&#34; class=&#34;headerlink&#34; title=&#34;Definition&#34;&gt;&lt;/a&gt;Definition&lt;/h3&gt;&lt;p&gt;Game-theoretic value: the outcome of a game when all participants play optimally&lt;br&gt;Game-theoretic value for most games are unknown or are only known for some legal positions.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;Ultra-weakly solved&lt;/td&gt;
+&lt;td&gt;在初始盤面可知，遊戲中先行者或後行者誰有必勝、或必不敗之策略&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Weakly solved&lt;/td&gt;
+&lt;td&gt;for the initial position a strategy has been determined to achieve the game-theoretic value(知道必不敗之策略為何)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Strongly solved&lt;/td&gt;
+&lt;td&gt;a strategy has been determined for all legal positions(任何合法情況都能知道最佳策略)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;State-space complexity of a game: the &lt;strong&gt;number of the legal positions&lt;/strong&gt; in a game(可能的盤面)&lt;br&gt;Game-tree complexity(decision complexity) of a game: the &lt;strong&gt;number of the leaf nodes&lt;/strong&gt; in a solution search tree(可能的走法)  &lt;/p&gt;
+&lt;p&gt;A fair game: the game-theoretic value is draw and both players have roughly equal probability on making a mistake.  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Paper-scissor-stone&lt;/li&gt;
+&lt;li&gt;Roll a dice and compare who gets a larger number&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Initiative(主動): the right to move first  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A convergent game: the size of the state space decreases as the game progresses  &lt;ul&gt;
+&lt;li&gt;Example: Checkers  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;A divergent game: the size of the state space increases as the game progresses  &lt;ul&gt;
+&lt;li&gt;Example: Connect-5 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;A game may be convergent at one stage and then divergent at other stage.&lt;ul&gt;
+&lt;li&gt;Ex. Go, Tic-Tac-Toe&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Threats are something like forced moved or moves you have little choices.&lt;br&gt;Threats are moves with predictable counter-moves&lt;/p&gt;
+&lt;h3 id=&#34;Classification&#34;&gt;&lt;a href=&#34;#Classification&#34; class=&#34;headerlink&#34; title=&#34;Classification&#34;&gt;&lt;/a&gt;Classification&lt;/h3&gt;&lt;p&gt;&lt;img data-src=&#34;/img/TCG/5-1.png&#34; alt=&#34;4&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Questions to be researched&lt;br&gt;Can perfect knowledge obtained from solved games be translated into rules and strategies which human beings can assimilate?&lt;br&gt;Are such rules generic, or do they constitute a multitude of ad hoc recipes?&lt;br&gt;Can methods be transferred between games?  &lt;/p&gt;
+&lt;p&gt;Connection games&lt;br&gt;Connect-four (6 * 7)&lt;br&gt;Qubic (4 * 4 * 4)&lt;br&gt;Renju - Does not allow the First player to play certain moves, An asymmetric game.&lt;br&gt;mnk-Game: a game playing on a board of m rows and n columns with the goal of obtaining a straight line of length k.&lt;br&gt;Variations: First ply picks only one stone, the rest picks two stones in a ply. -&amp;gt; Connect 6. &lt;/p&gt;
+&lt;p&gt;Hex (10 * 10 or 11 * 11)&lt;br&gt;Exactly one of the players can win.&lt;br&gt;solved on a 6 * 6 board in 1994.&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;/img/TCG/5-2.png&#34; alt=&#34;Hex&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Proof on exactly one player win&lt;br&gt;Assume there is no winner&lt;br&gt;&lt;img data-src=&#34;/img/TCG/5-3.png&#34; alt=&#34;block&#34;&gt;&lt;br&gt;blue should totally block red at some place -&amp;gt; blue will connect!  &lt;/p&gt;
+&lt;p&gt;let R be the set of red cells that can be reached by chains from rightmost column&lt;br&gt;R does not contain a cell of the leftmost column; otherwise we have a contradiction&lt;br&gt;let N(R) be the blue cells that can be reached by chains originated from the rightmost column.&lt;br&gt;N(R) must contain a cell in the top and bottom row , Otherwise, R contains all cells in the First/bottom row, which is a contradiction.&lt;br&gt;N(R) must be connected. Otherwise, R can advance further. Hence N(R) is a blue winning chain.&lt;/p&gt;
+&lt;h3 id=&#34;Strategy-stealing-argument&#34;&gt;&lt;a href=&#34;#Strategy-stealing-argument&#34; class=&#34;headerlink&#34; title=&#34;Strategy-stealing argument&#34;&gt;&lt;/a&gt;Strategy-stealing argument&lt;/h3&gt;&lt;p&gt;made by John Nash in 1949&lt;br&gt;後手無一般化的必勝法&lt;br&gt;若後手有必勝法，則先手可以先隨機下一子(並無視之)，再照著後手的下法&lt;br&gt;後手必勝的下法包含了第一手，則再隨機下一子，將其視為第一子&lt;br&gt;限制：不能有和，下子不會有害，symmetric，history independent，&lt;/p&gt;
+&lt;p&gt;Assume the initial board position is B0&lt;br&gt;f(B) has a value only when it is a legal position for the second player.&lt;br&gt;rev(x): interchange colors of pieces in a board or ply x.&lt;br&gt;always has exactly one winner  &lt;/p&gt;
+&lt;p&gt;Not Solved&lt;br&gt;Chess DEEP BLUE beat the human World Champion in 1997&lt;br&gt;Chinese chess Professional 7-dan in 2007&lt;br&gt;Shogi&lt;br&gt;Claimed to be professional 2-dan in 2007&lt;br&gt;Defeat a 68-year old 1993 Meijin during 2011 and 2012&lt;/p&gt;
+&lt;p&gt;Go&lt;br&gt;Recent success and breakthrough using Monte Carlo UCT based methods.&lt;br&gt;Amateur 1 dan in 2010.&lt;br&gt;Amateur 3 dan in 2011.&lt;br&gt;The program Zen beat a 9-dan professional master at March 17, 2012&lt;br&gt;  First game: Five stone handicap and won by 11 points&lt;br&gt;  Second game: four stones handicap and won by 20 points&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;/img/TCG/5-4.png&#34; alt=&#34;table of complexity&#34;&gt;&lt;/p&gt;
+&lt;p&gt;possible to use heuristics to prune tremendously when the structure of the game is well studied&lt;/p&gt;
+&lt;p&gt;Methods to solve games&lt;br&gt;Brute-force methods  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Retrograde analysis(倒推)&lt;/li&gt;
+&lt;li&gt;Enhanced transposition-table methods(?)&lt;br&gt;Knowledge-based methods  &lt;/li&gt;
+&lt;li&gt;Threat-space search and lambda-search&lt;/li&gt;
+&lt;li&gt;Proof-number search&lt;/li&gt;
+&lt;li&gt;Depth-First proof-number search&lt;/li&gt;
+&lt;li&gt;Pattern search&lt;ul&gt;
+&lt;li&gt;search threat patterns, which are collections of cells in a position&lt;/li&gt;
+&lt;li&gt;A threat pattern can be thought of as representing the relevant area on the board&lt;br&gt;Recent advancements  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Monte Carlo UCT based game tree simulation&lt;ul&gt;
+&lt;li&gt;Monte Carlo method has a root from statistic&lt;/li&gt;
+&lt;li&gt;Biased sampling&lt;/li&gt;
+&lt;li&gt;Using methods from machine learning&lt;/li&gt;
+&lt;li&gt;Combining domain knowledge with statistics&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;A majority vote algorithm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;low state-space complexity have mainly been solved with brute-force methods.&lt;br&gt;Nine Men’s Morris&lt;/p&gt;
+&lt;p&gt;low game-tree-complexities have mainly been solved with knowledge-based methods.&lt;br&gt;by intelligent (heuristic) searching with help of databases&lt;br&gt;Go-Moku, Renju, and k-in-a-row games&lt;/p&gt;
+&lt;p&gt;The First player has advantages.&lt;br&gt;Two kinds of positions&lt;br&gt;P-positions: the previous player can force a win.&lt;br&gt;N-positions: the next player can force a win.&lt;/p&gt;
+&lt;p&gt;First player to have a forced win, just one of the moves that make P-position.&lt;br&gt;second player to have a forced win, all of the moves must lead to(造成) N-positions&lt;/p&gt;
+&lt;p&gt;At small boards, the second player is able to draw or even to win for certain games.&lt;/p&gt;
+&lt;p&gt;Try to obtain a small advantage by using the initiative.&lt;br&gt;The opponent must react adequately on the moves played by the other player.&lt;br&gt;Force the opponent to always play the moves you expected.&lt;/p&gt;
+&lt;p&gt;Offsetting the initiative&lt;/p&gt;
+&lt;p&gt;一子棋 by 張系國 棋王 -&amp;gt; 先手優勢極大，隨著棋子增加，所需贏的步數就愈少。&lt;/p&gt;
+&lt;p&gt;讓子&lt;br&gt;Ex. Go k = 7.5 in 2011&lt;/p&gt;
+&lt;p&gt;Enforce rules so that the first player cannot win by selective patterns.&lt;br&gt;Ex. Renju&lt;/p&gt;
+&lt;p&gt;The one-move-equalization rule: one player plays an opening move and the other player then has to decide which color to&lt;br&gt;play for the reminder of the game.&lt;br&gt;. Hex.&lt;br&gt;. Second-player will win.&lt;/p&gt;
+&lt;p&gt;The First move plays one stone, the rest plays two stones each.&lt;br&gt;Can’t prove it is fair&lt;/p&gt;
+&lt;p&gt;The first player uses less resource.&lt;br&gt;For example: using less time.&lt;br&gt;Ex. Chinese chess.&lt;/p&gt;
+&lt;p&gt;1990’s prediction at 2000&lt;br&gt;&lt;img data-src=&#34;/img/TCG/5-5.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;2000’s prediction at 2010&lt;br&gt;&lt;img data-src=&#34;/img/TCG/5-6.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;Chap-05-Computer-chess-programming-by-Shannon&#34;&gt;&lt;a href=&#34;#Chap-05-Computer-chess-programming-by-Shannon&#34; class=&#34;headerlink&#34; title=&#34;Chap 05 Computer chess programming by Shannon&#34;&gt;&lt;/a&gt;Chap 05 Computer chess programming by Shannon&lt;/h2&gt;&lt;p&gt;C.E. Shannon&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1916 ~ 2001.&lt;/li&gt;
+&lt;li&gt;The founding father of Information theory.&lt;/li&gt;
+&lt;li&gt;The founding father of digital circuit design.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ground breaking paper for computer game playing: “Programming a Computer for Playing Chess”, 1950.&lt;br&gt;Presented many novel ideas that are still being used today.(太神啦！)  &lt;/p&gt;
+&lt;h3 id=&#34;Analysis&#34;&gt;&lt;a href=&#34;#Analysis&#34; class=&#34;headerlink&#34; title=&#34;Analysis&#34;&gt;&lt;/a&gt;Analysis&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;typical 30 legal moves in one ply(下子)  &lt;/li&gt;
+&lt;li&gt;typical game last about 40 moves  &lt;ul&gt;
+&lt;li&gt;will be 10^120 variations  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;possible legal position(state space complexity) is roughly 10^43&lt;/li&gt;
+&lt;li&gt;CPU speed in 1950 is 10^6 per second current CPU speed is 10^9 per second, still not fast enough to brute force it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;But it is possible to enumerate small endgames&lt;br&gt;3~6 piece endgame roughly 7.75*10^9 positions  &lt;/p&gt;
+&lt;h3 id=&#34;Three-phases-of-chess&#34;&gt;&lt;a href=&#34;#Three-phases-of-chess&#34; class=&#34;headerlink&#34; title=&#34;Three phases of chess&#34;&gt;&lt;/a&gt;Three phases of chess&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Opening &lt;ul&gt;
+&lt;li&gt;Development of pieces to good position&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Middle&lt;ul&gt;
+&lt;li&gt;after opening until few pieces&lt;/li&gt;
+&lt;li&gt;pawn structure &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;End game &lt;ul&gt;
+&lt;li&gt;concerning usage of pawns&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Different principles of play apply in the different phases&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;Evaluating-Function&#34;&gt;&lt;a href=&#34;#Evaluating-Function&#34; class=&#34;headerlink&#34; title=&#34;Evaluating Function&#34;&gt;&lt;/a&gt;Evaluating Function&lt;/h3&gt;&lt;p&gt;position p, include board status, which side to move, history of moves&lt;br&gt;history -&amp;gt; castling&lt;br&gt;&lt;img data-src=&#34;/img/TCG/6-1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Perfect evaluating function f(p):&lt;br&gt;f(p) = 1 for a won position.&lt;br&gt;f(p) = 0 for a drawn position.&lt;br&gt;f(p) = -1 for a lost position.&lt;br&gt;Perfect evaluating function is impossible for most games, and is &lt;strong&gt;not fun or educational&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Factors considered in approximate evaluating functions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The relative values of differences in materials.&lt;ul&gt;
+&lt;li&gt;The values of queen, rook, bishop, knight and pawn are about 9, 5, 3, 3, and 1, respectively.&lt;/li&gt;
+&lt;li&gt;How to determine good relative values? Static values verse dynamic values?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Position of pieces&lt;ul&gt;
+&lt;li&gt;Mobility: the freedom to move your pieces.&lt;/li&gt;
+&lt;li&gt;at center , or at corner&lt;/li&gt;
+&lt;li&gt;Doubled rooks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Pawn structure: the relative positions of the pawns.&lt;ul&gt;
+&lt;li&gt;Backward pawn: a pawn that is behind the pawn of the same color on an adjacent file that cannot advance without losing of itself.&lt;/li&gt;
+&lt;li&gt;Isolated pawn: A pawn that has no friend pawn on the adjacent file.&lt;/li&gt;
+&lt;li&gt;Doubled pawn: two pawns of the same color on the same file&lt;/li&gt;
+&lt;li&gt;these three are all bad pawn&lt;/li&gt;
+&lt;li&gt;Passed pawns: pawns that have no opposing pawns to prevent&lt;/li&gt;
+&lt;li&gt;Pawns on opposite colour squares from bishop.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;King safety.&lt;/li&gt;
+&lt;li&gt;Threat and attack.&lt;ul&gt;
+&lt;li&gt;Attacks on pieces which give one player an option of exchanging&lt;/li&gt;
+&lt;li&gt;Pins(小盯大) which mean here immobilizing pins where the pinned piece is of value not greater than the pinning piece&lt;/li&gt;
+&lt;li&gt;Commitments -&amp;gt; 需要保護其他子&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;img data-src=&#34;/img/TCG/6-2.png&#34; alt=&#34;three pawn&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Putting “right” coeffcients for diffferent factors&lt;br&gt;Dynamic setting in practical situations.&lt;/p&gt;
+&lt;p&gt;evaluating function can be only applied in&lt;br&gt;relatively quiescent positions.&lt;/p&gt;
+&lt;p&gt;not in the middle of material exchanging.&lt;br&gt;not being checked&lt;/p&gt;
+&lt;p&gt;max-min strategy&lt;br&gt;In your move, you try to maximize your f(p).&lt;br&gt;In the opponent’s move, he tries to minimize f(p).&lt;/p&gt;
+&lt;p&gt;A strategy in which all variations are considered out to a&lt;br&gt;definite number of moves and the move then determined from&lt;br&gt;a max-min formula is called type A strategy.&lt;/p&gt;
+&lt;p&gt;Stalemate&lt;br&gt;Winning by making the opponent having no legal next move.&lt;br&gt;suicide move is not legal, and stalemate results in&lt;br&gt;a draw if it is not currently in check.&lt;/p&gt;
+&lt;p&gt;Zugzwang(強制被動): In certain positions, a player is at a disadvantage if he is the next player to move.&lt;br&gt;&lt;img data-src=&#34;/img/TCG/6-3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Programming&lt;br&gt;    - Special rules of games&lt;br&gt;    - Methods of winning&lt;br&gt;    - Basic data structure for positions.&lt;br&gt;    - check for possible legal moves&lt;br&gt;    - Evaluating function.&lt;/p&gt;
+&lt;p&gt;Forced variations(迫著)&lt;br&gt;one player has little or no choices in playing&lt;/p&gt;
+&lt;p&gt;type B strategy&lt;br&gt;the machine must &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;examine forceful variations out as far as possible and evaluate only at reasonable positions&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;select the variations to be explored by some process&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;| 1 if any piece is attacked by a piece of lower value,&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;  g(P) =    /    or by more pieces then defences of if any check exists&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;\    on a square controlled by opponent.
+ | 0 otherwise.&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Using this function, variations could be explored until g(P)=0,&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;effective branching factor&lt;/strong&gt; is about 2 to 3.&lt;br&gt;Chinese chess has a larger real branching factor, but its average effective branching factor is also about 2 to 3.&lt;/p&gt;
+&lt;p&gt;“style” of play by the machine can&lt;br&gt;be changed very easily by altering some of the coeffcients and&lt;br&gt;numerical factors involved in the evaluating function&lt;/p&gt;
+&lt;p&gt;A chess master, on the other hand, has available knowledge of hundreds or perhaps thousands of standard situations, stock&lt;br&gt;combinations, and common manoeuvres based on pins, forks, discoveries, promotions, etc.&lt;br&gt;In a given position he recognizes some similarity to a familiar situation and this directs his mental calculations along the lines with greater probability of success.&lt;/p&gt;
+&lt;p&gt;Need to re-think the goal of writing a computer program that&lt;br&gt;plays games.&lt;br&gt;To discover intelligence:&lt;br&gt;What is considered intelligence for computers may not be considered so for human.&lt;br&gt;To have fun:&lt;br&gt;A very strong program may not be a program that gives you the most pleasure.&lt;br&gt;To Find ways to make computers more helpful to human.&lt;br&gt;Techniques or (machine) intelligence discovered may be useful to computers performing other tasks&lt;/p&gt;
+&lt;h2 id=&#34;Chap-06-Alpha-Beta-Pruning&#34;&gt;&lt;a href=&#34;#Chap-06-Alpha-Beta-Pruning&#34; class=&#34;headerlink&#34; title=&#34;Chap 06 Alpha-Beta Pruning&#34;&gt;&lt;/a&gt;Chap 06 Alpha-Beta Pruning&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;standard searching procedure for 2-person perfect-information zero sum games&lt;/li&gt;
+&lt;li&gt;terminal position&lt;ul&gt;
+&lt;li&gt;a position whose (win/loss/draw) value can be know&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Dewey-decimal-system&#34;&gt;&lt;a href=&#34;#Dewey-decimal-system&#34; class=&#34;headerlink&#34; title=&#34;Dewey decimal system&#34;&gt;&lt;/a&gt;Dewey decimal system&lt;/h3&gt;&lt;p&gt;杜威分類法 &lt;img data-src=&#34;/img/TCG/7-1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;Min-Max-method&#34;&gt;&lt;a href=&#34;#Min-Max-method&#34; class=&#34;headerlink&#34; title=&#34;Min-Max method&#34;&gt;&lt;/a&gt;Min-Max method&lt;/h3&gt;&lt;p&gt;假設持白子，數字為白子的evaluating function, 在下白子時，取分數最高(max)的，在下黑子時，取分數最低(min)的 &lt;img data-src=&#34;/img/TCG/7-2.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;img data-src=&#34;/img/TCG/7-3.png&#34; alt=&#34;max layer function F&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;Nega-max-method&#34;&gt;&lt;a href=&#34;#Nega-max-method&#34; class=&#34;headerlink&#34; title=&#34;Nega-max method&#34;&gt;&lt;/a&gt;Nega-max method&lt;/h3&gt;&lt;p&gt;將下黑子的分數取負號(即為黑子的分數，因為是零和遊戲)&lt;br&gt;這樣每一層都取最大分數即可&lt;br&gt;&lt;img data-src=&#34;/img/TCG/7-4.png&#34; alt=&#34;negamax algorithm&#34;&gt;&lt;/p&gt;
+&lt;p&gt;優點是實作較快，程式碼簡潔 &lt;/p&gt;
+&lt;h3 id=&#34;Alpha-Beta-cut-off&#34;&gt;&lt;a href=&#34;#Alpha-Beta-cut-off&#34; class=&#34;headerlink&#34; title=&#34;Alpha-Beta cut off&#34;&gt;&lt;/a&gt;Alpha-Beta cut off&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;current search window(score bound) = [α, β]&lt;/li&gt;
+&lt;li&gt;If α &amp;gt; β, no need to do further search in current branch &lt;/li&gt;
+&lt;li&gt;initial alpha = -∞, beta = ∞&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;/img/TCG/7-5.png&#34; alt=&#34;Alpha Cut off&#34;&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;只要發現對手有一種反擊方式，使結果比其他手的結果還差，就砍掉這一手(branch)&lt;/li&gt;
+&lt;li&gt;2.1 can cut off 2.x&lt;ul&gt;
+&lt;li&gt;before 2.1 , window = [15, ∞]&lt;/li&gt;
+&lt;li&gt;after 2.1 , window = [15, 10]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;We want to choose the biggest value at root for lower bound, so 2.x is all cut off&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;/img/TCG/7-6.png&#34; alt=&#34;Beta Cut off&#34;&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;只要對手發現自己有一種反擊方式，使結果比其他手的結果還差(α)，就砍掉這一手(branch)&lt;/li&gt;
+&lt;li&gt;1.2.1 can cut off 1.2.x&lt;ul&gt;
+&lt;li&gt;beofre 1.2.1 , 1 bound is [-∞, 10]&lt;/li&gt;
+&lt;li&gt;now 1.2 bound is [15, 10]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;We want to choose smallest value at 1 for upper bound, 1.2.x is all cut off&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;可以砍所有子孫 &lt;img data-src=&#34;/img/TCG/7-7.png&#34; alt=&#34;Deep Cut off&#34;&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2.1.1 is cut off   &lt;ul&gt;
+&lt;li&gt;root bound = [15, ∞]&lt;/li&gt;
+&lt;li&gt;2.1.1 = [-∞, 7]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;/img/TCG/7-8.png&#34; alt=&#34;alpha-beta cut off Algorithm&#34;&gt;&lt;br&gt;f = white move, find max to be lower bound, do beta cut off&lt;br&gt;g = black move, find min to be upper bound, do alpha cut off&lt;br&gt;&lt;img data-src=&#34;/img/TCG/7-9.png&#34; alt=&#34;example&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;/img/TCG/7-10.png&#34; alt=&#34;F2&#34;&gt;&lt;br&gt;window變號，回傳的score也要變號&lt;br&gt;t = -F(pi, -beta, -m)&lt;/p&gt;
+&lt;h3 id=&#34;Analysis-for-AB-pruning&#34;&gt;&lt;a href=&#34;#Analysis-for-AB-pruning&#34; class=&#34;headerlink&#34; title=&#34;Analysis for AB pruning&#34;&gt;&lt;/a&gt;Analysis for AB pruning&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;different move orderings&lt;/strong&gt; give very different cut branches&lt;br&gt;愈快找到最佳解，可以砍的branch愈多&lt;/p&gt;
+&lt;p&gt;critical nodes 一定會搜到(cut off之前至少需搜完一個子branch) &lt;img data-src=&#34;/img/TCG/7-11.png&#34; alt=&#34;Critical Node&#34;&gt;&lt;/p&gt;
+&lt;p&gt;perfect-ordering tree: 每個branch的第一個child就是最佳解&lt;br&gt;Theorem: 若是perfect-ordering tree, AB pruning 會剛好走過所有 critical nodes&lt;br&gt;Proof:&lt;br&gt;Three Types of critial nodes  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;定義a_i = 第i層的node是第幾個child(杜威分類)&lt;/li&gt;
+&lt;li&gt;a_j = 第一個「不是第一個child」的node(如果有的話)&lt;ul&gt;
+&lt;li&gt;a_j-1 = a_j+1 = 1&lt;ul&gt;
+&lt;li&gt;小於j的node都是1&lt;/li&gt;
+&lt;li&gt;而且因為是critial node，所以a_j的child一定是1(其他會被砍掉)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;a_l = the last layer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;root and all node = 1(最左邊, 1, 1.1, 1.1.1 …)&lt;/li&gt;
+&lt;li&gt;l-j = even&lt;ol&gt;
+&lt;li&gt;j = l (type1 的全部兒子(除了最左邊))  &lt;/li&gt;
+&lt;li&gt;j &amp;lt; l (type3 的全部兒子)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;l-j = odd&lt;ol&gt;
+&lt;li&gt;j+1 = l (type2.1 的第一個兒子)&lt;/li&gt;
+&lt;li&gt;j+1 &amp;lt; l (type2.2的第一個兒子)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img data-src=&#34;/img/TCG/7-13.png&#34; alt=&#34;Three Types of critial nodes&#34;&gt;&lt;br&gt;&lt;img data-src=&#34;/img/TCG/7-14.png&#34; alt=&#34;Proof&#34;&gt;&lt;/p&gt;
+&lt;p&gt;We can calculate the least number of nodes to be searched &lt;img data-src=&#34;/img/TCG/7-15.png&#34; alt=&#34;&#34;&gt; &lt;img data-src=&#34;/img/TCG/7-16.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;when there’re some early terminate nodes &lt;img data-src=&#34;/img/TCG/7-18.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;l = even → x.1.x.1… = b0(q1b2)q3…&lt;br&gt;            1.x.1.x… = (q0b1)(q2b3)…(q0b1 = 第一個孩子的全child，若無child，則為(1-qi)*0)&lt;/p&gt;
+&lt;p&gt;Perfect ordering is not always best when tree are not balanced &lt;img data-src=&#34;/img/TCG/7-17.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;→ When &lt;strong&gt;“relative” ordering of children&lt;/strong&gt;(not perfect order!) are good enough, there are some cut-off  &lt;/p&gt;
+&lt;p&gt;Theorem: 若知道所有的分數，就可以最佳化alpha-beta pruning(計算的點最少，cut最多)&lt;br&gt;→ 不過如果能算出來就不用search了…&lt;/p&gt;
+&lt;h3 id=&#34;Variations-of-alpha-beta-search&#34;&gt;&lt;a href=&#34;#Variations-of-alpha-beta-search&#34; class=&#34;headerlink&#34; title=&#34;Variations of alpha-beta search&#34;&gt;&lt;/a&gt;Variations of alpha-beta search&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Fail hard alpha-beta cut(Original) : F2 &lt;img data-src=&#34;/img/TCG/7-19.png&#34; alt=&#34;&#34;&gt; &lt;ul&gt;
+&lt;li&gt;returned value in [α, β] &lt;img data-src=&#34;/img/TCG/7-20.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Fail soft alpha-beta cut(Variation): F3  &lt;img data-src=&#34;/img/TCG/7-21.png&#34; alt=&#34;&#34;&gt;&lt;ul&gt;
+&lt;li&gt;Find “better” value when the value is out of the search window&lt;/li&gt;
+&lt;li&gt;m is the value in this branch(not related to α)&lt;ul&gt;
+&lt;li&gt;use max(m, alpha) to get window &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;return original value m instead of α or β when cut off, which is more precise than fail-hard &lt;img data-src=&#34;/img/TCG/7-22.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Failed-high &lt;ul&gt;
+&lt;li&gt;return value &amp;gt; β&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Failed-low&lt;ul&gt;
+&lt;li&gt;return value &amp;lt; α&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Comparison  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;fail-hard&lt;ul&gt;
+&lt;li&gt;return max{4000,200,v} &lt;img data-src=&#34;/img/TCG/7-23.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;fail-soft&lt;ul&gt;
+&lt;li&gt;return max{200,v} &lt;img data-src=&#34;/img/TCG/7-24.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;fail-soft provides more information when the true value is out of search window&lt;ul&gt;
+&lt;li&gt;can record better value to be used later when this position is revisited&lt;/li&gt;
+&lt;li&gt;F3 saves about 7% of time than that of F2 when a transposition table is used to save and re-use searched results&lt;/li&gt;
+&lt;li&gt;記錄F3傳回的值，可減少重複計算的時間，因為下一手的樹在下兩層，大部分node皆相同&lt;ul&gt;
+&lt;li&gt;if p1 is searched, p2 does not need to search again &lt;img data-src=&#34;/img/TCG/7-25.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Questions&#34;&gt;&lt;a href=&#34;#Questions&#34; class=&#34;headerlink&#34; title=&#34;Questions&#34;&gt;&lt;/a&gt;Questions&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;What move ordering is good?&lt;ul&gt;
+&lt;li&gt;search the best possible move first&lt;/li&gt;
+&lt;li&gt;cut off a branch with more nodes first&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;What is the effect of using iterative-deepening alpha-beta cut off?&lt;/li&gt;
+&lt;li&gt;How about searching game graph instead of game tree?&lt;/li&gt;
+&lt;li&gt;Can some nodes be visited more than once?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Pruning-Techinique&#34;&gt;&lt;a href=&#34;#Pruning-Techinique&#34; class=&#34;headerlink&#34; title=&#34;Pruning Techinique&#34;&gt;&lt;/a&gt;Pruning Techinique&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Exact algorithms: by mathematical proof&lt;ul&gt;
+&lt;li&gt;Alpha-Beta pruning&lt;/li&gt;
+&lt;li&gt;Scout(in Chap07)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Approximated heuristics: pruned branches with low probability to be solution&lt;ul&gt;
+&lt;li&gt;in very bad position(盤面太差)&lt;/li&gt;
+&lt;li&gt;a little hope to gain back the advantage(無法逆轉)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Chap07-Scout-and-Proof-Number-Search&#34;&gt;&lt;a href=&#34;#Chap07-Scout-and-Proof-Number-Search&#34; class=&#34;headerlink&#34; title=&#34;Chap07 Scout and Proof Number Search&#34;&gt;&lt;/a&gt;Chap07 Scout and Proof Number Search&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Suppose we get at least score s at the First branch&lt;ul&gt;
+&lt;li&gt;want to find whether second branch can get score over s or not&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Is there a way to search a tree approximately?&lt;/strong&gt;  &lt;/p&gt;
+&lt;h3 id=&#34;SCOUT&#34;&gt;&lt;a href=&#34;#SCOUT&#34; class=&#34;headerlink&#34; title=&#34;SCOUT&#34;&gt;&lt;/a&gt;SCOUT&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Invented by Judea Pearl in 1980&lt;/li&gt;
+&lt;li&gt;first time: search approximately&lt;ul&gt;
+&lt;li&gt;if there is better value, search again&lt;/li&gt;
+&lt;li&gt;first search can provide useful information in the second search &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;TEST whether Tb can return score &amp;gt; v &lt;img data-src=&#34;/img/TCG/test-algo.png&#34; alt=&#34;&#34;&gt;&lt;ul&gt;
+&lt;li&gt;if p is max node → success with only one subbranch &amp;gt; v&lt;/li&gt;
+&lt;li&gt;if p is min node → success with all subbranches &amp;gt; v&lt;/li&gt;
+&lt;li&gt;If success, then search Tb. else, &lt;strong&gt;no need to search Tb&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;algorithm &lt;img data-src=&#34;/img/TCG/scout-algo.png&#34; alt=&#34;&#34;&gt;&lt;ul&gt;
+&lt;li&gt;scout first branch and test other branch&lt;ul&gt;
+&lt;li&gt;if test success, update the value by scout this branch&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;recursive procedure&lt;ul&gt;
+&lt;li&gt;Every ancestor of you may initiate a TEST to visit you&lt;ul&gt;
+&lt;li&gt;will be visited at most d times(= depth)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Time Complexity  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;not guarantee&lt;/strong&gt;(but most of the time) that the visited nodes number are less than alpha-beta&lt;ul&gt;
+&lt;li&gt;may search a branch two times&lt;/li&gt;
+&lt;li&gt;may pay many visits to a node that is cut off by alpha-beta&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;TEST: Ω(b^(d/2))&lt;ul&gt;
+&lt;li&gt;but has small argument and will be very small at the best situation &lt;img data-src=&#34;/img/TCG/nodes-visited.png&#34; alt=&#34;node visited&#34;&gt;&lt;ul&gt;
+&lt;li&gt;if the first subbranch has the best value, then TEST scans the tree fast&lt;/li&gt;
+&lt;li&gt;move ordering is very important&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Comparison&lt;ul&gt;
+&lt;li&gt;alpha-beta&lt;ul&gt;
+&lt;li&gt;cut off comes from bounds of search windows(by ancestors)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;scout&lt;ul&gt;
+&lt;li&gt;cut off from previous branches’ score(by brothers)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Performance  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SCOUT favors “skinny” game trees&lt;ul&gt;
+&lt;li&gt;Show great improvements on depth &amp;gt; 3 for games with &lt;strong&gt;small branching factors&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;On depth = 5, it saves over 40% of time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;AB + scout gets average 10~20% improvement than only AB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Null(Zero) window search    &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Using alpha-beta search with the window [m,m + 1]&lt;ul&gt;
+&lt;li&gt;result will be failed-high or failed-low&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Failed-high means return value &amp;gt; m + 1&lt;ul&gt;
+&lt;li&gt;Equivalent to TEST(p; m;&amp;gt;) is true&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Failed-low means return value &amp;lt; m&lt;ul&gt;
+&lt;li&gt;Equivalent to TEST(p; m;&amp;gt;) is false&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Using searching window is better than using a single bound in SCOUT&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;/img/TCG/nega-scout.png&#34; alt=&#34;&#34;&gt;    &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;depth &amp;lt; 3 → no alpha-beta pruning → return value is exact value(no need to search again)&lt;/li&gt;
+&lt;li&gt;first-time search → do null window search(scout)&lt;/li&gt;
+&lt;li&gt;research → do normal window a-b pruning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Refinements  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use information from previous search&lt;ul&gt;
+&lt;li&gt;When a subtree is re-searched, restart from the position that the value is returned in first search&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Change move ordering&lt;ul&gt;
+&lt;li&gt;Reorder the moves by priority list&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Proof-Number-Search&#34;&gt;&lt;a href=&#34;#Proof-Number-Search&#34; class=&#34;headerlink&#34; title=&#34;Proof Number Search&#34;&gt;&lt;/a&gt;Proof Number Search&lt;/h3&gt;&lt;p&gt;&lt;img data-src=&#34;https://chessprogramming.wikispaces.com/Proof-number+search#Pseudo%20Code&#34; alt=&#34;參考資料: chessprogramming: proof-number search&#34;&gt;&lt;/p&gt;
+&lt;p&gt;binary valued game tree    &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;2-player game tree with either 0 or 1 on the leaves&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;and-or tree: min → and, max → or&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;most proving node for node u&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;node that if its value is 1, then the value of u is 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;most disproving node for node u&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;node that if its value is 0, then the value of u is 0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;proof(u): minimum number of nodes to visit to make u = 1&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;disproof(u): minimum number of nodes to visit to make u = 0&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If value(u) is unknown, then proof(u) is the cost of evaluating u  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If value(u) is 1, then proof(u) = 0&lt;/li&gt;
+&lt;li&gt;If value(u) is 0, then proof(u) = ∞&lt;/li&gt;
+&lt;li&gt;proof number can be calculate by search childrens &lt;img data-src=&#34;/img/TCG/proof-number.png&#34; alt=&#34;&#34;&gt;&lt;ul&gt;
+&lt;li&gt;disproof number → reverse calculate method of proof number&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Usage  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;find child u that have min{proof(root); disproof(root)}&lt;/li&gt;
+&lt;li&gt;if we try to &lt;strong&gt;prove&lt;/strong&gt; it&lt;ul&gt;
+&lt;li&gt;pick a child with the &lt;strong&gt;least proof number&lt;/strong&gt; for a &lt;strong&gt;MAX node&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;pick &lt;strong&gt;any node that has a chance to be proved&lt;/strong&gt; for a &lt;strong&gt;MIN node&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;if we try to &lt;strong&gt;disprove&lt;/strong&gt; it&lt;ul&gt;
+&lt;li&gt;pick a child with the &lt;strong&gt;least disproof number&lt;/strong&gt; for a &lt;strong&gt;MIN node&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;pick &lt;strong&gt;any node that has a chance to be disproved&lt;/strong&gt; for a &lt;strong&gt;MAX node&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;used in open game tree or an endgame tree because some proof or disproof number is known&lt;ul&gt;
+&lt;li&gt;1 → proved to win, 0 → proved to lose &lt;/li&gt;
+&lt;li&gt;or used to achieve sub-goal in games&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- why smallest number because proof need all 1? --&gt;
+&lt;p&gt;Proof-Number search algorithm &lt;img data-src=&#34;/img/TCG/pn-algo.png&#34; alt=&#34;&#34;&gt;  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;keep update number by bottom-up&lt;ol&gt;
+&lt;li&gt;compare proof number and disproof number of root&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;find the leaf to prove or disprove&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Multi-value game tree  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;value in [0, 1]&lt;/li&gt;
+&lt;li&gt;$proof_v(u)$: the minimum number of leaves needed to visited to make u &amp;gt;= v&lt;ul&gt;
+&lt;li&gt;proof(u) = $proof_1(u)$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;$disproof_v(u)$: the minimum number of leaves needed to visited to make u &amp;lt; v&lt;ul&gt;
+&lt;li&gt;disproof(u) = $disproof_1(u)$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;use binary search to set upper bound of the value &lt;img data-src=&#34;/img/TCG/multivalue-pn-algo.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Chap08-Monte-Carlo-Game-Tree-Search&#34;&gt;&lt;a href=&#34;#Chap08-Monte-Carlo-Game-Tree-Search&#34; class=&#34;headerlink&#34; title=&#34;Chap08 Monte-Carlo Game Tree Search&#34;&gt;&lt;/a&gt;Chap08 Monte-Carlo Game Tree Search&lt;/h2&gt;&lt;h3 id=&#34;original-ideas&#34;&gt;&lt;a href=&#34;#original-ideas&#34; class=&#34;headerlink&#34; title=&#34;original ideas&#34;&gt;&lt;/a&gt;original ideas&lt;/h3&gt;&lt;p&gt;Algorithm $MCS_{pure}$ &lt;img data-src=&#34;img/TCG/random-games.png&#34; alt=&#34;&#34;&gt;    &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;For each possible next move&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;play this move and then play a lot of random games(play every moves as random)&lt;/li&gt;
+&lt;li&gt;calculate average score&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Choose move with best score&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Original version: GOBBLE in 1993  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Performance is not good compared to other Go programs(alpha-beta)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Enhanced versions&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Adding the idea of minimax tree search&lt;/li&gt;
+&lt;li&gt;Adding more domain knowledge&lt;/li&gt;
+&lt;li&gt;Adding more searching techniques&lt;/li&gt;
+&lt;li&gt;Building theoretical foundations from statistics, and on-line and off-line learning&lt;/li&gt;
+&lt;li&gt;results&lt;ul&gt;
+&lt;li&gt;MoGo&lt;ul&gt;
+&lt;li&gt;Beat a professional human 8 dan(段) with a 8-stone handicap at January 2008&lt;/li&gt;
+&lt;li&gt;Judged to be in a “professional level” for 9 x 9 Go in 2009&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Zen&lt;ul&gt;
+&lt;li&gt;close to amateur 3-dan in 2011&lt;/li&gt;
+&lt;li&gt;Beat a 9-dan professional master with handicaps at March 17, 2012&lt;ul&gt;
+&lt;li&gt;First game: Five stone handicap and won by 11 points&lt;/li&gt;
+&lt;li&gt;Second game: four stones handicap and won by 20 points&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Disadvantage  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;average score search != minimax tree search&lt;ul&gt;
+&lt;li&gt;$MCS_{pure}$ prefer right branch, but it’s min value is low &lt;img data-src=&#34;/img/TCG/minmax-and-avergae.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;First-Refinement-Monte-Carlo-based-tree-search&#34;&gt;&lt;a href=&#34;#First-Refinement-Monte-Carlo-based-tree-search&#34; class=&#34;headerlink&#34; title=&#34;First Refinement: Monte-Carlo based tree search&#34;&gt;&lt;/a&gt;First Refinement: Monte-Carlo based tree search&lt;/h3&gt;&lt;p&gt;Intuition   &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Best First tree growing&lt;ul&gt;
+&lt;li&gt;Expand one level of best leaf(which has largest score) &lt;img data-src=&#34;/img/TCG/mct-ex2.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;if number of simulations is not enough, it can’t be a good simulation&lt;ul&gt;
+&lt;li&gt;on a MIN node, if not enough children are probed for enough number of times, you may miss a very bad branch&lt;/li&gt;
+&lt;li&gt;take &lt;strong&gt;simulation count&lt;/strong&gt; into consideration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;/img/TCG/MCT.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;img data-src=&#34;/img/TCG/mct-ex1.png&#34; alt=&#34;&#34;&gt;  &lt;/p&gt;
+&lt;h3 id=&#34;Second-Refinement-UCT&#34;&gt;&lt;a href=&#34;#Second-Refinement-UCT&#34; class=&#34;headerlink&#34; title=&#34;Second Refinement: UCT&#34;&gt;&lt;/a&gt;Second Refinement: UCT&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Effcient sampling  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Original: equally distributed among all legal moves&lt;/li&gt;
+&lt;li&gt;Biased sampling: sample some moves more often than others&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Observations&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Some moves are bad and do not need further exploring&lt;ul&gt;
+&lt;li&gt;Need to consider extremely bad luck sitiation&lt;ul&gt;
+&lt;li&gt;e.g. often “randomly” choose bad move and get bad score&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTXVsdGktYXJtZWRfYmFuZGl0&#34;&gt;K-arm bandit problem&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Assume you have K slot machines each with a different payoff, i.e., expected value of returns ui, and an unknown distribution&lt;/li&gt;
+&lt;li&gt;Assume you can bet on the machines N times, what is the best strategy to get the largest returns?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Ideas&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Try each machine a few, but enough, times and record their returns&lt;ul&gt;
+&lt;li&gt;For the machines that currently have the best returns, play more often later&lt;/li&gt;
+&lt;li&gt;For the machines that currently return poorly, give them a chance sometimes to check their distributions are really bad or not&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;UCB: Upper Confidence Bound &lt;img data-src=&#34;img/TCG/UCB.png&#34; alt=&#34;&#34;&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Meaning&lt;ul&gt;
+&lt;li&gt;For a MAX node, Wi is the number of win’s for the MAX player&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;For a MIN node, Wi is the number of win’s for the MIN player&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;When N is approaching logN, then UCB is nothing but the current winning rate plus a constant&lt;/li&gt;
+&lt;li&gt;When N getting larger, UCB will approachthe real winning rate&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Expand for the move with the highest UCB value&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;only compare UCB scores among children of a node&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;It is meaningless to compare scores of nodes that are not siblings&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Using argument c to keep a balance between&lt;ul&gt;
+&lt;li&gt;Exploitation: exploring the best move so far&lt;/li&gt;
+&lt;li&gt;Exploration: exploring other moves to see if they can be proved to be better &lt;img data-src=&#34;/img/TCG/ucb-ex1.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;alternative&lt;ul&gt;
+&lt;li&gt;consider the variance of scores in each branch &lt;img data-src=&#34;/img/TCG/UCB2.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;UCT: Upper Confidence Bound for Tree  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Maintain the UCB value for each node in the game tree&lt;ul&gt;
+&lt;li&gt;Pick path such that each node in this path has a largest UCB score among all of its siblings&lt;/li&gt;
+&lt;li&gt;Pick the leaf node in the path which has been visited more than a certain amount of times to expand&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Usable when the “density of goals” is suffciently large  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When there is only a unique goal, Monte-Carlo based simulation may not be useful&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;new MCT algorithm(with UCT) &lt;img data-src=&#34;/img/TCG/mct-uct.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;Implementation-hints&#34;&gt;&lt;a href=&#34;#Implementation-hints&#34; class=&#34;headerlink&#34; title=&#34;Implementation hints&#34;&gt;&lt;/a&gt;Implementation hints&lt;/h4&gt;&lt;p&gt;&lt;img data-src=&#34;/img/TCG/uct-imp.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;img data-src=&#34;/img/TCG/uct-imp2.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;img data-src=&#34;/img/TCG/uct-imp3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;When-to-use-Monte-Carlo&#34;&gt;&lt;a href=&#34;#When-to-use-Monte-Carlo&#34; class=&#34;headerlink&#34; title=&#34;When to use Monte-Carlo&#34;&gt;&lt;/a&gt;When to use Monte-Carlo&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;huge branching number &lt;/li&gt;
+&lt;li&gt;cannot easily compute good evaluating function&lt;/li&gt;
+&lt;li&gt;Mostly used in Go, Bridge(?)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Rule of Go(圍棋)  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ko(打劫): 不能有重複盤面&lt;/li&gt;
+&lt;li&gt;可以跳過，不能下自殺步&lt;/li&gt;
+&lt;li&gt;Komi: 先手讓子&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Implementation  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;partition stones into strings(使用共同氣的子) by DFS&lt;/li&gt;
+&lt;li&gt;check empty intersection is an eye or not(check neighbors and limits)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Domain-independent-refinements&#34;&gt;&lt;a href=&#34;#Domain-independent-refinements&#34; class=&#34;headerlink&#34; title=&#34;Domain independent refinements&#34;&gt;&lt;/a&gt;Domain independent refinements&lt;/h3&gt;&lt;p&gt;Main considerations   &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Avoid doing un-needed computations&lt;/li&gt;
+&lt;li&gt;Increase the speed of convergence&lt;/li&gt;
+&lt;li&gt;Avoid early mis-judgement&lt;/li&gt;
+&lt;li&gt;Avoid extreme bad cases&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Refinements  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Progressive pruning  &lt;ul&gt;
+&lt;li&gt;Cut hopeless nodes early&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;All moves at first(AMAF)&lt;ul&gt;
+&lt;li&gt;Increase the speed of convergence&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Node expansion&lt;ul&gt;
+&lt;li&gt;Grow only nodes with a potential&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Temperature&lt;ul&gt;
+&lt;li&gt;Introduce randomness&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Depth-i enhancement&lt;ul&gt;
+&lt;li&gt;With regard to Line 1, the initial phase, exhaustively enumerate all possibilities&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;Progressive-pruning&#34;&gt;&lt;a href=&#34;#Progressive-pruning&#34; class=&#34;headerlink&#34; title=&#34;Progressive pruning&#34;&gt;&lt;/a&gt;Progressive pruning&lt;/h4&gt;&lt;p&gt;Each move has a mean value m and a standard deviation σ  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Left expected outcome ml = m - rd * σ&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Right expected outcome mr = m + rd * σ&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;rd is argument&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A move M1 is &lt;strong&gt;statistically inferior&lt;/strong&gt; to another move M2 if M1.mr &amp;lt; M2.ml&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Two moves M1 and M2 are &lt;strong&gt;statistically equal&lt;/strong&gt; if M1.σ &amp;lt; σe and M2.σ &amp;lt; σe and no move is statistically inferior to the other&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;σe is argument which called standard deviation for equality&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Remarks  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;only compare nodes that are of the same parent&lt;/li&gt;
+&lt;li&gt;compare their raw scores not their UCB values&lt;ul&gt;
+&lt;li&gt;If you use UCB scores, then the mean and standard deviation of a move are those calculated only from its un-pruned children&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;prune statistically inferior moves after enough number of times of simulation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This process is stopped when  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;there is only one move left&lt;/li&gt;
+&lt;li&gt;the moves left are statistically equal&lt;/li&gt;
+&lt;li&gt;a maximal threshold(like 10000 multiplied by the number of legal moves) of iterations is reached&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Two different pruning rules  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hard: a pruned move cannot be a candidate later on&lt;/li&gt;
+&lt;li&gt;Soft: a move pruned at a given time &lt;strong&gt;can be a candidate later on&lt;/strong&gt; if its value is no longer statistically inferior to a currently active move&lt;ul&gt;
+&lt;li&gt;Periodically check whether to reactive it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Arguments  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Selection of rd &lt;img data-src=&#34;/img/TCG/uct-result2.png&#34; alt=&#34;&#34;&gt;   &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The greater rd is&lt;/li&gt;
+&lt;li&gt;the less pruned the moves are&lt;/li&gt;
+&lt;li&gt;the better the algorithm performs&lt;/li&gt;
+&lt;li&gt;the slower at each play&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Selection of σe &lt;img data-src=&#34;/img/TCG/uct-result1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The smaller σe is&lt;/li&gt;
+&lt;li&gt;the fewer equalities there are&lt;/li&gt;
+&lt;li&gt;the better the algorithm performs&lt;/li&gt;
+&lt;li&gt;the slower at each play&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;rd plays an important role in the move pruning process&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;σe is less sensitive&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Another trick is progressive widening or progressive un-pruning&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A node is effective if enough simulations are done on it and its values are good&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;We can set threshold on whether to expand the best path, for exmaple&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;enough simulations are done&lt;/li&gt;
+&lt;li&gt;score is good enough&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;All-moves-at-first-AMAF&#34;&gt;&lt;a href=&#34;#All-moves-at-first-AMAF&#34; class=&#34;headerlink&#34; title=&#34;All moves at first(AMAF)&#34;&gt;&lt;/a&gt;All moves at first(AMAF)&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;score is used for &lt;strong&gt;all moves the same player played in a random game&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;in this example, after simulate r→v→y→u→w, w which  has parent v and u which has parent r will be updated, too &lt;img data-src=&#34;/img/TCG/amaf.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Advantage&lt;ul&gt;
+&lt;li&gt;speeding up the experiments&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Drawback&lt;ul&gt;
+&lt;li&gt;not the same move - move in early game is not equal to late game &lt;/li&gt;
+&lt;li&gt;Recapturing&lt;ul&gt;
+&lt;li&gt;Order of moves is important for certain games(圍棋)&lt;/li&gt;
+&lt;li&gt;Modification: if several moves are played at the same place because of captures, modify the statistics only for the player who played first &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Refinement: RAVE    &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Let v1(m) be the score of a move m without using AMAF&lt;/li&gt;
+&lt;li&gt;Let v2(m) be the score of a move m with AMAF&lt;/li&gt;
+&lt;li&gt;Observations&lt;ul&gt;
+&lt;li&gt;v1(m) is good when suffcient number of simulations are starting with m&lt;/li&gt;
+&lt;li&gt;v2(m) is a &lt;strong&gt;good guess for the true score&lt;/strong&gt; of the move m&lt;ul&gt;
+&lt;li&gt;when &lt;strong&gt;approaching the end of a game&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;when &lt;strong&gt;too few simulations starting with m&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Rapid Action Value Estimate (RAVE)  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;revised score $v3(m) = a \times v1(m) + (1-a) \times v2(m)$&lt;/li&gt;
+&lt;li&gt;can dynamically change a as the game goes&lt;ul&gt;
+&lt;li&gt;For example: a = min{1, Nm/10000}, where Nm is simulation times start from m&lt;ul&gt;
+&lt;li&gt;This means when Nm reaches 10000, then no RAVE is used&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Works out better than setting a = 0(i.e. pure AMAF)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;Node-expansion&#34;&gt;&lt;a href=&#34;#Node-expansion&#34; class=&#34;headerlink&#34; title=&#34;Node expansion&#34;&gt;&lt;/a&gt;Node expansion&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;May decide to expand potentially good nodes judging from the&lt;br&gt;current statistics&lt;/li&gt;
+&lt;li&gt;All ends: expand all possible children of a newly added node&lt;/li&gt;
+&lt;li&gt;Visit count: delay the expansion of a node until it is visited a certain number of times&lt;/li&gt;
+&lt;li&gt;Transition probability: delay the expansion of a node until its \score” or estimated visit count is high comparing to its siblings&lt;/li&gt;
+&lt;li&gt;Use the current value, variance and parent’s value to derive a good estimation using statistical methods&lt;br&gt;Expansion policy with some transition probability is much better than the \all ends” or \pure visit count” policy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- ##Chap09 Other way to increase performance --&gt;
+
+&lt;h2 id=&#34;Reference&#34;&gt;&lt;a href=&#34;#Reference&#34; class=&#34;headerlink&#34; title=&#34;Reference&#34;&gt;&lt;/a&gt;Reference&lt;/h2&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5paXMuc2luaWNhLmVkdS50dy9+dHNoc3UvdGNnLw==&#34;&gt;TSHsu講義 2014年版&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+</content>
+        <category term="電腦對局理論" />
+        <category term="機器學習" />
+        <category term="人工智慧" />
+        <category term="圍棋" />
+        <category term="象棋" />
+        <category term="蒙地卡羅" />
+        <category term="Alpha-Beta搜尋" />
+        <category term="強化學習" />
+        <updated>2014-09-26T11:41:48.000Z</updated>
+    </entry>
+</feed>

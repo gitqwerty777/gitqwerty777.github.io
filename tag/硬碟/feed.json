@@ -1,0 +1,21 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "QWERTY • All posts by \"硬碟\" tag",
+    "description": "Programming | Computer Science | Thought",
+    "home_page_url": "http://gitqwerty777.github.io",
+    "items": [
+        {
+            "id": "http://gitqwerty777.github.io/linux-save-memory-disk/",
+            "url": "http://gitqwerty777.github.io/linux-save-memory-disk/",
+            "title": "在Linux系統中 節省硬碟和記憶體用量",
+            "date_published": "2020-10-15T07:46:00.000Z",
+            "content_html": "<p>最近發現 VM 和遠端主機的使用空間都太大了，找到一些相關處理方法</p>\n<a id=\"more\"></a>\n\n<h2 id=\"硬碟用量\"><a href=\"#硬碟用量\" class=\"headerlink\" title=\"硬碟用量\"></a>硬碟用量</h2><h3 id=\"檢查\"><a href=\"#檢查\" class=\"headerlink\" title=\"檢查\"></a>檢查</h3><ul>\n<li><code>df -h</code> 查看磁碟使用情形</li>\n<li><code>df -i</code> 檢查inode使用情形</li>\n<li><code>du -sh</code> 查看各資料夾用量</li>\n<li><code>du -sh * | sort -nr</code> 依序列出大檔案</li>\n<li><code>ls -a</code> 顯示隱藏檔案(<code>.</code>開頭的檔案)</li>\n<li><code>dpkg-query -Wf &#39;${Installed-Size}\\t${Package}\\n&#39; | sort -n</code> 顯示已安裝的的大package</li>\n<li><code>wajig large</code><!--  /lib/modules/<kernel_release>/extra/ -->\n\n</li>\n</ul>\n<h3 id=\"apt\"><a href=\"#apt\" class=\"headerlink\" title=\"apt\"></a>apt</h3><figure class=\"highlight dsconfig\"><table><tr><td class=\"code\"><pre><span class=\"line\"><span class=\"string\">sudo </span><span class=\"string\">apt </span><span class=\"string\">autoremove</span></span><br><span class=\"line\"><span class=\"string\">sudo </span><span class=\"string\">apt </span><span class=\"string\">autoremove </span><span class=\"built_in\">--purge</span> <span class=\"comment\"># remove old kernels</span></span><br><span class=\"line\"><span class=\"string\">sudo </span><span class=\"string\">apt </span><span class=\"string\">clean </span><span class=\"comment\"># 清除 apt 快取</span></span><br></pre></td></tr></table></figure>\n\n<h3 id=\"git\"><a href=\"#git\" class=\"headerlink\" title=\"git\"></a>git</h3><p><code>git gc --aggressive --prune=all</code> 清理並壓縮 history</p>\n<h3 id=\"docker\"><a href=\"#docker\" class=\"headerlink\" title=\"docker\"></a>docker</h3><p><code>docker builder prune</code> 移除沒在使用的build</p>\n<h2 id=\"記憶體用量\"><a href=\"#記憶體用量\" class=\"headerlink\" title=\"記憶體用量\"></a>記憶體用量</h2><h3 id=\"檢查-1\"><a href=\"#檢查-1\" class=\"headerlink\" title=\"檢查\"></a>檢查</h3><ul>\n<li><code>free</code></li>\n</ul>\n<h3 id=\"硬碟容量換記憶體容量\"><a href=\"#硬碟容量換記憶體容量\" class=\"headerlink\" title=\"硬碟容量換記憶體容量\"></a>硬碟容量換記憶體容量</h3><p>當然，會比較慢</p>\n<p><span class=\"exturl\" data-url=\"aHR0cHM6Ly93d3cub3BlbmNsaS5jb20vbGludXgvbGludXgtYWRkLXN3YXA=\">使用 swap<i class=\"fa fa-external-link-alt\"></i></span></p>\n<h2 id=\"CPU-用量\"><a href=\"#CPU-用量\" class=\"headerlink\" title=\"CPU 用量\"></a>CPU 用量</h2><ul>\n<li>各process用量<ul>\n<li><code>top</code></li>\n<li><code>htop</code></li>\n</ul>\n</li>\n<li><code>kill &lt;pid&gt;</code></li>\n</ul>\n",
+            "tags": [
+                "linux",
+                "硬碟",
+                "記憶體",
+                "效能"
+            ]
+        }
+    ]
+}

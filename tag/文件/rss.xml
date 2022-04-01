@@ -1,0 +1,276 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>QWERTY • Posts by &#34;文件&#34; tag</title>
+        <link>http://gitqwerty777.github.io</link>
+        <description>Programming | Computer Science | Thought</description>
+        <language>zh-TW</language>
+        <pubDate>Mon, 07 Sep 2020 01:11:22 +0800</pubDate>
+        <lastBuildDate>Mon, 07 Sep 2020 01:11:22 +0800</lastBuildDate>
+        <category>C#</category>
+        <category>CodingStyle</category>
+        <category>Emacs</category>
+        <category>編輯器</category>
+        <category>CFR</category>
+        <category>電腦對局理論</category>
+        <category>指令</category>
+        <category>機器學習</category>
+        <category>perceptron</category>
+        <category>readme</category>
+        <category>文件</category>
+        <category>github</category>
+        <category>artificial intelligence</category>
+        <category>search</category>
+        <category>First-Order Logic</category>
+        <category>大數</category>
+        <category>程式</category>
+        <category>C++</category>
+        <category>Hexo</category>
+        <category>網誌</category>
+        <category>Markdown</category>
+        <category>CleanCode</category>
+        <category>重構</category>
+        <category>TDD</category>
+        <category>設計模式</category>
+        <category>CMake</category>
+        <category>Makefile</category>
+        <category>Linux</category>
+        <category>Todo</category>
+        <category>註解</category>
+        <category>經濟學</category>
+        <category>策略</category>
+        <category>競爭</category>
+        <category>博弈論</category>
+        <category>計算機結構</category>
+        <category>人工智慧</category>
+        <category>圍棋</category>
+        <category>象棋</category>
+        <category>蒙地卡羅</category>
+        <category>Alpha-Beta搜尋</category>
+        <category>強化學習</category>
+        <category>計算機網路</category>
+        <category>boost</category>
+        <category>函式庫</category>
+        <category>編譯</category>
+        <category>gcc</category>
+        <category>g++</category>
+        <category>clang</category>
+        <category>最佳化</category>
+        <category>推薦系統</category>
+        <category>FM</category>
+        <category>FFM</category>
+        <category>SVM</category>
+        <category>Embedding</category>
+        <category>自然語言處理</category>
+        <category>外國用語</category>
+        <category>萌典</category>
+        <category>opencc</category>
+        <category>PTT</category>
+        <category>vuejs</category>
+        <category>linux</category>
+        <category>c</category>
+        <category>compile</category>
+        <category>gdb</category>
+        <category>c語言</category>
+        <category>cpp</category>
+        <category>除錯</category>
+        <category>git</category>
+        <category>VMWare</category>
+        <category>虛擬機</category>
+        <category>IFTTT</category>
+        <category>自動化</category>
+        <category>備份</category>
+        <category>webhook</category>
+        <category>簡報</category>
+        <category>軟體</category>
+        <category>PowerPoint</category>
+        <category>Latex</category>
+        <category>JavaScript</category>
+        <category>CSS</category>
+        <category>Unity</category>
+        <category>fcitx</category>
+        <category>嘸蝦米</category>
+        <category>輸入法</category>
+        <category>硬碟</category>
+        <category>記憶體</category>
+        <category>效能</category>
+        <category>錯誤</category>
+        <category>makefile</category>
+        <category>備忘錄</category>
+        <category>存檔</category>
+        <category>統計</category>
+        <category>byobu</category>
+        <category>screen</category>
+        <category>tmux</category>
+        <category>reactjs</category>
+        <category>javascript</category>
+        <category>WideAndDeep</category>
+        <category>Google</category>
+        <category>觀察者</category>
+        <category>訂閱</category>
+        <category>委託</category>
+        <category>正規表示式(RegExp)</category>
+        <category>上下文無關文法(CFG)</category>
+        <category>hexo</category>
+        <category>blog</category>
+        <category>theme</category>
+        <category>feature</category>
+        <category>revealJS</category>
+        <category>markdown</category>
+        <category>rss</category>
+        <category>facebook</category>
+        <category>youtube</category>
+        <category>ptt</category>
+        <category>bilibili</category>
+        <category>pixiv</category>
+        <category>crawler</category>
+        <category>SEO</category>
+        <category>google</category>
+        <category>html</category>
+        <category>amazon</category>
+        <category>webhost</category>
+        <category>ssl</category>
+        <category>漢字</category>
+        <category>中文</category>
+        <category>異體字</category>
+        <category>unicode</category>
+        <category>unity</category>
+        <category>演算法</category>
+        <category>隨機排序</category>
+        <category>洗牌</category>
+        <category>Fisher-Yates</category>
+        <category>證明</category>
+        <category>python</category>
+        <item>
+            <guid isPermalink="true">http://gitqwerty777.github.io/art-of-readme/</guid>
+            <title>README 寫法</title>
+            <link>http://gitqwerty777.github.io/art-of-readme/</link>
+            <category>readme</category>
+            <category>文件</category>
+            <category>github</category>
+            <pubDate>Mon, 07 Sep 2020 01:11:22 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;此篇文章大多參考自 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL25vZmZsZS9hcnQtb2YtcmVhZG1lL2Jsb2IvbWFzdGVyL1JFQURNRS16aC5tZA==&#34;&gt;art-of-readme&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;基本的-README-組成&#34;&gt;&lt;a href=&#34;#基本的-README-組成&#34; class=&#34;headerlink&#34; title=&#34;基本的 README 組成&#34;&gt;&lt;/a&gt;基本的 README 組成&lt;/h2&gt;&lt;p&gt;建議順序&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一句話解釋模組的目的&lt;/li&gt;
+&lt;li&gt;簡潔可運行的範例&lt;/li&gt;
+&lt;li&gt;詳細的API文件&lt;/li&gt;
+&lt;li&gt;安裝說明&lt;/li&gt;
+&lt;li&gt;注意事項和限制&lt;/li&gt;
+&lt;li&gt;授權條款(license)&lt;/li&gt;
+&lt;li&gt;必要的背景資料或連結&lt;/li&gt;
+&lt;li&gt;專業術語解譯&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;目的&#34;&gt;&lt;a href=&#34;#目的&#34; class=&#34;headerlink&#34; title=&#34;目的&#34;&gt;&lt;/a&gt;目的&lt;/h2&gt;&lt;p&gt;README 的目的：&lt;strong&gt;這是進行下一步之前的重要資訊&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;README 是寫給模組使用者的。&lt;/p&gt;
+&lt;p&gt;README 也是寫給模組建立者的。一個沒有文件的模組，往往時隔 6 個月後，就連作者自己都會覺得陌生。每個模組的作者同時也是該模組的使用者。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;README 是使用者首先（或唯一）審視你作品的入口。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;編寫優秀的文件可以讓使用者不用閱讀原始碼就能理解你模組的精妙之處。&lt;br&gt;沒有 README 意味著開發者需要閱讀原始碼才能理解你的模組。&lt;br&gt;使用者希望模組能滿足他們的需要，所以你要清楚的說明你的模組的主要作用和優勢。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;只要你的文件是完備的，使用者就可以直接使用你的模組而無需去閱讀原始碼。透過文件可以在很大程度上將你的模組的外部介面和內部實現進行分離。這樣就可以在保持介面不變的情況下，靈活的修改內部實現。&lt;br&gt;定義模組的是文件而不是程式碼。 ——&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL21hdGhmb3J1bS5vcmcva2VuL3BlcmxfbW9kdWxlcy5odG1sI2RvY3VtZW50&#34;&gt;Ken Williams&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;目標&#34;&gt;&lt;a href=&#34;#目標&#34; class=&#34;headerlink&#34; title=&#34;目標&#34;&gt;&lt;/a&gt;目標&lt;/h2&gt;&lt;p&gt;讓讀者了解&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;這是什麼&lt;/li&gt;
+&lt;li&gt;使用情境&lt;/li&gt;
+&lt;li&gt;如何使用&lt;/li&gt;
+&lt;li&gt;實作及相關細節&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;原則&#34;&gt;&lt;a href=&#34;#原則&#34; class=&#34;headerlink&#34; title=&#34;原則&#34;&gt;&lt;/a&gt;原則&lt;/h2&gt;&lt;h3 id=&#34;簡潔&#34;&gt;&lt;a href=&#34;#簡潔&#34; class=&#34;headerlink&#34; title=&#34;簡潔&#34;&gt;&lt;/a&gt;簡潔&lt;/h3&gt;&lt;p&gt;理想的 README 應該儘可能的短。詳細的文件可以在單獨的頁面裡描述&lt;/p&gt;
+&lt;h3 id=&#34;快速理解&#34;&gt;&lt;a href=&#34;#快速理解&#34; class=&#34;headerlink&#34; title=&#34;快速理解&#34;&gt;&lt;/a&gt;快速理解&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;這些關鍵要素的排序應該&lt;strong&gt;讓人儘快放棄你的模組&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;當你用利他主義思想來做的時候，不是為了銷售給別人，而是為了讓人們儘可能客觀公正的評估你的作品，並判斷是否滿足他們的需要。而不是讓你的下載量和使用者數最大化&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;方法&#34;&gt;&lt;a href=&#34;#方法&#34; class=&#34;headerlink&#34; title=&#34;方法&#34;&gt;&lt;/a&gt;方法&lt;/h2&gt;&lt;h3 id=&#34;使用模版&#34;&gt;&lt;a href=&#34;#使用模版&#34; class=&#34;headerlink&#34; title=&#34;使用模版&#34;&gt;&lt;/a&gt;使用模版&lt;/h3&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL25vZmZsZS9jb21tb24tcmVhZG1l&#34;&gt;common-readme&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;用的文件格式，一個README寫作指南和方便的command-line生成器。&lt;br&gt;你也可以在&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3JpY2hhcmRsaXR0L3N0YW5kYXJkLXJlYWRtZQ==&#34;&gt;標準Readme(standard readme)&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;中領略下更具結構化的通用Readme格式。&lt;/p&gt;
+&lt;h3 id=&#34;以史為鑑&#34;&gt;&lt;a href=&#34;#以史為鑑&#34; class=&#34;headerlink&#34; title=&#34;以史為鑑&#34;&gt;&lt;/a&gt;以史為鑑&lt;/h3&gt;&lt;p&gt;古人云：以史為鑑，可以知興替。&lt;br&gt;開發者編寫文件已經有多年的歷史了。值得我們花時間去看看之前人們是怎麼正確寫文件的。&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;註：就是抄別人的&lt;/del&gt;&lt;/p&gt;
+&lt;h3 id=&#34;順序：以使用者的角度分析&#34;&gt;&lt;a href=&#34;#順序：以使用者的角度分析&#34; class=&#34;headerlink&#34; title=&#34;順序：以使用者的角度分析&#34;&gt;&lt;/a&gt;順序：以使用者的角度分析&lt;/h3&gt;&lt;p&gt;當我想要一個 2D 碰撞檢測模組時我找到了&lt;a href=&#34;https://github.com/noffle/collide-2d-aabb-aabb&#34; target=&#34;_blank&#34; rel=&#34;noopener external nofollow noreferrer&#34;&gt;&lt;code&gt;collide-2d-aabb-aabb&lt;/code&gt;&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;我開始從頭開始檢查這個模組：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;取名&lt;/strong&gt;：名字要能做到“其義自見”。&lt;code&gt;collide-2d-aabb-aabb&lt;/code&gt; 聽起來是個不錯的匹配，儘管它假設我知道”aabb”是什麼意思。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;簡介&lt;/strong&gt;：透過一句話簡明扼要的說明了這個模組是做什麼的。&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;collide-2d-aabb-aabb&lt;/code&gt; 的描述是：&lt;blockquote&gt;
+&lt;p&gt;Determines whether a moving axis-aligned bounding box (AABB) collides with other AABBs.&lt;br&gt;太棒了 —— 描述了 AABB 的定義是什麼，並且說明了這個模組是做什麼的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;用法&lt;/strong&gt;：在開始探究 API 文件之前，最好看看這個模組在實際應用中是什麼樣子。我可以快速決定用js寫的範例程式是否符合我的程式碼樣式和我要解決的問題。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;API&lt;/strong&gt;：模組的名字，描述和使用方法都符合我的胃口。在這一點上我很樂意使用這個模組。我需要瀏覽API來確定這就是我需要的，並且很容易整合到我的程式碼中。API 部分應該詳述模組的物件和函式，以及它們的定義、回傳值和事件。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;安裝&lt;/strong&gt;：如果不是通用的安裝說明，就需要在這兒進行描述。即使是一句簡單的&lt;code&gt;npm install&lt;/code&gt;也好。 對於使用Node的新使用者來說，放一個指向npmjs.org的連結和安裝命令，可以讓使用者快速上手使用模組。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;授權&lt;/strong&gt;：大多數模組把這個放在最末尾，但是最好還是往前放一些；非常有可能在把這個模組整合完後才發現授權協議不合適。我通常使用 MIT/BSD/X11/ISC。如果你的協議不是很寬容，最好是放到最前面。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;順序：認知漏斗&#34;&gt;&lt;a href=&#34;#順序：認知漏斗&#34; class=&#34;headerlink&#34; title=&#34;順序：認知漏斗&#34;&gt;&lt;/a&gt;順序：認知漏斗&lt;/h3&gt;&lt;p&gt;可以想象成是一個直立的漏斗，越往下移動細節越具體，最寬的部分相關細節最寬泛，只有對你的作品足夠感興趣的人才會關注這部分內容。最後，底部可以放一些作品背景的細節&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Perl模組的文件對於細節的描述是從少到多的。&lt;br&gt;你的簡介部分應該包含一個小的例子程式&lt;br&gt;（或許只有一行程式碼，省略掉不常用的用例或大多數使用者用不到的功能）&lt;br&gt;描述部分應該從總體上描述你的模組，&lt;br&gt;通常只需要幾個段落；在隨後的章節中再詳細描述模組的例程或方法，長的程式碼示例，或其它的資料。&lt;br&gt;理想情況下，在點“下一頁”之前就能讓人大體上了解你的模組。&lt;br&gt;隨著使用者繼續閱讀文件，他們能夠漸進的獲得更多的知識。&lt;br&gt; —— &lt;code&gt;perlmodstyle&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;實作&#34;&gt;&lt;a href=&#34;#實作&#34; class=&#34;headerlink&#34; title=&#34;實作&#34;&gt;&lt;/a&gt;實作&lt;/h2&gt;&lt;p&gt;&lt;mark&gt;API改的越多，越要努力的去更新文件&lt;/mark&gt;&lt;/p&gt;
+&lt;h3 id=&#34;背景&#34;&gt;&lt;a href=&#34;#背景&#34; class=&#34;headerlink&#34; title=&#34;背景&#34;&gt;&lt;/a&gt;背景&lt;/h3&gt;&lt;p&gt;如果你的模組依賴於重要但是不為人所熟知的抽象或生態系統，考慮包含一個 &lt;strong&gt;背景知識&lt;/strong&gt; 部分 (background)。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/noffle/bisecting-between&#34; target=&#34;_blank&#34; rel=&#34;noopener external nofollow noreferrer&#34;&gt;&lt;code&gt;bisecting-between&lt;/code&gt;&lt;/a&gt;的函式從它的名字上看不是特別明顯，所以在背景部分會描述定義，並且給出具體概念和抽象的連結，以便需要的人去使用和獲取。如果已經有相似的模組在npm上存在了，這兒也是一個非常適合描述建立模組的動機的地方&lt;/p&gt;
+&lt;h3 id=&#34;連結&#34;&gt;&lt;a href=&#34;#連結&#34; class=&#34;headerlink&#34; title=&#34;連結&#34;&gt;&lt;/a&gt;連結&lt;/h3&gt;&lt;p&gt;如果你談及其它的模組，想法，或者其他人的時候，在相關的引用內容上加上連結，這樣訪客就可以很容易的得到你的模組背後的想法。極少有模組是憑空誕生的：所有的作品來源於其它作品，因此很有必要讓使用者追溯你的模組的歷史和靈感&lt;/p&gt;
+&lt;h3 id=&#34;範例檔案&#34;&gt;&lt;a href=&#34;#範例檔案&#34; class=&#34;headerlink&#34; title=&#34;範例檔案&#34;&gt;&lt;/a&gt;範例檔案&lt;/h3&gt;&lt;p&gt;範例程式碼在repo中以檔案的形式體現 – 例如&lt;code&gt;example.js&lt;/code&gt;。這樣當用戶clone專案後，就可以直接執行README中提及的程式碼&lt;/p&gt;
+&lt;h3 id=&#34;徽章-badge&#34;&gt;&lt;a href=&#34;#徽章-badge&#34; class=&#34;headerlink&#34; title=&#34;徽章(badge)&#34;&gt;&lt;/a&gt;徽章(badge)&lt;/h3&gt;&lt;p&gt;使用徽章要慎重。經常會被濫用。它們會容易引起爭論。它們在你的README中加入了視覺噪聲，並且只有當用戶在聯網的瀏覽器裡閱讀你的markdown時才能看到徽章，因為圖片是存放在網際網路上的其它地方。對於每一個徽章，需要考慮：README中的徽章提供給典型讀者的真實含義是什麼？用一個CI徽章來顯示build/test狀態？這個訊號更應該發郵件給維護者，或者自動建立一個issue – 永遠要考慮你的README中的資料的受眾並且自問一下是否有一個流程能夠讓資料更好的送達到目標受眾。&lt;/p&gt;
+&lt;h3 id=&#34;API&#34;&gt;&lt;a href=&#34;#API&#34; class=&#34;headerlink&#34; title=&#34;API&#34;&gt;&lt;/a&gt;API&lt;/h3&gt;&lt;p&gt;API 文件格式沒有局限。使用任何你認為是清晰的格式，但是要包含重要的細節：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;引數是否可選，以及預設值&lt;/li&gt;
+&lt;li&gt;包含型別資訊，如果型別不能清楚的根據約定進行體現&lt;/li&gt;
+&lt;li&gt;對於 &lt;code&gt;opts&lt;/code&gt; 物件引數，描述它所接受的所有的 keys 和 values&lt;/li&gt;
+&lt;li&gt;為每個API提供一個小的呼叫示例，如果它們的用法不明顯或是在用法部分沒有體現。&lt;ol&gt;
+&lt;li&gt;不過，也有可能是函式太複雜了，需要進行重構，劃分成更細粒度的函式，或者整體刪除。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;為特殊術語建立連結! 在markdown中你可以把&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kYXJpbmdmaXJlYmFsbC5uZXQvcHJvamVjdHMvbWFya2Rvd24vc3ludGF4I2xpbms=&#34;&gt;腳註&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt; 放在文件的末尾，可以很方便的多次引用它們。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL25vZmZsZS9jb21tb24tcmVhZG1lL2Jsb2IvbWFzdGVyL2FwaV9mb3JtYXR0aW5nLm1k&#34;&gt;這兒&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;有一些我的API文件格式的個人偏好。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;放一些呼叫和返回值的範例&lt;ul&gt;
+&lt;li&gt;如果你的模組提供了 CLI (command line interface)而不是 API，用命令呼叫的方式展示呼叫示例和輸出。如果你建立了或更改了一個檔案，&lt;code&gt;cat&lt;/code&gt; 它來展示更改前後的變化。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;關鍵字&#34;&gt;&lt;a href=&#34;#關鍵字&#34; class=&#34;headerlink&#34; title=&#34;關鍵字&#34;&gt;&lt;/a&gt;關鍵字&lt;/h3&gt;&lt;p&gt;github 和 npm 皆有提供手動填寫關鍵字(tag)&lt;/p&gt;
+&lt;h3 id=&#34;內嵌圖片&#34;&gt;&lt;a href=&#34;#內嵌圖片&#34; class=&#34;headerlink&#34; title=&#34;內嵌圖片&#34;&gt;&lt;/a&gt;內嵌圖片&lt;/h3&gt;&lt;p&gt;最後，請記住你的程式碼倉庫和其中的README存在的時間要比你的&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29t&#34;&gt;程式碼倉庫託管主機&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;和你連結到的其它任何東西–特別是圖片–的時間都要長久。所以&lt;strong&gt;內嵌任何對將來要獲取你的作品的使用者來說是重要的東西&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;註：還是可以上傳到圖床或Youtube等，但是要將這些圖片、影片等額外的資源也放在版本控制中&lt;/p&gt;
+&lt;h2 id=&#34;心得&#34;&gt;&lt;a href=&#34;#心得&#34; class=&#34;headerlink&#34; title=&#34;心得&#34;&gt;&lt;/a&gt;心得&lt;/h2&gt;&lt;p&gt;我個人使用Repo的順序&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;觀察&lt;ol&gt;
+&lt;li&gt;會看主要使用的程式語言、支援的OS&lt;/li&gt;
+&lt;li&gt;Description: 一句話形容Repo的作用&lt;/li&gt;
+&lt;li&gt;指令、圖片、影片或是線上的使用範例&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;決定試用&lt;ol&gt;
+&lt;li&gt;安裝方法、或是Release可直接下載&lt;/li&gt;
+&lt;li&gt;實際使用&lt;ol&gt;
+&lt;li&gt;使用失敗：回去看Document或README&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;覺得好用：Star&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;實例評價&#34;&gt;&lt;a href=&#34;#實例評價&#34; class=&#34;headerlink&#34; title=&#34;實例評價&#34;&gt;&lt;/a&gt;實例評價&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0dhbGl0eTM2OS9DUy1Mb2FkZXI=&#34;&gt;CS-Loader&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;ul&gt;
+&lt;li&gt;About欄位：CS免殺&lt;ul&gt;
+&lt;li&gt;Google後才知道是繞過掃毒軟體的方法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;❌沒有對專有名詞的說明&lt;/li&gt;
+&lt;li&gt;❌沒有使用方法&lt;/li&gt;
+&lt;li&gt;只看README的話我是完全不會用的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL251bXRpZGUvZGV2c2hlbGw=&#34;&gt;devshell&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;ul&gt;
+&lt;li&gt;副標題: ⭕like virtualenv, but for all the languages&lt;ul&gt;
+&lt;li&gt;有用過Python的virtualenv的人可以馬上理解&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;About欄位: ➖Per project developer environments&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9udW10aWRlLmdpdGh1Yi5pby9kZXZzaGVsbC9pbnRyby5odG1s&#34;&gt;文件&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;: ❌沒有簡短的設定教學&lt;!-- - TODO: --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>QWERTY • Posts by &#34;c++&#34; tag</title>
+        <link>http://gitqwerty777.github.io</link>
+        <description>Programming | Computer Science | Thought</description>
+        <language>zh-TW</language>
+        <pubDate>Tue, 23 May 2017 20:44:30 +0800</pubDate>
+        <lastBuildDate>Tue, 23 May 2017 20:44:30 +0800</lastBuildDate>
+        <category>C#</category>
+        <category>CodingStyle</category>
+        <category>Emacs</category>
+        <category>編輯器</category>
+        <category>CFR</category>
+        <category>電腦對局理論</category>
+        <category>指令</category>
+        <category>機器學習</category>
+        <category>perceptron</category>
+        <category>readme</category>
+        <category>文件</category>
+        <category>github</category>
+        <category>artificial intelligence</category>
+        <category>search</category>
+        <category>First-Order Logic</category>
+        <category>大數</category>
+        <category>程式</category>
+        <category>C++</category>
+        <category>Hexo</category>
+        <category>網誌</category>
+        <category>Markdown</category>
+        <category>CleanCode</category>
+        <category>重構</category>
+        <category>TDD</category>
+        <category>設計模式</category>
+        <category>CMake</category>
+        <category>Makefile</category>
+        <category>Linux</category>
+        <category>Todo</category>
+        <category>註解</category>
+        <category>經濟學</category>
+        <category>策略</category>
+        <category>競爭</category>
+        <category>博弈論</category>
+        <category>計算機結構</category>
+        <category>人工智慧</category>
+        <category>圍棋</category>
+        <category>象棋</category>
+        <category>蒙地卡羅</category>
+        <category>Alpha-Beta搜尋</category>
+        <category>強化學習</category>
+        <category>計算機網路</category>
+        <category>boost</category>
+        <category>函式庫</category>
+        <category>編譯</category>
+        <category>gcc</category>
+        <category>g++</category>
+        <category>clang</category>
+        <category>最佳化</category>
+        <category>推薦系統</category>
+        <category>FM</category>
+        <category>FFM</category>
+        <category>SVM</category>
+        <category>Embedding</category>
+        <category>自然語言處理</category>
+        <category>外國用語</category>
+        <category>萌典</category>
+        <category>opencc</category>
+        <category>PTT</category>
+        <category>vuejs</category>
+        <category>linux</category>
+        <category>c</category>
+        <category>compile</category>
+        <category>gdb</category>
+        <category>c語言</category>
+        <category>cpp</category>
+        <category>除錯</category>
+        <category>git</category>
+        <category>VMWare</category>
+        <category>虛擬機</category>
+        <category>IFTTT</category>
+        <category>自動化</category>
+        <category>備份</category>
+        <category>webhook</category>
+        <category>簡報</category>
+        <category>軟體</category>
+        <category>PowerPoint</category>
+        <category>Latex</category>
+        <category>JavaScript</category>
+        <category>CSS</category>
+        <category>Unity</category>
+        <category>fcitx</category>
+        <category>嘸蝦米</category>
+        <category>輸入法</category>
+        <category>硬碟</category>
+        <category>記憶體</category>
+        <category>效能</category>
+        <category>錯誤</category>
+        <category>makefile</category>
+        <category>備忘錄</category>
+        <category>存檔</category>
+        <category>統計</category>
+        <category>byobu</category>
+        <category>screen</category>
+        <category>tmux</category>
+        <category>reactjs</category>
+        <category>javascript</category>
+        <category>WideAndDeep</category>
+        <category>Google</category>
+        <category>觀察者</category>
+        <category>訂閱</category>
+        <category>委託</category>
+        <category>正規表示式(RegExp)</category>
+        <category>上下文無關文法(CFG)</category>
+        <category>hexo</category>
+        <category>blog</category>
+        <category>theme</category>
+        <category>feature</category>
+        <category>revealJS</category>
+        <category>markdown</category>
+        <category>rss</category>
+        <category>facebook</category>
+        <category>youtube</category>
+        <category>ptt</category>
+        <category>bilibili</category>
+        <category>pixiv</category>
+        <category>crawler</category>
+        <category>SEO</category>
+        <category>google</category>
+        <category>html</category>
+        <category>amazon</category>
+        <category>webhost</category>
+        <category>ssl</category>
+        <category>漢字</category>
+        <category>中文</category>
+        <category>異體字</category>
+        <category>unicode</category>
+        <category>unity</category>
+        <category>演算法</category>
+        <category>隨機排序</category>
+        <category>洗牌</category>
+        <category>Fisher-Yates</category>
+        <category>證明</category>
+        <category>python</category>
+        <item>
+            <guid isPermalink="true">http://gitqwerty777.github.io/cpp-compile-speed/</guid>
+            <title>加快C++編譯速度的方法</title>
+            <link>http://gitqwerty777.github.io/cpp-compile-speed/</link>
+            <category>C++</category>
+            <category>編譯</category>
+            <category>gcc</category>
+            <category>g++</category>
+            <category>clang</category>
+            <category>最佳化</category>
+            <pubDate>Tue, 23 May 2017 20:44:30 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;編譯速度慢的原因&#34;&gt;&lt;a href=&#34;#編譯速度慢的原因&#34; class=&#34;headerlink&#34; title=&#34;編譯速度慢的原因&#34;&gt;&lt;/a&gt;編譯速度慢的原因&lt;/h2&gt;&lt;p&gt;因為C++ &lt;code&gt;.h&lt;/code&gt; + &lt;code&gt;.cpp&lt;/code&gt; 的編譯模型&lt;br&gt;每個cpp檔可能會包含上百甚至上千個&lt;code&gt;.h&lt;/code&gt;檔，這些&lt;code&gt;.h&lt;/code&gt;檔都會被讀進來一遍，然後被解析一遍。&lt;br&gt;每個編譯單元都會產生一個&lt;code&gt;.obj&lt;/code&gt;文件，然後所以這些&lt;code&gt;.obj&lt;/code&gt;文件會被link到一起，並且這個過程很難平行。重複load與解析，以及密集的IO，使編譯速度很慢。&lt;/p&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+
+&lt;h2 id=&#34;代碼角度&#34;&gt;&lt;a href=&#34;#代碼角度&#34; class=&#34;headerlink&#34; title=&#34;代碼角度&#34;&gt;&lt;/a&gt;代碼角度&lt;/h2&gt;&lt;h3 id=&#34;前置聲明&#34;&gt;&lt;a href=&#34;#前置聲明&#34; class=&#34;headerlink&#34; title=&#34;前置聲明&#34;&gt;&lt;/a&gt;前置聲明&lt;/h3&gt;&lt;p&gt;在&lt;code&gt;.h&lt;/code&gt;檔中使用前置聲明(forward declaration)，而不是直接包含&lt;code&gt;.h&lt;/code&gt;檔。&lt;/p&gt;
+&lt;figure class=&#34;highlight c++&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;A&lt;/span&gt;;&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;//forward declaration, instead #include &#34;a.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;B&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    A* a;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;useA&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(A&amp;amp; a)&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;figure class=&#34;highlight c++&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;a.h&#34;&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;//cannot use forward declaration because compiler needs to know what A really is&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;B&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    A a;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;要盡一切可能使&lt;code&gt;.h&lt;/code&gt;檔精簡&lt;/strong&gt;。&lt;br&gt;很多時候前置聲明某個namespace中的class會比較痛苦，而直接include會方便很多，千萬要抵制住這種誘惑；class的成員，函數參數等也儘量用reference或pointer。&lt;/p&gt;
+&lt;h3 id=&#34;使用Pimpl模式&#34;&gt;&lt;a href=&#34;#使用Pimpl模式&#34; class=&#34;headerlink&#34; title=&#34;使用Pimpl模式&#34;&gt;&lt;/a&gt;使用Pimpl模式&lt;/h3&gt;&lt;p&gt;Pimpl為Private Implementation&lt;br&gt;傳統的C++的class的接口與實現是混淆在一起的，而Pimpl這種做法使得class的接口與實現得以完全分離。&lt;br&gt;如此，只要class的公共接口保持不變，對class實現的修改始終只需編譯該cpp；同時，該class提供給外界的.h檔也會精簡許多。&lt;/p&gt;
+&lt;figure class=&#34;highlight c++&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;A&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    A();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ~A();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;doSomething&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;private&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Impl&lt;/span&gt;;&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;//real implementation in this class&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;std&lt;/span&gt;::&lt;span class=&#34;built_in&#34;&gt;auto_ptr&lt;/span&gt;&amp;lt;impl&amp;gt; m_impl;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&#34;高度模塊化&#34;&gt;&lt;a href=&#34;#高度模塊化&#34; class=&#34;headerlink&#34; title=&#34;高度模塊化&#34;&gt;&lt;/a&gt;高度模塊化&lt;/h3&gt;&lt;p&gt;模塊化就是低耦合，就是儘可能的減少相互依賴。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;文件與文件之間，一個&lt;code&gt;.h&lt;/code&gt;檔的變化，儘量不要引起其他文件的重新編譯。&lt;/li&gt;
+&lt;li&gt;工程與工程之間，對一個工程的修改，儘量不要引起太多其他工程的編譯。這就要求&lt;code&gt;.h&lt;/code&gt;檔，或者工程的內容一定要單一，不要什麼東西都往裡面塞，從而引起不必要的依賴。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;不要把兩個不相關的class，或者沒什麼聯繫的macro定義放到一個&lt;code&gt;.h&lt;/code&gt;檔裡；內容要儘量單一。&lt;/p&gt;
+&lt;p&gt;把代碼中最常用到的那些&lt;code&gt;.h&lt;/code&gt;檔找出來，然後分成多個獨立的小文件，效果相當可觀。&lt;/p&gt;
+&lt;h3 id=&#34;刪除冗餘的header檔&#34;&gt;&lt;a href=&#34;#刪除冗餘的header檔&#34; class=&#34;headerlink&#34; title=&#34;刪除冗餘的header檔&#34;&gt;&lt;/a&gt;刪除冗餘的header檔&lt;/h3&gt;&lt;p&gt;一些代碼經過上十年的開發與維護，經手的人無數，很有可能出現包含了沒用的&lt;code&gt;.h&lt;/code&gt;檔，或重複包含的現象，去掉這些冗餘的include是相當必要的。&lt;br&gt;當然，這主要是針對&lt;code&gt;.cpp&lt;/code&gt;的，因為對於一個&lt;code&gt;.h&lt;/code&gt;檔，其中的某個include是否冗餘很難界定，得看是否在最終的編譯單元中用到了，而這樣又可能出現在一個編譯單元用到了，而在另外一個編譯單元中沒用到的情況。&lt;/p&gt;
+&lt;h3 id=&#34;特別注意inline和template&#34;&gt;&lt;a href=&#34;#特別注意inline和template&#34; class=&#34;headerlink&#34; title=&#34;特別注意inline和template&#34;&gt;&lt;/a&gt;特別注意inline和template&lt;/h3&gt;&lt;p&gt;它們強制在&lt;code&gt;.h&lt;/code&gt;檔中包含實作，這會增加&lt;code&gt;.h&lt;/code&gt;檔的內容，從而減慢許多編譯速度，需權衡使用。&lt;/p&gt;
+&lt;h3 id=&#34;預編譯-h檔&#34;&gt;&lt;a href=&#34;#預編譯-h檔&#34; class=&#34;headerlink&#34; title=&#34;預編譯.h檔&#34;&gt;&lt;/a&gt;預編譯&lt;code&gt;.h&lt;/code&gt;檔&lt;/h3&gt;&lt;p&gt;把一些常用但不常改動的&lt;code&gt;.h&lt;/code&gt;檔放在預編譯&lt;code&gt;.h&lt;/code&gt;檔中。這樣，至少在單個工程中你不需要在每個編譯單元裡一遍又一遍的load與解析同一個&lt;code&gt;.h&lt;/code&gt;檔了。&lt;/p&gt;
+&lt;p&gt;首次編譯source.cpp時，編譯器生成header.pch的預編譯header。以後再編譯該程式時，編譯器會比較該表頭檔的時間戳，如果表頭檔沒有改變，編譯器直接使用預編譯header。&lt;/p&gt;
+&lt;figure class=&#34;highlight makefile&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;CORE_PCH_FILENAME=Core.h&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;CORE_PCH=&lt;span class=&#34;variable&#34;&gt;$(CORE_PCH_FILENAME)&lt;/span&gt;.gch&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;variable&#34;&gt;$(CORE_PCH)&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;variable&#34;&gt;$(CXX)&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;$(CXX_CFLAGS)&lt;/span&gt; -x c++-header &lt;span class=&#34;variable&#34;&gt;$(CORE_PCH_FILENAME)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&#34;Guard-Conditions&#34;&gt;&lt;a href=&#34;#Guard-Conditions&#34; class=&#34;headerlink&#34; title=&#34;Guard Conditions&#34;&gt;&lt;/a&gt;Guard Conditions&lt;/h3&gt;&lt;p&gt;保證每個 header file 在每個編譯單元只被 include 一次&lt;/p&gt;
+&lt;figure class=&#34;highlight c++&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;pragma&lt;/span&gt; once&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;figure class=&#34;highlight c++&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;ifndef&lt;/span&gt; filename_h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;define&lt;/span&gt; filename_h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//...&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;endif&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;同時使用兩種方法以確保compiler的相容性&lt;/p&gt;
+&lt;h2 id=&#34;Unity-Build&#34;&gt;&lt;a href=&#34;#Unity-Build&#34; class=&#34;headerlink&#34; title=&#34;Unity Build&#34;&gt;&lt;/a&gt;Unity Build&lt;/h2&gt;&lt;p&gt;把所有的檔案包含到一個cpp中(如&lt;code&gt;all.cpp&lt;/code&gt;)，然後只編譯all.cpp。這樣就只有一個編譯單元，這意味著不需要重複load與解析同一個&lt;code&gt;.h&lt;/code&gt;檔了，同時因為只產生一個obj文件，在link的時候也不需要那麼密集的IO&lt;/p&gt;
+&lt;h2 id=&#34;Compiler-Cache&#34;&gt;&lt;a href=&#34;#Compiler-Cache&#34; class=&#34;headerlink&#34; title=&#34;Compiler Cache&#34;&gt;&lt;/a&gt;Compiler Cache&lt;/h2&gt;&lt;p&gt;藉由快取上一次編譯的結果，使rebuild在保持結果相同的情況下，極大的提高速度。&lt;/p&gt;
+&lt;h2 id=&#34;不要有太多的Include-Directories&#34;&gt;&lt;a href=&#34;#不要有太多的Include-Directories&#34; class=&#34;headerlink&#34; title=&#34;不要有太多的Include Directories&#34;&gt;&lt;/a&gt;不要有太多的Include Directories&lt;/h2&gt;&lt;p&gt;編譯器定位你include的&lt;code&gt;.h&lt;/code&gt;檔，是根據你提供的include directories進行搜索的。&lt;/p&gt;
+&lt;p&gt;用 &lt;code&gt;cpp -v&lt;/code&gt; 查看 &lt;code&gt;#include &amp;quot;...&amp;quot; search starts here:&lt;/code&gt; 中的目錄&lt;br&gt;和 GNU Make 的 &lt;code&gt;-I&lt;/code&gt; 選項&lt;/p&gt;
+&lt;h2 id=&#34;平行化及分佈式編譯&#34;&gt;&lt;a href=&#34;#平行化及分佈式編譯&#34; class=&#34;headerlink&#34; title=&#34;平行化及分佈式編譯&#34;&gt;&lt;/a&gt;平行化及分佈式編譯&lt;/h2&gt;&lt;p&gt;GNU Make 的 &lt;code&gt;-j [N]&lt;/code&gt; 可以用N個核心編譯&lt;br&gt;Visual Studio 有 &lt;code&gt;/MP&lt;/code&gt; 選項可做到檔案等級的平行&lt;br&gt;或是用空閒的機器來編譯&lt;/p&gt;
+&lt;h2 id=&#34;買更好的磁碟&#34;&gt;&lt;a href=&#34;#買更好的磁碟&#34; class=&#34;headerlink&#34; title=&#34;買更好的磁碟&#34;&gt;&lt;/a&gt;買更好的磁碟&lt;/h2&gt;&lt;p&gt;編譯速度慢很大一部分原因是磁碟操作，那麼除了儘可能的減少磁碟操作，我們還可以做的就是加快磁碟速度。&lt;/p&gt;
+&lt;h2 id=&#34;參考資料&#34;&gt;&lt;a href=&#34;#參考資料&#34; class=&#34;headerlink&#34; title=&#34;參考資料&#34;&gt;&lt;/a&gt;參考資料&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvMzczMTQyL3doYXQtdGVjaG5pcXVlcy1jYW4tYmUtdXNlZC10by1zcGVlZC11cC1jLWNvbXBpbGF0aW9uLXRpbWVz&#34;&gt;What techniques can be used to speed up C++ compilation times?&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5jbmJsb2dzLmNvbS9iYWl5YW5odWFuZy9hcmNoaXZlLzIwMTAvMDEvMTcvMTczMDcxNy5odG1s&#34;&gt;如何加快C++代碼的編譯速度&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1xWU42ZWR1VTA2cw==&#34;&gt;(Unity Build) CppCon 2014: Nicolas Fleury “C++ in Huge AAA Games”&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucmVkZGl0LmNvbS9yL2dhbWVkZXYvY29tbWVudHMvMms0bDJ6L2lzX3ViaXNvZnRzX3VuaXR5X2J1aWxkX2Zvcl9jX3dvcnRoLw==&#34;&gt;(Unity Build) Is Ubisoft’s unity build for C++ worth?&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2dvb2RzcGVlZGxlZS5ibG9nc3BvdC50dy8yMDE2LzAxL2MtcGltcGwuaHRtbA==&#34;&gt;(pimpl) C++: 善用 PIMPL 技巧&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2JhaXlhbmh1YW5nL2JhY2t1cC9ibG9iLzlmMTFkMDE0OWNiMzY1OWRhYzQ3OTY3ZjFiMTBmM2I3ZWVjODg4ZDMvdG9vbHMvUGVybC9SZW1vdmVSZWR1bmRhbnRJbmNsdWRlcy5wbA==&#34;&gt;(去除重複) Perl腳本，用來自動去除這些冗餘的.h檔&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2R1Y2tyb29tLmJsb2dzcG90LnR3LzIwMTAvMDIvcHJlY29tcGlsZWQtaGVhZGVyLmh0bWw=&#34;&gt;(預編譯.h檔) 終於搞懂了，預編譯header 檔(precompiled header)&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS9Yb3JlYXglMjBJbmNyZWRpQnVpbGQ=&#34;&gt;(分佈式編譯) Xoreax IncrediBuild&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvODkyMDY0MC9ob3ctZG8taS1rbm93LXRoZS1kZWZhdWx0LWluY2x1ZGUtZGlyZWN0b3JpZXMtZGVmYXVsdC1saW5rLWRpcmVjdG9yaWVzLWFuZA==&#34;&gt;How do I know the default include directories&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jY2FjaGUuc2FtYmEub3JnLw==&#34;&gt;(Compiler Cache) ccache&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2l0c2NvbXBpbGluZy5ldS8yMDE3LzAxLzEyL3ByZWNvbXBpbGVkLWhlYWRlcnMtY3BwLWNvbXBpbGF0aW9uLw==&#34;&gt;(預編譯.h檔) Speed up C++ compilation, part 1: precompiled headers&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9hLzczNjU3NzA=&#34;&gt;(預編譯.h檔) makefile 範例&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://gitqwerty777.github.io/cpp-boost/</guid>
+            <title>C++ boost 簡單應用</title>
+            <link>http://gitqwerty777.github.io/cpp-boost/</link>
+            <category>C++</category>
+            <category>boost</category>
+            <category>函式庫</category>
+            <pubDate>Tue, 14 Jul 2015 15:18:44 +0800</pubDate>
+            <description><![CDATA[ &lt;!-- RENEW: --&gt;
+
+&lt;h2 id=&#34;簡介&#34;&gt;&lt;a href=&#34;#簡介&#34; class=&#34;headerlink&#34; title=&#34;簡介&#34;&gt;&lt;/a&gt;簡介&lt;/h2&gt;&lt;p&gt;C++的著名擴充函式庫&lt;/p&gt;
+&lt;p&gt;功能(節錄)：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;regex&lt;/li&gt;
+&lt;li&gt;function binding&lt;/li&gt;
+&lt;li&gt;lambda functions&lt;/li&gt;
+&lt;li&gt;unit tests&lt;/li&gt;
+&lt;li&gt;smart pointers&lt;/li&gt;
+&lt;li&gt;noncopyable, optional&lt;/li&gt;
+&lt;li&gt;serialization&lt;/li&gt;
+&lt;li&gt;generic dates&lt;/li&gt;
+&lt;li&gt;portable filesystem&lt;/li&gt;
+&lt;li&gt;circular buffers&lt;/li&gt;
+&lt;li&gt;config utils&lt;/li&gt;
+&lt;li&gt;generic image library&lt;/li&gt;
+&lt;li&gt;program options&lt;/li&gt;
+&lt;li&gt;threads&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5ib29zdC5vcmcvZG9jL2xpYnMvMV81OF8wL2xpYnMvbGlicmFyaWVzLmh0bQ==&#34;&gt;所有功能&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+
+&lt;p&gt;安裝：&lt;code&gt;sudo apt-get install libboost-all-dev&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;基本功能&#34;&gt;&lt;a href=&#34;#基本功能&#34; class=&#34;headerlink&#34; title=&#34;基本功能&#34;&gt;&lt;/a&gt;基本功能&lt;/h2&gt;&lt;p&gt;簡化語法&lt;/p&gt;
+&lt;h3 id=&#34;foreach&#34;&gt;&lt;a href=&#34;#foreach&#34; class=&#34;headerlink&#34; title=&#34;foreach&#34;&gt;&lt;/a&gt;foreach&lt;/h3&gt;&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&amp;lt;boost/foreach.hpp&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;std&lt;/span&gt;::&lt;span class=&#34;built_in&#34;&gt;string&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;hello&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;( &lt;span class=&#34;string&#34;&gt;&#34;Hello, world!&#34;&lt;/span&gt; )&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  BOOST_FOREACH( &lt;span class=&#34;keyword&#34;&gt;char&lt;/span&gt; ch, hello )&amp;#123; &lt;span class=&#34;comment&#34;&gt;// equals to for (auto c : hello) in c03                          &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;std&lt;/span&gt;::&lt;span class=&#34;built_in&#34;&gt;cout&lt;/span&gt; &amp;lt;&amp;lt; ch &amp;lt;&amp;lt; &lt;span class=&#34;built_in&#34;&gt;endl&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//convient way to use&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;define&lt;/span&gt; foreach BOOST_FOREACH&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5hcnRpbWEuY29tL2NwcHNvdXJjZS9mb3JlYWNoLmh0bWw=&#34;&gt;實作方法&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;lexical-cast&#34;&gt;&lt;a href=&#34;#lexical-cast&#34; class=&#34;headerlink&#34; title=&#34;lexical_cast&#34;&gt;&lt;/a&gt;lexical_cast&lt;/h3&gt;&lt;p&gt;可以轉換成其他格式&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&amp;lt;boost/lexical_cast.hpp&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;...&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;double&lt;/span&gt; j = &lt;span class=&#34;number&#34;&gt;233.211321231&lt;/span&gt;;                              &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;string&lt;/span&gt; mystring = boost::lexical_cast&amp;lt;&lt;span class=&#34;built_in&#34;&gt;string&lt;/span&gt;&amp;gt;(j);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;double&lt;/span&gt; k = boost::lexical_cast&amp;lt;&lt;span class=&#34;keyword&#34;&gt;double&lt;/span&gt;&amp;gt;(mystring);&lt;span class=&#34;comment&#34;&gt;//k = 233.211&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&#34;split&#34;&gt;&lt;a href=&#34;#split&#34; class=&#34;headerlink&#34; title=&#34;split&#34;&gt;&lt;/a&gt;split&lt;/h3&gt;&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&amp;lt;boost/algorithm/string.hpp&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;...&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;string&lt;/span&gt; stringtobesplit = &lt;span class=&#34;string&#34;&gt;&#34;AA/BB-CC&#34;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;vector&lt;/span&gt;&amp;lt;&lt;span class=&#34;built_in&#34;&gt;string&lt;/span&gt;&amp;gt; tokens;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;boost::split(tokens, stringtobesplit, boost::is_any_of(&lt;span class=&#34;string&#34;&gt;&#34;/\-&#34;&lt;/span&gt;));&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&#34;Smart-Pointers&#34;&gt;&lt;a href=&#34;#Smart-Pointers&#34; class=&#34;headerlink&#34; title=&#34;Smart Pointers&#34;&gt;&lt;/a&gt;Smart Pointers&lt;/h3&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL3F1ZXN0aW9ucy81Njk3NzUvc21hcnQtcG9pbnRlcnMtYm9vc3QtZXhwbGFpbmVk&#34;&gt;Basic properties of smart pointers&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;no ownership at all&lt;ul&gt;
+&lt;li&gt;smart pointer cannot delete the object, because it doesn’t own it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;transfer of ownership&lt;ul&gt;
+&lt;li&gt;only one smart pointer can ever point to the same object at the same time&lt;/li&gt;
+&lt;li&gt;If the smart pointer is to be returned from functions, the ownership is transferred to the returned smart pointer&lt;/li&gt;
+&lt;li&gt;Transfer of ownership cannot really be implemented in C++ currently, because object will be copied after return&lt;ul&gt;
+&lt;li&gt;only can use the copy constructor to implement that transfer of ownership&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;share of ownership&lt;ul&gt;
+&lt;li&gt;multiple smart pointers can point to the same object at the same time&lt;/li&gt;
+&lt;li&gt;can be implemented by having a copy constructor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;Categorizing-smart-pointers&#34;&gt;&lt;a href=&#34;#Categorizing-smart-pointers&#34; class=&#34;headerlink&#34; title=&#34;Categorizing smart pointers&#34;&gt;&lt;/a&gt;Categorizing smart pointers&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;scoped_ptr&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;neither transferable nor sharable (= normal pointer)&lt;/li&gt;
+&lt;li&gt;when it goes out of scope, it is destroyed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;shared_ptr&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;shares ownership&lt;/li&gt;
+&lt;li&gt;reference counted so it can see when the last copy of it goes out of scope and then it frees the object automatically&lt;/li&gt;
+&lt;li&gt;所有使用同一筆資料的指標都不再使用後自動釋放&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;weak_ptr&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;non-owning smart pointer&lt;/li&gt;
+&lt;li&gt;reference a managed object (managed by a shared_ptr) so it will not add a reference count&lt;ul&gt;
+&lt;li&gt;If you need to access the object, you can lock the management of it (to avoid that in another thread a shared_ptr frees it while you use the object)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;If &lt;code&gt;weak_ptr&lt;/code&gt; points to an object already deleted, it will notice you by throwing an exception&lt;/li&gt;
+&lt;li&gt;It is most beneficial when you have a cyclic reference: Reference counting cannot easily cope with such a situation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;intrusive_ptr&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;like a shared_ptr &lt;ul&gt;
+&lt;li&gt;does not keep the reference count in a shared_ptr&lt;/li&gt;
+&lt;li&gt;but call helper functions to increse/decrese the count &lt;ul&gt;
+&lt;li&gt;helper function need to be defined by the object that is managed&lt;/li&gt;
+&lt;li&gt;reference count is not anymore internal to the smart pointer, but the smart pointer uses an existing reference counting mechanism&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;typically used when there is a 3rd party smart ptr you must use&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;unique_ptr&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;transfer of ownership pointer&lt;/li&gt;
+&lt;li&gt;cannot copy it, but can move it by using C++1x’s &lt;code&gt;move&lt;/code&gt; constructors&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;std&lt;/span&gt;::&lt;span class=&#34;built_in&#34;&gt;vector&lt;/span&gt;&amp;lt; scoped_ptr&amp;lt;T&amp;gt; &amp;gt; tPtrVec;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;function&#34;&gt;scoped_ptr&amp;lt;T&amp;gt; &lt;span class=&#34;title&#34;&gt;tPtr&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; T())&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     tPtrVec.push_back(tPtr);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;comment&#34;&gt;// raw T* is freed&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tPtrVec[&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;]-&amp;gt;DoSomething(); &lt;span class=&#34;comment&#34;&gt;// accessing freed memory&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//--------------------------------------&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;std&lt;/span&gt;::&lt;span class=&#34;built_in&#34;&gt;vector&lt;/span&gt;&amp;lt; &lt;span class=&#34;built_in&#34;&gt;shared_ptr&lt;/span&gt;&amp;lt;T&amp;gt; &amp;gt; tPtrVec;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;shared_ptr&lt;/span&gt;&amp;lt;T&amp;gt; &lt;span class=&#34;title&#34;&gt;tPtr&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; T())&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;comment&#34;&gt;// This copy to tPtrVec.push_back and ultimately to the vector storage&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;comment&#34;&gt;// causes the reference count to go from 1-&amp;gt;2&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     tPtrVec.push_back(tPtr);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;comment&#34;&gt;// num references to T goes from 2-&amp;gt;1 on the destruction of tPtr&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tPtrVec[&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;]-&amp;gt;DoSomething(); &lt;span class=&#34;comment&#34;&gt;// raw T* still exists, so this is safe&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//--------------------------------------&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;std&lt;/span&gt;::&lt;span class=&#34;built_in&#34;&gt;vector&lt;/span&gt;&amp;lt; weak_ptr&amp;lt;T&amp;gt; &amp;gt; tPtrVec;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;shared_ptr&lt;/span&gt;&amp;lt;T&amp;gt; &lt;span class=&#34;title&#34;&gt;tPtr&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; T())&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     tPtrVec.push_back(tPtr);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;comment&#34;&gt;// num references to T goes from 1-&amp;gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;shared_ptr&lt;/span&gt;&amp;lt;T&amp;gt; tPtrAccessed =  tPtrVec[&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;].lock();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (tPtrAccessed[&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;].get() == &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;built_in&#34;&gt;cout&lt;/span&gt; &amp;lt;&amp;lt; &lt;span class=&#34;string&#34;&gt;&#34;Raw T* was freed, can&#39;t access it&#34;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     tPtrVec[&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;]-&amp;gt;DoSomething(); &lt;span class=&#34;comment&#34;&gt;// raw &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//--------------------------------------&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;unique_ptr&lt;/span&gt;&amp;lt;type&amp;gt; &lt;span class=&#34;title&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; type)&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;unique_ptr&lt;/span&gt;&amp;lt;type&amp;gt; &lt;span class=&#34;title&#34;&gt;q&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(p)&lt;/span&gt;&lt;/span&gt;; &lt;span class=&#34;comment&#34;&gt;// not legal!&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;unique_ptr&lt;/span&gt;&amp;lt;type&amp;gt; &lt;span class=&#34;title&#34;&gt;r&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(move(p))&lt;/span&gt;&lt;/span&gt;; &lt;span class=&#34;comment&#34;&gt;// legal. p is now empty and r owns the object&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;unique_ptr&lt;/span&gt;&amp;lt;type&amp;gt; &lt;span class=&#34;title&#34;&gt;s&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(function_returning_a_unique_ptr())&lt;/span&gt;&lt;/span&gt;; &lt;span class=&#34;comment&#34;&gt;// legal!&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2Jsb2cuY3Nkbi5uZXQvam51X3NpbWJhL2FydGljbGUvZGV0YWlscy85NTY5NTkz&#34;&gt;Chinese Explaination&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&amp;lt;boost/shared_ptr.hpp&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;safeclose&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(FILE*fp)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(fp) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        fclose(fp);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;some_fn&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;boost::&lt;span class=&#34;built_in&#34;&gt;shared_ptr&lt;/span&gt;&amp;lt;FILE&amp;gt; &lt;span class=&#34;title&#34;&gt;fp&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;( fopen(myfilename, &lt;span class=&#34;string&#34;&gt;&#34;a+t&#34;&lt;/span&gt;), safeclose )&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;//body of the function, and when ever it exits the file gets closed&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;fprintf&lt;/span&gt;( fp.get(), &lt;span class=&#34;string&#34;&gt;&#34;a message\n&#34;&lt;/span&gt; );&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;Reference&#34;&gt;&lt;a href=&#34;#Reference&#34; class=&#34;headerlink&#34; title=&#34;Reference&#34;&gt;&lt;/a&gt;Reference&lt;/h2&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL3F1ZXN0aW9ucy8xMjU1ODAvd2hhdC1hcmUtdGhlLWFkdmFudGFnZXMtb2YtdXNpbmctdGhlLWMtYm9vc3QtbGlicmFyaWVz&#34;&gt;Advantage of using boost libraries&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL3F1ZXN0aW9ucy8zMjU5MDYvbW9zdC11c2VkLXBhcnRzLW9mLWJvb3N0&#34;&gt;Most used parts of boost&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://gitqwerty777.github.io/big-number-library/</guid>
+            <title>大數運算的函式庫—BigNumber.h</title>
+            <link>http://gitqwerty777.github.io/big-number-library/</link>
+            <category>大數</category>
+            <category>程式</category>
+            <category>C++</category>
+            <pubDate>Sat, 24 May 2014 11:00:47 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;因為在許多online judge的題目中，大數運算是很常見的題型之一， 所以就寫了一個可以簡單進行大數運算的函式庫。&lt;/p&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+
+&lt;h2 id=&#34;BigNumber-內容&#34;&gt;&lt;a href=&#34;#BigNumber-內容&#34; class=&#34;headerlink&#34; title=&#34;BigNumber 內容&#34;&gt;&lt;/a&gt;BigNumber 內容&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;目前只支援整數&lt;/li&gt;
+&lt;li&gt;四則運算(除法只算到整數)&lt;/li&gt;
+&lt;li&gt;可直接比較，賦值&lt;/li&gt;
+&lt;li&gt;從各種type轉換成BigNumber物件，如int, long, string…&lt;/li&gt;
+&lt;li&gt;以string形式輸出&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2dpdHF3ZXJ0eTc3Ny9CaWdOdW1iZXI=&#34;&gt;Github Repo連結&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;用NaN表示例外&#34;&gt;&lt;a href=&#34;#用NaN表示例外&#34; class=&#34;headerlink&#34; title=&#34;用NaN表示例外&#34;&gt;&lt;/a&gt;用NaN表示例外&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aC53aWtpcGVkaWEub3JnL3dpa2kvTmFO&#34;&gt;Not A Number&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;ul&gt;
+&lt;li&gt;Example: 0/0, log(-1)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;NaN == NaN&lt;/code&gt; is false&lt;/li&gt;
+&lt;li&gt;可用 &lt;code&gt;isnan()&lt;/code&gt; 檢查&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;double&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;list&lt;/span&gt; = &lt;span class=&#34;number&#34;&gt;0.0&lt;/span&gt; / &lt;span class=&#34;number&#34;&gt;0.0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;printf&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&#34;%lf\n&#34;&lt;/span&gt;, &lt;span class=&#34;built_in&#34;&gt;list&lt;/span&gt;); &lt;span class=&#34;comment&#34;&gt;// will print -nan&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;實作方法&#34;&gt;&lt;a href=&#34;#實作方法&#34; class=&#34;headerlink&#34; title=&#34;實作方法&#34;&gt;&lt;/a&gt;實作方法&lt;/h2&gt;&lt;p&gt;待補充&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

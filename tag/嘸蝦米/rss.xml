@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>QWERTY • Posts by &#34;嘸蝦米&#34; tag</title>
+        <link>http://gitqwerty777.github.io</link>
+        <description>Programming | Computer Science | Thought</description>
+        <language>zh-TW</language>
+        <pubDate>Mon, 16 Jun 2014 06:26:33 +0800</pubDate>
+        <lastBuildDate>Mon, 16 Jun 2014 06:26:33 +0800</lastBuildDate>
+        <category>C#</category>
+        <category>CodingStyle</category>
+        <category>Emacs</category>
+        <category>編輯器</category>
+        <category>CFR</category>
+        <category>電腦對局理論</category>
+        <category>指令</category>
+        <category>機器學習</category>
+        <category>perceptron</category>
+        <category>readme</category>
+        <category>文件</category>
+        <category>github</category>
+        <category>artificial intelligence</category>
+        <category>search</category>
+        <category>First-Order Logic</category>
+        <category>大數</category>
+        <category>程式</category>
+        <category>C++</category>
+        <category>Hexo</category>
+        <category>網誌</category>
+        <category>Markdown</category>
+        <category>CleanCode</category>
+        <category>重構</category>
+        <category>TDD</category>
+        <category>設計模式</category>
+        <category>CMake</category>
+        <category>Makefile</category>
+        <category>Linux</category>
+        <category>Todo</category>
+        <category>註解</category>
+        <category>經濟學</category>
+        <category>策略</category>
+        <category>競爭</category>
+        <category>博弈論</category>
+        <category>計算機結構</category>
+        <category>人工智慧</category>
+        <category>圍棋</category>
+        <category>象棋</category>
+        <category>蒙地卡羅</category>
+        <category>Alpha-Beta搜尋</category>
+        <category>強化學習</category>
+        <category>計算機網路</category>
+        <category>boost</category>
+        <category>函式庫</category>
+        <category>編譯</category>
+        <category>gcc</category>
+        <category>g++</category>
+        <category>clang</category>
+        <category>最佳化</category>
+        <category>推薦系統</category>
+        <category>FM</category>
+        <category>FFM</category>
+        <category>SVM</category>
+        <category>Embedding</category>
+        <category>自然語言處理</category>
+        <category>外國用語</category>
+        <category>萌典</category>
+        <category>opencc</category>
+        <category>PTT</category>
+        <category>vuejs</category>
+        <category>linux</category>
+        <category>c</category>
+        <category>compile</category>
+        <category>gdb</category>
+        <category>c語言</category>
+        <category>cpp</category>
+        <category>除錯</category>
+        <category>git</category>
+        <category>VMWare</category>
+        <category>虛擬機</category>
+        <category>IFTTT</category>
+        <category>自動化</category>
+        <category>備份</category>
+        <category>webhook</category>
+        <category>簡報</category>
+        <category>軟體</category>
+        <category>PowerPoint</category>
+        <category>Latex</category>
+        <category>JavaScript</category>
+        <category>CSS</category>
+        <category>Unity</category>
+        <category>fcitx</category>
+        <category>嘸蝦米</category>
+        <category>輸入法</category>
+        <category>硬碟</category>
+        <category>記憶體</category>
+        <category>效能</category>
+        <category>錯誤</category>
+        <category>makefile</category>
+        <category>備忘錄</category>
+        <category>存檔</category>
+        <category>統計</category>
+        <category>byobu</category>
+        <category>screen</category>
+        <category>tmux</category>
+        <category>reactjs</category>
+        <category>javascript</category>
+        <category>WideAndDeep</category>
+        <category>Google</category>
+        <category>觀察者</category>
+        <category>訂閱</category>
+        <category>委託</category>
+        <category>正規表示式(RegExp)</category>
+        <category>上下文無關文法(CFG)</category>
+        <category>hexo</category>
+        <category>blog</category>
+        <category>theme</category>
+        <category>feature</category>
+        <category>revealJS</category>
+        <category>markdown</category>
+        <category>rss</category>
+        <category>facebook</category>
+        <category>youtube</category>
+        <category>ptt</category>
+        <category>bilibili</category>
+        <category>pixiv</category>
+        <category>crawler</category>
+        <category>SEO</category>
+        <category>google</category>
+        <category>html</category>
+        <category>amazon</category>
+        <category>webhost</category>
+        <category>ssl</category>
+        <category>漢字</category>
+        <category>中文</category>
+        <category>異體字</category>
+        <category>unicode</category>
+        <category>unity</category>
+        <category>演算法</category>
+        <category>隨機排序</category>
+        <category>洗牌</category>
+        <category>Fisher-Yates</category>
+        <category>證明</category>
+        <category>python</category>
+        <item>
+            <guid isPermalink="true">http://gitqwerty777.github.io/install-boshiamy-in-linux-by-fcitx/</guid>
+            <title>在Ubuntu使用fcitx安裝嘸蝦米</title>
+            <link>http://gitqwerty777.github.io/install-boshiamy-in-linux-by-fcitx/</link>
+            <category>Linux</category>
+            <category>fcitx</category>
+            <category>嘸蝦米</category>
+            <category>輸入法</category>
+            <pubDate>Mon, 16 Jun 2014 06:26:33 +0800</pubDate>
+            <description><![CDATA[ &lt;blockquote&gt;
+&lt;p&gt;之前用過gcin, scim等輸入工具，發現對嘸蝦米的支援十分有限。fcitx預設即有嘸蝦米碼表，較為方便，安裝也比較簡單&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+
+&lt;p&gt;使用 Ubuntu &lt;code&gt;12.04&lt;/code&gt; 32bit 測試 (後有&lt;code&gt;16.04&lt;/code&gt; 和 &lt;code&gt;22.04&lt;/code&gt; 方法)&lt;/p&gt;
+&lt;h2 id=&#34;安裝fcitx輸入工具&#34;&gt;&lt;a href=&#34;#安裝fcitx輸入工具&#34; class=&#34;headerlink&#34; title=&#34;安裝fcitx輸入工具&#34;&gt;&lt;/a&gt;安裝fcitx輸入工具&lt;/h2&gt;&lt;p&gt;&lt;code&gt;sudo apt-get install im-switch fcitx&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;安裝嘸蝦米於fcitx&#34;&gt;&lt;a href=&#34;#安裝嘸蝦米於fcitx&#34; class=&#34;headerlink&#34; title=&#34;安裝嘸蝦米於fcitx&#34;&gt;&lt;/a&gt;安裝嘸蝦米於fcitx&lt;/h2&gt;&lt;p&gt;&lt;code&gt;sudo apt-get install fcitx-boshiamy&lt;/code&gt;&lt;/p&gt;
+&lt;!--more--&gt;
+
+&lt;h2 id=&#34;設為預設值&#34;&gt;&lt;a href=&#34;#設為預設值&#34; class=&#34;headerlink&#34; title=&#34;設為預設值&#34;&gt;&lt;/a&gt;設為預設值&lt;/h2&gt;&lt;p&gt;使用im-switch將fcitx設為預設輸入法&lt;br&gt;&lt;code&gt;sudo im-switch -s fcitx&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;調整fcitx設定&#34;&gt;&lt;a href=&#34;#調整fcitx設定&#34; class=&#34;headerlink&#34; title=&#34;調整fcitx設定&#34;&gt;&lt;/a&gt;調整fcitx設定&lt;/h2&gt;&lt;p&gt;fcitx設定 → 附加組件配置 → 碼表 → boshiamy.config&lt;/p&gt;
+&lt;h3 id=&#34;模糊鍵&#34;&gt;&lt;a href=&#34;#模糊鍵&#34; class=&#34;headerlink&#34; title=&#34;模糊鍵&#34;&gt;&lt;/a&gt;模糊鍵&lt;/h3&gt;&lt;p&gt;『使用模糊鍵』不勾&lt;br&gt;此鍵預設被打勾，並定為z鍵，導致所有含z碼的字都出不來…&lt;/p&gt;
+&lt;h3 id=&#34;使用符號&#34;&gt;&lt;a href=&#34;#使用符號&#34; class=&#34;headerlink&#34; title=&#34;使用符號&#34;&gt;&lt;/a&gt;使用符號&lt;/h3&gt;&lt;p&gt;要用嘸蝦米預設符號的話，「忽略標點」打勾&lt;/p&gt;
+&lt;h3 id=&#34;拼音查蝦米碼&#34;&gt;&lt;a href=&#34;#拼音查蝦米碼&#34; class=&#34;headerlink&#34; title=&#34;拼音查蝦米碼&#34;&gt;&lt;/a&gt;拼音查蝦米碼&lt;/h3&gt;&lt;p&gt;在拼音鍵打勾，最好選 `（Esc下的那鍵），才不影響輸入，然後用 -, = 兩鍵翻頁。&lt;br&gt;（至於輸入的字要查發音則是屬於另一個功能，在剛按完空白鍵輸入後，就按Ctrl+Alt+E，即可看見發音，但缺點是沒有四聲）&lt;/p&gt;
+&lt;h2 id=&#34;Reinstall-Ubuntu-16-04-64bit&#34;&gt;&lt;a href=&#34;#Reinstall-Ubuntu-16-04-64bit&#34; class=&#34;headerlink&#34; title=&#34;Reinstall: Ubuntu 16.04 64bit&#34;&gt;&lt;/a&gt;Reinstall: Ubuntu 16.04 64bit&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt-get install -y fcitx fcitx-table-boshiamy&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;im-config &lt;span class=&#34;comment&#34;&gt;# choose fcitx&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fcitx-configtool &lt;span class=&#34;comment&#34;&gt;# choose boshiamy&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# restart or relogin&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;完成後用Ctrl+Space及Ctrl+Shift切換輸入法即可使用&lt;/p&gt;
+&lt;h2 id=&#34;Reinstall-Ubuntu-22-04-64bit&#34;&gt;&lt;a href=&#34;#Reinstall-Ubuntu-22-04-64bit&#34; class=&#34;headerlink&#34; title=&#34;Reinstall: Ubuntu 22.04 64bit&#34;&gt;&lt;/a&gt;Reinstall: Ubuntu 22.04 64bit&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt install -y fcitx5 fcitx5-chinese-addons&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;im-config &lt;span class=&#34;comment&#34;&gt;# choose fcitx5&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 下載碼表並安裝&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;wget https://eu.mirror.archlinuxarm.org/aarch64/community/fcitx5-table-extra-5.0.9-1-any.pkg.tar.xz &lt;span class=&#34;comment&#34;&gt;# 請自行尋找最新版本&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;unxz fcitx5-table-extra-5.0.9-1-any.pkg.tar.xz&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tar xvf fcitx5-table-extra-5.0.9-1-any.pkg.tar&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo cp -r usr/share /usr/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fcitx5-configtool &lt;span class=&#34;comment&#34;&gt;# choose boshiamy&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# restart or relogin&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+        </item>
+    </channel>
+</rss>

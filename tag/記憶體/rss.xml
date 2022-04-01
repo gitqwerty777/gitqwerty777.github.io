@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>QWERTY • Posts by &#34;記憶體&#34; tag</title>
+        <link>http://gitqwerty777.github.io</link>
+        <description>Programming | Computer Science | Thought</description>
+        <language>zh-TW</language>
+        <pubDate>Thu, 15 Oct 2020 15:46:00 +0800</pubDate>
+        <lastBuildDate>Thu, 15 Oct 2020 15:46:00 +0800</lastBuildDate>
+        <category>C#</category>
+        <category>CodingStyle</category>
+        <category>Emacs</category>
+        <category>編輯器</category>
+        <category>CFR</category>
+        <category>電腦對局理論</category>
+        <category>指令</category>
+        <category>機器學習</category>
+        <category>perceptron</category>
+        <category>readme</category>
+        <category>文件</category>
+        <category>github</category>
+        <category>artificial intelligence</category>
+        <category>search</category>
+        <category>First-Order Logic</category>
+        <category>大數</category>
+        <category>程式</category>
+        <category>C++</category>
+        <category>Hexo</category>
+        <category>網誌</category>
+        <category>Markdown</category>
+        <category>CleanCode</category>
+        <category>重構</category>
+        <category>TDD</category>
+        <category>設計模式</category>
+        <category>CMake</category>
+        <category>Makefile</category>
+        <category>Linux</category>
+        <category>Todo</category>
+        <category>註解</category>
+        <category>經濟學</category>
+        <category>策略</category>
+        <category>競爭</category>
+        <category>博弈論</category>
+        <category>計算機結構</category>
+        <category>人工智慧</category>
+        <category>圍棋</category>
+        <category>象棋</category>
+        <category>蒙地卡羅</category>
+        <category>Alpha-Beta搜尋</category>
+        <category>強化學習</category>
+        <category>計算機網路</category>
+        <category>boost</category>
+        <category>函式庫</category>
+        <category>編譯</category>
+        <category>gcc</category>
+        <category>g++</category>
+        <category>clang</category>
+        <category>最佳化</category>
+        <category>推薦系統</category>
+        <category>FM</category>
+        <category>FFM</category>
+        <category>SVM</category>
+        <category>Embedding</category>
+        <category>自然語言處理</category>
+        <category>外國用語</category>
+        <category>萌典</category>
+        <category>opencc</category>
+        <category>PTT</category>
+        <category>vuejs</category>
+        <category>linux</category>
+        <category>c</category>
+        <category>compile</category>
+        <category>gdb</category>
+        <category>c語言</category>
+        <category>cpp</category>
+        <category>除錯</category>
+        <category>git</category>
+        <category>VMWare</category>
+        <category>虛擬機</category>
+        <category>IFTTT</category>
+        <category>自動化</category>
+        <category>備份</category>
+        <category>webhook</category>
+        <category>簡報</category>
+        <category>軟體</category>
+        <category>PowerPoint</category>
+        <category>Latex</category>
+        <category>JavaScript</category>
+        <category>CSS</category>
+        <category>Unity</category>
+        <category>fcitx</category>
+        <category>嘸蝦米</category>
+        <category>輸入法</category>
+        <category>硬碟</category>
+        <category>記憶體</category>
+        <category>效能</category>
+        <category>錯誤</category>
+        <category>makefile</category>
+        <category>備忘錄</category>
+        <category>存檔</category>
+        <category>統計</category>
+        <category>byobu</category>
+        <category>screen</category>
+        <category>tmux</category>
+        <category>reactjs</category>
+        <category>javascript</category>
+        <category>WideAndDeep</category>
+        <category>Google</category>
+        <category>觀察者</category>
+        <category>訂閱</category>
+        <category>委託</category>
+        <category>正規表示式(RegExp)</category>
+        <category>上下文無關文法(CFG)</category>
+        <category>hexo</category>
+        <category>blog</category>
+        <category>theme</category>
+        <category>feature</category>
+        <category>revealJS</category>
+        <category>markdown</category>
+        <category>rss</category>
+        <category>facebook</category>
+        <category>youtube</category>
+        <category>ptt</category>
+        <category>bilibili</category>
+        <category>pixiv</category>
+        <category>crawler</category>
+        <category>SEO</category>
+        <category>google</category>
+        <category>html</category>
+        <category>amazon</category>
+        <category>webhost</category>
+        <category>ssl</category>
+        <category>漢字</category>
+        <category>中文</category>
+        <category>異體字</category>
+        <category>unicode</category>
+        <category>unity</category>
+        <category>演算法</category>
+        <category>隨機排序</category>
+        <category>洗牌</category>
+        <category>Fisher-Yates</category>
+        <category>證明</category>
+        <category>python</category>
+        <item>
+            <guid isPermalink="true">http://gitqwerty777.github.io/linux-save-memory-disk/</guid>
+            <title>在Linux系統中 節省硬碟和記憶體用量</title>
+            <link>http://gitqwerty777.github.io/linux-save-memory-disk/</link>
+            <category>linux</category>
+            <category>硬碟</category>
+            <category>記憶體</category>
+            <category>效能</category>
+            <pubDate>Thu, 15 Oct 2020 15:46:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;最近發現 VM 和遠端主機的使用空間都太大了，找到一些相關處理方法&lt;/p&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+
+&lt;h2 id=&#34;硬碟用量&#34;&gt;&lt;a href=&#34;#硬碟用量&#34; class=&#34;headerlink&#34; title=&#34;硬碟用量&#34;&gt;&lt;/a&gt;硬碟用量&lt;/h2&gt;&lt;h3 id=&#34;檢查&#34;&gt;&lt;a href=&#34;#檢查&#34; class=&#34;headerlink&#34; title=&#34;檢查&#34;&gt;&lt;/a&gt;檢查&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;df -h&lt;/code&gt; 查看磁碟使用情形&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;df -i&lt;/code&gt; 檢查inode使用情形&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;du -sh&lt;/code&gt; 查看各資料夾用量&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;du -sh * | sort -nr&lt;/code&gt; 依序列出大檔案&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ls -a&lt;/code&gt; 顯示隱藏檔案(&lt;code&gt;.&lt;/code&gt;開頭的檔案)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dpkg-query -Wf &amp;#39;${Installed-Size}\t${Package}\n&amp;#39; | sort -n&lt;/code&gt; 顯示已安裝的的大package&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;wajig large&lt;/code&gt;&lt;!--  /lib/modules/&lt;kernel_release&gt;/extra/ --&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;apt&#34;&gt;&lt;a href=&#34;#apt&#34; class=&#34;headerlink&#34; title=&#34;apt&#34;&gt;&lt;/a&gt;apt&lt;/h3&gt;&lt;figure class=&#34;highlight dsconfig&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;string&#34;&gt;sudo &lt;/span&gt;&lt;span class=&#34;string&#34;&gt;apt &lt;/span&gt;&lt;span class=&#34;string&#34;&gt;autoremove&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;string&#34;&gt;sudo &lt;/span&gt;&lt;span class=&#34;string&#34;&gt;apt &lt;/span&gt;&lt;span class=&#34;string&#34;&gt;autoremove &lt;/span&gt;&lt;span class=&#34;built_in&#34;&gt;--purge&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# remove old kernels&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;string&#34;&gt;sudo &lt;/span&gt;&lt;span class=&#34;string&#34;&gt;apt &lt;/span&gt;&lt;span class=&#34;string&#34;&gt;clean &lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;# 清除 apt 快取&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&#34;git&#34;&gt;&lt;a href=&#34;#git&#34; class=&#34;headerlink&#34; title=&#34;git&#34;&gt;&lt;/a&gt;git&lt;/h3&gt;&lt;p&gt;&lt;code&gt;git gc --aggressive --prune=all&lt;/code&gt; 清理並壓縮 history&lt;/p&gt;
+&lt;h3 id=&#34;docker&#34;&gt;&lt;a href=&#34;#docker&#34; class=&#34;headerlink&#34; title=&#34;docker&#34;&gt;&lt;/a&gt;docker&lt;/h3&gt;&lt;p&gt;&lt;code&gt;docker builder prune&lt;/code&gt; 移除沒在使用的build&lt;/p&gt;
+&lt;h2 id=&#34;記憶體用量&#34;&gt;&lt;a href=&#34;#記憶體用量&#34; class=&#34;headerlink&#34; title=&#34;記憶體用量&#34;&gt;&lt;/a&gt;記憶體用量&lt;/h2&gt;&lt;h3 id=&#34;檢查-1&#34;&gt;&lt;a href=&#34;#檢查-1&#34; class=&#34;headerlink&#34; title=&#34;檢查&#34;&gt;&lt;/a&gt;檢查&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;free&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;硬碟容量換記憶體容量&#34;&gt;&lt;a href=&#34;#硬碟容量換記憶體容量&#34; class=&#34;headerlink&#34; title=&#34;硬碟容量換記憶體容量&#34;&gt;&lt;/a&gt;硬碟容量換記憶體容量&lt;/h3&gt;&lt;p&gt;當然，會比較慢&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cub3BlbmNsaS5jb20vbGludXgvbGludXgtYWRkLXN3YXA=&#34;&gt;使用 swap&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;CPU-用量&#34;&gt;&lt;a href=&#34;#CPU-用量&#34; class=&#34;headerlink&#34; title=&#34;CPU 用量&#34;&gt;&lt;/a&gt;CPU 用量&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;各process用量&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;top&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;htop&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;kill &amp;lt;pid&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

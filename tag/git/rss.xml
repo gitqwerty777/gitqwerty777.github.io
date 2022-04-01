@@ -1,0 +1,752 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>QWERTY • Posts by &#34;git&#34; tag</title>
+        <link>http://gitqwerty777.github.io</link>
+        <description>Programming | Computer Science | Thought</description>
+        <language>zh-TW</language>
+        <pubDate>Sun, 19 Jul 2015 14:03:11 +0800</pubDate>
+        <lastBuildDate>Sun, 19 Jul 2015 14:03:11 +0800</lastBuildDate>
+        <category>C#</category>
+        <category>CodingStyle</category>
+        <category>Emacs</category>
+        <category>編輯器</category>
+        <category>CFR</category>
+        <category>電腦對局理論</category>
+        <category>指令</category>
+        <category>機器學習</category>
+        <category>perceptron</category>
+        <category>readme</category>
+        <category>文件</category>
+        <category>github</category>
+        <category>artificial intelligence</category>
+        <category>search</category>
+        <category>First-Order Logic</category>
+        <category>大數</category>
+        <category>程式</category>
+        <category>C++</category>
+        <category>Hexo</category>
+        <category>網誌</category>
+        <category>Markdown</category>
+        <category>CleanCode</category>
+        <category>重構</category>
+        <category>TDD</category>
+        <category>設計模式</category>
+        <category>CMake</category>
+        <category>Makefile</category>
+        <category>Linux</category>
+        <category>Todo</category>
+        <category>註解</category>
+        <category>經濟學</category>
+        <category>策略</category>
+        <category>競爭</category>
+        <category>博弈論</category>
+        <category>計算機結構</category>
+        <category>人工智慧</category>
+        <category>圍棋</category>
+        <category>象棋</category>
+        <category>蒙地卡羅</category>
+        <category>Alpha-Beta搜尋</category>
+        <category>強化學習</category>
+        <category>計算機網路</category>
+        <category>boost</category>
+        <category>函式庫</category>
+        <category>編譯</category>
+        <category>gcc</category>
+        <category>g++</category>
+        <category>clang</category>
+        <category>最佳化</category>
+        <category>推薦系統</category>
+        <category>FM</category>
+        <category>FFM</category>
+        <category>SVM</category>
+        <category>Embedding</category>
+        <category>自然語言處理</category>
+        <category>外國用語</category>
+        <category>萌典</category>
+        <category>opencc</category>
+        <category>PTT</category>
+        <category>vuejs</category>
+        <category>linux</category>
+        <category>c</category>
+        <category>compile</category>
+        <category>gdb</category>
+        <category>c語言</category>
+        <category>cpp</category>
+        <category>除錯</category>
+        <category>git</category>
+        <category>VMWare</category>
+        <category>虛擬機</category>
+        <category>IFTTT</category>
+        <category>自動化</category>
+        <category>備份</category>
+        <category>webhook</category>
+        <category>簡報</category>
+        <category>軟體</category>
+        <category>PowerPoint</category>
+        <category>Latex</category>
+        <category>JavaScript</category>
+        <category>CSS</category>
+        <category>Unity</category>
+        <category>fcitx</category>
+        <category>嘸蝦米</category>
+        <category>輸入法</category>
+        <category>硬碟</category>
+        <category>記憶體</category>
+        <category>效能</category>
+        <category>錯誤</category>
+        <category>makefile</category>
+        <category>備忘錄</category>
+        <category>存檔</category>
+        <category>統計</category>
+        <category>byobu</category>
+        <category>screen</category>
+        <category>tmux</category>
+        <category>reactjs</category>
+        <category>javascript</category>
+        <category>WideAndDeep</category>
+        <category>Google</category>
+        <category>觀察者</category>
+        <category>訂閱</category>
+        <category>委託</category>
+        <category>正規表示式(RegExp)</category>
+        <category>上下文無關文法(CFG)</category>
+        <category>hexo</category>
+        <category>blog</category>
+        <category>theme</category>
+        <category>feature</category>
+        <category>revealJS</category>
+        <category>markdown</category>
+        <category>rss</category>
+        <category>facebook</category>
+        <category>youtube</category>
+        <category>ptt</category>
+        <category>bilibili</category>
+        <category>pixiv</category>
+        <category>crawler</category>
+        <category>SEO</category>
+        <category>google</category>
+        <category>html</category>
+        <category>amazon</category>
+        <category>webhost</category>
+        <category>ssl</category>
+        <category>漢字</category>
+        <category>中文</category>
+        <category>異體字</category>
+        <category>unicode</category>
+        <category>unity</category>
+        <category>演算法</category>
+        <category>隨機排序</category>
+        <category>洗牌</category>
+        <category>Fisher-Yates</category>
+        <category>證明</category>
+        <category>python</category>
+        <item>
+            <guid isPermalink="true">http://gitqwerty777.github.io/git-introduction/</guid>
+            <title>Git觀念</title>
+            <link>http://gitqwerty777.github.io/git-introduction/</link>
+            <category>git</category>
+            <pubDate>Sun, 19 Jul 2015 14:03:11 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;Git的特點&#34;&gt;&lt;a href=&#34;#Git的特點&#34; class=&#34;headerlink&#34; title=&#34;Git的特點&#34;&gt;&lt;/a&gt;Git的特點&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;分散式開發&lt;ul&gt;
+&lt;li&gt;每個人都有完整的容器，各自獨立&lt;/li&gt;
+&lt;li&gt;不需要中央管理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;非擠壓合併&lt;ul&gt;
+&lt;li&gt;合併後仍包含所有被合併分支的記錄&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git merge/pull --squash&lt;/code&gt; 強迫擠壓&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+
+&lt;p&gt;&lt;img data-src=&#34;https://image.slidesharecdn.com/git-getreadytouseit-140228043813-phpapp02/95/git-get-ready-to-use-it-5-638.jpg?cb=1393562489&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;Git安裝&#34;&gt;&lt;a href=&#34;#Git安裝&#34; class=&#34;headerlink&#34; title=&#34;Git安裝&#34;&gt;&lt;/a&gt;Git安裝&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Debian/Ubuntu: 主要: &lt;code&gt;git-core&lt;/code&gt; 和 &lt;code&gt;git-doc&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;選擇性: &lt;code&gt;git-gui&lt;/code&gt;, &lt;code&gt;gitk&lt;/code&gt;(圖形化), &lt;code&gt;gitweb&lt;/code&gt; …&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Windows: &lt;code&gt;Cygwin&lt;/code&gt;, &lt;code&gt;msysGit&lt;/code&gt;, &lt;code&gt;github on windows&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Git常用名稱&#34;&gt;&lt;a href=&#34;#Git常用名稱&#34; class=&#34;headerlink&#34; title=&#34;Git常用名稱&#34;&gt;&lt;/a&gt;Git常用名稱&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;origin： 遠端(remote) Repository 的別稱，預設即為origin/master分支&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git clone&lt;/code&gt;的時候會自動設定origin&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;master： 本地(local) Repository 的 master分支&lt;ul&gt;
+&lt;li&gt;名為master的分支通常是專案中的主要分支&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;HEAD&lt;ul&gt;
+&lt;li&gt;目前分支的最新一個提交&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;相對名稱&lt;ul&gt;
+&lt;li&gt;HEAD/HEAD^/HEAD^^/HEAD~4&lt;ul&gt;
+&lt;li&gt;代表目前版本/前一版/前二版/前四版的提交&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;HEAD^1/HEAD^2/ …&lt;ul&gt;
+&lt;li&gt;代表第一個父提交，第二個父提交 ……&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;A…B&lt;ul&gt;
+&lt;li&gt;A和B的相對差異&lt;/li&gt;
+&lt;li&gt;列出A和B的祖先，直到A和B的分歧點&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git rev-parse HEAD&lt;/code&gt;: 取得代稱(HEAD^, HEAD~1, tag)的辨識碼&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;ORIG_HEAD：合併或重設前的HEAD&lt;/li&gt;
+&lt;li&gt;FETCH_HEAD：fetch所抓取的HEAD&lt;/li&gt;
+&lt;li&gt;MERGE_HEAD：合併時，另一個分支的HEAD&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;設定檔&#34;&gt;&lt;a href=&#34;#設定檔&#34; class=&#34;headerlink&#34; title=&#34;設定檔&#34;&gt;&lt;/a&gt;設定檔&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;容器的設定檔 &lt;code&gt;.git/config&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;使用者的設定檔 &lt;code&gt;~/.gitconfig&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;全系統的設定檔 &lt;code&gt;/etc/gitconfig&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;優先級： 1 &amp;gt; 2 &amp;gt; 3&lt;/p&gt;
+&lt;h2 id=&#34;Git資料結構&#34;&gt;&lt;a href=&#34;#Git資料結構&#34; class=&#34;headerlink&#34; title=&#34;Git資料結構&#34;&gt;&lt;/a&gt;Git資料結構&lt;/h2&gt;&lt;p&gt;Index 和 Data:[Blobs, Tree, Commits, Tags]&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Data&lt;ul&gt;
+&lt;li&gt;Blob(binary large object): 檔案本身&lt;ul&gt;
+&lt;li&gt;新增檔案時，看的是檔案的sha1，而不是檔名&lt;ul&gt;
+&lt;li&gt;若有兩個檔案sha1相同，則git只會有一份blob&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;打包機制(pack file)：找內容相似的檔案，只儲存一份+差異的部分&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Tree: 目錄資訊，指向Blobs&lt;ul&gt;
+&lt;li&gt;記錄Blob的辨識碼，檔案的資訊(如檔名)，子Tree(子資料夾)等&lt;/li&gt;
+&lt;li&gt;Git可以用Tree快速產生兩個版本間的差異&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Commit: 更動資訊，新的Commit會指向前一個Commit&lt;ul&gt;
+&lt;li&gt;包含作者，時間，commit對應的目錄(Tree)，commit message&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Tag: 記錄commit的別名&lt;ul&gt;
+&lt;li&gt;lightweight tag&lt;ul&gt;
+&lt;li&gt;容器私有的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;annotated tag&lt;ul&gt;
+&lt;li&gt;正式的tag，以物件方向儲存&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Index&lt;ul&gt;
+&lt;li&gt;即為Staging area(暫存區)&lt;/li&gt;
+&lt;li&gt;可視為一顆Tree，在&lt;code&gt;git add&lt;/code&gt;之後就將新檔案加入Tree中&lt;/li&gt;
+&lt;li&gt;commit時，commit的Tree就是目前的index&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;版本和Tag都是指標，指向某個commit &lt;img data-src=&#34;/img/Other/artist-test.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;分支&#34;&gt;&lt;a href=&#34;#分支&#34; class=&#34;headerlink&#34; title=&#34;分支&#34;&gt;&lt;/a&gt;分支&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;可視為指向某個commit的指標&lt;/li&gt;
+&lt;li&gt;切換的時候工作目錄(容器所在的資料夾)會被改變&lt;/li&gt;
+&lt;li&gt;用途&lt;ul&gt;
+&lt;li&gt;分隔 測試、開發、穩定的版本&lt;pre&gt;&lt;code&gt;- debug分支
+- feature分支&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;命名時可以分層&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;bug/...&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;release/...&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;開發時用branch(pointer)，完成後可用tag取代(const pointer)&lt;/li&gt;
+&lt;li&gt;分支是local的資訊&lt;ul&gt;
+&lt;li&gt;平常上傳只會將目前的HEAD和遠端分支的HEAD同步&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;分支種類&#34;&gt;&lt;a href=&#34;#分支種類&#34; class=&#34;headerlink&#34; title=&#34;分支種類&#34;&gt;&lt;/a&gt;分支種類&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;唯讀&lt;ul&gt;
+&lt;li&gt;遠端追蹤分支：蒐集遠端每個分支的變更&lt;/li&gt;
+&lt;li&gt;本地追蹤分支：蒐集本地分支和遠端追蹤分支的變更&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;本地分支：即平常使用的分支&lt;/li&gt;
+&lt;li&gt;遠端分支&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;合併&#34;&gt;&lt;a href=&#34;#合併&#34; class=&#34;headerlink&#34; title=&#34;合併&#34;&gt;&lt;/a&gt;合併&lt;/h2&gt;&lt;p&gt;每次提交和合併的時間間隔愈短，每次的衝突愈少，愈容易實作。&lt;/p&gt;
+&lt;p&gt;同一條線上的合併  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;不會有新提交，只會移動branch指標&lt;/li&gt;
+&lt;li&gt;目前版本比被合併版本新 → Already up to date&lt;/li&gt;
+&lt;li&gt;目前版本比被合併版本舊 → fast-forward(快轉)&lt;ul&gt;
+&lt;li&gt;將目前版本移動到被合併版本的HEAD&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;git只允許fast-forward的push&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;正常的合併&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Resolve(直觀的方法)&lt;ul&gt;
+&lt;li&gt;只能用在兩個分支的合併&lt;/li&gt;
+&lt;li&gt;以共同的祖先為基礎，套用被合併版本的變更到目前版本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Recursive(預設方法)&lt;ul&gt;
+&lt;li&gt;只能用在兩個分支的合併&lt;/li&gt;
+&lt;li&gt;兩個版本有多個共同祖先的時候，先將所有祖先合併成一個暫時性的版本，再以此版本為基礎用Resolve方法&lt;ul&gt;
+&lt;li&gt;在多個祖先合併時可能也有相同的問題，此時用同方法遞迴&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Octopus&lt;ul&gt;
+&lt;li&gt;多次呼叫Recursive，每次處理一個分支&lt;/li&gt;
+&lt;li&gt;可用在多分支的合併&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;特殊合併 &lt;!-- investigate further --&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ours&lt;ul&gt;
+&lt;li&gt;合併時只採用現在版本的變更&lt;pre&gt;&lt;code&gt;- 但留下歷史記錄(即其他版本的樹仍存在於父節點)&lt;/code&gt;&lt;/pre&gt;  &lt;img data-src=&#34;https://image.slidesharecdn.com/paolucci-git-power-routines-150722082712-lva1-app6891/95/git-power-routines-30-638.jpg?cb=1437553811&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;li&gt;通常用於&lt;ul&gt;
+&lt;li&gt;已經有其他版本的變更時&lt;/li&gt;
+&lt;li&gt;只想要別人的歷史記錄，不想要其他人的變更&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;修改提交&#34;&gt;&lt;a href=&#34;#修改提交&#34; class=&#34;headerlink&#34; title=&#34;修改提交&#34;&gt;&lt;/a&gt;修改提交&lt;/h2&gt;&lt;p&gt;理由&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;大小適當&lt;ul&gt;
+&lt;li&gt;將大範圍的提交拆解成小的，有主題的變更&lt;/li&gt;
+&lt;li&gt;結合相似的變更成為一個大的提交&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;步驟分明&lt;ul&gt;
+&lt;li&gt;排序使其更合理&lt;/li&gt;
+&lt;li&gt;移除不必要的提交&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;註：需要在其他開發者取得你的repository之前(git push之前)，以避免歷史不同步&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;方法  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git rebase&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;回復-git-reset&#34;&gt;&lt;a href=&#34;#回復-git-reset&#34; class=&#34;headerlink&#34; title=&#34;回復(git reset)&#34;&gt;&lt;/a&gt;回復(git reset)&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;–soft: 將HEAD還原至指定commit&lt;/li&gt;
+&lt;li&gt;–mixed: 將HEAD和Index(staging area)還原至指定commit，工作目錄不變&lt;/li&gt;
+&lt;li&gt;–hard: 將HEAD和Index和工作目錄還原至指定commit&lt;/li&gt;
+&lt;li&gt;被取代的HEAD會放在ORIG_HEAD&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git reset [--soft/mixed/hard] [commit] &lt;span class=&#34;comment&#34;&gt;# default is mixed&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 變更上一次的提交&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git reset HEAD^ &lt;span class=&#34;comment&#34;&gt;# 此時上一次的提交已經不存在，但是工作目錄中的資料相同&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# do some modification&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git commit &lt;span class=&#34;comment&#34;&gt;# 會覆蓋上一次的commit&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;通常用於清除錯誤&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;cherry-pick&lt;ul&gt;
+&lt;li&gt;拿取指定commit到目前分支&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git cherry-pick [commit]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;使用時機&lt;ul&gt;
+&lt;li&gt;若有多個branch都找到相同的bug，可以在每個branch都cherry-pick debug的commit&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git checkout release&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git cherry-pick develop~2 &lt;span class=&#34;comment&#34;&gt;# get debug commit from develop branch&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;將某個分支的commit移植到另一個branch&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# in develop: W → X → Y → Z&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git checkout master&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git cherry-pick develop^ &lt;span class=&#34;comment&#34;&gt;# Y&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git cherry-pick develop~3 &lt;span class=&#34;comment&#34;&gt;# W&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git cherry-pick develop~2 &lt;span class=&#34;comment&#34;&gt;# X&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git cherry-pick develop &lt;span class=&#34;comment&#34;&gt;# Z&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# alternative&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git cherry-pick develop^3..develop&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;如果要合併多個，可以加上 -n 指令就不會先幫你 commit，這樣可以多選幾個要合併的commit，最後再 git commit即可 &lt;!-- ??? --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;容器&#34;&gt;&lt;a href=&#34;#容器&#34; class=&#34;headerlink&#34; title=&#34;容器&#34;&gt;&lt;/a&gt;容器&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;裸容器(bare)&lt;ul&gt;
+&lt;li&gt;沒有工作目錄、目前分支&lt;/li&gt;
+&lt;li&gt;其他人可以用clone及fetch取得資料，push更新&lt;/li&gt;
+&lt;li&gt;如github&lt;/li&gt;
+&lt;li&gt;產生: &lt;code&gt;git init --bare&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;開發容器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;建立備份&#34;&gt;&lt;a href=&#34;#建立備份&#34; class=&#34;headerlink&#34; title=&#34;建立備份&#34;&gt;&lt;/a&gt;建立備份&lt;/h2&gt;&lt;p&gt;自行建立裸容器，並加入remote，即可push, pull了&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# assume mygitrepository is already a git repository&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cd&lt;/span&gt; /tmp/Backup &lt;span class=&#34;comment&#34;&gt;# for example, you may want to put on server&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git &lt;span class=&#34;built_in&#34;&gt;clone&lt;/span&gt; --bare mygitrepository mygitrepository.git &lt;span class=&#34;comment&#34;&gt;# create bare repository&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# backup repository often use .git suffix&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cd&lt;/span&gt; mygitrepository&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git remote add origin /tmp/Backup/mygitrepository&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# can use other name to replace &#34;origin&#34;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git remote update &lt;span class=&#34;comment&#34;&gt;# 建立遠端追蹤分支(update remote information)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;!--try it at workstation--&gt;
+
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;ssh myhost.com &lt;span class=&#34;comment&#34;&gt;# build it on server&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cd&lt;/span&gt; /git&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;mkdir newrepo.git&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cd&lt;/span&gt; newrepo.git&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git init --shared --bare&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;Git-tag&#34;&gt;&lt;a href=&#34;#Git-tag&#34; class=&#34;headerlink&#34; title=&#34;Git tag&#34;&gt;&lt;/a&gt;Git tag&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;輕量級(lightweight)&lt;ul&gt;
+&lt;li&gt;像是沒有更動的分支&lt;/li&gt;
+&lt;li&gt;指到特定commit的指標&lt;/li&gt;
+&lt;li&gt;臨時加註標籤&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git tag [tagname] [commit]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;含附註(annotated)&lt;ul&gt;
+&lt;li&gt;實際存在Git資料庫上的完整物件&lt;/li&gt;
+&lt;li&gt;具備檢查碼、e-mail和日期，也包含標籤訊息&lt;/li&gt;
+&lt;li&gt;可以被GNU Privacy Guard (GPG)簽署和驗證&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git tag -a [tagname] -m [tag message]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git tag -a [tagname] [commit]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;顯示詳細資訊: &lt;code&gt;git show [tagname]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git push&lt;/code&gt;指令並不會將標籤傳到遠端伺服器上。必須透過&lt;code&gt;git push origin [tagname]&lt;/code&gt;指令&lt;ul&gt;
+&lt;li&gt;push 所有標籤: &lt;code&gt;git push origin --tags&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Git-Submodule&#34;&gt;&lt;a href=&#34;#Git-Submodule&#34; class=&#34;headerlink&#34; title=&#34;Git Submodule&#34;&gt;&lt;/a&gt;Git Submodule&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;新增 submodule&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git submodule add [repository path] [local path]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;產生 &lt;code&gt;.gitmodules&lt;/code&gt; 文件。這是一個設定檔，保存了專案 URL 和你拉取到的本地子目錄&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git clone&lt;/code&gt;後，submodule並不會一起下載，需要自己更新&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git submodule init&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;根據 &lt;code&gt;.gitmodules&lt;/code&gt; 的名稱和 URL，將這些資訊註冊到 &lt;code&gt;.git/config&lt;/code&gt; 內&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;更新submodule &lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git submodule update&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;根據已註冊（也就是 &lt;code&gt;.git/config&lt;/code&gt; ）的 submodule 進行更新，例如 clone 遺失的 submodule，所以執行這個指令前最好加上 –init&lt;/li&gt;
+&lt;li&gt;update並不一定是submodule的最新版，而是在主repository的目前版本中，submodule所在的版本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;將submodule更新到最新版&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git submodule foreach --recursive git pull origin master&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git submodule sync&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;如果 submodule 的 remote URL 有變動，可以在 &lt;code&gt;.gitmodules&lt;/code&gt; 修正 URL，然後執行這個指令，便會將 submodule 的 remote URL 更正。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Git-Server-Hosting&#34;&gt;&lt;a href=&#34;#Git-Server-Hosting&#34; class=&#34;headerlink&#34; title=&#34;Git Server Hosting&#34;&gt;&lt;/a&gt;Git Server Hosting&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;gitlab&lt;ul&gt;
+&lt;li&gt;功能齊全&lt;/li&gt;
+&lt;li&gt;需要登入&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;cgit&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXQuengyYzQuY29tL2NnaXQvYWJvdXQv&#34;&gt;cgit主網站&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;需開啟cgi功能&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;./cgit.cgi&lt;/code&gt; 可觀看產生的html&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;安裝成功後在&lt;code&gt;/etc/cgitrc&lt;/code&gt;中修改設定，否則404&lt;/li&gt;
+&lt;li&gt;參考&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2xhbnR3NDQvY29uZmlnZmlsZS9ibG9iL21hc3Rlci9jZ2l0L2NnaXRyYw==&#34;&gt;lantw44的設定檔&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZWxwLmdpdGh1Yi5jb20vYXJ0aWNsZXMvZHVwbGljYXRpbmctYS1yZXBvc2l0b3J5Lw==&#34;&gt;複製git裸容器&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jaHJpc2Rvd24ubmFtZS8yMDEzLzA3LzA1L3NldHRpbmctdXAtbG9jYWwtZ2l0aHViLW1pcnJvci13aXRoLWNnaXQtZ2l0LWRhZW1vbi5odG1s&#34;&gt;快速複製github中的repository&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2xpbnV4LmRpZS5uZXQvbWFuLzUvY2dpdHJj&#34;&gt;cgitrc詳細設定&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;其他工具&#34;&gt;&lt;a href=&#34;#其他工具&#34; class=&#34;headerlink&#34; title=&#34;其他工具&#34;&gt;&lt;/a&gt;其他工具&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;gitstats&lt;ul&gt;
+&lt;li&gt;產生容器的分析資料&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Reference&#34;&gt;&lt;a href=&#34;#Reference&#34; class=&#34;headerlink&#34; title=&#34;Reference&#34;&gt;&lt;/a&gt;Reference&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXQtc2NtLmNvbS9ib29rL3poLXR3L3YxL0dpdC3ln7rnpI4t5qiZ57Gk&#34;&gt;Git-基礎-標籤&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5ib29rcy5jb20udHcvcHJvZHVjdHMvMDAxMDU3NDA5MA==&#34;&gt;版本控制：使用Git&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9paG93ZXIudHcvYmxvZy9hcmNoaXZlcy81NDM2&#34;&gt;git 設定集&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kb3RibG9ncy5jb20udHcvaGF0ZWxvdmUvYXJjaGl2ZS8yMDExLzEyLzI1L2ludHJvZHVjaW5nLWNvbnRpbnVvdXMtaW50ZWdyYXRpb24uYXNweA==&#34;&gt;https://dotblogs.com.tw/hatelove/archive/2011/12/25/introducing-continuous-integration.aspx&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuc2xpZGVzaGFyZS5uZXQvb3JpZ2FtaWFkZGljdC9naXQtZ2V0LXJlYWR5LXRvLXVzZS1pdA==&#34;&gt;git: get ready to use it&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2Jsb2cuY2hoLnR3L3Bvc3RzL2dpdC1zdWJtb2R1bGUv&#34;&gt;Git Submodule 用法筆記&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXQtc2NtLmNvbS9ib29rL3poLXR3L3YxL0dpdC0lRTUlQjclQTUlRTUlODUlQjctJUU1JUFEJTkwJUU2JUE4JUExJUU3JUI1JTg0LVN1Ym1vZHVsZXM=&#34;&gt;Git 工具 - 子模組 (Submodules)&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://gitqwerty777.github.io/git-commands/</guid>
+            <title>Git常用指令</title>
+            <link>http://gitqwerty777.github.io/git-commands/</link>
+            <category>指令</category>
+            <category>git</category>
+            <pubDate>Tue, 16 Sep 2014 17:14:44 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;主要參考此書：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5ib29rcy5jb20udHcvcHJvZHVjdHMvMDAxMDU3NDA5MA==&#34;&gt;版本控制：使用Git&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;建議初學者先看&lt;a href=&#34;/git-introduction&#34;&gt;git觀念&lt;/a&gt;及此篇的第一段&lt;/p&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+
+&lt;h2 id=&#34;Git基本觀念&#34;&gt;&lt;a href=&#34;#Git基本觀念&#34; class=&#34;headerlink&#34; title=&#34;Git基本觀念&#34;&gt;&lt;/a&gt;Git基本觀念&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;檔案階段&lt;/th&gt;
+&lt;th&gt;檔案所在位置&lt;/th&gt;
+&lt;th&gt;說明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;已修改&lt;/td&gt;
+&lt;td&gt;Working Directory(工作目錄)&lt;/td&gt;
+&lt;td&gt;經過修改的檔案&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;已暫存&lt;/td&gt;
+&lt;td&gt;Staging area(暫存區)&lt;/td&gt;
+&lt;td&gt;要提交的變動清單&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;已提交&lt;/td&gt;
+&lt;td&gt;Repository(容器)&lt;/td&gt;
+&lt;td&gt;已提交的檔案及變動記錄&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://image.slidesharecdn.com/git-getreadytouseit-140228043813-phpapp02/95/git-get-ready-to-use-it-5-638.jpg?cb=1393562489&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;其他檔案階段&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;被忽略：在名為&lt;code&gt;.gitignore&lt;/code&gt;的檔案中修改想忽略的檔案，如暫存檔、log、或編譯後的object file、筆記&lt;ul&gt;
+&lt;li&gt;每個目錄都可以有自己的&lt;code&gt;.gitignore&lt;/code&gt;檔，以較接近檔案的目錄為準&lt;/li&gt;
+&lt;li&gt;可以用&lt;code&gt;git add -f&lt;/code&gt;強制將被忽略的檔案加入暫存區&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;觀看檔案的狀態: &lt;code&gt;git status&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;已修改: &lt;code&gt;Changes not staged for commit&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;已暫存: &lt;code&gt;Changes to be committed&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;已提交: 不顯示&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;基本流程: 修改檔案 → 將修改的檔案加入 Staging area (&lt;code&gt;git add&lt;/code&gt;) → 提交變更 (&lt;code&gt;git commit&lt;/code&gt;) → 繼續修改檔案(循環)&lt;/p&gt;
+&lt;p&gt;若要和他人共用，要在線上容器和本機容器間進行同步(&lt;code&gt;git push&lt;/code&gt;, &lt;code&gt;git pull&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;提交(commit，也稱送交)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;版本和容器變動的最小單位&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;一個commit = 一個版本&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;git 中的 &lt;code&gt;HEAD&lt;/code&gt; 等於目前所在的版本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;不一定所有檔案都要提交&lt;ul&gt;
+&lt;li&gt;只有加入Staging area的檔案會被提交&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;提交時機&lt;ul&gt;
+&lt;li&gt;程式處於穩定狀態&lt;ul&gt;
+&lt;li&gt;可以正確執行&lt;/li&gt;
+&lt;li&gt;測試完成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;以時間為單位&lt;ul&gt;
+&lt;li&gt;結束一天的工作前&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;辨識碼&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;所有物件都有一個獨特的辨識碼&lt;ul&gt;
+&lt;li&gt;包含commit, tag, 文件…都有辨識碼&lt;ul&gt;
+&lt;li&gt;其值為物件的SHA1 hash&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;下述指令的&lt;code&gt;[commit]&lt;/code&gt;即為識別碼&lt;ul&gt;
+&lt;li&gt;在沒有重覆的情況下，可取前幾碼代表該物件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;設定&#34;&gt;&lt;a href=&#34;#設定&#34; class=&#34;headerlink&#34; title=&#34;設定&#34;&gt;&lt;/a&gt;設定&lt;/h3&gt;&lt;p&gt;先設定自己的名字與信箱，因為git用名字與信箱來分辨作者&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 若不加 --global 則設定只會在該容器生效&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 設定使用者名稱(加上引號)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git config --global user.name &lt;span class=&#34;string&#34;&gt;&#34;First Last&#34;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 設定使用者電子郵件(加上引號)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git config --global user.email &lt;span class=&#34;string&#34;&gt;&#34;user@example.com&#34;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 開啟顏色，使git內容不會只有單一白色&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git config --global color.ui &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 設定預設編輯器(提交時會用到)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git config --global core.editor &lt;span class=&#34;string&#34;&gt;&#34;emacs&#34;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 設定指令的縮寫(將git st設為git status的簡寫)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git config --global alias.st status&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 列出所有設定值&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git config -l&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;設定預設提交格式&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 方法1. 直接設定&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git config --global commit.template &lt;span class=&#34;variable&#34;&gt;$HOME&lt;/span&gt;/.git-template&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 方法2. 在 .gitconfig 中設定&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[commit]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;template = /home/frank/.git-template&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;實作範例&#34;&gt;&lt;a href=&#34;#實作範例&#34; class=&#34;headerlink&#34; title=&#34;實作範例&#34;&gt;&lt;/a&gt;實作範例&lt;/h3&gt;&lt;p&gt;初始化一個專案&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git init &lt;span class=&#34;comment&#34;&gt;# 初始化，使當前目錄成為git的容器&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;touch README.md &lt;span class=&#34;comment&#34;&gt;# 加上專案的說明文件(非必要)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git add README.md &lt;span class=&#34;comment&#34;&gt;# 將說明文件加入暫存區&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git commit -m &lt;span class=&#34;string&#34;&gt;&#34;initial commit&#34;&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# 提交變更&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;將本地的容器上傳到遠端(如github)的容器&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git remote add origin &amp;lt;URL&amp;gt; &lt;span class=&#34;comment&#34;&gt;# 將遠端容器命名為origin&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git push -u origin master &lt;span class=&#34;comment&#34;&gt;# 從本地端的master branch上傳到origin的master branch&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;本篇：Git常用指令&#34;&gt;&lt;a href=&#34;#本篇：Git常用指令&#34; class=&#34;headerlink&#34; title=&#34;本篇：Git常用指令&#34;&gt;&lt;/a&gt;本篇：Git常用指令&lt;/h2&gt;&lt;h3 id=&#34;Git檔案操作&#34;&gt;&lt;a href=&#34;#Git檔案操作&#34; class=&#34;headerlink&#34; title=&#34;Git檔案操作&#34;&gt;&lt;/a&gt;Git檔案操作&lt;/h3&gt;&lt;h4 id=&#34;加入暫存區-add&#34;&gt;&lt;a href=&#34;#加入暫存區-add&#34; class=&#34;headerlink&#34; title=&#34;加入暫存區: add&#34;&gt;&lt;/a&gt;加入暫存區: add&lt;/h4&gt;&lt;p&gt;&lt;code&gt;git add&lt;/code&gt;：將檔案加入暫存區(staging area)&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git add -i &lt;span class=&#34;comment&#34;&gt;# 進入互動模式(推薦)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git add [filename] &lt;span class=&#34;comment&#34;&gt;# 將檔案加入staging area&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git add -u &lt;span class=&#34;comment&#34;&gt;# 只把「修改/刪除」的檔案加入staging area，「新增」的檔案不加入&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git add -p &lt;span class=&#34;comment&#34;&gt;# 部分暫存：git會詢問哪些檔，然後逐個顯示被選中檔案的每一個差異部分，&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 並詢問你是否希望暫存他們。(= git add --patch)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git add -A &lt;span class=&#34;comment&#34;&gt;# stages All&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git add .  &lt;span class=&#34;comment&#34;&gt;# stages new and modified, without deleted&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL3F1ZXN0aW9ucy81NzI1NDkvZGlmZmVyZW5jZS1iZXR3ZWVuLWdpdC1hZGQtYS1hbmQtZ2l0LWFkZA==&#34;&gt;參考資料&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;直接刪除/移動不會影響容器中的檔案，因為這項變動沒有告知git&lt;br&gt;若要在下一個版本刪除或移動檔案，需要用&lt;code&gt;git rm&lt;/code&gt;或&lt;code&gt;git mv&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git rm [filename] &lt;span class=&#34;comment&#34;&gt;# 在下一個版本移除，並實際刪除檔案&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git rm --cache [filename] &lt;span class=&#34;comment&#34;&gt;# 在下一個版本移除，但不實際刪除檔案&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git mv [filename] [new-filename] &lt;span class=&#34;comment&#34;&gt;# 改名、搬移檔案，並將變動加入staging area&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h4 id=&#34;checkout&#34;&gt;&lt;a href=&#34;#checkout&#34; class=&#34;headerlink&#34; title=&#34;checkout&#34;&gt;&lt;/a&gt;checkout&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;使檔案還原到指定提交時的版本&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;發現檔案改錯，用&lt;code&gt;git checkout filename&lt;/code&gt;把檔案還原到最近的版本&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git checkout [commit] filename&lt;/code&gt; 檔案會被還原到指定的commit時的版本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Git更新版本&#34;&gt;&lt;a href=&#34;#Git更新版本&#34; class=&#34;headerlink&#34; title=&#34;Git更新版本&#34;&gt;&lt;/a&gt;Git更新版本&lt;/h3&gt;&lt;h4 id=&#34;提交新版本-commit&#34;&gt;&lt;a href=&#34;#提交新版本-commit&#34; class=&#34;headerlink&#34; title=&#34;提交新版本(commit)&#34;&gt;&lt;/a&gt;提交新版本(commit)&lt;/h4&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git commit &lt;span class=&#34;comment&#34;&gt;# 會跳出編輯器，此時可編輯提交訊息&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git commit -m &lt;span class=&#34;string&#34;&gt;&#39;commit message&#39;&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# 直接提交並指定提交訊息&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git commit -a &lt;span class=&#34;comment&#34;&gt;# 將所有修改過的檔案直接 commit(跳過add步驟), 不包含新增的檔案&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h4 id=&#34;存取遠端容器-push-pull&#34;&gt;&lt;a href=&#34;#存取遠端容器-push-pull&#34; class=&#34;headerlink&#34; title=&#34;存取遠端容器: push, pull&#34;&gt;&lt;/a&gt;存取遠端容器: push, pull&lt;/h4&gt;&lt;p&gt;遠端的repository名稱通常取名為&lt;code&gt;origin&lt;/code&gt;&lt;br&gt;&lt;code&gt;push&lt;/code&gt;: 上傳, &lt;code&gt;pull&lt;/code&gt;: 下載&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git remote show &lt;span class=&#34;comment&#34;&gt;# 顯示設定的遠端容器及其名稱、網址&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git remote add origin [url] &lt;span class=&#34;comment&#34;&gt;# 設定遠端容器連結並命名為origin&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git push origin master &lt;span class=&#34;comment&#34;&gt;#  從本地目前的branch上傳至遠端master&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git pull origin master &lt;span class=&#34;comment&#34;&gt;#  從遠端master更新到本地目前的branch&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git pull origin/[branchB] [branchA] &lt;span class=&#34;comment&#34;&gt;# 從遠端branchB更新到本地branchA&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git &lt;span class=&#34;built_in&#34;&gt;clone&lt;/span&gt; [url] [localRepositoryPath] &lt;span class=&#34;comment&#34;&gt;# 複製遠端容器至本地&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git fetch origin &lt;span class=&#34;comment&#34;&gt;# 下載origin的branch到本地&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+&lt;li&gt;push時，如果和遠端容器有衝突，需要先pull，在本地merge(處理衝突)後再push&lt;/li&gt;
+&lt;li&gt;pull的機制：先 fetch 遠端的 branch，然後與本地端的 branch 做 merge&lt;ul&gt;
+&lt;li&gt;若有衝突，&lt;strong&gt;會多產生一個 merge commit&lt;/strong&gt;來取代遠端有衝突的所有commit&lt;/li&gt;
+&lt;li&gt;用&lt;code&gt;git pull --rebase origin master&lt;/code&gt;可以保留雙方的commit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Git分支-branch&#34;&gt;&lt;a href=&#34;#Git分支-branch&#34; class=&#34;headerlink&#34; title=&#34;Git分支(branch)&#34;&gt;&lt;/a&gt;Git分支(branch)&lt;/h3&gt;&lt;p&gt;分支(branch): 將特定版本(commit)命名&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git branch&lt;/code&gt;&lt;br&gt;&lt;code&gt;git checkout&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git branch &lt;span class=&#34;comment&#34;&gt;# 列出本地分支(前方有星號的為目前所在分支)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git branch -r &lt;span class=&#34;comment&#34;&gt;# 列出遠端分支&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git branch -a &lt;span class=&#34;comment&#34;&gt;# 列出所有分支(本地+遠端)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git show-branch &lt;span class=&#34;comment&#34;&gt;# 列出本地分支樹狀圖&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git branch [branchname] [commit] &lt;span class=&#34;comment&#34;&gt;# 在指定commit上建立分支&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git branch -d [branchname] &lt;span class=&#34;comment&#34;&gt;# 刪除指定分支&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git branch -m [old-name] [new-name] &lt;span class=&#34;comment&#34;&gt;# 重新命名分支&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git branch [new-branch] [old-branch] &lt;span class=&#34;comment&#34;&gt;# 由分支old-branch複製出新分支new-branch&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git checkout [branch] &lt;span class=&#34;comment&#34;&gt;# 切換到指定分支&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git checkout [commit] &lt;span class=&#34;comment&#34;&gt;# 也可以切換到任何commit&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 若commit不在任何branch上，用 git branch 查看時，會顯示 (no branch)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git checkout -b [new-branch] &lt;span class=&#34;comment&#34;&gt;# 建立並切換到新分支new-branch(從目前所在的分支複製)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git checkout -m [branch]&lt;/code&gt; # 將工作目錄的變動和分支合併，並切換到該分支&lt;/li&gt;
+&lt;li&gt;git checkout 時，若已修改的檔案和checkout的版本產生衝突，則checkout不會執行&lt;ul&gt;
+&lt;li&gt;衝突時先&lt;code&gt;git stash&lt;/code&gt;(暫時清空已修改的檔案)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Git-標籤-tag&#34;&gt;&lt;a href=&#34;#Git-標籤-tag&#34; class=&#34;headerlink&#34; title=&#34;Git 標籤(tag)&#34;&gt;&lt;/a&gt;Git 標籤(tag)&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git tag [tagname] [commit] &lt;span class=&#34;comment&#34;&gt;# 在指定commit新增tag&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git tag -d [tagname] &lt;span class=&#34;comment&#34;&gt;# 刪除tag&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&#34;Git合併-merge&#34;&gt;&lt;a href=&#34;#Git合併-merge&#34; class=&#34;headerlink&#34; title=&#34;Git合併(merge)&#34;&gt;&lt;/a&gt;Git合併(merge)&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git merge [branch/commit] &lt;span class=&#34;comment&#34;&gt;# 將指定的版本合併到目前所在的分支&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;產生衝突時：先用&lt;code&gt;git diff&lt;/code&gt; &lt;code&gt;git status&lt;/code&gt;查看&lt;br&gt;衝突的地方為如下格式&lt;/p&gt;
+&lt;figure class=&#34;highlight asciidoc&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;...&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//version1 code&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;...&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;========&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;...&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//version2 code&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;...&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;分別是兩個版本的差異。&lt;br&gt;將其修改後即可提交&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git diff --ours/--theirs&lt;/code&gt; 可以查看原版本和衝突版本的差異(ours→合併的, theirs→被合併的)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git diff&lt;/code&gt; 用在衝突檔案時只會顯示衝突的部分，而不會顯示只有一邊修改的部分&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Git-修改版本&#34;&gt;&lt;a href=&#34;#Git-修改版本&#34; class=&#34;headerlink&#34; title=&#34;Git 修改版本&#34;&gt;&lt;/a&gt;Git 修改版本&lt;/h3&gt;&lt;h4 id=&#34;修改版本-rebase&#34;&gt;&lt;a href=&#34;#修改版本-rebase&#34; class=&#34;headerlink&#34; title=&#34;修改版本: rebase&#34;&gt;&lt;/a&gt;修改版本: rebase&lt;/h4&gt;&lt;p&gt;&lt;code&gt;rebase&lt;/code&gt;可以重新排序、編輯、移除、合併、拆分提交&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;優點&lt;ul&gt;
+&lt;li&gt;可以不產生分支線和額外的merge commit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;缺點&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;等於改變提交記錄，僅適合還沒上傳的commit&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;commit被移動，所以特徵碼會改變(也就是&lt;strong&gt;原本的commit會被取代&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;commit的形狀會被改變(變成一條直線)&lt;ul&gt;
+&lt;li&gt;可用&lt;code&gt;--preserve-merge&lt;/code&gt;參數保留形狀&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;麻煩&lt;ul&gt;
+&lt;li&gt;移動的commit若屬於多個分支，則每個分支都要重新指定位置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;使用時機：想保留額外commit資訊時，可替代merge&lt;/p&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#x2F;&amp;#x2F; debug rebase on master&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git checkout debug&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git rebase master&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Original:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;master A → B→C→D→E&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  |      ↘&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;debug      F→G→H&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;After rebase:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;master A → B→C→D→E&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  |               ↘&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;debug               F→G→H&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git rebase -i [commit] &lt;span class=&#34;comment&#34;&gt;# rebase互動模式(推薦)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 互動模式指令：pick: commit, squash: 擠壓到前一個commit, edit: 停在此commit提交前的情形以修改(可以拆成多次commit) …&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 在rebase時遇到衝突的話，會提示使用者手動解決衝突(merge)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git rebase --&lt;span class=&#34;built_in&#34;&gt;continue&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# (解決衝突後)繼續rebase&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git rebase --skip &lt;span class=&#34;comment&#34;&gt;# 忽略一個原本要rebase的commit&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git rebase --abort &lt;span class=&#34;comment&#34;&gt;# 取消rebase&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git rebase --onto master [commitA] [commitB] &lt;span class=&#34;comment&#34;&gt;#  使用onto可以將從A到B的提交移植到完全不同的分支(master)上&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;參考資料：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL3F1ZXN0aW9ucy8zNjI2NjQyL2dpdC1yZXdyaXRlLWhpc3RvcnktcmVvcmRlci1hbmQtbWVyZ2UtY29tbWl0cw==&#34;&gt;修改一個分支的歷史–使用rebase&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h4 id=&#34;merge還是rebase&#34;&gt;&lt;a href=&#34;#merge還是rebase&#34; class=&#34;headerlink&#34; title=&#34;merge還是rebase?&#34;&gt;&lt;/a&gt;merge還是rebase?&lt;/h4&gt;&lt;p&gt;需要保留樹狀記錄就用merge，反之用rebase&lt;br&gt;個人較愛用rebase，理由是保留樹狀記錄只會造成日後版本維護的麻煩&lt;/p&gt;
+&lt;h4 id=&#34;修正版本-amend&#34;&gt;&lt;a href=&#34;#修正版本-amend&#34; class=&#34;headerlink&#34; title=&#34;修正版本: amend&#34;&gt;&lt;/a&gt;修正版本: amend&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;修改&lt;strong&gt;最近一次&lt;/strong&gt;的commit&lt;ul&gt;
+&lt;li&gt;staging area的修改會&lt;strong&gt;合併到最近的提交&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;使用時機&lt;ul&gt;
+&lt;li&gt;提交訊息的修改&lt;/li&gt;
+&lt;li&gt;發現一些&lt;strong&gt;小錯誤&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;忘記add/多add檔案/找到小bug 的時候&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git add [filename] &lt;span class=&#34;comment&#34;&gt;# 修改錯誤後加入暫存區&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git commit --amend &lt;span class=&#34;comment&#34;&gt;# 將此修改加入最近的提交&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#==========&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git commit --amend [file1] [file2] ... &lt;span class=&#34;comment&#34;&gt;#  直接將指定檔案的變更加入最近的commit&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h4 id=&#34;回到指定版本-reset&#34;&gt;&lt;a href=&#34;#回到指定版本-reset&#34; class=&#34;headerlink&#34; title=&#34;回到指定版本: reset&#34;&gt;&lt;/a&gt;回到指定版本: reset&lt;/h4&gt;&lt;!--將HEAD視為指標，平常branch的HEAD是指向最新的一次提交。但git reset可以移動HEAD到指定的提交版本
+(checkout, commit 等指令都會改變HEAD指標的位置)
+--&gt;
+
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git reset [commit] [--soft/--mixed/--hard] &lt;span class=&#34;comment&#34;&gt;# 還原到指定提交&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git reset HEAD [filepath] &lt;span class=&#34;comment&#34;&gt;# 將檔案從staging area移除 (= git checkout filepath)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;pre&gt;&lt;code&gt;--mixed 暫存區也被改變，但工作目錄不變 (預設值，暫存區清空)
+--hard 暫存區和工作目錄都被改變(目前的目錄中，所有檔案的修改會消失)&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;--soft&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;只有版本改變，檔案不改變&lt;/li&gt;
+&lt;li&gt;版本改變造成的所有變更都會放在staging area&lt;ul&gt;
+&lt;li&gt;若你&lt;code&gt;reset --soft&lt;/code&gt;到五天前的版本，那這五天內的commit變更都會在staging area&lt;/li&gt;
+&lt;li&gt;若&lt;code&gt;reset --soft&lt;/code&gt;後直接&lt;code&gt;git commit&lt;/code&gt;，則最新的版本會和reset前的版本一模一樣&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--mixed&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;只有版本改變，檔案不改變&lt;/li&gt;
+&lt;li&gt;變更不會放在staging area, 要自己手動add&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--hard&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;檔案會回到指定commit的狀態&lt;/li&gt;
+&lt;li&gt;通常是出了嚴重問題後的解決方法&lt;/li&gt;
+&lt;li&gt;若有檔案不在版本中(沒有被&lt;code&gt;add&lt;/code&gt;,&lt;code&gt;commit&lt;/code&gt;過)，&lt;code&gt;reset --hard&lt;/code&gt;後檔案依舊存在&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL3F1ZXN0aW9ucy8zNTI4MjQ1L3doYXRzLXRoZS1kaWZmZXJlbmNlLWJldHdlZW4tZ2l0LXJlc2V0LW1peGVkLXNvZnQtYW5kLWhhcmQ=&#34;&gt;Whats the difference between git reset –mixed, –soft, and –hard?&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h4 id=&#34;提交-revert&#34;&gt;&lt;a href=&#34;#提交-revert&#34; class=&#34;headerlink&#34; title=&#34;提交: revert&#34;&gt;&lt;/a&gt;提交: revert&lt;/h4&gt;&lt;p&gt;&lt;code&gt;git revert [commit]&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;新增&lt;/strong&gt;一筆commit，此commit會抵消之前的變更，使檔案像是回到指定版本&lt;ul&gt;
+&lt;li&gt;若最近的變更是寫一頁作文，revert會&lt;strong&gt;加上&lt;/strong&gt;一個塗一頁立可白的變更&lt;br&gt;使用時機: 你的commit已經上傳，別人已下載，所以不適合用&lt;code&gt;git rebase&lt;/code&gt;, &lt;code&gt;git reset&lt;/code&gt;, &lt;code&gt;git commit --amend&lt;/code&gt;等方法隨便修改版本記錄&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Git比較&#34;&gt;&lt;a href=&#34;#Git比較&#34; class=&#34;headerlink&#34; title=&#34;Git比較&#34;&gt;&lt;/a&gt;Git比較&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git diff &lt;span class=&#34;comment&#34;&gt;# 比較實際檔案與目前版本的不同&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git diff --cached &lt;span class=&#34;comment&#34;&gt;# 比較staging area與目前版本的不同&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;         --&lt;span class=&#34;built_in&#34;&gt;stat&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# 只顯示檔名和不同的行數&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git diff [commit] [commit] &lt;span class=&#34;comment&#34;&gt;# 比較兩個版本的不同&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git diff -S[string] &lt;span class=&#34;comment&#34;&gt;# 只列出變更中，有包含string字串的差異&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git diff -w &lt;span class=&#34;comment&#34;&gt;# 不將空白視為變更&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git diff [commit1]:[file1] [commit2]:[file2] &lt;span class=&#34;comment&#34;&gt;# 比較兩個版本的指定檔案&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&#34;Git記錄-log-show&#34;&gt;&lt;a href=&#34;#Git記錄-log-show&#34; class=&#34;headerlink&#34; title=&#34;Git記錄: log, show&#34;&gt;&lt;/a&gt;Git記錄: log, show&lt;/h3&gt;&lt;p&gt;&lt;code&gt;git log&lt;/code&gt; 用來查詢提交記錄，有很多參數可以用&lt;br&gt;建議可以直接用GUI(&lt;code&gt;gitk&lt;/code&gt;, &lt;code&gt;git gui&lt;/code&gt;, &lt;code&gt;git instaweb&lt;/code&gt;)來看&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git &lt;span class=&#34;built_in&#34;&gt;log&lt;/span&gt; [commit] &lt;span class=&#34;comment&#34;&gt;# 列出指定版本的記錄(也就是找其之前的記錄)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git &lt;span class=&#34;built_in&#34;&gt;log&lt;/span&gt; [commitA]..[commitB] &lt;span class=&#34;comment&#34;&gt;# 列出從A到B的提交(不含A, 含B)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git &lt;span class=&#34;built_in&#34;&gt;log&lt;/span&gt; ^[commitA] &lt;span class=&#34;comment&#34;&gt;# 顯示指定版本之後的提交&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git &lt;span class=&#34;built_in&#34;&gt;log&lt;/span&gt; -[num] &lt;span class=&#34;comment&#34;&gt;# 最近[num]筆的提交紀錄&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git &lt;span class=&#34;built_in&#34;&gt;log&lt;/span&gt; --no-merges &lt;span class=&#34;comment&#34;&gt;# 不顯示合併的提交&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git &lt;span class=&#34;built_in&#34;&gt;log&lt;/span&gt; --graph &lt;span class=&#34;comment&#34;&gt;# 顯示樹狀結構圖&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git &lt;span class=&#34;built_in&#34;&gt;log&lt;/span&gt; --&lt;span class=&#34;built_in&#34;&gt;stat&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# 顯示修改行數&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git &lt;span class=&#34;built_in&#34;&gt;log&lt;/span&gt; --author [username] &lt;span class=&#34;comment&#34;&gt;# 指定使用者的提交&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git &lt;span class=&#34;built_in&#34;&gt;log&lt;/span&gt; --since=&lt;span class=&#34;string&#34;&gt;&#34;2 weeks ago&#34;&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# 近2週內的提交&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git &lt;span class=&#34;built_in&#34;&gt;log&lt;/span&gt; --follow [filename] &lt;span class=&#34;comment&#34;&gt;# 列出包含該檔案變動的提交&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git show [commit] &lt;span class=&#34;comment&#34;&gt;# 列出指定版本的最新提交的詳細修改內容&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git show [commit]:[filename] &lt;span class=&#34;comment&#34;&gt;# 顯示該提交的指定檔案&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;可以將版本記錄視為一顆樹，前一個版本為其父節點&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;列出指定版本的記錄 = 找其祖先&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git diff foo..bar&lt;/code&gt; = &lt;code&gt;git diff foo bar&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git diff foo...bar&lt;/code&gt;: foo和bar的”merge base”(最近的共同祖先)和bar的差異&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git log foo bar&lt;/code&gt;: 顯示所有foo和bar的提交(其中一方有即可)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git log foo..bar&lt;/code&gt;: 不屬於foo，屬於bar的提交&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git log foo...bar&lt;/code&gt;: 只有其中一方才有的提交&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;參考資料：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL3F1ZXN0aW9ucy83MjUxNDc3L3doYXQtYXJlLXRoZS1kaWZmZXJlbmNlcy1iZXR3ZWVuLWRvdWJsZS1kb3QtYW5kLXRyaXBsZS1kb3QtaW4tZ2l0LWRpZg==&#34;&gt;What are the differences between double-dot 「..」 and triple-dot 「…」 in Git diff commit ranges?&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;調整記錄的格式&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git &lt;span class=&#34;built_in&#34;&gt;log&lt;/span&gt; --pretty=oneline &lt;span class=&#34;comment&#34;&gt;# 一個commit一行&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git &lt;span class=&#34;built_in&#34;&gt;log&lt;/span&gt; --pretty=short &lt;span class=&#34;comment&#34;&gt;# 簡短&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git &lt;span class=&#34;built_in&#34;&gt;log&lt;/span&gt; --pretty=format:&lt;span class=&#34;string&#34;&gt;&#39;%h was %an, %ar, message: %s&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# %s: 提交訊息, %h: 辨識碼(hash), %an: 作者, %ar: 時間&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&#34;Git尋找提交-bisect-blame&#34;&gt;&lt;a href=&#34;#Git尋找提交-bisect-blame&#34; class=&#34;headerlink&#34; title=&#34;Git尋找提交: bisect, blame&#34;&gt;&lt;/a&gt;Git尋找提交: bisect, blame&lt;/h3&gt;&lt;p&gt;&lt;code&gt;git bisect&lt;/code&gt; 用二分搜尋法找尋有bug的提交&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git bisect start         &lt;span class=&#34;comment&#34;&gt;# git會依照你提供的資訊改變目前的工作目錄，以方便測試&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git bisect good [commitA] &lt;span class=&#34;comment&#34;&gt;# 告知到此commit之前是好的&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git bisect bad [commitB]  &lt;span class=&#34;comment&#34;&gt;# 告知此commit仍有錯誤(通常用HEAD)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# git 會自動切換版本，若切換的版本是好的，則輸入git bisect good，反之則輸入git bisect bad&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 最後會找出第一個壞掉的提交&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git bisect &lt;span class=&#34;built_in&#34;&gt;log&lt;/span&gt;           &lt;span class=&#34;comment&#34;&gt;# 顯示之前提供的good, bad記錄&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git bisect visualize     &lt;span class=&#34;comment&#34;&gt;# 顯示在搜尋範圍的commit&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git bisect reset         &lt;span class=&#34;comment&#34;&gt;# 找到錯誤的提交後，還原至bisect前的版本&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;用檔案尋找提交&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git blame [filename] &lt;span class=&#34;comment&#34;&gt;# 顯示檔案的每一行最後是被哪個commit修改的&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git &lt;span class=&#34;built_in&#34;&gt;log&lt;/span&gt; -S [string] [filename] &lt;span class=&#34;comment&#34;&gt;# 顯示變動包含string字串的commit&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git reflog [Reference] &lt;span class=&#34;comment&#34;&gt;# 參照(Reference, 預設為HEAD)改變的歷史&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;checkout&lt;/code&gt;, &lt;code&gt;commit&lt;/code&gt;, &lt;code&gt;reset&lt;/code&gt;, &lt;code&gt;rebase&lt;/code&gt; … 都會修改HEAD&lt;/li&gt;
+&lt;li&gt;可做為&lt;code&gt;reset&lt;/code&gt;的參考&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Git藏匿變更-stash&#34;&gt;&lt;a href=&#34;#Git藏匿變更-stash&#34; class=&#34;headerlink&#34; title=&#34;Git藏匿變更: stash&#34;&gt;&lt;/a&gt;Git藏匿變更: stash&lt;/h3&gt;&lt;p&gt;&lt;code&gt;git stash&lt;/code&gt;: 把目前工作目錄(working directory)的變更丟到一個stack中，之後再回來拿&lt;/p&gt;
+&lt;p&gt;保持工作目錄的乾淨&lt;/p&gt;
+&lt;p&gt;使用時機&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;你不得不修改一個緊急bug，你可以先把目前工作目錄的變更丟到stash，這時候你的工作目錄和上次剛提交內容的狀況一樣，等到修完bug後再把stash中剛剛做到一半的東西還原以繼續&lt;/li&gt;
+&lt;li&gt;今天的工作時間結束後，還有未完成的部分，可以先stash後執行測試，確認最新版本是正確的&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git stash                &lt;span class=&#34;comment&#34;&gt;# 把目前工作區的修改丟到stash裡&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git stash save [stashName] &lt;span class=&#34;comment&#34;&gt;# 把目前工作區的修改丟到stash裡，並加上命名&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git stash pop            &lt;span class=&#34;comment&#34;&gt;# 從stash取出最新放入的一筆修改,並從stash中移除(若發生衝突時會保留)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git stash apply          &lt;span class=&#34;comment&#34;&gt;# 將最新放入的一筆修改套用在工作目錄上&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git stash drop           &lt;span class=&#34;comment&#34;&gt;# 移除最新放入的stash&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git stash show [stashName] &lt;span class=&#34;comment&#34;&gt;# 列出某一筆stash的修改內容&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                           &lt;span class=&#34;comment&#34;&gt;# 命名：最新放入的為 stash@&amp;#123;0&amp;#125;, 再來是 stash@&amp;#123;1&amp;#125; 以此類推&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git stash show -p [stashName] &lt;span class=&#34;comment&#34;&gt;# 列出某一筆stash的修改統計&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git stash list              &lt;span class=&#34;comment&#34;&gt;# 列出所有在stash的變更&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git stash [file]            &lt;span class=&#34;comment&#34;&gt;# 將檔案丟進stash&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git stash clear             &lt;span class=&#34;comment&#34;&gt;# 清空stash&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git stash branch [branchName] &lt;span class=&#34;comment&#34;&gt;# 用最新放入的stash做為新的branch&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git stash -p                &lt;span class=&#34;comment&#34;&gt;# 挑選要暫存的變更&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git stash --includev        &lt;span class=&#34;comment&#34;&gt;# 同時暫存尚未在版本控制中的檔案(即從來沒被add過的檔案)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;不常用的指令&#34;&gt;&lt;a href=&#34;#不常用的指令&#34; class=&#34;headerlink&#34; title=&#34;不常用的指令&#34;&gt;&lt;/a&gt;不常用的指令&lt;/h2&gt;&lt;h3 id=&#34;Git遠端容器管理-remote&#34;&gt;&lt;a href=&#34;#Git遠端容器管理-remote&#34; class=&#34;headerlink&#34; title=&#34;Git遠端容器管理: remote&#34;&gt;&lt;/a&gt;Git遠端容器管理: remote&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git remote &lt;span class=&#34;comment&#34;&gt;# 列出預設遠端容器的名稱&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git remote show &lt;span class=&#34;comment&#34;&gt;# 顯示預設遠端容器的詳細資料&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git remote add [remote-name] [remote-url] &lt;span class=&#34;comment&#34;&gt;# 加入一個遠端容器，並命名為[remote-name]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git remote update &lt;span class=&#34;comment&#34;&gt;# 更新Repository的所有branch&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git remote rm [branch] &lt;span class=&#34;comment&#34;&gt;# 刪除遠端分支&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git push --tags &lt;span class=&#34;comment&#34;&gt;# 上傳標籤資訊(git push不會上傳標籤)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git push [remote] [branch] &lt;span class=&#34;comment&#34;&gt;# 上傳分支&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git push [remote] [branch]:[uploadbranch] &lt;span class=&#34;comment&#34;&gt;# 上傳分支並在遠端容器中重新命名&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git push [remote] --delete [branch] &lt;span class=&#34;comment&#34;&gt;#  刪除遠端分支&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git branch --&lt;span class=&#34;built_in&#34;&gt;set&lt;/span&gt;-upstream [branch] [remote] &lt;span class=&#34;comment&#34;&gt;# 連結一個本地分支和遠端分支&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&#34;Git-clean&#34;&gt;&lt;a href=&#34;#Git-clean&#34; class=&#34;headerlink&#34; title=&#34;Git clean&#34;&gt;&lt;/a&gt;Git clean&lt;/h3&gt;&lt;p&gt;清除不包含在版本控制中的檔案(被&lt;code&gt;.gitignore&lt;/code&gt;忽略的檔案不會被清除)&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git clean -n &lt;span class=&#34;comment&#34;&gt;#  列出會被清掉的檔案&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git clean -f &lt;span class=&#34;comment&#34;&gt;#  執行清除&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git clean -d &lt;span class=&#34;comment&#34;&gt;#  清除資料夾&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git clean -x &lt;span class=&#34;comment&#34;&gt;#  連 .gitignore 裡列的檔案也清掉&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&#34;Git垃圾回收-gc&#34;&gt;&lt;a href=&#34;#Git垃圾回收-gc&#34; class=&#34;headerlink&#34; title=&#34;Git垃圾回收: gc&#34;&gt;&lt;/a&gt;Git垃圾回收: gc&lt;/h3&gt;&lt;p&gt;git儲存的記錄很多: stash, reflog, log …&lt;/p&gt;
+&lt;p&gt;gc(garbage collection)：刪除所有沒有被指到(reference)且已存在一段時間的物件&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 整理前和整理後的差異, 可由: git count-objects 看出&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git count-objects&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git gc&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git count-objects&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;參考資料&#34;&gt;&lt;a href=&#34;#參考資料&#34; class=&#34;headerlink&#34; title=&#34;參考資料&#34;&gt;&lt;/a&gt;參考資料&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5ib29rcy5jb20udHcvcHJvZHVjdHMvMDAxMDU3NDA5MA==&#34;&gt;版本控制：使用Git&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2dpdC1zY20uY29tL2Jvb2svemgtdHcvdjE=&#34;&gt;Git scm&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2dvZ29qaW1teS5uZXQvMjAxMi8wMi8yOS9naXQtc2NlbmFyaW8v&#34;&gt;Git情境劇系列&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2Jsb2cubG9uZ3dpbi5jb20udHcvMjAwOS8wNS9naXQtbGVhcm4taW5pdGlhbC1jb21tYW5kLTIwMDkv&#34;&gt;Git初學筆記&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9paG93ZXIudHcvZ2l0L3JlYmFzZS5odG1s&#34;&gt;ihower: 還沒push前可以做的(壞)事&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuc2xpZGVzaGFyZS5uZXQvb3JpZ2FtaWFkZGljdC9naXQtZ2V0LXJlYWR5LXRvLXVzZS1pdA==&#34;&gt;git: get ready to use it&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,613 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://gitqwerty777.github.io</id>
+    <title>QWERTY • Posts by &#34;screen&#34; tag</title>
+    <link href="http://gitqwerty777.github.io" />
+    <updated>2022-02-21T10:00:45.000Z</updated>
+    <category term="C#" />
+    <category term="CodingStyle" />
+    <category term="Emacs" />
+    <category term="編輯器" />
+    <category term="CFR" />
+    <category term="電腦對局理論" />
+    <category term="指令" />
+    <category term="機器學習" />
+    <category term="perceptron" />
+    <category term="readme" />
+    <category term="文件" />
+    <category term="github" />
+    <category term="artificial intelligence" />
+    <category term="search" />
+    <category term="First-Order Logic" />
+    <category term="大數" />
+    <category term="程式" />
+    <category term="C++" />
+    <category term="Hexo" />
+    <category term="網誌" />
+    <category term="Markdown" />
+    <category term="CleanCode" />
+    <category term="重構" />
+    <category term="TDD" />
+    <category term="設計模式" />
+    <category term="CMake" />
+    <category term="Makefile" />
+    <category term="Linux" />
+    <category term="Todo" />
+    <category term="註解" />
+    <category term="經濟學" />
+    <category term="策略" />
+    <category term="競爭" />
+    <category term="博弈論" />
+    <category term="計算機結構" />
+    <category term="人工智慧" />
+    <category term="圍棋" />
+    <category term="象棋" />
+    <category term="蒙地卡羅" />
+    <category term="Alpha-Beta搜尋" />
+    <category term="強化學習" />
+    <category term="計算機網路" />
+    <category term="boost" />
+    <category term="函式庫" />
+    <category term="編譯" />
+    <category term="gcc" />
+    <category term="g++" />
+    <category term="clang" />
+    <category term="最佳化" />
+    <category term="推薦系統" />
+    <category term="FM" />
+    <category term="FFM" />
+    <category term="SVM" />
+    <category term="Embedding" />
+    <category term="自然語言處理" />
+    <category term="外國用語" />
+    <category term="萌典" />
+    <category term="opencc" />
+    <category term="PTT" />
+    <category term="vuejs" />
+    <category term="linux" />
+    <category term="c" />
+    <category term="compile" />
+    <category term="gdb" />
+    <category term="c語言" />
+    <category term="cpp" />
+    <category term="除錯" />
+    <category term="git" />
+    <category term="VMWare" />
+    <category term="虛擬機" />
+    <category term="IFTTT" />
+    <category term="自動化" />
+    <category term="備份" />
+    <category term="webhook" />
+    <category term="簡報" />
+    <category term="軟體" />
+    <category term="PowerPoint" />
+    <category term="Latex" />
+    <category term="JavaScript" />
+    <category term="CSS" />
+    <category term="Unity" />
+    <category term="fcitx" />
+    <category term="嘸蝦米" />
+    <category term="輸入法" />
+    <category term="硬碟" />
+    <category term="記憶體" />
+    <category term="效能" />
+    <category term="錯誤" />
+    <category term="makefile" />
+    <category term="備忘錄" />
+    <category term="存檔" />
+    <category term="統計" />
+    <category term="byobu" />
+    <category term="screen" />
+    <category term="tmux" />
+    <category term="reactjs" />
+    <category term="javascript" />
+    <category term="WideAndDeep" />
+    <category term="Google" />
+    <category term="觀察者" />
+    <category term="訂閱" />
+    <category term="委託" />
+    <category term="正規表示式(RegExp)" />
+    <category term="上下文無關文法(CFG)" />
+    <category term="hexo" />
+    <category term="blog" />
+    <category term="theme" />
+    <category term="feature" />
+    <category term="revealJS" />
+    <category term="markdown" />
+    <category term="rss" />
+    <category term="facebook" />
+    <category term="youtube" />
+    <category term="ptt" />
+    <category term="bilibili" />
+    <category term="pixiv" />
+    <category term="crawler" />
+    <category term="SEO" />
+    <category term="google" />
+    <category term="html" />
+    <category term="amazon" />
+    <category term="webhost" />
+    <category term="ssl" />
+    <category term="漢字" />
+    <category term="中文" />
+    <category term="異體字" />
+    <category term="unicode" />
+    <category term="unity" />
+    <category term="演算法" />
+    <category term="隨機排序" />
+    <category term="洗牌" />
+    <category term="Fisher-Yates" />
+    <category term="證明" />
+    <category term="python" />
+    <entry>
+        <id>http://gitqwerty777.github.io/linux-screen-tmux-byobu/</id>
+        <title>byobu指令和設定</title>
+        <link rel="alternate" href="http://gitqwerty777.github.io/linux-screen-tmux-byobu/"/>
+        <content type="html">&lt;h2 id=&#34;簡介&#34;&gt;&lt;a href=&#34;#簡介&#34; class=&#34;headerlink&#34; title=&#34;簡介&#34;&gt;&lt;/a&gt;簡介&lt;/h2&gt;&lt;p&gt;byobu是基於screen或tmux的一層操作介面&lt;br&gt;預設為基於tmux&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly90YW8tb2YtdG11eC5yZWFkdGhlZG9jcy5pby96aF9DTi9sYXRlc3QvbWFudXNjcmlwdC8wMC1mb3Jld29yZC5odG1s&#34;&gt;tmux教學&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;使用byobu&#34;&gt;&lt;a href=&#34;#使用byobu&#34; class=&#34;headerlink&#34; title=&#34;使用byobu&#34;&gt;&lt;/a&gt;使用byobu&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;byobu-enable &lt;span class=&#34;comment&#34;&gt;#登入就開啟byobu&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;byobu-disable &lt;span class=&#34;comment&#34;&gt;#取消&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;byobu new -s &amp;lt;session name&amp;gt; &lt;span class=&#34;comment&#34;&gt;# 新建一個byobu 會話&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 如果新建兩個以上，每次進入byobu的時候需要選擇&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;滑鼠操作&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;選擇文字 &lt;code&gt;Shift+選擇&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;複製文字 &lt;code&gt;Shift+右鍵&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;開/關滑鼠操作 &lt;code&gt;Shift+F12&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;名詞解釋&#34;&gt;&lt;a href=&#34;#名詞解釋&#34; class=&#34;headerlink&#34; title=&#34;名詞解釋&#34;&gt;&lt;/a&gt;名詞解釋&lt;/h2&gt;&lt;p&gt;用瀏覽器的名詞解釋&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;session → 視窗：不同視窗包含不同分頁&lt;ul&gt;
+&lt;li&gt;window → 分頁&lt;ul&gt;
+&lt;li&gt;split → 分割：同一個分頁的不同終端&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;/img/Other/byobu-cheat-sheet.jpg&#34; alt=&#34;cheetsheet&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;指令表&#34;&gt;&lt;a href=&#34;#指令表&#34; class=&#34;headerlink&#34; title=&#34;指令表&#34;&gt;&lt;/a&gt;指令表&lt;/h2&gt;&lt;h3 id=&#34;新建-F2&#34;&gt;&lt;a href=&#34;#新建-F2&#34; class=&#34;headerlink&#34; title=&#34;新建(F2)&#34;&gt;&lt;/a&gt;新建(F2)&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;說明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Ctrl-F2&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;新增垂直分割(分為左右兩塊)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Ctrl-Shift-F2&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;新增新視窗&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;F2&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;新增分頁&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Shift-F2&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;新增水平分割(分為上下兩塊)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;移動-F3-F4&#34;&gt;&lt;a href=&#34;#移動-F3-F4&#34; class=&#34;headerlink&#34; title=&#34;移動(F3/F4)&#34;&gt;&lt;/a&gt;移動(F3/F4)&lt;/h3&gt;&lt;p&gt;移動的前後順序為編號順序&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;說明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Alt-↑/↓&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;前/後一個視窗&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Ctrl-F3/F4&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;交換兩個分割的位置&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Ctrl-Shift-F3/F4&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;移動分頁的位置(編號)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;F3/F4&lt;/code&gt;, &lt;code&gt;Alt-←/→&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;前/後一個分頁&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Shift-Alt-Left/Right/Up/Down&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;修改目前的分割大小&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Shift-F3/F4&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;移動至前/後分割&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Shift-←/→/↑/↓&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;移動至其他分割&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;設定-F5-F12&#34;&gt;&lt;a href=&#34;#設定-F5-F12&#34; class=&#34;headerlink&#34; title=&#34;設定(F5, F12)&#34;&gt;&lt;/a&gt;設定(F5, F12)&lt;/h3&gt;&lt;p&gt;記&lt;code&gt;F9&lt;/code&gt;即可&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;說明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Alt-F12&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;切換滑鼠支援&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Alt-F5&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;切換 UTF-8 支援&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Ctrl-F5&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Reconnect ssh/gpg/dbus sockets(註：應該是重新連線的意思)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;F5&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;重新讀取設定&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;F9&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;開啟 byobu 設定頁面&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Shift-F12&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;開/關 byobu 指令快捷鍵&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Shift-F5&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;切換底部狀態列資訊&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;取消-F6&#34;&gt;&lt;a href=&#34;#取消-F6&#34; class=&#34;headerlink&#34; title=&#34;取消(F6)&#34;&gt;&lt;/a&gt;取消(F6)&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;說明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Alt-F6&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;使連線到相同視窗的 terminal 離開(除了自己)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Ctrl-F6&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;關閉目前所在的分割&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;F6&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;離開 byobu 但不登出(=&lt;code&gt;byobu detach&lt;/code&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Shift-F6&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;離開 byobu 且登出(註：不知道差別在哪)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;記錄-F7&#34;&gt;&lt;a href=&#34;#記錄-F7&#34; class=&#34;headerlink&#34; title=&#34;記錄(F7)&#34;&gt;&lt;/a&gt;記錄(F7)&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;說明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Alt-PageUp/PageDown&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;於歷史記錄中翻頁&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;F7&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;瀏覽歷史記錄(Command line history)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Shift-F7&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;儲存歷史記錄於 &lt;code&gt;$BYOBU_RUN_DIR/printscreen&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;管理-F8&#34;&gt;&lt;a href=&#34;#管理-F8&#34; class=&#34;headerlink&#34; title=&#34;管理(F8)&#34;&gt;&lt;/a&gt;管理(F8)&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;說明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Alt-Shift-F8&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;選擇分割佈局&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Ctrl-F8&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;命名目前視窗&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Ctrl-Shift-F8&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;儲存目前的分割佈局&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;F8&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;命名目前分頁&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Shift-F8&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;切換為不同的分割佈局&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;廣播-F9&#34;&gt;&lt;a href=&#34;#廣播-F9&#34; class=&#34;headerlink&#34; title=&#34;廣播(F9)&#34;&gt;&lt;/a&gt;廣播(F9)&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;說明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Alt-F9&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;開/關 同時輸入分割&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Ctrl-F9&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;視窗中的所有分頁執行同一指令&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Shift-F9&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;分頁中的所有分割執行同一指令&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;其他-F11-F12&#34;&gt;&lt;a href=&#34;#其他-F11-F12&#34; class=&#34;headerlink&#34; title=&#34;其他(F11, F12)&#34;&gt;&lt;/a&gt;其他(F11, F12)&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;說明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Alt-F11&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;目前分割最大化&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Ctrl-F11&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;將目前分割合併至前一個分頁(Join window into a vertical split)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Ctrl-Shift-F12&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;顯示蒙德裡安圖(Mondrian squares)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Ctrl-Shift-F5&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;隨機切換狀態列的顏色&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;F12&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Escape sequence(等同 screen 的&lt;code&gt;Ctrl+a&lt;/code&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Shift-F11&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;最大化/還原 目前分割&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Shift-F1&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;顯示指令列表&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h2 id=&#34;設定&#34;&gt;&lt;a href=&#34;#設定&#34; class=&#34;headerlink&#34; title=&#34;設定&#34;&gt;&lt;/a&gt;設定&lt;/h2&gt;&lt;p&gt;預設放在&lt;code&gt;~/.byobu/&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;修改狀態列&#34;&gt;&lt;a href=&#34;#修改狀態列&#34; class=&#34;headerlink&#34; title=&#34;修改狀態列&#34;&gt;&lt;/a&gt;修改狀態列&lt;/h3&gt;&lt;p&gt;&lt;code&gt;~/.byobu/status&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;預設是長這樣&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Tmux has one status line, with 2 halves for status&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tmux_left=&lt;span class=&#34;string&#34;&gt;&#34;#logo distro release #arch #session&#34;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# You can have as many tmux right lines below here, and cycle through them using Shift-F5&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tmux_right=&lt;span class=&#34;string&#34;&gt;&#34;network #disk_io #custom #entropy #raid reboot_required #updates_available #apport #services #mail #users uptime #ec2_cost #rcs_cost #fan_speed #cpu_temp #battery #wifi_quality #processes load_average cpu_count cpu_freq memory #swap disk users whoami #hostname ip_address #time_utc #date time&#34;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#tmux_right=&#34;network #disk_io #custom entropy raid reboot_required updates_available #apport #services #mail users uptime #ec2_cost #rcs_cost fan_speed cpu_temp battery wifi_quality #processes load_average cpu_count cpu_freq memory #swap #disk whoami hostname ip_address #time_utc date time&#34;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#tmux_right=&#34;network #disk_io custom #entropy raid reboot_required updates_available #apport #services #mail users uptime #ec2_cost #rcs_cost #fan_speed #cpu_temp battery wifi_quality #processes load_average cpu_count cpu_freq memory #swap #disk #whoami #hostname ip_address #time_utc date time&#34;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#tmux_right=&#34;#network disk_io #custom entropy #raid #reboot_required #updates_available #apport #services #mail #users #uptime #ec2_cost #rcs_cost fan_speed cpu_temp #battery #wifi_quality #processes #load_average #cpu_count #cpu_freq #memory #swap whoami hostname ip_address #time_utc disk date time&#34;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Left&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;名稱&lt;/th&gt;
+&lt;th&gt;說明&lt;/th&gt;
+&lt;th&gt;例子&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;arch&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;CPU 架構&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;x86_64&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;distro&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;作業系統名稱&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ubuntu&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;logo&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;作業系統的 Logo，可設定&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;u&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;release&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;作業系統版本&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;20.04&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;session&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;視窗名字&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;Right&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;名稱&lt;/th&gt;
+&lt;th&gt;說明&lt;/th&gt;
+&lt;th&gt;例子&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;apport&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;提醒尚未讀的 Crash Report&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;battery&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;剩餘電量&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;cpu_count&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;CPU 核心數&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;16x&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;cpu_freq&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;CPU 時脈&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;4.0GHz&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;cpu_temp&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;CPU 溫度&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;30C&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;custom&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;自訂腳本，需要額外設定&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;date&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;日期，可自行設定&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;2011-11-11&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;disk_io&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;即時 IO 讀/寫速度&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;◁11KB/s ▷188KB/s&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;disk&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;磁碟用量&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;256G90%&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;entropy&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;系統的 Entropy&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;e3363&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;fan_speed&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;風扇速度，需要額外設定&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;hostname&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;主機名稱&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;ip_address&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;系統 ip 位址&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;111.111.111.111&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;load_average&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;前一分鐘 CPU 的平均用量&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0.12&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;mail&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;是否有新信件&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;[M]&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;memory&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;記憶體用量&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;32G50%&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;network&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;即時網路上傳/下載速度&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;△11KB/s ▽188KB/s&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;processes&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;總程序(Process)數&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;100&amp;amp;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;raid&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Raid 失敗警告&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;reboot_required&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;是否需要重啟&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;services&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;監控中的服務，需要額外設定&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;swap&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Swap 用量&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;s32G50%&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;time_utc&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;UTC 時間&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;04:00UTC&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;time&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;時間&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;11:11:11&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;updates_available&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;是否需要更新軟體&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;!&lt;/code&gt;為一般更新 &lt;code&gt;!!&lt;/code&gt;為重要更新&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;uptime&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;系統開機時間&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;12d23h&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;users&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;用 ssh 登入的人數&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;#1&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;whoami&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;目前登入帳戶&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;qwerty&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;wifi_quality&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Wifi 訊號強度&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;[M]&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;也可以用&lt;code&gt;F9&lt;/code&gt;設定&lt;/p&gt;
+&lt;h3 id=&#34;顏色設定&#34;&gt;&lt;a href=&#34;#顏色設定&#34; class=&#34;headerlink&#34; title=&#34;顏色設定&#34;&gt;&lt;/a&gt;顏色設定&lt;/h3&gt;&lt;p&gt;&lt;code&gt;~/.byobu/color&lt;/code&gt;&lt;br&gt;&lt;code&gt;~/.byobu/color.tmux&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;VSCode設定&#34;&gt;&lt;a href=&#34;#VSCode設定&#34; class=&#34;headerlink&#34; title=&#34;VSCode設定&#34;&gt;&lt;/a&gt;VSCode設定&lt;/h3&gt;&lt;p&gt;避免和預設的快捷鍵重覆&lt;/p&gt;
+&lt;p&gt;設定 → 終端機&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;取消勾選&lt;code&gt;Integrated: Allow Chords&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Integrated: Commands To Skip Shell&lt;/code&gt;增加下列&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;-workbench&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.action&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.quickOpen&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;-workbench&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.action&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.terminal&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.findNext&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;-workbench&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.action&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.terminal&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.findPrevious&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;-workbench&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.action&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.debug&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.continue&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;-workbench&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.action&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.debug&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.restart&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;-workbench&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.action&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.debug&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.run&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;-workbench&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.action&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.debug&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.start&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;-workbench&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.action&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.debug&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.stop&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;-workbench&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.action&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.focusNextPart&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;-workbench&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.action&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.focusPreviousPart&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;-workbench&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.action&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.debug&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.pause&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;-workbench&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.action&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.quickOpen&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;-workbench&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.action&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.terminal&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.focusFind&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;參考資料&#34;&gt;&lt;a href=&#34;#參考資料&#34; class=&#34;headerlink&#34; title=&#34;參考資料&#34;&gt;&lt;/a&gt;參考資料&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYnlvYnUub3Jn&#34;&gt;byobu&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXN0LmdpdGh1Yi5jb20vZGV2aGVyby83YjlhNzI4MWRiMGFjNGJhNjgzZg==&#34;&gt;byobu_cheatsheet&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zdXBlcnVzZXIuY29tL2EvNDIzMzk3&#34;&gt;Byobu vs. GNU Screen vs. tmux — usefulness and transferability of skills&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuaWNvbnNwbmcuY29tL2ltYWdlcy9ieW9idS1jaGVhdC1zaGVldC9ieW9idS1jaGVhdC1zaGVldC5qcGc=&#34;&gt;byobu-cheat-sheet&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYnlvYnUub3JnL2RvY3VtZW50YXRpb24=&#34;&gt;官方文件&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zemxpbi5tZS8yMDE2LzEwLzA1LyVFNSU4OCU5RCVFNiU4RSVBMi1saW51eC1rZXJuZWwtJUU0JUJBJTgyJUU2JTk1JUI4JUU3JTk0JUEyJUU3JTk0JTlGJUU1JTk5JUE4LXJhbmRvbS1nZW5lcmF0b3Iv&#34;&gt;Entropy說明&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kYWlzYWt1LXRlY2guaGF0ZW5hYmxvZy5jb20vZW50cnkvMjAyMC8wOS8wNS8xNzUzMjA=&#34;&gt;VS codeのターミナルでbyobuを使う&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="Linux" />
+        <category term="byobu" />
+        <category term="screen" />
+        <category term="tmux" />
+        <updated>2022-02-21T10:00:45.000Z</updated>
+    </entry>
+</feed>

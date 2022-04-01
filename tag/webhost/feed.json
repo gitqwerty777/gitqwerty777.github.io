@@ -1,0 +1,23 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "QWERTY • All posts by \"webhost\" tag",
+    "description": "Programming | Computer Science | Thought",
+    "home_page_url": "http://gitqwerty777.github.io",
+    "items": [
+        {
+            "id": "http://gitqwerty777.github.io/simple-website-host/",
+            "url": "http://gitqwerty777.github.io/simple-website-host/",
+            "title": "自建網站方法",
+            "date_published": "2020-08-18T16:45:00.000Z",
+            "content_html": "<h2 id=\"不用免費架站服務的理由\"><a href=\"#不用免費架站服務的理由\" class=\"headerlink\" title=\"不用免費架站服務的理由\"></a>不用免費架站服務的理由</h2><p>若只是要純粹建blog，用github page + <a href=\"/build-hexo-blog/\">hexo</a> 即可。</p>\n<p>更簡單的方法就是用痞客邦、Blogger等免費部落格。</p>\n<p>不過自架有以下優點</p>\n<a id=\"more\"></a>\n\n<h3 id=\"資料轉移彈性\"><a href=\"#資料轉移彈性\" class=\"headerlink\" title=\"資料轉移彈性\"></a>資料轉移彈性</h3><p>要確認資料是容易轉移的，即匯出後的檔案可被其他平台匯入。</p>\n<p>即資料的格式是公開的，而非只有特定廠商才能讀取。</p>\n<p>像是 hexo 是用 markdown 格式儲存文章，日後若 hexo 不再更新，可以轉換到其他支援 markdown 的服務，如jekyll。</p>\n<p>儘量減少對特定服務商的依賴</p>\n<p>當轉移資料的成本太高時，就會失去選擇的自由。</p>\n<h3 id=\"更多功能\"><a href=\"#更多功能\" class=\"headerlink\" title=\"更多功能\"></a>更多功能</h3><p>免費廠商提供的設定選項不一定符合需求，若要自訂功能就會很麻煩。</p>\n<h2 id=\"網路主機\"><a href=\"#網路主機\" class=\"headerlink\" title=\"網路主機\"></a>網路主機</h2><p>考慮連線速度及品質，最好是找離台灣近一點的host，也可用電腦+固定IP自建。</p>\n<ul>\n<li><span class=\"exturl\" data-url=\"aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS90dy9lYzIv\">amazon ec2<i class=\"fa fa-external-link-alt\"></i></span><ul>\n<li>可選server地區，各地區價格不同</li>\n<li>有提供預設的image，包含LAMP</li>\n<li>第一年免費</li>\n</ul>\n</li>\n<li><span class=\"exturl\" data-url=\"aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS90dy9saWdodHNhaWwv\">amazon lightsail<i class=\"fa fa-external-link-alt\"></i></span><ul>\n<li>簡化版的ec2，較便宜</li>\n</ul>\n</li>\n<li><span class=\"exturl\" data-url=\"aHR0cHM6Ly93d3cuc2l0ZWdyb3VuZC5jb20v\">siteground<i class=\"fa fa-external-link-alt\"></i></span></li>\n<li><a href=\"www.bluehost.com\">bluehost</a></li>\n</ul>\n<h2 id=\"網域\"><a href=\"#網域\" class=\"headerlink\" title=\"網域\"></a>網域</h2><p>非必要，直接用IP連也可。</p>\n<p>價格很浮動，和機票一樣，建議查完就買，不然可能會變貴。</p>\n<p>有些第一年特價的域名最好別買，不然續約時變原價，又要換域名。</p>\n<h3 id=\"網域商\"><a href=\"#網域商\" class=\"headerlink\" title=\"網域商\"></a>網域商</h3><ul>\n<li><span class=\"exturl\" data-url=\"aHR0cHM6Ly9nYW5kaS5saW5rL2YvMGFjZjQzZmE=\">gandi<i class=\"fa fa-external-link-alt\"></i></span></li>\n<li><span class=\"exturl\" data-url=\"aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS90dy9yb3V0ZTUzLw==\">route53<i class=\"fa fa-external-link-alt\"></i></span></li>\n<li><span class=\"exturl\" data-url=\"aHR0cHM6Ly90dy5nb2RhZGR5LmNvbS8=\">godaddy<i class=\"fa fa-external-link-alt\"></i></span></li>\n<li><a href=\"www.namecheap.com\">namecheap</a></li>\n</ul>\n<h3 id=\"SSL憑證\"><a href=\"#SSL憑證\" class=\"headerlink\" title=\"SSL憑證\"></a>SSL憑證</h3><ul>\n<li><span class=\"exturl\" data-url=\"aHR0cHM6Ly9sZXRzZW5jcnlwdC5vcmcvemgtdHcv\">letsencrypt<i class=\"fa fa-external-link-alt\"></i></span></li>\n<li>若用amazon主機，也有<span class=\"exturl\" data-url=\"aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS90dy9jZXJ0aWZpY2F0ZS1tYW5hZ2VyLw==\">免費提供<i class=\"fa fa-external-link-alt\"></i></span>，</li>\n</ul>\n<h3 id=\"DNS\"><a href=\"#DNS\" class=\"headerlink\" title=\"DNS\"></a>DNS</h3><p>建議用<span class=\"exturl\" data-url=\"aHR0cHM6Ly93d3cuY2xvdWRmbGFyZS5jb20v\">cloudflare<i class=\"fa fa-external-link-alt\"></i></span>設定，要換網域商時較方便</p>\n<h2 id=\"用法\"><a href=\"#用法\" class=\"headerlink\" title=\"用法\"></a>用法</h2><ul>\n<li><a href=\"/rss-social-network/\">RSS服務</a></li>\n<li>個人主頁</li>\n<li>子網域</li>\n</ul>\n<h2 id=\"備註\"><a href=\"#備註\" class=\"headerlink\" title=\"備註\"></a>備註</h2><ul>\n<li>若有學生身份可用<span class=\"exturl\" data-url=\"aHR0cHM6Ly9lZHVjYXRpb24uZ2l0aHViLmNvbS9wYWNr\">github學生禮包<i class=\"fa fa-external-link-alt\"></i></span>，提供免費域名及amazon 100鎂額度<ul>\n<li>可以用多個同學的github人頭帳號，當長時間的免費仔</li>\n</ul>\n</li>\n<li>個人目前已非學生，amazon T2.micro(1GB memory, 8GB Disk, 一個月8鎂) + gandi 的 <code>.me</code> 網域(一年17鎂)，還算堪用</li>\n</ul>\n<h2 id=\"參考\"><a href=\"#參考\" class=\"headerlink\" title=\"參考\"></a>參考</h2><ul>\n<li><span class=\"exturl\" data-url=\"aHR0cHM6Ly93d3cuanl0MDUzMi5jb20vMjAxNy8xMi8xMS9sYXVuY2gtZWMyLWluLXRlbi1taW51dGVzLw==\">十分鐘在AWS架好個人部落格<i class=\"fa fa-external-link-alt\"></i></span></li>\n</ul>\n",
+            "tags": [
+                "hexo",
+                "blog",
+                "markdown",
+                "amazon",
+                "webhost",
+                "ssl"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,797 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://gitqwerty777.github.io</id>
+    <title>QWERTY • Posts by &#34;cpp&#34; tag</title>
+    <link href="http://gitqwerty777.github.io" />
+    <updated>2015-07-21T04:37:47.000Z</updated>
+    <category term="C#" />
+    <category term="CodingStyle" />
+    <category term="Emacs" />
+    <category term="編輯器" />
+    <category term="CFR" />
+    <category term="電腦對局理論" />
+    <category term="指令" />
+    <category term="機器學習" />
+    <category term="perceptron" />
+    <category term="readme" />
+    <category term="文件" />
+    <category term="github" />
+    <category term="artificial intelligence" />
+    <category term="search" />
+    <category term="First-Order Logic" />
+    <category term="大數" />
+    <category term="程式" />
+    <category term="C++" />
+    <category term="Hexo" />
+    <category term="網誌" />
+    <category term="Markdown" />
+    <category term="CleanCode" />
+    <category term="重構" />
+    <category term="TDD" />
+    <category term="設計模式" />
+    <category term="CMake" />
+    <category term="Makefile" />
+    <category term="Linux" />
+    <category term="Todo" />
+    <category term="註解" />
+    <category term="經濟學" />
+    <category term="策略" />
+    <category term="競爭" />
+    <category term="博弈論" />
+    <category term="計算機結構" />
+    <category term="人工智慧" />
+    <category term="圍棋" />
+    <category term="象棋" />
+    <category term="蒙地卡羅" />
+    <category term="Alpha-Beta搜尋" />
+    <category term="強化學習" />
+    <category term="計算機網路" />
+    <category term="boost" />
+    <category term="函式庫" />
+    <category term="編譯" />
+    <category term="gcc" />
+    <category term="g++" />
+    <category term="clang" />
+    <category term="最佳化" />
+    <category term="推薦系統" />
+    <category term="FM" />
+    <category term="FFM" />
+    <category term="SVM" />
+    <category term="Embedding" />
+    <category term="自然語言處理" />
+    <category term="外國用語" />
+    <category term="萌典" />
+    <category term="opencc" />
+    <category term="PTT" />
+    <category term="vuejs" />
+    <category term="linux" />
+    <category term="c" />
+    <category term="compile" />
+    <category term="gdb" />
+    <category term="c語言" />
+    <category term="cpp" />
+    <category term="除錯" />
+    <category term="git" />
+    <category term="VMWare" />
+    <category term="虛擬機" />
+    <category term="IFTTT" />
+    <category term="自動化" />
+    <category term="備份" />
+    <category term="webhook" />
+    <category term="簡報" />
+    <category term="軟體" />
+    <category term="PowerPoint" />
+    <category term="Latex" />
+    <category term="JavaScript" />
+    <category term="CSS" />
+    <category term="Unity" />
+    <category term="fcitx" />
+    <category term="嘸蝦米" />
+    <category term="輸入法" />
+    <category term="硬碟" />
+    <category term="記憶體" />
+    <category term="效能" />
+    <category term="錯誤" />
+    <category term="makefile" />
+    <category term="備忘錄" />
+    <category term="存檔" />
+    <category term="統計" />
+    <category term="byobu" />
+    <category term="screen" />
+    <category term="tmux" />
+    <category term="reactjs" />
+    <category term="javascript" />
+    <category term="WideAndDeep" />
+    <category term="Google" />
+    <category term="觀察者" />
+    <category term="訂閱" />
+    <category term="委託" />
+    <category term="正規表示式(RegExp)" />
+    <category term="上下文無關文法(CFG)" />
+    <category term="hexo" />
+    <category term="blog" />
+    <category term="theme" />
+    <category term="feature" />
+    <category term="revealJS" />
+    <category term="markdown" />
+    <category term="rss" />
+    <category term="facebook" />
+    <category term="youtube" />
+    <category term="ptt" />
+    <category term="bilibili" />
+    <category term="pixiv" />
+    <category term="crawler" />
+    <category term="SEO" />
+    <category term="google" />
+    <category term="html" />
+    <category term="amazon" />
+    <category term="webhost" />
+    <category term="ssl" />
+    <category term="漢字" />
+    <category term="中文" />
+    <category term="異體字" />
+    <category term="unicode" />
+    <category term="unity" />
+    <category term="演算法" />
+    <category term="隨機排序" />
+    <category term="洗牌" />
+    <category term="Fisher-Yates" />
+    <category term="證明" />
+    <category term="python" />
+    <entry>
+        <id>http://gitqwerty777.github.io/header-file-tips/</id>
+        <title>標頭檔(header)與include</title>
+        <link rel="alternate" href="http://gitqwerty777.github.io/header-file-tips/"/>
+        <content type="html">&lt;p&gt;本文整理自 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5jcGx1c3BsdXMuY29tL2ZvcnVtL2FydGljbGVzLzEwNjI3Lw==&#34;&gt;headers and includes: why and how&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+&lt;h2 id=&#34;Why-we-need-header-files&#34;&gt;&lt;a href=&#34;#Why-we-need-header-files&#34; class=&#34;headerlink&#34; title=&#34;Why we need header files&#34;&gt;&lt;/a&gt;Why we need header files&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;speeds up compile time&lt;ul&gt;
+&lt;li&gt;if everything is in a single file, then everything must be fully recompiled every time you make any little change&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;keeps your code more organized&lt;ul&gt;
+&lt;li&gt;easier to find the code you are looking for&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;allows you to separate interface from implementation&lt;ul&gt;
+&lt;li&gt;make the interface visible to other .cpp files, while keeping the implementation in its own .cpp file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Compile Process  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;compiler generates intermediate files(object file) for each compiled source file&lt;ol&gt;
+&lt;li&gt;compiler will “replace” the #include line with the actual contents of the file you’re including when it compiles the file&lt;/li&gt;
+&lt;li&gt;files with header extensions might be ignored by the compiler if you try to compile them&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;then links all the object files together, which generates the final binary&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// in myclass.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;MyClass&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;foo&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; bar;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// in myclass.cpp&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;myclass.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;MyClass::foo&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//in main.cpp&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;myclass.h&#34;&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;// defines MyClass&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  MyClass a; &lt;span class=&#34;comment&#34;&gt;// no longer produces an error, because MyClass is defined&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Header files should use a .h__ extension (.h / .hpp / .hxx). Which of those you use doesn’t matter&lt;/li&gt;
+&lt;li&gt;C++ Source files should use a .c__ extention (.cpp / .cxx / .cc). Which of those you use doesn’t matter&lt;/li&gt;
+&lt;li&gt;C Source files should use .c (.c only)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;header files are #included and not compiled, whereas source files are compiled and not #included&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The one exception is that it is sometimes (although very rarely) useful to include a source file. This scenario has to do with instantiating templates and is outside the scope of this article&lt;/p&gt;
+&lt;h2 id=&#34;Include-guards&#34;&gt;&lt;a href=&#34;#Include-guards&#34; class=&#34;headerlink&#34; title=&#34;Include guards&#34;&gt;&lt;/a&gt;Include guards&lt;/h2&gt;&lt;p&gt;include multiple times of the same code would cause error  &lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// myclass.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;MyClass&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;DoSomething&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123; &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// main.cpp&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;myclass.h&#34;&lt;/span&gt;   &lt;span class=&#34;comment&#34;&gt;// define MyClass&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;myclass.h&#34;&lt;/span&gt;   &lt;span class=&#34;comment&#34;&gt;// Compiler error - MyClass already defined&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;There’s an Implicit Example &lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// x.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;X&lt;/span&gt; &amp;#123;&lt;/span&gt; &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// a.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;x.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;A&lt;/span&gt; &amp;#123;&lt;/span&gt; X x; &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// b.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;x.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;B&lt;/span&gt; &amp;#123;&lt;/span&gt; X x; &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// main.cpp&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;a.h&#34;&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;// also includes &#34;x.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;b.h&#34;&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;// includes x.h again!  ERROR&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Because of this scenario, many people are told not to put #include in header files. However this is bad advice and you should not listen to it, But remember  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Only #include things you need to include&lt;/li&gt;
+&lt;li&gt;Guard against incidental multiple includes with include guards&lt;ol&gt;
+&lt;li&gt;skipping over the entire header if it was already included&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//x.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;ifndef&lt;/span&gt; __X_H_INCLUDED__   &lt;span class=&#34;comment&#34;&gt;// if x.h hasn&#39;t been included yet...&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;define&lt;/span&gt; __X_H_INCLUDED__   &lt;span class=&#34;comment&#34;&gt;//   #define this so the compiler knows it has been included&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;X&lt;/span&gt; &amp;#123;&lt;/span&gt; &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;endif&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;The-“right-way”-to-include&#34;&gt;&lt;a href=&#34;#The-“right-way”-to-include&#34; class=&#34;headerlink&#34; title=&#34;The “right way” to include&#34;&gt;&lt;/a&gt;The “right way” to include&lt;/h2&gt;&lt;p&gt;aware of following dependencies   &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;stuff that can be forward declared&lt;/li&gt;
+&lt;li&gt;stuff that needs to be #included&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Dedepency that should be used  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;do nothing if&lt;ul&gt;
+&lt;li&gt;A makes no references at all to B&lt;/li&gt;
+&lt;li&gt;The only reference to B is in a friend declaration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;forward declare B if&lt;ul&gt;
+&lt;li&gt;A &lt;strong&gt;contains&lt;/strong&gt; a B &lt;strong&gt;pointer or reference&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;B* myb, B&amp;amp; myb&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;function has B object/pointer/reference as &lt;strong&gt;parementer or return type&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;B MyFunction(B myb)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;include “b.h” if&lt;ul&gt;
+&lt;li&gt;B is a &lt;strong&gt;parent class&lt;/strong&gt; of A&lt;/li&gt;
+&lt;li&gt;A &lt;strong&gt;contains&lt;/strong&gt; a B object&lt;ul&gt;
+&lt;li&gt;B myb&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;myclass.h&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//=================================&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// include guard&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;ifndef&lt;/span&gt; __MYCLASS_H_INCLUDED__&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;define&lt;/span&gt; __MYCLASS_H_INCLUDED__&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//=================================&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// forward declared dependencies&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Foo&lt;/span&gt;;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Bar&lt;/span&gt;;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//=================================&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// included dependencies&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&amp;lt;vector&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;parent.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//=================================&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// the actual class&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;MyClass&lt;/span&gt; :&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; Parent  &lt;span class=&#34;comment&#34;&gt;// Parent object, so #include &#34;parent.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;built_in&#34;&gt;std&lt;/span&gt;::&lt;span class=&#34;built_in&#34;&gt;vector&lt;/span&gt;&amp;lt;&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;&amp;gt; avector;    &lt;span class=&#34;comment&#34;&gt;// vector object, so #include &amp;lt;vector&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  Foo* foo;                    &lt;span class=&#34;comment&#34;&gt;// Foo pointer, so forward declare Foo&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Func&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(Bar&amp;amp; bar)&lt;/span&gt;&lt;/span&gt;;         &lt;span class=&#34;comment&#34;&gt;// Bar reference, so forward declare Bar&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;friend&lt;/span&gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;MyFriend&lt;/span&gt;;&lt;/span&gt;       &lt;span class=&#34;comment&#34;&gt;// friend declaration is not a dependency&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                               &lt;span class=&#34;comment&#34;&gt;//   don&#39;t do anything about MyFriend&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;endif&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;// __MYCLASS_H_INCLUDED__ &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;```	&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;### Why that is the &lt;span class=&#34;string&#34;&gt;&#34;right way&#34;&lt;/span&gt; to include&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;- general idea is that it makes &#34;myclass.h&#34; fully self-contained and doesn&#39;t require any other area of the program (other than MyClass&#39;s implementation/source file) to know how MyClass works internally&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	- If some other &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;needs&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;to&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;use&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;MyClass&lt;/span&gt;, &lt;span class=&#34;title&#34;&gt;it&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;can&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;just&lt;/span&gt; #&lt;span class=&#34;title&#34;&gt;include&lt;/span&gt; &#34;&lt;span class=&#34;title&#34;&gt;myclass&lt;/span&gt;.&lt;span class=&#34;title&#34;&gt;h&lt;/span&gt;&#34; &lt;span class=&#34;title&#34;&gt;and&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;be&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;done&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;with&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;it&lt;/span&gt;!&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;- Alternative method: #include all of MyClass&#39;s dependencies before #including &#34;myclass.h&#34; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;``` cpp &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//  I want to use MyClass&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;myclass.h&#34;&lt;/span&gt;   &lt;span class=&#34;comment&#34;&gt;// will always work, no matter what MyClass looks like.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                       &lt;span class=&#34;comment&#34;&gt;// You&#39;re done&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;               &lt;span class=&#34;comment&#34;&gt;//  (provided myclass.h follows my outline above and does&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;               &lt;span class=&#34;comment&#34;&gt;//   not make unnecessary #includes)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;why alternative method is bad：you should fill out all depency header and maintain it’s order&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//  I want to use MyClass&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;myclass.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;span class=&#34;comment&#34;&gt;// ERROR &#39;Parent&#39; undefined&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;parent.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;myclass.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;span class=&#34;comment&#34;&gt;// ERROR &#39;std::vector&#39; undefined &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;parent.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&amp;lt;vector&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;myclass.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;span class=&#34;comment&#34;&gt;// ERROR &#39;Support&#39; undefined &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;parent.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&amp;lt;vector&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;support.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;myclass.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;span class=&#34;comment&#34;&gt;// ERROR &#39;Support&#39; undefined&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;span class=&#34;comment&#34;&gt;// &#34;parent.h&#34; uses Support, and therefore you must #include &#34;support.h&#34; before &#34;parent.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;``` &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;It is all about encapsulation. Files that want to use MyClass don&#39;t need to be aware of what MyClass uses in order for it to work, and don&#39;t need to #include any MyClass dependencies. It&#39;s all very OO friendly, very easy to use, and very easy to maintain&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;### Circular Dependencies&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;A circular dependency is when &lt;span class=&#34;title&#34;&gt;two&lt;/span&gt; &lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;or&lt;/span&gt; more)&lt;/span&gt; classes depend on each other  &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;```cpp&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// a.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;b.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;A&lt;/span&gt; &amp;#123;&lt;/span&gt; B* b; &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// b.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;a.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;B&lt;/span&gt; &amp;#123;&lt;/span&gt; A* a &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;That’s what circular inclusion does&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// a.cpp&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;a.h&#34;&lt;/span&gt; &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;The compiler will &lt;span class=&#34;keyword&#34;&gt;do&lt;/span&gt; the following:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;a.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;span class=&#34;comment&#34;&gt;// start compiling a.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;b.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;comment&#34;&gt;// start compiling b.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;a.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;         &lt;span class=&#34;comment&#34;&gt;// compilation of a.h skipped because it&#39;s guarded&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;comment&#34;&gt;// resume compiling b.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;B&lt;/span&gt; &amp;#123;&lt;/span&gt; A* a &amp;#125;;        &lt;span class=&#34;comment&#34;&gt;// &amp;lt;--- ERROR, A is undeclared&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Even though you’re #including “a.h”, the compiler is not seeing A class until B class gets compiled.&lt;br&gt;Solution: forward declare when you’re only using a pointer or reference&lt;/p&gt;
+&lt;p&gt;Situation below is conceptually impossible(not logical). The solution is to have one or both classes contain a pointer or reference to the other, rather than a full object&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// a.h (guarded)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;b.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;A&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  B b;   &lt;span class=&#34;comment&#34;&gt;// B is an object, can&#39;t be forward declared&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// b.h (guarded)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;a.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;B&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  A a;   &lt;span class=&#34;comment&#34;&gt;// A is an object, can&#39;t be forward declared&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;Function-inlining&#34;&gt;&lt;a href=&#34;#Function-inlining&#34; class=&#34;headerlink&#34; title=&#34;Function inlining&#34;&gt;&lt;/a&gt;Function inlining&lt;/h2&gt;&lt;p&gt;Inline Function body needs to exist in every cpp file which calls them, otherwise you get linker errors&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;B&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Func&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; A&amp;amp; a)&lt;/span&gt;   &lt;span class=&#34;comment&#34;&gt;// parameter, so forward declare is okay&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;  &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    a.DoSomething();      &lt;span class=&#34;comment&#34;&gt;// but now that we&#39;ve dereferenced it, it&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                          &lt;span class=&#34;comment&#34;&gt;//  becomes an #include dependency&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;               &lt;span class=&#34;comment&#34;&gt;// = we now have a potential circular inclusion&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;The key is that while inline function need to exist in the header, they &lt;strong&gt;do not need to exist in the class definition itself&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// b.h  (assume its guarded)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//------------------&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;A&lt;/span&gt;;&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;// forward declared dependency&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//------------------&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;B&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Func&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; A&amp;amp; a)&lt;/span&gt;&lt;/span&gt;;  &lt;span class=&#34;comment&#34;&gt;// okay, A is forward declared&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//------------------&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//now B is already defined&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;a.h&#34;&lt;/span&gt;        &lt;span class=&#34;comment&#34;&gt;// can use A with include dependency without error&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;inline&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;B::Func&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; A&amp;amp; a)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  a.DoSomething();    &lt;span class=&#34;comment&#34;&gt;// okay!  a.h has been included&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;even if a.h includes b.h, the additional #includes don’t come up until AFTER class B is fully defined, and they are therefore harmless.&lt;/p&gt;
+&lt;p&gt;But putting function bodies at the end of my header is ugly. Is there a way to avoid that?&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// b.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// blah blah&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;B&lt;/span&gt; &amp;#123;&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;/* blah blah */&lt;/span&gt; &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;b_inline.h&#34;&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;// or I sometimes use &#34;b.hpp&#34; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;```	&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;``` cpp&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// b_inline.h (or b.hpp -- whatever)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;a.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;b.h&#34;&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;// not necessary, but harmless&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;comment&#34;&gt;//  you can do this to make this &#34;feel&#34; like a source&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;comment&#34;&gt;//  file, even though it isn&#39;t&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;inline&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;B::Func&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; A&amp;amp; a)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  a.DoSomething();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;This seperates the interface from the implementation, while still allowing the implementation to be inlined&lt;/p&gt;
+&lt;h2 id=&#34;Forward-declaring-templates&#34;&gt;&lt;a href=&#34;#Forward-declaring-templates&#34; class=&#34;headerlink&#34; title=&#34;Forward declaring templates&#34;&gt;&lt;/a&gt;Forward declaring templates&lt;/h2&gt;&lt;p&gt;Forward declaring is pretty straight-forward when it comes to simple classes, but when dealing with template classes, things aren’t so simple&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// a.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;b.h&#34;&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;// included dependencies&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;template&lt;/span&gt; &amp;lt;&lt;span class=&#34;keyword&#34;&gt;typename&lt;/span&gt; T&amp;gt; &lt;span class=&#34;comment&#34;&gt;// the class template&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Tem&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;comment&#34;&gt;/*...*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  B b;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// class most commonly used with &#39;int&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;typedef&lt;/span&gt; Tem&amp;lt;&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;&amp;gt; A;  &lt;span class=&#34;comment&#34;&gt;// typedef as &#39;A&#39; &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// b.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// forward declared dependencies&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;A&lt;/span&gt;;&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;// error!&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// the class&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;B&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;comment&#34;&gt;/* ... */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  A* ptr;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Because ‘A’ isn’t really a class, but rather a typedef, the compiler will bark at you&lt;br&gt;we can’t just #include “a.h” here because of a circular dependency problem&lt;/p&gt;
+&lt;p&gt;We need to forward typedef A  &lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;template&lt;/span&gt; &amp;lt;&lt;span class=&#34;keyword&#34;&gt;typename&lt;/span&gt; T&amp;gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Tem&lt;/span&gt;;&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;// forward declare our template&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;typedef&lt;/span&gt; Tem&amp;lt;&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;&amp;gt; A;               &lt;span class=&#34;comment&#34;&gt;// then typedef &#39;A&#39; (forward typedef A instead of forward declare A)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;A cleaner solution is to create an &lt;strong&gt;alternative header&lt;/strong&gt; which has the forward declarations of your templated classes and their typedefs&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//a.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;b.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;template&lt;/span&gt; &amp;lt;&lt;span class=&#34;keyword&#34;&gt;typename&lt;/span&gt; T&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Tem&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;comment&#34;&gt;/*...*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  B b;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//a_fwd.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;template&lt;/span&gt; &amp;lt;&lt;span class=&#34;keyword&#34;&gt;typename&lt;/span&gt; T&amp;gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Tem&lt;/span&gt;;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;typedef&lt;/span&gt; Tem&amp;lt;&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;&amp;gt; A;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//b.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;a_fwd.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;B&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;comment&#34;&gt;/*...*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  A* ptr;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;This allows B to include a header which forward declares A without including the entire class definition&lt;/p&gt;
+</content>
+        <category term="c" />
+        <category term="cpp" />
+        <updated>2015-07-21T04:37:47.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://gitqwerty777.github.io/gdb-introduction/</id>
+        <title>gdb簡介</title>
+        <link rel="alternate" href="http://gitqwerty777.github.io/gdb-introduction/"/>
+        <content type="html">&lt;h2 id=&#34;簡介&#34;&gt;&lt;a href=&#34;#簡介&#34; class=&#34;headerlink&#34; title=&#34;簡介&#34;&gt;&lt;/a&gt;簡介&lt;/h2&gt;&lt;p&gt;只要使用GNU計畫出產的編譯器(如gcc)，就可以用gdb來進行除錯，包含 C/C++/Objective-C/Fortran/Java 等語言。&lt;/p&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+
+&lt;h2 id=&#34;基本知識&#34;&gt;&lt;a href=&#34;#基本知識&#34; class=&#34;headerlink&#34; title=&#34;基本知識&#34;&gt;&lt;/a&gt;基本知識&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;function stack → frame&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;C語言在進入一個函式前，會將原本所在的函式的資訊(變數值、函式名、指標)儲存至堆疊(stack)裡，等到回傳(return)後再從這些堆疊裡復原函式資訊&lt;/li&gt;
+&lt;li&gt;目前正在執行的函式就是 frame 0，而呼叫frame 0的函式就是frame 1，以此類推&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;除錯程序&#34;&gt;&lt;a href=&#34;#除錯程序&#34; class=&#34;headerlink&#34; title=&#34;除錯程序&#34;&gt;&lt;/a&gt;除錯程序&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;載入程式&lt;/li&gt;
+&lt;li&gt;設中斷點&lt;/li&gt;
+&lt;li&gt;執行程式，程式跑到中斷點會停下來&lt;/li&gt;
+&lt;li&gt;在堆疊間跳躍，並檢查變數值&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;載入程式&#34;&gt;&lt;a href=&#34;#載入程式&#34; class=&#34;headerlink&#34; title=&#34;載入程式&#34;&gt;&lt;/a&gt;載入程式&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;編譯時加入 &lt;code&gt;-g&lt;/code&gt; 可加入除錯資訊。這些除錯訊息會影響程式大小和執行速度，所以一般在發佈應用程式時是不會以&lt;code&gt;-g&lt;/code&gt;參數編譯的。&lt;ul&gt;
+&lt;li&gt;可以在事後利用 strip 指令清掉應用程式裡的除錯資訊。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;編譯時最好不要開optimization(&lt;code&gt;-O&lt;/code&gt;)，不然優化後的程式的執行順序會改變，較難debug。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;執行&lt;code&gt;gdb [program]&lt;/code&gt;即可開始除錯&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;gdb程式參數&lt;/th&gt;
+&lt;th&gt;簡寫&lt;/th&gt;
+&lt;th&gt;說明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;-symbols [file_name]&lt;/td&gt;
+&lt;td&gt;-s&lt;/td&gt;
+&lt;td&gt;讀取檔案中的除錯表&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-exec [file_name]&lt;/td&gt;
+&lt;td&gt;-e&lt;/td&gt;
+&lt;td&gt;除錯一個執行檔&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-core [file_name]&lt;/td&gt;
+&lt;td&gt;-c&lt;/td&gt;
+&lt;td&gt;讀入一個core dump檔案&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-pid [process_id]&lt;/td&gt;
+&lt;td&gt;-p&lt;/td&gt;
+&lt;td&gt;啟動attach模式，除錯一個執行中的程式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-directory [directory_name]&lt;/td&gt;
+&lt;td&gt;-d&lt;/td&gt;
+&lt;td&gt;將資料夾加入原始碼的搜尋路徑&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-readnow&lt;/td&gt;
+&lt;td&gt;-r&lt;/td&gt;
+&lt;td&gt;一次讀取完所有的符號表，這會讓啟動gdb的時間變長，但在執行往後的除錯動作會較快速。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-quiet/-silent&lt;/td&gt;
+&lt;td&gt;-q&lt;/td&gt;
+&lt;td&gt;安靜模式，啟動時gdb將不會顯示版權頁。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-cd directory_name&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;改變程式執行的目錄&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;–args&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;這個參數要當作命令列的最後一個參數，其後跟隨的參數都會被視為「傳給要除錯的程式的參數」&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;設中斷點&#34;&gt;&lt;a href=&#34;#設中斷點&#34; class=&#34;headerlink&#34; title=&#34;設中斷點&#34;&gt;&lt;/a&gt;設中斷點&lt;/h3&gt;&lt;p&gt;&lt;code&gt;[breakpoint]&lt;/code&gt; 可以是 file+line number, function name, memory address&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;停止時機&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;break&lt;/td&gt;
+&lt;td&gt;gdb執行下一個指令後停止&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;break [breakpoint]&lt;/td&gt;
+&lt;td&gt;在指定行數、函式開始前、或指定位址停止&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;break [breakpoint] if [condition]&lt;/td&gt;
+&lt;td&gt;只有在符合條件時停止&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;break [offset]&lt;/td&gt;
+&lt;td&gt;在目前程式停止位置的offset行&lt;br&gt;停止offset負數時，為前offset行，反之&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;break [filename]:[linenum]&lt;/td&gt;
+&lt;td&gt;指定檔案的指定行停止&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;rbreak [RE]&lt;/td&gt;
+&lt;td&gt;符合正規表示式的函式停止&lt;br&gt;如 &lt;code&gt;rbreak .&lt;/code&gt;, 這樣每個函式開頭都有中斷點了&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;tbreak&lt;/td&gt;
+&lt;td&gt;只會生效一次，能放的參數與break相同&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;disable [breakpoint number]&lt;/td&gt;
+&lt;td&gt;暫時關閉指定中斷點，若無指定則全部關閉&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;enable [breakpoint number]&lt;/td&gt;
+&lt;td&gt;取消暫時關閉狀態&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;說明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;info break&lt;/td&gt;
+&lt;td&gt;列出目前所有的中斷點&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;condition [breakpoint number] [condition]&lt;/td&gt;
+&lt;td&gt;設中斷點的條件，如果條件為true才中斷&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;commands [breakpoint number] [command]&lt;/td&gt;
+&lt;td&gt;設定遇到指定中斷點時要自動執行的指令&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;clear [breakpoint]&lt;/td&gt;
+&lt;td&gt;刪除指定中斷點&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;delete [breakpoint number]&lt;/td&gt;
+&lt;td&gt;刪除指定中斷點&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;執行程式&#34;&gt;&lt;a href=&#34;#執行程式&#34; class=&#34;headerlink&#34; title=&#34;執行程式&#34;&gt;&lt;/a&gt;執行程式&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;說明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;file [filename]&lt;/td&gt;
+&lt;td&gt;開啟檔案 (等同於 gdb filename)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;run&lt;/td&gt;
+&lt;td&gt;執行程式 (可加參數)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;kill&lt;/td&gt;
+&lt;td&gt;終止程式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;set&lt;/td&gt;
+&lt;td&gt;設定特定參數(或變數)&lt;br&gt;如：&lt;code&gt;set environment CFLAGS=-g&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;unset&lt;/td&gt;
+&lt;td&gt;取消特定參數&lt;br&gt;如：&lt;code&gt;unset environment&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;show&lt;/td&gt;
+&lt;td&gt;顯示特定參數&lt;br&gt;如：&lt;code&gt;show environment&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;set/show args&lt;/td&gt;
+&lt;td&gt;設定/顯示 命令列的參數&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;attach [PID]&lt;/td&gt;
+&lt;td&gt;載入正在執行的程式以進行除錯。PID 可由 ps 指令取得&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;detach [PID]&lt;/td&gt;
+&lt;td&gt;釋放已 attach 的程式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;在堆疊間跳躍&#34;&gt;&lt;a href=&#34;#在堆疊間跳躍&#34; class=&#34;headerlink&#34; title=&#34;在堆疊間跳躍&#34;&gt;&lt;/a&gt;在堆疊間跳躍&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;主要指令&lt;/th&gt;
+&lt;th&gt;說明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;next&lt;/td&gt;
+&lt;td&gt;執行&lt;strong&gt;當前函式&lt;/strong&gt;的一個指令&lt;br&gt;若指令為呼叫函式，則直接跑完，不會進入frame中&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;step&lt;/td&gt;
+&lt;td&gt;執行函式中的一個指令&lt;br&gt;若指令為呼叫函式，會進入新的frame中&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;until&lt;/td&gt;
+&lt;td&gt;直接跑完迴圈(for, while…)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;continue&lt;/td&gt;
+&lt;td&gt;繼續執行，直到下一個中斷點或是程式停止&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;return&lt;/td&gt;
+&lt;td&gt;視同該 frame 已執行完畢&lt;br&gt;等同插入C語言指令&lt;code&gt;return;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;※註：若該函式的除錯資訊沒有編進執行檔裡的話，那&lt;code&gt;step&lt;/code&gt;也不會跳進這個函式裡，而是單純的將它看作一行程式碼(如同next的作用)，如標準函式庫(如&lt;code&gt;stdio.h&lt;/code&gt;)提供的函式。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;說明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;backtrace&lt;/td&gt;
+&lt;td&gt;堆疊追蹤。會顯示出所有的 frame 的資訊&lt;br&gt; = &lt;code&gt;info frame&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;frame&lt;/td&gt;
+&lt;td&gt;顯示現在的行數、函式、及其所傳送的參數&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;frame [frame number]&lt;/td&gt;
+&lt;td&gt;切換到指定的frame(以印出區域變數)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;up&lt;/td&gt;
+&lt;td&gt;回到上一層frame，也就是原本的frame被呼叫的地方，並顯示其 stack 資訊&lt;br&gt;&lt;code&gt;up 3&lt;/code&gt;: 回到上三層frame(0 → 3)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;down&lt;/td&gt;
+&lt;td&gt;到下一層frame&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;finish&lt;/td&gt;
+&lt;td&gt;執行完目前的frame&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;jump [location]&lt;/td&gt;
+&lt;td&gt;直接跳到指定位置(行數，函式…)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h4 id=&#34;列出原始碼&#34;&gt;&lt;a href=&#34;#列出原始碼&#34; class=&#34;headerlink&#34; title=&#34;列出原始碼&#34;&gt;&lt;/a&gt;列出原始碼&lt;/h4&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;說明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;list(第一次)&lt;/td&gt;
+&lt;td&gt;列出現在執行的位置上下5行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;list(第二次以後)&lt;/td&gt;
+&lt;td&gt;繼續印出之後的程式碼(類似page down)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;list -&lt;/td&gt;
+&lt;td&gt;印出上一次list的程式碼的前一段程式碼(類似page up)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;list a,b&lt;/td&gt;
+&lt;td&gt;印出第 a ~ b 行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;list [filename]:[number]&lt;/td&gt;
+&lt;td&gt;列出某檔案的第幾行，檔案名可省略&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;list [function]&lt;/td&gt;
+&lt;td&gt;列出某函數的程式碼&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;show listsize&lt;/td&gt;
+&lt;td&gt;顯示現在一次印出幾行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;set listsize [num]&lt;/td&gt;
+&lt;td&gt;設定一次印出幾行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;檢查變數值&#34;&gt;&lt;a href=&#34;#檢查變數值&#34; class=&#34;headerlink&#34; title=&#34;檢查變數值&#34;&gt;&lt;/a&gt;檢查變數值&lt;/h3&gt;&lt;p&gt;可以顯示某些資訊以利於debug&lt;/p&gt;
+&lt;h4 id=&#34;print-display&#34;&gt;&lt;a href=&#34;#print-display&#34; class=&#34;headerlink&#34; title=&#34;print, display&#34;&gt;&lt;/a&gt;print, display&lt;/h4&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;(gdb) &lt;span class=&#34;built_in&#34;&gt;print&lt;/span&gt; i&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;variable&#34;&gt;$1&lt;/span&gt; = 6078&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;輸入 &lt;code&gt;print/格式字元 [variable]&lt;/code&gt; 可以指定型態，與printf不同的以粗體表示  &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;x&lt;/th&gt;
+&lt;th&gt;格式字元&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;d&lt;/td&gt;
+&lt;td&gt;整數&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;u&lt;/td&gt;
+&lt;td&gt;無號整數(unsigned)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;o&lt;/td&gt;
+&lt;td&gt;八進位&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;t&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;二進位&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;a&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;位址&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;c&lt;/td&gt;
+&lt;td&gt;字元&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;f&lt;/td&gt;
+&lt;td&gt;浮點數&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;說明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;whatis [variable]&lt;/td&gt;
+&lt;td&gt;顯示指定變數的型態&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;print arr[1]@5&lt;/td&gt;
+&lt;td&gt;印出變數arr[1]和之後的變數，共印出5個(arr[1]~arr[5])&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;print *arr@3&lt;/td&gt;
+&lt;td&gt;印出陣列arr的前3個變數(arr[0]~arr[2])&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;display [variable]&lt;/td&gt;
+&lt;td&gt;每次中斷時會顯示指定變數值&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h4 id=&#34;變數&#34;&gt;&lt;a href=&#34;#變數&#34; class=&#34;headerlink&#34; title=&#34;變數&#34;&gt;&lt;/a&gt;變數&lt;/h4&gt;&lt;p&gt;執行 print 指令後，gdb 產生臨時變數(如&lt;code&gt;$1&lt;/code&gt;)來記錄&lt;br&gt;可以直接利用 &lt;code&gt;$1&lt;/code&gt; 來取用這個變數&lt;/p&gt;
+&lt;p&gt;用於 print 及 display 的參數名稱&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$7&lt;/code&gt;: 第七個運算式&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$&lt;/code&gt;: 前一個的運算式&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$$&lt;/code&gt;: 前二個的運算式&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$$7&lt;/code&gt;: 前七個的運算式&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$pc&lt;/code&gt; program counter&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$sp&lt;/code&gt; stack pointer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;設定新變數&#34;&gt;&lt;a href=&#34;#設定新變數&#34; class=&#34;headerlink&#34; title=&#34;設定新變數&#34;&gt;&lt;/a&gt;設定新變數&lt;/h4&gt;&lt;p&gt;取代冗長路徑的變數，如在深層資料結構中的變數&lt;br&gt;(註: 此變數為 pass by reference, 修改新變數的值也會修改原本的變數)&lt;/p&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;set $newv &amp;#x3D; model-&amp;gt;dataset-&amp;gt;vector-&amp;gt;data&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;p *($newv++)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h4 id=&#34;info-檢視詳細資訊&#34;&gt;&lt;a href=&#34;#info-檢視詳細資訊&#34; class=&#34;headerlink&#34; title=&#34;info: 檢視詳細資訊&#34;&gt;&lt;/a&gt;info: 檢視詳細資訊&lt;/h4&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;說明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;info break&lt;/td&gt;
+&lt;td&gt;列出目前所有的中斷點&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;info line&lt;/td&gt;
+&lt;td&gt;查看程式目前運行的行數&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;info frame&lt;/td&gt;
+&lt;td&gt;詳細的frame資訊&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;info args&lt;/td&gt;
+&lt;td&gt;顯示傳給目前執行函式的參數值&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;info locals&lt;/td&gt;
+&lt;td&gt;顯示目前執行函式內所有區域變數的值&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;info reg&lt;/td&gt;
+&lt;td&gt;顯示暫存器(register)的值&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;info all-reg&lt;/td&gt;
+&lt;td&gt;顯示暫存器的值，包括數學運算暫存器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;info handle&lt;/td&gt;
+&lt;td&gt;列出目前處理 signal 的設定&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;info share&lt;/td&gt;
+&lt;td&gt;顯示共享函式庫資訊&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h2 id=&#34;其他指令&#34;&gt;&lt;a href=&#34;#其他指令&#34; class=&#34;headerlink&#34; title=&#34;其他指令&#34;&gt;&lt;/a&gt;其他指令&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;quit&lt;/code&gt; 結束 = &lt;code&gt;q&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;shell [command]&lt;/code&gt; 在shell上執行指令&lt;/li&gt;
+&lt;li&gt;Enter鍵: 重複上一個命令&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;信號-signal-處理&#34;&gt;&lt;a href=&#34;#信號-signal-處理&#34; class=&#34;headerlink&#34; title=&#34;信號(signal)處理&#34;&gt;&lt;/a&gt;信號(signal)處理&lt;/h3&gt;&lt;p&gt;&lt;code&gt;handle [signal] [operation]&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;預設operation為 &lt;code&gt;stop&lt;/code&gt;, &lt;code&gt;print&lt;/code&gt;, &lt;code&gt;noignore&lt;/code&gt;，也就是遇到 signal 時，GDB 會先攔截，並暫停程式&lt;/li&gt;
+&lt;li&gt;必要時可以改為 &lt;code&gt;nostop&lt;/code&gt;, &lt;code&gt;noprint&lt;/code&gt;，讓程式本身去處理 signal&lt;/li&gt;
+&lt;li&gt;若下達 &lt;code&gt;ignore&lt;/code&gt; 則是讓程式忽略此 signal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;thread處理&#34;&gt;&lt;a href=&#34;#thread處理&#34; class=&#34;headerlink&#34; title=&#34;thread處理&#34;&gt;&lt;/a&gt;thread處理&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;說明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;thread&lt;/td&gt;
+&lt;td&gt;查看目前在哪個 thread&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;thread [num]&lt;/td&gt;
+&lt;td&gt;切換至 第num個 thread&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;thread apply all [command]&lt;/td&gt;
+&lt;td&gt;對所有 thread 執行指令&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;Python-整合&#34;&gt;&lt;a href=&#34;#Python-整合&#34; class=&#34;headerlink&#34; title=&#34;Python 整合&#34;&gt;&lt;/a&gt;Python 整合&lt;/h3&gt;&lt;p&gt;可於gdb中執行python，並執行操作，如存取breakpoint&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;python print(gdb.breakpoints())&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;python gdb.execute()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;python gdb.parse_and_eval()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;反向執行&#34;&gt;&lt;a href=&#34;#反向執行&#34; class=&#34;headerlink&#34; title=&#34;反向執行&#34;&gt;&lt;/a&gt;反向執行&lt;/h3&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2Jsb2cuY3Nkbi5uZXQvQ2hlcnlsTmF0c3UvYXJ0aWNsZS9kZXRhaWxzLzY0MzY1NzA=&#34;&gt;GDB 反向調試（Reverse Debugging）&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;reverse-continue&lt;/code&gt; 反向執行程式&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;reverse-step&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;reverse-stepi&lt;/code&gt; 反向執行程式到上一條機器指令&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;reverse-next&lt;/code&gt; 反向執行到上一次被執行的源代碼行，但是不進入函式&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;reverse-nexti&lt;/code&gt; 反向執行到上一條機器指令，除非這條指令用來返回一個函式調用、整個函式將會被反向執行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;reverse-finish&lt;/code&gt; 反向執行程式回到調用目前函式的地方&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;set exec-direction [forward | reverse]&lt;/code&gt; 設置程序執行方向，即可用一般的step和continue來反向執行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;指令簡寫&#34;&gt;&lt;a href=&#34;#指令簡寫&#34; class=&#34;headerlink&#34; title=&#34;指令簡寫&#34;&gt;&lt;/a&gt;指令簡寫&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;break&lt;/code&gt;: b&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;delete&lt;/code&gt;: d&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;disable&lt;/code&gt;: dis&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;next&lt;/code&gt;: n&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;step&lt;/code&gt;: s&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;until&lt;/code&gt;: u&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;continue&lt;/code&gt;: c&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;jump&lt;/code&gt;: j&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;return&lt;/code&gt;: ret&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;list&lt;/code&gt;: l&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;backtrace&lt;/code&gt;: bt&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;info&lt;/code&gt;: i&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;print&lt;/code&gt;: p&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;display&lt;/code&gt;: disp&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;environment&lt;/code&gt;: env&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;可多次使用簡寫&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;info break&lt;/code&gt; = &lt;code&gt;i b&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;CppCon-2015-Greg-Law-“Give-me-15-minutes-amp-I’ll-change-your-view-of-GDB”&#34;&gt;&lt;a href=&#34;#CppCon-2015-Greg-Law-“Give-me-15-minutes-amp-I’ll-change-your-view-of-GDB”&#34; class=&#34;headerlink&#34; title=&#34;CppCon 2015: Greg Law “Give me 15 minutes &amp;amp; I’ll change your view of GDB”&#34;&gt;&lt;/a&gt;CppCon 2015: Greg Law “Give me 15 minutes &amp;amp; I’ll change your view of GDB”&lt;/h2&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1Qb3JmTFNyM0RESQ==&#34;&gt;Youtube連結&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0NwcENvbi9DcHBDb24yMDE1L2Jsb2IvbWFzdGVyL0xpZ2h0bmluZyUyMFRhbGtzJTIwYW5kJTIwTHVuY2glMjBTZXNzaW9ucy9HaXZlJTIwTWUlMjAxNSUyME1pbnV0ZXMlMjBhbmQlMjBJJyB0YXJnZXQ9&#34;&gt;Github連結&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Ctrl-x a&lt;/code&gt;： text ui mode(tui)&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Ctrl-p&lt;/code&gt;： 得到前一個指令&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl-x 2&lt;/code&gt;： switch to assembly mode/register group mode &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tui reg float&lt;/code&gt;： show float registers&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;b _exit.c:32&lt;/code&gt;： 在程式結束之前停止&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;command [breakpoint number] [command]&lt;/code&gt;： 遇到breakpoint時，所自動執行的指令 &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;x [memory address]&lt;/code&gt;： jump to memory location&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;使用感想&#34;&gt;&lt;a href=&#34;#使用感想&#34; class=&#34;headerlink&#34; title=&#34;使用感想&#34;&gt;&lt;/a&gt;使用感想&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;遇到segmentation fault的時候，一定會使用&lt;ul&gt;
+&lt;li&gt;可知道出問題的位置&lt;/li&gt;
+&lt;li&gt;通常再print看看就知道原因了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;平常還是用&lt;code&gt;printf&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;殺雞焉用牛刀？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;如果程式有完整的錯誤處理和記錄檔(log)，可減少用到gdb的頻率&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;參考資料&#34;&gt;&lt;a href=&#34;#參考資料&#34; class=&#34;headerlink&#34; title=&#34;參考資料&#34;&gt;&lt;/a&gt;參考資料&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3VzZXIuZnJkbS5pbmZvL2NraHVuZy9iL2MvZ2RiLnBocA==&#34;&gt;除錯程式:gdb&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3RldHJhbGV0Lmx1bmEuY29tLnR3Lz9vcD1WaWV3QXJ0aWNsZSZhcnRpY2xlSWQ9MTg3JmJsb2dJZD0x&#34;&gt;Linux 除錯利器-GDB簡介&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2Jsb2cueXNsaW4udHcvMjAxMi8wOC9nZGIuaHRtbA==&#34;&gt;工欲善其事，必先利其器:GDB基本教學&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5zdHVkeS1hcmVhLm9yZy9jeXJpbC9vcGVudG9vbHMvb3BlbnRvb2xzL2RlYnVnLmh0bWw=&#34;&gt;用Open Source工具開發軟體: 新軟體開發關念&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5nbnUub3JnL3NvZnR3YXJlL2dkYi9kb2N1bWVudGF0aW9uLw==&#34;&gt;GDB官方文件&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="gdb" />
+        <category term="c語言" />
+        <category term="cpp" />
+        <category term="除錯" />
+        <updated>2014-09-19T01:35:58.000Z</updated>
+    </entry>
+</feed>

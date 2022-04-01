@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>QWERTY • Posts by &#34;註解&#34; tag</title>
+        <link>http://gitqwerty777.github.io</link>
+        <description>Programming | Computer Science | Thought</description>
+        <language>zh-TW</language>
+        <pubDate>Thu, 06 Aug 2020 20:08:03 +0800</pubDate>
+        <lastBuildDate>Thu, 06 Aug 2020 20:08:03 +0800</lastBuildDate>
+        <category>C#</category>
+        <category>CodingStyle</category>
+        <category>Emacs</category>
+        <category>編輯器</category>
+        <category>CFR</category>
+        <category>電腦對局理論</category>
+        <category>指令</category>
+        <category>機器學習</category>
+        <category>perceptron</category>
+        <category>readme</category>
+        <category>文件</category>
+        <category>github</category>
+        <category>artificial intelligence</category>
+        <category>search</category>
+        <category>First-Order Logic</category>
+        <category>大數</category>
+        <category>程式</category>
+        <category>C++</category>
+        <category>Hexo</category>
+        <category>網誌</category>
+        <category>Markdown</category>
+        <category>CleanCode</category>
+        <category>重構</category>
+        <category>TDD</category>
+        <category>設計模式</category>
+        <category>CMake</category>
+        <category>Makefile</category>
+        <category>Linux</category>
+        <category>Todo</category>
+        <category>註解</category>
+        <category>經濟學</category>
+        <category>策略</category>
+        <category>競爭</category>
+        <category>博弈論</category>
+        <category>計算機結構</category>
+        <category>人工智慧</category>
+        <category>圍棋</category>
+        <category>象棋</category>
+        <category>蒙地卡羅</category>
+        <category>Alpha-Beta搜尋</category>
+        <category>強化學習</category>
+        <category>計算機網路</category>
+        <category>boost</category>
+        <category>函式庫</category>
+        <category>編譯</category>
+        <category>gcc</category>
+        <category>g++</category>
+        <category>clang</category>
+        <category>最佳化</category>
+        <category>推薦系統</category>
+        <category>FM</category>
+        <category>FFM</category>
+        <category>SVM</category>
+        <category>Embedding</category>
+        <category>自然語言處理</category>
+        <category>外國用語</category>
+        <category>萌典</category>
+        <category>opencc</category>
+        <category>PTT</category>
+        <category>vuejs</category>
+        <category>linux</category>
+        <category>c</category>
+        <category>compile</category>
+        <category>gdb</category>
+        <category>c語言</category>
+        <category>cpp</category>
+        <category>除錯</category>
+        <category>git</category>
+        <category>VMWare</category>
+        <category>虛擬機</category>
+        <category>IFTTT</category>
+        <category>自動化</category>
+        <category>備份</category>
+        <category>webhook</category>
+        <category>簡報</category>
+        <category>軟體</category>
+        <category>PowerPoint</category>
+        <category>Latex</category>
+        <category>JavaScript</category>
+        <category>CSS</category>
+        <category>Unity</category>
+        <category>fcitx</category>
+        <category>嘸蝦米</category>
+        <category>輸入法</category>
+        <category>硬碟</category>
+        <category>記憶體</category>
+        <category>效能</category>
+        <category>錯誤</category>
+        <category>makefile</category>
+        <category>備忘錄</category>
+        <category>存檔</category>
+        <category>統計</category>
+        <category>byobu</category>
+        <category>screen</category>
+        <category>tmux</category>
+        <category>reactjs</category>
+        <category>javascript</category>
+        <category>WideAndDeep</category>
+        <category>Google</category>
+        <category>觀察者</category>
+        <category>訂閱</category>
+        <category>委託</category>
+        <category>正規表示式(RegExp)</category>
+        <category>上下文無關文法(CFG)</category>
+        <category>hexo</category>
+        <category>blog</category>
+        <category>theme</category>
+        <category>feature</category>
+        <category>revealJS</category>
+        <category>markdown</category>
+        <category>rss</category>
+        <category>facebook</category>
+        <category>youtube</category>
+        <category>ptt</category>
+        <category>bilibili</category>
+        <category>pixiv</category>
+        <category>crawler</category>
+        <category>SEO</category>
+        <category>google</category>
+        <category>html</category>
+        <category>amazon</category>
+        <category>webhost</category>
+        <category>ssl</category>
+        <category>漢字</category>
+        <category>中文</category>
+        <category>異體字</category>
+        <category>unicode</category>
+        <category>unity</category>
+        <category>演算法</category>
+        <category>隨機排序</category>
+        <category>洗牌</category>
+        <category>Fisher-Yates</category>
+        <category>證明</category>
+        <category>python</category>
+        <item>
+            <guid isPermalink="true">http://gitqwerty777.github.io/comment-meaning/</guid>
+            <title>程式註解的常用標記</title>
+            <link>http://gitqwerty777.github.io/comment-meaning/</link>
+            <category>CodingStyle</category>
+            <category>程式</category>
+            <category>Todo</category>
+            <category>註解</category>
+            <pubDate>Thu, 06 Aug 2020 20:08:03 +0800</pubDate>
+            <description><![CDATA[ &lt;ul&gt;
+&lt;li&gt;&lt;code&gt;TODO&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;FIXME&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;XXX&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;NOTE&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;HACK&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;TODO&#34;&gt;&lt;a href=&#34;#TODO&#34; class=&#34;headerlink&#34; title=&#34;TODO&#34;&gt;&lt;/a&gt;TODO&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;需要實作的部份&lt;ul&gt;
+&lt;li&gt;Bug, 錯誤, 改進等都不是&lt;code&gt;TODO&lt;/code&gt;，見下述&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;FIXME&#34;&gt;&lt;a href=&#34;#FIXME&#34; class=&#34;headerlink&#34; title=&#34;FIXME&#34;&gt;&lt;/a&gt;FIXME&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;錯誤的、需要修正的部份&lt;/li&gt;
+&lt;li&gt;相似的標記:  &lt;code&gt;BUG&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;FIXME&lt;/code&gt; 解釋如何修正&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BUG&lt;/code&gt; 記錄錯誤如何發生&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;XXX&#34;&gt;&lt;a href=&#34;#XXX&#34; class=&#34;headerlink&#34; title=&#34;XXX&#34;&gt;&lt;/a&gt;XXX&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;需要改進的實作方式&lt;/li&gt;
+&lt;li&gt;相似的標記: &lt;code&gt;REFACT&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;想重構時可用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;NOTE&#34;&gt;&lt;a href=&#34;#NOTE&#34; class=&#34;headerlink&#34; title=&#34;NOTE&#34;&gt;&lt;/a&gt;NOTE&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;說明程式碼的如何使用&lt;ul&gt;
+&lt;li&gt;就是註解原本的用途&lt;/li&gt;
+&lt;li&gt;所以實際上不用加&lt;code&gt;NOTE&lt;/code&gt;，直接寫也可以&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;相似的標記: &lt;code&gt;MARK&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;HACK&#34;&gt;&lt;a href=&#34;#HACK&#34; class=&#34;headerlink&#34; title=&#34;HACK&#34;&gt;&lt;/a&gt;HACK&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;一個暫時、骯髒的解法&lt;/li&gt;
+&lt;li&gt;不應該進commit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;使用&#34;&gt;&lt;a href=&#34;#使用&#34; class=&#34;headerlink&#34; title=&#34;使用&#34;&gt;&lt;/a&gt;使用&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;VSCode 中的套件&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tYXJrZXRwbGFjZS52aXN1YWxzdHVkaW8uY29tL2l0ZW1zP2l0ZW1OYW1lPUdydW50ZnVnZ2x5LnRvZG8tdHJlZQ==&#34;&gt;TODO tree&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;除了標記，還需要說明文字，多人協作時也可署名&lt;/li&gt;
+&lt;li&gt;範例&lt;ul&gt;
+&lt;li&gt;❌&lt;code&gt;TODO:&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;➖&lt;code&gt;TODO: lowercase&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;⭕&lt;code&gt;TODO(qwerty): lowercase&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;有些標記不需要寫在程式碼中&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;BUG&lt;/code&gt;：應該有專用的Bug tracker&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;TODO&lt;/code&gt;：應記錄在Todo tracker&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;參考資料&#34;&gt;&lt;a href=&#34;#參考資料&#34; class=&#34;headerlink&#34; title=&#34;參考資料&#34;&gt;&lt;/a&gt;參考資料&lt;/h2&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cub3JlaWxseS5jb20vbGlicmFyeS92aWV3L3RoZS1hcnQtb2YvOTc4MTQ0OTMxODQ4Mi8=&#34;&gt;The art of readable code&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

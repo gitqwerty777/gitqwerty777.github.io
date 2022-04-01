@@ -1,0 +1,2223 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png">
+  <link rel="mask-icon" href="/img/favicon.png" color="#222">
+  <meta name="google-site-verification" content="45plYlJRhxb-g8Tl8seizYgih_JUsmcJRH6oJHplkj0">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"gitqwerty777.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideLeftIn"}},"path":"search.json"};
+  </script>
+
+  <meta name="description" content="在資訊系學到最好的課，此外講義內容也很詳細">
+<meta property="og:type" content="article">
+<meta property="og:title" content="電腦對局理論">
+<meta property="og:url" content="http://gitqwerty777.github.io/computer-gaming/index.html">
+<meta property="og:site_name" content="QWERTY">
+<meta property="og:description" content="在資訊系學到最好的課，此外講義內容也很詳細">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/54GbBxV.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/mrf0Egx.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/i8bbMET.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/65RmOgp.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/9X2ZiRm.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/gmD51AT.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/IfDEwFh.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/d0m27cU.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/1-1.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/1-2.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/7iBkfKB.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/Vv8N3hj.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/csd9mLf.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/jthjSm8.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/PJ2bPrX.png">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/15-puzzle.svg/480px-15-puzzle.svg.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/4-1.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/4-2.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/4-3.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/4-4.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/4-5.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/5-1.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/5-2.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/5-3.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/5-4.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/5-5.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/5-6.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/6-1.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/6-2.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/6-3.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/7-1.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/7-2.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/7-3.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/7-4.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/7-5.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/7-6.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/7-7.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/7-8.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/7-9.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/7-10.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/7-11.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/7-13.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/7-14.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/7-15.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/7-16.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/7-18.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/7-17.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/7-19.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/7-20.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/7-21.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/7-22.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/7-23.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/7-24.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/7-25.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/test-algo.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/scout-algo.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/nodes-visited.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/nega-scout.png">
+<meta property="og:image" content="https://chessprogramming.wikispaces.com/Proof-number+search#Pseudo%20Code">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/proof-number.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/pn-algo.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/multivalue-pn-algo.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/random-games.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/minmax-and-avergae.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/mct-ex2.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/MCT.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/mct-ex1.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/UCB.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/ucb-ex1.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/UCB2.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/mct-uct.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/uct-imp.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/uct-imp2.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/uct-imp3.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/uct-result2.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/uct-result1.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/TCG/amaf.png">
+<meta property="article:published_time" content="2014-09-26T11:41:48.000Z">
+<meta property="article:modified_time" content="2022-04-01T16:57:25.640Z">
+<meta property="article:author" content="HCL">
+<meta property="article:tag" content="電腦對局理論">
+<meta property="article:tag" content="機器學習">
+<meta property="article:tag" content="人工智慧">
+<meta property="article:tag" content="圍棋">
+<meta property="article:tag" content="象棋">
+<meta property="article:tag" content="蒙地卡羅">
+<meta property="article:tag" content="Alpha-Beta搜尋">
+<meta property="article:tag" content="強化學習">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://gitqwerty777.github.io/img/TCG/54GbBxV.png">
+
+<link rel="canonical" href="http://gitqwerty777.github.io/computer-gaming/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-TW'
+  };
+</script>
+
+<script data-ad-client="ca-pub-7267358872858108" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+  <title>電腦對局理論 | QWERTY</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
+    <script data-pjax>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-51310670-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="QWERTY" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">QWERTY</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Hello World!</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>文章<span class="badge">56</span></a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>關於</a>
+
+  </li>
+        <li class="menu-item menu-item-rss">
+
+    <a href="/atom.xml" rel="section"><i class="fas fa-rss-square fa-fw"></i>RSS</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤<span class="badge">134</span></a>
+
+  </li>
+        <li class="menu-item menu-item-ptt標籤雲">
+
+    <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWUvcHR0LXRhZy1jbG91ZC8="><i class="fas fa-hashtag fa-fw"></i>PTT標籤雲</span>
+
+  </li>
+        <li class="menu-item menu-item-支語警察">
+
+    <a href="/foreign-terms-police" rel="section"><i class="fas fa-language fa-fw"></i>支語警察</a>
+
+  </li>
+        <li class="menu-item menu-item-英文聊天機器人">
+
+    <span class="exturl" data-url="aHR0cHM6Ly9jaGF0Ym90LnF3ZXJ0eTc3Ny5tZQ=="><i class="fas fa-comment-dots fa-fw"></i>英文聊天機器人</span>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+  <span class="exturl github-corner" data-url="aHR0cHM6Ly9naXRodWIuY29tL2dpdHF3ZXJ0eTc3Nw==" title="Follow me on GitHub" aria-label="Follow me on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></span>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/computer-gaming/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/img/qwerty.png">
+      <meta itemprop="name" content="HCL">
+      <meta itemprop="description" content="Programming | Computer Science | Thought">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QWERTY">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          電腦對局理論
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2014-09-26 19:41:48" itemprop="dateCreated datePublished" datetime="2014-09-26T19:41:48+08:00">2014-09-26</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">筆記</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="文章字數">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">文章字數：</span>
+              <span>34k</span>
+            </span>
+            <div class="post-description">在資訊系學到最好的課，此外講義內容也很詳細</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <!-- RENEW: -->
+
+<blockquote>
+<p>註：此為2014年版，且只寫到第八章(因為教授只考到這)</p>
+</blockquote>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><h3 id="學習電腦對局的用處"><a href="#學習電腦對局的用處" class="headerlink" title="學習電腦對局的用處"></a>學習電腦對局的用處</h3><ol>
+<li>電腦愈聰明，對人類愈有用</li>
+<li>電腦學得的技巧讓人學習</li>
+</ol>
+<h3 id="為何學棋局"><a href="#為何學棋局" class="headerlink" title="為何學棋局"></a>為何學棋局</h3><ol>
+<li>容易辨別輸贏</li>
+<li>規則簡單(先備知識少)</li>
+</ol>
+<span id="more"></span>
+
+<h3 id="圖靈測試-Turing-test"><a href="#圖靈測試-Turing-test" class="headerlink" title="圖靈測試(Turing test)"></a>圖靈測試(Turing test)</h3><p>If a machine is intelligent, then it cannot be distinguished from a human</p>
+<ul>
+<li>反過來利用的例子 - CAPTCHA(驗證碼): Completely Automated Public Turing test to tell Computers and Humans Apart</li>
+<li>Wolfram Alpha<ul>
+<li>knowledge base of Siri</li>
+</ul>
+</li>
+</ul>
+<p>Problems  </p>
+<ul>
+<li>Are all human behaviors intelligent?</li>
+<li>Can human perform every possible intelligent behavior?<br>→ Human Intelligence 和 Intelligence 並不完全相同</li>
+</ul>
+<h3 id="改變目標"><a href="#改變目標" class="headerlink" title="改變目標"></a>改變目標</h3><ul>
+<li>From Artificial Intelligence to <strong>Machine Intelligence</strong><ul>
+<li>machine intelligence: the thing machine can do better than human do</li>
+</ul>
+</li>
+<li>From imitation of human behaviors to doing intelligent behaviors</li>
+<li>From general-purpose intelligence to <strong>domain-dependent</strong> Expert Systems</li>
+</ul>
+<h3 id="重大突破"><a href="#重大突破" class="headerlink" title="重大突破"></a>重大突破</h3><ul>
+<li>1912 - End-Game chess playing machine  </li>
+<li>~1970 - Brute Force    </li>
+<li>1975 - Alpha-Beta pruning(Knuth and Moore)   </li>
+<li>1993 - Monte Carlo</li>
+</ul>
+<h3 id="無關：核心知識"><a href="#無關：核心知識" class="headerlink" title="無關：核心知識"></a>無關：核心知識</h3><p>用少部分的核心知識(要記得的事物)推得大多數的知識<br>Ex. 背九九乘法表推得所有多位數乘法<br>建構式數學(X)  </p>
+<h3 id="對局分類"><a href="#對局分類" class="headerlink" title="對局分類"></a>對局分類</h3><p><strong>研究遊戲之前的必要分析：分類</strong></p>
+<p>By number of players   </p>
+<ul>
+<li>Single-player games<ul>
+<li>puzzles</li>
+<li>Most of them are NP-complete<ul>
+<li>or the game will be not fun to play</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Two-player games<ul>
+<li>Most of them are either P-SPACE-complete(polynomial space usage) or exponential-time-complete<ul>
+<li>PSPACE-complete can be thought of as the hardest problems in PSPACE, solution of PSPACE-complete could easily be used to solve any other problem in PSPACE</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Multi-player games</li>
+</ul>
+<p>By state information obtained by each player(盤面資訊是否完全)  </p>
+<ul>
+<li>Perfect-information games<ul>
+<li>all players have all the information to make a correct decision</li>
+</ul>
+</li>
+<li>Imperfect-information games<ul>
+<li>some information is only available to selected players, for example you cannot see the opponent’s cards in Poker(不知對手的牌或棋子, Ex. 橋牌)</li>
+</ul>
+</li>
+</ul>
+<p>By rules of games known in advance(是否有特殊規則、是否知道對手的行動)  </p>
+<ul>
+<li>Complete-information games<ul>
+<li>rules of the game are fully known by all players in advance</li>
+</ul>
+</li>
+<li>Incomplete-information games<ul>
+<li>partial rules are not given in advance for some players(Ex. 囚犯困境賽局)</li>
+</ul>
+</li>
+</ul>
+<p><span class="exturl" data-url="aHR0cDovL3d3dy5lY29uLnVjc2IuZWR1L35nYXJyYXR0L0Vjb24xNzEvTGVjdDE0X1NsaWRlcy5wZGY=">definition of perfect and complete information in game theory<i class="fa fa-external-link-alt"></i></span></p>
+<p>By whether players can fully control the playing of the game(是否受隨機性影響)    </p>
+<ul>
+<li>Stochastic games<ul>
+<li>there is an element of chance such as dice rolls</li>
+</ul>
+</li>
+<li>Deterministic games<ul>
+<li>players have a full control over the games</li>
+</ul>
+</li>
+</ul>
+<p>Example(not fully sure):  </p>
+<ul>
+<li>perfect-information complete-information deterministic game: chinese chess, go    </li>
+<li>perfect-information complete-information stochastic game: dark chinese chess, 輪盤(Roulette)    </li>
+<li>perfect-information incomplete-information deterministic game: Prisoner’s Dilemma    </li>
+<li>perfect-information incomplete-information stochastic game: ?    </li>
+<li>inperfect-information complete-information deterministic game: ?    </li>
+<li>inperfect-information complete-information stochastic game: monopoly, bridge   </li>
+<li>inperfect-information incomplete-information deterministic game: battleship, bingo    </li>
+<li>inperfect-information incomplete-information stochastic game: most of the table&#x2F;computer games</li>
+</ul>
+<h2 id="Chap02-Basic-Search-Algorithms"><a href="#Chap02-Basic-Search-Algorithms" class="headerlink" title="Chap02 Basic Search Algorithms"></a>Chap02 Basic Search Algorithms</h2><ul>
+<li>Brute force</li>
+<li>Systematic brute-force search  <ul>
+<li>Breadth-first search (BFS)  </li>
+<li>Depth-first search (DFS)  <ul>
+<li>Depth-first Iterative-deepening (DFID)</li>
+</ul>
+</li>
+<li>Bi-directional search</li>
+</ul>
+</li>
+<li>Heuristic search: best-first search  <ul>
+<li>A*  <ul>
+<li>IDA*</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Symbol-Definition"><a href="#Symbol-Definition" class="headerlink" title="Symbol Definition"></a>Symbol Definition</h3><ul>
+<li>Node branching factor <code>b</code><ul>
+<li>degree</li>
+<li>number of neighbor vertexs of a node</li>
+</ul>
+</li>
+<li>Edge branching factor <code>e</code><ul>
+<li>number of connected edges of a node</li>
+</ul>
+</li>
+<li>Depth of a solution <code>d</code><ul>
+<li>最短深度, <code>D</code> 為最長深度</li>
+<li>Root深度為0</li>
+</ul>
+</li>
+<li>If <code>b</code> and <code>e</code> are average constant number, <code>e</code> &gt;&#x3D; <code>b</code>(兩個點之間可能有多條線)</li>
+</ul>
+<h3 id="Brute-force-search"><a href="#Brute-force-search" class="headerlink" title="Brute-force search"></a>Brute-force search</h3><p>Used information  </p>
+<ul>
+<li>initial state</li>
+<li>method to find adjacent states</li>
+<li>goal-checking method(whether current state is goal)</li>
+</ul>
+<p>Pure brute-force search program <img data-src="/img/TCG/54GbBxV.png">  </p>
+<ul>
+<li>隨機走旁邊的一個點</li>
+<li>不記憶走過的路<ul>
+<li>May take infinite time</li>
+</ul>
+</li>
+<li>Pure Random Algorithm 應用<ul>
+<li>驗證碼(e.g. 虛寶)</li>
+<li>純隨機數</li>
+</ul>
+</li>
+</ul>
+<h3 id="BFS-Breadth-First-Search"><a href="#BFS-Breadth-First-Search" class="headerlink" title="BFS(Breadth-First Search)"></a>BFS(Breadth-First Search)</h3><p><img data-src="/img/TCG/mrf0Egx.png"><br>deeper(N): 回傳與N相鄰的點<br>record parent state and backtrace to Find the path </p>
+<ul>
+<li><p>Space complexity: $O(b^d)$ → Too big!</p>
+</li>
+<li><p>Time complexity: $O(b^{d-1} * e)$     </p>
+<ul>
+<li>→ costs O(e) to find deeper(N), at most check b^(d-1) times(deeper(leaf) do not return new node)</li>
+</ul>
+</li>
+<li><p>Open list: nodes that are in the queue(candidate nodes)</p>
+</li>
+<li><p>Closed list: nodes that have been explored(assure not answer, can skip)</p>
+<ul>
+<li>Need a good algorithm to check for states in deeper(N) are visited or not<ul>
+<li>Hash  </li>
+<li>Binary search</li>
+</ul>
+</li>
+<li>not need to have because it won’t guarantee to improve the performance</li>
+<li>if it is possible to have no solution, Need to store nodes that are already visited</li>
+</ul>
+</li>
+<li><p>node： open list → check is goal or not, explore(deeper) → closed list</p>
+</li>
+</ul>
+<p>Property    </p>
+<ul>
+<li>Always finds optimal solution</li>
+<li>Do not fall into loops if goal exists(always “deeper”)</li>
+</ul>
+<h4 id="Disk-based-algorithm"><a href="#Disk-based-algorithm" class="headerlink" title="Disk based algorithm"></a>Disk based algorithm</h4><p><img data-src="/img/TCG/i8bbMET.png"></p>
+<p>Solution for huge space complexity</p>
+<ul>
+<li>disk: store main data</li>
+<li>memory: store buffers</li>
+</ul>
+<ul>
+<li>Store open list(QUEUE) in disk<ul>
+<li><strong>Append</strong> buffered open list to disk when memory is full or QUEUE is empty</li>
+</ul>
+</li>
+<li>Store closed list in disk and maintain them as sorted<ul>
+<li><strong>Merge</strong> buffered closed list with disk closed list when memory is full   </li>
+<li>delay cheking: check node in the closed list or not before being taken from open list</li>
+</ul>
+</li>
+</ul>
+<h4 id="Disk-based-algorithms"><a href="#Disk-based-algorithms" class="headerlink" title="Disk based algorithms"></a>Disk based algorithms</h4><ul>
+<li>not too slow<ul>
+<li>read large file in sequence<ul>
+<li>queue(always retrieve at head and write at end)</li>
+</ul>
+</li>
+<li>sorting of data in disk<ul>
+<li>merge sort between disk list and buffer list</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>very slow<ul>
+<li>read file in random order(disk spinning)</li>
+</ul>
+</li>
+<li>系統為資源和效率(時間、空間、錢)的trade-off</li>
+</ul>
+<h3 id="DFS"><a href="#DFS" class="headerlink" title="DFS"></a>DFS</h3><p><img data-src="/img/TCG/65RmOgp.png" alt="DFSalgo">  </p>
+<ul>
+<li>performance mostly depends on <strong>move ordering</strong><ul>
+<li>If first choose the branch include the goal, find answer quick</li>
+<li>get out of long and wrong branches ASAP!</li>
+<li>implement <code>next(current, N)</code><ul>
+<li>作用：列舉出N的所有鄰居</li>
+<li>回傳下一個N的鄰居，目前列舉到current</li>
+<li>next(null, N) -&gt; return first neighbor of N</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>time complexity: $O(e^D)$<ul>
+<li>number of possible branches at depth D</li>
+</ul>
+</li>
+<li>space complexity: $O(D)$<ul>
+<li>Only need to store current path in the Stack</li>
+</ul>
+</li>
+</ul>
+<p>Property  </p>
+<ul>
+<li>need to store close list (BFS: do not need to)</li>
+<li>May not find an optimal solution</li>
+<li>Can’t properly implement on disk<ul>
+<li>very huge closed list<ul>
+<li>Use data compression or bit-operation techniques to store visited nodes</li>
+<li>Need a good heuristic to store the most frequently visited nodes to avoid swapping too often</li>
+</ul>
+</li>
+<li>need to check closed list instantly(BFS: can be delayed)</li>
+</ul>
+</li>
+<li>Can DFS be paralleled? Computer scientists fails to do so even after 30 years</li>
+<li>Most critical drawback: huge and unpredictable time complexity</li>
+</ul>
+<h3 id="General-skills-to-improve-searching-algorithm"><a href="#General-skills-to-improve-searching-algorithm" class="headerlink" title="General skills to improve searching algorithm"></a>General skills to improve searching algorithm</h3><h4 id="Iterative-Deepening-ID-逐層加深"><a href="#Iterative-Deepening-ID-逐層加深" class="headerlink" title="Iterative-Deepening(ID) 逐層加深"></a>Iterative-Deepening(ID) 逐層加深</h4><ul>
+<li>inspired from BFS(BFS &#x3D; BFID)</li>
+<li>限制搜尋時的複雜度，若找不到再放寬限制</li>
+<li>prevent worse cases</li>
+</ul>
+<p>Deep First ID(DFID)     </p>
+<ul>
+<li>限制深度 <ul>
+<li>找到解立即return <img data-src="/img/TCG/9X2ZiRm.png"></li>
+<li><img data-src="/img/TCG/gmD51AT.png"></li>
+<li>time complexity using 二項式定理 <img data-src="/img/TCG/IfDEwFh.png"> <img data-src="/img/TCG/d0m27cU.png"><ul>
+<li>M(e, d) ~ $O(e^d)$ when e is sufficiently large</li>
+<li>→ no so much time penalty to use ID when e is big enough</li>
+</ul>
+</li>
+<li>關鍵：設定初始限制和限制放寬的大小</li>
+<li>always find optimal solution</li>
+</ul>
+</li>
+</ul>
+<h4 id="Bi-directional-search"><a href="#Bi-directional-search" class="headerlink" title="Bi-directional search"></a>Bi-directional search</h4><p><img data-src="/img/TCG/1-1.png" alt="DFSdir">  </p>
+<ul>
+<li><p><code>DFSdir(B, G, successor, i)</code>: DFS with starting states B, goal states G, successor function and <strong>depth limit i</strong>  </p>
+</li>
+<li><p><code>nextdir(current, successor, N)</code>: returns the state next to the state “current” in successor(N)</p>
+<ul>
+<li><code>deeper(current, N)</code> for forward searching<ul>
+<li>deeper(N) contains all next states of N</li>
+</ul>
+</li>
+<li><code>prev(current, N)</code> for backward searching<ul>
+<li>prev(N) contains all previous states of N<br><img data-src="/img/TCG/1-2.png" alt="BDS"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Forward Search: store all states H</p>
+</li>
+<li><p>Backward Search: find the path from G(goal) to H at depth &#x3D; limit or limit+1(for odd-lengthed solutions)  </p>
+</li>
+<li><p>also use the concept of iterative-deepening<br><img data-src="/img/TCG/7iBkfKB.png"></p>
+</li>
+<li><p>Time complexity: $O(e^{d&#x2F;2})$</p>
+<ul>
+<li>the number of nodes visited is greatly reduced(compared with original $O(e^d)$)</li>
+</ul>
+</li>
+<li><p>Space complexity: $O(e^{d&#x2F;2})$</p>
+<ul>
+<li>Pay the price of storing state depth(H)</li>
+</ul>
+</li>
+<li><p>restrict</p>
+<ul>
+<li>can’t assure to find optimal solution</li>
+<li>need to know what the goals are <ul>
+<li>bi-directional search is used when goal is known, only want to find path, like solving 15-puzzle</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Heuristic-啟發式-search"><a href="#Heuristic-啟發式-search" class="headerlink" title="Heuristic(啟發式) search"></a>Heuristic(啟發式) search</h3><p>Definition: criteria, methods, or principles for deciding which is the most effective to achieve some goal<br>→ By 經驗法則(so not always have optimal solution)  </p>
+<ul>
+<li>先走最有可能通往答案的state(good move ordering)<ul>
+<li>best-first algorithm : like greedy</li>
+</ul>
+</li>
+<li>The unlikely path will be explored further(pruning)  </li>
+<li><strong>Key: how to pick the next state to explore</strong>   <ul>
+<li>need simple and effective <strong>estimate function</strong> to discriminate</li>
+</ul>
+</li>
+</ul>
+<h4 id="Heuristic-search-–-A"><a href="#Heuristic-search-–-A" class="headerlink" title="Heuristic search – A*"></a>Heuristic search – A*</h4><p><img data-src="/img/TCG/Vv8N3hj.png" alt="A*"><br>line 12: add all possible path that depth &#x3D; depth + 1   </p>
+<ul>
+<li>Open list: a priorty queue(PQ) to store paths with costs</li>
+<li>Closed list: store all visited nodes with the smallest cost<ul>
+<li>Check for duplicated visits in the closed list only</li>
+<li>A node is inserted if <ul>
+<li>it has never been visited before</li>
+<li>being visited, but has smaller cost</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Given a path P<ul>
+<li>g(P) &#x3D; current cost of P</li>
+<li>h(P) &#x3D; estimation of remaining path to goal(<strong>heuristic cost</strong> of P)</li>
+<li>f(P) &#x3D; g(P) + h(P) is the cost function</li>
+</ul>
+</li>
+<li>Assume all costs are positive, so there is no need to check for falling into a loop  </li>
+<li>cost function所推測的cost不可超過實際的cost，否則不保證找到最佳解<ul>
+<li><strong>if h() never overestimates the actual cost to the goal</strong> (called admissible可容許), then <strong>A* always finds an optimal solution</strong></li>
+<li>證明？</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>h(n)&#x3D;0 : A* 等同 BFS</li>
+<li>h(n)&lt;目前節點到結束點的距離 : A* 演算法保證找到最短路徑, h(n)越小, 搜尋深度越深(代表花愈多時間)</li>
+<li>h(n)&#x3D;目前節點到結束點的距離 : A* 演算法僅會尋找最佳路徑, 並且能快速找到結果(最理想情況)</li>
+<li>h(n)&gt;目前節點到結束點的距離 : 不保證能找到最短路徑, 但計算比較快</li>
+<li>h(n)與g(n)高度相關 : A* 演算法此時成為Best-First Search<br><span class="exturl" data-url="aHR0cDovL2Jsb2cubWluc3RyZWwuaWR2LnR3LzIwMDQvMTIvc3Rhci1hbGdvcml0aG0uaHRtbA==">http://blog.minstrel.idv.tw/2004/12/star-algorithm.html<i class="fa fa-external-link-alt"></i></span></li>
+</ol>
+<p>Question:  </p>
+<ul>
+<li>What disk based techniques can be used?</li>
+<li>Why do we need a non-trivial h(P) that is admissible?</li>
+<li>How to design an admissible cost function?</li>
+</ul>
+<h3 id="DFS-with-threshold"><a href="#DFS-with-threshold" class="headerlink" title="DFS with threshold"></a>DFS with threshold</h3><ul>
+<li><code>DFScost(N, f, threshold)</code><ul>
+<li>starting state N </li>
+<li>cost function f</li>
+<li>cuts off a path if cost bigger than threshold</li>
+</ul>
+</li>
+</ul>
+<p><code>DFS1</code>: Use <code>next1(current,N)</code> find neighbors of N (in the order of low cost to high cost)<br><img data-src="/img/TCG/csd9mLf.png" alt="dfs1"><br><code>DFS2</code>: Use a priority queue instead of using a stack in <code>DFScost</code><br><img data-src="/img/TCG/jthjSm8.png" alt="dfs2"><br>It may be costly to maintain a priority queue</p>
+<h3 id="IDA-x3D-DFID-A"><a href="#IDA-x3D-DFID-A" class="headerlink" title="IDA* &#x3D; DFID + A*"></a>IDA* &#x3D; DFID + A*</h3><p>用A*的cost作為DFS的threshold<br><img data-src="/img/TCG/PJ2bPrX.png"> </p>
+<p>Ex. 15 puzzle<br>all posibilities: $16! \leq 2.1 \times 10^{13}$<br>g(P): the number of moves made so far<br>h(P): <strong>Manhattan distance</strong> between the current board and the goal<br>Manhattan distance from (i, j) to (i’, j’) is |i’ - i| + |j’ - j| (admissible)   </p>
+<h3 id="basic-thought-for-a-problem"><a href="#basic-thought-for-a-problem" class="headerlink" title="basic thought for a problem"></a>basic thought for a problem</h3><p><em>What you should think about before playing a game</em>：</p>
+<ul>
+<li>Needed to <ul>
+<li>Find an optimal solution?</li>
+<li>batch operations?</li>
+<li>disk based algorithms?</li>
+<li>Search in parallel?</li>
+</ul>
+</li>
+<li><strong>Balancing</strong> in resource usage:<ul>
+<li>memorize past results vs efforts to search again(time and space)</li>
+<li>The efforts to compute a better heuristic(time to think a heuristic?)</li>
+<li>The amount of resources spent in implementing a better heuristic and the amount of resources spent in searching(complexity of heuristic function)</li>
+</ul>
+</li>
+<li>For specific algorithm<ul>
+<li>heuristic : How to design a good and non-trivial heuristic function?</li>
+<li>DFS : How to get a better move ordering?</li>
+</ul>
+</li>
+</ul>
+<p>Can these techniques be applied to two-person game?</p>
+<h3 id="algorithm整理"><a href="#algorithm整理" class="headerlink" title="algorithm整理"></a>algorithm整理</h3><p>| Name      | Time Complexity | Space Complexity | OptimalSolution    | UseDisk | Description               |<br>| ——— | ————— | —————- | —————— | ——- |<br>| brute     | $∞$             | $O(1)$           | No                 | No      |<br>| BFS       | $O(b^d)$        | $O(b^{d-1} * e)$ | Yes                | Needed  |<br>| DFS       | $O(e^d)$        | $O(d)$           | No                 | NoNeed  |<br>| Heuristic | N\A             | N\A              | Yes, if admissible | –      | Ex. A*                    |<br>| BDS       | $O(e^{d&#x2F;2})$    | $O(e^{d&#x2F;2})$     | No                 | Needed  | DFS + bidiretional search |<br>| DFID      | $O(e^d)$        | $O(d)$           | Yes                | NoNeed  | DFS + ID                  |<br>| IDA*      | N\A             | N\A              | Yes                | N\A     | DFID + A*                 |</p>
+<h2 id="Chap03-Heuristic-Search-with-Pre-Computed-Databases"><a href="#Chap03-Heuristic-Search-with-Pre-Computed-Databases" class="headerlink" title="Chap03 Heuristic Search with Pre-Computed Databases"></a>Chap03 Heuristic Search with Pre-Computed Databases</h2><p>new form of heuristic called <strong>pattern databases</strong></p>
+<ul>
+<li>If the subgoals can be divided<ul>
+<li>Can sget better admissible cost function by <strong>sum of costs of the subgoals</strong></li>
+</ul>
+</li>
+<li>Make use of the fact that computers can memorize lots of patterns<ul>
+<li>使用已經計算過的 pattern 來做出更好、更接近real cost的heuristic function</li>
+</ul>
+</li>
+</ul>
+<p>Using 15 puzzle as example <img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/15-puzzle.svg/480px-15-puzzle.svg.png">  </p>
+<ul>
+<li>State space can be divided into two subsets: even and odd permutations</li>
+<li>$f_1$ is number of inversions in a permutation <code>X1X2...XN</code>  <ul>
+<li>inversion is a distinct pair Xi &gt; Xj such that i &lt; j(後面有幾個數比自己小) </li>
+<li>Example: <code>10,8,12,3,7,6,2,1,14,4,11,15,13,9,5</code> has 9+7+9+2+5+4+1+0+5+0+2+3+2+1 inversions</li>
+</ul>
+</li>
+<li>$f_2$ is the row number that empty cell is(空的那一格在哪一行)</li>
+<li>f &#x3D; $f_1$ + $f_2$</li>
+<li>Slide a tile never change the parity    <ul>
+<li>Proof: skip(a lot of)</li>
+</ul>
+</li>
+</ul>
+<p>Solving Result</p>
+<ul>
+<li>1-MIPS machine</li>
+<li>30 CPU minutes in 1985 </li>
+<li>using IDA* with Manhattan distance heuristic</li>
+</ul>
+<h3 id="Non-additive-pattern-databases"><a href="#Non-additive-pattern-databases" class="headerlink" title="Non-additive pattern databases"></a>Non-additive pattern databases</h3><ul>
+<li>原本cost funtion為15片個別的distance之和，若能一次計算多片的distance？</li>
+<li>linear conflict: 靠很近不代表步數少(如[2, 1, 3, 4]交換至[1, 2, 3, 4]並不只兩步)<ul>
+<li>有可能移成pattern時，反而使其他片遠離</li>
+<li><img data-src="/img/TCG/4-1.png" alt="linear conflict"></li>
+</ul>
+</li>
+<li>Fringe(初級知識)<ul>
+<li>subset of selected tiles called <strong>pattern</strong><ul>
+<li>tiles not selected is “don’t-care tile”, all looked as the same</li>
+</ul>
+</li>
+<li>If there are 7 selected tiles, including empty cell  <ul>
+<li>16!&#x2F;9! &#x3D; 57657600 possible pattern size</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img data-src="/img/TCG/4-2.png" alt="prefrin"><br>goal fringe: 選擇的方塊都和goal的位置一樣<br><img data-src="/img/TCG/4-3.png" alt="goalfrin"></p>
+<ul>
+<li>precompute the minimum number of moves(<strong>fringe number</strong>) to make goal fringe<ul>
+<li>goal fringe: 找給定的選擇方塊，在任何pattern中，最小需要移動成最終目標的步數</li>
+<li>We can solve it because the pattern size is relatively small</li>
+</ul>
+</li>
+<li>Pro’s<ul>
+<li>pattern size↑, fringe number↑, which means better estimation<ul>
+<li>because estimate number it is closer to the real answer</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Con’s    <ul>
+<li>Pattern with a larger size<ul>
+<li>consuming lots of memory and time</li>
+<li>limited by source</li>
+</ul>
+</li>
+<li>not optimal</li>
+</ul>
+</li>
+</ul>
+<p>Property   </p>
+<ol>
+<li>Divide and Conquer</li>
+</ol>
+<ul>
+<li>Reduce a 15-puzzle problem into a 8-puzzle <img data-src="/img/TCG/4-4.png" alt="15-8"></li>
+<li>魔術方塊 – 分成六面</li>
+<li>Cannot easily combine<ul>
+<li>affect tiles that have reached the goal in the subproblem when solving the remains</li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>Used as heuristic function(admissible)</li>
+</ol>
+<h3 id="More-than-one-patterns"><a href="#More-than-one-patterns" class="headerlink" title="More than one patterns"></a>More than one patterns</h3><ul>
+<li>How to Find better patterns for fringes?<ul>
+<li>→ Can we combine smaller patterns to form bigger patterns?</li>
+</ul>
+</li>
+</ul>
+<p>For different pattern databases P1, P2, P3 …  </p>
+<ul>
+<li>patterns may not be disjoint, may be overlapping</li>
+<li>The heuristic function we can use is<ul>
+<li>$h(P_1, P_2, P_3 … ) &#x3D; max{h(P_1),h(P_2),h(P_3) …}$</li>
+</ul>
+</li>
+</ul>
+<p>How to make heuristics and the patterns disjoint?  </p>
+<ul>
+<li>patterns should be disjoint to add them together(see below)<ul>
+<li>Though patterns are disjoint, their costs are not disjoint<ul>
+<li>Some moves are counted more than once</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>f(P1) + f(P2) is admissible if  </p>
+<ol>
+<li>f() is disjoint with respect to P1 and P2</li>
+<li>both f(P1) and f(P2) are admissible</li>
+</ol>
+<p>For Manhattan distance heuristic  </p>
+<ol>
+<li>Each region is a tile<ul>
+<li><strong>Divide the board into several disjoint regions</strong></li>
+</ul>
+</li>
+<li>They are disjoint<ul>
+<li><strong>only count the number of moves made by each region</strong><ul>
+<li>doesn’t count cross-region moves</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>Refinement<br>Partition the board into disjoint regions using the tiles in a region of the goal arrangement as a pattern<br><img data-src="/img/TCG/4-5.png" alt="aabb"><br><strong>只算每個region內的片所移動的步數和，作為新定義的fringe number</strong><br>如此一來，就可以將每個region的cost相加而保持admissible</p>
+<h3 id="Disjoint-pattern"><a href="#Disjoint-pattern" class="headerlink" title="Disjoint pattern"></a>Disjoint pattern</h3><p>A heuristic function f() is disjoint with respect to two patterns P1 and P2 if  </p>
+<ol>
+<li>P1 and P2 have no common cells</li>
+<li>The solutions corresponding to f(P1) and f(P2) do not interfere each other</li>
+</ol>
+<p>Revised fringe number f’(p): for each fringe arrangement F, the <strong>minimum</strong> number of <strong>fringe-only</strong> moves to make goal fringe</p>
+<h3 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h3><p>Solves the 15 puzzle problem using fringe that is more than <strong>2000</strong> times faster than the previous result by using the Manhattan distance  </p>
+<ul>
+<li>The average Manhattan distance is 76.078 moves in 24-puzzle    </li>
+<li>The average value for the disjoint database heuristic is 81.607 moves in 24-puzzle   </li>
+<li><strong>only small refinement on heuristic function would make performance far better</strong></li>
+</ul>
+<p>Other heuristics   </p>
+<ul>
+<li>pairwise distance<ul>
+<li>partition the board into many 2-tiles so that the sum of cost is <strong>maximized</strong><br>For an $n^2 - 1$ puzzle, we have $O(n^4)$ different combinations<br>using</li>
+</ul>
+</li>
+</ul>
+<h3 id="What-else-can-be-done"><a href="#What-else-can-be-done" class="headerlink" title="What else can be done?"></a>What else can be done?</h3><ol start="2">
+<li>Better way of partitioning</li>
+<li>Is it possible to generalize this result to other problem domains?</li>
+<li>Decide ratio of the time used in searching and the time used in retrieving pre-computed knowledge<ul>
+<li>memorize vs compute</li>
+</ul>
+</li>
+</ol>
+<h2 id="Chap-04-Two-Player-Perfect-Information-Games-Introductions"><a href="#Chap-04-Two-Player-Perfect-Information-Games-Introductions" class="headerlink" title="Chap 04 Two-Player Perfect Information Games Introductions"></a>Chap 04 Two-Player Perfect Information Games Introductions</h2><blockquote>
+<p>Conclusion: decision complexity is more important than state-space complexity   </p>
+</blockquote>
+<p>trade-off between <strong>knowledge-based</strong> methods and <strong>brute-force</strong> methods</p>
+<p>Domain: 2-person <strong>zero-sum games</strong> with perfect information<br>Zero-sum means one player’s loss is exactly the other player’s gain, and vice versa.</p>
+<h3 id="Definition"><a href="#Definition" class="headerlink" title="Definition"></a>Definition</h3><p>Game-theoretic value: the outcome of a game when all participants play optimally<br>Game-theoretic value for most games are unknown or are only known for some legal positions.</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ultra-weakly solved</td>
+<td>在初始盤面可知，遊戲中先行者或後行者誰有必勝、或必不敗之策略</td>
+</tr>
+<tr>
+<td>Weakly solved</td>
+<td>for the initial position a strategy has been determined to achieve the game-theoretic value(知道必不敗之策略為何)</td>
+</tr>
+<tr>
+<td>Strongly solved</td>
+<td>a strategy has been determined for all legal positions(任何合法情況都能知道最佳策略)</td>
+</tr>
+</tbody></table>
+<p>State-space complexity of a game: the <strong>number of the legal positions</strong> in a game(可能的盤面)<br>Game-tree complexity(decision complexity) of a game: the <strong>number of the leaf nodes</strong> in a solution search tree(可能的走法)  </p>
+<p>A fair game: the game-theoretic value is draw and both players have roughly equal probability on making a mistake.  </p>
+<ul>
+<li>Paper-scissor-stone</li>
+<li>Roll a dice and compare who gets a larger number</li>
+</ul>
+<p>Initiative(主動): the right to move first  </p>
+<ul>
+<li>A convergent game: the size of the state space decreases as the game progresses  <ul>
+<li>Example: Checkers</li>
+</ul>
+</li>
+<li>A divergent game: the size of the state space increases as the game progresses  <ul>
+<li>Example: Connect-5</li>
+</ul>
+</li>
+<li>A game may be convergent at one stage and then divergent at other stage.<ul>
+<li>Ex. Go, Tic-Tac-Toe</li>
+</ul>
+</li>
+</ul>
+<p>Threats are something like forced moved or moves you have little choices.<br>Threats are moves with predictable counter-moves</p>
+<h3 id="Classification"><a href="#Classification" class="headerlink" title="Classification"></a>Classification</h3><p><img data-src="/img/TCG/5-1.png" alt="4"></p>
+<p>Questions to be researched<br>Can perfect knowledge obtained from solved games be translated into rules and strategies which human beings can assimilate?<br>Are such rules generic, or do they constitute a multitude of ad hoc recipes?<br>Can methods be transferred between games?  </p>
+<p>Connection games<br>Connect-four (6 * 7)<br>Qubic (4 * 4 * 4)<br>Renju - Does not allow the First player to play certain moves, An asymmetric game.<br>mnk-Game: a game playing on a board of m rows and n columns with the goal of obtaining a straight line of length k.<br>Variations: First ply picks only one stone, the rest picks two stones in a ply. -&gt; Connect 6. </p>
+<p>Hex (10 * 10 or 11 * 11)<br>Exactly one of the players can win.<br>solved on a 6 * 6 board in 1994.</p>
+<p><img data-src="/img/TCG/5-2.png" alt="Hex"></p>
+<p>Proof on exactly one player win<br>Assume there is no winner<br><img data-src="/img/TCG/5-3.png" alt="block"><br>blue should totally block red at some place -&gt; blue will connect!  </p>
+<p>let R be the set of red cells that can be reached by chains from rightmost column<br>R does not contain a cell of the leftmost column; otherwise we have a contradiction<br>let N(R) be the blue cells that can be reached by chains originated from the rightmost column.<br>N(R) must contain a cell in the top and bottom row , Otherwise, R contains all cells in the First&#x2F;bottom row, which is a contradiction.<br>N(R) must be connected. Otherwise, R can advance further. Hence N(R) is a blue winning chain.</p>
+<h3 id="Strategy-stealing-argument"><a href="#Strategy-stealing-argument" class="headerlink" title="Strategy-stealing argument"></a>Strategy-stealing argument</h3><p>made by John Nash in 1949<br>後手無一般化的必勝法<br>若後手有必勝法，則先手可以先隨機下一子(並無視之)，再照著後手的下法<br>後手必勝的下法包含了第一手，則再隨機下一子，將其視為第一子<br>限制：不能有和，下子不會有害，symmetric，history independent，</p>
+<p>Assume the initial board position is B0<br>f(B) has a value only when it is a legal position for the second player.<br>rev(x): interchange colors of pieces in a board or ply x.<br>always has exactly one winner  </p>
+<p>Not Solved<br>Chess DEEP BLUE beat the human World Champion in 1997<br>Chinese chess Professional 7-dan in 2007<br>Shogi<br>Claimed to be professional 2-dan in 2007<br>Defeat a 68-year old 1993 Meijin during 2011 and 2012</p>
+<p>Go<br>Recent success and breakthrough using Monte Carlo UCT based methods.<br>Amateur 1 dan in 2010.<br>Amateur 3 dan in 2011.<br>The program Zen beat a 9-dan professional master at March 17, 2012<br>  First game: Five stone handicap and won by 11 points<br>  Second game: four stones handicap and won by 20 points</p>
+<p><img data-src="/img/TCG/5-4.png" alt="table of complexity"></p>
+<p>possible to use heuristics to prune tremendously when the structure of the game is well studied</p>
+<p>Methods to solve games<br>Brute-force methods  </p>
+<ul>
+<li>Retrograde analysis(倒推)</li>
+<li>Enhanced transposition-table methods(?)<br>Knowledge-based methods  </li>
+<li>Threat-space search and lambda-search</li>
+<li>Proof-number search</li>
+<li>Depth-First proof-number search</li>
+<li>Pattern search<ul>
+<li>search threat patterns, which are collections of cells in a position</li>
+<li>A threat pattern can be thought of as representing the relevant area on the board<br>Recent advancements</li>
+</ul>
+</li>
+<li>Monte Carlo UCT based game tree simulation<ul>
+<li>Monte Carlo method has a root from statistic</li>
+<li>Biased sampling</li>
+<li>Using methods from machine learning</li>
+<li>Combining domain knowledge with statistics</li>
+</ul>
+</li>
+<li>A majority vote algorithm</li>
+</ul>
+<p>low state-space complexity have mainly been solved with brute-force methods.<br>Nine Men’s Morris</p>
+<p>low game-tree-complexities have mainly been solved with knowledge-based methods.<br>by intelligent (heuristic) searching with help of databases<br>Go-Moku, Renju, and k-in-a-row games</p>
+<p>The First player has advantages.<br>Two kinds of positions<br>P-positions: the previous player can force a win.<br>N-positions: the next player can force a win.</p>
+<p>First player to have a forced win, just one of the moves that make P-position.<br>second player to have a forced win, all of the moves must lead to(造成) N-positions</p>
+<p>At small boards, the second player is able to draw or even to win for certain games.</p>
+<p>Try to obtain a small advantage by using the initiative.<br>The opponent must react adequately on the moves played by the other player.<br>Force the opponent to always play the moves you expected.</p>
+<p>Offsetting the initiative</p>
+<p>一子棋 by 張系國 棋王 -&gt; 先手優勢極大，隨著棋子增加，所需贏的步數就愈少。</p>
+<p>讓子<br>Ex. Go k &#x3D; 7.5 in 2011</p>
+<p>Enforce rules so that the first player cannot win by selective patterns.<br>Ex. Renju</p>
+<p>The one-move-equalization rule: one player plays an opening move and the other player then has to decide which color to<br>play for the reminder of the game.<br>. Hex.<br>. Second-player will win.</p>
+<p>The First move plays one stone, the rest plays two stones each.<br>Can’t prove it is fair</p>
+<p>The first player uses less resource.<br>For example: using less time.<br>Ex. Chinese chess.</p>
+<p>1990’s prediction at 2000<br><img data-src="/img/TCG/5-5.png"><br>2000’s prediction at 2010<br><img data-src="/img/TCG/5-6.png"></p>
+<h2 id="Chap-05-Computer-chess-programming-by-Shannon"><a href="#Chap-05-Computer-chess-programming-by-Shannon" class="headerlink" title="Chap 05 Computer chess programming by Shannon"></a>Chap 05 Computer chess programming by Shannon</h2><p>C.E. Shannon</p>
+<ul>
+<li>1916 ~ 2001.</li>
+<li>The founding father of Information theory.</li>
+<li>The founding father of digital circuit design.</li>
+</ul>
+<p>Ground breaking paper for computer game playing: “Programming a Computer for Playing Chess”, 1950.<br>Presented many novel ideas that are still being used today.(太神啦！)  </p>
+<h3 id="Analysis"><a href="#Analysis" class="headerlink" title="Analysis"></a>Analysis</h3><ul>
+<li>typical 30 legal moves in one ply(下子)  </li>
+<li>typical game last about 40 moves  <ul>
+<li>will be 10^120 variations</li>
+</ul>
+</li>
+<li>possible legal position(state space complexity) is roughly 10^43</li>
+<li>CPU speed in 1950 is 10^6 per second current CPU speed is 10^9 per second, still not fast enough to brute force it</li>
+</ul>
+<p>But it is possible to enumerate small endgames<br>3~6 piece endgame roughly 7.75*10^9 positions  </p>
+<h3 id="Three-phases-of-chess"><a href="#Three-phases-of-chess" class="headerlink" title="Three phases of chess"></a>Three phases of chess</h3><ul>
+<li>Opening <ul>
+<li>Development of pieces to good position</li>
+</ul>
+</li>
+<li>Middle<ul>
+<li>after opening until few pieces</li>
+<li>pawn structure</li>
+</ul>
+</li>
+<li>End game <ul>
+<li>concerning usage of pawns</li>
+</ul>
+</li>
+</ul>
+<p><strong>Different principles of play apply in the different phases</strong></p>
+<h3 id="Evaluating-Function"><a href="#Evaluating-Function" class="headerlink" title="Evaluating Function"></a>Evaluating Function</h3><p>position p, include board status, which side to move, history of moves<br>history -&gt; castling<br><img data-src="/img/TCG/6-1.png"></p>
+<p>Perfect evaluating function f(p):<br>f(p) &#x3D; 1 for a won position.<br>f(p) &#x3D; 0 for a drawn position.<br>f(p) &#x3D; -1 for a lost position.<br>Perfect evaluating function is impossible for most games, and is <strong>not fun or educational</strong>.</p>
+<p>Factors considered in approximate evaluating functions:</p>
+<ul>
+<li>The relative values of differences in materials.<ul>
+<li>The values of queen, rook, bishop, knight and pawn are about 9, 5, 3, 3, and 1, respectively.</li>
+<li>How to determine good relative values? Static values verse dynamic values?</li>
+</ul>
+</li>
+<li>Position of pieces<ul>
+<li>Mobility: the freedom to move your pieces.</li>
+<li>at center , or at corner</li>
+<li>Doubled rooks</li>
+</ul>
+</li>
+<li>Pawn structure: the relative positions of the pawns.<ul>
+<li>Backward pawn: a pawn that is behind the pawn of the same color on an adjacent file that cannot advance without losing of itself.</li>
+<li>Isolated pawn: A pawn that has no friend pawn on the adjacent file.</li>
+<li>Doubled pawn: two pawns of the same color on the same file</li>
+<li>these three are all bad pawn</li>
+<li>Passed pawns: pawns that have no opposing pawns to prevent</li>
+<li>Pawns on opposite colour squares from bishop.</li>
+</ul>
+</li>
+<li>King safety.</li>
+<li>Threat and attack.<ul>
+<li>Attacks on pieces which give one player an option of exchanging</li>
+<li>Pins(小盯大) which mean here immobilizing pins where the pinned piece is of value not greater than the pinning piece</li>
+<li>Commitments -&gt; 需要保護其他子</li>
+</ul>
+</li>
+<li><img data-src="/img/TCG/6-2.png" alt="three pawn"></li>
+</ul>
+<p>Putting “right” coeffcients for diffferent factors<br>Dynamic setting in practical situations.</p>
+<p>evaluating function can be only applied in<br>relatively quiescent positions.</p>
+<p>not in the middle of material exchanging.<br>not being checked</p>
+<p>max-min strategy<br>In your move, you try to maximize your f(p).<br>In the opponent’s move, he tries to minimize f(p).</p>
+<p>A strategy in which all variations are considered out to a<br>definite number of moves and the move then determined from<br>a max-min formula is called type A strategy.</p>
+<p>Stalemate<br>Winning by making the opponent having no legal next move.<br>suicide move is not legal, and stalemate results in<br>a draw if it is not currently in check.</p>
+<p>Zugzwang(強制被動): In certain positions, a player is at a disadvantage if he is the next player to move.<br><img data-src="/img/TCG/6-3.png"></p>
+<p>Programming<br>    - Special rules of games<br>    - Methods of winning<br>    - Basic data structure for positions.<br>    - check for possible legal moves<br>    - Evaluating function.</p>
+<p>Forced variations(迫著)<br>one player has little or no choices in playing</p>
+<p>type B strategy<br>the machine must </p>
+<ol>
+<li><p>examine forceful variations out as far as possible and evaluate only at reasonable positions</p>
+</li>
+<li><p>select the variations to be explored by some process</p>
+<pre><code>         | 1 if any piece is attacked by a piece of lower value,
+</code></pre>
+<p>  g(P) &#x3D;    &#x2F;    or by more pieces then defences of if any check exists<br>        \    on a square controlled by opponent.<br>         | 0 otherwise.</p>
+</li>
+</ol>
+<p>Using this function, variations could be explored until g(P)&#x3D;0,</p>
+<p><strong>effective branching factor</strong> is about 2 to 3.<br>Chinese chess has a larger real branching factor, but its average effective branching factor is also about 2 to 3.</p>
+<p>“style” of play by the machine can<br>be changed very easily by altering some of the coeffcients and<br>numerical factors involved in the evaluating function</p>
+<p>A chess master, on the other hand, has available knowledge of hundreds or perhaps thousands of standard situations, stock<br>combinations, and common manoeuvres based on pins, forks, discoveries, promotions, etc.<br>In a given position he recognizes some similarity to a familiar situation and this directs his mental calculations along the lines with greater probability of success.</p>
+<p>Need to re-think the goal of writing a computer program that<br>plays games.<br>To discover intelligence:<br>What is considered intelligence for computers may not be considered so for human.<br>To have fun:<br>A very strong program may not be a program that gives you the most pleasure.<br>To Find ways to make computers more helpful to human.<br>Techniques or (machine) intelligence discovered may be useful to computers performing other tasks</p>
+<h2 id="Chap-06-Alpha-Beta-Pruning"><a href="#Chap-06-Alpha-Beta-Pruning" class="headerlink" title="Chap 06 Alpha-Beta Pruning"></a>Chap 06 Alpha-Beta Pruning</h2><ul>
+<li>standard searching procedure for 2-person perfect-information zero sum games</li>
+<li>terminal position<ul>
+<li>a position whose (win&#x2F;loss&#x2F;draw) value can be know</li>
+</ul>
+</li>
+</ul>
+<h3 id="Dewey-decimal-system"><a href="#Dewey-decimal-system" class="headerlink" title="Dewey decimal system"></a>Dewey decimal system</h3><p>杜威分類法 <img data-src="/img/TCG/7-1.png"></p>
+<h3 id="Min-Max-method"><a href="#Min-Max-method" class="headerlink" title="Min-Max method"></a>Min-Max method</h3><p>假設持白子，數字為白子的evaluating function, 在下白子時，取分數最高(max)的，在下黑子時，取分數最低(min)的 <img data-src="/img/TCG/7-2.png"><br><img data-src="/img/TCG/7-3.png" alt="max layer function F"></p>
+<h3 id="Nega-max-method"><a href="#Nega-max-method" class="headerlink" title="Nega-max method"></a>Nega-max method</h3><p>將下黑子的分數取負號(即為黑子的分數，因為是零和遊戲)<br>這樣每一層都取最大分數即可<br><img data-src="/img/TCG/7-4.png" alt="negamax algorithm"></p>
+<p>優點是實作較快，程式碼簡潔 </p>
+<h3 id="Alpha-Beta-cut-off"><a href="#Alpha-Beta-cut-off" class="headerlink" title="Alpha-Beta cut off"></a>Alpha-Beta cut off</h3><ul>
+<li>current search window(score bound) &#x3D; [α, β]</li>
+<li>If α &gt; β, no need to do further search in current branch </li>
+<li>initial alpha &#x3D; -∞, beta &#x3D; ∞</li>
+</ul>
+<p><img data-src="/img/TCG/7-5.png" alt="Alpha Cut off">  </p>
+<ul>
+<li>只要發現對手有一種反擊方式，使結果比其他手的結果還差，就砍掉這一手(branch)</li>
+<li>2.1 can cut off 2.x<ul>
+<li>before 2.1 , window &#x3D; [15, ∞]</li>
+<li>after 2.1 , window &#x3D; [15, 10]</li>
+</ul>
+</li>
+<li>We want to choose the biggest value at root for lower bound, so 2.x is all cut off</li>
+</ul>
+<p><img data-src="/img/TCG/7-6.png" alt="Beta Cut off">  </p>
+<ul>
+<li>只要對手發現自己有一種反擊方式，使結果比其他手的結果還差(α)，就砍掉這一手(branch)</li>
+<li>1.2.1 can cut off 1.2.x<ul>
+<li>beofre 1.2.1 , 1 bound is [-∞, 10]</li>
+<li>now 1.2 bound is [15, 10]</li>
+</ul>
+</li>
+<li>We want to choose smallest value at 1 for upper bound, 1.2.x is all cut off</li>
+</ul>
+<p>可以砍所有子孫 <img data-src="/img/TCG/7-7.png" alt="Deep Cut off">  </p>
+<ul>
+<li>2.1.1 is cut off   <ul>
+<li>root bound &#x3D; [15, ∞]</li>
+<li>2.1.1 &#x3D; [-∞, 7]</li>
+</ul>
+</li>
+</ul>
+<p><img data-src="/img/TCG/7-8.png" alt="alpha-beta cut off Algorithm"><br>f &#x3D; white move, find max to be lower bound, do beta cut off<br>g &#x3D; black move, find min to be upper bound, do alpha cut off<br><img data-src="/img/TCG/7-9.png" alt="example"></p>
+<p><img data-src="/img/TCG/7-10.png" alt="F2"><br>window變號，回傳的score也要變號<br>t &#x3D; -F(pi, -beta, -m)</p>
+<h3 id="Analysis-for-AB-pruning"><a href="#Analysis-for-AB-pruning" class="headerlink" title="Analysis for AB pruning"></a>Analysis for AB pruning</h3><p><strong>different move orderings</strong> give very different cut branches<br>愈快找到最佳解，可以砍的branch愈多</p>
+<p>critical nodes 一定會搜到(cut off之前至少需搜完一個子branch) <img data-src="/img/TCG/7-11.png" alt="Critical Node"></p>
+<p>perfect-ordering tree: 每個branch的第一個child就是最佳解<br>Theorem: 若是perfect-ordering tree, AB pruning 會剛好走過所有 critical nodes<br>Proof:<br>Three Types of critial nodes  </p>
+<ul>
+<li>定義a_i &#x3D; 第i層的node是第幾個child(杜威分類)</li>
+<li>a_j &#x3D; 第一個「不是第一個child」的node(如果有的話)<ul>
+<li>a_j-1 &#x3D; a_j+1 &#x3D; 1<ul>
+<li>小於j的node都是1</li>
+<li>而且因為是critial node，所以a_j的child一定是1(其他會被砍掉)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>a_l &#x3D; the last layer</li>
+</ul>
+<ol>
+<li>root and all node &#x3D; 1(最左邊, 1, 1.1, 1.1.1 …)</li>
+<li>l-j &#x3D; even<ol>
+<li>j &#x3D; l (type1 的全部兒子(除了最左邊))  </li>
+<li>j &lt; l (type3 的全部兒子)</li>
+</ol>
+</li>
+<li>l-j &#x3D; odd<ol>
+<li>j+1 &#x3D; l (type2.1 的第一個兒子)</li>
+<li>j+1 &lt; l (type2.2的第一個兒子)</li>
+</ol>
+</li>
+</ol>
+<p><img data-src="/img/TCG/7-13.png" alt="Three Types of critial nodes"><br><img data-src="/img/TCG/7-14.png" alt="Proof"></p>
+<p>We can calculate the least number of nodes to be searched <img data-src="/img/TCG/7-15.png"> <img data-src="/img/TCG/7-16.png"></p>
+<p>when there’re some early terminate nodes <img data-src="/img/TCG/7-18.png"><br>l &#x3D; even → x.1.x.1… &#x3D; b0(q1b2)q3…<br>            1.x.1.x… &#x3D; (q0b1)(q2b3)…(q0b1 &#x3D; 第一個孩子的全child，若無child，則為(1-qi)*0)</p>
+<p>Perfect ordering is not always best when tree are not balanced <img data-src="/img/TCG/7-17.png"><br>→ When <strong>“relative” ordering of children</strong>(not perfect order!) are good enough, there are some cut-off  </p>
+<p>Theorem: 若知道所有的分數，就可以最佳化alpha-beta pruning(計算的點最少，cut最多)<br>→ 不過如果能算出來就不用search了…</p>
+<h3 id="Variations-of-alpha-beta-search"><a href="#Variations-of-alpha-beta-search" class="headerlink" title="Variations of alpha-beta search"></a>Variations of alpha-beta search</h3><ul>
+<li>Fail hard alpha-beta cut(Original) : F2 <img data-src="/img/TCG/7-19.png"> <ul>
+<li>returned value in [α, β] <img data-src="/img/TCG/7-20.png"></li>
+</ul>
+</li>
+<li>Fail soft alpha-beta cut(Variation): F3  <img data-src="/img/TCG/7-21.png"><ul>
+<li>Find “better” value when the value is out of the search window</li>
+<li>m is the value in this branch(not related to α)<ul>
+<li>use max(m, alpha) to get window</li>
+</ul>
+</li>
+<li>return original value m instead of α or β when cut off, which is more precise than fail-hard <img data-src="/img/TCG/7-22.png"></li>
+<li>Failed-high <ul>
+<li>return value &gt; β</li>
+</ul>
+</li>
+<li>Failed-low<ul>
+<li>return value &lt; α</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Comparison  </p>
+<ul>
+<li>fail-hard<ul>
+<li>return max{4000,200,v} <img data-src="/img/TCG/7-23.png"></li>
+</ul>
+</li>
+<li>fail-soft<ul>
+<li>return max{200,v} <img data-src="/img/TCG/7-24.png"></li>
+</ul>
+</li>
+<li>fail-soft provides more information when the true value is out of search window<ul>
+<li>can record better value to be used later when this position is revisited</li>
+<li>F3 saves about 7% of time than that of F2 when a transposition table is used to save and re-use searched results</li>
+<li>記錄F3傳回的值，可減少重複計算的時間，因為下一手的樹在下兩層，大部分node皆相同<ul>
+<li>if p1 is searched, p2 does not need to search again <img data-src="/img/TCG/7-25.png"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Questions"><a href="#Questions" class="headerlink" title="Questions"></a>Questions</h3><ul>
+<li>What move ordering is good?<ul>
+<li>search the best possible move first</li>
+<li>cut off a branch with more nodes first</li>
+</ul>
+</li>
+<li>What is the effect of using iterative-deepening alpha-beta cut off?</li>
+<li>How about searching game graph instead of game tree?</li>
+<li>Can some nodes be visited more than once?</li>
+</ul>
+<h3 id="Pruning-Techinique"><a href="#Pruning-Techinique" class="headerlink" title="Pruning Techinique"></a>Pruning Techinique</h3><ul>
+<li>Exact algorithms: by mathematical proof<ul>
+<li>Alpha-Beta pruning</li>
+<li>Scout(in Chap07)</li>
+</ul>
+</li>
+<li>Approximated heuristics: pruned branches with low probability to be solution<ul>
+<li>in very bad position(盤面太差)</li>
+<li>a little hope to gain back the advantage(無法逆轉)</li>
+</ul>
+</li>
+</ul>
+<h2 id="Chap07-Scout-and-Proof-Number-Search"><a href="#Chap07-Scout-and-Proof-Number-Search" class="headerlink" title="Chap07 Scout and Proof Number Search"></a>Chap07 Scout and Proof Number Search</h2><ul>
+<li>Suppose we get at least score s at the First branch<ul>
+<li>want to find whether second branch can get score over s or not</li>
+</ul>
+</li>
+</ul>
+<p><strong>Is there a way to search a tree approximately?</strong>  </p>
+<h3 id="SCOUT"><a href="#SCOUT" class="headerlink" title="SCOUT"></a>SCOUT</h3><ul>
+<li>Invented by Judea Pearl in 1980</li>
+<li>first time: search approximately<ul>
+<li>if there is better value, search again</li>
+<li>first search can provide useful information in the second search</li>
+</ul>
+</li>
+<li>TEST whether Tb can return score &gt; v <img data-src="/img/TCG/test-algo.png"><ul>
+<li>if p is max node → success with only one subbranch &gt; v</li>
+<li>if p is min node → success with all subbranches &gt; v</li>
+<li>If success, then search Tb. else, <strong>no need to search Tb</strong></li>
+</ul>
+</li>
+<li>algorithm <img data-src="/img/TCG/scout-algo.png"><ul>
+<li>scout first branch and test other branch<ul>
+<li>if test success, update the value by scout this branch</li>
+</ul>
+</li>
+<li>recursive procedure<ul>
+<li>Every ancestor of you may initiate a TEST to visit you<ul>
+<li>will be visited at most d times(&#x3D; depth)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Time Complexity  </p>
+<ul>
+<li><strong>not guarantee</strong>(but most of the time) that the visited nodes number are less than alpha-beta<ul>
+<li>may search a branch two times</li>
+<li>may pay many visits to a node that is cut off by alpha-beta</li>
+</ul>
+</li>
+<li>TEST: Ω(b^(d&#x2F;2))<ul>
+<li>but has small argument and will be very small at the best situation <img data-src="/img/TCG/nodes-visited.png" alt="node visited"><ul>
+<li>if the first subbranch has the best value, then TEST scans the tree fast</li>
+<li>move ordering is very important</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Comparison<ul>
+<li>alpha-beta<ul>
+<li>cut off comes from bounds of search windows(by ancestors)</li>
+</ul>
+</li>
+<li>scout<ul>
+<li>cut off from previous branches’ score(by brothers)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Performance  </p>
+<ul>
+<li>SCOUT favors “skinny” game trees<ul>
+<li>Show great improvements on depth &gt; 3 for games with <strong>small branching factors</strong></li>
+<li>On depth &#x3D; 5, it saves over 40% of time</li>
+</ul>
+</li>
+<li>AB + scout gets average 10~20% improvement than only AB</li>
+</ul>
+<p>Null(Zero) window search    </p>
+<ul>
+<li>Using alpha-beta search with the window [m,m + 1]<ul>
+<li>result will be failed-high or failed-low</li>
+</ul>
+</li>
+<li>Failed-high means return value &gt; m + 1<ul>
+<li>Equivalent to TEST(p; m;&gt;) is true</li>
+</ul>
+</li>
+<li>Failed-low means return value &lt; m<ul>
+<li>Equivalent to TEST(p; m;&gt;) is false</li>
+</ul>
+</li>
+<li>Using searching window is better than using a single bound in SCOUT</li>
+</ul>
+<p><img data-src="/img/TCG/nega-scout.png">    </p>
+<ul>
+<li>depth &lt; 3 → no alpha-beta pruning → return value is exact value(no need to search again)</li>
+<li>first-time search → do null window search(scout)</li>
+<li>research → do normal window a-b pruning</li>
+</ul>
+<p>Refinements  </p>
+<ul>
+<li>Use information from previous search<ul>
+<li>When a subtree is re-searched, restart from the position that the value is returned in first search</li>
+</ul>
+</li>
+<li>Change move ordering<ul>
+<li>Reorder the moves by priority list</li>
+</ul>
+</li>
+</ul>
+<h3 id="Proof-Number-Search"><a href="#Proof-Number-Search" class="headerlink" title="Proof Number Search"></a>Proof Number Search</h3><p><img data-src="https://chessprogramming.wikispaces.com/Proof-number+search#Pseudo%20Code" alt="參考資料: chessprogramming: proof-number search"></p>
+<p>binary valued game tree    </p>
+<ul>
+<li><p>2-player game tree with either 0 or 1 on the leaves</p>
+<ul>
+<li>and-or tree: min → and, max → or</li>
+</ul>
+</li>
+<li><p>most proving node for node u</p>
+<ul>
+<li>node that if its value is 1, then the value of u is 1</li>
+</ul>
+</li>
+<li><p>most disproving node for node u</p>
+<ul>
+<li>node that if its value is 0, then the value of u is 0</li>
+</ul>
+</li>
+<li><p>proof(u): minimum number of nodes to visit to make u &#x3D; 1</p>
+</li>
+<li><p>disproof(u): minimum number of nodes to visit to make u &#x3D; 0</p>
+</li>
+</ul>
+<p>If value(u) is unknown, then proof(u) is the cost of evaluating u  </p>
+<ul>
+<li>If value(u) is 1, then proof(u) &#x3D; 0</li>
+<li>If value(u) is 0, then proof(u) &#x3D; ∞</li>
+<li>proof number can be calculate by search childrens <img data-src="/img/TCG/proof-number.png"><ul>
+<li>disproof number → reverse calculate method of proof number</li>
+</ul>
+</li>
+</ul>
+<p>Usage  </p>
+<ul>
+<li>find child u that have min{proof(root); disproof(root)}</li>
+<li>if we try to <strong>prove</strong> it<ul>
+<li>pick a child with the <strong>least proof number</strong> for a <strong>MAX node</strong></li>
+<li>pick <strong>any node that has a chance to be proved</strong> for a <strong>MIN node</strong></li>
+</ul>
+</li>
+<li>if we try to <strong>disprove</strong> it<ul>
+<li>pick a child with the <strong>least disproof number</strong> for a <strong>MIN node</strong></li>
+<li>pick <strong>any node that has a chance to be disproved</strong> for a <strong>MAX node</strong></li>
+</ul>
+</li>
+<li>used in open game tree or an endgame tree because some proof or disproof number is known<ul>
+<li>1 → proved to win, 0 → proved to lose </li>
+<li>or used to achieve sub-goal in games</li>
+</ul>
+</li>
+</ul>
+<!-- why smallest number because proof need all 1? -->
+<p>Proof-Number search algorithm <img data-src="/img/TCG/pn-algo.png">  </p>
+<ol>
+<li>keep update number by bottom-up<ol>
+<li>compare proof number and disproof number of root</li>
+</ol>
+</li>
+<li>find the leaf to prove or disprove</li>
+</ol>
+<p>Multi-value game tree  </p>
+<ul>
+<li>value in [0, 1]</li>
+<li>$proof_v(u)$: the minimum number of leaves needed to visited to make u &gt;&#x3D; v<ul>
+<li>proof(u) &#x3D; $proof_1(u)$</li>
+</ul>
+</li>
+<li>$disproof_v(u)$: the minimum number of leaves needed to visited to make u &lt; v<ul>
+<li>disproof(u) &#x3D; $disproof_1(u)$</li>
+</ul>
+</li>
+<li>use binary search to set upper bound of the value <img data-src="/img/TCG/multivalue-pn-algo.png"></li>
+</ul>
+<h2 id="Chap08-Monte-Carlo-Game-Tree-Search"><a href="#Chap08-Monte-Carlo-Game-Tree-Search" class="headerlink" title="Chap08 Monte-Carlo Game Tree Search"></a>Chap08 Monte-Carlo Game Tree Search</h2><h3 id="original-ideas"><a href="#original-ideas" class="headerlink" title="original ideas"></a>original ideas</h3><p>Algorithm $MCS_{pure}$ <img data-src="/img/TCG/random-games.png">    </p>
+<ul>
+<li><p>For each possible next move</p>
+<ul>
+<li>play this move and then play a lot of random games(play every moves as random)</li>
+<li>calculate average score</li>
+</ul>
+</li>
+<li><p>Choose move with best score</p>
+</li>
+<li><p>Original version: GOBBLE in 1993  </p>
+<ul>
+<li>Performance is not good compared to other Go programs(alpha-beta)</li>
+</ul>
+</li>
+<li><p>Enhanced versions</p>
+<ul>
+<li>Adding the idea of minimax tree search</li>
+<li>Adding more domain knowledge</li>
+<li>Adding more searching techniques</li>
+<li>Building theoretical foundations from statistics, and on-line and off-line learning</li>
+<li>results<ul>
+<li>MoGo<ul>
+<li>Beat a professional human 8 dan(段) with a 8-stone handicap at January 2008</li>
+<li>Judged to be in a “professional level” for 9 x 9 Go in 2009</li>
+</ul>
+</li>
+<li>Zen<ul>
+<li>close to amateur 3-dan in 2011</li>
+<li>Beat a 9-dan professional master with handicaps at March 17, 2012<ul>
+<li>First game: Five stone handicap and won by 11 points</li>
+<li>Second game: four stones handicap and won by 20 points</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Disadvantage  </p>
+<ul>
+<li>average score search !&#x3D; minimax tree search<ul>
+<li>$MCS_{pure}$ prefer right branch, but it’s min value is low <img data-src="/img/TCG/minmax-and-avergae.png"></li>
+</ul>
+</li>
+</ul>
+<h3 id="First-Refinement-Monte-Carlo-based-tree-search"><a href="#First-Refinement-Monte-Carlo-based-tree-search" class="headerlink" title="First Refinement: Monte-Carlo based tree search"></a>First Refinement: Monte-Carlo based tree search</h3><p>Intuition   </p>
+<ul>
+<li>Best First tree growing<ul>
+<li>Expand one level of best leaf(which has largest score) <img data-src="/img/TCG/mct-ex2.png"></li>
+</ul>
+</li>
+<li>if number of simulations is not enough, it can’t be a good simulation<ul>
+<li>on a MIN node, if not enough children are probed for enough number of times, you may miss a very bad branch</li>
+<li>take <strong>simulation count</strong> into consideration</li>
+</ul>
+</li>
+</ul>
+<p><img data-src="/img/TCG/MCT.png"><br><img data-src="/img/TCG/mct-ex1.png">  </p>
+<h3 id="Second-Refinement-UCT"><a href="#Second-Refinement-UCT" class="headerlink" title="Second Refinement: UCT"></a>Second Refinement: UCT</h3><ul>
+<li><p>Effcient sampling  </p>
+<ul>
+<li>Original: equally distributed among all legal moves</li>
+<li>Biased sampling: sample some moves more often than others</li>
+</ul>
+</li>
+<li><p>Observations</p>
+<ul>
+<li>Some moves are bad and do not need further exploring<ul>
+<li>Need to consider extremely bad luck sitiation<ul>
+<li>e.g. often “randomly” choose bad move and get bad score</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><span class="exturl" data-url="aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTXVsdGktYXJtZWRfYmFuZGl0">K-arm bandit problem<i class="fa fa-external-link-alt"></i></span>  </p>
+<ul>
+<li>Assume you have K slot machines each with a different payoff, i.e., expected value of returns ui, and an unknown distribution</li>
+<li>Assume you can bet on the machines N times, what is the best strategy to get the largest returns?</li>
+</ul>
+</li>
+<li><p>Ideas</p>
+<ul>
+<li>Try each machine a few, but enough, times and record their returns<ul>
+<li>For the machines that currently have the best returns, play more often later</li>
+<li>For the machines that currently return poorly, give them a chance sometimes to check their distributions are really bad or not</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>UCB: Upper Confidence Bound <img data-src="/img/TCG/UCB.png">  </p>
+<ul>
+<li>Meaning<ul>
+<li>For a MAX node, Wi is the number of win’s for the MAX player</li>
+<li><strong>For a MIN node, Wi is the number of win’s for the MIN player</strong></li>
+<li>When N is approaching logN, then UCB is nothing but the current winning rate plus a constant</li>
+<li>When N getting larger, UCB will approachthe real winning rate</li>
+</ul>
+</li>
+<li>Expand for the move with the highest UCB value</li>
+<li><strong>only compare UCB scores among children of a node</strong><ul>
+<li>It is meaningless to compare scores of nodes that are not siblings</li>
+</ul>
+</li>
+<li>Using argument c to keep a balance between<ul>
+<li>Exploitation: exploring the best move so far</li>
+<li>Exploration: exploring other moves to see if they can be proved to be better <img data-src="/img/TCG/ucb-ex1.png"></li>
+</ul>
+</li>
+<li>alternative<ul>
+<li>consider the variance of scores in each branch <img data-src="/img/TCG/UCB2.png"></li>
+</ul>
+</li>
+</ul>
+<p>UCT: Upper Confidence Bound for Tree  </p>
+<ul>
+<li>Maintain the UCB value for each node in the game tree<ul>
+<li>Pick path such that each node in this path has a largest UCB score among all of its siblings</li>
+<li>Pick the leaf node in the path which has been visited more than a certain amount of times to expand</li>
+</ul>
+</li>
+</ul>
+<p>Usable when the “density of goals” is suffciently large  </p>
+<ul>
+<li>When there is only a unique goal, Monte-Carlo based simulation may not be useful</li>
+</ul>
+<p>new MCT algorithm(with UCT) <img data-src="/img/TCG/mct-uct.png"></p>
+<h4 id="Implementation-hints"><a href="#Implementation-hints" class="headerlink" title="Implementation hints"></a>Implementation hints</h4><p><img data-src="/img/TCG/uct-imp.png"><br><img data-src="/img/TCG/uct-imp2.png"><br><img data-src="/img/TCG/uct-imp3.png"></p>
+<h3 id="When-to-use-Monte-Carlo"><a href="#When-to-use-Monte-Carlo" class="headerlink" title="When to use Monte-Carlo"></a>When to use Monte-Carlo</h3><ul>
+<li>huge branching number </li>
+<li>cannot easily compute good evaluating function</li>
+<li>Mostly used in Go, Bridge(?)</li>
+</ul>
+<p>Rule of Go(圍棋)  </p>
+<ul>
+<li>Ko(打劫): 不能有重複盤面</li>
+<li>可以跳過，不能下自殺步</li>
+<li>Komi: 先手讓子</li>
+</ul>
+<p>Implementation  </p>
+<ul>
+<li>partition stones into strings(使用共同氣的子) by DFS</li>
+<li>check empty intersection is an eye or not(check neighbors and limits)</li>
+</ul>
+<h3 id="Domain-independent-refinements"><a href="#Domain-independent-refinements" class="headerlink" title="Domain independent refinements"></a>Domain independent refinements</h3><p>Main considerations   </p>
+<ul>
+<li>Avoid doing un-needed computations</li>
+<li>Increase the speed of convergence</li>
+<li>Avoid early mis-judgement</li>
+<li>Avoid extreme bad cases</li>
+</ul>
+<p>Refinements  </p>
+<ul>
+<li>Progressive pruning  <ul>
+<li>Cut hopeless nodes early</li>
+</ul>
+</li>
+<li>All moves at first(AMAF)<ul>
+<li>Increase the speed of convergence</li>
+</ul>
+</li>
+<li>Node expansion<ul>
+<li>Grow only nodes with a potential</li>
+</ul>
+</li>
+<li>Temperature<ul>
+<li>Introduce randomness</li>
+</ul>
+</li>
+<li>Depth-i enhancement<ul>
+<li>With regard to Line 1, the initial phase, exhaustively enumerate all possibilities</li>
+</ul>
+</li>
+</ul>
+<h4 id="Progressive-pruning"><a href="#Progressive-pruning" class="headerlink" title="Progressive pruning"></a>Progressive pruning</h4><p>Each move has a mean value m and a standard deviation σ  </p>
+<ul>
+<li><p>Left expected outcome ml &#x3D; m - rd * σ</p>
+</li>
+<li><p>Right expected outcome mr &#x3D; m + rd * σ</p>
+<ul>
+<li>rd is argument</li>
+</ul>
+</li>
+<li><p>A move M1 is <strong>statistically inferior</strong> to another move M2 if M1.mr &lt; M2.ml</p>
+</li>
+<li><p>Two moves M1 and M2 are <strong>statistically equal</strong> if M1.σ &lt; σe and M2.σ &lt; σe and no move is statistically inferior to the other</p>
+<ul>
+<li>σe is argument which called standard deviation for equality</li>
+</ul>
+</li>
+</ul>
+<p>Remarks  </p>
+<ul>
+<li>only compare nodes that are of the same parent</li>
+<li>compare their raw scores not their UCB values<ul>
+<li>If you use UCB scores, then the mean and standard deviation of a move are those calculated only from its un-pruned children</li>
+</ul>
+</li>
+<li>prune statistically inferior moves after enough number of times of simulation</li>
+</ul>
+<p>This process is stopped when  </p>
+<ul>
+<li>there is only one move left</li>
+<li>the moves left are statistically equal</li>
+<li>a maximal threshold(like 10000 multiplied by the number of legal moves) of iterations is reached</li>
+</ul>
+<p>Two different pruning rules  </p>
+<ul>
+<li>Hard: a pruned move cannot be a candidate later on</li>
+<li>Soft: a move pruned at a given time <strong>can be a candidate later on</strong> if its value is no longer statistically inferior to a currently active move<ul>
+<li>Periodically check whether to reactive it</li>
+</ul>
+</li>
+</ul>
+<p>Arguments  </p>
+<ul>
+<li><p>Selection of rd <img data-src="/img/TCG/uct-result2.png">   </p>
+<ul>
+<li>The greater rd is</li>
+<li>the less pruned the moves are</li>
+<li>the better the algorithm performs</li>
+<li>the slower at each play</li>
+</ul>
+</li>
+<li><p>Selection of σe <img data-src="/img/TCG/uct-result1.png"></p>
+<ul>
+<li>The smaller σe is</li>
+<li>the fewer equalities there are</li>
+<li>the better the algorithm performs</li>
+<li>the slower at each play</li>
+</ul>
+</li>
+<li><p>rd plays an important role in the move pruning process</p>
+</li>
+<li><p>σe is less sensitive</p>
+</li>
+<li><p>Another trick is progressive widening or progressive un-pruning</p>
+<ul>
+<li>A node is effective if enough simulations are done on it and its values are good</li>
+</ul>
+</li>
+<li><p>We can set threshold on whether to expand the best path, for exmaple</p>
+<ul>
+<li>enough simulations are done</li>
+<li>score is good enough</li>
+</ul>
+</li>
+</ul>
+<h4 id="All-moves-at-first-AMAF"><a href="#All-moves-at-first-AMAF" class="headerlink" title="All moves at first(AMAF)"></a>All moves at first(AMAF)</h4><ul>
+<li>score is used for <strong>all moves the same player played in a random game</strong><ul>
+<li>in this example, after simulate r→v→y→u→w, w which  has parent v and u which has parent r will be updated, too <img data-src="/img/TCG/amaf.png"></li>
+</ul>
+</li>
+<li>Advantage<ul>
+<li>speeding up the experiments</li>
+</ul>
+</li>
+<li>Drawback<ul>
+<li>not the same move - move in early game is not equal to late game </li>
+<li>Recapturing<ul>
+<li>Order of moves is important for certain games(圍棋)</li>
+<li>Modification: if several moves are played at the same place because of captures, modify the statistics only for the player who played first</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Refinement: RAVE    </p>
+<ul>
+<li>Let v1(m) be the score of a move m without using AMAF</li>
+<li>Let v2(m) be the score of a move m with AMAF</li>
+<li>Observations<ul>
+<li>v1(m) is good when suffcient number of simulations are starting with m</li>
+<li>v2(m) is a <strong>good guess for the true score</strong> of the move m<ul>
+<li>when <strong>approaching the end of a game</strong></li>
+<li>when <strong>too few simulations starting with m</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Rapid Action Value Estimate (RAVE)  </p>
+<ul>
+<li>revised score $v3(m) &#x3D; a \times v1(m) + (1-a) \times v2(m)$</li>
+<li>can dynamically change a as the game goes<ul>
+<li>For example: a &#x3D; min{1, Nm&#x2F;10000}, where Nm is simulation times start from m<ul>
+<li>This means when Nm reaches 10000, then no RAVE is used</li>
+</ul>
+</li>
+<li>Works out better than setting a &#x3D; 0(i.e. pure AMAF)</li>
+</ul>
+</li>
+</ul>
+<h4 id="Node-expansion"><a href="#Node-expansion" class="headerlink" title="Node expansion"></a>Node expansion</h4><ul>
+<li>May decide to expand potentially good nodes judging from the<br>current statistics</li>
+<li>All ends: expand all possible children of a newly added node</li>
+<li>Visit count: delay the expansion of a node until it is visited a certain number of times</li>
+<li>Transition probability: delay the expansion of a node until its \score” or estimated visit count is high comparing to its siblings</li>
+<li>Use the current value, variance and parent’s value to derive a good estimation using statistical methods<br>Expansion policy with some transition probability is much better than the \all ends” or \pure visit count” policy</li>
+</ul>
+<!-- ##Chap09 Other way to increase performance -->
+
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><span class="exturl" data-url="aHR0cDovL3d3dy5paXMuc2luaWNhLmVkdS50dy9+dHNoc3UvdGNnLw==">TSHsu講義 2014年版<i class="fa fa-external-link-alt"></i></span></p>
+
+    </div>
+
+    
+    
+    
+      
+  <div class="popular-posts-header">相關文章</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/Counterfactual-Regret-Minimization/" rel="bookmark">CFR(Counterfactual Regret Minimization) 演算法簡介</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/MLfoundation2/" rel="bookmark">機器學習基石(下)</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/Emacs-introduction/" rel="bookmark">Emacs觀念</a></div>
+    </li>
+  </ul>
+
+        
+
+  <div class="followme">
+    <p>歡迎關注我的其它發布管道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/%E9%9B%BB%E8%85%A6%E5%B0%8D%E5%B1%80%E7%90%86%E8%AB%96/" rel="tag"><i class="fa fa-tag"></i> 電腦對局理論</a>
+              <a href="/tags/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/" rel="tag"><i class="fa fa-tag"></i> 機器學習</a>
+              <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7/" rel="tag"><i class="fa fa-tag"></i> 人工智慧</a>
+              <a href="/tags/%E5%9C%8D%E6%A3%8B/" rel="tag"><i class="fa fa-tag"></i> 圍棋</a>
+              <a href="/tags/%E8%B1%A1%E6%A3%8B/" rel="tag"><i class="fa fa-tag"></i> 象棋</a>
+              <a href="/tags/%E8%92%99%E5%9C%B0%E5%8D%A1%E7%BE%85/" rel="tag"><i class="fa fa-tag"></i> 蒙地卡羅</a>
+              <a href="/tags/Alpha-Beta%E6%90%9C%E5%B0%8B/" rel="tag"><i class="fa fa-tag"></i> Alpha-Beta搜尋</a>
+              <a href="/tags/%E5%BC%B7%E5%8C%96%E5%AD%B8%E7%BF%92/" rel="tag"><i class="fa fa-tag"></i> 強化學習</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/computer-network1/" rel="prev" title="計算機網路(上)">
+      <i class="fa fa-chevron-left"></i> 計算機網路(上)
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/MLfoundation2/" rel="next" title="機器學習基石(下)">
+      機器學習基石(下) <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%B8%E7%BF%92%E9%9B%BB%E8%85%A6%E5%B0%8D%E5%B1%80%E7%9A%84%E7%94%A8%E8%99%95"><span class="nav-number">1.1.</span> <span class="nav-text">學習電腦對局的用處</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%82%BA%E4%BD%95%E5%AD%B8%E6%A3%8B%E5%B1%80"><span class="nav-number">1.2.</span> <span class="nav-text">為何學棋局</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%96%E9%9D%88%E6%B8%AC%E8%A9%A6-Turing-test"><span class="nav-number">1.3.</span> <span class="nav-text">圖靈測試(Turing test)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%B9%E8%AE%8A%E7%9B%AE%E6%A8%99"><span class="nav-number">1.4.</span> <span class="nav-text">改變目標</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%87%8D%E5%A4%A7%E7%AA%81%E7%A0%B4"><span class="nav-number">1.5.</span> <span class="nav-text">重大突破</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%84%A1%E9%97%9C%EF%BC%9A%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AD%98"><span class="nav-number">1.6.</span> <span class="nav-text">無關：核心知識</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%8D%E5%B1%80%E5%88%86%E9%A1%9E"><span class="nav-number">1.7.</span> <span class="nav-text">對局分類</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chap02-Basic-Search-Algorithms"><span class="nav-number">2.</span> <span class="nav-text">Chap02 Basic Search Algorithms</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Symbol-Definition"><span class="nav-number">2.1.</span> <span class="nav-text">Symbol Definition</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Brute-force-search"><span class="nav-number">2.2.</span> <span class="nav-text">Brute-force search</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#BFS-Breadth-First-Search"><span class="nav-number">2.3.</span> <span class="nav-text">BFS(Breadth-First Search)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Disk-based-algorithm"><span class="nav-number">2.3.1.</span> <span class="nav-text">Disk based algorithm</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Disk-based-algorithms"><span class="nav-number">2.3.2.</span> <span class="nav-text">Disk based algorithms</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DFS"><span class="nav-number">2.4.</span> <span class="nav-text">DFS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#General-skills-to-improve-searching-algorithm"><span class="nav-number">2.5.</span> <span class="nav-text">General skills to improve searching algorithm</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Iterative-Deepening-ID-%E9%80%90%E5%B1%A4%E5%8A%A0%E6%B7%B1"><span class="nav-number">2.5.1.</span> <span class="nav-text">Iterative-Deepening(ID) 逐層加深</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Bi-directional-search"><span class="nav-number">2.5.2.</span> <span class="nav-text">Bi-directional search</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Heuristic-%E5%95%9F%E7%99%BC%E5%BC%8F-search"><span class="nav-number">2.6.</span> <span class="nav-text">Heuristic(啟發式) search</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Heuristic-search-%E2%80%93-A"><span class="nav-number">2.6.1.</span> <span class="nav-text">Heuristic search – A*</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DFS-with-threshold"><span class="nav-number">2.7.</span> <span class="nav-text">DFS with threshold</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#IDA-x3D-DFID-A"><span class="nav-number">2.8.</span> <span class="nav-text">IDA* &#x3D; DFID + A*</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#basic-thought-for-a-problem"><span class="nav-number">2.9.</span> <span class="nav-text">basic thought for a problem</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#algorithm%E6%95%B4%E7%90%86"><span class="nav-number">2.10.</span> <span class="nav-text">algorithm整理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chap03-Heuristic-Search-with-Pre-Computed-Databases"><span class="nav-number">3.</span> <span class="nav-text">Chap03 Heuristic Search with Pre-Computed Databases</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Non-additive-pattern-databases"><span class="nav-number">3.1.</span> <span class="nav-text">Non-additive pattern databases</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#More-than-one-patterns"><span class="nav-number">3.2.</span> <span class="nav-text">More than one patterns</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Disjoint-pattern"><span class="nav-number">3.3.</span> <span class="nav-text">Disjoint pattern</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Result"><span class="nav-number">3.4.</span> <span class="nav-text">Result</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#What-else-can-be-done"><span class="nav-number">3.5.</span> <span class="nav-text">What else can be done?</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chap-04-Two-Player-Perfect-Information-Games-Introductions"><span class="nav-number">4.</span> <span class="nav-text">Chap 04 Two-Player Perfect Information Games Introductions</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Definition"><span class="nav-number">4.1.</span> <span class="nav-text">Definition</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Classification"><span class="nav-number">4.2.</span> <span class="nav-text">Classification</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Strategy-stealing-argument"><span class="nav-number">4.3.</span> <span class="nav-text">Strategy-stealing argument</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chap-05-Computer-chess-programming-by-Shannon"><span class="nav-number">5.</span> <span class="nav-text">Chap 05 Computer chess programming by Shannon</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Analysis"><span class="nav-number">5.1.</span> <span class="nav-text">Analysis</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Three-phases-of-chess"><span class="nav-number">5.2.</span> <span class="nav-text">Three phases of chess</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Evaluating-Function"><span class="nav-number">5.3.</span> <span class="nav-text">Evaluating Function</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chap-06-Alpha-Beta-Pruning"><span class="nav-number">6.</span> <span class="nav-text">Chap 06 Alpha-Beta Pruning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Dewey-decimal-system"><span class="nav-number">6.1.</span> <span class="nav-text">Dewey decimal system</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Min-Max-method"><span class="nav-number">6.2.</span> <span class="nav-text">Min-Max method</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Nega-max-method"><span class="nav-number">6.3.</span> <span class="nav-text">Nega-max method</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Alpha-Beta-cut-off"><span class="nav-number">6.4.</span> <span class="nav-text">Alpha-Beta cut off</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Analysis-for-AB-pruning"><span class="nav-number">6.5.</span> <span class="nav-text">Analysis for AB pruning</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Variations-of-alpha-beta-search"><span class="nav-number">6.6.</span> <span class="nav-text">Variations of alpha-beta search</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Questions"><span class="nav-number">6.7.</span> <span class="nav-text">Questions</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Pruning-Techinique"><span class="nav-number">6.8.</span> <span class="nav-text">Pruning Techinique</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chap07-Scout-and-Proof-Number-Search"><span class="nav-number">7.</span> <span class="nav-text">Chap07 Scout and Proof Number Search</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#SCOUT"><span class="nav-number">7.1.</span> <span class="nav-text">SCOUT</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Proof-Number-Search"><span class="nav-number">7.2.</span> <span class="nav-text">Proof Number Search</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chap08-Monte-Carlo-Game-Tree-Search"><span class="nav-number">8.</span> <span class="nav-text">Chap08 Monte-Carlo Game Tree Search</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#original-ideas"><span class="nav-number">8.1.</span> <span class="nav-text">original ideas</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#First-Refinement-Monte-Carlo-based-tree-search"><span class="nav-number">8.2.</span> <span class="nav-text">First Refinement: Monte-Carlo based tree search</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Second-Refinement-UCT"><span class="nav-number">8.3.</span> <span class="nav-text">Second Refinement: UCT</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Implementation-hints"><span class="nav-number">8.3.1.</span> <span class="nav-text">Implementation hints</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#When-to-use-Monte-Carlo"><span class="nav-number">8.4.</span> <span class="nav-text">When to use Monte-Carlo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Domain-independent-refinements"><span class="nav-number">8.5.</span> <span class="nav-text">Domain independent refinements</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Progressive-pruning"><span class="nav-number">8.5.1.</span> <span class="nav-text">Progressive pruning</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#All-moves-at-first-AMAF"><span class="nav-number">8.5.2.</span> <span class="nav-text">All moves at first(AMAF)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Node-expansion"><span class="nav-number">8.5.3.</span> <span class="nav-text">Node expansion</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">9.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="HCL"
+      src="/img/qwerty.png">
+  <p class="site-author-name" itemprop="name">HCL</p>
+  <div class="site-description" itemprop="description">Programming | Computer Science | Thought</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">56</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">134</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http:&#x2F;&#x2F;github.com&#x2F;gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="bWFpbHRvOmdvb2hjbDc3N0BnbWFpbC5jb20=" title="E-Mail → mailto:goohcl777@gmail.com"><i class="fa fa-envelope fa-fw"></i></span>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC96aC10dw=="><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https:&#x2F;&#x2F;qwerty777.me">My Main Page</span>
+        </li>
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http:&#x2F;&#x2F;qwerty777.me&#x2F;life&#x2F;">My Second Blog -- wysiwyg</span>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2014 – 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fab fa-free-code-camp"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">HCL</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">總字數：</span>
+    <span title="總字數">451k</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
+  </div>
+  <div class="addthis_inline_share_toolbox">
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61c5cf9cb3476405" async="async"></script>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+  <script data-pjax>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script data-pjax>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
+
+
+    <div id="pjax">
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+          load: ['[tex]/mhchem'],
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+<script>
+  var disqus_config = function() {
+    this.page.url = "http://gitqwerty777.github.io/computer-gaming/";
+    this.page.identifier = "computer-gaming/";
+    this.page.title = "電腦對局理論";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://disqusforqwerty.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+    </div>
+</body>
+</html>

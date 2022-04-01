@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "QWERTY • All posts by \"python\" tag",
+    "description": "Programming | Computer Science | Thought",
+    "home_page_url": "http://gitqwerty777.github.io",
+    "items": [
+        {
+            "id": "http://gitqwerty777.github.io/zen-of-python/",
+            "url": "http://gitqwerty777.github.io/zen-of-python/",
+            "title": "Python 之禪",
+            "date_published": "2020-08-17T16:45:00.000Z",
+            "content_html": "<h2 id=\"import-this\"><a href=\"#import-this\" class=\"headerlink\" title=\"import this\"></a>import this</h2><blockquote>\n<p>The Zen of Python, by Tim Peters</p>\n</blockquote>\n<blockquote>\n<p>Beautiful is better than ugly.<br>Explicit is better than implicit.<br>Simple is better than complex.<br>Complex is better than complicated.<br>Flat is better than nested.<br>Sparse is better than dense.<br>Readability counts.<br>Special cases aren’t special enough to break the rules.<br>Although practicality beats purity.<br>Errors should never pass silently.<br>Unless explicitly silenced.<br>In the face of ambiguity, refuse the temptation to guess.<br>There should be one– and preferably only one –obvious way to do it.<br>Although that way may not be obvious at first unless you’re Dutch.<br>Now is better than never.<br>Although never is often better than <em>right</em> now.<br>If the implementation is hard to explain, it’s a bad idea.<br>If the implementation is easy to explain, it may be a good idea.<br>Namespaces are one honking great idea – let’s do more of those!</p>\n</blockquote>\n<a id=\"more\"></a>\n\n<h2 id=\"翻譯和解釋\"><a href=\"#翻譯和解釋\" class=\"headerlink\" title=\"翻譯和解釋\"></a>翻譯和解釋</h2><p>基本上在解釋 clean code 的做法</p>\n<p>優美優於醜陋，</p>\n<p>明瞭優於隱晦；</p>\n<p>簡單優於複雜，</p>\n<p>複雜優於凌亂，</p>\n<blockquote>\n<p>如果復雜不可避免，那代碼間也不能有難懂的關係，要保持接口簡潔</p>\n</blockquote>\n<p>扁平優於嵌套，</p>\n<p>稀疏優於稠密，</p>\n<p>可讀性很重要！</p>\n<p>即使實用比純粹更優，</p>\n<p>特例亦不可違背原則。</p>\n<p>錯誤絕不能悄悄忽略，</p>\n<p>除非它明確需要如此。</p>\n<p>面對不確定性，</p>\n<p>拒絕妄加猜測。</p>\n<p>任何問題應有一種，</p>\n<p>且最好只有一種，</p>\n<p>顯而易見的解決方法。</p>\n<p>儘管這方法一開始並非如此直觀，</p>\n<p>除非你是荷蘭人。</p>\n<blockquote>\n<p>解決一個問題的方法可能會有很多種，但在Python中，只選擇最明顯的那一個</p>\n</blockquote>\n<p>做優於不做，</p>\n<p>然而不假思索還不如不做。</p>\n<p>很難解釋的，必然是壞方法。</p>\n<p>很好解釋的，可能是好方法。</p>\n<p>命名空間是個絕妙的主意，</p>\n<p>我們應好好利用它。</p>\n<h2 id=\"reference\"><a href=\"#reference\" class=\"headerlink\" title=\"reference\"></a>reference</h2><ul>\n<li><span class=\"exturl\" data-url=\"aHR0cHM6Ly93d3cud2lraXdhbmQuY29tL3poLXR3L1B5dGhvbiVFNCVCOSU4QiVFNyVBNiU4NQ==\">wiki<i class=\"fa fa-external-link-alt\"></i></span></li>\n<li><span class=\"exturl\" data-url=\"aHR0cHM6Ly93d3cucHl0aG9uLm9yZy9kZXYvcGVwcy9wZXAtMDAyMC8=\">PEP-20<i class=\"fa fa-external-link-alt\"></i></span></li>\n</ul>\n",
+            "tags": [
+                "python"
+            ]
+        }
+    ]
+}

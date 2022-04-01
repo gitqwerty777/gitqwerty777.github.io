@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png">
+  <link rel="mask-icon" href="/img/favicon.png" color="#222">
+  <meta name="google-site-verification" content="45plYlJRhxb-g8Tl8seizYgih_JUsmcJRH6oJHplkj0">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"gitqwerty777.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideLeftIn"}},"path":"search.json"};
+  </script>
+
+  <meta name="description" content="Chap01 IntroductionWhat can we learn How programs finally executed on hardware How to write an efficient program How hardware and software work well together How to improve hardware performance">
+<meta property="og:type" content="article">
+<meta property="og:title" content="計算機結構(上)">
+<meta property="og:url" content="http://gitqwerty777.github.io/computer-architecture1/index.html">
+<meta property="og:site_name" content="QWERTY">
+<meta property="og:description" content="Chap01 IntroductionWhat can we learn How programs finally executed on hardware How to write an efficient program How hardware and software work well together How to improve hardware performance">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/2N0mDJJ.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/MZa4WQV.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/XGJt3Qu.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/XXVfz5O.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/573HpxE.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/3Teh9R3.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/V9Q8UOl.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/CJkqLMX.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/BeoKq0T.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/4lLg4I9.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/hkO62eV.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/xfEcDxV.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/RwlzFoo.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/vSJTU7L.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/ev3Iazm.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/1nBfGuE.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/VRdEFJz.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/c0XyK9w.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/ugemo7v.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/BQpStOr.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/RiImWlu.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/kaceTao.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/MeKGSy9.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/MCxQVaC.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/j.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/add2.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/com.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/comm2.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/comm3.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/">
+<meta property="og:image" content="http://gitqwerty777.github.io/">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/reg.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/exeheader.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/java.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/armmips.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/regis.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/aluctrl.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/table1.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/tabl2.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/table3.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/pipe.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/pipe2.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/stall.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/forward.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/forward2.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/pipegraph.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CA/pipectrl.png">
+<meta property="article:published_time" content="2014-09-24T09:25:34.000Z">
+<meta property="article:modified_time" content="2022-04-01T16:57:25.640Z">
+<meta property="article:author" content="HCL">
+<meta property="article:tag" content="計算機結構">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://gitqwerty777.github.io/img/CA/2N0mDJJ.png">
+
+<link rel="canonical" href="http://gitqwerty777.github.io/computer-architecture1/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-TW'
+  };
+</script>
+
+<script data-ad-client="ca-pub-7267358872858108" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+  <title>計算機結構(上) | QWERTY</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
+    <script data-pjax>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-51310670-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="QWERTY" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">QWERTY</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Hello World!</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>文章<span class="badge">56</span></a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>關於</a>
+
+  </li>
+        <li class="menu-item menu-item-rss">
+
+    <a href="/atom.xml" rel="section"><i class="fas fa-rss-square fa-fw"></i>RSS</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤<span class="badge">134</span></a>
+
+  </li>
+        <li class="menu-item menu-item-ptt標籤雲">
+
+    <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWUvcHR0LXRhZy1jbG91ZC8="><i class="fas fa-hashtag fa-fw"></i>PTT標籤雲</span>
+
+  </li>
+        <li class="menu-item menu-item-支語警察">
+
+    <a href="/foreign-terms-police" rel="section"><i class="fas fa-language fa-fw"></i>支語警察</a>
+
+  </li>
+        <li class="menu-item menu-item-英文聊天機器人">
+
+    <span class="exturl" data-url="aHR0cHM6Ly9jaGF0Ym90LnF3ZXJ0eTc3Ny5tZQ=="><i class="fas fa-comment-dots fa-fw"></i>英文聊天機器人</span>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+  <span class="exturl github-corner" data-url="aHR0cHM6Ly9naXRodWIuY29tL2dpdHF3ZXJ0eTc3Nw==" title="Follow me on GitHub" aria-label="Follow me on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></span>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/computer-architecture1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/img/qwerty.png">
+      <meta itemprop="name" content="HCL">
+      <meta itemprop="description" content="Programming | Computer Science | Thought">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QWERTY">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          計算機結構(上)
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2014-09-24 17:25:34" itemprop="dateCreated datePublished" datetime="2014-09-24T17:25:34+08:00">2014-09-24</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">筆記</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="文章字數">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">文章字數：</span>
+              <span>17k</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <!-- RENEW: -->
+
+<h2 id="Chap01-Introduction"><a href="#Chap01-Introduction" class="headerlink" title="Chap01 Introduction"></a>Chap01 Introduction</h2><h3 id="What-can-we-learn"><a href="#What-can-we-learn" class="headerlink" title="What can we learn"></a>What can we learn</h3><ul>
+<li>How programs finally executed on hardware</li>
+<li>How to write an efficient program</li>
+<li>How hardware and software work well together</li>
+<li>How to improve hardware performance<br><img data-src="/img/CA/2N0mDJJ.png"><span id="more"></span>
+<blockquote>
+<p>What really matters is the functioning of the complete system, hardware, runtime system, compiler, operating system, and application<br>“In networking, this is called the “End to End argument” — H&amp;P</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="Why-need-to-take-this-course"><a href="#Why-need-to-take-this-course" class="headerlink" title="Why need to take this course"></a>Why need to take this course</h3><p>You will be able to answer the following questions:<br><strong>Q1: How can I write a program with good performance?code B perform better than code A?</strong><br>(I don’t know why)</p>
+<pre><code>Code A
+for (i = 0; i &lt; N; i = i+1)
+    for (j = 0; j &lt; N; j = j+1)
+        &#123;r = 0;
+            for (k = 0; k &lt; N; k = k+1)
+            &#123;
+                r = r + y[i][k]*z[k][j];
+            &#125;;
+            x[i][j] = r;
+        &#125;;
+========
+Code B
+for (jj = 0; jj &lt; N; jj = jj+B)
+    for (kk = 0; kk &lt; N; kk = kk+B)
+        for (i = 0; i &lt; N; i = i+1)
+            for (j = jj; j &lt; min(jj+B-1,N); j = j+1)
+            &#123;
+                r = 0;
+                for (k = kk; k &lt; min(kk+B-1,N); k = k+1)
+                &#123;
+                    r = r + y[i][k]*z[k][j];
+                &#125;
+                x[i][j] = x[i][j] + r;
+            &#125;;
+</code></pre>
+<p><strong>Q2: CPU frequency ？ Performance</strong><br>Ans at Chap02<br><strong>Q3: Why do Nvidia GPUs get so much attention today?</strong><br>Heterogeneous(異質) Computing : Integrated CPU&#x2F;GPU<br><img data-src="/img/CA/MZa4WQV.png"></p>
+<h3 id="Post-PC-Era"><a href="#Post-PC-Era" class="headerlink" title="Post PC Era"></a>Post PC Era</h3><p>資訊界：小魚吃大魚<br><img data-src="/img/CA/XGJt3Qu.png"><br><img data-src="/img/CA/XXVfz5O.png"></p>
+<p>Ex. Cloud computing  </p>
+<ul>
+<li>Software as a Service (SaaS)</li>
+<li>Amazon and Google</li>
+</ul>
+<h3 id="Chip-War-Big-core-or-Small-core"><a href="#Chip-War-Big-core-or-Small-core" class="headerlink" title="Chip War: Big core or Small core"></a>Chip War: Big core or Small core</h3><p>Workload changes in data centers<br>Past: databases, financial services<br>Now: web service, cloud computing (accessing mails, photos, facebooks, etc)<br>&#x3D;&gt; Simple tasks &amp; large amount of parallel tasks<br>&#x3D;&gt; Small Core is better</p>
+<p>Ex. ARM</p>
+<ul>
+<li>Founded at the year of 1990, in Cambridge, England</li>
+<li>Co-founded by Apple &amp; Acron</li>
+<li>Emphasize low-power since day one</li>
+<li>First low-power, 32 bit mobile processor</li>
+<li>sells designs(IP license) instead of chips<br><img data-src="/img/CA/573HpxE.png"><br><img data-src="/img/CA/3Teh9R3.png"></li>
+</ul>
+<h3 id="Inside-the-Processor-CPU"><a href="#Inside-the-Processor-CPU" class="headerlink" title="Inside the Processor (CPU)"></a>Inside the Processor (CPU)</h3><p>-Datapath: performs operations on data<br>-Control: sequences datapath, memory, …<br>-Cache memory<br>    -Small fast SRAM memory for immediate access to data</p>
+<h3 id="Moore’s-Law-1965"><a href="#Moore’s-Law-1965" class="headerlink" title="Moore’s Law (1965)"></a>Moore’s Law (1965)</h3><ul>
+<li>Gordon Moore, Intel founder</li>
+<li>“The density of transistors in an integrated circuit will double <strong>every year</strong>.”</li>
+<li>Reality<ul>
+<li>The density of silicon chips doubles <strong>every 18 months</strong></li>
+</ul>
+</li>
+</ul>
+<h3 id="Uniprocessor-Performance"><a href="#Uniprocessor-Performance" class="headerlink" title="Uniprocessor Performance"></a>Uniprocessor Performance</h3><p><img data-src="/" alt="uni p"><br>VAX : 25%&#x2F;year 1978 to 1986<br>RISC + x86: 52%&#x2F;year 1986 to 2002<br>RISC + x86: 20%&#x2F;year 2002 to present</p>
+<h3 id="Concept-Change"><a href="#Concept-Change" class="headerlink" title="Concept Change"></a>Concept Change</h3><ul>
+<li><strong>Power expensive</strong>,** Transistors free** (Can put more on chip than can afford to turn on)<ul>
+<li>so hot that make low efficiency</li>
+</ul>
+</li>
+<li><strong>law of diminishing returns</strong>(收益遞減) on more HW for ILP( Instruction Level Parallelism, 指令層級平行)<ul>
+<li>愈平行，效率提升的投資投酬愈少(control overhead)</li>
+</ul>
+</li>
+<li><strong>Memory slow</strong>,** CPU fast** (200 clock cycles to DRAM memory, 4 clocks for multiply)</li>
+<li>Power Wall + ILP Wall + Memory Wall &#x3D; CPU Wall</li>
+<li>Uniprocessor performance 2X &#x2F; 1.5 yrs -&gt; <strong>multiple cores</strong> (2X processors per chip &#x2F; 2 years)</li>
+</ul>
+<p>CPU constrained by power, instruction-level parallelism, memory latency<br><img data-src="/img/CA/V9Q8UOl.png"></p>
+<h3 id="CPU-history"><a href="#CPU-history" class="headerlink" title="CPU history"></a>CPU history</h3><p>8086 Introduced x86 ISA 1978<br>80286 Virtual memory 1982<br>80386 32-bit processor (1985)<br>80486 Pipelining Floating point unit 8 KB cache (1989)<br>Pentium Superscalar (1993)<br>Pentium Pro &#x2F; II &#x2F; III  Dynamic execution Multimedia instructions 1995-9<br>Pentium 4 HyperThreading Deep pipeline (2001)<br>Pentium D (2005) Dual core 2 Pentium 4 cores<br>AMD big.LITTLE 大核+小核<br><span class="exturl" data-url="aHR0cDovL3d3dy50ZWNoYmFuZy5jb20vcG9zdHMvMTUwMDMtYXJtLW91ci10ZWNobm9sb2d5LXRoYW4tdGhlaXItcml2YWxzLWFoZWFkLW9mLXR3by1nZW5lcmF0aW9ucw==">AMD big.LITTLE<i class="fa fa-external-link-alt"></i></span></p>
+<h3 id="8-Design-Principle-for-Computer-Architecture-x2F-System"><a href="#8-Design-Principle-for-Computer-Architecture-x2F-System" class="headerlink" title="8 Design Principle for Computer Architecture&#x2F;System"></a>8 Design Principle for Computer Architecture&#x2F;System</h3><ol>
+<li>Design for Moore’s Law</li>
+<li>Use abstraction to simplify design</li>
+<li>Make the common case fast</li>
+<li>Performance via parallelism</li>
+<li>Performance via pipelining</li>
+<li>Performance via prediction</li>
+<li>Hierarchy of memories</li>
+<li>Dependability via redundancy(多餘使其安全)</li>
+</ol>
+<h2 id="Chap02-Performance-x2F-Power-x2F-Cost"><a href="#Chap02-Performance-x2F-Power-x2F-Cost" class="headerlink" title="Chap02 Performance&#x2F;Power&#x2F;Cost"></a>Chap02 Performance&#x2F;Power&#x2F;Cost</h2><p>How to measure, report, and summarize performance&#x2F;power&#x2F;cost?  </p>
+<ul>
+<li>Metric(度量)</li>
+<li>Benchmark(基準)</li>
+</ul>
+<h3 id="Two-Notions-of-“Performance”"><a href="#Two-Notions-of-“Performance”" class="headerlink" title="Two Notions of “Performance”"></a>Two Notions of “Performance”</h3><ul>
+<li>Response Time (latency)</li>
+<li>Throughput</li>
+</ul>
+<p>-&gt; We focus on response time</p>
+<h3 id="Metrics-for-Performance-Evaluation"><a href="#Metrics-for-Performance-Evaluation" class="headerlink" title="Metrics for Performance Evaluation"></a>Metrics for Performance Evaluation</h3><ul>
+<li>Program execution time(Elapsed time經過時間)</li>
+<li>Total time to complete a task, including disk access, I&#x2F;O, etc</li>
+<li>CPU execution time(使用CPU的時間)</li>
+<li>doesn’t count I&#x2F;O or time spent running other programs</li>
+<li>Our Focus: user CPU time(without system CPU time)</li>
+<li><strong>time spent executing the lines of code that are “in” program</strong></li>
+</ul>
+<p>performance(x) &#x3D; 1 &#x2F; execution_time(x)</p>
+<p>For Embedded System  </p>
+<ul>
+<li>Hard real time<ul>
+<li>A fixed bound on the time to respond to or process an event</li>
+</ul>
+</li>
+<li>Soft real time(寬鬆)<ul>
+<li>An average response or a response within a limited time</li>
+</ul>
+</li>
+</ul>
+<h3 id="CPU-performance"><a href="#CPU-performance" class="headerlink" title="CPU performance"></a>CPU performance</h3><p>CPU time<br>&#x3D; CPU clockcycles x Clockcycle time<br>&#x3D; CPU clockcycles &#x2F; clockrate<br>(Because Clock Cycles &#x3D; Instruction Count x Cycles per Instruction )<br>&#x3D; Instruction Count x Cycles per Instruction x Clockcycle time  </p>
+<p>Instruction Count of program is determined by program, ISA and compiler<br>cycles per instruction is determined by CPU hardware</p>
+<p>different instruction may have different CPI(Clocks Per Instruction)<br>-&gt; use weighted average CPI(加權平均)</p>
+<p>Aspects of CPU Performance<br><img data-src="/img/CA/CJkqLMX.png"></p>
+<p>Chap01 Q2: CPU frequency(時脈) is not fully related to performance</p>
+<h3 id="MIPS"><a href="#MIPS" class="headerlink" title="MIPS"></a>MIPS</h3><ul>
+<li>Millions of Instructions Per Second</li>
+<li>&#x3D; Clock Rate &#x2F; (CPI * 10^6)  </li>
+<li>Can’t be performance metric(CPI varies between programs)</li>
+</ul>
+<h3 id="CMOS-IC-power-performance"><a href="#CMOS-IC-power-performance" class="headerlink" title="CMOS IC power performance"></a>CMOS IC power performance</h3><p><img data-src="/img/CA/BeoKq0T.png"><br>$V ∝ Frequency$ &#x3D;&gt; $power ∝ V^3$<br>high ascending rate </p>
+<p>dynamic energy: energy that is consumed when transistors switch states from 0 to 1 and vice versa. It depends on the capacitive loading of each transistor and the voltage applied:</p>
+<pre><code>Energy ∝ Capacitive load  x Voltage^2
+</code></pre>
+<p><strong>Why is Multi-Core Good for Energy-Efficiency?</strong><br><img data-src="/img/CA/4lLg4I9.png"><br>only use 1&#x2F;4 power</p>
+<p>Requires explicitly parallel programming. Hard to do because  </p>
+<ul>
+<li>Programming for performance</li>
+<li>Load balancing</li>
+<li>Optimizing communication and synchronization</li>
+</ul>
+<h3 id="Manufacturing-ICs"><a href="#Manufacturing-ICs" class="headerlink" title="Manufacturing ICs"></a>Manufacturing ICs</h3><p>Yield(良率): proportion of working dies(晶片) per wafer<br>Nonlinear relation to area and defect rate<br><img data-src="/img/CA/hkO62eV.png" alt="Yield">  </p>
+<h3 id="Benchmark"><a href="#Benchmark" class="headerlink" title="Benchmark"></a>Benchmark</h3><h4 id="SPEC-benchmark"><a href="#SPEC-benchmark" class="headerlink" title="SPEC benchmark"></a>SPEC benchmark</h4><ul>
+<li>Standard Performance Evaluation Corp. (SPEC)<ul>
+<li>Develops benchmarks for CPU, I&#x2F;O, Web, …</li>
+<li>CPU Benchmark  <ul>
+<li>Programs to simulate actual workload</li>
+<li>focuses on CPU performance(a little I&#x2F;O)</li>
+<li>Test both integer and floating point applications<br>  CINT (integer) and CFP (floating-point)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>SPECRatio</strong><br><strong>Normalize</strong> execution times to reference computer<br>performance &#x3D; time on standard computer&#x2F; time on computer being rated<br><img data-src="/img/CA/xfEcDxV.png"><br>Since ratios, geometric mean is proper</p>
+<h4 id="Power-Benchmark"><a href="#Power-Benchmark" class="headerlink" title="Power Benchmark"></a>Power Benchmark</h4><ul>
+<li>Power consumption of server at different workload levels(不同的工作量下，平均的工作效能)</li>
+<li>Report power consumption of servers at different workload levels, divided into 10% increments</li>
+<li>Performance: ssj_ops&#x2F;sec(每秒完成的事務數)</li>
+<li>Power: Watts (Joules&#x2F;sec)<br><img data-src="/img/CA/RwlzFoo.png"></li>
+</ul>
+<p>Amdahl’s Law<br>程式的平行化只能將執行時間縮短到一定程度(因為分散運算的overhead)<br><img data-src="/img/CA/vSJTU7L.png"></p>
+<p>Low Power at Idle(x)  </p>
+<ul>
+<li>At 100% load: 295W</li>
+<li>At 50% load: 246W (83%)</li>
+<li>At 10% load: 180W (61%)  </li>
+<li>not porportional!</li>
+</ul>
+<p>&#x3D;&gt; In general, the more load, the better power consumption rate<br>&#x3D;&gt; Consider designing processors to make power proportional to load</p>
+<h2 id="Chap03-Instruction-Set-Architecture-ISA"><a href="#Chap03-Instruction-Set-Architecture-ISA" class="headerlink" title="Chap03 Instruction Set Architecture(ISA)"></a>Chap03 Instruction Set Architecture(ISA)</h2><p>Definition: Instruction set provides an layer of abstraction to programmers<br><img data-src="/img/CA/ev3Iazm.png"></p>
+<h3 id="ISA-Design-Principle"><a href="#ISA-Design-Principle" class="headerlink" title="ISA Design Principle"></a>ISA Design Principle</h3><p>makes it easy to build the hardware and the compiler while maximizing performance and minimizing cost.</p>
+<p>Interface Design<br>(portability, compatibility, generality)<br>(convenient at high level , efficient in low level)</p>
+<p><img data-src="/img/CA/1nBfGuE.png"></p>
+<h3 id="Design-Principles"><a href="#Design-Principles" class="headerlink" title="Design Principles"></a>Design Principles</h3><ul>
+<li>Design Principle 1: Simplicity favors regularity(All operation takes three operands)</li>
+<li>Design Principle 2: Smaller is faster(MIPS only 32 register)</li>
+<li>Design Principle 3: Make the common thing fast(addi)</li>
+<li>Design Principle 4: Good design demands good compromises(妥協)(three format of instruction code)</li>
+</ul>
+<h3 id="MIPS-Instruction-Set"><a href="#MIPS-Instruction-Set" class="headerlink" title="MIPS Instruction Set"></a>MIPS Instruction Set</h3><p>Stanford MIPS be Memory are referenced with byte addresses in MIPScommercialized<br>a kind of RISC精簡指令集(Reduced Instruction Set Computing)</p>
+<ul>
+<li>31個 32-bit integer registers (R0 &#x3D; const 0)<br><img data-src="/img/CA/VRdEFJz.png"></li>
+<li>32個 32-bit floating-point registers</li>
+<li>32-bit HI, LO, PC (program counter) – internal, can’t modify<br>Memory are referenced with byte addresses in MIPS<br>1 word &#x3D; 4 byte</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>意義</th>
+<th>備註</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>add Ra Rb Rc</td>
+<td>Ra &#x3D;Rb + Rc</td>
+<td></td>
+</tr>
+<tr>
+<td>load Ra A</td>
+<td>Ra &#x3D;mem[A]</td>
+<td></td>
+</tr>
+<tr>
+<td>store Ra A</td>
+<td>mem[A] &#x3D;Ra</td>
+<td>Memory are referenced with byte addresses in MIPS</td>
+</tr>
+<tr>
+<td></td>
+<td>Data transfer instructions</td>
+<td></td>
+</tr>
+<tr>
+<td>lw ＄t0, 8 (＄s3)</td>
+<td>t0 &#x3D; mem[8+reg[＄s3]]</td>
+<td>lw dest offset base, offset must be constant</td>
+</tr>
+<tr>
+<td>Ex. <img data-src="/img/CA/c0XyK9w.png"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>sw ＄t0, 8 (＄s3)</td>
+<td>mem[8+reg[＄s3]]&#x3D; ＄t0</td>
+<td></td>
+</tr>
+<tr>
+<td>addi ＄s3, ＄s3, 4</td>
+<td>add constant value</td>
+<td></td>
+</tr>
+<tr>
+<td>srl ＄10, ＄16, 4</td>
+<td>＄t2 &#x3D; ＄s0 &gt;&gt; 4 bits</td>
+<td></td>
+</tr>
+<tr>
+<td>sll ＄10, ＄16, 4</td>
+<td>＄t2 &#x3D; ＄s0 &lt;&lt; 4 bits</td>
+<td></td>
+</tr>
+<tr>
+<td>rs fill 0 because unused</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>or ＄t0, ＄t1, ＄t2</td>
+<td>＄t0 &#x3D; ＄t1 | ＄t2</td>
+<td></td>
+</tr>
+<tr>
+<td>ori ＄6, ＄6, 0x00ff</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>and ＄t0, ＄t1, ＄t2</td>
+<td>＄t0 &#x3D; ＄t1 &amp; ＄t2</td>
+<td></td>
+</tr>
+<tr>
+<td>andi ＄6, ＄6, 0x0000</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>nor ＄t0, ＄t1, ＄t3</td>
+<td>t0 &#x3D; ~(＄t1</td>
+<td>＄ t3)</td>
+</tr>
+<tr>
+<td>(nor ＄t0, ＄t1, ＄t3) &#x3D; ~(＄t1), if ＄t3 &#x3D;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>~(A) &#x3D; 1 if A &#x3D; 0</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>~(A) &#x3D; 0 if A !&#x3D; 0</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<pre><code>lui $t0, 1010101010101010 # load upper immediate
+// that is: 1010101010101010 0000000000000000
+</code></pre>
+<p>mult rs, rt<br>Multiplying two 32-bit numbers can yield a 64-bit number.<br>higher 32 bits are stored in HI<br>lower 32 bits are stored in LO<br>MFHI rd –  ＄rd &#x3D; HI<br>MFLO rd –  ＄rd &#x3D; LO  </p>
+<p>div rs, rt | rs &#x2F; rt<br>Quotient stored in Lo<br>Remainder stored in Hi   </p>
+<p>Branch instructions<br>Conditional branches<br>beq reg1, reg2, L1<br>Go to statement L1 if [reg1] &#x3D;&#x3D; [reg2]<br>bne reg1, reg2, L2<br>Go to statement L2 if [reg1] !&#x3D; [reg2]<br>Unconditional branches<br>j L1<br><img data-src="/img/CA/ugemo7v.png">   </p>
+<p>jr(jump register)<br>unconditional jump to the address stored in a register<br>Provides full 32bits address<br><img data-src="/img/CA/BQpStOr.png"></p>
+<p>Use J for calling subroutines<br>Use Jal for calling functions<br>Use Jr for ending a subroutine by jumping to the return address (ra)</p>
+<p>slt reg1, reg2, reg3<br>&#x3D;&gt; if reg1 &#x3D; (reg2 &lt; reg3) ? 1 : 0;</p>
+<p><code>move</code> copies a value from one register to another</p>
+<p>Byte order: Big Endian vs. Little Endian<br>Big endian(順序, 一般數字寫法): byte 0 is most significant bits e.g., IBM&#x2F;360&#x2F;370, Motorola 68K, MIPS, Sparc, HP PA<br>Little endian(逆序): byte 0 is least significant bits e.g., Intel 80x86, DEC Vax, DEC Alpha<br><img data-src="/img/CA/RiImWlu.png"></p>
+<p>Alignment<br>object on the address that is multiple of their size(一次讀取大小的倍數)<br><img data-src="/img/CA/kaceTao.png"></p>
+<p>Stored-Program Concept<br>Computers built on 2 key principles:  </p>
+<ol>
+<li>Instructions are represented as numbers  </li>
+<li>entire programs can be stored in memory to be read or written just like numbers</li>
+</ol>
+<p>Shift is faster than multiplication<br>&#x3D;&gt; Multiplying by 4 is the same as shifting left by 2:</p>
+<p>•Fetch instruction from mem [PC]<br>•without decision making instruction<br>    •next instruction &#x3D; mem [PC + instruction_size]</p>
+<h3 id="MIPS-Instruction-Format"><a href="#MIPS-Instruction-Format" class="headerlink" title="MIPS Instruction Format"></a>MIPS Instruction Format</h3><p>instruction code - 32bit<br><img data-src="/img/CA/MeKGSy9.png"></p>
+<h4 id="R-type"><a href="#R-type" class="headerlink" title="R-type"></a>R-type</h4><ul>
+<li>rs, rt &#x3D; source register, rd &#x3D; destination register<ul>
+<li>32個register &#x3D;&gt; 5bit</li>
+</ul>
+</li>
+<li>shamt: shift amount<ul>
+<li>filling 0 when unused</li>
+</ul>
+</li>
+<li>func: function field(same operate code with different function code can looked as different argument) <ul>
+<li>Ex. <code>add</code>,<code>addu</code>, <code>addi</code></li>
+</ul>
+</li>
+</ul>
+<h4 id="I-type"><a href="#I-type" class="headerlink" title="I-type"></a>I-type</h4><p>for those have <strong>constant</strong> argument(immediate value)<br><img data-src="/img/CA/MCxQVaC.png"><br>first example, rs &#x3D; ＄2(source) rt &#x3D; ＄1(destination)</p>
+<p>PC addressing mode<br>New PC &#x3D; PC + 4(auto go to next instruction) + Immediate x 4</p>
+<p>if want to jump farther than 16bit </p>
+<pre><code>bne s1 s2 L2 
+jump L1 # equals to beq s1 s2 L1, but jump can go farther
+L2:
+</code></pre>
+<h4 id="J-type"><a href="#J-type" class="headerlink" title="J-type"></a>J-type</h4><p><img data-src="/img/CA/j.png" alt="j type"></p>
+<p>goto absolute address(I-type is relative address)<br>equal to immediate in the middle of the program counter address<br><img data-src="/img/CA/add2.png"></p>
+<h3 id="指令表"><a href="#指令表" class="headerlink" title="指令表"></a>指令表</h3><p><img data-src="/img/CA/com.png"><br><img data-src="/img/CA/comm2.png"><br><img data-src="/img/CA/comm3.png"></p>
+<h3 id="function"><a href="#function" class="headerlink" title="function"></a>function</h3><p>pass value</p>
+<ul>
+<li><p>＄a0 ~ ＄a3 : 4 arguments </p>
+<ul>
+<li>if # of parameters is larger than 4 – store to the stack</li>
+</ul>
+</li>
+<li><p>＄v0 ~ ＄v1 : 2 return values<br>preserve register values of caller</p>
+</li>
+<li><p>stack</p>
+</li>
+</ul>
+<p>Caller-save register </p>
+<ul>
+<li>Caller saved register: 由Caller負責清理或存入stack frame<ul>
+<li>hold temporary quantities that need not be preserved across calls</li>
+<li>Caller先備份，所以callee便可直接使用caller-save register</li>
+<li>＄t0~t7</li>
+</ul>
+</li>
+<li>Callee saved register: 由Callee負責清理或存入stack<ul>
+<li>hold values that should be preserved across calls(caller還需要用, callee用的時候要先備份)</li>
+<li>callee should save them and restore them before returning to the caller</li>
+<li>＄s0~s7</li>
+</ul>
+</li>
+</ul>
+<p>call function: <code>jal</code> procedure_address (jump and link)</p>
+<ul>
+<li>Store the return address (PC + 4) at ＄ra</li>
+<li>set PC &#x3D; procedure_address<br>return : jr ＄ra</li>
+</ul>
+<p>Frame pointer points to the first word of the procedure frame</p>
+<p>procedure call stack<br><img data-src="/"></p>
+<p><img data-src="/" alt="memory layout"><br>Memory layout</p>
+<ul>
+<li>text: code</li>
+<li>static data: global variable<ul>
+<li>＄gp is the offset of static data</li>
+</ul>
+</li>
+<li>dynamic data: heap<ul>
+<li>malloc, new</li>
+</ul>
+</li>
+<li>stack: automatic storage</li>
+</ul>
+<p>Caller Steps</p>
+<ol>
+<li>pass the argument ＄a0,＄a1 </li>
+<li>save caller-saved registers</li>
+<li>jal</li>
+</ol>
+<p>Callee Steps</p>
+<ol>
+<li>establish stack frame ＄sp<br>subi ＄sp, ＄sp <frame-size></li>
+<li>saved callee saved registers<br>Ex. ＄ra, ＄fp, ＄s0-＄s7</li>
+<li>establish frame pointer ＄fp<br>Add ＄fp, ＄sp, <frame-size>-4</li>
+<li>Do Something</li>
+<li>put returned values in ＄v0, ＄v1</li>
+<li>restore(load) callee-saved registers</li>
+<li>pop the stack</li>
+<li>return: jr ＄ra</li>
+</ol>
+<p><img data-src="/img/CA/reg.png" alt="registers"></p>
+<p><img data-src="/" alt="nested procedure"></p>
+<p>ASCII (American Standard Code for Information Interchange)<br>8 bits&#x2F;character</p>
+<pre><code>`lb sb`
+</code></pre>
+<p>Unicode (Universal Encoding)<br>16 bits&#x2F;character</p>
+<pre><code>`lf sf`
+</code></pre>
+<p>performance</p>
+<figure class="highlight stan"><table><tr><td class="code"><pre><span class="line">Clear1(<span class="type">int</span> <span class="type">array</span>[ ], <span class="type">int</span> <span class="built_in">size</span>)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> i;</span><br><span class="line">	<span class="keyword">for</span> (i=<span class="number">0</span>, i&lt; <span class="built_in">size</span>; i+= <span class="number">1</span>)</span><br><span class="line">	<span class="type">array</span>[i] = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">Clear <span class="number">2</span>(<span class="type">int</span> *<span class="type">array</span>, <span class="type">int</span> <span class="built_in">size</span>)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> *p,</span><br><span class="line">	<span class="keyword">for</span> (p = &amp;<span class="type">array</span>[<span class="number">0</span>]; p &lt; &amp;<span class="type">array</span>[<span class="built_in">size</span>]; p = p+<span class="number">1</span>)</span><br><span class="line">	*p = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Clear2 &gt; Clear1<br>pointer is faster than fetching value</p>
+<figure class="highlight mipsasm"><table><tr><td class="code"><pre><span class="line"><span class="keyword">move </span>＄<span class="built_in">t0</span>, ＄<span class="built_in">a0</span> 			<span class="comment"># p = &amp;array[0]</span></span><br><span class="line"><span class="keyword">sll </span>＄<span class="built_in">t1</span>, ＄<span class="built_in">a1</span>, <span class="number">2</span> 		<span class="comment"># t1 = size x 4</span></span><br><span class="line"><span class="keyword">add </span>＄<span class="built_in">t2</span>, ＄<span class="built_in">a0</span>, ＄<span class="built_in">t1</span>		<span class="comment"># t2 = &amp;array[size]</span></span><br><span class="line"><span class="symbol">Loop2:</span> </span><br><span class="line"><span class="keyword">sw </span>＄<span class="built_in">zero</span>, <span class="number">0</span>(＄<span class="built_in">t0</span>) 		<span class="comment"># memory[p] = 0</span></span><br><span class="line"><span class="keyword">addi </span>＄<span class="built_in">t0</span>, ＄<span class="built_in">t0</span>, <span class="number">4</span> 		<span class="comment"># p= p+4</span></span><br><span class="line"><span class="keyword">slt </span>＄<span class="built_in">t3</span>, ＄<span class="built_in">t0</span>, ＄<span class="built_in">t2</span> 		<span class="comment"># compare p &amp; array[size]</span></span><br><span class="line"><span class="keyword">bne </span>＄<span class="built_in">t3</span>, ＄<span class="built_in">zero</span>, Loop2</span><br></pre></td></tr></table></figure>
+
+<h2 id="Synchronization"><a href="#Synchronization" class="headerlink" title="Synchronization"></a>Synchronization</h2><p>SWAP: <strong>atomically</strong> interchange a value in a register for a value in memory; nothing else can interpose itself between the read and the write to the memory location</p>
+<figure class="highlight mipsasm"><table><tr><td class="code"><pre><span class="line">＄<span class="built_in">S4</span> = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">Swap </span>(＄<span class="built_in">S4</span>, Lock);</span><br><span class="line">If Lock = <span class="number">0</span> <span class="comment"># change success</span></span><br><span class="line">enter critical section;</span><br></pre></td></tr></table></figure>
+
+<p>Load linked: load value from rs(atomic)</p>
+<pre><code>`ll rt offset(rs)`
+</code></pre>
+<p>Store conditional</p>
+<pre><code>`sc rt offset(rs)`
+</code></pre>
+<p>if location not changed since the ll , rt return 1, 否則回傳 0</p>
+<figure class="highlight mipsasm"><table><tr><td class="code"><pre><span class="line"><span class="keyword">swap </span><span class="built_in">s4</span> <span class="keyword">and </span><span class="built_in">s1</span></span><br><span class="line"><span class="symbol">try:</span><span class="keyword">add </span>＄<span class="built_in">t0</span>,＄<span class="built_in">zero</span>,＄<span class="built_in">s4</span> <span class="comment">;copy exchange value</span></span><br><span class="line">	<span class="keyword">ll </span>＄<span class="built_in">t1</span>,<span class="number">0</span>(＄<span class="built_in">s1</span>) <span class="comment">;load s1 to t1</span></span><br><span class="line">	<span class="keyword">sc </span>＄<span class="built_in">t0</span>,<span class="number">0</span>(＄<span class="built_in">s1</span>) <span class="comment">;store t0 to s1</span></span><br><span class="line">	<span class="keyword">beq </span>＄<span class="built_in">t0</span>,＄<span class="built_in">zero</span>,try <span class="comment">;if store fail, try again</span></span><br><span class="line">	<span class="keyword">add </span>＄<span class="built_in">s4</span>,＄<span class="built_in">zero</span>,＄<span class="built_in">t1</span> <span class="comment">;put load value in ＄s4</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="MIPS-Addresssing-Mode"><a href="#MIPS-Addresssing-Mode" class="headerlink" title="MIPS Addresssing Mode"></a>MIPS Addresssing Mode</h3><ol>
+<li>Register addressing<br>運算對象在register<br><code>add</code></li>
+<li>Immediate addressing<br>運算對象是constant<br><code>addi </code> </li>
+<li>Base addressing(The argument is at MEM)<br>運算對象在memory<br><code>lw</code><br>way to get address<br> 1.<br> .data # define data<br> xyz:<br> .word 1 # some data here<br> …<br> .text # program code<br> …<br> lw $5,xyz # equals to lw ＄5, offset(＄gp)<br> 2.<br> la ＄6, xyz # ＄6 &#x3D; &amp;xyz</li>
+<li>PC-relative addressing<br><code>beq</code> </li>
+<li>Pseudodirect addressing<br><code>j 100</code></li>
+</ol>
+<h3 id="from-program-to-memory"><a href="#from-program-to-memory" class="headerlink" title="from program to memory"></a>from program to memory</h3><pre><code>Program -----------&gt; assembly ---------&gt; object file:
+          compiler            assembler
+machine language module + library module ---------&gt;  
+                                           linker  
+machine code program ---------&gt; memory
+                       loader
+</code></pre>
+<p><strong>Assembler</strong><br>Symbol table: translate variables into memory address<br>Psudoinstruction: common variation of assembly language instructions<br><strong>Linker</strong><br><img data-src="/img/CA/exeheader.png" alt="executable "></p>
+<p>generate executables file header  </p>
+<ol>
+<li>Place code and data modules symbolically in memory.</li>
+<li>Determine the addresses of data and instruction labels.</li>
+<li>Patch both the internal and external references</li>
+</ol>
+<p><strong>Loader</strong><br>determine the size of the text and data segment<br>Creates an address space<br>Copies the instructions and data to memory<br>Initializes the machine registers and sets the stack pointer<br>Jump to a start-up routine</p>
+<p><strong>Dynamically Linked Libraries (DLL)</strong><br>Loading the whole library even if all of the library is not used &#x3D;&gt; libraries are not linked and loaded until the program is run, and use lazy procedure linkage</p>
+<h3 id="java"><a href="#java" class="headerlink" title="java"></a>java</h3><p><img data-src="/img/CA/java.png" alt="java"><br>Java bytecode: use instruction set designed to interpret Java programs<br>Just In Time Compiler (JIT): compiler that operates at runtime, translating bytecodes into the native code of the compiler<br>Java Virtual Machine (JVM): The program that interprets Java bytecodes</p>
+<h3 id="ARM"><a href="#ARM" class="headerlink" title="ARM"></a>ARM</h3><p>AMD64 (2003): extended architecture to 64 bits<br>AMD64 (announced 2007): SSE5 instructions<br>Intel declined to follow…</p>
+<p>Similar to MIPS<br><img data-src="/img/CA/armmips.png" alt="arm mips"><br>do anything for code density<br>include<br>32-bit ARM instruction<br>16-bit Thumb instruction<br>8-bit Java Instruction Set  </p>
+<p>Current program status register: Top four bits of CPSR<br>use for performance<br>N : Negative<br>Z : Zero<br>C : Carry<br>V : Overflow  </p>
+<p>Conditional execution<br>ADDEQ r0,r1,r2 &#x3D;&gt; r1-r2, If zero flag set then do r0 &#x3D; r1 + r2</p>
+<h3 id="Intel-x86-ISA"><a href="#Intel-x86-ISA" class="headerlink" title="Intel x86 ISA"></a>Intel x86 ISA</h3><p>History: skipped</p>
+<p>| IA-32                      | MIPS            |<br>| ————————– | ————— | —————– |<br>| RISC                       | RISC            |<br>| general purpose register   | 8               | 32                |<br>| operand operation          | 2 or 3          | 3                 |<br>| operations to be performed | Register-memory | register-register |<br>| addressing modes           | more            | less              |<br>| encoding                   | variable-length | fixed-length      |</p>
+<p>simple instruction -&gt; higher performance<br>because complex instructions are hard to implement, slow down all instructions</p>
+<p>assembly code for high performance(x)<br>More lines of code -&gt; more errors and less productivity</p>
+<h2 id="Chap04-Building-Single-Cycle-Datapath-and-Control-Unit"><a href="#Chap04-Building-Single-Cycle-Datapath-and-Control-Unit" class="headerlink" title="Chap04 Building Single-Cycle Datapath and Control Unit"></a>Chap04 Building Single-Cycle Datapath and Control Unit</h2><p>How to Design a Processor</p>
+<ol>
+<li>Analyze instruction set &#x3D;&gt; datapath(include PC,… functional units) requirements</li>
+<li>Select set of datapath components and establish clocking methodology</li>
+<li>Assemble datapath</li>
+<li>Analyze <strong>implementation of each instruction</strong> to determine control points</li>
+<li>Assemble the control logic</li>
+</ol>
+<p>Details</p>
+<ol>
+<li>register-tranfer暫存器傳輸<br>RTL (Register Transfer Languages)<br>Ex. ADDUR[rd] &lt;–R[rs] + R[rt], PC &lt;–PC + 4  </li>
+<li>Combinational Elements: outputs only depend on input<br>Ex. ALU, MUX, Adder<br>Storage Elements: outputs depend on input and state(clock)<br>Ex. Flip-Flop, register, memory<br>Register<br><img data-src="/img/CA/regis.png" alt="register graph"><br>Edge-triggered clocking<br>until next edge would the value change</li>
+<li></li>
+</ol>
+<p><strong>Instruction Fetch Unit</strong>: mem[PC]<br>Sequential code<br>PC &lt;- PC + 4<br>Branch and Jump<br>PC &lt;- Target addr<br>**Memory Operations**<br>Mem[R[rs] + SignExt[imm16]]<br>sign extension: increasing the number of bits without   changing value (Ex. 10 0010 -&gt; 0010 0010)<br>4.<br>Control Unit: set control flag to change the operation with the change of operation code<br>Control Flags</p>
+<ul>
+<li>MemWr: write memory</li>
+<li>MemtoReg: 0 &#x3D;&gt; use ALU output 1 &#x3D;&gt; use Mem value</li>
+<li>RegDst: 1 &#x3D;&gt; “rd” when 3 operand are all register; 0 &#x3D;&gt; “rt”</li>
+<li>RegWr: write to register</li>
+<li>ALUsrc: 1&#x3D;&gt; immed; 0&#x3D;&gt;regB</li>
+<li>ALUctr: “add”, “sub”</li>
+<li>PCSrc: 1&#x3D;&gt; PC &#x3D; PC + 4; 0&#x3D;&gt; PC &#x3D; branch target address</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>instruction</th>
+<th>MemWr</th>
+<th>MemtoReg</th>
+<th>RegDst</th>
+<th>RegWr</th>
+<th>ALUsrc</th>
+<th>ALUctr</th>
+<th>PCSrc</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Add</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>add</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Load</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>add</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Store</td>
+<td>1</td>
+<td>x</td>
+<td>x</td>
+<td>0</td>
+<td>1</td>
+<td>add</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Branch</td>
+<td>0</td>
+<td>x</td>
+<td>x</td>
+<td>0</td>
+<td>0</td>
+<td>sub</td>
+<td>value(after sub)</td>
+</tr>
+<tr>
+<td>Ori</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>or</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Jump</td>
+<td>?</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<ol start="5">
+<li>use k-map to make control flags simple<br><img data-src="/img/CA/aluctrl.png" alt="ALU control"><br>I-type: (00) add for load&#x2F;store and (01) sub for beqand (10) for ori<br>R-type: (11, need to check funct field)</li>
+</ol>
+<p><img data-src="/img/CA/table1.png" alt="alu ctr truth table"><br><img data-src="/img/CA/tabl2.png" alt="truth table for main"></p>
+<p><img data-src="/img/CA/table3.png" alt="functional unit used by instructions"></p>
+<h2 id="Chap05-Pipeline"><a href="#Chap05-Pipeline" class="headerlink" title="Chap05 Pipeline"></a>Chap05 Pipeline</h2><p>when CPI&#x3D;1:</p>
+<ul>
+<li>Load is too slow! -&gt; Long Cycle Time</li>
+<li>Real memory is not so nice as our idealized memory<ul>
+<li>cannot always get the job done in one (short) cycle</li>
+</ul>
+</li>
+</ul>
+<p>Pipelining doesn’t help <strong>latency</strong> of single task, it helps <strong>throughput</strong> of entire workload<br>Multiple tasks operating simultaneously <strong>using different resources</strong><br>Pipeline rate <strong>limited by slowest pipeline stage</strong><br>Unbalanced lengths of pipe stages reduces speedup(切平均，增加效能最多)</p>
+<p>Break the instruction into smaller steps(5 steps in MIPS):<br>Execute each step in 1 clock cycle</p>
+<ul>
+<li>Instruction Fetch(Ifetch)</li>
+<li>Instruction Decode and Register Fetch(Reg&#x2F;Dec)</li>
+<li>Execution, Memory Address Computation, or Branch Completion(Exec)</li>
+<li>Memory Access or R-type instruction completion(Mem)</li>
+<li>Write back to register(Wr)</li>
+</ul>
+<p>simplified: IF ID EX MEM WB</p>
+<p>The Four Stages of R-type: without Mem<br>The Four Stages of store: without Wr<br>The Three Stages of Beq: without Mem, Wr</p>
+<p><img data-src="/img/CA/pipe.png" alt="pipe 2ns"><br>Ideal speedup from pipelining &#x3D;&#x3D; # of pipeline stages<br>(分成N段-&gt;理想上，速度提升N倍)</p>
+<h4 id="Pipeline-Hazards"><a href="#Pipeline-Hazards" class="headerlink" title="Pipeline Hazards"></a>Pipeline Hazards</h4><ul>
+<li>structural hazards: use the same resource at the same time(Single Memory)<br><img data-src="/img/CA/pipe2.png" alt="structure hazard"></li>
+<li>data hazards: use item before it is ready(load, update)</li>
+<li>control hazards: make a decision before condition is evaluated(branch)<br>Can always resolve hazards by waiting<br>Need to detect and resolve hazards</li>
+</ul>
+<p>Way to Solve Hazards</p>
+<ol>
+<li>structural<ol>
+<li>Stall(put bubbles that do nothing)<br><img data-src="/img/CA/stall.png" alt="stall"> </li>
+<li>Split instruction and data memory(2 different memories)</li>
+<li>Delay R-type’s Write by One Cycle()</li>
+</ol>
+</li>
+<li>data<ol>
+<li>“Forward” result from one stage to another(算出答案後，在放入記憶體前，就先給之後的instruction使用)(可以同時read and save) </li>
+<li>Load-use data hazard: can’t solved by forward, can solved by reordering instructions, otherwise, need stall  <img data-src="/img/CA/forward.png" alt="lw hazard">   <img data-src="/img/CA/forward2.png" alt="loaduse-&gt;forward"></li>
+</ol>
+</li>
+<li>control<ol>
+<li>stall until the outcome of the branch is known</li>
+<li>solve branch earlier: put in enough extra hardware so that we can test registers, calculate the branch address, and update the PC</li>
+<li>Predict: flush if the assumption is wrong<br>dynamic scheme: history of branch (90% success)</li>
+<li>performance: 13% of branch instructions executed in SPECint2000, the CPI is slowdown of 1.13 versus the ideal case</li>
+</ol>
+</li>
+</ol>
+<h3 id="Pipelined-datapath"><a href="#Pipelined-datapath" class="headerlink" title="Pipelined datapath"></a>Pipelined datapath</h3><p>Pipeline registers<br><img data-src="/img/CA/pipegraph.png" alt="4bar"></p>
+<ul>
+<li>The registers are named between two stages</li>
+</ul>
+<h3 id="control-in-each-stage"><a href="#control-in-each-stage" class="headerlink" title="control in each stage"></a>control in each stage</h3><p>Pass control signals along just like the data<br><img data-src="/img/CA/pipectrl.png" alt="control"></p>
+
+    </div>
+
+    
+    
+    
+      
+  <div class="popular-posts-header">相關文章</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/computer-architecture2/" rel="bookmark">計算機結構(下)</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/Emacs-introduction/" rel="bookmark">Emacs觀念</a></div>
+    </li>
+  </ul>
+
+        
+
+  <div class="followme">
+    <p>歡迎關注我的其它發布管道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/%E8%A8%88%E7%AE%97%E6%A9%9F%E7%B5%90%E6%A7%8B/" rel="tag"><i class="fa fa-tag"></i> 計算機結構</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/regular-expression/" rel="prev" title="正規表示式簡介">
+      <i class="fa fa-chevron-left"></i> 正規表示式簡介
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/computer-network1/" rel="next" title="計算機網路(上)">
+      計算機網路(上) <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Chap01-Introduction"><span class="nav-number">1.</span> <span class="nav-text">Chap01 Introduction</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#What-can-we-learn"><span class="nav-number">1.1.</span> <span class="nav-text">What can we learn</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Why-need-to-take-this-course"><span class="nav-number">1.2.</span> <span class="nav-text">Why need to take this course</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Post-PC-Era"><span class="nav-number">1.3.</span> <span class="nav-text">Post PC Era</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Chip-War-Big-core-or-Small-core"><span class="nav-number">1.4.</span> <span class="nav-text">Chip War: Big core or Small core</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Inside-the-Processor-CPU"><span class="nav-number">1.5.</span> <span class="nav-text">Inside the Processor (CPU)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Moore%E2%80%99s-Law-1965"><span class="nav-number">1.6.</span> <span class="nav-text">Moore’s Law (1965)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Uniprocessor-Performance"><span class="nav-number">1.7.</span> <span class="nav-text">Uniprocessor Performance</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Concept-Change"><span class="nav-number">1.8.</span> <span class="nav-text">Concept Change</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CPU-history"><span class="nav-number">1.9.</span> <span class="nav-text">CPU history</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-Design-Principle-for-Computer-Architecture-x2F-System"><span class="nav-number">1.10.</span> <span class="nav-text">8 Design Principle for Computer Architecture&#x2F;System</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chap02-Performance-x2F-Power-x2F-Cost"><span class="nav-number">2.</span> <span class="nav-text">Chap02 Performance&#x2F;Power&#x2F;Cost</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Two-Notions-of-%E2%80%9CPerformance%E2%80%9D"><span class="nav-number">2.1.</span> <span class="nav-text">Two Notions of “Performance”</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Metrics-for-Performance-Evaluation"><span class="nav-number">2.2.</span> <span class="nav-text">Metrics for Performance Evaluation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CPU-performance"><span class="nav-number">2.3.</span> <span class="nav-text">CPU performance</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MIPS"><span class="nav-number">2.4.</span> <span class="nav-text">MIPS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CMOS-IC-power-performance"><span class="nav-number">2.5.</span> <span class="nav-text">CMOS IC power performance</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Manufacturing-ICs"><span class="nav-number">2.6.</span> <span class="nav-text">Manufacturing ICs</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Benchmark"><span class="nav-number">2.7.</span> <span class="nav-text">Benchmark</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#SPEC-benchmark"><span class="nav-number">2.7.1.</span> <span class="nav-text">SPEC benchmark</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Power-Benchmark"><span class="nav-number">2.7.2.</span> <span class="nav-text">Power Benchmark</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chap03-Instruction-Set-Architecture-ISA"><span class="nav-number">3.</span> <span class="nav-text">Chap03 Instruction Set Architecture(ISA)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ISA-Design-Principle"><span class="nav-number">3.1.</span> <span class="nav-text">ISA Design Principle</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Design-Principles"><span class="nav-number">3.2.</span> <span class="nav-text">Design Principles</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MIPS-Instruction-Set"><span class="nav-number">3.3.</span> <span class="nav-text">MIPS Instruction Set</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MIPS-Instruction-Format"><span class="nav-number">3.4.</span> <span class="nav-text">MIPS Instruction Format</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#R-type"><span class="nav-number">3.4.1.</span> <span class="nav-text">R-type</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#I-type"><span class="nav-number">3.4.2.</span> <span class="nav-text">I-type</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#J-type"><span class="nav-number">3.4.3.</span> <span class="nav-text">J-type</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8C%87%E4%BB%A4%E8%A1%A8"><span class="nav-number">3.5.</span> <span class="nav-text">指令表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#function"><span class="nav-number">3.6.</span> <span class="nav-text">function</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Synchronization"><span class="nav-number">4.</span> <span class="nav-text">Synchronization</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#MIPS-Addresssing-Mode"><span class="nav-number">4.1.</span> <span class="nav-text">MIPS Addresssing Mode</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#from-program-to-memory"><span class="nav-number">4.2.</span> <span class="nav-text">from program to memory</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#java"><span class="nav-number">4.3.</span> <span class="nav-text">java</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ARM"><span class="nav-number">4.4.</span> <span class="nav-text">ARM</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Intel-x86-ISA"><span class="nav-number">4.5.</span> <span class="nav-text">Intel x86 ISA</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chap04-Building-Single-Cycle-Datapath-and-Control-Unit"><span class="nav-number">5.</span> <span class="nav-text">Chap04 Building Single-Cycle Datapath and Control Unit</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chap05-Pipeline"><span class="nav-number">6.</span> <span class="nav-text">Chap05 Pipeline</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Pipeline-Hazards"><span class="nav-number">6.0.1.</span> <span class="nav-text">Pipeline Hazards</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Pipelined-datapath"><span class="nav-number">6.1.</span> <span class="nav-text">Pipelined datapath</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#control-in-each-stage"><span class="nav-number">6.2.</span> <span class="nav-text">control in each stage</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="HCL"
+      src="/img/qwerty.png">
+  <p class="site-author-name" itemprop="name">HCL</p>
+  <div class="site-description" itemprop="description">Programming | Computer Science | Thought</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">56</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">134</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http:&#x2F;&#x2F;github.com&#x2F;gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="bWFpbHRvOmdvb2hjbDc3N0BnbWFpbC5jb20=" title="E-Mail → mailto:goohcl777@gmail.com"><i class="fa fa-envelope fa-fw"></i></span>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC96aC10dw=="><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https:&#x2F;&#x2F;qwerty777.me">My Main Page</span>
+        </li>
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http:&#x2F;&#x2F;qwerty777.me&#x2F;life&#x2F;">My Second Blog -- wysiwyg</span>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2014 – 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fab fa-free-code-camp"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">HCL</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">總字數：</span>
+    <span title="總字數">451k</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
+  </div>
+  <div class="addthis_inline_share_toolbox">
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61c5cf9cb3476405" async="async"></script>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+  <script data-pjax>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script data-pjax>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
+
+
+    <div id="pjax">
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+          load: ['[tex]/mhchem'],
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+<script>
+  var disqus_config = function() {
+    this.page.url = "http://gitqwerty777.github.io/computer-architecture1/";
+    this.page.identifier = "computer-architecture1/";
+    this.page.title = "計算機結構(上)";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://disqusforqwerty.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+    </div>
+</body>
+</html>

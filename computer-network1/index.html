@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png">
+  <link rel="mask-icon" href="/img/favicon.png" color="#222">
+  <meta name="google-site-verification" content="45plYlJRhxb-g8Tl8seizYgih_JUsmcJRH6oJHplkj0">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"gitqwerty777.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideLeftIn"}},"path":"search.json"};
+  </script>
+
+  <meta name="description" content="計算機網路上篇">
+<meta property="og:type" content="article">
+<meta property="og:title" content="計算機網路(上)">
+<meta property="og:url" content="http://gitqwerty777.github.io/computer-network1/index.html">
+<meta property="og:site_name" content="QWERTY">
+<meta property="og:description" content="計算機網路上篇">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CN/UHFBvAO.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CN/7kYoUyA.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CN/wonLAB8.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CN/H5z9oXy.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CN/oIEjJsN.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CN/LebfyMI.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CN/AyQHQy9.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CN/WB7uwMH.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CN/BeFXQC2.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CN/u2H7X7p.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CN/RifdgHR.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CN/7r4M1Q5.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CN/AfKoIko.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CN/pYLYYrA.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CN/delHpJN.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CN/">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CN/proto.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CN/socket.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CN/2-1.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CN/2-2.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CN/2-3.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CN/2-4.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CN/2-5.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CN/2-6.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CN/2-7.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CN/2-8.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/CN/3-1.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/">
+<meta property="og:image" content="http://gitqwerty777.github.io/">
+<meta property="og:image" content="http://gitqwerty777.github.io/">
+<meta property="og:image" content="http://gitqwerty777.github.io/">
+<meta property="og:image" content="http://gitqwerty777.github.io/">
+<meta property="og:image" content="http://gitqwerty777.github.io/">
+<meta property="og:image" content="http://gitqwerty777.github.io/">
+<meta property="og:image" content="http://gitqwerty777.github.io/">
+<meta property="og:image" content="http://gitqwerty777.github.io/">
+<meta property="og:image" content="http://gitqwerty777.github.io/">
+<meta property="og:image" content="http://gitqwerty777.github.io/">
+<meta property="og:image" content="http://gitqwerty777.github.io/">
+<meta property="article:published_time" content="2014-09-24T13:43:59.000Z">
+<meta property="article:modified_time" content="2022-04-01T16:57:25.640Z">
+<meta property="article:author" content="HCL">
+<meta property="article:tag" content="計算機網路">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://gitqwerty777.github.io/img/CN/UHFBvAO.png">
+
+<link rel="canonical" href="http://gitqwerty777.github.io/computer-network1/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-TW'
+  };
+</script>
+
+<script data-ad-client="ca-pub-7267358872858108" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+  <title>計算機網路(上) | QWERTY</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
+    <script data-pjax>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-51310670-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="QWERTY" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">QWERTY</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Hello World!</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>文章<span class="badge">56</span></a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>關於</a>
+
+  </li>
+        <li class="menu-item menu-item-rss">
+
+    <a href="/atom.xml" rel="section"><i class="fas fa-rss-square fa-fw"></i>RSS</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤<span class="badge">134</span></a>
+
+  </li>
+        <li class="menu-item menu-item-ptt標籤雲">
+
+    <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWUvcHR0LXRhZy1jbG91ZC8="><i class="fas fa-hashtag fa-fw"></i>PTT標籤雲</span>
+
+  </li>
+        <li class="menu-item menu-item-支語警察">
+
+    <a href="/foreign-terms-police" rel="section"><i class="fas fa-language fa-fw"></i>支語警察</a>
+
+  </li>
+        <li class="menu-item menu-item-英文聊天機器人">
+
+    <span class="exturl" data-url="aHR0cHM6Ly9jaGF0Ym90LnF3ZXJ0eTc3Ny5tZQ=="><i class="fas fa-comment-dots fa-fw"></i>英文聊天機器人</span>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+  <span class="exturl github-corner" data-url="aHR0cHM6Ly9naXRodWIuY29tL2dpdHF3ZXJ0eTc3Nw==" title="Follow me on GitHub" aria-label="Follow me on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></span>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/computer-network1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/img/qwerty.png">
+      <meta itemprop="name" content="HCL">
+      <meta itemprop="description" content="Programming | Computer Science | Thought">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QWERTY">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          計算機網路(上)
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2014-09-24 21:43:59" itemprop="dateCreated datePublished" datetime="2014-09-24T21:43:59+08:00">2014-09-24</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">筆記</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="文章字數">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">文章字數：</span>
+              <span>20k</span>
+            </span>
+            <div class="post-description">計算機網路上篇</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <!-- RENEW: -->
+
+<h2 id="Chap01-Introduction"><a href="#Chap01-Introduction" class="headerlink" title="Chap01 Introduction"></a>Chap01 Introduction</h2><h3 id="Terminologies"><a href="#Terminologies" class="headerlink" title="Terminologies"></a>Terminologies</h3><p>connected computing devices     </p>
+<ul>
+<li>hosts: end systems<ul>
+<li>running network apps</li>
+<li>sends packets of data</li>
+<li>breaks message into smaller chunks, known as packets</li>
+</ul>
+</li>
+<li>bandwidth: transmission rate<ul>
+<li>link capacity(maximum rate)</li>
+<li>link bandwidth(available rate)</li>
+</ul>
+</li>
+<li>Packet switches: forward packets(chunks of data) by routers and switches</li>
+<li><strong>protocols</strong>: define format, order of messages sent and received and actions taken on message transmission and receive<ul>
+<li>TCP, IP, HTTP, Skype, 802.11</li>
+</ul>
+</li>
+<li>Internet standards<ul>
+<li>RFC: Request for comments</li>
+<li>IETF: Internet Engineering Task Force<br><img data-src="/img/CN/UHFBvAO.png"></li>
+</ul>
+</li>
+<li>Internet<ul>
+<li><strong>network of networks</strong>  </li>
+<li><strong>Interconnected ISPs</strong>  </li>
+<li><strong>Infrastructure that provides services to applications</strong><ul>
+<li>Web, VoIP, email, games…</li>
+</ul>
+</li>
+<li><strong>provides programming interface to apps</strong></li>
+</ul>
+</li>
+</ul>
+<span id="more"></span>
+
+<h3 id="Network-Structure"><a href="#Network-Structure" class="headerlink" title="Network Structure"></a>Network Structure</h3><ul>
+<li>network edge<ul>
+<li>hosts: clients and servers(often in data centers)</li>
+</ul>
+</li>
+<li>network core<ul>
+<li>interconnected routers, network of networks</li>
+</ul>
+</li>
+<li>access networks, physical media<ul>
+<li>wired, wireless communication links</li>
+</ul>
+</li>
+</ul>
+<h3 id="Access-Network"><a href="#Access-Network" class="headerlink" title="Access Network"></a>Access Network</h3><h4 id="digital-subscriber-line-DSL"><a href="#digital-subscriber-line-DSL" class="headerlink" title="digital subscriber line (DSL)"></a>digital subscriber line (DSL)</h4><p>DSL透過電話線的附加頻段在話音訊帶上傳送大量資料<br>typically (&lt; 1 Mbps&#x2F;&lt; 10 Mbps)<br><img data-src="/img/CN/7kYoUyA.png">    </p>
+<h4 id="cable-network"><a href="#cable-network" class="headerlink" title="cable network"></a>cable network</h4><p>unlike DSL, which has dedicated access to central offic<br><img data-src="/img/CN/wonLAB8.png"><br>frequency division multiplexing: different channels transmitted<br>in different frequency bands<br>將多路基頻訊號調製到不同頻率載波上再進行疊加形成一個複合訊號<br><img data-src="/img/CN/H5z9oXy.png"><br>HFC: hybrid fiber coax(混合式光纖同軸電纜)<br>其主幹是光纖（Fiber）網路(fiber attaches homes to ISP router)，末端枝幹是雙向同軸電纜線（Coaxial Cable）<br>在主幹網路上，每條光纖採用環狀結構連接，確保一條網路斷線時，另外一條網路仍能傳遞資料，以光波傳輸訊號，傳輸距離長，提供高速連接至光纖節點（Fiber node），由光接收機將光訊號轉為電視訊號，再改經同軸電纜傳送至用戶終端。HFC 網路的頻寬達750MHz，以6MHz來劃分整體的頻道，可容納高達110個類比視訊頻道，或1000個數位節目。</p>
+<p>asymmetric: up to 30Mbps&#x2F;2 Mbps<br>homes share access network to cable headend</p>
+<h4 id="home-network"><a href="#home-network" class="headerlink" title="home network"></a>home network</h4><p><img data-src="/img/CN/oIEjJsN.png"></p>
+<h4 id="Enterprise-access-networks-Ethernet"><a href="#Enterprise-access-networks-Ethernet" class="headerlink" title="Enterprise access networks (Ethernet)"></a>Enterprise access networks (Ethernet)</h4><p><img data-src="/img/CN/LebfyMI.png"></p>
+<ul>
+<li>一種電腦區域網路組網技術(IEEE 802.3)，它規定了包括實體層的連線、電訊號和介質存取層協定的內容</li>
+<li>typically used in companies, universities</li>
+<li>today, end systems typically connect into Ethernet switch</li>
+</ul>
+<h4 id="Wireless-access-networks"><a href="#Wireless-access-networks" class="headerlink" title="Wireless access networks"></a>Wireless access networks</h4><p>connect via base station aka “access point”</p>
+<ul>
+<li>wireless LANs:<ul>
+<li>within building (100 ft)</li>
+<li>802.11b&#x2F;g (WiFi): 11&#x2F;54 Mbps transmission rate</li>
+</ul>
+</li>
+<li>wide-area wireless access<ul>
+<li>provided by telco (cellular蜂巢式) operator, 10’s km and 1~10 Mbps  </li>
+<li>3G, 4G(速度，範圍): LTE</li>
+</ul>
+</li>
+</ul>
+<h3 id="Physical-media"><a href="#Physical-media" class="headerlink" title="Physical media"></a>Physical media</h3><ul>
+<li>twisted pair (TP, 雙絞線): two insulated copper wires<br>Category 5: 100 Mbps, 1 Gpbs Ethernet<br>Category 6: 10Gbps<br>是由兩條相互絕緣的導線按照規格互相纏繞在一起而製成，屬於資訊通訊網路傳輸介質。</li>
+<li>coaxial cable(同軸電纜):<ul>
+<li>two concentric(同心) copper conductors  </li>
+<li>bidirectional   </li>
+<li>broadband(寬帶): multiple channels on cable</li>
+</ul>
+</li>
+<li>HFC　Hybrid Fiber Coaxial(as above)    </li>
+<li>fiber optic cable: glass fiber carrying light pulses  <ul>
+<li>high-speed(10’s-100’s Gpbs) point-to-point transmission   </li>
+<li>low error rate: immune to electromagnetic noise</li>
+</ul>
+</li>
+<li>radio<ul>
+<li>no physical wire , bidirectional</li>
+<li>propagation(傳播) environment effects:<ul>
+<li>reflection </li>
+<li>obstruction(妨礙) by objects</li>
+<li>interference</li>
+</ul>
+</li>
+<li>radio link types:<ul>
+<li>terrestrial(地面波) microwave - up to 45 Mbps channels</li>
+<li>LAN (e.g., WiFi) - 11Mbps, 54 Mbps</li>
+<li>wide-area (e.g., cellular) - 3G cellular: ~ few Mbps</li>
+<li>satellite - Kbps to 45Mbps channel (or multiple smaller channels) <ul>
+<li>270 msec end-end delay</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="The-network-core-interconnected-routers"><a href="#The-network-core-interconnected-routers" class="headerlink" title="The network core: interconnected routers"></a>The network core: interconnected routers</h3><p>packet-switching: hosts break <strong>application-layer messages</strong> into packets    </p>
+<p>forward packets from one router to the next, across links on path from source to destination</p>
+<h4 id="Two-key-network-core-functions"><a href="#Two-key-network-core-functions" class="headerlink" title="Two key network-core functions"></a>Two key network-core functions</h4><p>routing: <strong>determines source-destination route</strong> taken by packets<br>routing algorithms<br>forwarding: <strong>move packets</strong> from router’s input to appropriate router output</p>
+<h4 id="circuit-switching"><a href="#circuit-switching" class="headerlink" title="circuit switching"></a>circuit switching</h4><p>電路交換要求必須首先在通信雙方之間建立連接通道。在連接建立成功之後，雙方的通信活動才能開始。<br>通信活動的過程中，連接將始終佔用著通信系統分配給它的資源（通道、頻寬、時隙、碼字等等）(no sharing)<br>circuit segment idle if not used by call (no sharing)<br>Commonly used in traditional telephone networks<br>多工：FDM &amp; TDM<br><img data-src="/img/CN/AyQHQy9.png"></p>
+<h4 id="packet-switching"><a href="#packet-switching" class="headerlink" title="packet switching"></a>packet switching</h4><p>封包在節點間單獨路由，不需要在傳輸前先建立通訊路徑<br>store and forward: entire packet must arrive at router before it can be transmitted on next link<br>If arrival rate exceeds transmission rate of link:</p>
+<ol>
+<li>packets will queue, wait to be transmitted on link </li>
+<li>packets will be lost if memory(buffer) fills up</li>
+</ol>
+<h4 id="why-packet-switching-better-than-circuit-switching"><a href="#why-packet-switching-better-than-circuit-switching" class="headerlink" title="why packet switching better than circuit switching"></a>why packet switching better than circuit switching</h4><ol>
+<li>packet switching allows more users to use network!<br>Ex.<br>1 Mb&#x2F;s link<br>each user is [100 kb&#x2F;s when “active”] and [active 10% of time]<br>with 35 users, probability &gt; 10 active at same time is less than .0004(計算的機率)</li>
+<li>great for bursty data(resource sharing)</li>
+<li>excessive congestion possible: packet delay and loss<ul>
+<li>need protocols needed for reliable data transfer, congestion control</li>
+</ul>
+</li>
+</ol>
+<p>Q: How to provide circuit-like behavior?<br>bandwidth guarantees needed for audio&#x2F;video apps</p>
+<h3 id="Internet-structure-network-of-networks"><a href="#Internet-structure-network-of-networks" class="headerlink" title="Internet structure: network of networks"></a>Internet structure: network of networks</h3><p>End systems connect to Internet via access ISPs (Internet Service Providers)<br>ISPs must be interconnected</p>
+<p><img data-src="/img/CN/WB7uwMH.png"><br><img data-src="/img/CN/BeFXQC2.png"><br>IXP Internet exchange point</p>
+<p><img data-src="/img/CN/u2H7X7p.png"><br>“tier-1” commercial ISPs (e.g., Level 3, Sprint, AT&amp;T, NTT), national &amp; international coverage<br>content provider network (e.g, Google): private network that connects it data centers to Internet, often bypassing tier-1, regional ISPs</p>
+<h3 id="packet-delay"><a href="#packet-delay" class="headerlink" title="packet delay"></a>packet delay</h3><h4 id="Four-sources-of-packet-delay"><a href="#Four-sources-of-packet-delay" class="headerlink" title="Four sources of packet delay"></a>Four sources of packet delay</h4><p><img data-src="/img/CN/RifdgHR.png"><br>dproc: noda processing<br>check bit errors<br>determine output link<br>typically &lt; msec</p>
+<p>dqueue: queueing delay<br><img data-src="/img/CN/7r4M1Q5.png"><br>dtrans: transmission delay(檔案傳輸)(受限於頻寬，一次只能傳送一定大小)<br>L: packet length (bits)<br>R: link bandwidth (bps)<br>dtrans &#x3D; L&#x2F;R</p>
+<p>dprop: propagation delay(傳輸速度(約光速))<br>d: length of physical link<br>s: propagation speed in medium (~2x108 m&#x2F;sec)<br>dprop &#x3D; d&#x2F;s</p>
+<p>traceroute program: provides delay measurement from source to router along end-end Internet path towards destination</p>
+<p>throughput: rate (bits&#x2F;time unit) at which bits transferred between sender&#x2F;receiver<br>instantaneous: rate at given point in time<br>average: rate over longer period of time<br>link on end-end path that constrains  end-end throughput(被最慢的部分限制)</p>
+<h3 id="Protocol-“layers”"><a href="#Protocol-“layers”" class="headerlink" title="Protocol “layers”"></a>Protocol “layers”</h3><p><img data-src="/img/CN/AfKoIko.png" alt="AIR TRAVEL"></p>
+<p>layers: each layer implements a service<br>via its own internal-layer actions<br>relying on services provided by layer below</p>
+<ol>
+<li>explicit structure allows identification, relationship of complex system’s pieces</li>
+<li>modularization eases maintenance, updating of system<br>change of implementation of layer’s service transparent to rest of system(不互相影響)<br>e.g., change in gate procedure doesn’t affect rest of system</li>
+</ol>
+<p><img data-src="/img/CN/pYLYYrA.png" alt="layer model"><br><strong>Layer Model</strong>  </p>
+<ul>
+<li>application: supporting network applications<ul>
+<li>FTP, SMTP, HTTP</li>
+</ul>
+</li>
+<li>transport: process-process data transfer<ul>
+<li>TCP, UDP</li>
+</ul>
+</li>
+<li>network: routing of datagrams from source to destination<ul>
+<li>IP, routing protocols</li>
+</ul>
+</li>
+<li>link: data transfer between neighboring  network elements<ul>
+<li>Ethernet, 802.11 (WiFi), PPP</li>
+</ul>
+</li>
+<li>physical: bits “on the wire”</li>
+</ul>
+<p><img data-src="/img/CN/delHpJN.png" alt="iso layer model"><br><strong>ISO&#x2F;OSI layer model (7 layers)</strong><br>additional 2 layers  </p>
+<ul>
+<li>presentation: allow applications to interpret meaning of data<ul>
+<li>encryption, compression, machine-specific conventions</li>
+</ul>
+</li>
+<li>session: synchronization, checkpointing, recovery of data exchange</li>
+</ul>
+<p>Internet stack “missing” these layers!<br>these services, <strong>if needed</strong>, must be implemented in application</p>
+<h3 id="Encapsulation"><a href="#Encapsulation" class="headerlink" title="Encapsulation"></a>Encapsulation</h3><p>包裝好(加上header)，運送，再拆封包<br><img data-src="/img/CN/" alt="Encapsulation"></p>
+<h3 id="Security"><a href="#Security" class="headerlink" title="Security"></a>Security</h3><p>網路本無考慮安全性<br>本來的想法： 「互相相信的使用者組成的透明網路」</p>
+<p>Bad guys: put malware into hosts via Internet</p>
+<ul>
+<li>virus: self-replicating infection by receiving&#x2F;executing object (e.g., e-mail attachment)<ul>
+<li>會感染其他檔案，其他人</li>
+<li>須人為開啟</li>
+</ul>
+</li>
+<li>worm: self-replicating infection by passively receiving object that gets itself executed<ul>
+<li>找作業系統或是特定程式的漏洞來鑽</li>
+<li>可自行傳播(不須做特定動作)</li>
+</ul>
+</li>
+<li>spyware: can record keystrokes, web sites visited, upload info to collection site</li>
+</ul>
+<p>被感染的電腦可當作botnet(彊屍電腦)，用來寄垃圾郵件，或進行DDoS攻擊</p>
+<p>Denial of Service (DoS): 控制多台電腦，持續提出要求，使伺服器癱瘓<br>attackers make resources (server, bandwidth) unavailable to legitimate traffic by overwhelming resource with bogus traffic</p>
+<p>packet “sniffing ”(追蹤)<br>從 broadcast media (shared ethernet, wireless) 拿取目的地非自己的封包，以獲得資訊。(正常情況：丟棄)</p>
+<p>IP spoofing(謊報)<br>send packet with false source address(假造他人名義送出封包)</p>
+<h3 id="History"><a href="#History" class="headerlink" title="History"></a>History</h3><p>1961-1972: Early packet-switching principles<br>1972:<br>NCP (Network Control Protocol) first host-host protocol<br>first e-mail program<br>ARPAnet has 15 nodes</p>
+<p>1974:Cerf and Kahn - architecture for interconnecting networks<br>Cerf and Kahn’s internetworking principles define today’s Internet architecture:</p>
+<ul>
+<li>minimalism, autonomy - no internal changes required to interconnect networks</li>
+<li>best effort service model</li>
+<li>stateless routers</li>
+<li>decentralized control</li>
+</ul>
+<p>1983:deployment of TCP&#x2F;IP<br>1983:DNS defined for name-to-IP-address translation<br>1985:ftp protocol defined</p>
+<p>early 1990s:Web<br>hypertext [Bush 1945, Nelson 1960’s]<br>HTML, HTTP: Berners-Lee<br>1994: Mosaic, later Netscape</p>
+<p>late 1990’s: commercializationof the Web<br>instant messaging, P2P file sharing<br>network security to forefront</p>
+<p>2005-present<br>Service providers (Google, Microsoft) create their own networks<br>Bypass Internet, providing “instantaneous”access to search, emai, etc.</p>
+<h2 id="Chap02-Application-Layer"><a href="#Chap02-Application-Layer" class="headerlink" title="Chap02 Application Layer"></a>Chap02 Application Layer</h2><p><img data-src="/img/CN/proto.png" alt="protocol"></p>
+<p>使程式更加好寫<br>不需要從網路核心開始實作，直接call function</p>
+<p>優勢：<br>可在不同裝置(end-system)上運行<br>網路通訊  </p>
+<p>註：網路核心程式不會主動執行</p>
+<h3 id="structure"><a href="#structure" class="headerlink" title="structure"></a>structure</h3><p>client-server structure  </p>
+<ul>
+<li><p>server:</p>
+<ul>
+<li>always-on host</li>
+<li>permanent IP address</li>
+<li>data centers for scaling</li>
+</ul>
+</li>
+<li><p>clients:</p>
+<ul>
+<li>communicate with server</li>
+<li>may have dynamic IP addresses</li>
+<li>do not communicate directly with each other(client間互相不知道)<br>peer-to-peer (P2P) structure</li>
+</ul>
+</li>
+<li><p>no always-on server</p>
+<ul>
+<li><strong>arbitrary end systems directly communicate</strong></li>
+</ul>
+</li>
+<li><p>peers both request services and provide services</p>
+</li>
+<li><p>self scalability(可擴展) – new peers bring new service capacity, as well as new service demands(愈多人加入，service功能相對應愈強)</p>
+</li>
+<li><p><strong>complex management</strong>(not easy to implement)</p>
+</li>
+</ul>
+<h3 id="Socket"><a href="#Socket" class="headerlink" title="Socket"></a>Socket</h3><ul>
+<li>process sends&#x2F;receives messages to&#x2F;from its socket, by transport infrastructure</li>
+<li><img data-src="/img/CN/socket.png"></li>
+</ul>
+<p>Addressing processes<br>host device has unique 32-bit IP address<br>identifier (IP address and port numbers)<br>example port numbers:<br>HTTP server: 80<br>mail server: 25</p>
+<h3 id="Application-layer-protocol"><a href="#Application-layer-protocol" class="headerlink" title="Application layer protocol"></a>Application layer protocol</h3><p>define: when and how processes transfer messages</p>
+<ul>
+<li>types of messages exchanged: e.g., request, response</li>
+<li>message syntax: fields(欄位) in messages</li>
+<li>message semantics: meaning of information in fields</li>
+</ul>
+<p>Ex. HTTP, SMTP, Skype</p>
+<p>transport service  </p>
+<ul>
+<li>data integrity(file transfer)</li>
+<li>timing</li>
+<li>throughput<ul>
+<li>multimedia vs elastic(有彈性的) apps</li>
+</ul>
+</li>
+<li>security</li>
+</ul>
+<h3 id="transport-protocols-services"><a href="#transport-protocols-services" class="headerlink" title="transport protocols services"></a>transport protocols services</h3><p>TCP(transport layer)</p>
+<ul>
+<li>reliable transport</li>
+<li>flow control: sender won’t overwhelm receiver</li>
+<li>congestion control(擁塞控制, 網路處理過多封包):throttle sender when network overloaded</li>
+<li>connection-oriented(須先建立連接):setup required between client and server processes<br>does not provide:<br>timing, throughput, security ,</li>
+</ul>
+<p>UDP(transport layer)</p>
+<ul>
+<li>does not provide all of the service,  </li>
+<li>far faster than TCP</li>
+<li>used in multimedia, internet telephone</li>
+</ul>
+<p>SSL(app layer) </p>
+<ul>
+<li>encrypted TCP connection</li>
+<li>data integrity</li>
+<li>end-point authentication</li>
+<li>SSL socket API</li>
+</ul>
+<h3 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a>HTTP</h3><ul>
+<li>hypertext transfer protocol</li>
+<li>客戶端終端（用戶）和伺服器端（網站）請求和應答的標準,使用Web瀏覽器、網路爬蟲或者其它的工具  </li>
+<li>each object is addressable by a URL, include host name and path name  </li>
+<li>use TCP to send HTTP messages</li>
+<li>stateless: server maintain no information about client</li>
+<li>RTT(Round-trip delay time): time for a small packet to travel from client to server and back(來回時間)</li>
+<li>non-persistent HTTP: one TCP connection send at most one object, connection close right after server responsed<ul>
+<li>one RTT build TCP connection + one RTT for HTTP request + file transmission time</li>
+</ul>
+</li>
+<li>persistent HTTP: send multiple object at one TCP connection<ul>
+<li>one RTT build TCP connection + one RTT for request x N files + file transmission time</li>
+</ul>
+</li>
+</ul>
+<p>HTTP Request message format<br><img data-src="/img/CN/2-1.png" alt="http message"></p>
+<ul>
+<li>request line(method, URL, version..)<ul>
+<li>method field</li>
+<li><code>POST</code>: modify file in specified URL</li>
+<li><code>URL</code>: use <code>GET</code></li>
+<li><code>GET</code>: get file content in specified URL</li>
+<li><code>PUT</code>: replace file in specified URL</li>
+<li><code>HEAD</code>: get information about a resource</li>
+</ul>
+</li>
+<li>header lines(fields) </li>
+<li>body(context)</li>
+</ul>
+<p>HTTP Response message format<br><img data-src="/img/CN/2-2.png" alt="reponse"></p>
+<ul>
+<li>status line<ul>
+<li>protocol </li>
+<li>status code</li>
+<li>status phrase</li>
+</ul>
+</li>
+</ul>
+<p>status code</p>
+<ul>
+<li>200 OK</li>
+<li>301 Moved Permanently<ul>
+<li>requested object moved, new location will send later in this msg (Location:)(重定向)</li>
+</ul>
+</li>
+<li>400 Bad Request<ul>
+<li>request msg not understood by server</li>
+</ul>
+</li>
+<li>404 Not Found<ul>
+<li>requested document not found</li>
+</ul>
+</li>
+<li>505 HTTP Version Not Supported</li>
+</ul>
+<p>try connect HTTP</p>
+<pre><code>telnet [host name] 80
+GET [path name] HTTP/1.1
+</code></pre>
+<h4 id="User-server-state-cookies"><a href="#User-server-state-cookies" class="headerlink" title="User-server state: cookies"></a>User-server state: cookies</h4><p>help server keep states  </p>
+<p>Ex.<br>when initial HTTP requests arrives at site, site creates:<br>unique ID<br>entry in backend database for ID<br>cookie file kept on user’s host</p>
+<p>Help for interaction<br><span class="exturl" data-url="aHR0cDovL3poLndpa2lwZWRpYS5vcmcvd2lraS9Db29raWUjLkU3Ljk0LkE4LkU5LjgwLjk0">cookie<i class="fa fa-external-link-alt"></i></span></p>
+<h4 id="cache-for-proxy-server"><a href="#cache-for-proxy-server" class="headerlink" title="cache for proxy server"></a>cache for proxy server</h4><p>for any request, check it is in cache or not,<br>if it is, return cache</p>
+<p>typically cache is installed by ISP (university, company, residential ISP)<br>reduce response time and traffic</p>
+<p>Conditional GET: if client has up-to-update object, no need to send again<br>client send request: if-modified-since:<date></p>
+<h3 id="FTP"><a href="#FTP" class="headerlink" title="FTP"></a>FTP</h3><p>file transfer protocol<br>using TCP<br>ftp: RFC 959<br>(1)control connection：(port 21)<br>(2)data connection：(port 20)<br>Out-of-band (頻帶外)Control  </p>
+<p>server receives file transfer command, server opens 2nd TCP data connection (for file) to client<br>after transferring one file, server closes data connection</p>
+<p>maintain state: current directory and earlier authentication</p>
+<p>FTP 命令(Command)與回應(Reply)</p>
+<p>(1).命令(command)：從Client端到Server端</p>
+<p>常見命令如下:</p>
+<p> USER username :把使用者代號傳給伺服器<br> PASS password :把使用者密碼傳給伺服器<br> LIST :要求server傳回目前遠端目錄下的檔案列表 此檔案列表會透過資料連線(新建立且non-persistent) 而非control connection連線來傳送<br> RETR filename : 用來擷取遠端主機目前目錄下的某個檔案 此命令會使遠端主機開一筆data connection傳送請求的檔案<br> STOR filename : 把某個檔案存到遠端主機目前目錄下<br>(2).回應(Reply)：從Server端到Client端</p>
+<p>常見回應如下:</p>
+<p>331 Username OK,password require<br>125 Data connection already open;transfer starting<br>425 Can’t open data connection<br>452 Error writing file<br>(3)<br>不管是Command或Reply都會送出7-bit ASCII值的control connection</p>
+<h3 id="EMAIL"><a href="#EMAIL" class="headerlink" title="EMAIL"></a>EMAIL</h3><ol>
+<li>SMTP(Simple Mail Transfer Protocol)</li>
+</ol>
+<p>mail agent, mail box(in), message queue(out)</p>
+<p>The client SMTP will establish a TCP connection to port 25 at the server SMTP.<br>persistent connections</p>
+<p>three phases of transfer</p>
+<ul>
+<li>handshaking (greeting)</li>
+<li>transfer of messages</li>
+<li>closure</li>
+</ul>
+<p>commands:ASCII text<br>response:status code and phrase<br>messages must be in 7-bit ASCI</p>
+<p>SMTP是push protocol,即TCP連線是由想要送出檔案的主機所建立<br>HTTP是pull protocol,即TCP連線是由想要接收檔案的主機所建立</p>
+<pre><code>telnet URL 25
+S: 220 hamburger.edu
+C: HELO crepes.fr
+S: 250 Hello crepes.fr, pleased to meet you
+C: MAIL FROM: &lt;alice@crepes.fr&gt;
+S: 250 alice@crepes.fr... Sender ok
+C: RCPT TO: &lt;bob@hamburger.edu&gt;
+S: 250 bob@hamburger.edu ... Recipient ok
+C: DATA
+S: 354 Enter mail, end with &quot;.&quot; on a line by itself
+C: Do you like ketchup?
+C: How about pickles?
+C: .
+S: 250 Message accepted for delivery
+C: QUIT
+S: 221 hamburger.edu closing connection
+</code></pre>
+<p>RFC 822: standard for text message format</p>
+<p><img data-src="/img/CN/2-3.png" alt="header body"><br>header lines, e.g.,<br>To:<br>From:<br>Subject:<br>Body: the “message”<br>ASCII characters only</p>
+<p>mail access protocol: get mail from user</p>
+<p>POP:Post Office Protocol [RFC 1939]<br>authorization + download<br>authorization phase + transaction phase<br>download and keep</p>
+<p>IMAP:Internet Mail Access Protocol [RFC 1730]:<br>  比POP更進一步,除了download郵件外還可以在server上管理目錄,可以做更多的動作,<br>  像郵件目錄的搬移等都得靠IMAP<br>keep all message at server<br>keep state</p>
+<p>HTTP:gmail, Hotmail, Yahoo! Mail, etc.</p>
+<h3 id="DNS"><a href="#DNS" class="headerlink" title="DNS"></a>DNS</h3><p>DNS(domain name system)，透過 DNS，我們不需要知道主機的 IP ，只要知道該主機的名稱就能連線</p>
+<p>distributed hierarchical database 樹狀查詢<br>DNS 將主機名稱的管理分配在不同層級的 DNS 伺服器當中，有 IP 異動時也容易修改，而不用透過上層 ISP 的維護。</p>
+<p>IPv4 已經接近發送完畢的階段，因此已逐漸拓展到 128bits 的 IPv6 。可以透過主機名稱就解析到 IP 的 DNS 服務，此外，目前全世界的 WWW 主機名稱也都是透過 DNS 系統在處理 IP 的對應，所以，當 DNS 掛點時，我們將無法透過主機名稱來連線，那就幾乎相當於沒有 Internet 了。</p>
+<ol>
+<li>DNS (domain name system)服務:nslookup</li>
+</ol>
+<p><img data-src="/img/CN/2-4.png" alt="tree like"><br>服務:把主機名稱轉成ip位置<br>Host aliasing(主機別名):一台主機可有多個別名(當然也有正規主機名稱canonical hostname 通常不好記)<br>dns可用別名查詢得到正規主機名稱及ip<br>Mail server aliasing<br>Load distribution:一個網站可能有多台伺服器 每個伺服器的ip和主機名稱不同 有要求傳送過來時 dns會一直改變回傳的伺服器的主機名稱及ip 這樣就不會有許多要求都由同一伺服器回應 可達到分配效果</p>
+<ol start="2">
+<li>DNS伺服器架構<br>root DNS servers: 13 (labeled A through M)<br>Top-level domain (TLD) servers: 負責Top-level domain 如com, org, net, edu 也負責國家級的Top-level domain如uk, fr, ca, jp<br>Authoritative DNS servers: organization’s own DNS server</li>
+</ol>
+<p>Local DNSname server<br>not strictly belong to hierarchy<br>each ISP (residential ISP, company, university) has one<br>also called “default name server”<br>when host makes DNS query, query is sent to its local DNS server<br>has local cache of recent name-to-address translation pairs (but may be out of date!)<br>acts as proxy, forwards query into hierarchy</p>
+<p>iterated query:<br>“I don’t know this name, but ask this server”<br><img data-src="/img/CN/2-5.png" alt="asking"><br>recursive query<br>don’t temperaly return to local DNS server<br><img data-src="/img/CN/2-6.png"></p>
+<p>cache entries timeout (disappear) after some time (TTL)<br>TLD servers typically cached in local name servers<br>   thus root name servers not often visited<br>cached entries may be out-of-date</p>
+<p>record<br>resource records (RR) 格式: (name, value, type, TTL)</p>
+<p>TTL(time to live)<br>欄位中name和value由type決定<br>Type&#x3D;A :<br>name 是正規主機名稱 , value 是正規主機名稱為name的IP address<br>ex:(relay1.bar.foo.com , 145.37.9.126 , A)</p>
+<p>Type&#x3D;CNAME :<br>name 是主機別名 , value 是別名為name的正規主機名稱<br>ex:(foo.com , relay1.bar.foo.com ,CNAME)</p>
+<p>Type&#x3D;NS :<br>name 是 domain(網域名稱), value 是 domain 為name的Authoritative(官方) DNS server 名稱,此Authoritative(官方) DNS server會去取得該網域內的主機ip位置<br>ex:(foo.com , dns.foo.com , NS)</p>
+<p>Type&#x3D;MX : name 是主機別名 ,value 是主機別名為 name 的 mail server正規名稱<br>ex:(foo.com , mail.bar.foo.com , MX) </p>
+<p>DNS registrar(網域販賣商)</p>
+<p>queryand replymessages, both with same message format</p>
+<ol start="5">
+<li>DNS Vulnerabilities(弱點)</li>
+</ol>
+<p>DDoS:發出大量的DNS查詢(ex ICMP ping) 使封包多到塞滿link 讓大多數使用者發出的合法DNS查詢因ink塞滿得不到答案 服務無法被使用<br>Not useful in root server(cache in TLD), but useful at TLD</p>
+<p>DoS(Denial-of-Service) 為一種網路攻擊 讓網路 主機等 無法被合法使用者使用</p>
+<p>man-in-the-middle attack<br>DNS poisoning – send incorrect file to DNS server, which cache</p>
+<h3 id="P2P"><a href="#P2P" class="headerlink" title="P2P"></a>P2P</h3><p>p2p &gt; client server when there are a lot of user<br><img data-src="/img/CN/2-7.png" alt="p2pgraph"></p>
+<p>(1) Client-server archtecture</p>
+<p>設一個server要傳給n個client 檔案大小為f 上傳速度為us</p>
+<p>上傳給n個點每個點一份f 故上傳時間為 nf&#x2F;us</p>
+<p>dmin 為n台電腦中下載速度最小的  故下載時間最多為f&#x2F;dmin</p>
+<p>distribution time &gt;&#x3D; MAX{nf&#x2F;us , f&#x2F;dmin} 只要N夠大 則時間會隨著N的數量線性增加</p>
+<p>(2) P2P architecture</p>
+<p>設一個server要傳給n個client 檔案大小為f 上傳速度為us<br>只有伺服器有檔案 伺服器必須把檔案放入LINK中一次 最低上傳時間為 f&#x2F;us</p>
+<p>同Client-server archtecture , dmin 為n台電腦中下載速度最小的  故下載時間最多為f&#x2F;dmin</p>
+<p>整個系統上傳總容量為us(第一個點)+u1+u2+….+un  上傳給n個對等點  共上傳nf   時間為nf&#x2F;(us(第一個點)+u1+u2+….+un )</p>
+<p>distribution time &gt;&#x3D; MAX{f&#x2F;us , f&#x2F;dmin , nf&#x2F;(us+u1+u2+….+un)} </p>
+<h4 id="Structure"><a href="#Structure" class="headerlink" title="Structure"></a>Structure</h4><p>file divided into 256Kb chunks<br><strong>peers</strong> in torrent send&#x2F;receive file chunks</p>
+<p>tracker:tracks peers<br>participating in torrent</p>
+<p>torrent:group of peers exchanging chunks of a file</p>
+<p>peer joining torrent registers with tracker to get list of peers, connects to subset of peers (“neighbors”)</p>
+<p>churn(流失):peers may come and go</p>
+<p>requests missing chunks from peers, rarest first<br>sending chunks: tit-for-tat</p>
+<p>Alice sends top four peers which send to her.<br>other peers are choked by Alice every 30 seconds(receive only one chunk from her)<br>re-evaluate top 4 every10 secs</p>
+<p>想要獲得更快的下載速度，就應該先將檔案分享給別人。Optimistic Unchoking是說，每個人每30秒就挑網路中任意一個人，將檔案上傳給他。這麼作的用意是發掘網路上未知的潛力檔案提供者：假如A與K之前並未有檔案的往來，但其實這兩個人住得很近，網路互傳的速度比其他人快。今天A透過Optimistic Unchoking隨機給K上傳了一些檔案片段，讓K驚覺A的上傳速度很快，進而允許A從K處下載檔案片段。如果A與K之間的連線速度很慢，那麼過30秒之後，A會停止提供檔案給K，而去別處尋找下一個候選人</p>
+<p><span class="exturl" data-url="aHR0cDovL21tZGF5cy5jb20vMjAwNy8wNC8wNi9idDEv">http://mmdays.com/2007/04/06/bt1/<i class="fa fa-external-link-alt"></i></span></p>
+<p>Distributed Hash Table<br>(key, value)<br>key: movie title value: IP address</p>
+<p>put (key,value) pair in the peer that is closest(successor) to the key</p>
+<p>Circular DHT with shortcuts<br>possible to design shortcuts so O(log N) neighbors, O(log N) messages in query<br>建捷徑於與目前key差一個bit的數- &gt; &#x3D;&gt; 一次至少可以縮短一半的距離<br><img data-src="/img/CN/2-8.png" alt="circular DHT"></p>
+<p>each peer knows address of its two successors<br>each peer periodically pings its two successors to check aliveness<br>if immediate successor leaves, choose next successor as new immediate successor</p>
+<h2 id="Chap03-Transport-Layer"><a href="#Chap03-Transport-Layer" class="headerlink" title="Chap03 Transport Layer"></a>Chap03 Transport Layer</h2><p>transport layer: logical communication between processes<br>&#x3D;&gt; breaks app messages into segments, passes to network layer  </p>
+<h3 id="UDP"><a href="#UDP" class="headerlink" title="UDP"></a>UDP</h3><ul>
+<li>streaming multimedia apps (loss tolerant, rate sensitive)</li>
+<li>DNS</li>
+<li>SNMP</li>
+</ul>
+<p>small header size<br>no congestion control: UDP can blast away as fast as desired</p>
+<p>reliable transfer over UDP<br>add reliability at <strong>application layer</strong> to get application-specific error recovery</p>
+<p>no connection establishment (which can add delay)</p>
+<ul>
+<li>simple: no connection state at sender, receiver</li>
+<li>small header size</li>
+<li>no congestion control: UDP can blast away as fast as desired</li>
+</ul>
+<p>UDP segment format</p>
+<p>source port , dest port<br>length checksum<br>data</p>
+<p>use checksum to detect error<br><img data-src="/img/CN/3-1.png"></p>
+<hr>
+<h3 id="Reliable-data-transfer"><a href="#Reliable-data-transfer" class="headerlink" title="Reliable data transfer"></a>Reliable data transfer</h3><p>top-10 important network topic<br>&#x3D;&gt; <strong>unreliable channel</strong> with <strong>reliable data transfer(RDT) protocol</strong></p>
+<p><img data-src="/" alt="using unreliable data transfer channel"></p>
+<p>RDT 2.0: bit error -&gt; use ctrl msgs<br>checksum to detect bit errors<br>acknowledgements (ACKs), negative acknowledgements (NAKs)</p>
+<p>RDT 2.1: ctrl msg error -&gt; use seq number<br>seq number prevent duplicate data, resend when corrupt<br>two seq (0,1) is enough</p>
+<p>RDT 2.2: no NAK, resend when ACKs with the same seq num</p>
+<p>RDT 3.0: lose packet -&gt; add wait time, resend when timeout<br><img data-src="/" alt="3.0 sender"></p>
+<p>rdt3.0雖然確保了資料的可靠性，可是它採用Stop-and-Wait機制，效能很低<br>utilization of sender &#x3D; 0.008(transmit time) &#x2F; 30.008(transmit time+RTT) &#x3D; 0.00027</p>
+<h3 id="Pipelined-Protocol"><a href="#Pipelined-Protocol" class="headerlink" title="Pipelined Protocol"></a>Pipelined Protocol</h3><p>可以讓傳送端同時傳送多個封包不需等待確認。必須增加封包的暫存空間與序列號碼。<br>暫存的區域中存在著窗格大小(Window Size)，存放著各種封包(已確認、已送出但未收到ACK、未送出的封包等等)</p>
+<h4 id="Go-Back-N-GBN"><a href="#Go-Back-N-GBN" class="headerlink" title="Go-Back-N(GBN)"></a>Go-Back-N(GBN)</h4><p><img data-src="/" alt="type"><br><img data-src="/" alt="gbn"><br><img data-src="/" alt="gbn sender"><br>SENDER:  </p>
+<ol>
+<li>nothing when receive corrupt response</li>
+<li>move window when receive ACK response</li>
+<li>send all packets in window when oldest packet in window timeout</li>
+</ol>
+<p><img data-src="/" alt="gbn receiver"><br>RECEIVER: </p>
+<ol>
+<li>永遠送出ACK，為目前收到的最高序號</li>
+<li>只收比目前收到的最高序號多一號的packet</li>
+</ol>
+<h4 id="Selective-Repeat-SR"><a href="#Selective-Repeat-SR" class="headerlink" title="Selective Repeat(SR)"></a>Selective Repeat(SR)</h4><p><img data-src="/" alt="SR"><br>每個packet各自傳送，各自有timer  </p>
+<p>max seq# &#x3D; window size * 2<br>假想有限序號0,1,2,3 窗格大小為3, 接收端收到0,1,2, 所以接收端的觀點應為：0,1,2,[3,0,1],2 當接收端回傳給傳送端的ACK遺失時, 將導致傳送端逾時而重送0,1,2 然而接收端想要的是第二批的0,1 而傳送端所傳送的封包卻是第一批的0,1。</p>
+<h3 id="TCP"><a href="#TCP" class="headerlink" title="TCP"></a>TCP</h3><ul>
+<li>reliable, in-order byte steam<ul>
+<li>no “message boundaries”</li>
+</ul>
+</li>
+<li>pipelined</li>
+<li>congestion and flow control<ul>
+<li>決定 window size</li>
+</ul>
+</li>
+<li>full duplex data(雙方皆可傳)</li>
+<li>MSS(maximum segment size): 傳送的segment最大長度</li>
+<li>connection-oriented<ul>
+<li>handshaking (exchange of control msgs)</li>
+</ul>
+</li>
+</ul>
+<p><img data-src="/" alt="segment"><br>sequence numbers(Seq): 送過去的packet的起始編號(0, 1)<br>acknowledge number(ACK): 預期對方會送來的編號<br><img data-src="/" alt="telnet "><br>對A來講前一個收到B傳回來的資料Seq為78,下一個期待收到的為79,所以傳回ACK&#x3D;79,而data為’C’這和ACK,Seq都沒關聯<br>A所傳的Seq是42,對B來講下一個應該要收到43,於是傳回ACK&#x3D;43,而A在ACK&#x3D;79中告訴B下一個應該送79過去,於是B傳Seq&#x3D;79</p>
+<ul>
+<li>TCP傳送端  <ul>
+<li>逾時重送封包  </li>
+<li><img data-src="/" alt="cumulative ACK">  </li>
+<li><img data-src="/" alt="TCP sender"></li>
+</ul>
+</li>
+<li>TCP接收端<ul>
+<li>預期封包抵達事件<ul>
+<li>回傳期望下一次收到的封包之序號ACK</li>
+</ul>
+</li>
+<li>非預期封包抵達事件<ul>
+<li>暫存封包, 送出期望收到的封包之序號ACK</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="Estimate-best-timeout-value"><a href="#Estimate-best-timeout-value" class="headerlink" title="Estimate best timeout value"></a>Estimate best timeout value</h4><p>SampleRTT: record the time of last transmission<br>exponential weighted average let value smoother<br>EstimatedRTT &#x3D; (1- a) x EstimatedRTT + a x SampleRTT (typical a &#x3D; 0.125)  </p>
+<p><img data-src="/" alt="devrtt"><br>將變異數納入考慮: TimeoutInterval &#x3D; EstimatedRTT + 4*DevRTT</p>
+<p>TCP fast retransmit: 收到三次相同ACK，傳送端就會立刻傳送接收端所預期的封包  </p>
+<p>Flow Control (流量控制): 讓reiceiver buffer不致overflow<br>記錄buffer剩餘的空間有多少(rcvWindow)<br>當rcvWindow&#x3D;0時，傳送端會持續傳送一個1byte的區段給接收端以確認緩衝區可否繼續接收資料</p>
+<h4 id="TCP-Connection-Management-連線管理"><a href="#TCP-Connection-Management-連線管理" class="headerlink" title="TCP Connection Management (連線管理)"></a>TCP Connection Management (連線管理)</h4><p><span class="exturl" data-url="aHR0cDovL3d3dy1zb3AuaW5yaWEuZnIvbWVtYmVycy9WaW5jZW56by5NYW5jdXNvL1JldGVJbnRlcm5ldC8wNl90Y3BfcGFydDIucGRm">http://www-sop.inria.fr/members/Vincenzo.Mancuso/ReteInternet/06_tcp_part2.pdf<i class="fa fa-external-link-alt"></i></span></p>
+<p>防止delay duplicate problem</p>
+<p>3-way handshake:(open connection)<br>一方傳SYN, 另一方回傳ACK&#x2F;SYN, 一方回傳ACK。</p>
+<p>4-way handshake:(close connection)<br>一方傳FIN, 另一方回傳ACK。另一方傳FIN, 一方回傳ACK。(可以handle同時想結束的情形)</p>
+<h4 id="congestion-control-擁塞控制"><a href="#congestion-control-擁塞控制" class="headerlink" title="congestion control(擁塞控制)"></a>congestion control(擁塞控制)</h4><p>保持在網路上的封包數量，不讓整體效能下降(buffer overflow, queueing in router)  </p>
+<ul>
+<li>End-to-End (implicit)<ul>
+<li>依據往返延遲時間來降低視窗大小  </li>
+<li>TCP採用此種方式</li>
+</ul>
+</li>
+<li>Network-assisted (explicit) <ul>
+<li>Router會依據網路壅塞情況，提供傳送端明確的網路壅塞狀態且回報  </li>
+<li>回饋傳送給傳送端 或 在封包中的某個欄位記錄</li>
+</ul>
+</li>
+</ul>
+<p>cwnd(send window size)  </p>
+<ol>
+<li>AIMD (Additive-Increase, Multiplicative-Decrease): cwnd一次增加一定(+1)值，loss時成比例減少(&#x2F;2)</li>
+<li>Slow Start: cwnd呈次方成長(*2)</li>
+</ol>
+<h4 id="TCP-Sender-Congestion-Control"><a href="#TCP-Sender-Congestion-Control" class="headerlink" title="TCP Sender Congestion Control"></a>TCP Sender Congestion Control</h4><p>grows by slowstart to <strong>threshold</strong>, then grows linearly  </p>
+<ul>
+<li>loss by timeout <ul>
+<li>cwnd &#x3D; 1</li>
+</ul>
+</li>
+<li>loss by 3 duplicate ACKs: <ul>
+<li>TCP Tahoe - cwnd &#x3D; 1</li>
+<li>TCP RENO - cwnd &#x2F;&#x3D; 2, threshold &#x3D; cwnd</li>
+</ul>
+</li>
+</ul>
+<p>Average throughout &#x3D; (1 + 0.5)&#x2F;2 &#x3D; 0.75W&#x2F;RTT</p>
+<h4 id="TCP-Fairness"><a href="#TCP-Fairness" class="headerlink" title="TCP Fairness"></a>TCP Fairness</h4><p>有相同需求的兩端會在bandwidth share附近震盪兩邊互相影響下是公平的</p>
+<p>但是UDP在的話就不太公平了,如多媒體。現在像youtube會在UDP上加上一些TCP friendly</p>
+<p>開多個TCP connection: 速度加快…</p>
+<p><strong>Summary</strong>  </p>
+<ul>
+<li>TCP creates rdt service on top of IP’s unreliable service<ul>
+<li>pipelined segments</li>
+<li>cumulative acks</li>
+<li>single retransmission timer</li>
+</ul>
+</li>
+<li>retransmissions triggered by<ul>
+<li>timeout events</li>
+<li>duplicate acks</li>
+</ul>
+</li>
+</ul>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p>CFChou講義</p>
+
+    </div>
+
+    
+    
+    
+      
+  <div class="popular-posts-header">相關文章</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/computer-network2/" rel="bookmark">計算機網路(下)</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/Emacs-introduction/" rel="bookmark">Emacs觀念</a></div>
+    </li>
+  </ul>
+
+        
+
+  <div class="followme">
+    <p>歡迎關注我的其它發布管道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/%E8%A8%88%E7%AE%97%E6%A9%9F%E7%B6%B2%E8%B7%AF/" rel="tag"><i class="fa fa-tag"></i> 計算機網路</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/computer-architecture1/" rel="prev" title="計算機結構(上)">
+      <i class="fa fa-chevron-left"></i> 計算機結構(上)
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/computer-gaming/" rel="next" title="電腦對局理論">
+      電腦對局理論 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Chap01-Introduction"><span class="nav-number">1.</span> <span class="nav-text">Chap01 Introduction</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Terminologies"><span class="nav-number">1.1.</span> <span class="nav-text">Terminologies</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Network-Structure"><span class="nav-number">1.2.</span> <span class="nav-text">Network Structure</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Access-Network"><span class="nav-number">1.3.</span> <span class="nav-text">Access Network</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#digital-subscriber-line-DSL"><span class="nav-number">1.3.1.</span> <span class="nav-text">digital subscriber line (DSL)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#cable-network"><span class="nav-number">1.3.2.</span> <span class="nav-text">cable network</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#home-network"><span class="nav-number">1.3.3.</span> <span class="nav-text">home network</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Enterprise-access-networks-Ethernet"><span class="nav-number">1.3.4.</span> <span class="nav-text">Enterprise access networks (Ethernet)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Wireless-access-networks"><span class="nav-number">1.3.5.</span> <span class="nav-text">Wireless access networks</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Physical-media"><span class="nav-number">1.4.</span> <span class="nav-text">Physical media</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#The-network-core-interconnected-routers"><span class="nav-number">1.5.</span> <span class="nav-text">The network core: interconnected routers</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Two-key-network-core-functions"><span class="nav-number">1.5.1.</span> <span class="nav-text">Two key network-core functions</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#circuit-switching"><span class="nav-number">1.5.2.</span> <span class="nav-text">circuit switching</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#packet-switching"><span class="nav-number">1.5.3.</span> <span class="nav-text">packet switching</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#why-packet-switching-better-than-circuit-switching"><span class="nav-number">1.5.4.</span> <span class="nav-text">why packet switching better than circuit switching</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Internet-structure-network-of-networks"><span class="nav-number">1.6.</span> <span class="nav-text">Internet structure: network of networks</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#packet-delay"><span class="nav-number">1.7.</span> <span class="nav-text">packet delay</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Four-sources-of-packet-delay"><span class="nav-number">1.7.1.</span> <span class="nav-text">Four sources of packet delay</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Protocol-%E2%80%9Clayers%E2%80%9D"><span class="nav-number">1.8.</span> <span class="nav-text">Protocol “layers”</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Encapsulation"><span class="nav-number">1.9.</span> <span class="nav-text">Encapsulation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Security"><span class="nav-number">1.10.</span> <span class="nav-text">Security</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#History"><span class="nav-number">1.11.</span> <span class="nav-text">History</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chap02-Application-Layer"><span class="nav-number">2.</span> <span class="nav-text">Chap02 Application Layer</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#structure"><span class="nav-number">2.1.</span> <span class="nav-text">structure</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Socket"><span class="nav-number">2.2.</span> <span class="nav-text">Socket</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Application-layer-protocol"><span class="nav-number">2.3.</span> <span class="nav-text">Application layer protocol</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#transport-protocols-services"><span class="nav-number">2.4.</span> <span class="nav-text">transport protocols services</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP"><span class="nav-number">2.5.</span> <span class="nav-text">HTTP</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#User-server-state-cookies"><span class="nav-number">2.5.1.</span> <span class="nav-text">User-server state: cookies</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#cache-for-proxy-server"><span class="nav-number">2.5.2.</span> <span class="nav-text">cache for proxy server</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#FTP"><span class="nav-number">2.6.</span> <span class="nav-text">FTP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#EMAIL"><span class="nav-number">2.7.</span> <span class="nav-text">EMAIL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DNS"><span class="nav-number">2.8.</span> <span class="nav-text">DNS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#P2P"><span class="nav-number">2.9.</span> <span class="nav-text">P2P</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Structure"><span class="nav-number">2.9.1.</span> <span class="nav-text">Structure</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chap03-Transport-Layer"><span class="nav-number">3.</span> <span class="nav-text">Chap03 Transport Layer</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#UDP"><span class="nav-number">3.1.</span> <span class="nav-text">UDP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Reliable-data-transfer"><span class="nav-number">3.2.</span> <span class="nav-text">Reliable data transfer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Pipelined-Protocol"><span class="nav-number">3.3.</span> <span class="nav-text">Pipelined Protocol</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Go-Back-N-GBN"><span class="nav-number">3.3.1.</span> <span class="nav-text">Go-Back-N(GBN)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Selective-Repeat-SR"><span class="nav-number">3.3.2.</span> <span class="nav-text">Selective Repeat(SR)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TCP"><span class="nav-number">3.4.</span> <span class="nav-text">TCP</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Estimate-best-timeout-value"><span class="nav-number">3.4.1.</span> <span class="nav-text">Estimate best timeout value</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#TCP-Connection-Management-%E9%80%A3%E7%B7%9A%E7%AE%A1%E7%90%86"><span class="nav-number">3.4.2.</span> <span class="nav-text">TCP Connection Management (連線管理)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#congestion-control-%E6%93%81%E5%A1%9E%E6%8E%A7%E5%88%B6"><span class="nav-number">3.4.3.</span> <span class="nav-text">congestion control(擁塞控制)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#TCP-Sender-Congestion-Control"><span class="nav-number">3.4.4.</span> <span class="nav-text">TCP Sender Congestion Control</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#TCP-Fairness"><span class="nav-number">3.4.5.</span> <span class="nav-text">TCP Fairness</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">4.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="HCL"
+      src="/img/qwerty.png">
+  <p class="site-author-name" itemprop="name">HCL</p>
+  <div class="site-description" itemprop="description">Programming | Computer Science | Thought</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">56</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">134</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http:&#x2F;&#x2F;github.com&#x2F;gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="bWFpbHRvOmdvb2hjbDc3N0BnbWFpbC5jb20=" title="E-Mail → mailto:goohcl777@gmail.com"><i class="fa fa-envelope fa-fw"></i></span>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC96aC10dw=="><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https:&#x2F;&#x2F;qwerty777.me">My Main Page</span>
+        </li>
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http:&#x2F;&#x2F;qwerty777.me&#x2F;life&#x2F;">My Second Blog -- wysiwyg</span>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2014 – 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fab fa-free-code-camp"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">HCL</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">總字數：</span>
+    <span title="總字數">451k</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
+  </div>
+  <div class="addthis_inline_share_toolbox">
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61c5cf9cb3476405" async="async"></script>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+  <script data-pjax>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script data-pjax>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
+
+
+    <div id="pjax">
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+          load: ['[tex]/mhchem'],
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+<script>
+  var disqus_config = function() {
+    this.page.url = "http://gitqwerty777.github.io/computer-network1/";
+    this.page.identifier = "computer-network1/";
+    this.page.title = "計算機網路(上)";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://disqusforqwerty.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+    </div>
+</body>
+</html>

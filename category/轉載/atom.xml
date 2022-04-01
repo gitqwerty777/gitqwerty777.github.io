@@ -1,0 +1,1775 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://gitqwerty777.github.io</id>
+    <title>QWERTY • Posts by &#34;轉載&#34; category</title>
+    <link href="http://gitqwerty777.github.io" />
+    <updated>2020-10-22T07:00:00.000Z</updated>
+    <category term="C#" />
+    <category term="CodingStyle" />
+    <category term="Emacs" />
+    <category term="編輯器" />
+    <category term="CFR" />
+    <category term="電腦對局理論" />
+    <category term="指令" />
+    <category term="機器學習" />
+    <category term="perceptron" />
+    <category term="readme" />
+    <category term="文件" />
+    <category term="github" />
+    <category term="artificial intelligence" />
+    <category term="search" />
+    <category term="First-Order Logic" />
+    <category term="大數" />
+    <category term="程式" />
+    <category term="C++" />
+    <category term="Hexo" />
+    <category term="網誌" />
+    <category term="Markdown" />
+    <category term="CleanCode" />
+    <category term="重構" />
+    <category term="TDD" />
+    <category term="設計模式" />
+    <category term="CMake" />
+    <category term="Makefile" />
+    <category term="Linux" />
+    <category term="Todo" />
+    <category term="註解" />
+    <category term="經濟學" />
+    <category term="策略" />
+    <category term="競爭" />
+    <category term="博弈論" />
+    <category term="計算機結構" />
+    <category term="人工智慧" />
+    <category term="圍棋" />
+    <category term="象棋" />
+    <category term="蒙地卡羅" />
+    <category term="Alpha-Beta搜尋" />
+    <category term="強化學習" />
+    <category term="計算機網路" />
+    <category term="boost" />
+    <category term="函式庫" />
+    <category term="編譯" />
+    <category term="gcc" />
+    <category term="g++" />
+    <category term="clang" />
+    <category term="最佳化" />
+    <category term="推薦系統" />
+    <category term="FM" />
+    <category term="FFM" />
+    <category term="SVM" />
+    <category term="Embedding" />
+    <category term="自然語言處理" />
+    <category term="外國用語" />
+    <category term="萌典" />
+    <category term="opencc" />
+    <category term="PTT" />
+    <category term="vuejs" />
+    <category term="linux" />
+    <category term="c" />
+    <category term="compile" />
+    <category term="gdb" />
+    <category term="c語言" />
+    <category term="cpp" />
+    <category term="除錯" />
+    <category term="git" />
+    <category term="VMWare" />
+    <category term="虛擬機" />
+    <category term="IFTTT" />
+    <category term="自動化" />
+    <category term="備份" />
+    <category term="webhook" />
+    <category term="簡報" />
+    <category term="軟體" />
+    <category term="PowerPoint" />
+    <category term="Latex" />
+    <category term="JavaScript" />
+    <category term="CSS" />
+    <category term="Unity" />
+    <category term="fcitx" />
+    <category term="嘸蝦米" />
+    <category term="輸入法" />
+    <category term="硬碟" />
+    <category term="記憶體" />
+    <category term="效能" />
+    <category term="錯誤" />
+    <category term="makefile" />
+    <category term="備忘錄" />
+    <category term="存檔" />
+    <category term="統計" />
+    <category term="byobu" />
+    <category term="screen" />
+    <category term="tmux" />
+    <category term="reactjs" />
+    <category term="javascript" />
+    <category term="WideAndDeep" />
+    <category term="Google" />
+    <category term="觀察者" />
+    <category term="訂閱" />
+    <category term="委託" />
+    <category term="正規表示式(RegExp)" />
+    <category term="上下文無關文法(CFG)" />
+    <category term="hexo" />
+    <category term="blog" />
+    <category term="theme" />
+    <category term="feature" />
+    <category term="revealJS" />
+    <category term="markdown" />
+    <category term="rss" />
+    <category term="facebook" />
+    <category term="youtube" />
+    <category term="ptt" />
+    <category term="bilibili" />
+    <category term="pixiv" />
+    <category term="crawler" />
+    <category term="SEO" />
+    <category term="google" />
+    <category term="html" />
+    <category term="amazon" />
+    <category term="webhost" />
+    <category term="ssl" />
+    <category term="漢字" />
+    <category term="中文" />
+    <category term="異體字" />
+    <category term="unicode" />
+    <category term="unity" />
+    <category term="演算法" />
+    <category term="隨機排序" />
+    <category term="洗牌" />
+    <category term="Fisher-Yates" />
+    <category term="證明" />
+    <category term="python" />
+    <entry>
+        <id>http://gitqwerty777.github.io/CSharp-codeconvension/</id>
+        <title>C# 程式碼風格指南</title>
+        <link rel="alternate" href="http://gitqwerty777.github.io/CSharp-codeconvension/"/>
+        <content type="html">&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLm1pY3Jvc29mdC5jb20vZW4tdXMvZG90bmV0L2MjL3Byb2dyYW1taW5nLWd1aWRlL2luc2lkZS1hLXByb2dyYW0vY29kaW5nLWNvbnZlbnRpb25z&#34;&gt;原文：C# Coding Conventions (C# Programming Guide)&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;Naming-Conventions&#34;&gt;&lt;a href=&#34;#Naming-Conventions&#34; class=&#34;headerlink&#34; title=&#34;Naming Conventions&#34;&gt;&lt;/a&gt;Naming Conventions&lt;/h2&gt;&lt;p&gt;若句子太長，可以分段，結尾需為&lt;code&gt;.&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;var currentPerformanceCounterCategory &amp;#x3D; new System.Diagnostics.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        PerformanceCounterCategory();&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;Layout-Conventions&#34;&gt;&lt;a href=&#34;#Layout-Conventions&#34; class=&#34;headerlink&#34; title=&#34;Layout Conventions&#34;&gt;&lt;/a&gt;Layout Conventions&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;四空格縮排, tabs 需要存為空格&lt;/li&gt;
+&lt;li&gt;一行一個Statement/Declaration&lt;/li&gt;
+&lt;li&gt;連續的行中，第二行需要多一個縮排&lt;/li&gt;
+&lt;li&gt;方法的宣告和屬性的宣告中至少需要隔一行&lt;/li&gt;
+&lt;li&gt;在判斷式中加上括號&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;if ((val1 &amp;gt; val2) &amp;amp;&amp;amp; (val1 &amp;gt; val3))&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Commenting-Conventions&#34;&gt;&lt;a href=&#34;#Commenting-Conventions&#34; class=&#34;headerlink&#34; title=&#34;Commenting Conventions&#34;&gt;&lt;/a&gt;Commenting Conventions&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;將程式和註解放在不同行&lt;/li&gt;
+&lt;li&gt;註解需以大寫開頭，逗號結尾，與&lt;code&gt;//&lt;/code&gt;間隔一個空格&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#x2F;&amp;#x2F; The following declaration creates a query. It does not run&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#x2F;&amp;#x2F; the query.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Language-Guidelines&#34;&gt;&lt;a href=&#34;#Language-Guidelines&#34; class=&#34;headerlink&#34; title=&#34;Language Guidelines&#34;&gt;&lt;/a&gt;Language Guidelines&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;使用字串插補(String interpolation)來連接短的字串&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;string displayName = $&amp;quot;{nameList[n].LastName}, {nameList[n].FirstName}&amp;quot;;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;若要在迴圈中使用字串，使用&lt;code&gt;StringBuilder&lt;/code&gt;&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;var phrase &amp;#x3D; &amp;quot;la&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;var manyPhrases &amp;#x3D; new StringBuilder();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;for (var i &amp;#x3D; 0; i &amp;lt; 10000; i++)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    manyPhrases.Append(phrase);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Implicitly-Typed-Local-Variables&#34;&gt;&lt;a href=&#34;#Implicitly-Typed-Local-Variables&#34; class=&#34;headerlink&#34; title=&#34;Implicitly Typed Local Variables&#34;&gt;&lt;/a&gt;Implicitly Typed Local Variables&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;若變數的型別很明顯，使用隱式宣告&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;New&lt;/code&gt;, 型別轉換, 基本型別等&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;var var1 &amp;#x3D; &amp;quot;This is clearly a string.&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;var var2 &amp;#x3D; 27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#x2F;&amp;#x2F; &amp;#x3D;&amp;#x3D;&amp;#x3D;&amp;#x3D;&amp;#x3D;&amp;#x3D;&amp;#x3D;&amp;#x3D;&amp;#x3D;&amp;#x3D;&amp;#x3D;&amp;#x3D;&amp;#x3D;&amp;#x3D;&amp;#x3D;&amp;#x3D;&amp;#x3D;&amp;#x3D;&amp;#x3D;&amp;#x3D;&amp;#x3D;&amp;#x3D;&amp;#x3D;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;int var3 &amp;#x3D; Convert.ToInt32(Console.ReadLine());&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;int var4 &amp;#x3D; ExampleClass.ResultSoFar();&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;可以在for中使用隱式宣告，但不要在foreach中使用隱式宣告&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Arrays&#34;&gt;&lt;a href=&#34;#Arrays&#34; class=&#34;headerlink&#34; title=&#34;Arrays&#34;&gt;&lt;/a&gt;Arrays&lt;/h2&gt;&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#x2F;&amp;#x2F; Preferred syntax. Note that you cannot use var here instead of string[].&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;string[] vowels1 &amp;#x3D; &amp;#123; &amp;quot;a&amp;quot;, &amp;quot;e&amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;o&amp;quot;, &amp;quot;u&amp;quot; &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#x2F;&amp;#x2F; If you use explicit instantiation, you can use var.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;var vowels2 &amp;#x3D; new string[] &amp;#123; &amp;quot;a&amp;quot;, &amp;quot;e&amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;o&amp;quot;, &amp;quot;u&amp;quot; &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#x2F;&amp;#x2F; If you specify an array size, you must initialize the elements one at a time.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;var vowels3 &amp;#x3D; new string[5];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;vowels3[0] &amp;#x3D; &amp;quot;a&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;vowels3[1] &amp;#x3D; &amp;quot;e&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;Delegates-委託&#34;&gt;&lt;a href=&#34;#Delegates-委託&#34; class=&#34;headerlink&#34; title=&#34;Delegates(委託)&#34;&gt;&lt;/a&gt;Delegates(委託)&lt;/h2&gt;&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#x2F;&amp;#x2F; Define the type.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;public delegate void Del(string message);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#x2F;&amp;#x2F; Define a method that has a matching signature.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;public static void DelMethod(string str)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    Console.WriteLine(&amp;quot;DelMethod argument: &amp;#123;0&amp;#125;&amp;quot;, str);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#x2F;&amp;#x2F; In the Main method, create an instance of Del.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#x2F;&amp;#x2F; Preferred: Create an instance of Del by using condensed syntax.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Del exampleDel2 &amp;#x3D; DelMethod;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#x2F;&amp;#x2F; The following declaration uses the full syntax.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Del exampleDel1 &amp;#x3D; new Del(DelMethod);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;Using&#34;&gt;&lt;a href=&#34;#Using&#34; class=&#34;headerlink&#34; title=&#34;Using&#34;&gt;&lt;/a&gt;Using&lt;/h2&gt;&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#x2F;&amp;#x2F; Method1: try-finally statement with Dispose&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Font font1 &amp;#x3D; new Font(&amp;quot;Arial&amp;quot;, 10.0f);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;try&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    byte charset &amp;#x3D; font1.GdiCharSet;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;finally&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    if (font1 !&amp;#x3D; null)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        ((IDisposable)font1).Dispose();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#x2F;&amp;#x2F; Method2: Using statement.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;using (Font font2 &amp;#x3D; new Font(&amp;quot;Arial&amp;quot;, 10.0f))&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    byte charset &amp;#x3D; font2.GdiCharSet;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;amp-amp-and&#34;&gt;&lt;a href=&#34;#amp-amp-and&#34; class=&#34;headerlink&#34; title=&#34;&amp;amp;&amp;amp; and ||&#34;&gt;&lt;/a&gt;&amp;amp;&amp;amp; and ||&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;用 &lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt; 取代 &lt;code&gt;&amp;amp;&lt;/code&gt;, 用 &lt;code&gt;||&lt;/code&gt; 取代 &lt;code&gt;|&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt; 會 short-circult (即不可能是True時直接return False)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;&lt;/code&gt; 會判斷所有條件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;if ((divisor !&amp;#x3D; 0) &amp;amp;&amp;amp; (dividend &amp;#x2F; divisor &amp;gt; 0))&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    Console.WriteLine(&amp;quot;Quotient: &amp;#123;0&amp;#125;&amp;quot;, dividend &amp;#x2F; divisor);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;else&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    Console.WriteLine(&amp;quot;Attempted division by 0 ends up here.&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;New&#34;&gt;&lt;a href=&#34;#New&#34; class=&#34;headerlink&#34; title=&#34;New&#34;&gt;&lt;/a&gt;New&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;使用new的時候，使用var &lt;code&gt;var instance1 = new ExampleClass();&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;簡化Initialize&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;var instance3 = new ExampleClass { Name = &amp;quot;Desktop&amp;quot;, ID = 37414, Location = &amp;quot;Redmond&amp;quot;, Age = 2.3 };&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;事件&#34;&gt;&lt;a href=&#34;#事件&#34; class=&#34;headerlink&#34; title=&#34;事件&#34;&gt;&lt;/a&gt;事件&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;使用lambda expression來產生一次性的event&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;public Form2()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x2F;&amp;#x2F; You can use a lambda expression to define an event handler.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    this.Click +&amp;#x3D; (s, e) &amp;#x3D;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            MessageBox.Show(&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                ((MouseEventArgs)e).Location.ToString());&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#x2F;&amp;#x2F; Using a lambda expression shortens the following traditional definition.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;public Form1()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    this.Click +&amp;#x3D; new EventHandler(Form1_Click);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;void Form1_Click(object sender, EventArgs e)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    MessageBox.Show(((MouseEventArgs)e).Location.ToString());&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Static&#34;&gt;&lt;a href=&#34;#Static&#34; class=&#34;headerlink&#34; title=&#34;Static&#34;&gt;&lt;/a&gt;Static&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;用類別名取得static成員 &lt;code&gt;ClassName.StaticMember&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;不要用繼承的類別名，直接用定義static成員的類別&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;LINQ-Queries&#34;&gt;&lt;a href=&#34;#LINQ-Queries&#34; class=&#34;headerlink&#34; title=&#34;LINQ Queries&#34;&gt;&lt;/a&gt;LINQ Queries&lt;/h2&gt;&lt;p&gt;使用有意義的變數名&lt;/p&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;var seattleCustomers &amp;#x3D; from customer in customers&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                       where customer.City &amp;#x3D;&amp;#x3D; &amp;quot;Seattle&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                       select customer.Name;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;排列在&lt;code&gt;from&lt;/code&gt;下方&lt;/li&gt;
+&lt;li&gt;使用多個&lt;code&gt;from&lt;/code&gt;取代&lt;code&gt;join&lt;/code&gt;&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#x2F;&amp;#x2F; Use a compound from to access the inner sequence within each element.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;var scoreQuery &amp;#x3D; from student in students&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                 from score in student.Scores&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                 where score &amp;gt; 90&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                 select new &amp;#123; Last &amp;#x3D; student.LastName, score &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="C#" />
+        <category term="CodingStyle" />
+        <updated>2020-10-22T07:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://gitqwerty777.github.io/art-of-readme/</id>
+        <title>README 寫法</title>
+        <link rel="alternate" href="http://gitqwerty777.github.io/art-of-readme/"/>
+        <content type="html">&lt;p&gt;此篇文章大多參考自 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL25vZmZsZS9hcnQtb2YtcmVhZG1lL2Jsb2IvbWFzdGVyL1JFQURNRS16aC5tZA==&#34;&gt;art-of-readme&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;基本的-README-組成&#34;&gt;&lt;a href=&#34;#基本的-README-組成&#34; class=&#34;headerlink&#34; title=&#34;基本的 README 組成&#34;&gt;&lt;/a&gt;基本的 README 組成&lt;/h2&gt;&lt;p&gt;建議順序&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一句話解釋模組的目的&lt;/li&gt;
+&lt;li&gt;簡潔可運行的範例&lt;/li&gt;
+&lt;li&gt;詳細的API文件&lt;/li&gt;
+&lt;li&gt;安裝說明&lt;/li&gt;
+&lt;li&gt;注意事項和限制&lt;/li&gt;
+&lt;li&gt;授權條款(license)&lt;/li&gt;
+&lt;li&gt;必要的背景資料或連結&lt;/li&gt;
+&lt;li&gt;專業術語解譯&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;目的&#34;&gt;&lt;a href=&#34;#目的&#34; class=&#34;headerlink&#34; title=&#34;目的&#34;&gt;&lt;/a&gt;目的&lt;/h2&gt;&lt;p&gt;README 的目的：&lt;strong&gt;這是進行下一步之前的重要資訊&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;README 是寫給模組使用者的。&lt;/p&gt;
+&lt;p&gt;README 也是寫給模組建立者的。一個沒有文件的模組，往往時隔 6 個月後，就連作者自己都會覺得陌生。每個模組的作者同時也是該模組的使用者。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;README 是使用者首先（或唯一）審視你作品的入口。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;編寫優秀的文件可以讓使用者不用閱讀原始碼就能理解你模組的精妙之處。&lt;br&gt;沒有 README 意味著開發者需要閱讀原始碼才能理解你的模組。&lt;br&gt;使用者希望模組能滿足他們的需要，所以你要清楚的說明你的模組的主要作用和優勢。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;只要你的文件是完備的，使用者就可以直接使用你的模組而無需去閱讀原始碼。透過文件可以在很大程度上將你的模組的外部介面和內部實現進行分離。這樣就可以在保持介面不變的情況下，靈活的修改內部實現。&lt;br&gt;定義模組的是文件而不是程式碼。 ——&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL21hdGhmb3J1bS5vcmcva2VuL3BlcmxfbW9kdWxlcy5odG1sI2RvY3VtZW50&#34;&gt;Ken Williams&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;目標&#34;&gt;&lt;a href=&#34;#目標&#34; class=&#34;headerlink&#34; title=&#34;目標&#34;&gt;&lt;/a&gt;目標&lt;/h2&gt;&lt;p&gt;讓讀者了解&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;這是什麼&lt;/li&gt;
+&lt;li&gt;使用情境&lt;/li&gt;
+&lt;li&gt;如何使用&lt;/li&gt;
+&lt;li&gt;實作及相關細節&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;原則&#34;&gt;&lt;a href=&#34;#原則&#34; class=&#34;headerlink&#34; title=&#34;原則&#34;&gt;&lt;/a&gt;原則&lt;/h2&gt;&lt;h3 id=&#34;簡潔&#34;&gt;&lt;a href=&#34;#簡潔&#34; class=&#34;headerlink&#34; title=&#34;簡潔&#34;&gt;&lt;/a&gt;簡潔&lt;/h3&gt;&lt;p&gt;理想的 README 應該儘可能的短。詳細的文件可以在單獨的頁面裡描述&lt;/p&gt;
+&lt;h3 id=&#34;快速理解&#34;&gt;&lt;a href=&#34;#快速理解&#34; class=&#34;headerlink&#34; title=&#34;快速理解&#34;&gt;&lt;/a&gt;快速理解&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;這些關鍵要素的排序應該&lt;strong&gt;讓人儘快放棄你的模組&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;當你用利他主義思想來做的時候，不是為了銷售給別人，而是為了讓人們儘可能客觀公正的評估你的作品，並判斷是否滿足他們的需要。而不是讓你的下載量和使用者數最大化&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;方法&#34;&gt;&lt;a href=&#34;#方法&#34; class=&#34;headerlink&#34; title=&#34;方法&#34;&gt;&lt;/a&gt;方法&lt;/h2&gt;&lt;h3 id=&#34;使用模版&#34;&gt;&lt;a href=&#34;#使用模版&#34; class=&#34;headerlink&#34; title=&#34;使用模版&#34;&gt;&lt;/a&gt;使用模版&lt;/h3&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL25vZmZsZS9jb21tb24tcmVhZG1l&#34;&gt;common-readme&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;用的文件格式，一個README寫作指南和方便的command-line生成器。&lt;br&gt;你也可以在&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3JpY2hhcmRsaXR0L3N0YW5kYXJkLXJlYWRtZQ==&#34;&gt;標準Readme(standard readme)&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;中領略下更具結構化的通用Readme格式。&lt;/p&gt;
+&lt;h3 id=&#34;以史為鑑&#34;&gt;&lt;a href=&#34;#以史為鑑&#34; class=&#34;headerlink&#34; title=&#34;以史為鑑&#34;&gt;&lt;/a&gt;以史為鑑&lt;/h3&gt;&lt;p&gt;古人云：以史為鑑，可以知興替。&lt;br&gt;開發者編寫文件已經有多年的歷史了。值得我們花時間去看看之前人們是怎麼正確寫文件的。&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;註：就是抄別人的&lt;/del&gt;&lt;/p&gt;
+&lt;h3 id=&#34;順序：以使用者的角度分析&#34;&gt;&lt;a href=&#34;#順序：以使用者的角度分析&#34; class=&#34;headerlink&#34; title=&#34;順序：以使用者的角度分析&#34;&gt;&lt;/a&gt;順序：以使用者的角度分析&lt;/h3&gt;&lt;p&gt;當我想要一個 2D 碰撞檢測模組時我找到了&lt;a href=&#34;https://github.com/noffle/collide-2d-aabb-aabb&#34; target=&#34;_blank&#34; rel=&#34;noopener external nofollow noreferrer&#34;&gt;&lt;code&gt;collide-2d-aabb-aabb&lt;/code&gt;&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;我開始從頭開始檢查這個模組：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;取名&lt;/strong&gt;：名字要能做到“其義自見”。&lt;code&gt;collide-2d-aabb-aabb&lt;/code&gt; 聽起來是個不錯的匹配，儘管它假設我知道”aabb”是什麼意思。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;簡介&lt;/strong&gt;：透過一句話簡明扼要的說明了這個模組是做什麼的。&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;collide-2d-aabb-aabb&lt;/code&gt; 的描述是：&lt;blockquote&gt;
+&lt;p&gt;Determines whether a moving axis-aligned bounding box (AABB) collides with other AABBs.&lt;br&gt;太棒了 —— 描述了 AABB 的定義是什麼，並且說明了這個模組是做什麼的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;用法&lt;/strong&gt;：在開始探究 API 文件之前，最好看看這個模組在實際應用中是什麼樣子。我可以快速決定用js寫的範例程式是否符合我的程式碼樣式和我要解決的問題。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;API&lt;/strong&gt;：模組的名字，描述和使用方法都符合我的胃口。在這一點上我很樂意使用這個模組。我需要瀏覽API來確定這就是我需要的，並且很容易整合到我的程式碼中。API 部分應該詳述模組的物件和函式，以及它們的定義、回傳值和事件。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;安裝&lt;/strong&gt;：如果不是通用的安裝說明，就需要在這兒進行描述。即使是一句簡單的&lt;code&gt;npm install&lt;/code&gt;也好。 對於使用Node的新使用者來說，放一個指向npmjs.org的連結和安裝命令，可以讓使用者快速上手使用模組。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;授權&lt;/strong&gt;：大多數模組把這個放在最末尾，但是最好還是往前放一些；非常有可能在把這個模組整合完後才發現授權協議不合適。我通常使用 MIT/BSD/X11/ISC。如果你的協議不是很寬容，最好是放到最前面。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;順序：認知漏斗&#34;&gt;&lt;a href=&#34;#順序：認知漏斗&#34; class=&#34;headerlink&#34; title=&#34;順序：認知漏斗&#34;&gt;&lt;/a&gt;順序：認知漏斗&lt;/h3&gt;&lt;p&gt;可以想象成是一個直立的漏斗，越往下移動細節越具體，最寬的部分相關細節最寬泛，只有對你的作品足夠感興趣的人才會關注這部分內容。最後，底部可以放一些作品背景的細節&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Perl模組的文件對於細節的描述是從少到多的。&lt;br&gt;你的簡介部分應該包含一個小的例子程式&lt;br&gt;（或許只有一行程式碼，省略掉不常用的用例或大多數使用者用不到的功能）&lt;br&gt;描述部分應該從總體上描述你的模組，&lt;br&gt;通常只需要幾個段落；在隨後的章節中再詳細描述模組的例程或方法，長的程式碼示例，或其它的資料。&lt;br&gt;理想情況下，在點“下一頁”之前就能讓人大體上了解你的模組。&lt;br&gt;隨著使用者繼續閱讀文件，他們能夠漸進的獲得更多的知識。&lt;br&gt; —— &lt;code&gt;perlmodstyle&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;實作&#34;&gt;&lt;a href=&#34;#實作&#34; class=&#34;headerlink&#34; title=&#34;實作&#34;&gt;&lt;/a&gt;實作&lt;/h2&gt;&lt;p&gt;&lt;mark&gt;API改的越多，越要努力的去更新文件&lt;/mark&gt;&lt;/p&gt;
+&lt;h3 id=&#34;背景&#34;&gt;&lt;a href=&#34;#背景&#34; class=&#34;headerlink&#34; title=&#34;背景&#34;&gt;&lt;/a&gt;背景&lt;/h3&gt;&lt;p&gt;如果你的模組依賴於重要但是不為人所熟知的抽象或生態系統，考慮包含一個 &lt;strong&gt;背景知識&lt;/strong&gt; 部分 (background)。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/noffle/bisecting-between&#34; target=&#34;_blank&#34; rel=&#34;noopener external nofollow noreferrer&#34;&gt;&lt;code&gt;bisecting-between&lt;/code&gt;&lt;/a&gt;的函式從它的名字上看不是特別明顯，所以在背景部分會描述定義，並且給出具體概念和抽象的連結，以便需要的人去使用和獲取。如果已經有相似的模組在npm上存在了，這兒也是一個非常適合描述建立模組的動機的地方&lt;/p&gt;
+&lt;h3 id=&#34;連結&#34;&gt;&lt;a href=&#34;#連結&#34; class=&#34;headerlink&#34; title=&#34;連結&#34;&gt;&lt;/a&gt;連結&lt;/h3&gt;&lt;p&gt;如果你談及其它的模組，想法，或者其他人的時候，在相關的引用內容上加上連結，這樣訪客就可以很容易的得到你的模組背後的想法。極少有模組是憑空誕生的：所有的作品來源於其它作品，因此很有必要讓使用者追溯你的模組的歷史和靈感&lt;/p&gt;
+&lt;h3 id=&#34;範例檔案&#34;&gt;&lt;a href=&#34;#範例檔案&#34; class=&#34;headerlink&#34; title=&#34;範例檔案&#34;&gt;&lt;/a&gt;範例檔案&lt;/h3&gt;&lt;p&gt;範例程式碼在repo中以檔案的形式體現 – 例如&lt;code&gt;example.js&lt;/code&gt;。這樣當用戶clone專案後，就可以直接執行README中提及的程式碼&lt;/p&gt;
+&lt;h3 id=&#34;徽章-badge&#34;&gt;&lt;a href=&#34;#徽章-badge&#34; class=&#34;headerlink&#34; title=&#34;徽章(badge)&#34;&gt;&lt;/a&gt;徽章(badge)&lt;/h3&gt;&lt;p&gt;使用徽章要慎重。經常會被濫用。它們會容易引起爭論。它們在你的README中加入了視覺噪聲，並且只有當用戶在聯網的瀏覽器裡閱讀你的markdown時才能看到徽章，因為圖片是存放在網際網路上的其它地方。對於每一個徽章，需要考慮：README中的徽章提供給典型讀者的真實含義是什麼？用一個CI徽章來顯示build/test狀態？這個訊號更應該發郵件給維護者，或者自動建立一個issue – 永遠要考慮你的README中的資料的受眾並且自問一下是否有一個流程能夠讓資料更好的送達到目標受眾。&lt;/p&gt;
+&lt;h3 id=&#34;API&#34;&gt;&lt;a href=&#34;#API&#34; class=&#34;headerlink&#34; title=&#34;API&#34;&gt;&lt;/a&gt;API&lt;/h3&gt;&lt;p&gt;API 文件格式沒有局限。使用任何你認為是清晰的格式，但是要包含重要的細節：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;引數是否可選，以及預設值&lt;/li&gt;
+&lt;li&gt;包含型別資訊，如果型別不能清楚的根據約定進行體現&lt;/li&gt;
+&lt;li&gt;對於 &lt;code&gt;opts&lt;/code&gt; 物件引數，描述它所接受的所有的 keys 和 values&lt;/li&gt;
+&lt;li&gt;為每個API提供一個小的呼叫示例，如果它們的用法不明顯或是在用法部分沒有體現。&lt;ol&gt;
+&lt;li&gt;不過，也有可能是函式太複雜了，需要進行重構，劃分成更細粒度的函式，或者整體刪除。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;為特殊術語建立連結! 在markdown中你可以把&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kYXJpbmdmaXJlYmFsbC5uZXQvcHJvamVjdHMvbWFya2Rvd24vc3ludGF4I2xpbms=&#34;&gt;腳註&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt; 放在文件的末尾，可以很方便的多次引用它們。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL25vZmZsZS9jb21tb24tcmVhZG1lL2Jsb2IvbWFzdGVyL2FwaV9mb3JtYXR0aW5nLm1k&#34;&gt;這兒&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;有一些我的API文件格式的個人偏好。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;放一些呼叫和返回值的範例&lt;ul&gt;
+&lt;li&gt;如果你的模組提供了 CLI (command line interface)而不是 API，用命令呼叫的方式展示呼叫示例和輸出。如果你建立了或更改了一個檔案，&lt;code&gt;cat&lt;/code&gt; 它來展示更改前後的變化。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;關鍵字&#34;&gt;&lt;a href=&#34;#關鍵字&#34; class=&#34;headerlink&#34; title=&#34;關鍵字&#34;&gt;&lt;/a&gt;關鍵字&lt;/h3&gt;&lt;p&gt;github 和 npm 皆有提供手動填寫關鍵字(tag)&lt;/p&gt;
+&lt;h3 id=&#34;內嵌圖片&#34;&gt;&lt;a href=&#34;#內嵌圖片&#34; class=&#34;headerlink&#34; title=&#34;內嵌圖片&#34;&gt;&lt;/a&gt;內嵌圖片&lt;/h3&gt;&lt;p&gt;最後，請記住你的程式碼倉庫和其中的README存在的時間要比你的&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29t&#34;&gt;程式碼倉庫託管主機&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;和你連結到的其它任何東西–特別是圖片–的時間都要長久。所以&lt;strong&gt;內嵌任何對將來要獲取你的作品的使用者來說是重要的東西&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;註：還是可以上傳到圖床或Youtube等，但是要將這些圖片、影片等額外的資源也放在版本控制中&lt;/p&gt;
+&lt;h2 id=&#34;心得&#34;&gt;&lt;a href=&#34;#心得&#34; class=&#34;headerlink&#34; title=&#34;心得&#34;&gt;&lt;/a&gt;心得&lt;/h2&gt;&lt;p&gt;我個人使用Repo的順序&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;觀察&lt;ol&gt;
+&lt;li&gt;會看主要使用的程式語言、支援的OS&lt;/li&gt;
+&lt;li&gt;Description: 一句話形容Repo的作用&lt;/li&gt;
+&lt;li&gt;指令、圖片、影片或是線上的使用範例&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;決定試用&lt;ol&gt;
+&lt;li&gt;安裝方法、或是Release可直接下載&lt;/li&gt;
+&lt;li&gt;實際使用&lt;ol&gt;
+&lt;li&gt;使用失敗：回去看Document或README&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;覺得好用：Star&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;實例評價&#34;&gt;&lt;a href=&#34;#實例評價&#34; class=&#34;headerlink&#34; title=&#34;實例評價&#34;&gt;&lt;/a&gt;實例評價&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0dhbGl0eTM2OS9DUy1Mb2FkZXI=&#34;&gt;CS-Loader&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;ul&gt;
+&lt;li&gt;About欄位：CS免殺&lt;ul&gt;
+&lt;li&gt;Google後才知道是繞過掃毒軟體的方法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;❌沒有對專有名詞的說明&lt;/li&gt;
+&lt;li&gt;❌沒有使用方法&lt;/li&gt;
+&lt;li&gt;只看README的話我是完全不會用的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL251bXRpZGUvZGV2c2hlbGw=&#34;&gt;devshell&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;ul&gt;
+&lt;li&gt;副標題: ⭕like virtualenv, but for all the languages&lt;ul&gt;
+&lt;li&gt;有用過Python的virtualenv的人可以馬上理解&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;About欄位: ➖Per project developer environments&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9udW10aWRlLmdpdGh1Yi5pby9kZXZzaGVsbC9pbnRyby5odG1s&#34;&gt;文件&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;: ❌沒有簡短的設定教學&lt;!-- - TODO: --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="readme" />
+        <category term="文件" />
+        <category term="github" />
+        <updated>2020-09-06T17:11:22.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://gitqwerty777.github.io/zen-of-python/</id>
+        <title>Python 之禪</title>
+        <link rel="alternate" href="http://gitqwerty777.github.io/zen-of-python/"/>
+        <content type="html">&lt;h2 id=&#34;import-this&#34;&gt;&lt;a href=&#34;#import-this&#34; class=&#34;headerlink&#34; title=&#34;import this&#34;&gt;&lt;/a&gt;import this&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;The Zen of Python, by Tim Peters&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Beautiful is better than ugly.&lt;br&gt;Explicit is better than implicit.&lt;br&gt;Simple is better than complex.&lt;br&gt;Complex is better than complicated.&lt;br&gt;Flat is better than nested.&lt;br&gt;Sparse is better than dense.&lt;br&gt;Readability counts.&lt;br&gt;Special cases aren’t special enough to break the rules.&lt;br&gt;Although practicality beats purity.&lt;br&gt;Errors should never pass silently.&lt;br&gt;Unless explicitly silenced.&lt;br&gt;In the face of ambiguity, refuse the temptation to guess.&lt;br&gt;There should be one– and preferably only one –obvious way to do it.&lt;br&gt;Although that way may not be obvious at first unless you’re Dutch.&lt;br&gt;Now is better than never.&lt;br&gt;Although never is often better than &lt;em&gt;right&lt;/em&gt; now.&lt;br&gt;If the implementation is hard to explain, it’s a bad idea.&lt;br&gt;If the implementation is easy to explain, it may be a good idea.&lt;br&gt;Namespaces are one honking great idea – let’s do more of those!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+
+&lt;h2 id=&#34;翻譯和解釋&#34;&gt;&lt;a href=&#34;#翻譯和解釋&#34; class=&#34;headerlink&#34; title=&#34;翻譯和解釋&#34;&gt;&lt;/a&gt;翻譯和解釋&lt;/h2&gt;&lt;p&gt;基本上在解釋 clean code 的做法&lt;/p&gt;
+&lt;p&gt;優美優於醜陋，&lt;/p&gt;
+&lt;p&gt;明瞭優於隱晦；&lt;/p&gt;
+&lt;p&gt;簡單優於複雜，&lt;/p&gt;
+&lt;p&gt;複雜優於凌亂，&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果復雜不可避免，那代碼間也不能有難懂的關係，要保持接口簡潔&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;扁平優於嵌套，&lt;/p&gt;
+&lt;p&gt;稀疏優於稠密，&lt;/p&gt;
+&lt;p&gt;可讀性很重要！&lt;/p&gt;
+&lt;p&gt;即使實用比純粹更優，&lt;/p&gt;
+&lt;p&gt;特例亦不可違背原則。&lt;/p&gt;
+&lt;p&gt;錯誤絕不能悄悄忽略，&lt;/p&gt;
+&lt;p&gt;除非它明確需要如此。&lt;/p&gt;
+&lt;p&gt;面對不確定性，&lt;/p&gt;
+&lt;p&gt;拒絕妄加猜測。&lt;/p&gt;
+&lt;p&gt;任何問題應有一種，&lt;/p&gt;
+&lt;p&gt;且最好只有一種，&lt;/p&gt;
+&lt;p&gt;顯而易見的解決方法。&lt;/p&gt;
+&lt;p&gt;儘管這方法一開始並非如此直觀，&lt;/p&gt;
+&lt;p&gt;除非你是荷蘭人。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;解決一個問題的方法可能會有很多種，但在Python中，只選擇最明顯的那一個&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;做優於不做，&lt;/p&gt;
+&lt;p&gt;然而不假思索還不如不做。&lt;/p&gt;
+&lt;p&gt;很難解釋的，必然是壞方法。&lt;/p&gt;
+&lt;p&gt;很好解釋的，可能是好方法。&lt;/p&gt;
+&lt;p&gt;命名空間是個絕妙的主意，&lt;/p&gt;
+&lt;p&gt;我們應好好利用它。&lt;/p&gt;
+&lt;h2 id=&#34;reference&#34;&gt;&lt;a href=&#34;#reference&#34; class=&#34;headerlink&#34; title=&#34;reference&#34;&gt;&lt;/a&gt;reference&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cud2lraXdhbmQuY29tL3poLXR3L1B5dGhvbiVFNCVCOSU4QiVFNyVBNiU4NQ==&#34;&gt;wiki&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucHl0aG9uLm9yZy9kZXYvcGVwcy9wZXAtMDAyMC8=&#34;&gt;PEP-20&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="python" />
+        <updated>2020-08-17T16:45:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://gitqwerty777.github.io/competitive-strategy/</id>
+        <title>競爭策略</title>
+        <link rel="alternate" href="http://gitqwerty777.github.io/competitive-strategy/"/>
+        <content type="html">&lt;!-- RENEW: --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuY291cnNlcmEub3JnL2xlYXJuL2NvbXBldGl0aXZlc3RyYXRlZ3l6aC9ob21lL3dlbGNvbWU=&#34;&gt;原課程網址 – 競爭策略&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuY291cnNlcmEub3JnL2xlYXJuL2FkdmFuY2VkLWNvbXBldGl0aXZlLXN0cmF0ZWd5LXpoL2hvbWUvd2VsY29tZQ==&#34;&gt;原課程網址 – 高階競爭策略&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;原作者標題 - Competitive Strategy競爭策略——課程要點彙編 (By Daniel.Tao)&lt;ul&gt;
+&lt;li&gt;鏈結已失效&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;競爭策略&#34;&gt;&lt;a href=&#34;#競爭策略&#34; class=&#34;headerlink&#34; title=&#34;競爭策略&#34;&gt;&lt;/a&gt;競爭策略&lt;/h1&gt;&lt;p&gt;同時決策:主要是指一方在對另一方改採取的行動不知情的情況下做出決定&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;最佳策略(Optimal Strategy): 最優策略常常使我們自己的收益最大化&lt;/li&gt;
+&lt;li&gt;劣勢策略(Dominated Strategy): 是一個始終比其他情況都糟糕的策略，你永遠可以找到另一個比它更佳的策略&lt;/li&gt;
+&lt;li&gt;優勢策略(Dominant Stratedy): 指無論其他企業或參與者選擇什麼策略，該策略都將勝於其他策略&lt;/li&gt;
+&lt;li&gt;納什均衡(Nash Equilibrium): 納什均衡是一組&lt;strong&gt;策略集&lt;/strong&gt;其中沒有任何一方可以單方面地悖離自身的策略&lt;ul&gt;
+&lt;li&gt;一旦我們發現一個納什均衡 我們就找到了博弈中的一個自然靜止點，堅持自身策略的情況下 沒有博弈者想改變自己的選擇&lt;/li&gt;
+&lt;li&gt;在納什均衡裡，沒有博弈參與者能通過採取其它策略獲得更高收益，我們能夠預測兩個理性的對手會選擇，最終能使自己達到納什均衡的策略&lt;/li&gt;
+&lt;li&gt;優勢策略針對的是單人博弈，而納什均衡 就像我們從其定義所看到的那樣是策略的合集 是對於博弈中每一個參與者的策略&lt;/li&gt;
+&lt;li&gt;每一個博弈在純策略 (Pure Strategy, 只能選一個策略) 中都會有納什均衡嗎&lt;ul&gt;
+&lt;li&gt;不一定。例如足球射門，這個博弈沒有自然靜止點&lt;/li&gt;
+&lt;li&gt;企業選擇標準的時候，就可能存在兩個納什均衡狀態。例如 A選A，B最好選A， B選擇B，A最好也選擇B&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;囚徒困境&lt;ul&gt;
+&lt;li&gt;存在著一個能使雙方都得到更大效益的情況，但就個體而言每一方都不想一直維持在這種局面&lt;/li&gt;
+&lt;li&gt;因為是同時決策，所以他們不能弄清楚對手的決策。這種困境來源於雙方行為上的利己性，因為他們都想使自己的利潤得到最大化&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;序列博弈 (Sequential Game, Dynamic Game)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;序列博弈就是在博弈中加入時間因素，一家企業在另一家之前行動，第二家企業能夠在知道第一家企業行動的情況下進行博弈，那麼就能相應地調整自己的行動；另一方面 第一家企業必須在沒有後者信息的情況下，不知道第二個博弈者會做什麼，但是，第一家企業知道在自己之後會有一個跟隨者 並且這個跟隨者會理性地作出反應&lt;/li&gt;
+&lt;li&gt;畫出博弈樹 (Game Tree)&lt;/li&gt;
+&lt;li&gt;逆向歸納法 (Backward Induction)&lt;ul&gt;
+&lt;li&gt;倒推法：忽略掉所有不可能發生的方案，比如劣勢策略。據此選擇最高利益的策略&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;最先作出決定的參與者是否擁有某種策略優勢&lt;ul&gt;
+&lt;li&gt;可信的威脅&lt;ul&gt;
+&lt;li&gt;以一個特定的方式做出承諾，可以改變博弈中的策略，可以避免參與他們不想要的博弈，提升自己的回報&lt;/li&gt;
+&lt;li&gt;英航進入漢莎壟斷的德國航空市場，漢莎承諾如果英航進入會展開價格戰&lt;ul&gt;
+&lt;li&gt;可能需要透過增加投資、向第三方承諾等方法，才能成功，否則會被視為不可信威脅(因為價格戰可能不是最佳決策)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;子博弈 (Sub-game)&lt;ul&gt;
+&lt;li&gt;企業在面對囚徒困境或者一個協調博弈時 如果他們能合作 或者能協調他們的行動那他們就能獲得更好的收益&lt;/li&gt;
+&lt;li&gt;理論上這看起來很簡單，但它實際上很難維持 因為企業是自私、獨立並尋求利益最大化的&lt;/li&gt;
+&lt;li&gt;如果博弈能重複進行或者博弈者能採用特定的策略 這樣就能幫助實現合作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;重複博弈&lt;ul&gt;
+&lt;li&gt;重複博弈基本上就是在兩個或者多個博弈者之間能夠重複出現多次的互動&lt;/li&gt;
+&lt;li&gt;有限次重複&lt;ul&gt;
+&lt;li&gt;也就是在一開始就清楚博弈會以怎樣的頻率重複 也知道博弈會在什麼時候結束我們清楚知道博弈的結果或者結束點&lt;/li&gt;
+&lt;li&gt;如承包商和企業的驗收&lt;/li&gt;
+&lt;li&gt;結局效應 (Endgame Effect)&lt;ul&gt;
+&lt;li&gt;進行非常長時間的博弈 越接近這個博弈的結尾，合作就越有可能會直接崩潰。可採用逆向歸納進行推演&lt;/li&gt;
+&lt;li&gt;理論上會和同時決策的結果相同&lt;ul&gt;
+&lt;li&gt;我知道最後一次決策絕對不會合作 → 最後第二次不要合作，以此類推&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;無限次重複&lt;ul&gt;
+&lt;li&gt;沒有明確的結束點&lt;/li&gt;
+&lt;li&gt;企業/同事間的合作&lt;/li&gt;
+&lt;li&gt;較有可能合作(不合作可以明確的報復)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;觸發策略&lt;ul&gt;
+&lt;li&gt;每家企業都將先開出壟斷價格 一旦其中一方，在某一年開出低價 另一方則將在未來持續開出低價 所以一旦有人違反規則，以後將再也不會有合作可言&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;影響博弈繼續的因素&lt;ul&gt;
+&lt;li&gt;p是博弈繼續的概率，愈高愈可能合作&lt;/li&gt;
+&lt;li&gt;競爭者的數量，數量越多，分到的利潤越少，減少了合作的可能性&lt;/li&gt;
+&lt;li&gt;利率，利率越高，合作可能性越小，利率越低合作可能性越高&lt;/li&gt;
+&lt;li&gt;較輕的懲罰 或者寬容的懲罰，也會給合作增添更多阻力&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;積極承諾 (Aggressive Commitment)&lt;ul&gt;
+&lt;li&gt;積極承諾試圖減少那些可能引發劣性均衡的行為，也就是說 當你做出積極承諾 其實是減少了你的選擇而不是將其增多，在博弈論中這通常意味著，將一個同時博弈 (Simultaneous Game)轉變為一個序貫博弈 (Sequential Game) 。如：波音和空客考慮生產大型客機額博弈，空客在新飛機還沒有研發出來前，已經在位於漢堡和圖盧茲的中心建立了加工廠，加工廠只能用於生產A380&lt;/li&gt;
+&lt;li&gt;產生子博弈精煉納什均衡 (Subgame Perfect Nash Equilibrium)&lt;ul&gt;
+&lt;li&gt;組成精煉納什均衡的策略在每一個子博弈中都是最優的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;合作承諾 (Cooperative Commitment)也叫軟承諾 (Soft Commitment)&lt;ul&gt;
+&lt;li&gt;建立口碑，成為一個可靠的競爭者或合作者。表明兩點：1.首先 你的競爭對手將更容易預測你的行為；2. 如果你建立了口碑，如果你不跟別人好好合作，代價就會特別大，因為你很容易就會失去口碑&lt;/li&gt;
+&lt;li&gt;客戶最愛條款。你承諾如果該商品降價，顧客將可以申請賠償差價，通常來說客戶最愛條款都有個期限 通常是六個月或一年。一方面，客戶不用等價格下跌，如到半年後價格下的，它可以得到補償。另一方面，你也對競爭者發出了信號，那就是對你來說，競爭某些顧客的代價會變高，因為降低價格不僅僅意味著 降低未來利潤，你還要給之前的顧客補償差價&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;積極承諾與軟承諾區別&lt;ul&gt;
+&lt;li&gt;積極承諾在於先發制人 消除可能引發劣性均衡的行為&lt;/li&gt;
+&lt;li&gt;合作承諾則是告訴其他博弈者,你是個好人&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;自我束縛承諾(self-binding commitment): 投入資源，讓潛在合作者相信會合作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;互補品(Complements)    &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用產品B能提高產品A的使用效能，反之亦然&lt;/li&gt;
+&lt;li&gt;同時使用A和B兩個產品的效用，更高於單獨使用產品A加上單獨使用產品B的效用&lt;ul&gt;
+&lt;li&gt;效用就是當你使用一個特定產品時所得到的滿足程度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;負交叉價格彈性&lt;ul&gt;
+&lt;li&gt;降低產品A的價格，使產品B的需求量提升&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;替代品 (Substitute Good)  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;替代品的降價可能會減少市場份額，但是，同時也能增加市場規模 因此將有積極的最終結果和淨效應&lt;/li&gt;
+&lt;li&gt;替代品所扮演的角色就是當市場上存在許多相似的替代品，它將會提高價格彈性，也就是消費者的價格敏感度，就就意味著當你試圖增加你的利潤時，消費者則將會另選其他產品&lt;/li&gt;
+&lt;li&gt;正交叉價格彈性&lt;ul&gt;
+&lt;li&gt;降低產品A的價格，使產品B的需求量下降&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;交叉價格彈性為正: 商品A的價格上漲，將導致商品B的需求量上升，兩件商品互為替代品&lt;br&gt;交叉價格彈性為負: 商品A的價格上漲，將導致商品B的需求量下降，兩件商品互為互補品&lt;/p&gt;
+&lt;p&gt;企業為什麼會支持互補方   &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;為什麼你會想要支持一家因為你不在其中而無法直接獲利的企業，或許能通過使供給方提供質量更好的互補品，從而提高銷售量，互補品越好。對你自身產品的需求也越高，互補品賣得越多，對你自身產品的需求也越高，基礎品變得更有用了&lt;ul&gt;
+&lt;li&gt;蘋果免費送給編寫mac程序的學生&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;自己生產互補品&lt;ul&gt;
+&lt;li&gt;問題    &lt;ol&gt;
+&lt;li&gt;可能僅僅是互補品市場不具有吸引力&lt;/li&gt;
+&lt;li&gt;沒有足夠的能力生產互補品&lt;/li&gt;
+&lt;li&gt;潛在消費者無法接受一個企業既生產基礎產品又生產互補品&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;優勢&lt;ol&gt;
+&lt;li&gt;可以為自己的產品量身定製互補品&lt;/li&gt;
+&lt;li&gt;可以對互補品進行質量監管&lt;/li&gt;
+&lt;li&gt;可賺更多錢&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;交叉補貼 (Cross Subsidy) &lt;ul&gt;
+&lt;li&gt;為了增加利潤很高的產品B的銷售，生產利潤很小，甚至虧本的產品A&lt;ul&gt;
+&lt;li&gt;剃鬚刀與刀片，打印機與墨盒&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;風險&lt;ol&gt;
+&lt;li&gt;消費者最終可能不會購買產品B，可能只會對基礎產品感興趣而並不對互補品感興趣，你只獲得了產品A的低價所帶來的利潤&lt;/li&gt;
+&lt;li&gt;消費者可能從另一個製造商那裡買產品B&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;捆綁銷售 (Bundle)      &lt;ul&gt;
+&lt;li&gt;企業只出售的產品A和互補品B的組合&lt;ol&gt;
+&lt;li&gt;在市場A中你面臨的競爭非常小，甚至是沒有因為你除了產品A外，還附加了其他產品&lt;/li&gt;
+&lt;li&gt;減少了B市場的競爭，因為只要有人對互補品B感興趣，他也會得到產品A&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;風險&lt;ol&gt;
+&lt;li&gt;可能有只對A或B感興趣的消費者，只對基礎產品或互補品感興趣，對他們進行捆綁銷售 你將失去這些消費者&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;轉換成本 (Switching Costs)    &lt;ul&gt;
+&lt;li&gt;當用戶從產品A轉換到一個替代品時，通常會產生轉換成本，轉換成本越高，就意味著他們已購買的互補品就越多。如果你使某人買了很多互補品，那他就很難從基礎產品A轉換到任何其它產品&lt;/li&gt;
+&lt;li&gt;好處&lt;ol&gt;
+&lt;li&gt;你使某人買了很多互補品，那他就很難從基礎產品A轉換到任何其它產品&lt;/li&gt;
+&lt;li&gt;這意味著顧客對企業有著更高的價值，如果一個消費者發現很難能夠轉而使用其它產品，你就可以向他收取更高價格&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;可能同時是競爭對手，也是合作關係   &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Apple &amp;amp; Sony&lt;ul&gt;
+&lt;li&gt;Apple ipod 和 Sony mp3&lt;/li&gt;
+&lt;li&gt;Apple itunes 賣出 Sony音樂&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;戰略合作夥伴關係 (Strategic Partnership)     &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;是企業之間的長期合作關係&lt;/li&gt;
+&lt;li&gt;戰略合作夥伴一個重要特點：他們是互補產品的生產者，但他們不能合併為一個公司&lt;ol&gt;
+&lt;li&gt;分享決策/共同決策 (Shared Decision Making)&lt;/li&gt;
+&lt;li&gt;建立某種組織或某種機制（組織整合，organisational integration）——跨企業團隊，建立跨企業的匯報、決策規則、進行大量信息交換），依賴信息交流以及信息交流的程序化過程&lt;/li&gt;
+&lt;li&gt;交叉持股或建新的合資企業（經濟整合 economic integration)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;互補品廠商有很高的動機互相合作並獲益，並不一定需要經濟整合才會合作&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;進入市場&#34;&gt;&lt;a href=&#34;#進入市場&#34; class=&#34;headerlink&#34; title=&#34;進入市場&#34;&gt;&lt;/a&gt;進入市場&lt;/h2&gt;&lt;p&gt;市場吸引力 → 選擇市場 → 進入方式 → 策略&lt;/p&gt;
+&lt;h3 id=&#34;市場吸引力&#34;&gt;&lt;a href=&#34;#市場吸引力&#34; class=&#34;headerlink&#34; title=&#34;市場吸引力&#34;&gt;&lt;/a&gt;市場吸引力&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;由波特五力決定&lt;ol&gt;
+&lt;li&gt;競爭程度&lt;/li&gt;
+&lt;li&gt;對供應商的議價能力&lt;/li&gt;
+&lt;li&gt;對買家的議價能力&lt;/li&gt;
+&lt;li&gt;潛在新廠商的威脅&lt;/li&gt;
+&lt;li&gt;替代品的威脅&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;政府角色（政府的監管和徵稅）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;選擇市場&#34;&gt;&lt;a href=&#34;#選擇市場&#34; class=&#34;headerlink&#34; title=&#34;選擇市場&#34;&gt;&lt;/a&gt;選擇市場&lt;/h3&gt;&lt;p&gt;進入壁壘 (Entry Barrier)&lt;br&gt;進入壁壘是一些因素，能使現有企業獲得正利潤，而該行業新入者卻無法獲利  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;結構性進入壁壘&lt;ul&gt;
+&lt;li&gt;與行業內現有企業的定位相關&lt;/li&gt;
+&lt;li&gt;超市位置、政府許可（申請牌照）、生產規模(半導體)、關鍵專利、經驗積累、成本優勢、專屬供應合約等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;戰略性進入壁壘&lt;ul&gt;
+&lt;li&gt;由現有企業有意識採取的特別戰略行為，阻止行業內後來者進入的意向&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;營銷優勢&lt;ul&gt;
+&lt;li&gt;品牌忠誠度，轉換成本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;進入方式&#34;&gt;&lt;a href=&#34;#進入方式&#34; class=&#34;headerlink&#34; title=&#34;進入方式&#34;&gt;&lt;/a&gt;進入方式&lt;/h3&gt;&lt;p&gt;承諾戰略       &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;承諾戰略是某個後來者為了表明要留在市場中作出的可信承諾，以此來防止現有企業的報復&lt;/li&gt;
+&lt;li&gt;付出高沉沒成本(退出成本高)&lt;ul&gt;
+&lt;li&gt;投資&lt;/li&gt;
+&lt;li&gt;研發&lt;/li&gt;
+&lt;li&gt;廣告&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;也可用於遏制策略&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;價值鏈重構    &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;提供一種更便宜的產品&lt;ul&gt;
+&lt;li&gt;吸引的是對價格更敏感的買家，而不是購買現有企業產品的買家，所以主流顧客群不會被這個新產品吸引，因為它相對劣質&lt;/li&gt;
+&lt;li&gt;對於現有企業來說，這個舉動不太算威脅&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;隨著時間的推移，這個創新者帶著價格便宜的產品進入市場後，會改良產品，並從現有企業那裡佔去大量的市場份額，而現有企業，會感到應對困難，因為他們不能複製這個廉價商業模式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;柔道經濟策略  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;將對手的力量轉變為自己的優勢&lt;/li&gt;
+&lt;li&gt;低價進入市場 → 迫使現在企業損失 &lt;/li&gt;
+&lt;li&gt;Ph = 原價格, Pl = 新廠商價格, X = 原廠商規模, XE = 新廠商規模&lt;ul&gt;
+&lt;li&gt;同意進入的代價： Ph XE, 以降價遏制的代價： (Ph - Pl) X&lt;/li&gt;
+&lt;li&gt;對新入者有利的因素：市場規模↑, 新入者市場規模↑, 價格差距↑&lt;ul&gt;
+&lt;li&gt;對手愈大，愈不可能攻擊&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;利基市場（細分市場）  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;後來者只在利基市場開拓業務，使現有企業不能在其市場外進行反擊&lt;/li&gt;
+&lt;li&gt;在原廠商可以差別取價時會失敗(電信公司不行限定某城市降價，但航班可分航線計價)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;遏制策略&#34;&gt;&lt;a href=&#34;#遏制策略&#34; class=&#34;headerlink&#34; title=&#34;遏制策略&#34;&gt;&lt;/a&gt;遏制策略&lt;/h3&gt;&lt;p&gt;進入遏制策略   &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;改變後來者對於與現有企業競爭性質的預期&lt;/li&gt;
+&lt;li&gt;對於後來者，這些可以使得進入市場變得更難，吸引力變小&lt;/li&gt;
+&lt;li&gt;需付出一定的代價&lt;/li&gt;
+&lt;li&gt;遏制策略的種類：提高進入壁壘、掌握關鍵資源、提高技術領先性、提高轉換成本、承諾戰略&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;提高進入壁壘&lt;ul&gt;
+&lt;li&gt;如提高技術領先性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;承諾策略&lt;ul&gt;
+&lt;li&gt;承諾會打價格戰&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;積極定價策略&lt;ul&gt;
+&lt;li&gt;限制性定價&lt;ul&gt;
+&lt;li&gt;在他人&lt;strong&gt;進入市場前&lt;/strong&gt;即維持低價&lt;/li&gt;
+&lt;li&gt;告訴潛在競爭者，「這是個低利潤市場」的假象，或是「我是低成本廠商(競爭強)」&lt;/li&gt;
+&lt;li&gt;只在信息不完全時發揮作用(不可能維持低價太久)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;掠奪定價&lt;ul&gt;
+&lt;li&gt;對手&lt;strong&gt;進入市場後&lt;/strong&gt;，逼退後來者&lt;/li&gt;
+&lt;li&gt;在競爭中削減價格，甚至使定價低於邊際成本，目的仍是誘使競爭對手退出市場，或遏制將來的進入&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;先佔策略&lt;ul&gt;
+&lt;li&gt;通過代價高昂的行為，你可以阻止潛在競爭者進入市場&lt;ul&gt;
+&lt;li&gt;過度投資，使生產成本非常低&lt;/li&gt;
+&lt;li&gt;大量生產小差異產品(水平差異)，使潛在市場變小&lt;/li&gt;
+&lt;li&gt;過度展店，增加競爭強度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;研究與創新&#34;&gt;&lt;a href=&#34;#研究與創新&#34; class=&#34;headerlink&#34; title=&#34;研究與創新&#34;&gt;&lt;/a&gt;研究與創新&lt;/h2&gt;&lt;p&gt;三種研究  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;基礎研究(basic research)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;知識外溢 (Knowledge Spillover): 因為無法申請專利&lt;/li&gt;
+&lt;li&gt;導致了一個囚徒困境：但即使一個企業進行投資也可以獲益。基本研究主要由大學、公共實驗室以及企業網路進行，以此避免或解決囚徒困境的問題&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;應用研究(applied research)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;可申請專利的研究&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;產品生產(product development)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;產品創新 (Product Innovation)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;對現有產品 (Existing Product) 的改進，或是開發一項全新的產品，增加產品價值以提高用戶的支付意願&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;過程創新 (Process Innovation)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;為現有產品開發新生產過程，以減少生產成本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;突破性創新 (Drastic Innovation)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;突破性創新是指當企業創造了突破性的新產品時，可對市場進行壟斷。對於突破式創新，我們可以預見到市場情況，及結構都會完全改變&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;漸進式創新 (Incremental Innovation)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;輕微改變&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;企業創新的價值 = 創新時的利潤 - 無創新時的利潤  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;替代效應 (Replacement Effect)&lt;ul&gt;
+&lt;li&gt;替代效應表明對於給定的市場結構，&lt;strong&gt;壟斷企業的創新動機相對較小&lt;/strong&gt;，我們發在競爭市場中的創新價值，實際上要比壟斷市場中的創新價值更大&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;效率效應 (Efficiency Effect)&lt;ul&gt;
+&lt;li&gt;效率效應是指&lt;strong&gt;存在進入威脅時&lt;/strong&gt;，壟斷企業相比潛在進入企業，有更大的創新動力來阻撓競爭者進入市場&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;替代效應表明壟斷企業創新性不夠，因為新利潤會取代原有的利潤；效率效應表明壟斷企業有更大的創新性，因為它致力於保持自己的壟斷地位&lt;/li&gt;
+&lt;li&gt;威脅大的時候，效率效應&amp;gt;替代效應，反之&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;研發失敗，或被他人搶先  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;成功機率愈低，納許均衡偏向不研發&lt;/li&gt;
+&lt;li&gt;成功機率中等，納許均衡為其中一家研發&lt;/li&gt;
+&lt;li&gt;成功機率高，納許均衡偏向研發&lt;ul&gt;
+&lt;li&gt;後果可能是，損失此次創新帶來的部分利潤&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;風險中立 (Risk Neutral)  &lt;ul&gt;
+&lt;li&gt;只關心預期利潤 (Expected Profit)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;不同成功率與研發之間的關係    &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;一個成功率低，又有著高固定成本的項目，企業可能根本不會選擇開展&lt;/li&gt;
+&lt;li&gt;一個成功率中等的項目則會由率先選擇研發的企業進行，且該企業會試圖阻擾其他企業進入市場，當兩家企業在一個成功率中等的領域中處於競爭局勢時，我們可能看到兩家企業都將遭受損失&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;沉睡專利 (Sleeping Patent)   &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;企業申請與主要產品相近的創新成果的專利，但並不商業化的專利&lt;/li&gt;
+&lt;li&gt;先發制人，阻止潛在競爭者研發出與自身產品相似的競爭產品，減少競爭並保證現有產品的利潤&lt;/li&gt;
+&lt;li&gt;阻礙技術進步&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;合理設計產品&#34;&gt;&lt;a href=&#34;#合理設計產品&#34; class=&#34;headerlink&#34; title=&#34;合理設計產品&#34;&gt;&lt;/a&gt;合理設計產品&lt;/h2&gt;&lt;p&gt;伯特蘭德悖論 (Bertrand Paradox)的假設      &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;同樣產品&lt;/li&gt;
+&lt;li&gt;同樣地點&lt;/li&gt;
+&lt;li&gt;一次定價機會(只博弈一次)&lt;/li&gt;
+&lt;li&gt;市場完全透明&lt;/li&gt;
+&lt;li&gt;無限價格彈性 (Infinite Price Elasticity)：無論價格差多少，價格低的小販總會贏得消費者&lt;/li&gt;
+&lt;li&gt;不存在產能限制&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;兩家銷售相同產品的企業 最終會處於完全競爭的勢態，並且獲益為零&lt;/p&gt;
+&lt;h3 id=&#34;去除假設&#34;&gt;&lt;a href=&#34;#去除假設&#34; class=&#34;headerlink&#34; title=&#34;去除假設&#34;&gt;&lt;/a&gt;去除假設&lt;/h3&gt;&lt;p&gt;事實上的競爭不會如此激烈&lt;br&gt;一次定價、完全透明、不存在產能限制 → 不可能  &lt;/p&gt;
+&lt;p&gt;不同產品  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;垂直產品差異化 (Vertical Product Differentiation)&lt;ul&gt;
+&lt;li&gt;相同價格下 所有消費者都會選擇產品A，而不選產品B&lt;/li&gt;
+&lt;li&gt;品質、技術、耐用度、價值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;水平產品差異化 (Horizontal Product Differentiation)&lt;ul&gt;
+&lt;li&gt;相同價格下 有些消費者會選擇產品A，有些則會選擇產品B&lt;/li&gt;
+&lt;li&gt;品牌、品味、地點、時間&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;多數產品同時有兩種差異化&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;霍特林‧伯特蘭德模型 (Hotelling Bertrand Model)&lt;br&gt;海灘上小販A、B賣冰淇淋的水平差異化思考  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;兩個賣家間的距離則是產品的差異化程度&lt;/li&gt;
+&lt;li&gt;一個特定消費者的位置可解釋為消費者對產品的偏好&lt;/li&gt;
+&lt;li&gt;走路引發的不適感是損失效用&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;基本競爭戰略&#34;&gt;&lt;a href=&#34;#基本競爭戰略&#34; class=&#34;headerlink&#34; title=&#34;基本競爭戰略&#34;&gt;&lt;/a&gt;基本競爭戰略&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;成本領先 (Cost Leadership)&lt;ol&gt;
+&lt;li&gt;忽略那些無法讓你賺錢的消費者群體或利潤空間很小的消費者群體&lt;/li&gt;
+&lt;li&gt;需要避免邊際消費者,使管理領域的成本最小化&lt;/li&gt;
+&lt;li&gt;減少研發、客服、銷售人員以及廣告等方面的開支&lt;/li&gt;
+&lt;li&gt;可使用侵略性定價&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;產品差異化 (Product Differentiation)&lt;ol&gt;
+&lt;li&gt;向消費者提供產業中的獨特產品或服務&lt;/li&gt;
+&lt;li&gt;擁有高價值的品牌&lt;/li&gt;
+&lt;li&gt;提供頂尖技術或優質的客戶服務&lt;/li&gt;
+&lt;li&gt;擁有廣泛分佈 或有效的經銷商網路&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;集中化戰略 (Focus)&lt;ol&gt;
+&lt;li&gt;結合前兩個策略，並集中在一個特定的消費者群體、產品線或地理市場&lt;/li&gt;
+&lt;li&gt;更有效地針對目標群體提供服務,提供最佳的服務&lt;/li&gt;
+&lt;li&gt;利基市場可以達到低成本&lt;/li&gt;
+&lt;li&gt;根據這個細分市場採用低成本戰略或差異化戰略&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;進退兩難（stuck in middle）&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;三種戰略都失敗了（成本、產異化、集中化）&lt;ol&gt;
+&lt;li&gt;缺少決心和理念進行低成本競爭&lt;/li&gt;
+&lt;li&gt;沒有準備做差異化競爭的準備&lt;/li&gt;
+&lt;li&gt;缺少常莊差異化或低成本化的專注度，沒有瞄準一個細分市場&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;高階競爭策略&#34;&gt;&lt;a href=&#34;#高階競爭策略&#34; class=&#34;headerlink&#34; title=&#34;高階競爭策略&#34;&gt;&lt;/a&gt;高階競爭策略&lt;/h1&gt;&lt;h2 id=&#34;維護顧客群&#34;&gt;&lt;a href=&#34;#維護顧客群&#34; class=&#34;headerlink&#34; title=&#34;維護顧客群&#34;&gt;&lt;/a&gt;維護顧客群&lt;/h2&gt;&lt;p&gt;轉換成本  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;有些市場不能從初期消費者中獲利 &lt;img data-src=&#34;&#34; alt=&#34;&#34;&gt;，需要高轉換成本&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;直接轉換成本&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;新廠商的風險&lt;ul&gt;
+&lt;li&gt;尋找時間&lt;/li&gt;
+&lt;li&gt;可能較差&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;違約金&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;關係轉換成本(Relationship-Related Switching Costs)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;合作關係所累積的經驗&lt;ul&gt;
+&lt;li&gt;客製化產品&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;會員優惠&lt;/li&gt;
+&lt;li&gt;心理因素&lt;ul&gt;
+&lt;li&gt;與舊廠商關係良好&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;產品轉換成本(Product-Related Switching Costs)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;花時間習慣&lt;/li&gt;
+&lt;li&gt;互補品的轉換成本(PC → Mac充電器)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;消費者轉換條件：增加的效用 + 新廠商優惠 &amp;gt; 轉換成本&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;廠商願意提供的優惠 &amp;lt; 新消費者的利潤 - 轉換成本  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;廠商提高轉換成本  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;會員優惠&lt;ul&gt;
+&lt;li&gt;VIP&lt;/li&gt;
+&lt;li&gt;集點&lt;ul&gt;
+&lt;li&gt;有效期限&lt;/li&gt;
+&lt;li&gt;提供的獎勵對廠商成本低，但對消費者是昂貴的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;澇油水: 非自身出錢，如公司經費，但可拿到優惠&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;長期合約&lt;/li&gt;
+&lt;li&gt;提供互補品&lt;/li&gt;
+&lt;li&gt;提高服務品質&lt;/li&gt;
+&lt;li&gt;特定格式(.doc, sony的硬體, apple的itunes)，特定介面(OS)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;消費者減少轉換成本  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;開放標準產品(USB, 3.5mm耳機)&lt;/li&gt;
+&lt;li&gt;同時和多個廠商購買&lt;/li&gt;
+&lt;li&gt;用預期會產生的轉換成本來與廠商協商價格(下策)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;新廠商的策略  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;減少消費者轉換成本&lt;ul&gt;
+&lt;li&gt;協助轉換&lt;/li&gt;
+&lt;li&gt;優惠&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;增加產品效用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;定價&#34;&gt;&lt;a href=&#34;#定價&#34; class=&#34;headerlink&#34; title=&#34;定價&#34;&gt;&lt;/a&gt;定價&lt;/h2&gt;&lt;p&gt;價格歧視: 對不同消費者提供不同價格，以達到最大效用&lt;/p&gt;
+&lt;p&gt;一級價格歧視(完全價格歧視)    &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;對每個消費者提供不同價格&lt;/li&gt;
+&lt;li&gt;需要知道每個消費者願意支付的最高價格&lt;ul&gt;
+&lt;li&gt;一對一交涉&lt;/li&gt;
+&lt;li&gt;網路拍賣&lt;/li&gt;
+&lt;li&gt;如果網路商城可依照用戶喜好來提供價格？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;對消費者不公平 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;二級價格歧視     &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;公司提供不同購買選擇，消費者自己選擇&lt;ul&gt;
+&lt;li&gt;不必確認所有消費者資訊&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;非線性定價&lt;ul&gt;
+&lt;li&gt;數量折扣: 買愈多、折扣愈多&lt;/li&gt;
+&lt;li&gt;手機: 很多種資費標準&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;版本化&lt;ul&gt;
+&lt;li&gt;調整產品功能&lt;/li&gt;
+&lt;li&gt;飛機：頭等、經濟&lt;/li&gt;
+&lt;li&gt;簡易版軟體&lt;ul&gt;
+&lt;li&gt;成本反而較高，因為需要修改程式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;捆綁銷售&lt;ul&gt;
+&lt;li&gt;吸引只喜歡A或只喜歡B的消費者&lt;ul&gt;
+&lt;li&gt;降低消費者異質性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;可吸引更多有價值的消費者(願意付較多錢)&lt;/li&gt;
+&lt;li&gt;速食店單點只比套餐便宜一些&lt;/li&gt;
+&lt;li&gt;免運費: 對不同距離消費者的歧視&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;三級價格歧視    &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;對不同群體消費者收不同費用       &lt;ul&gt;
+&lt;li&gt;身份、地點、時間、工作、年齡&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;機場的食物&lt;/li&gt;
+&lt;li&gt;學生票&lt;/li&gt;
+&lt;li&gt;旺季旅遊&lt;/li&gt;
+&lt;li&gt;跨期定價  &lt;ul&gt;
+&lt;li&gt;跟據產品推出的時間收不同費用(遊戲、新書、新手機)&lt;ul&gt;
+&lt;li&gt;不適合耐用品(消費者會有降價的預期心理)&lt;/li&gt;
+&lt;li&gt;讓先買的消費者覺得不公平&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;直接價格歧視包括一級和三級價格歧視&lt;/p&gt;
+&lt;h2 id=&#34;競爭規則&#34;&gt;&lt;a href=&#34;#競爭規則&#34; class=&#34;headerlink&#34; title=&#34;競爭規則&#34;&gt;&lt;/a&gt;競爭規則&lt;/h2&gt;&lt;h3 id=&#34;競爭政策的安全地帶&#34;&gt;&lt;a href=&#34;#競爭政策的安全地帶&#34; class=&#34;headerlink&#34; title=&#34;競爭政策的安全地帶&#34;&gt;&lt;/a&gt;競爭政策的安全地帶&lt;/h3&gt;&lt;p&gt;完全競爭  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;企業就無差別產品展開競爭且基本上每個人的定價都等於邊際成本。消費者可以享受全部的消費者剩餘，即可以創造出的全部剩餘的最大值&lt;br&gt;卡特爾組織  &lt;/li&gt;
+&lt;li&gt;當存在壟斷企業或卡特爾組織時，這意味著要麼單一企業主導各自的市場，要麼幾家企業合力，表現得像一個單一的壟斷企業，會索取高於邊際成本的價格，造成無謂損失&lt;ul&gt;
+&lt;li&gt;壟斷企業或者卡特爾會獲得壟斷利潤，消費者剩餘被大幅蠶食，因為有消費者願意支付高於邊際成本的價格，卻不願意支付壟斷價格&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;競爭迫使企業生產更有效率，迫使企業用盡全力，通過差異化、創新、不斷提高效率，來盡力提高產品質量，卡特爾則相反    &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;卡特爾化允許企業犧牲消費者來賺取高額利潤&lt;/li&gt;
+&lt;li&gt;減少創新、降低產品質量、減少產品差異化&lt;/li&gt;
+&lt;li&gt;競爭大幅減少，使企業降低風險&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;反托拉斯(Anti-Trust)政策能保護消費者和企業不受卡特爾化的消極影響&lt;/p&gt;
+&lt;h3 id=&#34;競爭政策中的規定&#34;&gt;&lt;a href=&#34;#競爭政策中的規定&#34; class=&#34;headerlink&#34; title=&#34;競爭政策中的規定&#34;&gt;&lt;/a&gt;競爭政策中的規定&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;禁止卡特爾&lt;ol&gt;
+&lt;li&gt;限制或禁止競爭者之間或供應商和消費者之間，簽訂限制競爭的協議或契約&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;禁止濫用市場支配地位&lt;ol&gt;
+&lt;li&gt;防止企業變得過於強大，或者防止它們濫用自己的強大地位，損害消費者和其他競爭者的利益&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;控制企業合併&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;禁止卡特爾&#34;&gt;&lt;a href=&#34;#禁止卡特爾&#34; class=&#34;headerlink&#34; title=&#34;禁止卡特爾&#34;&gt;&lt;/a&gt;禁止卡特爾&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;要有確切證據&lt;/li&gt;
+&lt;li&gt;識別企業串謀行為&lt;ol&gt;
+&lt;li&gt;企業A和企業B同時提高或降低價格&lt;/li&gt;
+&lt;li&gt;企業劃分商品銷售區域&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;溝通、合作越好，就越容易形成卡特爾。對卡特爾有利的因素       &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;生產同質產品，公司會就此瞭解彼此的動態，使卡特爾更易維持&lt;/li&gt;
+&lt;li&gt;如果能監控價格和銷量，即存在技術方面的可預測性，市場季節性、瞭解成本構成等，要建立卡特爾就會更加容易&lt;/li&gt;
+&lt;li&gt;企業曾有實行過卡特爾的經驗&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;禁止濫用市場支配地位&#34;&gt;&lt;a href=&#34;#禁止濫用市場支配地位&#34; class=&#34;headerlink&#34; title=&#34;禁止濫用市場支配地位&#34;&gt;&lt;/a&gt;禁止濫用市場支配地位&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;怎樣評定一個公司是否正濫用權力？&lt;ol&gt;
+&lt;li&gt;定義相關市場&lt;ol&gt;
+&lt;li&gt;產品市場: 哪些產品和 (或) 服務是相似的？哪些產品之間存在競爭？&lt;/li&gt;
+&lt;li&gt;地域市場: 為了買一件商品消費者願意走多遠？換句話說 哪些地理區域是相關的？&lt;/li&gt;
+&lt;li&gt;消費者市場: 哪些消費者或消費者群體，有興趣購買某產品&lt;/li&gt;
+&lt;li&gt;假定壟斷者測試&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;接著評定該公司，是否真的在該市場佔據主導地位&lt;/li&gt;
+&lt;li&gt;看這個公司的行為，是否損害了競爭對手 (的利益) 或將其排除在了該特定市場以外&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;假定壟斷者測試(SSNIP)&lt;br&gt;一個假定壟斷者即HM，能否通過一個幅度不大但有意義的非臨時性提價來增加利潤。如果答案是不能獲益，那實際上假定壟斷者的利潤減少，即提高價格會導致利潤減少，這就意味著我們需要將最接近的替代品納入該市場，接著重複進行這一測試&lt;strong&gt;，如果一個假定壟斷者確實能通過提高價格增加利潤，我們就正確地界定了相關市場&lt;/strong&gt;。基本上這個測試會反覆進行，直到你正確地定義了市場為止。&lt;br&gt;&lt;strong&gt;市場上活躍的公司數量，並且假定它們都被一家公司所取代，被一個壟斷者取代，如果該壟斷者能通過提高價格增加利潤，那麼我們所看到的就是市場的正確定義。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;阻止公司擴張或是增加利潤的兩個力量  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;需求方替代品: 如果你提高價格，人們就會買別的產品&lt;/li&gt;
+&lt;li&gt;供給方替代品: 如果你開始提價，其他企業或競爭者將會進入市場&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;衡量市場集中度   &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;企業數量的倒數&lt;/li&gt;
+&lt;li&gt;前N家最大企業所佔市場份額的總和&lt;/li&gt;
+&lt;li&gt;赫芬達爾—赫希曼指數(HHI)&lt;ol&gt;
+&lt;li&gt;取某一行業中所有公司的市場份額，求得每一個份額的平方值，最後再將所有平方值相加，計算得出的結果都將介於零到一萬之間，零基本意味著市場上小公司的數量無限，而一萬則是只有一個壟斷者時的HHI指數，兼併及競爭管理機構常常將這一指數作為參考&lt;/li&gt;
+&lt;li&gt;HHI的值的意義  &lt;ol&gt;
+&lt;li&gt;&amp;lt;1000: 可接受&lt;/li&gt;
+&lt;li&gt;1000~1800: 兼併可能會被允許，但或許會被要求附上一些條件&lt;/li&gt;
+&lt;li&gt;&lt;blockquote&gt;
+&lt;p&gt;1800: 兼併時會在許多細節上被深入調查&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;市場圈定  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;處於市場支配地位時，使其他公司難以進入市場並改變現狀的行為就稱作市場圈定&lt;/li&gt;
+&lt;li&gt;任何&lt;strong&gt;鞏固現有市場結構的行為&lt;/strong&gt;，都可以被視為是一種市場圈定&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;獨佔交易: 企業通過擬定採購合約 來阻止其他人，向競爭對手銷售或購買產品&lt;ol&gt;
+&lt;li&gt;以加油站為例，同品牌的加油站只向相同的供應商購買汽油&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;搭售: 當企業售賣一件具有市場影響力的產品時，要求消費者購買第二件沒有市場影響力的產品&lt;ol&gt;
+&lt;li&gt;在美國買蘋果手機，必須與AT&amp;amp;T簽約入網&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;捆綁銷售: 其中只有一件擁有市場勢力，但你給捆綁購買這些產品的消費者提供折扣(搭售沒有折扣)&lt;ol&gt;
+&lt;li&gt;一首熱門歌曲收入在一個專輯，想買必須買這個專輯&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;掠奪性定價: 即先設定一個會讓你在短期內遭受損失的價格，但是從長遠來看，可以把競爭對手趕出市場並獲得壟斷利潤&lt;/li&gt;
+&lt;li&gt;拒絕交易: 對下游競爭性行業的壟斷。拒絕向競爭對手提供關鍵投入或接口，或者出售投入的價格，會使競爭對手無法營利&lt;ol&gt;
+&lt;li&gt;微軟捆綁播放器，但對對手開放接口少，對手無法開發更好的播放器&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;成為壟斷企業並不違法，真正違法的是濫用壟斷地位&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;提高收益&#34;&gt;&lt;a href=&#34;#提高收益&#34; class=&#34;headerlink&#34; title=&#34;提高收益&#34;&gt;&lt;/a&gt;提高收益&lt;/h2&gt;&lt;p&gt;網路商品定義   &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;消費外部性為正: 如果有其他人加入我的網路，我就能得到額外效用&lt;/li&gt;
+&lt;li&gt;臨界規模: 當網路小於一定規模時，就無法持續&lt;/li&gt;
+&lt;li&gt;存在兼容性以及標準問題: 存在轉換成本，並且消費者常常會被鎖定在特定的網路中&lt;ol&gt;
+&lt;li&gt;這一特性並非為網路市場所獨有，但在網路市場常見&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;集中化市場結構: 通常只有一個贏家&lt;/li&gt;
+&lt;li&gt;顯著的規模經濟: 使用的人愈多，平均成本愈低&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;大規模的優勢  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;使企業的繼續擴大更容易&lt;/li&gt;
+&lt;li&gt;成本將不斷降低，盈利會增加&lt;/li&gt;
+&lt;li&gt;梅特卡夫定律 (Metcalfe’s Law)&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;直接&lt;/strong&gt;的網路效應: &lt;strong&gt;潛在使用次數&lt;/strong&gt;和&lt;strong&gt;使用人數的指數&lt;/strong&gt;呈正相關&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;擴散  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;一項新技術一經推出，並不會立刻被整個市場採用&lt;/li&gt;
+&lt;li&gt;新用戶的加入會是一個相當緩慢的過程&lt;/li&gt;
+&lt;li&gt;事實上，擴散會以S型進行: 起初擴散很慢，中期擴散很快，之後又逐漸放緩&lt;ol&gt;
+&lt;li&gt;達到某個臨界數量(效用)時，許多人會開始使用(中期)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;效用函數  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;獨立價值 a、使用人數 n、網路效應的強度 α  &lt;/li&gt;
+&lt;li&gt;U = a + n^α&lt;ol&gt;
+&lt;li&gt;n 和 α 影響最大&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;加上不同使用者的效用&lt;ol&gt;
+&lt;li&gt;先驅: 認為 a 很大&lt;/li&gt;
+&lt;li&gt;中期採用者: 和一般假設相同(大多數的人是中期採用)&lt;/li&gt;
+&lt;li&gt;晚期採用者: 認為 a 小&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;間接的網路效應  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;兼容產品&lt;/strong&gt;: 即效用互相依賴於其他產品的用戶數量&lt;ul&gt;
+&lt;li&gt;遊戲機和遊戲&lt;/li&gt;
+&lt;li&gt;信用卡和採用信用卡的店家&lt;/li&gt;
+&lt;li&gt;互補產品越多意味著用戶越多，而用戶越多也意味著互補產品越多&lt;/li&gt;
+&lt;li&gt;消費者所看到的是整個互補品組合&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;網路行業中的市場結構   &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;網路效應很強且消費者異質性小，很有可能會出現壟斷&lt;/li&gt;
+&lt;li&gt;網路效應略弱但消費者異質性大的市場，一個公司佔據支配地位，但其他利基公司也可以生存&lt;/li&gt;
+&lt;li&gt;弱網路效應和高消費者異質性，沒有單一企業可以佔據支配地位&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;橫向企業邊界&#34;&gt;&lt;a href=&#34;#橫向企業邊界&#34; class=&#34;headerlink&#34; title=&#34;橫向企業邊界&#34;&gt;&lt;/a&gt;橫向企業邊界&lt;/h3&gt;&lt;p&gt;橫向企業邊界: 企業能以多大的規模進行生產經營&lt;/p&gt;
+&lt;p&gt;規模經濟: 生產一種產品的平均成本, 會隨著&lt;strong&gt;產量&lt;/strong&gt;的增加而降低  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;固定成本: 生產過程中有些投入必須達到最低要求(機器): 提高產量最終能將固定成本分攤給更多份產品&lt;/li&gt;
+&lt;li&gt;庫存: 指的是一個公司會有一定量的存貨: 大公司庫存量對銷量的比例可以更小，因為大公司的需求較為穩定&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;學習型經濟: 指生產某個產品的平均成本隨著&lt;strong&gt;累積產量&lt;/strong&gt;的增加而降低  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;昨天的產量,會決定今天的生產效率    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;範圍經濟: 由同一主體生產和提供&lt;strong&gt;不同的產品和服務&lt;/strong&gt;，能夠節約成本   &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;品牌保護傘: 因為當你推出一項新產品，基本上是將品牌下所有產品的聲譽作為賭注。新產品必須符合現有品牌口碑的優質產品，否則將損害新產品和原有產品的價值和聲譽&lt;/li&gt;
+&lt;li&gt;聯合採購: 如果你購買的產品數量較高，單價就會降低&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;可能阻礙規模經濟和範圍經濟的因素(規模不經濟、範圍不經濟)   &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;勞動力成本&lt;ol&gt;
+&lt;li&gt;較大的公司最後往往要支付更高的工資&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;更多管理、溝通的浪費&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;供應商與採購商的關係&lt;br&gt;2. 外購&lt;br&gt;    1. 製造規模經濟，減少成本&lt;br&gt;    2. 固定成本轉換成可變成本&lt;br&gt;    3. 分散風險&lt;br&gt;    4. 增加競爭(自己設立的工廠沒有競爭壓力)&lt;br&gt;3. 自製&lt;br&gt;    1. 避免交易成本：尋找廠商、合約&lt;br&gt;    2. 可以隨意調整產品&lt;br&gt;    2. 避免被敲竹槓&lt;/p&gt;
+&lt;h2 id=&#34;適用於網路市場的策略&#34;&gt;&lt;a href=&#34;#適用於網路市場的策略&#34; class=&#34;headerlink&#34; title=&#34;適用於網路市場的策略&#34;&gt;&lt;/a&gt;適用於網路市場的策略&lt;/h2&gt;&lt;p&gt;網路市場中的競爭  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;你需要確保達到臨界規模(Critical Mass)&lt;ol&gt;
+&lt;li&gt;達到臨界規模會發生滾雪球效應(中期使用者快速增加)&lt;/li&gt;
+&lt;li&gt;贏得早期採用者以推廣&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;決定臨界規模的因素   &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;足夠大的用戶基數&lt;/li&gt;
+&lt;li&gt;足夠強的網路效應&lt;/li&gt;
+&lt;li&gt;足夠低的價格使市場擴散得以自我維持&lt;ol&gt;
+&lt;li&gt;自我維持: 沒有改變產品的情況下，網路中就會湧入更多的使用者，因為效用越來越高&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;加速到達臨界規模   &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;提高對網路效應的預期&lt;ol&gt;
+&lt;li&gt;利用信譽（自身信譽、或者與他人聯合借用合作夥伴信譽）&lt;ol&gt;
+&lt;li&gt;擁有已經成功的技術&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;宣傳(廣告)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;打破現有技術在市場中的鎖定效應&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;提前宣佈: 消費者可能願意等到這個新產品上市，再做購買決定&lt;ol&gt;
+&lt;li&gt;高科技市場常見的做法&lt;/li&gt;
+&lt;li&gt;太晚上市的話會減低消費者信心(暗黑3是例外…)&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;霧件：已經宣佈但從未實現的商品…&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;減低消費者被失敗技術鎖定的風險&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;提前簽訂合約，讓潛在顧客知道，有許多其他用戶已經決定採用新技術了，預期效用增加&lt;/li&gt;
+&lt;li&gt;提供早期採用者適當的折扣&lt;/li&gt;
+&lt;li&gt;讓消費者租賃，萬一不成功可以退貨&lt;/li&gt;
+&lt;li&gt;授權新技術給其他廠商。作為取得勝利或避免標準之爭的方法。可確保新技術提供商的數量充足&lt;ol&gt;
+&lt;li&gt;新技術授權的優勢對發起者來說同樣重要&lt;ol&gt;
+&lt;li&gt;新技術的發起者能規定技術細節&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;網路市場中的策略&#34;&gt;&lt;a href=&#34;#網路市場中的策略&#34; class=&#34;headerlink&#34; title=&#34;網路市場中的策略&#34;&gt;&lt;/a&gt;網路市場中的策略&lt;/h3&gt;&lt;p&gt;兼容性   &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;完全兼容: 不同品牌按同一標準運作&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;電信業者  &lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;向後兼容: 如果新型號能兼容舊型號，反之卻不行&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;DVD、CD&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;單向兼容: 一種標準或技術能使用另一個，而後者不能使用前者&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;部分兼容: 如果產品可交互操作，他們就是部分兼容&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;性能可能降低 或 必須負擔一定費用&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;法定標準。通過法律或組織制定的標準，以避免消費者的不確定和困惑&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;事實標準，由一個公司所指定的標準，或是經由市場勢力處於主導地位的標準，也就是標準被廣泛使用，而不是獲得標準制定組織或政府認可。市場可能選擇的技術，優先於官方、標準制定組織和立法者&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;標準選擇可能出現納許均衡：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;各選各的標準(可能相同，可能不同)&lt;ol&gt;
+&lt;li&gt;不相上下 (Tweedledum and Tweedledee): 傾向多個標準競爭&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aC53aWtpcGVkaWEub3JnL3dpa2kvJUU2JTgwJUE3JUU1JTg4JUFCJUU2JTg4JTk4&#34;&gt;性別戰&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt; （Battle of sexes）: 傾向用共同標準，先採取行動者有優勢&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;一方兼容策略(惱人小弟策略），A傾向於有一個共同標準，可以理解為小弟總想跟隨大哥，但是公司B也就是我們說的「大哥」，希望存在兩個標準&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;產生共同標準  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;低價授權&lt;/li&gt;
+&lt;li&gt;混合標準(能同時使用多種標準)&lt;/li&gt;
+&lt;li&gt;標準的開發轉移到第三方&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;目標市場&#34;&gt;&lt;a href=&#34;#目標市場&#34; class=&#34;headerlink&#34; title=&#34;目標市場&#34;&gt;&lt;/a&gt;目標市場&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;爭取到有影響力的採用者&lt;ol&gt;
+&lt;li&gt;透過自己的聲望或社會影響力來帶動別的用戶，他們的影響力也能提高產品的知名度，有影響力的採用者自己也有可能構成臨界規模&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;就是對盜版商睜一隻眼閉一隻眼。網路規模可以來自合法消費者，也能來自盜版商。無視盜版可能比死守知識產權更能盈利，如：學生使用盜版軟件&lt;ol&gt;
+&lt;li&gt;為何不降價？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;定價策略&#34;&gt;&lt;a href=&#34;#定價策略&#34; class=&#34;headerlink&#34; title=&#34;定價策略&#34;&gt;&lt;/a&gt;定價策略&lt;/h3&gt;&lt;p&gt;通常網路產品有進入市場的沉沒成本，固定成本高，邊際成本低，使定價有很大的靈活性，因此，成本導向定價當然也就沒多大意義&lt;br&gt;價值導向定價: 設定的價格，反映了商品對於消費者的價值，而不是生產的成本&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;網路商品定價應有利於商品擴散，希望早期建立足夠大的用戶基數&lt;/li&gt;
+&lt;li&gt;強網路效應，意味著消費者會有更大的支付意願&lt;/li&gt;
+&lt;li&gt;價格歧視策略。對支付意願低的消費者提供&lt;strong&gt;免費版本&lt;/strong&gt;，以增加用戶基數。意味著對專業用戶可以收更高的費用&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;滲透定價&lt;ul&gt;
+&lt;li&gt;意味著在早期階段，通過收取低價來建立用戶基數，當用戶基數的上升使得消費者認定的價值提高，才開始提高價格&lt;/li&gt;
+&lt;li&gt;價格則隨著時間推移而上漲&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;撇脂定價&lt;ul&gt;
+&lt;li&gt;價格隨著時間推移而下降&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;借助合作夥伴實現增長&#34;&gt;&lt;a href=&#34;#借助合作夥伴實現增長&#34; class=&#34;headerlink&#34; title=&#34;借助合作夥伴實現增長&#34;&gt;&lt;/a&gt;借助合作夥伴實現增長&lt;/h2&gt;&lt;p&gt;併購的趨勢&lt;br&gt;1.許多公司會在同一時間內進行兼併&lt;br&gt;2.併購的數量和交易額增長&lt;/p&gt;
+&lt;p&gt;兼併（merger）   &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;對等合併: 兩家規模相當的公司，決定進行聯營並共享產權，它們合併後成為一個新的法律實體&lt;ul&gt;
+&lt;li&gt;兼併雙方的股票通常都會撤市，取而代之的是新公司的股票&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;真正的對等兼併其實並不常見，但通常名義上還是宣稱對等，為什麼？因為這能打消員工的一些擔憂，使他們不用擔心。如：在一家公司接管另一家後，自己的職位及工作岌岌可危，諸如此類。但在現實中，常常有一方略強於另一方，因此對一些事情有決定權，比如：誰來就任新公司的首席執行官，新公司開展什麼項目。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;收購(acquisition)&lt;br&gt;指的是公司從一開始就不對等，所以這裡就有一個收購方和一個目標公司，收購方將吞併目標公司，也就是說，它是這場收購中更強大的一方，而目標公司則是較弱的一方&lt;/p&gt;
+&lt;p&gt;兼併方和收購方的目標可分為  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;橫向兼併: 兼併競爭者&lt;ol&gt;
+&lt;li&gt;如果從市場中少了一家公司，競爭就會被削弱，壯大自己就能降低成為併購目標的風險&lt;/li&gt;
+&lt;li&gt;提高談判能力&lt;/li&gt;
+&lt;li&gt;生產有關的優勢：能夠推行更先進的生產技術、可以實現規模經濟和範圍經濟、推行新技術、通過兼併獲得小公司的新技術&lt;/li&gt;
+&lt;li&gt;市場有關的優勢：可以獲得其他公司的新產品、進入新的產品市場、比建立一個品牌更便宜地擁有一個品牌、獲得渠道、降低交易成本等&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;縱向兼併: 兼併供應商或買家&lt;ol&gt;
+&lt;li&gt;降低交易成本&lt;/li&gt;
+&lt;li&gt;獲得對上下游資源的控制&lt;/li&gt;
+&lt;li&gt;提高進入壁壘&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;混合兼併: 兼併和目前事業無關的公司&lt;ol&gt;
+&lt;li&gt;得不到市場優勢，也得不到生產和競爭方面的優勢&lt;/li&gt;
+&lt;li&gt;可以分散風險&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;公司被收購獲得的好處  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;對公司來說,這也許是一個解決財務問題的方法&lt;/li&gt;
+&lt;li&gt;使你處於更佳的競爭地位&lt;/li&gt;
+&lt;li&gt;也許還是重組公司的一個契機&lt;/li&gt;
+&lt;li&gt;增加投資&lt;/li&gt;
+&lt;li&gt;沒有繼承人的情況下，賣掉公司也許是確保公司存活，並擁有傑出的管理層最簡單的方法&lt;/li&gt;
+&lt;li&gt;經常有些意見相左的大股東，通過賣掉公司來解決分歧，通常比不斷嘗試協調股東之間的不同利益等容易的多&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;併購過程  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;找到與我們戰略目標一致的目標公司&lt;ol&gt;
+&lt;li&gt;考慮的是收購方與目標公司之間的相關程度和相符程度，包括：戰略＼產品組合(加強或互補)＼管理風格＼核心市場＼核心能力(優勢)是否互補匹配&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;盡職調查，確定潛在協同效應的步驟。將從財務和法律兩方面進行分析，並對潛在目標公司進行戰略分析，是否真的能夠幫助我們實現戰略目標？&lt;/li&gt;
+&lt;li&gt;交易開始。一旦敲定了價格(通常會高於市場價值)，要進行明確融資策略，如現金實現、股票互換、貸款、追加公司資本&lt;/li&gt;
+&lt;li&gt;兼併後整合(最麻煩的步驟)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;併購的協同效應  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;規模經濟&lt;/li&gt;
+&lt;li&gt;市場勢力的增加&lt;/li&gt;
+&lt;li&gt;分散風險&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;雙方之間的協同效應並不會從天而降，還需要經過深思熟慮的整合行為&lt;/p&gt;
+&lt;p&gt;企業合併控制: 監管大型企業兼併的過程，旨在阻止那些會極大削弱競爭，並最終會使公司佔據支配地位的交易  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;評估&lt;ol&gt;
+&lt;li&gt;界定產品市場&lt;/li&gt;
+&lt;li&gt;計算出幾家參與併購公司的市場份額&lt;/li&gt;
+&lt;li&gt;判斷是否會出現壟斷行為&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;兼併後的蜜月期——兼併後整合  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;儘可能地整合併購企業，或許能完全實現預期的兼併協同效應，整合程度越高，就越有可能完全實現這一協同效應&lt;/li&gt;
+&lt;li&gt;併購綜合症: 被收購的企業，其管理層的更替率可能相當高，因為他們被要求改變辦事方式，被要求交出之前的權力，他們可能因此感到極為失望並離職，發生這種事也有可能影響普通員工，他們可能會以怠慢工作，或冷淡對待工作來表現負面情緒&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;兼併後整合模式  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;控股公司——如果被收購企業的自治需求不高，也不急於進行戰略整合&lt;ol&gt;
+&lt;li&gt;並不存在一個整合計畫。實際整合的部分，只包括了財務轉移、風險分擔以及綜合管理能力等方面。其他基本保持獨立&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;保留型模式——如果被併購企業的自治需求高，但對戰略整合的需求不高&lt;ol&gt;
+&lt;li&gt;在這種情況下實行整合或者是過度整合，都有可能不利於兼併的成功，應適當放寬對被收購企業的管理，即不對其進行太大的整改——只透過投資而非直接管理來創造價值&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;吸收型模式——當目標企業的自治需求低，且急於進行戰略整合&lt;ol&gt;
+&lt;li&gt;把企業拉向彼此，問題不在於是否整合，而是如何整合？以及何時整合？也就是要找到整合的最佳時機，儘可能減少僱員特別是核心員工上的麻煩&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;共生關係——如果企業自治需求高的同時 對戰略整合的需求也高（最為複雜的模式）&lt;ol&gt;
+&lt;li&gt;先讓兩家企業共存，然後逐漸整合。可以說是一種合作夥伴式的整合過程&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;追求協同效應過程中常見失敗因素  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;兼併的結果就是競爭可能會越發激烈，而不是減弱&lt;/li&gt;
+&lt;li&gt;管理層人員本應做出調整，卻堅持固有想法時&lt;/li&gt;
+&lt;li&gt;固有價值被破壞，員工失去士氣&lt;/li&gt;
+&lt;li&gt;核心人員可能會離職&lt;/li&gt;
+&lt;li&gt;收購方以及被收購方各自都有非常明確的使命，新企業也要找到自己的使命，如果沒有一位能指明方向的領導人，便可能會產生問題&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;真正成功的兼併少之又少，原因有多    &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;對於成功有不同的評判標準，如股票沒有沒跑贏大盤&lt;/li&gt;
+&lt;li&gt;兼併過程中每一步都可能出錯&lt;/li&gt;
+&lt;li&gt;併購可能出於管理層的私人利益&lt;ol&gt;
+&lt;li&gt;管理一個更大的企業會給他們帶來社會地位、獲得更高收入等&lt;/li&gt;
+&lt;li&gt;兼併帶來的股票上漲，給目標公司前股東帶來了收益&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;有機增長&#34;&gt;&lt;a href=&#34;#有機增長&#34; class=&#34;headerlink&#34; title=&#34;有機增長&#34;&gt;&lt;/a&gt;有機增長&lt;/h2&gt;&lt;p&gt;小公司的限制  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;獲得廉價資本方面受限&lt;/li&gt;
+&lt;li&gt;研發能力也會受到限制&lt;/li&gt;
+&lt;li&gt;很難找到專利技術的替代品&lt;/li&gt;
+&lt;li&gt;更難維持能滿足顧客需求的一定規模的銷售組織&lt;/li&gt;
+&lt;li&gt;沒有大公司那樣的廣告影響力&lt;/li&gt;
+&lt;li&gt;沒有掌控供應商的能力&lt;/li&gt;
+&lt;li&gt;無法通過多個市場經營分散風險&lt;/li&gt;
+&lt;li&gt;無法承受進入新市場的高額成本&lt;/li&gt;
+&lt;li&gt;無法應用更多元化的管理能力和技術能力，即：管理經濟、規模經濟、範圍經濟&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;有機增長  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;公司依靠創新、新產品和服務、客戶增長等核心業務拓展而帶來的增長&lt;ul&gt;
+&lt;li&gt;企業早期階段，&lt;strong&gt;建立新市場、開發新產品&lt;/strong&gt;的時候，有機增長是最常見、最普遍的增長方式&lt;/li&gt;
+&lt;li&gt;有機(內部)增長的過程通常也比無機增長(依頼外力的成長，如收購)要慢  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;增長方式&lt;ol&gt;
+&lt;li&gt;獲得新顧客，即擴大消費族群&lt;/li&gt;
+&lt;li&gt;增加現有產品和服務的銷量&lt;/li&gt;
+&lt;li&gt;推出新產品和服務&lt;/li&gt;
+&lt;li&gt;進入新的區域市場，實行多樣化經營&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;產品\市場&lt;/th&gt;
+&lt;th&gt;存在&lt;/th&gt;
+&lt;th&gt;新的&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;存在&lt;/td&gt;
+&lt;td&gt;保護/建造&lt;/td&gt;
+&lt;td&gt;生產/開發&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;新的&lt;/td&gt;
+&lt;td&gt;市場開發&lt;/td&gt;
+&lt;td&gt;多樣化&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;保護/建造: 穩固、保護市場地位&lt;/li&gt;
+&lt;li&gt;生產/開發: 針對市場推出新產品，引入新的競爭力&lt;/li&gt;
+&lt;li&gt;市場開發: 尋找新的市場、新的定位，如果核心模塊是產品相關的，這是一個好策略&lt;/li&gt;
+&lt;li&gt;多樣化: 超出預期，新開發的產品，新的市場都不是熟悉的，風險最高 &lt;ul&gt;
+&lt;li&gt;基於品牌忠誠度的水平多樣化&lt;/li&gt;
+&lt;li&gt;基於產品分類的生產過程或者技術多樣化&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;發展的外部限制  &lt;ol&gt;
+&lt;li&gt;缺少資源（產品和市場因素）：資金、勞動力、特定自然資源、技術、專利、商機&lt;ol&gt;
+&lt;li&gt;這些是固定因素，無法改變&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;領導者需要深刻的洞察力、想像力、管理技巧等&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;發展的內部限制  &lt;ol&gt;
+&lt;li&gt;管理能力不足&lt;/li&gt;
+&lt;li&gt;管理不經濟(需要更多人管理)&lt;/li&gt;
+&lt;li&gt;結構不適（strutural misfit)：有些結構難以改變&lt;ol&gt;
+&lt;li&gt;需要結構成長以避免(簡單、功能型、多部門)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;不確定性和風險&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;管理限制（managerial limits, penrose, 1995)  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;一段時間內的計畫總量，限制了你在下個時期可以吸收的新員工的數量&lt;/li&gt;
+&lt;li&gt;公司需要很多計畫，才能實現增長&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;典型的組織結構發展: 因為銷售增長，為了解決協調和控制問題而調整結構&lt;br&gt;簡單結構（一個管理者和一些員工） → 功能型結構(分部門) → 多部門結構（按產品或地區設立事業部）&lt;/p&gt;
+&lt;h3 id=&#34;國際化策略&#34;&gt;&lt;a href=&#34;#國際化策略&#34; class=&#34;headerlink&#34; title=&#34;國際化策略&#34;&gt;&lt;/a&gt;國際化策略&lt;/h3&gt;&lt;p&gt;兩種壓力，四種維度    &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;成本降低壓力&lt;/li&gt;
+&lt;li&gt;適應本地市場壓力&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;全球化戰略（global strategy）&lt;ol&gt;
+&lt;li&gt;面臨高效率的壓力，全球一體化的要求很高，為了降低成本，更注重效率而不是滿足當地需求，如：微軟、保潔&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;多國本地化策略（multidomestic strategy)&lt;ol&gt;
+&lt;li&gt;適應本地市場壓力高，對適應當地市場的要求很高，但降低成本的壓力則相當小；如：MTV&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;跨國戰略（transnational strategy)&lt;ol&gt;
+&lt;li&gt;兩種壓力都大，統一品牌，適當本地化，適應當地市場，以及全球一體化的要求都很高，最難實施。如：麥當勞、肯德基等&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;國際化戰略（International strategy）&lt;ol&gt;
+&lt;li&gt;降低成本的壓力和適應當地的壓力都較小，又可以稱為出口戰略，如：特產、衣服、家具等&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+        <category term="經濟學" />
+        <category term="策略" />
+        <category term="競爭" />
+        <category term="博弈論" />
+        <updated>2015-08-31T07:38:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://gitqwerty777.github.io/header-file-tips/</id>
+        <title>標頭檔(header)與include</title>
+        <link rel="alternate" href="http://gitqwerty777.github.io/header-file-tips/"/>
+        <content type="html">&lt;p&gt;本文整理自 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5jcGx1c3BsdXMuY29tL2ZvcnVtL2FydGljbGVzLzEwNjI3Lw==&#34;&gt;headers and includes: why and how&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+&lt;h2 id=&#34;Why-we-need-header-files&#34;&gt;&lt;a href=&#34;#Why-we-need-header-files&#34; class=&#34;headerlink&#34; title=&#34;Why we need header files&#34;&gt;&lt;/a&gt;Why we need header files&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;speeds up compile time&lt;ul&gt;
+&lt;li&gt;if everything is in a single file, then everything must be fully recompiled every time you make any little change&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;keeps your code more organized&lt;ul&gt;
+&lt;li&gt;easier to find the code you are looking for&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;allows you to separate interface from implementation&lt;ul&gt;
+&lt;li&gt;make the interface visible to other .cpp files, while keeping the implementation in its own .cpp file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Compile Process  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;compiler generates intermediate files(object file) for each compiled source file&lt;ol&gt;
+&lt;li&gt;compiler will “replace” the #include line with the actual contents of the file you’re including when it compiles the file&lt;/li&gt;
+&lt;li&gt;files with header extensions might be ignored by the compiler if you try to compile them&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;then links all the object files together, which generates the final binary&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// in myclass.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;MyClass&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;foo&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; bar;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// in myclass.cpp&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;myclass.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;MyClass::foo&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//in main.cpp&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;myclass.h&#34;&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;// defines MyClass&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  MyClass a; &lt;span class=&#34;comment&#34;&gt;// no longer produces an error, because MyClass is defined&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Header files should use a .h__ extension (.h / .hpp / .hxx). Which of those you use doesn’t matter&lt;/li&gt;
+&lt;li&gt;C++ Source files should use a .c__ extention (.cpp / .cxx / .cc). Which of those you use doesn’t matter&lt;/li&gt;
+&lt;li&gt;C Source files should use .c (.c only)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;header files are #included and not compiled, whereas source files are compiled and not #included&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The one exception is that it is sometimes (although very rarely) useful to include a source file. This scenario has to do with instantiating templates and is outside the scope of this article&lt;/p&gt;
+&lt;h2 id=&#34;Include-guards&#34;&gt;&lt;a href=&#34;#Include-guards&#34; class=&#34;headerlink&#34; title=&#34;Include guards&#34;&gt;&lt;/a&gt;Include guards&lt;/h2&gt;&lt;p&gt;include multiple times of the same code would cause error  &lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// myclass.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;MyClass&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;DoSomething&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123; &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// main.cpp&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;myclass.h&#34;&lt;/span&gt;   &lt;span class=&#34;comment&#34;&gt;// define MyClass&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;myclass.h&#34;&lt;/span&gt;   &lt;span class=&#34;comment&#34;&gt;// Compiler error - MyClass already defined&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;There’s an Implicit Example &lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// x.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;X&lt;/span&gt; &amp;#123;&lt;/span&gt; &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// a.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;x.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;A&lt;/span&gt; &amp;#123;&lt;/span&gt; X x; &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// b.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;x.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;B&lt;/span&gt; &amp;#123;&lt;/span&gt; X x; &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// main.cpp&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;a.h&#34;&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;// also includes &#34;x.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;b.h&#34;&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;// includes x.h again!  ERROR&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Because of this scenario, many people are told not to put #include in header files. However this is bad advice and you should not listen to it, But remember  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Only #include things you need to include&lt;/li&gt;
+&lt;li&gt;Guard against incidental multiple includes with include guards&lt;ol&gt;
+&lt;li&gt;skipping over the entire header if it was already included&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//x.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;ifndef&lt;/span&gt; __X_H_INCLUDED__   &lt;span class=&#34;comment&#34;&gt;// if x.h hasn&#39;t been included yet...&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;define&lt;/span&gt; __X_H_INCLUDED__   &lt;span class=&#34;comment&#34;&gt;//   #define this so the compiler knows it has been included&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;X&lt;/span&gt; &amp;#123;&lt;/span&gt; &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;endif&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;The-“right-way”-to-include&#34;&gt;&lt;a href=&#34;#The-“right-way”-to-include&#34; class=&#34;headerlink&#34; title=&#34;The “right way” to include&#34;&gt;&lt;/a&gt;The “right way” to include&lt;/h2&gt;&lt;p&gt;aware of following dependencies   &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;stuff that can be forward declared&lt;/li&gt;
+&lt;li&gt;stuff that needs to be #included&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Dedepency that should be used  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;do nothing if&lt;ul&gt;
+&lt;li&gt;A makes no references at all to B&lt;/li&gt;
+&lt;li&gt;The only reference to B is in a friend declaration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;forward declare B if&lt;ul&gt;
+&lt;li&gt;A &lt;strong&gt;contains&lt;/strong&gt; a B &lt;strong&gt;pointer or reference&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;B* myb, B&amp;amp; myb&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;function has B object/pointer/reference as &lt;strong&gt;parementer or return type&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;B MyFunction(B myb)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;include “b.h” if&lt;ul&gt;
+&lt;li&gt;B is a &lt;strong&gt;parent class&lt;/strong&gt; of A&lt;/li&gt;
+&lt;li&gt;A &lt;strong&gt;contains&lt;/strong&gt; a B object&lt;ul&gt;
+&lt;li&gt;B myb&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;myclass.h&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//=================================&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// include guard&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;ifndef&lt;/span&gt; __MYCLASS_H_INCLUDED__&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;define&lt;/span&gt; __MYCLASS_H_INCLUDED__&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//=================================&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// forward declared dependencies&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Foo&lt;/span&gt;;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Bar&lt;/span&gt;;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//=================================&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// included dependencies&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&amp;lt;vector&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;parent.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//=================================&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// the actual class&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;MyClass&lt;/span&gt; :&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; Parent  &lt;span class=&#34;comment&#34;&gt;// Parent object, so #include &#34;parent.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;built_in&#34;&gt;std&lt;/span&gt;::&lt;span class=&#34;built_in&#34;&gt;vector&lt;/span&gt;&amp;lt;&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;&amp;gt; avector;    &lt;span class=&#34;comment&#34;&gt;// vector object, so #include &amp;lt;vector&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  Foo* foo;                    &lt;span class=&#34;comment&#34;&gt;// Foo pointer, so forward declare Foo&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Func&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(Bar&amp;amp; bar)&lt;/span&gt;&lt;/span&gt;;         &lt;span class=&#34;comment&#34;&gt;// Bar reference, so forward declare Bar&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;friend&lt;/span&gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;MyFriend&lt;/span&gt;;&lt;/span&gt;       &lt;span class=&#34;comment&#34;&gt;// friend declaration is not a dependency&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                               &lt;span class=&#34;comment&#34;&gt;//   don&#39;t do anything about MyFriend&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;endif&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;// __MYCLASS_H_INCLUDED__ &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;```	&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;### Why that is the &lt;span class=&#34;string&#34;&gt;&#34;right way&#34;&lt;/span&gt; to include&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;- general idea is that it makes &#34;myclass.h&#34; fully self-contained and doesn&#39;t require any other area of the program (other than MyClass&#39;s implementation/source file) to know how MyClass works internally&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	- If some other &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;needs&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;to&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;use&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;MyClass&lt;/span&gt;, &lt;span class=&#34;title&#34;&gt;it&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;can&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;just&lt;/span&gt; #&lt;span class=&#34;title&#34;&gt;include&lt;/span&gt; &#34;&lt;span class=&#34;title&#34;&gt;myclass&lt;/span&gt;.&lt;span class=&#34;title&#34;&gt;h&lt;/span&gt;&#34; &lt;span class=&#34;title&#34;&gt;and&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;be&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;done&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;with&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;it&lt;/span&gt;!&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;- Alternative method: #include all of MyClass&#39;s dependencies before #including &#34;myclass.h&#34; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;``` cpp &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//  I want to use MyClass&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;myclass.h&#34;&lt;/span&gt;   &lt;span class=&#34;comment&#34;&gt;// will always work, no matter what MyClass looks like.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                       &lt;span class=&#34;comment&#34;&gt;// You&#39;re done&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;               &lt;span class=&#34;comment&#34;&gt;//  (provided myclass.h follows my outline above and does&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;               &lt;span class=&#34;comment&#34;&gt;//   not make unnecessary #includes)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;why alternative method is bad：you should fill out all depency header and maintain it’s order&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//  I want to use MyClass&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;myclass.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;span class=&#34;comment&#34;&gt;// ERROR &#39;Parent&#39; undefined&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;parent.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;myclass.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;span class=&#34;comment&#34;&gt;// ERROR &#39;std::vector&#39; undefined &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;parent.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&amp;lt;vector&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;myclass.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;span class=&#34;comment&#34;&gt;// ERROR &#39;Support&#39; undefined &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;parent.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&amp;lt;vector&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;support.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;myclass.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;span class=&#34;comment&#34;&gt;// ERROR &#39;Support&#39; undefined&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;span class=&#34;comment&#34;&gt;// &#34;parent.h&#34; uses Support, and therefore you must #include &#34;support.h&#34; before &#34;parent.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;``` &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;It is all about encapsulation. Files that want to use MyClass don&#39;t need to be aware of what MyClass uses in order for it to work, and don&#39;t need to #include any MyClass dependencies. It&#39;s all very OO friendly, very easy to use, and very easy to maintain&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;### Circular Dependencies&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;A circular dependency is when &lt;span class=&#34;title&#34;&gt;two&lt;/span&gt; &lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;or&lt;/span&gt; more)&lt;/span&gt; classes depend on each other  &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;```cpp&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// a.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;b.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;A&lt;/span&gt; &amp;#123;&lt;/span&gt; B* b; &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// b.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;a.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;B&lt;/span&gt; &amp;#123;&lt;/span&gt; A* a &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;That’s what circular inclusion does&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// a.cpp&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;a.h&#34;&lt;/span&gt; &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;The compiler will &lt;span class=&#34;keyword&#34;&gt;do&lt;/span&gt; the following:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;a.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;span class=&#34;comment&#34;&gt;// start compiling a.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;b.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;comment&#34;&gt;// start compiling b.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;a.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;         &lt;span class=&#34;comment&#34;&gt;// compilation of a.h skipped because it&#39;s guarded&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;comment&#34;&gt;// resume compiling b.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;B&lt;/span&gt; &amp;#123;&lt;/span&gt; A* a &amp;#125;;        &lt;span class=&#34;comment&#34;&gt;// &amp;lt;--- ERROR, A is undeclared&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Even though you’re #including “a.h”, the compiler is not seeing A class until B class gets compiled.&lt;br&gt;Solution: forward declare when you’re only using a pointer or reference&lt;/p&gt;
+&lt;p&gt;Situation below is conceptually impossible(not logical). The solution is to have one or both classes contain a pointer or reference to the other, rather than a full object&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// a.h (guarded)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;b.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;A&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  B b;   &lt;span class=&#34;comment&#34;&gt;// B is an object, can&#39;t be forward declared&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// b.h (guarded)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;a.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;B&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  A a;   &lt;span class=&#34;comment&#34;&gt;// A is an object, can&#39;t be forward declared&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;Function-inlining&#34;&gt;&lt;a href=&#34;#Function-inlining&#34; class=&#34;headerlink&#34; title=&#34;Function inlining&#34;&gt;&lt;/a&gt;Function inlining&lt;/h2&gt;&lt;p&gt;Inline Function body needs to exist in every cpp file which calls them, otherwise you get linker errors&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;B&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Func&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; A&amp;amp; a)&lt;/span&gt;   &lt;span class=&#34;comment&#34;&gt;// parameter, so forward declare is okay&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;  &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    a.DoSomething();      &lt;span class=&#34;comment&#34;&gt;// but now that we&#39;ve dereferenced it, it&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                          &lt;span class=&#34;comment&#34;&gt;//  becomes an #include dependency&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;               &lt;span class=&#34;comment&#34;&gt;// = we now have a potential circular inclusion&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;The key is that while inline function need to exist in the header, they &lt;strong&gt;do not need to exist in the class definition itself&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// b.h  (assume its guarded)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//------------------&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;A&lt;/span&gt;;&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;// forward declared dependency&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//------------------&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;B&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Func&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; A&amp;amp; a)&lt;/span&gt;&lt;/span&gt;;  &lt;span class=&#34;comment&#34;&gt;// okay, A is forward declared&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//------------------&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//now B is already defined&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;a.h&#34;&lt;/span&gt;        &lt;span class=&#34;comment&#34;&gt;// can use A with include dependency without error&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;inline&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;B::Func&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; A&amp;amp; a)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  a.DoSomething();    &lt;span class=&#34;comment&#34;&gt;// okay!  a.h has been included&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;even if a.h includes b.h, the additional #includes don’t come up until AFTER class B is fully defined, and they are therefore harmless.&lt;/p&gt;
+&lt;p&gt;But putting function bodies at the end of my header is ugly. Is there a way to avoid that?&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// b.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// blah blah&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;B&lt;/span&gt; &amp;#123;&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;/* blah blah */&lt;/span&gt; &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;b_inline.h&#34;&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;// or I sometimes use &#34;b.hpp&#34; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;```	&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;``` cpp&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// b_inline.h (or b.hpp -- whatever)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;a.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;b.h&#34;&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;// not necessary, but harmless&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;comment&#34;&gt;//  you can do this to make this &#34;feel&#34; like a source&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;comment&#34;&gt;//  file, even though it isn&#39;t&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;inline&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;B::Func&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; A&amp;amp; a)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  a.DoSomething();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;This seperates the interface from the implementation, while still allowing the implementation to be inlined&lt;/p&gt;
+&lt;h2 id=&#34;Forward-declaring-templates&#34;&gt;&lt;a href=&#34;#Forward-declaring-templates&#34; class=&#34;headerlink&#34; title=&#34;Forward declaring templates&#34;&gt;&lt;/a&gt;Forward declaring templates&lt;/h2&gt;&lt;p&gt;Forward declaring is pretty straight-forward when it comes to simple classes, but when dealing with template classes, things aren’t so simple&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// a.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;b.h&#34;&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;// included dependencies&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;template&lt;/span&gt; &amp;lt;&lt;span class=&#34;keyword&#34;&gt;typename&lt;/span&gt; T&amp;gt; &lt;span class=&#34;comment&#34;&gt;// the class template&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Tem&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;comment&#34;&gt;/*...*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  B b;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// class most commonly used with &#39;int&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;typedef&lt;/span&gt; Tem&amp;lt;&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;&amp;gt; A;  &lt;span class=&#34;comment&#34;&gt;// typedef as &#39;A&#39; &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// b.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// forward declared dependencies&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;A&lt;/span&gt;;&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;// error!&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// the class&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;B&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;comment&#34;&gt;/* ... */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  A* ptr;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Because ‘A’ isn’t really a class, but rather a typedef, the compiler will bark at you&lt;br&gt;we can’t just #include “a.h” here because of a circular dependency problem&lt;/p&gt;
+&lt;p&gt;We need to forward typedef A  &lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;template&lt;/span&gt; &amp;lt;&lt;span class=&#34;keyword&#34;&gt;typename&lt;/span&gt; T&amp;gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Tem&lt;/span&gt;;&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;// forward declare our template&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;typedef&lt;/span&gt; Tem&amp;lt;&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;&amp;gt; A;               &lt;span class=&#34;comment&#34;&gt;// then typedef &#39;A&#39; (forward typedef A instead of forward declare A)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;A cleaner solution is to create an &lt;strong&gt;alternative header&lt;/strong&gt; which has the forward declarations of your templated classes and their typedefs&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//a.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;b.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;template&lt;/span&gt; &amp;lt;&lt;span class=&#34;keyword&#34;&gt;typename&lt;/span&gt; T&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Tem&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;comment&#34;&gt;/*...*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  B b;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//a_fwd.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;template&lt;/span&gt; &amp;lt;&lt;span class=&#34;keyword&#34;&gt;typename&lt;/span&gt; T&amp;gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Tem&lt;/span&gt;;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;typedef&lt;/span&gt; Tem&amp;lt;&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;&amp;gt; A;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//b.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;meta-keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;meta-string&#34;&gt;&#34;a_fwd.h&#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;B&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;comment&#34;&gt;/*...*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  A* ptr;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;This allows B to include a header which forward declares A without including the entire class definition&lt;/p&gt;
+</content>
+        <category term="c" />
+        <category term="cpp" />
+        <updated>2015-07-21T04:37:47.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://gitqwerty777.github.io/makefile/</id>
+        <title>建立Makefile</title>
+        <link rel="alternate" href="http://gitqwerty777.github.io/makefile/"/>
+        <content type="html">&lt;p&gt;此篇文章十分清楚易懂，可作為初學之用&lt;/p&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+
+&lt;h3 id=&#34;使用make好處&#34;&gt;&lt;a href=&#34;#使用make好處&#34; class=&#34;headerlink&#34; title=&#34;使用make好處&#34;&gt;&lt;/a&gt;使用make好處&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;方便專案管理&lt;/li&gt;
+&lt;li&gt;會透過檔案比對，依照相依性來編譯，不會全都編浪費時間&lt;/li&gt;
+&lt;li&gt;可以同時編譯函式庫或是檔案&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;make常用指令&#34;&gt;&lt;a href=&#34;#make常用指令&#34; class=&#34;headerlink&#34; title=&#34;make常用指令&#34;&gt;&lt;/a&gt;make常用指令&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;make -k&lt;/code&gt;: 會讓make在遇到錯誤的時候仍然運行，而不會在第一個問題中斷&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;make -n&lt;/code&gt;: 只印出將會進行的工作，而不會真的執行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;make -f makefile_name&lt;/code&gt;: make預設執行名為makefile的檔案，此命令可指定makefile檔案名稱和位置&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;#&lt;/code&gt;: 註解  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;make指令格式&#34;&gt;&lt;a href=&#34;#make指令格式&#34; class=&#34;headerlink&#34; title=&#34;make指令格式&#34;&gt;&lt;/a&gt;make指令格式&lt;/h3&gt;&lt;p&gt;預設的target是”all”, 若makefile中沒有all, 則是第一個target&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;make [option] [target]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;make -n all clean &lt;span class=&#34;comment&#34;&gt;# 多個target&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;make -f makefile2 install&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&#34;撰寫makefile檔案&#34;&gt;&lt;a href=&#34;#撰寫makefile檔案&#34; class=&#34;headerlink&#34; title=&#34;撰寫makefile檔案&#34;&gt;&lt;/a&gt;撰寫makefile檔案&lt;/h3&gt;&lt;p&gt;makefile是由一堆「目標」和其「相依性檔案」還有「法則」所組成的    &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[target] 目標 - 產生出來的東西    &lt;ul&gt;
+&lt;li&gt;用了 &lt;code&gt;.PHONY&lt;/code&gt; 來指定 clean 為 fake 項目，所以 make 不會去檢查目錄中是否存在了一個名為 clean 的檔案。如此也可以提昇 make 的執行效率&lt;ul&gt;
+&lt;li&gt;常用的偽target&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;.PHONY: all clean install&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;all: ...&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	...&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;install: myapp app.doc   &lt;span class=&#34;comment&#34;&gt;#安裝套件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     cp myapp app.doc /usr/&lt;span class=&#34;built_in&#34;&gt;local&lt;/span&gt;/myapp/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;clean: &lt;span class=&#34;comment&#34;&gt;#刪除產生出來的目的檔&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	rm -rf *.o&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[dependency] 相依性項目 - 若 dependency 的檔案有改動過，則重新產生 target&lt;/li&gt;
+&lt;li&gt;[rule] 法則 - 如何產生目標&lt;ul&gt;
+&lt;li&gt;使用Tab作為開頭&lt;/li&gt;
+&lt;li&gt;使用 Shell Script 語法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight makefile&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;[target]: [dependency] [dependency]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     [rule]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     [rule]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;[target]: [dependency]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     [rule]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;註1: makefile的命令和shell不同的地方: 每行命令在&lt;strong&gt;分開的shell中獨立執行&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight makefile&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;wrongClean:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	cd junkdir&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	rm -f * &lt;span class=&#34;comment&#34;&gt;# don&#39;t do that! &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;correctClean1:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	cd junkdir &amp;amp;&amp;amp; rm -f *&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;correctClean2:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	rm -f junkdir/*&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;del&gt;如果寫錯的話，至少錯誤的makefile被刪除了&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;註2: 在命令行首加上&lt;code&gt;@&lt;/code&gt;，代表執行程式但不顯示在螢幕上。在命令行首加上&lt;code&gt;-&lt;/code&gt;，代表執行命令時回傳非零值仍然繼續執行()&lt;/p&gt;
+&lt;p&gt;例：要產生all的話，需要兩個檔案myapp和app.doc(主程式和說明檔)，make開始會去找尋如何產生myapp和 app.doc的方法，所以myapp會成為下一個要產生出來的目標。用gcc main.o a.o b.o -o myapp來產生myapp……，以此類推&lt;/p&gt;
+&lt;figure class=&#34;highlight makefile&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;all: myapp app.doc&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;myapp: main.o a.o b.o&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     gcc main.o a.o b.o -o myapp&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;main.o: main.c a.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     gcc -c main.c&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;a.o: a.c a.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     gcc -c a.c&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;b.o: b.c b.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     gcc -c b.c&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;在makefile中, 相依性順序是很重要的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;Makefile的變數和巨集-macro&#34;&gt;&lt;a href=&#34;#Makefile的變數和巨集-macro&#34; class=&#34;headerlink&#34; title=&#34;Makefile的變數和巨集(macro)&#34;&gt;&lt;/a&gt;Makefile的變數和巨集(macro)&lt;/h2&gt;&lt;p&gt;設定變數的方法  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;將export命令放在shell啟動script &lt;code&gt;.bashrc&lt;/code&gt;或&lt;code&gt;.zshrc&lt;/code&gt;…&lt;ul&gt;
+&lt;li&gt;永遠都有效&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;在shell中設定變數 &lt;code&gt;export CC=gcc&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;終端機開啟期間有效&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;在執行命令前設定 &lt;code&gt;CC=gcc | make&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;針對特定命令的變數&lt;/li&gt;
+&lt;li&gt;設定變數需要在實際命令之前&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;make&lt;/code&gt;可以直接設定變數&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;make CFLAGS=&amp;quot;-g -Wall&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CFLAGS=&amp;quot;-g -Wall&amp;quot; make&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;在makefile中設定&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;?=&lt;/code&gt;：若變數未定義，則替它指定新的值。否則，採用原有的值。  &lt;ul&gt;
+&lt;li&gt;&lt;code&gt;FOO ?= bar&lt;/code&gt;： 若 FOO 未定義，則 FOO = bar；若 FOO 已定義，則 FOO 的值維持不變。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;指定時，等號兩側不可有空格&lt;/p&gt;
+&lt;p&gt;改變副檔名  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SRC=a.c b.c&lt;/li&gt;
+&lt;li&gt;OBJ=$(SRC:.c=.o) # equals to a.o b.o&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;有幾個特別的內部巨集，讓makeifle更加簡明  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$?&lt;/code&gt; 代表需要重建的相依性項目(檔案有被更新過)，也就是 dependencies 中，比 targets 的修改日期還新檔案。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$@&lt;/code&gt; 目前的target&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$*&lt;/code&gt; 不含副檔名的target&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$&amp;lt;&lt;/code&gt; 第一個 dependency&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;還有兩個有用的特別字元，可以加在要執行的命令之前  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-&lt;/code&gt; 即使該行指令出錯，也不會中斷執行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;@&lt;/code&gt; 不會在terminal顯示該行命令&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight makefile&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;CC = gcc&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;CFLAGS = -Wall -ansi -g&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;OBJS = main.o a.o b.o&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;INSTALL_PATH = /usr/local/myapp/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;all: myapp app.doc&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;myapp: &lt;span class=&#34;variable&#34;&gt;$(OBJS)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;variable&#34;&gt;$(CC)&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;$(OBJS)&lt;/span&gt; -o &lt;span class=&#34;variable&#34;&gt;$@&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;main.o: main.c a.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;variable&#34;&gt;$(CC)&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;$(CFLAGS)&lt;/span&gt; -c -o &lt;span class=&#34;variable&#34;&gt;$@&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;$&amp;lt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;a.o: a.c a.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;variable&#34;&gt;$(CC)&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;$(CFLAGS)&lt;/span&gt; -c -o &lt;span class=&#34;variable&#34;&gt;$@&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;$&amp;lt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;b.o: b.c b.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;variable&#34;&gt;$(CC)&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;$(CFLAGS)&lt;/span&gt; -c -o &lt;span class=&#34;variable&#34;&gt;$@&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;$&amp;lt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;install: myapp app.doc&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     cp myapp app.doc &lt;span class=&#34;variable&#34;&gt;$(INSTALL_PATH)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;Makefile-隱性法則-implicit-rule&#34;&gt;&lt;a href=&#34;#Makefile-隱性法則-implicit-rule&#34; class=&#34;headerlink&#34; title=&#34;Makefile 隱性法則(implicit rule)&#34;&gt;&lt;/a&gt;Makefile 隱性法則(implicit rule)&lt;/h2&gt;&lt;figure class=&#34;highlight makefile&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;CC = gcc&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;CFLAGS = -Wall -ansi -g&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;OBJS = main.o a.o b.o&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;all: myapp app.doc&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;myapp: &lt;span class=&#34;variable&#34;&gt;$(OBJS)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;variable&#34;&gt;$(CC)&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;$(OBJS)&lt;/span&gt; -o &lt;span class=&#34;variable&#34;&gt;$@&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;main.o: main.c a.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;a.o: a.c a.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;b.o: b.c b.h&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;makefile會在main.o自動產生規則 &lt;code&gt;gcc -Wall -ansi -g -c -o main.o main.c&lt;/code&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;若dependency為c：&lt;code&gt;$(CC) $(CFLAGS) $(LDFLAGS) [dependencies]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;若dependency為c++：&lt;code&gt;$(CXX) $(CXXFLAGS) $(LDFLAGS) [dependencies]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;若dependency為object(建立執行檔)：&lt;code&gt;$(CC) $(LDFLAGS) [dependencies] $(LDLIBS)&lt;/code&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZ251Lm9yZy9zb2Z0d2FyZS9tYWtlL21hbnVhbC9odG1sX25vZGUvQ2F0YWxvZ3VlLW9mLVJ1bGVzLmh0bWwjQ2F0YWxvZ3VlLW9mLVJ1bGVz&#34;&gt;隱性法則列表&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;Makefile-檔尾法則&#34;&gt;&lt;a href=&#34;#Makefile-檔尾法則&#34; class=&#34;headerlink&#34; title=&#34;Makefile 檔尾法則&#34;&gt;&lt;/a&gt;Makefile 檔尾法則&lt;/h2&gt;&lt;p&gt;使用檔尾的延伸檔名作為法則，格式 &lt;code&gt;.[old_suffix].[new_suffix]&lt;/code&gt;  &lt;/p&gt;
+&lt;figure class=&#34;highlight makefile&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;.c.o:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;variable&#34;&gt;$(CC)&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;$(CFLAGS)&lt;/span&gt; -c -o &lt;span class=&#34;variable&#34;&gt;$@&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;$&amp;lt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;.cpp.o:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     g++ -c &lt;span class=&#34;variable&#34;&gt;$&amp;lt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;INCLUDE_PATH = &lt;span class=&#34;keyword&#34;&gt;include&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;all: myapp.exe app.doc&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;myapp.exe: &lt;span class=&#34;variable&#34;&gt;$(OBJS)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;variable&#34;&gt;$(CC)&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;$(OBJS)&lt;/span&gt; -o &lt;span class=&#34;variable&#34;&gt;$@&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;.c.o:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;variable&#34;&gt;$(CC)&lt;/span&gt; -I&lt;span class=&#34;variable&#34;&gt;$(INCLUDE_PATH)&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;$(CFLAGS)&lt;/span&gt; -c -o &lt;span class=&#34;variable&#34;&gt;$@&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;$&amp;lt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;檔尾法則只可以用在本目錄&lt;/p&gt;
+&lt;p&gt;這目錄下面所有的.c檔變成.o檔，而法則就是去編譯它，而如果你想更懶一點的話還可以完全不寫，直接使用內建的法則，這樣也可以直接把目錄下面的所有檔都編好，為什麼呢？因為你要編出myapp的時候需要使用到$(OBJS)所以，就算你不寫.c.o或是任何的法則，make預設都會自己產生.o檔讓你可以連結出主程式。  &lt;/p&gt;
+&lt;p&gt;makefile也有支援萬用字元  &lt;/p&gt;
+&lt;figure class=&#34;highlight makefile&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;%.o: %.c&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;variable&#34;&gt;$(CC)&lt;/span&gt; -I&lt;span class=&#34;variable&#34;&gt;$(INCLUDE_PATH)&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;$(CFLAGS)&lt;/span&gt; -c -o &lt;span class=&#34;variable&#34;&gt;$@&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;$&amp;lt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;萬用字元法則比較適合用於編譯一個大型的函式庫，而檔尾法則適合編譯一個目錄下面所有的檔案。&lt;/p&gt;
+&lt;h2 id=&#34;專案討論&#34;&gt;&lt;a href=&#34;#專案討論&#34; class=&#34;headerlink&#34; title=&#34;專案討論&#34;&gt;&lt;/a&gt;專案討論&lt;/h2&gt;&lt;h3 id=&#34;Make-Makefile-with-Release-and-Debug-build&#34;&gt;&lt;a href=&#34;#Make-Makefile-with-Release-and-Debug-build&#34; class=&#34;headerlink&#34; title=&#34;Make Makefile with Release and Debug build&#34;&gt;&lt;/a&gt;Make Makefile with Release and Debug build&lt;/h3&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL3F1ZXN0aW9ucy83OTIyMTcvc2ltcGxlLW1ha2VmaWxlLXdpdGgtcmVsZWFzZS1hbmQtZGVidWctYnVpbGRzLWJlc3QtcHJhY3RpY2Vz&#34;&gt;simple-makefile-with-release-and-debug-builds-best-practices&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL3F1ZXN0aW9ucy8xMDc5ODMyL2hvdy1jYW4taS1jb25maWd1cmUtbXktbWFrZWZpbGUtZm9yLWRlYnVnLWFuZC1yZWxlYXNlLWJ1aWxkcw==&#34;&gt;how-can-i-configure-my-makefile-for-debug-and-release-builds&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;參考資料&#34;&gt;&lt;a href=&#34;#參考資料&#34; class=&#34;headerlink&#34; title=&#34;參考資料&#34;&gt;&lt;/a&gt;參考資料&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2hzaWFuLXN0dWRpby5ibG9nc3BvdC50dy8yMDA4LzA5L21ha2VmaWxlXzA4Lmh0bWw=&#34;&gt;撰寫Makefile教學&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3RldHJhbGV0Lmx1bmEuY29tLnR3Lz9vcD1WaWV3QXJ0aWNsZSZhcnRpY2xlSWQ9MTg1&#34;&gt;Makefile 語法簡介&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="linux" />
+        <category term="makefile" />
+        <updated>2015-02-22T15:31:44.000Z</updated>
+    </entry>
+</feed>

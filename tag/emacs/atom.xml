@@ -1,0 +1,903 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://gitqwerty777.github.io</id>
+    <title>QWERTY • Posts by &#34;emacs&#34; tag</title>
+    <link href="http://gitqwerty777.github.io" />
+    <updated>2015-09-18T10:49:50.000Z</updated>
+    <category term="C#" />
+    <category term="CodingStyle" />
+    <category term="Emacs" />
+    <category term="編輯器" />
+    <category term="CFR" />
+    <category term="電腦對局理論" />
+    <category term="指令" />
+    <category term="機器學習" />
+    <category term="perceptron" />
+    <category term="readme" />
+    <category term="文件" />
+    <category term="github" />
+    <category term="artificial intelligence" />
+    <category term="search" />
+    <category term="First-Order Logic" />
+    <category term="大數" />
+    <category term="程式" />
+    <category term="C++" />
+    <category term="Hexo" />
+    <category term="網誌" />
+    <category term="Markdown" />
+    <category term="CleanCode" />
+    <category term="重構" />
+    <category term="TDD" />
+    <category term="設計模式" />
+    <category term="CMake" />
+    <category term="Makefile" />
+    <category term="Linux" />
+    <category term="Todo" />
+    <category term="註解" />
+    <category term="經濟學" />
+    <category term="策略" />
+    <category term="競爭" />
+    <category term="博弈論" />
+    <category term="計算機結構" />
+    <category term="人工智慧" />
+    <category term="圍棋" />
+    <category term="象棋" />
+    <category term="蒙地卡羅" />
+    <category term="Alpha-Beta搜尋" />
+    <category term="強化學習" />
+    <category term="計算機網路" />
+    <category term="boost" />
+    <category term="函式庫" />
+    <category term="編譯" />
+    <category term="gcc" />
+    <category term="g++" />
+    <category term="clang" />
+    <category term="最佳化" />
+    <category term="推薦系統" />
+    <category term="FM" />
+    <category term="FFM" />
+    <category term="SVM" />
+    <category term="Embedding" />
+    <category term="自然語言處理" />
+    <category term="外國用語" />
+    <category term="萌典" />
+    <category term="opencc" />
+    <category term="PTT" />
+    <category term="vuejs" />
+    <category term="linux" />
+    <category term="c" />
+    <category term="compile" />
+    <category term="gdb" />
+    <category term="c語言" />
+    <category term="cpp" />
+    <category term="除錯" />
+    <category term="git" />
+    <category term="VMWare" />
+    <category term="虛擬機" />
+    <category term="IFTTT" />
+    <category term="自動化" />
+    <category term="備份" />
+    <category term="webhook" />
+    <category term="簡報" />
+    <category term="軟體" />
+    <category term="PowerPoint" />
+    <category term="Latex" />
+    <category term="JavaScript" />
+    <category term="CSS" />
+    <category term="Unity" />
+    <category term="fcitx" />
+    <category term="嘸蝦米" />
+    <category term="輸入法" />
+    <category term="硬碟" />
+    <category term="記憶體" />
+    <category term="效能" />
+    <category term="錯誤" />
+    <category term="makefile" />
+    <category term="備忘錄" />
+    <category term="存檔" />
+    <category term="統計" />
+    <category term="byobu" />
+    <category term="screen" />
+    <category term="tmux" />
+    <category term="reactjs" />
+    <category term="javascript" />
+    <category term="WideAndDeep" />
+    <category term="Google" />
+    <category term="觀察者" />
+    <category term="訂閱" />
+    <category term="委託" />
+    <category term="正規表示式(RegExp)" />
+    <category term="上下文無關文法(CFG)" />
+    <category term="hexo" />
+    <category term="blog" />
+    <category term="theme" />
+    <category term="feature" />
+    <category term="revealJS" />
+    <category term="markdown" />
+    <category term="rss" />
+    <category term="facebook" />
+    <category term="youtube" />
+    <category term="ptt" />
+    <category term="bilibili" />
+    <category term="pixiv" />
+    <category term="crawler" />
+    <category term="SEO" />
+    <category term="google" />
+    <category term="html" />
+    <category term="amazon" />
+    <category term="webhost" />
+    <category term="ssl" />
+    <category term="漢字" />
+    <category term="中文" />
+    <category term="異體字" />
+    <category term="unicode" />
+    <category term="unity" />
+    <category term="演算法" />
+    <category term="隨機排序" />
+    <category term="洗牌" />
+    <category term="Fisher-Yates" />
+    <category term="證明" />
+    <category term="python" />
+    <entry>
+        <id>http://gitqwerty777.github.io/Emacs-introduction/</id>
+        <title>Emacs觀念</title>
+        <link rel="alternate" href="http://gitqwerty777.github.io/Emacs-introduction/"/>
+        <content type="html">&lt;p&gt;參考 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3Nob3Aub3JlaWxseS5jb20vcHJvZHVjdC85NzgwNTk2MDA2NDg4LmRv&#34;&gt;Learning GNU Emacs&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+
+&lt;h2 id=&#34;Major-Mode&#34;&gt;&lt;a href=&#34;#Major-Mode&#34; class=&#34;headerlink&#34; title=&#34;Major Mode&#34;&gt;&lt;/a&gt;Major Mode&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;一次只能有一個&lt;/li&gt;
+&lt;li&gt;主要針對不同語言&lt;/li&gt;
+&lt;li&gt;Example&lt;ul&gt;
+&lt;li&gt;Fundamental Mode&lt;/li&gt;
+&lt;li&gt;Text Mode&lt;/li&gt;
+&lt;li&gt;C Mode&lt;/li&gt;
+&lt;li&gt;Lisp Mode&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Minor-Mode&#34;&gt;&lt;a href=&#34;#Minor-Mode&#34; class=&#34;headerlink&#34; title=&#34;Minor Mode&#34;&gt;&lt;/a&gt;Minor Mode&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;相關功能&lt;/li&gt;
+&lt;li&gt;Example&lt;ul&gt;
+&lt;li&gt;Abbrev Mode&lt;ul&gt;
+&lt;li&gt;能自訂簡寫，並由emacs自動展開&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;add-global-abbrev&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Fill Mode&lt;ul&gt;
+&lt;li&gt;文字超出空間時自動換行(加上&lt;code&gt;\n&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Auto-save Mode&lt;ul&gt;
+&lt;li&gt;產生自動儲存檔(名為 &lt;code&gt;#檔名#&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;用 &lt;code&gt;revert-buffer&lt;/code&gt; 指令將檔案還原成自動儲存時的狀態&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;最常用的指令是 &lt;code&gt;C-[something]&lt;/code&gt;，次常用的指令是 &lt;code&gt;M-[something]&lt;/code&gt;，更不常用的指令是 &lt;code&gt;C-x [something]&lt;/code&gt;，更不常用的指令是 &lt;code&gt;C-c [something]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;C-u 4 [command]&lt;/code&gt;: 重複4次&lt;br&gt;&lt;code&gt;C-u 1 6 [command]&lt;/code&gt;: 重複16次&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;M--&lt;/code&gt;, &lt;code&gt;C--&lt;/code&gt; : &lt;code&gt;negative-argument&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;搜尋&#34;&gt;&lt;a href=&#34;#搜尋&#34; class=&#34;headerlink&#34; title=&#34;搜尋&#34;&gt;&lt;/a&gt;搜尋&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Incremental Search(每輸入一個字元，就尋找符合的文字)&lt;/li&gt;
+&lt;li&gt;Non-Incremental Search(輸入完畢後才開始尋找, &lt;code&gt;nonincremental-search-forward&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Word Search(找一個字，例如找hat，不會找到that, &lt;code&gt;word-search-forward&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;正規表示式搜尋&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;\&amp;lt;&lt;/code&gt; 字首&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\&amp;gt;&lt;/code&gt; 字尾&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;拼字檢查&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;M-$&lt;/code&gt; 檢查目前所在單字&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ispell-buffer&lt;/code&gt;, &lt;code&gt;ispell-region&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;M-x&lt;/code&gt; ispell-change-dictionary&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="Emacs" />
+        <category term="編輯器" />
+        <updated>2015-09-18T10:49:50.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://gitqwerty777.github.io/Emacs-tips/</id>
+        <title>Emacs常用指令表</title>
+        <link rel="alternate" href="http://gitqwerty777.github.io/Emacs-tips/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;Emacs快捷鍵是可以修改的，所以不一定要全部記住，只需要熟悉基本功能和知道有其他方便的擴充功能即可&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;Emacs基本&#34;&gt;&lt;a href=&#34;#Emacs基本&#34; class=&#34;headerlink&#34; title=&#34;Emacs基本&#34;&gt;&lt;/a&gt;Emacs基本&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;C → Ctrl&lt;/li&gt;
+&lt;li&gt;M → Alt 或 esc&lt;/li&gt;
+&lt;li&gt;S → Shift&lt;/li&gt;
+&lt;li&gt;Ret → return(enter)&lt;/li&gt;
+&lt;li&gt;範例&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;C-c&lt;/code&gt; → Ctrl + c&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-c C-f&lt;/code&gt; → Ctrl + c, 放開c, 按下f，也可以分開來按，但較慢&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hello.c&lt;/code&gt;的自動儲存檔案的檔名就是&lt;code&gt;#hello.c#&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;儲存檔案後，自動儲存檔就會被刪除&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Ctrl 通常是對一個字操作， Alt 通常是對一個詞，或一個句子操作&lt;/li&gt;
+&lt;li&gt;每一個Emacs的指令都有名稱，可以用&lt;code&gt;M-x [command]&lt;/code&gt;來執行指令&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Emacs移動&#34;&gt;&lt;a href=&#34;#Emacs移動&#34; class=&#34;headerlink&#34; title=&#34;Emacs移動&#34;&gt;&lt;/a&gt;Emacs移動&lt;/h3&gt;&lt;p&gt;&lt;img data-src=&#34;/img/Other/emacs-move.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;介紹&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;M-v, C-v&lt;/td&gt;
+&lt;td&gt;上翻/下翻一頁&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;M-b, M-f&lt;/td&gt;
+&lt;td&gt;往前/往後 移動一個詞&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;M-a, M-e&lt;/td&gt;
+&lt;td&gt;移動到一句的開始/結尾(程式碼的一個段落)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-l&lt;/td&gt;
+&lt;td&gt;移動視窗(遊標所在的行移動至最上方、最下方、中間)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;M-g M-g&lt;/td&gt;
+&lt;td&gt;跳至指定行(= M-g g)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;M-m&lt;/td&gt;
+&lt;td&gt;將游標移到該行第一個字元(大多數情況下，等同C-a)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;Emacs編輯&#34;&gt;&lt;a href=&#34;#Emacs編輯&#34; class=&#34;headerlink&#34; title=&#34;Emacs編輯&#34;&gt;&lt;/a&gt;Emacs編輯&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;介紹&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;C-j&lt;/td&gt;
+&lt;td&gt;換行並自動縮排(&lt;code&gt;newline-and-indent&lt;/code&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-SPACE&lt;/td&gt;
+&lt;td&gt;開始選取文字(再按一次結束選取)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-x C-x&lt;/td&gt;
+&lt;td&gt;改變選取的方向&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-x h&lt;/td&gt;
+&lt;td&gt;全選&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;M-h&lt;/td&gt;
+&lt;td&gt;選擇遊標所在的段落&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-w/M-w&lt;/td&gt;
+&lt;td&gt;剪下/複製 選取文字&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-y&lt;/td&gt;
+&lt;td&gt;貼上選取文字&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;M-y&lt;/td&gt;
+&lt;td&gt;改變貼上的文字(從之前剪下/複製過的文字中，由新到舊出現)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-d&lt;/td&gt;
+&lt;td&gt;同&lt;code&gt;delete&lt;/code&gt;鍵(刪除後一個字)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;M-d&lt;/td&gt;
+&lt;td&gt;刪除後一個詞&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;M-del&lt;/td&gt;
+&lt;td&gt;刪除前一個詞&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-g&lt;/td&gt;
+&lt;td&gt;取消尚未完成的指令(如選擇遊標)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-x C-;&lt;/td&gt;
+&lt;td&gt;註釋/取消註釋&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;&lt;code&gt;C-k&lt;/code&gt;: 刪除從游標到「行尾」間的字元&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;單獨的 C-k 會把一行的內容殺掉&lt;/li&gt;
+&lt;li&gt;而第二個 C-k 則會殺掉那一行本身(‘\n’)。使所有其他的行向上移動&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;C-x u&lt;/code&gt;: 還原&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;不會還原沒有改變文字的指令（移動游標和視窗等）&lt;/li&gt;
+&lt;li&gt;自行鍵入的字元 一次最多還原20個&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;重複&#34;&gt;&lt;a href=&#34;#重複&#34; class=&#34;headerlink&#34; title=&#34;重複&#34;&gt;&lt;/a&gt;重複&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;介紹&lt;/th&gt;
+&lt;th&gt;示範&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;C-u [數字] [指令or字元]&lt;/td&gt;
+&lt;td&gt;重複執行&lt;/td&gt;
+&lt;td&gt;C-u 8 a → aaaaaaaa&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;M-[數字] [指令or字元]&lt;/td&gt;
+&lt;td&gt;重複執行&lt;/td&gt;
+&lt;td&gt;M-8 a → aaaaaaaa&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;Emacs搜尋&#34;&gt;&lt;a href=&#34;#Emacs搜尋&#34; class=&#34;headerlink&#34; title=&#34;Emacs搜尋&#34;&gt;&lt;/a&gt;Emacs搜尋&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;介紹&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;C-s&lt;/td&gt;
+&lt;td&gt;往後搜尋(再按一次：找下一個)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-r&lt;/td&gt;
+&lt;td&gt;往前搜尋&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;M-C-s&lt;/td&gt;
+&lt;td&gt;正規表示式搜尋&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;M-%&lt;/td&gt;
+&lt;td&gt;取代&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;取代模式的操作&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;y&lt;/code&gt;或space：置換目前游標所在的字串，並且移到下一個可被置換的字串&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;n&lt;/code&gt;：跳過目前游標所在的字串。移到下一個可被置換的字串&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ESC&lt;/code&gt;：結束置換模式&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.&lt;/code&gt;：置換目前的字串，並離開置換模式&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;!&lt;/code&gt;：將整個檔案一次置換完畢，不進行任何詢問&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;^&lt;/code&gt;：回到前一個符合置換的地方&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-r&lt;/code&gt;: 進入recursive-edit模式&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;M-C-c&lt;/code&gt;: 結束recursive-edit模式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Emacs分割-window&#34;&gt;&lt;a href=&#34;#Emacs分割-window&#34; class=&#34;headerlink&#34; title=&#34;Emacs分割(window)&#34;&gt;&lt;/a&gt;Emacs分割(window)&lt;/h3&gt;&lt;p&gt;在螢幕上同時顯示的多個編輯區，稱為分割&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;介紹&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;C-x 0&lt;/td&gt;
+&lt;td&gt;關閉目前分割&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-x 1&lt;/td&gt;
+&lt;td&gt;關閉其他分割(只留下目前的分割)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-x 2&lt;/td&gt;
+&lt;td&gt;新增水平分割&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-x 3&lt;/td&gt;
+&lt;td&gt;新增垂直分割&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-x o&lt;/td&gt;
+&lt;td&gt;跳到別的分割(在現有的分割循環)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;M-C-v&lt;/td&gt;
+&lt;td&gt;捲動另一個分割&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-x 5 2&lt;/td&gt;
+&lt;td&gt;開新視窗(frame)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;Emacs檔案&#34;&gt;&lt;a href=&#34;#Emacs檔案&#34; class=&#34;headerlink&#34; title=&#34;Emacs檔案&#34;&gt;&lt;/a&gt;Emacs檔案&lt;/h3&gt;&lt;h4 id=&#34;Emacs檔案切換&#34;&gt;&lt;a href=&#34;#Emacs檔案切換&#34; class=&#34;headerlink&#34; title=&#34;Emacs檔案切換&#34;&gt;&lt;/a&gt;Emacs檔案切換&lt;/h4&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;介紹&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;C-x C-b&lt;/td&gt;
+&lt;td&gt;列出開啟的檔案清單(&lt;code&gt;Buffer List&lt;/code&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-x b&lt;/td&gt;
+&lt;td&gt;切換至其他開啟的檔案&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-x k&lt;/td&gt;
+&lt;td&gt;關閉目前編輯的檔案&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h4 id=&#34;Emacs檔案指令&#34;&gt;&lt;a href=&#34;#Emacs檔案指令&#34; class=&#34;headerlink&#34; title=&#34;Emacs檔案指令&#34;&gt;&lt;/a&gt;Emacs檔案指令&lt;/h4&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;介紹&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;C-x C-f&lt;/td&gt;
+&lt;td&gt;開新檔案/開啟舊檔&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-x 4 f&lt;/td&gt;
+&lt;td&gt;在新分割開啟檔案&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-x C-s&lt;/td&gt;
+&lt;td&gt;儲存檔案&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-x s&lt;/td&gt;
+&lt;td&gt;全部檔案儲存&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-x C-w&lt;/td&gt;
+&lt;td&gt;另存新檔&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-x d&lt;/td&gt;
+&lt;td&gt;開啟資料夾模式(Dired Mode)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-x C-v&lt;/td&gt;
+&lt;td&gt;開啟檔案取代目前的工作區(&lt;code&gt;find-alternate-file&lt;/code&gt;, 開錯檔案的時候用)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;Emacs系統&#34;&gt;&lt;a href=&#34;#Emacs系統&#34; class=&#34;headerlink&#34; title=&#34;Emacs系統&#34;&gt;&lt;/a&gt;Emacs系統&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;介紹&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;C-x C-c&lt;/td&gt;
+&lt;td&gt;結束 Emacs&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-z&lt;/td&gt;
+&lt;td&gt;暫時離開Emacs(Suspend)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;用&lt;code&gt;fg&lt;/code&gt;或&lt;code&gt;%emacs&lt;/code&gt;恢復 Emacs&lt;/p&gt;
+&lt;h3 id=&#34;Emacs函式&#34;&gt;&lt;a href=&#34;#Emacs函式&#34; class=&#34;headerlink&#34; title=&#34;Emacs函式&#34;&gt;&lt;/a&gt;Emacs函式&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;介紹&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;M-x [function]&lt;/td&gt;
+&lt;td&gt;執行名為[function]的指令&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;M-x compile&lt;/td&gt;
+&lt;td&gt;編譯(會開啟&lt;code&gt;*compilation*&lt;/code&gt;分割)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;M-x recompile&lt;/td&gt;
+&lt;td&gt;重覆執行上次執行過的compile指令&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-x `&lt;/td&gt;
+&lt;td&gt;跳到下一個有編譯錯誤的地方&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;M-x gdb&lt;/td&gt;
+&lt;td&gt;用gdb除錯&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;M-x shell&lt;/td&gt;
+&lt;td&gt;開啟&lt;code&gt;shell&lt;/code&gt;分割&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;在Shell分割中，需要在Shell指令前加上 &lt;code&gt;C-c&lt;/code&gt;&lt;br&gt;如 &lt;code&gt;C-c C-c&lt;/code&gt; 為中止程式; &lt;code&gt;C-c C-z&lt;/code&gt; 為暫停程式等&lt;/p&gt;
+&lt;h3 id=&#34;Emacs幫助&#34;&gt;&lt;a href=&#34;#Emacs幫助&#34; class=&#34;headerlink&#34; title=&#34;Emacs幫助&#34;&gt;&lt;/a&gt;Emacs幫助&lt;/h3&gt;&lt;!-- TODO: --&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;介紹&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;C-h ?&lt;/td&gt;
+&lt;td&gt;開啟 &lt;code&gt;*Help*&lt;/code&gt; 分割&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-h c [指令]&lt;/td&gt;
+&lt;td&gt;在命令列顯示簡短解釋&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-h k [指令]&lt;/td&gt;
+&lt;td&gt;在新分割顯示詳細解釋&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-h f [函數]&lt;/td&gt;
+&lt;td&gt;在新分割顯示函數說明&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-h w [函數]&lt;/td&gt;
+&lt;td&gt;查詢此函數的快捷鍵&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-h m&lt;/td&gt;
+&lt;td&gt;瀏覽現在模式的文件(C, C++, text…)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-h a&lt;/td&gt;
+&lt;td&gt;列出所有「含有此關鍵字」的全部函數(Command Apropos)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-h i&lt;/td&gt;
+&lt;td&gt;開啟 &lt;code&gt;*info*&lt;/code&gt; 分割&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;其他&#34;&gt;&lt;a href=&#34;#其他&#34; class=&#34;headerlink&#34; title=&#34;其他&#34;&gt;&lt;/a&gt;其他&lt;/h3&gt;&lt;!-- TODO: --&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;介紹&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;M-C-\&lt;/td&gt;
+&lt;td&gt;選擇區塊自動縮排(&lt;code&gt;indent-region&lt;/code&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;M-;&lt;/td&gt;
+&lt;td&gt;在句尾加入註解&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;M-^&lt;/td&gt;
+&lt;td&gt;將此行併入上一行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-t&lt;/td&gt;
+&lt;td&gt;對調兩字元&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;M-t&lt;/td&gt;
+&lt;td&gt;對調兩單字&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-x C-t&lt;/td&gt;
+&lt;td&gt;對調兩行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;M-c&lt;/td&gt;
+&lt;td&gt;將字的第一個字母改為大寫(Capitalize)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;M-u&lt;/td&gt;
+&lt;td&gt;將單字改為大寫(Upper)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;M-l&lt;/td&gt;
+&lt;td&gt;將單字改為小寫(Lower)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-x i&lt;/td&gt;
+&lt;td&gt;插入其他檔案的內容(insert-file)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h2 id=&#34;Emacs技巧&#34;&gt;&lt;a href=&#34;#Emacs技巧&#34; class=&#34;headerlink&#34; title=&#34;Emacs技巧&#34;&gt;&lt;/a&gt;Emacs技巧&lt;/h2&gt;&lt;h3 id=&#34;自動完成&#34;&gt;&lt;a href=&#34;#自動完成&#34; class=&#34;headerlink&#34; title=&#34;自動完成&#34;&gt;&lt;/a&gt;自動完成&lt;/h3&gt;&lt;p&gt;&lt;code&gt;M-/&lt;/code&gt; 可重複輸入以改變建議字串&lt;/p&gt;
+&lt;h3 id=&#34;移動至定義-goto-declaration&#34;&gt;&lt;a href=&#34;#移動至定義-goto-declaration&#34; class=&#34;headerlink&#34; title=&#34;移動至定義(goto declaration)&#34;&gt;&lt;/a&gt;移動至定義(goto declaration)&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;建立tag檔&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# for c, c++ file&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;find . | grep &lt;span class=&#34;string&#34;&gt;&amp;quot;.*\.\(c\|h\|cpp\)&amp;quot;&lt;/span&gt; | xargs etags -f tags &lt;span class=&#34;comment&#34;&gt;# output filename &amp;quot;tags&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# for python file&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;find . -&lt;span class=&#34;built_in&#34;&gt;type&lt;/span&gt; f -name &lt;span class=&#34;string&#34;&gt;&amp;#x27;*.py&amp;#x27;&lt;/span&gt; | xargs etags -f tags&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;在Emacs中用&lt;code&gt;M-.&lt;/code&gt;進行搜尋&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-x 4 .&lt;/code&gt;: 在另一個分割開啟定義&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;M-*&lt;/code&gt; 回到前一個定義的位置  &lt;/p&gt;
+&lt;p&gt;使用&lt;code&gt;autocomplete&lt;/code&gt;套件 &lt;/p&gt;
+&lt;!-- TODO: --&gt;
+
+&lt;h3 id=&#34;回到之前的遊標位置&#34;&gt;&lt;a href=&#34;#回到之前的遊標位置&#34; class=&#34;headerlink&#34; title=&#34;回到之前的遊標位置&#34;&gt;&lt;/a&gt;回到之前的遊標位置&lt;/h3&gt;&lt;p&gt;在搜尋或尋找定義之後很好用&lt;br&gt;&lt;code&gt;C-u C-space&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;Emacs作為IDE使用&#34;&gt;&lt;a href=&#34;#Emacs作為IDE使用&#34; class=&#34;headerlink&#34; title=&#34;Emacs作為IDE使用&#34;&gt;&lt;/a&gt;Emacs作為IDE使用&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/11043004/emacs-compile-buffer-auto-close&#34;&gt;編譯成功後自動關閉&lt;em&gt;compilnation&lt;/em&gt;分割&lt;/a&gt;&lt;br&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2xpZmVnb28ucGx1c2tpZC5vcmcvd2lraS9FbWFjc1NtYXJ0Q29tcGlsZS5odG1s&#34;&gt;智慧編譯：自動偵測檔名或makefile並編譯&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;Emacs巨集-Macro&#34;&gt;&lt;a href=&#34;#Emacs巨集-Macro&#34; class=&#34;headerlink&#34; title=&#34;Emacs巨集(Macro)&#34;&gt;&lt;/a&gt;Emacs巨集(Macro)&lt;/h3&gt;&lt;!-- TODO: --&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;介紹&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;C-x (&lt;/td&gt;
+&lt;td&gt;開始定義巨集&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-x )&lt;/td&gt;
+&lt;td&gt;結束巨集定義&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-x e&lt;/td&gt;
+&lt;td&gt;執行上一個定義的巨集&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;M-[Num] C-x e&lt;/td&gt;
+&lt;td&gt;將上一個定義的巨集執行 Num 次&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-u C-x (&lt;/td&gt;
+&lt;td&gt;執行上一個定義的巨集，然後可以加上按鍵以重新定義巨集&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-x q&lt;/td&gt;
+&lt;td&gt;將巨集定義中插入查詢&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-u C-x q&lt;/td&gt;
+&lt;td&gt;將巨集定義中插入遞迴編輯&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;M-C-c&lt;/td&gt;
+&lt;td&gt;跳出遞迴編輯&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;&lt;code&gt;name-last-kbd-macro&lt;/code&gt;: 將上一個定義的巨集存檔之前予以命名&lt;br&gt;&lt;code&gt;load-file&lt;/code&gt;: 載入儲存的lisp程式碼巨集&lt;br&gt;&lt;code&gt;macroname&lt;/code&gt;: 執行儲存過的”macroname”巨集&lt;br&gt;&lt;code&gt;insert-kbd-macro&lt;/code&gt;: 將命名過的巨集以lisp程式碼印出&lt;/p&gt;
+&lt;p&gt;應用：在&lt;code&gt;EmacsMacro.el&lt;/code&gt;中儲存巨集程式碼，並在&lt;code&gt;.emacs&lt;/code&gt;中寫入&lt;/p&gt;
+&lt;figure class=&#34;highlight lisp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;;;load my macro file&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;(&lt;span class=&#34;name&#34;&gt;load&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;~/EmacsMacro&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;!--
+TODO:
+### hippie
+
+### 书签
+
+### 快速切換到 shell 並 cd 到當前文件所在的目錄
+--&gt;
+
+&lt;h3 id=&#34;Emacs-Latex&#34;&gt;&lt;a href=&#34;#Emacs-Latex&#34; class=&#34;headerlink&#34; title=&#34;Emacs + Latex&#34;&gt;&lt;/a&gt;Emacs + Latex&lt;/h3&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2JiczMubnN5c3UuZWR1LnR3L3R4dFZlcnNpb24vdHJlYXN1cmUvSVVUL00uMTAwNjg2ODM1Mi5BL00uMTAwNjk1MjY3OC5HLmh0bWw=&#34;&gt;參考資料&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;安裝: &lt;code&gt;sudo apt-get install texlive-full&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;M-x validate-tex-region：檢查每一段文稿是否有不平衡的大括號或錢字號。&lt;br&gt;C-c {：插入 &lt;code&gt;&amp;#123;&amp;#125;&amp;#39; 並將游標移至左右大括號之間
+C-c &amp;#125;：將游標移至下一個右大括號的右端
+C-c C-o：插入 LaTeX 區段標記&lt;/code&gt;\begin’ 及\end’ 並將游標移至&lt;br&gt;二者間的空行&lt;br&gt;C-c C-e：為前一個不平衡的 `\begin’ 加上\end’&lt;/p&gt;
+&lt;p&gt;編譯&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;C-c C-f：對目前所在的檔案執行 TeX/LaTeX 的編譯&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;C-c C-r：對一段區域 (region) 執行 TeX/LaTeX 的編譯&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;不論是 TeX 或 LaTeX都包含了一段有關全文的訊息在整篇文稿的開端，若是僅僅編譯所指定的區域而忽略了這段訊息的話，將會產生錯誤的結果。為了解決這個問題，必需在文稿中標明header 的位置，然後在 用  C-c C-r 命令時  emacs 會自動將header中的訊息讀入處理。在 TeX 中標明 header 的方法是在 header段落前後插入 &lt;code&gt;%start of header&amp;#39; 和&lt;/code&gt; %end of header}’&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;C-c C-b：對整個目前所在的緩衝區 (buffer) 執行 TeX/LaTeX 的編譯&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;C-c C-r 和  C-c C-b 並不會產生如  *.aux等的附屬檔，因此無法執行cross-reference等工作。如果需要產生附屬檔則必需使用 C-c C-f&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;C-c TAB：對目前所在的檔案執行 BibTeX 的編譯&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;C-c C-v：預覽 C-c C-r, C-c C-b 或  C-c C-f 編譯的結果&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;C-c C-k：終結 (kill) 目前進行中的 TeX/LaTeX 程序(process)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;C-c C-p：列印 C-c C-r、C-c C-b 或 C-cC-f 編譯的結果&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;C-c C-q：顯示目前的 printer queue&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Emacs-Git&#34;&gt;&lt;a href=&#34;#Emacs-Git&#34; class=&#34;headerlink&#34; title=&#34;Emacs + Git&#34;&gt;&lt;/a&gt;Emacs + Git&lt;/h3&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5jbmJsb2dzLmNvbS9ob2xicm9vay9hcmNoaXZlLzIwMTIvMDQvMjYvMjQ3MDkyMy5odG1s&#34;&gt;使用git-emacs套件&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;畫簡單的ASCII圖&#34;&gt;&lt;a href=&#34;#畫簡單的ASCII圖&#34; class=&#34;headerlink&#34; title=&#34;畫簡單的ASCII圖&#34;&gt;&lt;/a&gt;畫簡單的ASCII圖&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2VtYWNzZXIuY29tL2FydGlzdC1tb2RlLmh0bQ==&#34;&gt;Artist Mode&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;    &lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2VtYWNzZXIuY29tL2VtYWNzLWRpdGFhLmh0bWw=&#34;&gt;輸出成圖片檔&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Emacs-Markdown&#34;&gt;&lt;a href=&#34;#Emacs-Markdown&#34; class=&#34;headerlink&#34; title=&#34;Emacs + Markdown&#34;&gt;&lt;/a&gt;Emacs + Markdown&lt;/h3&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9saW51eHRveS5vcmcvYXJjaGl2ZXMvZW1hY3MtbWFya2Rvd24tbW9kZS5odG1s&#34;&gt;Emacs Markdown模式&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;有些指令直接輸入比較快…&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指令&lt;/th&gt;
+&lt;th&gt;介紹&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;C-c C-t [N]&lt;/td&gt;
+&lt;td&gt;插入第N級的標題&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-c C-a l&lt;/td&gt;
+&lt;td&gt;插入鏈接，格式為 &lt;code&gt;[text](url)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-c C-i i&lt;/td&gt;
+&lt;td&gt;插入圖像，格式為 &lt;code&gt;![text](url)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-c -&lt;/td&gt;
+&lt;td&gt;插入水平線&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;S-Tab&lt;/td&gt;
+&lt;td&gt;在大綱視圖、目錄視圖、及正常視圖間切換&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-c C-c m&lt;/td&gt;
+&lt;td&gt;預覽HTML&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C-c C-c p&lt;/td&gt;
+&lt;td&gt;在瀏覽器中預覽&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;Emacs-Screen&#34;&gt;&lt;a href=&#34;#Emacs-Screen&#34; class=&#34;headerlink&#34; title=&#34;Emacs + Screen&#34;&gt;&lt;/a&gt;Emacs + Screen&lt;/h3&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2xhZ3VuYXdhbmcucGl4bmV0Lm5ldC9ibG9nL3Bvc3QvMjgzNjgyNS1saW51eC1zY3JlZW4lRTYlOEMlODclRTQlQkIlQTQ=&#34;&gt;Screen 指令表&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;因為Emacs的快捷鍵和Screen重複，要自己在&lt;code&gt;.screenrc&lt;/code&gt;設定檔修改&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在 &lt;code&gt;.screenrc&lt;/code&gt; 中新增 &lt;code&gt;escape ^tt&lt;/code&gt;&lt;br&gt;即可將 所有 C-a 改為 C-t&lt;/li&gt;
+&lt;li&gt;在 &lt;code&gt;.screenrc&lt;/code&gt; 中新增 &lt;code&gt;escape ^l^l&lt;/code&gt;&lt;br&gt;即可將 所有 &lt;code&gt;C-a&lt;/code&gt; 改為 &lt;code&gt;C-l&lt;/code&gt;，且在輸入 &lt;code&gt;C-l C-l&lt;/code&gt; 時可以跳脫screen指令(等同在terminal輸入&lt;code&gt;C-l&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2xpZmVnb28ucGx1c2tpZC5vcmcvd2lraS9TY3JlZW4uaHRtbA==&#34;&gt;修改教學&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在使用Emacs時，適合bind到screen的key:&lt;br&gt;&lt;code&gt;C-v&lt;/code&gt;(scroll-up-command), &lt;code&gt;C-space&lt;/code&gt;(set-mark-command), &lt;code&gt;C-t&lt;/code&gt;(transpose-chars), &lt;code&gt;C-d&lt;/code&gt;(delete char), C-l(recenter-top-bottom)&lt;br&gt;其他都太常用或是不能bind(&lt;code&gt;C-z&lt;/code&gt;, &lt;code&gt;C-q&lt;/code&gt;, &lt;code&gt;C-m&lt;/code&gt;, &lt;code&gt;C-i&lt;/code&gt;)，不然就要用 C-S 系列&lt;/p&gt;
+&lt;!-- ### Dired Mode
+
+TODO:
+
+### 套件安裝
+
+TODO: --&gt;
+
+&lt;h3 id=&#34;其他功能&#34;&gt;&lt;a href=&#34;#其他功能&#34; class=&#34;headerlink&#34; title=&#34;其他功能&#34;&gt;&lt;/a&gt;其他功能&lt;/h3&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZ251Lm9yZy9zb2Z0d2FyZS9lbWFjcy9tYW51YWwvaHRtbF9ub2RlL2VmYXEvUmVwbGFjaW5nLXRleHQtYWNyb3NzLW11bHRpcGxlLWZpbGVzLmh0bWw=&#34;&gt;多檔案取代字串&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;字體大小&#34;&gt;&lt;a href=&#34;#字體大小&#34; class=&#34;headerlink&#34; title=&#34;字體大小&#34;&gt;&lt;/a&gt;字體大小&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;放大字體: C-x C-+ 或 C-x C-=&lt;/li&gt;
+&lt;li&gt;縮小字體: C-x C-–&lt;/li&gt;
+&lt;li&gt;重置字體: C-x C-0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Emacs-Server&#34;&gt;&lt;a href=&#34;#Emacs-Server&#34; class=&#34;headerlink&#34; title=&#34;Emacs Server&#34;&gt;&lt;/a&gt;Emacs Server&lt;/h3&gt;&lt;p&gt;若Emacs設定檔太大，開啟時會需要花很長時間，所以可以持續開啟server，需要的時候再使用client連接至server，即可省下讀取設定的時間。&lt;/p&gt;
+&lt;!-- TODO: 測試 --&gt;
+&lt;ul&gt;
+&lt;li&gt;開啟server: &lt;code&gt;emacs --daemon&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;連線至server: &lt;code&gt;emacsclient&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;解決Windows上C-Space被中文輸入法佔用的問題&#34;&gt;&lt;a href=&#34;#解決Windows上C-Space被中文輸入法佔用的問題&#34; class=&#34;headerlink&#34; title=&#34;解決Windows上C-Space被中文輸入法佔用的問題&#34;&gt;&lt;/a&gt;解決Windows上C-Space被中文輸入法佔用的問題&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;上策：移除輸入法的&lt;code&gt;C-space&lt;/code&gt;綁定(失敗)&lt;ol&gt;
+&lt;li&gt;語言列選項 → 輸入語言快捷鍵 → 將&lt;code&gt;C-Space&lt;/code&gt;取消或改成別的&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;中策：比輸入法更優先綁定&lt;code&gt;C-space&lt;/code&gt;(成功)&lt;ol&gt;
+&lt;li&gt;使用AutoHotKey&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;^Space::^+2&lt;/code&gt;: 將 &lt;code&gt;C-Space&lt;/code&gt; 映射至 &lt;code&gt;C-S-2&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;下策：換別的快捷鍵&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;C-S-2&lt;/code&gt;(Emacs內建，不過很難按)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;M-space&lt;/code&gt;(在VSCode不適用)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-t&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-m&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-h&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;Emacs知識&#34;&gt;&lt;a href=&#34;#Emacs知識&#34; class=&#34;headerlink&#34; title=&#34;Emacs知識&#34;&gt;&lt;/a&gt;Emacs知識&lt;/h2&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2xpZmVnb28ucGx1c2tpZC5vcmcvd2lraS9FbWFjcy5odG1s&#34;&gt;參考資料&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;名稱&#34;&gt;&lt;a href=&#34;#名稱&#34; class=&#34;headerlink&#34; title=&#34;名稱&#34;&gt;&lt;/a&gt;名稱&lt;/h3&gt;&lt;p&gt;Emacs 是 「編輯巨集」[Editing MACroS]的簡稱&lt;/p&gt;
+&lt;h3 id=&#34;前綴&#34;&gt;&lt;a href=&#34;#前綴&#34; class=&#34;headerlink&#34; title=&#34;前綴&#34;&gt;&lt;/a&gt;前綴&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;一些不是特別常用的函數綁定到前綴 C-x 上。例如 C-x C-c 退出 Emacs， C-x 2 水平分割當前 window&lt;/li&gt;
+&lt;li&gt;與某個 mode 相關的的函數被綁定到前綴 C-c 上&lt;/li&gt;
+&lt;li&gt;最不常用的函數根本沒有鍵綁定，而是使用 M-x 然後輸入函數名來調用他們&lt;/li&gt;
+&lt;li&gt;前綴 C-x 4 被保留作操作另外一個 window 用的函數，例如 C-x 4 C-f 在另 外一個 window 裡面打開文件&lt;/li&gt;
+&lt;li&gt;前綴 C-x 5 被綁定到操縱其他frame 的 函數上面&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;殺掉-kill&#34;&gt;&lt;a href=&#34;#殺掉-kill&#34; class=&#34;headerlink&#34; title=&#34;殺掉(kill)&#34;&gt;&lt;/a&gt;殺掉(kill)&lt;/h3&gt;&lt;!-- - TODO: kill-ring --&gt;
+&lt;ul&gt;
+&lt;li&gt;被殺掉的可以拉回，而被刪除的則不能&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;delete&lt;/code&gt;, &lt;code&gt;backspace&lt;/code&gt;都是刪除&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-k&lt;/code&gt;, &lt;code&gt;C-w&lt;/code&gt;, &lt;code&gt;M-w&lt;/code&gt; 等指令都是殺掉&lt;ul&gt;
+&lt;li&gt;如果連續地做了數次 C-k，所有被殺掉的文字都會被儲存在一起，因此做一次C-y 就會把所有這些行都拉回來&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;將被殺掉的文字回復的動作稱為「拉回（ yanking ）」&lt;ul&gt;
+&lt;li&gt;即為貼上的意思&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;C-y&lt;/code&gt; 會把最近殺掉的拉回來，前幾次殺掉的文字可以用 &lt;code&gt;M-y&lt;/code&gt; 來回復&lt;/li&gt;
+&lt;li&gt;可以給 &lt;code&gt;M-y&lt;/code&gt; 正的或是負的參數來回到之前殺掉的東西&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;搜尋&#34;&gt;&lt;a href=&#34;#搜尋&#34; class=&#34;headerlink&#34; title=&#34;搜尋&#34;&gt;&lt;/a&gt;搜尋&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Emacs 搜尋指令是「漸進的（ incremental ）」，搜尋發生在遊標後&lt;ul&gt;
+&lt;li&gt;如果鍵入『u』，游標會移動到「cu」的第一次出現位置。將「u」從s搜尋字串中消除，游標會移回到「c」的第一次出現位置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;設定檔位置&#34;&gt;&lt;a href=&#34;#設定檔位置&#34; class=&#34;headerlink&#34; title=&#34;設定檔位置&#34;&gt;&lt;/a&gt;設定檔位置&lt;/h3&gt;&lt;p&gt;家目錄的&lt;code&gt;.emacs&lt;/code&gt;檔案和&lt;code&gt;.emacs.d&lt;/code&gt;資料夾，可修改Emacs設定&lt;/p&gt;
+&lt;h3 id=&#34;Shell&#34;&gt;&lt;a href=&#34;#Shell&#34; class=&#34;headerlink&#34; title=&#34;Shell&#34;&gt;&lt;/a&gt;Shell&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Bash上預設的控制模式是Emacs，也就是說可以使用 C-a, C-f, C-b 等移動鍵，C-r搜尋歷史指令，C-n, C-p 切換歷史指令，C-k 殺掉文字，C-y貼上文字，C-j 執行指令等等。&lt;/li&gt;
+&lt;li&gt;和Emacs不一樣的地方有 &lt;code&gt;C-h&lt;/code&gt;往前刪除一字元, &lt;code&gt;C-w&lt;/code&gt;清除游標以前的一個單字, &lt;code&gt;C-u&lt;/code&gt;清除游標以前所有的字元。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;其他-1&#34;&gt;&lt;a href=&#34;#其他-1&#34; class=&#34;headerlink&#34; title=&#34;其他&#34;&gt;&lt;/a&gt;其他&lt;/h3&gt;&lt;p&gt;Emacs即為Lisp語言直譯器，所以理論上可以做到任何Lisp能做到的事，所以也被稱為「神之編輯器」。&lt;/p&gt;
+&lt;!-- (https://www.facebook.com/pangfeng.liu/posts/696258720389410?match=ZW1hY3M%3D) --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我完全同意 emacs 和管風琴一樣。配合 Cherry 機械鍵盤寫論文寫程式有如彈琴。Ctrl 鍵有如和弦，空白鍵宛如音符之間的暫停，而最後重重敲下 Return 鍵時，右手宛如指揮家劃下最後一個節拍的爽快。&lt;br&gt;– 劉邦鋒&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;軼事&#34;&gt;&lt;a href=&#34;#軼事&#34; class=&#34;headerlink&#34; title=&#34;軼事&#34;&gt;&lt;/a&gt;軼事&lt;/h3&gt;&lt;p&gt;Tim O’relly 原本使用 Emacs，直到他弄丟 &lt;code&gt;.emacs&lt;/code&gt; 檔案&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93ZWIuYXJjaGl2ZS5vcmcvd2ViLzIwMDkxMDAzMDExMjAwL2h0dHA6Ly93d3cub3JlaWxseW5ldC5jb20vcHViL2Evb3JlaWxseS9hc2tfdGltLzE5OTkvdW5peF9lZGl0b3IuaHRtbA==&#34;&gt;原文&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;快速設定&#34;&gt;&lt;a href=&#34;#快速設定&#34; class=&#34;headerlink&#34; title=&#34;快速設定&#34;&gt;&lt;/a&gt;快速設定&lt;/h2&gt;&lt;p&gt;使用現成的設定檔&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;優點&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;不用寫lisp&lt;/li&gt;
+&lt;li&gt;經過優化&lt;/li&gt;
+&lt;li&gt;較完整&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;缺點&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;不夠客製化&lt;/li&gt;
+&lt;li&gt;功能太多，搞不清&lt;/li&gt;
+&lt;li&gt;難以修改&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2JiYXRzb3YvcHJlbHVkZQ==&#34;&gt;Prelude&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3B1cmNlbGwvZW1hY3MuZA==&#34;&gt;Purcell&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3N5bDIwYm5yL3NwYWNlbWFjcw==&#34;&gt;Spacemacs&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;CheatSheet&#34;&gt;&lt;a href=&#34;#CheatSheet&#34; class=&#34;headerlink&#34; title=&#34;CheatSheet&#34;&gt;&lt;/a&gt;CheatSheet&lt;/h2&gt;&lt;p&gt;&lt;img data-src=&#34;/img/emacs/cheatsheet.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3N0ZXZlbmNoYW4udXMvZW1hY3MtdmlzdWFsLWNoZWF0LXNoZWV0&#34;&gt;Cheat Sheet&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;!--
+## Mode Line
+
+ TODO: --&gt;
+
+&lt;!-- ## Org Mode
+
+https://github.com/pbesedm/Oh-My-Editors/blob/master/doc/emacs%E6%93%8D%E4%BD%9C%E6%B1%87%E6%80%BB.org --&gt;
+
+
+&lt;h2 id=&#34;參考資料&#34;&gt;&lt;a href=&#34;#參考資料&#34; class=&#34;headerlink&#34; title=&#34;參考資料&#34;&gt;&lt;/a&gt;參考資料&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2NsaXB0aGF0LmJsb2dzcG90LnR3LzIwMTAvMDEvZW1hY3MuaHRtbA==&#34;&gt;指令大全&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5lbWFjcy51bml5YXIuYWMucnUvZG9jL2VtMjRoLw==&#34;&gt;Sams Teach Yourself Emacs in 24 Hours&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt; &lt;!-- 未讀--&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcmVkZ3VhcmR0b28vYXJ0aWNsZS9kZXRhaWxzLzcyMjI1MDE=&#34;&gt;一年成為Emacs高手&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;ul&gt;
+&lt;li&gt;有常用套件推薦&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="Emacs" />
+        <category term="指令" />
+        <updated>2015-05-02T09:49:50.000Z</updated>
+    </entry>
+</feed>

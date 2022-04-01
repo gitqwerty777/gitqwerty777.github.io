@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://gitqwerty777.github.io</id>
+    <title>QWERTY • Posts by &#34;cfr&#34; tag</title>
+    <link href="http://gitqwerty777.github.io" />
+    <updated>2015-06-15T03:49:49.000Z</updated>
+    <category term="C#" />
+    <category term="CodingStyle" />
+    <category term="Emacs" />
+    <category term="編輯器" />
+    <category term="CFR" />
+    <category term="電腦對局理論" />
+    <category term="指令" />
+    <category term="機器學習" />
+    <category term="perceptron" />
+    <category term="readme" />
+    <category term="文件" />
+    <category term="github" />
+    <category term="artificial intelligence" />
+    <category term="search" />
+    <category term="First-Order Logic" />
+    <category term="大數" />
+    <category term="程式" />
+    <category term="C++" />
+    <category term="Hexo" />
+    <category term="網誌" />
+    <category term="Markdown" />
+    <category term="CleanCode" />
+    <category term="重構" />
+    <category term="TDD" />
+    <category term="設計模式" />
+    <category term="CMake" />
+    <category term="Makefile" />
+    <category term="Linux" />
+    <category term="Todo" />
+    <category term="註解" />
+    <category term="經濟學" />
+    <category term="策略" />
+    <category term="競爭" />
+    <category term="博弈論" />
+    <category term="計算機結構" />
+    <category term="人工智慧" />
+    <category term="圍棋" />
+    <category term="象棋" />
+    <category term="蒙地卡羅" />
+    <category term="Alpha-Beta搜尋" />
+    <category term="強化學習" />
+    <category term="計算機網路" />
+    <category term="boost" />
+    <category term="函式庫" />
+    <category term="編譯" />
+    <category term="gcc" />
+    <category term="g++" />
+    <category term="clang" />
+    <category term="最佳化" />
+    <category term="推薦系統" />
+    <category term="FM" />
+    <category term="FFM" />
+    <category term="SVM" />
+    <category term="Embedding" />
+    <category term="自然語言處理" />
+    <category term="外國用語" />
+    <category term="萌典" />
+    <category term="opencc" />
+    <category term="PTT" />
+    <category term="vuejs" />
+    <category term="linux" />
+    <category term="c" />
+    <category term="compile" />
+    <category term="gdb" />
+    <category term="c語言" />
+    <category term="cpp" />
+    <category term="除錯" />
+    <category term="git" />
+    <category term="VMWare" />
+    <category term="虛擬機" />
+    <category term="IFTTT" />
+    <category term="自動化" />
+    <category term="備份" />
+    <category term="webhook" />
+    <category term="簡報" />
+    <category term="軟體" />
+    <category term="PowerPoint" />
+    <category term="Latex" />
+    <category term="JavaScript" />
+    <category term="CSS" />
+    <category term="Unity" />
+    <category term="fcitx" />
+    <category term="嘸蝦米" />
+    <category term="輸入法" />
+    <category term="硬碟" />
+    <category term="記憶體" />
+    <category term="效能" />
+    <category term="錯誤" />
+    <category term="makefile" />
+    <category term="備忘錄" />
+    <category term="存檔" />
+    <category term="統計" />
+    <category term="byobu" />
+    <category term="screen" />
+    <category term="tmux" />
+    <category term="reactjs" />
+    <category term="javascript" />
+    <category term="WideAndDeep" />
+    <category term="Google" />
+    <category term="觀察者" />
+    <category term="訂閱" />
+    <category term="委託" />
+    <category term="正規表示式(RegExp)" />
+    <category term="上下文無關文法(CFG)" />
+    <category term="hexo" />
+    <category term="blog" />
+    <category term="theme" />
+    <category term="feature" />
+    <category term="revealJS" />
+    <category term="markdown" />
+    <category term="rss" />
+    <category term="facebook" />
+    <category term="youtube" />
+    <category term="ptt" />
+    <category term="bilibili" />
+    <category term="pixiv" />
+    <category term="crawler" />
+    <category term="SEO" />
+    <category term="google" />
+    <category term="html" />
+    <category term="amazon" />
+    <category term="webhost" />
+    <category term="ssl" />
+    <category term="漢字" />
+    <category term="中文" />
+    <category term="異體字" />
+    <category term="unicode" />
+    <category term="unity" />
+    <category term="演算法" />
+    <category term="隨機排序" />
+    <category term="洗牌" />
+    <category term="Fisher-Yates" />
+    <category term="證明" />
+    <category term="python" />
+    <entry>
+        <id>http://gitqwerty777.github.io/Counterfactual-Regret-Minimization/</id>
+        <title>CFR(Counterfactual Regret Minimization) 演算法簡介</title>
+        <link rel="alternate" href="http://gitqwerty777.github.io/Counterfactual-Regret-Minimization/"/>
+        <content type="html">&lt;!-- RENEW: --&gt;
+
+&lt;p&gt;參考作者在Quora上的解釋&lt;br&gt;  &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;Introduction&#34;&gt;&lt;a href=&#34;#Introduction&#34; class=&#34;headerlink&#34; title=&#34;Introduction&#34;&gt;&lt;/a&gt;Introduction&lt;/h2&gt;&lt;p&gt;self-learning algorithm  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;learns strategy by repeatedly playing against itself&lt;/li&gt;
+&lt;li&gt;initialized with uniformly random&lt;ul&gt;
+&lt;li&gt;playing every action at every decision point with &lt;strong&gt;equal&lt;/strong&gt; probability&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;play the action with maximum regret&lt;/li&gt;
+&lt;li&gt;it will converge to optimal strategy that can do no worse than tie against any opponent&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Implementation&#34;&gt;&lt;a href=&#34;#Implementation&#34; class=&#34;headerlink&#34; title=&#34;Implementation&#34;&gt;&lt;/a&gt;Implementation&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Summing total regret for each action at each decision point&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;regret: how much better if just &lt;strong&gt;always&lt;/strong&gt; played this one action at this decision, instead of previous choices?&lt;ul&gt;
+&lt;li&gt;Positive regret means that we would have done better if we had taken that action more often&lt;/li&gt;
+&lt;li&gt;Negative regret means that we would have done better by not taking that action at all&lt;/li&gt;
+&lt;li&gt;愈多regret，代表此選項要多選&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;do actions with probabilities proportional to their positive regret&lt;/li&gt;
+&lt;li&gt;after each game, update regret values &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Counter-intuitively, sequence of strategies &lt;strong&gt;does not necessarily converge to anything useful&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;But it now does so in practice&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;in a two-player zero-sum game&lt;/strong&gt;, if you compute the average strategy over those billions of strategies in the sequence, then that average strategy will converge towards &lt;strong&gt;Nash equilibrium&lt;/strong&gt; of the game&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Nash-equilibrium-納許均衡&#34;&gt;&lt;a href=&#34;#Nash-equilibrium-納許均衡&#34; class=&#34;headerlink&#34; title=&#34;Nash equilibrium(納許均衡)&#34;&gt;&lt;/a&gt;Nash equilibrium(納許均衡)&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Do no worse than tie against any other strategy&lt;/li&gt;
+&lt;li&gt;Plays perfect defence&lt;ul&gt;
+&lt;li&gt;Just wins when the opponent makes mistakes&lt;ul&gt;
+&lt;li&gt;since attempting to find and exploit an opponent’s mistakes usually makes it possible for an even smarter opponent to exploit your new strategy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;exploitability(利用度)&lt;ul&gt;
+&lt;li&gt;maximum expectation that a perfect counter-strategy could win &lt;/li&gt;
+&lt;li&gt;exploitability = 0 when Nash equilibrium&lt;/li&gt;
+&lt;li&gt;CFR can make average strategy’s exploitability converges towards zero&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Result&#34;&gt;&lt;a href=&#34;#Result&#34; class=&#34;headerlink&#34; title=&#34;Result&#34;&gt;&lt;/a&gt;Result&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;best poker programs started beating the world’s best human players in heads-up limit hold’em in 2008, even though there were still massively exploitable by this worst-case measure&lt;/li&gt;
+&lt;li&gt;In January 2015, we’ve essentially &lt;strong&gt;weakly solved&lt;/strong&gt; the game&lt;ul&gt;
+&lt;li&gt;a strategy with such a low exploitability (0.000986 big blinds per game)&lt;ul&gt;
+&lt;li&gt;have 95% statistical confidence that they were actually winning against everyone&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Algorithm-Implementation&#34;&gt;&lt;a href=&#34;#Algorithm-Implementation&#34; class=&#34;headerlink&#34; title=&#34;Algorithm Implementation&#34;&gt;&lt;/a&gt;Algorithm Implementation&lt;/h2&gt;&lt;p&gt;待補充&lt;/p&gt;
+&lt;h2 id=&#34;Example-Code&#34;&gt;&lt;a href=&#34;#Example-Code&#34; class=&#34;headerlink&#34; title=&#34;Example Code&#34;&gt;&lt;/a&gt;Example Code&lt;/h2&gt;&lt;p&gt;待補充&lt;/p&gt;
+&lt;h2 id=&#34;Summary&#34;&gt;&lt;a href=&#34;#Summary&#34; class=&#34;headerlink&#34; title=&#34;Summary&#34;&gt;&lt;/a&gt;Summary&lt;/h2&gt;&lt;p&gt;待補充&lt;/p&gt;
+&lt;h2 id=&#34;參考資料&#34;&gt;&lt;a href=&#34;#參考資料&#34; class=&#34;headerlink&#34; title=&#34;參考資料&#34;&gt;&lt;/a&gt;參考資料&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3Bva2VyLmNzLnVhbGJlcnRhLmNhL3B1YmxpY2F0aW9ucy9OSVBTMDctY2ZyLnBkZg==&#34;&gt;(CFR)Regret Minimization in Games with Incomplete Information&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2FyeGl2Lm9yZy9wZGYvMTQwNy41MDQyLnBkZg==&#34;&gt;(CFR+)Solving Large Imperfect Information Games Using CFR+&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5xdW9yYS5jb20vV2hhdC1pcy1hbi1pbnR1aXRpdmUtZXhwbGFuYXRpb24tb2YtY291bnRlcmZhY3R1YWwtcmVncmV0LW1pbmltaXphdGlvbg==&#34;&gt;(CFR)Explanation of CFR by inventor himself&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3NwZWN0cnVtLmllZWUub3JnL3JvYm90aWNzL2FydGlmaWNpYWwtaW50ZWxsaWdlbmNlL3Bva2VycGxheWluZy1haXMtdG9kYXktc2t5bmV0LXRvbW9ycm93&#34;&gt;poker AI news&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3NwZWN0cnVtLmllZWUub3JnL3RlY2gtdGFsay9jb21wdXRpbmcvc29mdHdhcmUvY29tcHV0ZXJzLWNvbnF1ZXItdGV4YXMtaG9sZGVtLXBva2VyLWZvci1maXJzdC10aW1l&#34;&gt;poker AI news2&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3Bva2VyLmNzLnVhbGJlcnRhLmNhL29wZW5fY2ZyLmh0bWw=&#34;&gt;(Implementation)openCFR&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="CFR" />
+        <category term="電腦對局理論" />
+        <updated>2015-06-15T03:49:49.000Z</updated>
+    </entry>
+</feed>

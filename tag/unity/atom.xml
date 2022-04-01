@@ -1,0 +1,341 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://gitqwerty777.github.io</id>
+    <title>QWERTY • Posts by &#34;unity&#34; tag</title>
+    <link href="http://gitqwerty777.github.io" />
+    <updated>2022-03-22T03:45:23.000Z</updated>
+    <category term="C#" />
+    <category term="CodingStyle" />
+    <category term="Emacs" />
+    <category term="編輯器" />
+    <category term="CFR" />
+    <category term="電腦對局理論" />
+    <category term="指令" />
+    <category term="機器學習" />
+    <category term="perceptron" />
+    <category term="readme" />
+    <category term="文件" />
+    <category term="github" />
+    <category term="artificial intelligence" />
+    <category term="search" />
+    <category term="First-Order Logic" />
+    <category term="大數" />
+    <category term="程式" />
+    <category term="C++" />
+    <category term="Hexo" />
+    <category term="網誌" />
+    <category term="Markdown" />
+    <category term="CleanCode" />
+    <category term="重構" />
+    <category term="TDD" />
+    <category term="設計模式" />
+    <category term="CMake" />
+    <category term="Makefile" />
+    <category term="Linux" />
+    <category term="Todo" />
+    <category term="註解" />
+    <category term="經濟學" />
+    <category term="策略" />
+    <category term="競爭" />
+    <category term="博弈論" />
+    <category term="計算機結構" />
+    <category term="人工智慧" />
+    <category term="圍棋" />
+    <category term="象棋" />
+    <category term="蒙地卡羅" />
+    <category term="Alpha-Beta搜尋" />
+    <category term="強化學習" />
+    <category term="計算機網路" />
+    <category term="boost" />
+    <category term="函式庫" />
+    <category term="編譯" />
+    <category term="gcc" />
+    <category term="g++" />
+    <category term="clang" />
+    <category term="最佳化" />
+    <category term="推薦系統" />
+    <category term="FM" />
+    <category term="FFM" />
+    <category term="SVM" />
+    <category term="Embedding" />
+    <category term="自然語言處理" />
+    <category term="外國用語" />
+    <category term="萌典" />
+    <category term="opencc" />
+    <category term="PTT" />
+    <category term="vuejs" />
+    <category term="linux" />
+    <category term="c" />
+    <category term="compile" />
+    <category term="gdb" />
+    <category term="c語言" />
+    <category term="cpp" />
+    <category term="除錯" />
+    <category term="git" />
+    <category term="VMWare" />
+    <category term="虛擬機" />
+    <category term="IFTTT" />
+    <category term="自動化" />
+    <category term="備份" />
+    <category term="webhook" />
+    <category term="簡報" />
+    <category term="軟體" />
+    <category term="PowerPoint" />
+    <category term="Latex" />
+    <category term="JavaScript" />
+    <category term="CSS" />
+    <category term="Unity" />
+    <category term="fcitx" />
+    <category term="嘸蝦米" />
+    <category term="輸入法" />
+    <category term="硬碟" />
+    <category term="記憶體" />
+    <category term="效能" />
+    <category term="錯誤" />
+    <category term="makefile" />
+    <category term="備忘錄" />
+    <category term="存檔" />
+    <category term="統計" />
+    <category term="byobu" />
+    <category term="screen" />
+    <category term="tmux" />
+    <category term="reactjs" />
+    <category term="javascript" />
+    <category term="WideAndDeep" />
+    <category term="Google" />
+    <category term="觀察者" />
+    <category term="訂閱" />
+    <category term="委託" />
+    <category term="正規表示式(RegExp)" />
+    <category term="上下文無關文法(CFG)" />
+    <category term="hexo" />
+    <category term="blog" />
+    <category term="theme" />
+    <category term="feature" />
+    <category term="revealJS" />
+    <category term="markdown" />
+    <category term="rss" />
+    <category term="facebook" />
+    <category term="youtube" />
+    <category term="ptt" />
+    <category term="bilibili" />
+    <category term="pixiv" />
+    <category term="crawler" />
+    <category term="SEO" />
+    <category term="google" />
+    <category term="html" />
+    <category term="amazon" />
+    <category term="webhost" />
+    <category term="ssl" />
+    <category term="漢字" />
+    <category term="中文" />
+    <category term="異體字" />
+    <category term="unicode" />
+    <category term="unity" />
+    <category term="演算法" />
+    <category term="隨機排序" />
+    <category term="洗牌" />
+    <category term="Fisher-Yates" />
+    <category term="證明" />
+    <category term="python" />
+    <entry>
+        <id>http://gitqwerty777.github.io/how-to-make-slides/</id>
+        <title>簡報製作軟體比較</title>
+        <link rel="alternate" href="http://gitqwerty777.github.io/how-to-make-slides/"/>
+        <content type="html">&lt;h2 id=&#34;分類&#34;&gt;&lt;a href=&#34;#分類&#34; class=&#34;headerlink&#34; title=&#34;分類&#34;&gt;&lt;/a&gt;分類&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;編輯軟體&lt;/li&gt;
+&lt;li&gt;Latex&lt;/li&gt;
+&lt;li&gt;Markdown&lt;/li&gt;
+&lt;li&gt;Javascript&lt;/li&gt;
+&lt;li&gt;其他&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;編輯軟體&#34;&gt;&lt;a href=&#34;#編輯軟體&#34; class=&#34;headerlink&#34; title=&#34;編輯軟體&#34;&gt;&lt;/a&gt;編輯軟體&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;優點&lt;ul&gt;
+&lt;li&gt;編輯方便&lt;/li&gt;
+&lt;li&gt;功能齊全&lt;/li&gt;
+&lt;li&gt;模版多&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;缺點&lt;ul&gt;
+&lt;li&gt;手動排版&lt;/li&gt;
+&lt;li&gt;需要使用特定軟體才能編輯&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;軟體&#34;&gt;&lt;a href=&#34;#軟體&#34; class=&#34;headerlink&#34; title=&#34;軟體&#34;&gt;&lt;/a&gt;軟體&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;PowerPoint&lt;/li&gt;
+&lt;li&gt;Google Slides&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9wcmV6aS5jb20veGNpdDR6YmF0NnN3L3N3ZWV0LXJlY2lwZS10by1zb2x2aW5nLXByb2JsZW1zLw==&#34;&gt;Prezi&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Latex&#34;&gt;&lt;a href=&#34;#Latex&#34; class=&#34;headerlink&#34; title=&#34;Latex&#34;&gt;&lt;/a&gt;Latex&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;優點&lt;ul&gt;
+&lt;li&gt;自訂性高&lt;/li&gt;
+&lt;li&gt;寫公式、程式碼方便&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;缺點&lt;ul&gt;
+&lt;li&gt;指令過於複雜&lt;/li&gt;
+&lt;li&gt;需要設定開發環境&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;模版&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cub3ZlcmxlYWYuY29tL2xlYXJuL2xhdGV4L0JlYW1lcg==&#34;&gt;Beamer&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hzdWFudGllbi9iZWFtZXJUYWl3YW4=&#34;&gt;BeamerTaiwan&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Markdown&#34;&gt;&lt;a href=&#34;#Markdown&#34; class=&#34;headerlink&#34; title=&#34;Markdown&#34;&gt;&lt;/a&gt;Markdown&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;優點&lt;ul&gt;
+&lt;li&gt;原始文字易於保存&lt;/li&gt;
+&lt;li&gt;語法較Latex簡單&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;缺點&lt;ul&gt;
+&lt;li&gt;自訂性比Latex差&lt;/li&gt;
+&lt;li&gt;難製作動畫&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;軟體-1&#34;&gt;&lt;a href=&#34;#軟體-1&#34; class=&#34;headerlink&#34; title=&#34;軟體&#34;&gt;&lt;/a&gt;軟體&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL21hcnAtdGVhbS9tYXJwaXQ=&#34;&gt;Marp&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;ul&gt;
+&lt;li&gt;可以寫html tag&lt;/li&gt;
+&lt;li&gt;簡易的css支援&lt;/li&gt;
+&lt;li&gt;動畫功能較少&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tZWRpdW0uY29tL3BtJUU3JTlBJTg0JUU3JTk0JTlGJUU3JTk0JUEyJUU1JThBJTlCJUU1JUI3JUE1JUU1JTg1JUI3JUU3JUFFJUIxLyVFNSVBNiU4MiVFNCVCRCU5NSVFNSVCRiVBQiVFOSU4MCU5RiVFNSVBRSU4QyVFNiU4OCU5MCVFNyVCMCVBMSVFNSVBMCVCMSVFNiU4RSU5MiVFNyU4OSU4OC0lRTUlQjAlODclRTclQjIlQkUlRTclQTUlOUUlRTUlQjAlODglRTYlQjMlQTglRTUlOUMlQTglRTYlQkElOTYlRTUlODIlOTklRTYlQkMlOTQlRTglQUMlOUIlRTQlQjglOEEtZWFiOGEwNjY4NzMz&#34;&gt;教學&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Javascript&#34;&gt;&lt;a href=&#34;#Javascript&#34; class=&#34;headerlink&#34; title=&#34;Javascript&#34;&gt;&lt;/a&gt;Javascript&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;用js擴充功能&lt;/li&gt;
+&lt;li&gt;用css排版&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;軟體-2&#34;&gt;&lt;a href=&#34;#軟體-2&#34; class=&#34;headerlink&#34; title=&#34;軟體&#34;&gt;&lt;/a&gt;軟體&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9yZXZlYWxqcy5jb20v&#34;&gt;Reveal.js&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;ul&gt;
+&lt;li&gt;支援Markdown語法&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/revealjs-markdown&#34;&gt;教學:Reveal.js配合Markdown&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zbGkuZGV2Lw==&#34;&gt;Slidev&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;ul&gt;
+&lt;li&gt;支援Markdown語法&lt;/li&gt;
+&lt;li&gt;支援類Vue語法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pbXByZXNzLmpzLm9yZy8=&#34;&gt;Impress.js&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;ul&gt;
+&lt;li&gt;類似Prezi&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2ltYWtld2VidGhpbmdzLmNvbS9kZWNrLmpzLw==&#34;&gt;Deck.js&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2tpcmthcy5jaC9hc2NlbnNvci8j&#34;&gt;Ascensor&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2xhbmRzbGlkZS5hZGFtemFwLmNvbS8jc2xpZGUx&#34;&gt;LandSlide&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;其他&#34;&gt;&lt;a href=&#34;#其他&#34; class=&#34;headerlink&#34; title=&#34;其他&#34;&gt;&lt;/a&gt;其他&lt;/h2&gt;&lt;p&gt;用遊戲引擎做簡報&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL1VuaXR5VGVjaG5vbG9naWVzL1ByZXNlbnRhdGlvbg==&#34;&gt;Unity&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;可以將動畫和特效做到非常好，只是過於麻煩&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;結論&#34;&gt;&lt;a href=&#34;#結論&#34; class=&#34;headerlink&#34; title=&#34;結論&#34;&gt;&lt;/a&gt;結論&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;使用純文字(即Markdown)儲存簡報，較沒有相容性的問題，版本控制也容易&lt;ul&gt;
+&lt;li&gt;但排版較困難&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;css是目前排版的最好方法&lt;/li&gt;
+&lt;li&gt;所以最好的方法為Markdown+html&lt;/li&gt;
+&lt;li&gt;推薦使用&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL21hcnAtdGVhbS9tYXJwaXQ=&#34;&gt;Marp&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9yZXZlYWxqcy5jb20v&#34;&gt;Reveal.js&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zbGkuZGV2Lw==&#34;&gt;Slidev&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="Markdown" />
+        <category term="簡報" />
+        <category term="軟體" />
+        <category term="PowerPoint" />
+        <category term="Latex" />
+        <category term="JavaScript" />
+        <category term="CSS" />
+        <category term="Unity" />
+        <updated>2022-03-22T03:45:23.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://gitqwerty777.github.io/unity5-tutorial-survival-shooter/</id>
+        <title>Unity Tutorial - Survival Shooter 實作</title>
+        <link rel="alternate" href="http://gitqwerty777.github.io/unity5-tutorial-survival-shooter/"/>
+        <content type="html">&lt;p&gt;Version 5.1&lt;/p&gt;
+&lt;p&gt;Unity官網上的教學&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly91bml0eTNkLmNvbS9sZWFybi90dXRvcmlhbHMvcHJvamVjdHMvc3Vydml2YWwtc2hvb3Rlci1wcm9qZWN0&#34;&gt;Survival-Shooter-Project&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;實作&lt;/p&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+&lt;h2 id=&#34;Outline&#34;&gt;&lt;a href=&#34;#Outline&#34; class=&#34;headerlink&#34; title=&#34;Outline&#34;&gt;&lt;/a&gt;Outline&lt;/h2&gt;&lt;h2 id=&#34;記錄&#34;&gt;&lt;a href=&#34;#記錄&#34; class=&#34;headerlink&#34; title=&#34;記錄&#34;&gt;&lt;/a&gt;記錄&lt;/h2&gt;&lt;h3 id=&#34;Chap02&#34;&gt;&lt;a href=&#34;#Chap02&#34; class=&#34;headerlink&#34; title=&#34;Chap02&#34;&gt;&lt;/a&gt;Chap02&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Drag&lt;/code&gt;, &lt;code&gt;AngularDrag&lt;/code&gt;:&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2ZvcnVtcy5nYW1lc2FsYWQuY29tL2Rpc2N1c3Npb24vMzQzNjMvd2hhdHMtZHJhZy1hbmQtYW5ndWxhci1kcmFnLXVzZWQtZm9y&#34;&gt;阻力大小&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5jbmJsb2dzLmNvbS96aGlib2xpZmUvcC80MDE4NjIxLmh0bWw=&#34;&gt;角阻力&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;ul&gt;
+&lt;li&gt;設定Infinity會使移動完成(放開鍵盤)後立刻停止&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;GetComponent&amp;lt;T&amp;gt;&lt;/code&gt; Get type T component from this object&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Rigidbody&lt;/code&gt;(剛體)：屬於物理運動的物件&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy52aWN0c2FvLmNvbS9ibG9nLzk3LXVuaXR5LzQyMC11bml0eS11cGRhdGUtZml4dXBkYXRl&#34;&gt;Update 和 FixUpdate&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Anim.SetTrigger(String)&lt;/code&gt;: 啟動animator的trigger&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Input.GetAxisRaw(&amp;quot;Horizontal&amp;quot;);&lt;/code&gt;, &lt;code&gt;Input.GetAxisRaw(&amp;quot;Vertical&amp;quot;);&lt;/code&gt;：鍵盤輸入&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Input.mousePosition&lt;/code&gt;：滑鼠位置&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;floorHit&lt;/code&gt;：滑鼠對應到遊戲中地板的位置，用投影方式算出&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Quaternion&lt;/code&gt;：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL29wZW5ob21lLmNjL0dvc3NpcC9Db21wdXRlckdyYXBoaWNzL1F1YXRlcm5pb25zUm90YXRlLmh0bQ==&#34;&gt;四元數&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;，用來旋轉&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Chap03&#34;&gt;&lt;a href=&#34;#Chap03&#34; class=&#34;headerlink&#34; title=&#34;Chap03&#34;&gt;&lt;/a&gt;Chap03&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;offset = transform.position - target.position;&lt;/code&gt;: camera 和 player 的距離(固定)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Vector3.Lerp&lt;/code&gt;: 內插法移動至 player位置+offset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Chap04&#34;&gt;&lt;a href=&#34;#Chap04&#34; class=&#34;headerlink&#34; title=&#34;Chap04&#34;&gt;&lt;/a&gt;Chap04&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hitParticles&lt;/code&gt;: 屬於&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3NoaW5lbGl1YmxvZy5ibG9nc3BvdC50dy8yMDE0LzAxLzEzLXVuaXR5LTNkLXBhcnRpY2xlLXN5c3RlbS5odG1s&#34;&gt;ParticleSystem(粒子系統)&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;ul&gt;
+&lt;li&gt;被打的特效&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Nav Mesh Agent(尋路agent)&lt;ul&gt;
+&lt;li&gt;Use Windows → navigation to bake&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Chap05&#34;&gt;&lt;a href=&#34;#Chap05&#34; class=&#34;headerlink&#34; title=&#34;Chap05&#34;&gt;&lt;/a&gt;Chap05&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Handle Slide Area&lt;/code&gt;: 控制UI.Slide的移動，移除後無法變更Slide&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Chap07&#34;&gt;&lt;a href=&#34;#Chap07&#34; class=&#34;headerlink&#34; title=&#34;Chap07&#34;&gt;&lt;/a&gt;Chap07&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;OnTriggerEnter (Collider other)&lt;/code&gt; 被其他Collider碰到時自動呼叫&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;OnTriggerExit (Collider other)&lt;/code&gt; 離開&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;GetComponentInChildren&lt;/code&gt;: 可以拿child的object&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;GameObject.FindGameObjectWithTag (&amp;quot;Player&amp;quot;);&lt;/code&gt;: 拿取其他object&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;capsuleCollider.isTrigger = true;&lt;/code&gt;: 模擬被Trigger的情況 → 會依序呼叫&lt;code&gt;OnTriggerEnter&lt;/code&gt;，&lt;code&gt;OnTriggerExit&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Rigidbody.isKinematic = true;&lt;/code&gt;:使其得到物理性質(預設即有，只是之前關掉了)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Destroy (gameObject, 2f);&lt;/code&gt;: 在2秒後將呼叫者摧毀&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Input.GetButton(&amp;quot;Fire1&amp;quot;)&lt;/code&gt;: 滑鼠左鍵或left control&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;LineRenderer&lt;/code&gt;: 線渲染器渲染有寬度並可以被賦予貼圖的線，可設置顏色，寬度&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;gunLine.SetPosition((int) index, Vetor3 position)&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;依照index順序的端點畫出線&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;timer += Time.deltaTime&lt;/code&gt; in &lt;code&gt;Update&lt;/code&gt;: 計算經過時間&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Physics.Raycast((Ray)shootRay,(RayCastHit)out shootHit,(float)range,(int)shootableMask)&lt;/code&gt;: 計算shootHit(擊中的地方)，限制在shootableMask上&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;shootableMask = LayerMask.GetMask (&amp;quot;Shootable&amp;quot;);&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;transform.forward&lt;/code&gt;: 物體面對的方向&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Chap09&#34;&gt;&lt;a href=&#34;#Chap09&#34; class=&#34;headerlink&#34; title=&#34;Chap09&#34;&gt;&lt;/a&gt;Chap09&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;InvokeRepeating (&amp;quot;Spawn&amp;quot;, delayTime, loopTime);&lt;/code&gt;: Call “Spawn” function after delayTime and continue calling after loopTime&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Instantiate&lt;/code&gt;: 產生物件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Chap10&#34;&gt;&lt;a href=&#34;#Chap10&#34; class=&#34;headerlink&#34; title=&#34;Chap10&#34;&gt;&lt;/a&gt;Chap10&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;物件會照Hierarchy的順序render到螢幕&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Application.LoadLevel(Application.loadedLevel);&lt;/code&gt;: 重新載入此場景(scene)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;遇到的問題&#34;&gt;&lt;a href=&#34;#遇到的問題&#34; class=&#34;headerlink&#34; title=&#34;遇到的問題&#34;&gt;&lt;/a&gt;遇到的問題&lt;/h2&gt;&lt;h3 id=&#34;Chap02-1&#34;&gt;&lt;a href=&#34;#Chap02-1&#34; class=&#34;headerlink&#34; title=&#34;Chap02&#34;&gt;&lt;/a&gt;Chap02&lt;/h3&gt;&lt;p&gt;PlayerAC – 設定箭頭時要取消勾選&lt;code&gt;Has Exit Time&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;Chap04-1&#34;&gt;&lt;a href=&#34;#Chap04-1&#34; class=&#34;headerlink&#34; title=&#34;Chap04&#34;&gt;&lt;/a&gt;Chap04&lt;/h3&gt;&lt;p&gt;Bake: set Width Inaccuracy % to 1 – Unity5 找不到 → 不影響&lt;/p&gt;
+&lt;h3 id=&#34;Chap05-1&#34;&gt;&lt;a href=&#34;#Chap05-1&#34; class=&#34;headerlink&#34; title=&#34;Chap05&#34;&gt;&lt;/a&gt;Chap05&lt;/h3&gt;&lt;p&gt;CanvasGroup → 直接在 Add Component 處尋找&lt;/p&gt;
+</content>
+        <category term="unity" />
+        <updated>2015-07-21T04:35:47.000Z</updated>
+    </entry>
+</feed>
