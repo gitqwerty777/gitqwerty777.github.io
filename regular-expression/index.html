@@ -29,7 +29,7 @@
 <meta property="og:description" content="簡介 Regular Expression, 也稱為 RegExp、regex、RE、正規表示式(台灣)、正則表達式(中國) 用來處理符合某個句法規則的字串 現在的標準已經被ISO(國際標準組織)批准和被Open Group組織認定(POSIX 1003.2)">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2014-09-22T16:03:35.000Z">
-<meta property="article:modified_time" content="2022-04-01T16:57:25.644Z">
+<meta property="article:modified_time" content="2014-09-22T16:03:35.000Z">
 <meta property="article:author" content="HCL">
 <meta property="article:tag" content="正規表示式(RegExp)">
 <meta property="article:tag" content="上下文無關文法(CFG)">
@@ -136,7 +136,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>文章<span class="badge">56</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>文章<span class="badge">57</span></a>
 
   </li>
         <li class="menu-item menu-item-about">
@@ -151,7 +151,7 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤<span class="badge">134</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤<span class="badge">136</span></a>
 
   </li>
         <li class="menu-item menu-item-ptt標籤雲">
@@ -264,7 +264,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">文章字數：</span>
-              <span>1.6k</span>
+              <span>1.7k</span>
             </span>
 
         </div>
@@ -387,7 +387,7 @@
 <tbody><tr>
 <td>(x)</td>
 <td>將x取出，拿取資料時使用</td>
-<td><code>(a*) and (b*)</code> 可找出「aaa and bb」 中的 「aaa」 和 「bb」，並將其儲存</td>
+<td><code>(a*) and (b*)</code> 可找出「aaa and bb」 中的 「aaa」 和 「bb」</td>
 </tr>
 <tr>
 <td>(?:x)</td>
@@ -415,9 +415,14 @@
 <td><code>(?&lt;!95&#124;98&#124;NT&#124;2000)Windows</code> → 95Windows(❌), 8Windows(✔️)</td>
 </tr>
 <tr>
-<td>(x?)</td>
+<td>(?)</td>
 <td>不貪心的比對<br>(不貪心：比對到的字串愈短愈好)</td>
-<td><code>go(.*?)gle</code> → google1google2 會比對到 o 而非ogle1goo</td>
+<td><code>abc*</code> → ab, abc, abcc… <code>abc*?</code> → ab, abc, abcc都只會match到ab</td>
+</tr>
+<tr>
+<td>\1</td>
+<td>捕獲分組</td>
+<td><code>&lt;p id=&quot;(\d*)&quot;&gt;\1&lt;/p&gt;</code> → <code>&lt;p id=&quot;123&quot;&gt;123&lt;/p&gt;</code>(✔️), <code>&lt;p id=&quot;123&quot;&gt;1234&lt;/p&gt;</code>(❌)</td>
 </tr>
 </tbody></table>
 <p>預查即代表不對應，所以最後四個範例都只會回傳符合的<code>Windows</code>而非<code>Windows95</code>或<code>Windows8</code>，而<code>(?:x)</code>是可以回傳符合的<code>industry</code>或<code>industries</code></p>
@@ -542,6 +547,7 @@
 <li><span class="exturl" data-url="aHR0cDovL2xpbnV4LnZiaXJkLm9yZy9saW51eF9iYXNpYy8wMzMwcmVndWxhcmV4LnBocCNiYXNpY19yZWdleHA=">鳥哥<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cDovL3VzZXIuZnJkbS5pbmZvL2NraHVuZy9iL3JlL2luZGV4LnBocA==">洪朝貴:字串樣版 Regexp: 兼談長線學習投資<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmhzZG4ubmV0LzEzOTEuaHRtbA==">常用的正規表示式<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9oa3Zpc2lvbi5jbi8yMDE5LzA5LzA0LyVFNSVBRCVBNiVFNCVCOSVBMCVFNiVBRCVBMyVFNSU4OCU5OSVFOCVBMSVBOCVFOCVCRSVCRSVFNSVCQyU4Ri8=">学习正则表达式<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 
     </div>
@@ -678,7 +684,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">56</span>
+          <span class="site-state-item-count">57</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
@@ -690,7 +696,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">134</span>
+        <span class="site-state-item-count">136</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -755,7 +761,7 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">總字數：</span>
-    <span title="總字數">451k</span>
+    <span title="總字數">452k</span>
 </div>
   <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
   </div>

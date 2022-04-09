@@ -133,7 +133,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>文章<span class="badge">56</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>文章<span class="badge">57</span></a>
 
   </li>
         <li class="menu-item menu-item-about">
@@ -148,7 +148,7 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤<span class="badge">134</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤<span class="badge">136</span></a>
 
   </li>
         <li class="menu-item menu-item-ptt標籤雲">
@@ -215,6 +215,153 @@
 
           <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/text-expansion/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/img/qwerty.png">
+      <meta itemprop="name" content="HCL">
+      <meta itemprop="description" content="Programming | Computer Science | Thought">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QWERTY">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/text-expansion/" class="post-title-link" itemprop="url">文字擴展軟體簡介</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2022-04-10 01:10:29" itemprop="dateCreated datePublished" datetime="2022-04-10T01:10:29+08:00">2022-04-10</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%BF%83%E5%BE%97/" itemprop="url" rel="index"><span itemprop="name">心得</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="文章字數">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">文章字數：</span>
+              <span>854</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h2><p>文字擴展軟體是用一段文字(通常較長)取代原本輸入的一段文字的軟體</p>
+<h3 id="軟體"><a href="#軟體" class="headerlink" title="軟體"></a>軟體</h3><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9lc3BhbnNvLm9yZy8=">Espanso<i class="fa fa-external-link-alt"></i></span><ul>
+<li>使用Rust開發的開源軟體</li>
+<li>擴充套件</li>
+<li>可以替換成圖片</li>
+</ul>
+</li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9iZWVmdGV4dC5vcmcv">BeefText<i class="fa fa-external-link-alt"></i></span><ul>
+<li>使用QT和C++開發的開源軟體(Windows)</li>
+</ul>
+</li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuYXV0b2hvdGtleS5jb20v">AutoHotKey<i class="fa fa-external-link-alt"></i></span><ul>
+<li>執行腳本用的開源軟體(Windows)</li>
+<li>除了文字擴展，還有許多功能，如快捷鍵設定等</li>
+</ul>
+</li>
+</ul>
+<h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><ul>
+<li>偵測到對應單字時就取代<ul>
+<li>取代方法：先模擬刪除(如輸入backspace)，再模擬輸入或是模擬複製貼上</li>
+<li>VSCode常會無法取代，因為輸入backspace速度太快導致刪除失敗<ul>
+<li>需要設定延遲backspace速度</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="Espanso"><a href="#Espanso" class="headerlink" title="Espanso"></a>Espanso</h2><p>以 Espanso2 為準</p>
+<p>優點</p>
+<ul>
+<li>能限制在某軟體執行時才取代</li>
+<li>可執行指令(如shell script)</li>
+<li>提供GUI模版</li>
+<li>隨機選擇</li>
+<li>可取代為圖片</li>
+</ul>
+<p>缺點</p>
+<ul>
+<li>設定困難</li>
+</ul>
+<h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><ul>
+<li>需要前綴以避免不必要的衝突<ul>
+<li>如<code>:</code>、<code>;</code>、<code>zz</code>、<code>xx</code></li>
+</ul>
+</li>
+<li>不能有(部份)重復指令<ul>
+<li><code>:check</code> 和 <code>:check_1</code> 會先觸發 <code>:check</code>，所以<code>:check_1</code> 永遠不會被觸發</li>
+<li>除非開啟手動轉換</li>
+</ul>
+</li>
+</ul>
+<h2 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h2><p>這類軟體使用不難，難的是如何應用</p>
+<ul>
+<li>程式模版：<code>;ctemplate</code> → <code>#include &lt;stdio.h&gt;\nint main()&#123;\n&#125;</code></li>
+<li>取代<code>alias</code>：<code>git cm</code> → <code>git commit -m &quot;&quot;</code></li>
+<li>Emoji：<code>;;?</code> → ❓</li>
+<li>快捷輸入：<code>;mail</code> → <code>你的信箱</code></li>
+<li>快速執行：<code>=&gt;chrome</code> → 打開chrome</li>
+<li>錯字改正：<code>因該</code> → <code>應該</code></li>
+<li>縮寫擴展：<code>ymd</code> → <code>Yes My Dark</code></li>
+<li>執行指令：<code>;ip</code> → 目前的ip、<code>;date</code> → 今天的時間</li>
+<li>隨機顯示：<code>;greet</code> → <code>早安</code>, <code>早上好</code>, <code>Good Morning</code> 擇一</li>
+</ul>
+<p>可參考<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2dpdHF3ZXJ0eTc3Ny9lc3BhbnNvMi1jb25maWc=">我的設定檔(Espanso)<i class="fa fa-external-link-alt"></i></span></p>
+<h2 id="備註"><a href="#備註" class="headerlink" title="備註"></a>備註</h2><p>在特定環境中要額外設定觸發條件，如虛擬機</p>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
+<li>其他人的設定檔(Espanso)<ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0xpc3N5OTMvZXNwYW5zby1jb25maWc=">https://github.com/Lissy93/espanso-config<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2h0bGluMjIyL2VzcGFuc29Db25maWc=">https://github.com/htlin222/espansoConfig<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2ZlZGVybWFuL2VzcGFuc28tY29uZmln">https://github.com/federman/espanso-config<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -4253,7 +4400,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">文章字數：</span>
-              <span>1.6k</span>
+              <span>1.7k</span>
             </span>
 
         </div>
@@ -5032,7 +5179,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">56</span>
+          <span class="site-state-item-count">57</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
@@ -5044,7 +5191,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">134</span>
+        <span class="site-state-item-count">136</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -5109,7 +5256,7 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">總字數：</span>
-    <span title="總字數">451k</span>
+    <span title="總字數">452k</span>
 </div>
   <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
   </div>

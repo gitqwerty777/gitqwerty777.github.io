@@ -6,7 +6,7 @@
   <link href="http://gitqwerty777.github.io/atom.xml" rel="self"/>
   
   <link href="http://gitqwerty777.github.io/"/>
-  <updated>2022-04-01T16:57:25.640Z</updated>
+  <updated>2022-04-09T17:10:29.000Z</updated>
   <id>http://gitqwerty777.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>文字擴展軟體簡介</title>
+    <link href="http://gitqwerty777.github.io/text-expansion/"/>
+    <id>http://gitqwerty777.github.io/text-expansion/</id>
+    <published>2022-04-09T17:10:29.000Z</published>
+    <updated>2022-04-09T17:10:29.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;簡介&quot;&gt;&lt;a href=&quot;#簡介&quot; class=&quot;headerlink&quot; title=&quot;簡介&quot;&gt;&lt;/a&gt;簡介&lt;/h2&gt;&lt;p&gt;文字擴展軟體是用一段文字(通常較長)取代原本輸入的一段文字的軟體&lt;/p&gt;
+&lt;h3 id=&quot;軟體&quot;&gt;&lt;a href=&quot;#軟體&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="心得" scheme="http://gitqwerty777.github.io/categories/%E5%BF%83%E5%BE%97/"/>
+    
+    
+    <category term="自動化" scheme="http://gitqwerty777.github.io/tags/%E8%87%AA%E5%8B%95%E5%8C%96/"/>
+    
+    <category term="文字擴展" scheme="http://gitqwerty777.github.io/tags/%E6%96%87%E5%AD%97%E6%93%B4%E5%B1%95/"/>
+    
+    <category term="Espanso" scheme="http://gitqwerty777.github.io/tags/Espanso/"/>
+    
+  </entry>
   
   <entry>
     <title>簡報製作軟體比較</title>
@@ -519,29 +549,6 @@
     <category term="google" scheme="http://gitqwerty777.github.io/tags/google/"/>
     
     <category term="html" scheme="http://gitqwerty777.github.io/tags/html/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>reactjs 語法</title>
-    <link href="http://gitqwerty777.github.io/reactjs/"/>
-    <id>http://gitqwerty777.github.io/reactjs/</id>
-    <published>2020-07-29T06:50:12.000Z</published>
-    <updated>2022-04-01T16:57:25.640Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;JSX&quot;&gt;&lt;a href=&quot;#JSX&quot; class=&quot;headerlink&quot; title=&quot;JSX&quot;&gt;&lt;/a&gt;JSX&lt;/h2&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; element = &lt;span class=&quot;language-xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;hello&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;這個語法叫做 JSX，是一個 JavaScript 的語法擴充，會產生 &lt;strong&gt;React element&lt;/strong&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="筆記" scheme="http://gitqwerty777.github.io/categories/%E7%AD%86%E8%A8%98/"/>
-    
-    
-    <category term="reactjs" scheme="http://gitqwerty777.github.io/tags/reactjs/"/>
-    
-    <category term="javascript" scheme="http://gitqwerty777.github.io/tags/javascript/"/>
     
   </entry>
   
