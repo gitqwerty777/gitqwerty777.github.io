@@ -31,7 +31,7 @@
 <meta property="og:image" content="http://gitqwerty777.github.io/img/Other/emacs-move.png">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/emacs/cheatsheet.png">
 <meta property="article:published_time" content="2015-05-02T09:49:50.000Z">
-<meta property="article:modified_time" content="2022-04-01T16:57:25.640Z">
+<meta property="article:modified_time" content="2015-05-02T09:49:50.000Z">
 <meta property="article:author" content="HCL">
 <meta property="article:tag" content="Emacs">
 <meta property="article:tag" content="指令">
@@ -139,7 +139,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>文章<span class="badge">57</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>文章<span class="badge">58</span></a>
 
   </li>
         <li class="menu-item menu-item-about">
@@ -154,7 +154,7 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤<span class="badge">136</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤<span class="badge">138</span></a>
 
   </li>
         <li class="menu-item menu-item-ptt標籤雲">
@@ -267,7 +267,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">文章字數：</span>
-              <span>5.6k</span>
+              <span>5.7k</span>
             </span>
             <div class="post-description">Emacs快捷鍵是可以修改的，所以不一定要全部記住，只需要熟悉基本功能和知道有其他方便的擴充功能即可</div>
 
@@ -908,14 +908,16 @@ TODO: -->
 </ul>
 <h3 id="搜尋"><a href="#搜尋" class="headerlink" title="搜尋"></a>搜尋</h3><ul>
 <li>Emacs 搜尋指令是「漸進的（ incremental ）」，搜尋發生在遊標後<ul>
-<li>如果鍵入『u』，游標會移動到「cu」的第一次出現位置。將「u」從s搜尋字串中消除，游標會移回到「c」的第一次出現位置</li>
+<li>如果鍵入<code>u</code>，游標會移動到<code>cu</code>的第一次出現位置。將<code>u</code>從<code>s</code>搜尋字串中消除，游標會移回到<code>c</code>的第一次出現位置</li>
 </ul>
 </li>
 </ul>
 <h3 id="設定檔位置"><a href="#設定檔位置" class="headerlink" title="設定檔位置"></a>設定檔位置</h3><p>家目錄的<code>.emacs</code>檔案和<code>.emacs.d</code>資料夾，可修改Emacs設定</p>
 <h3 id="Shell"><a href="#Shell" class="headerlink" title="Shell"></a>Shell</h3><ul>
-<li>Bash上預設的控制模式是Emacs，也就是說可以使用 C-a, C-f, C-b 等移動鍵，C-r搜尋歷史指令，C-n, C-p 切換歷史指令，C-k 殺掉文字，C-y貼上文字，C-j 執行指令等等。</li>
-<li>和Emacs不一樣的地方有 <code>C-h</code>往前刪除一字元, <code>C-w</code>清除游標以前的一個單字, <code>C-u</code>清除游標以前所有的字元。</li>
+<li>Bash上預設的控制模式是Emacs，也就是說可以使用 <code>C-a</code>, <code>C-f</code>, <code>C-b</code> 等移動鍵，<code>C-r</code>搜尋歷史指令，<code>C-n</code>, <code>C-p</code> 切換歷史指令，<code>C-k</code> 殺掉文字，<code>C-y</code>貼上文字，<code>C-j</code> 執行指令等等<ul>
+<li>和Emacs不一樣的地方有 <code>C-h</code>往前刪除一字元, <code>C-w</code>清除游標以前的一個單字, <code>C-u</code>清除游標以前所有的字元</li>
+</ul>
+</li>
 </ul>
 <h3 id="其他-1"><a href="#其他-1" class="headerlink" title="其他"></a>其他</h3><p>Emacs即為Lisp語言直譯器，所以理論上可以做到任何Lisp能做到的事，所以也被稱為「神之編輯器」。</p>
 <!-- (https://www.facebook.com/pangfeng.liu/posts/696258720389410?match=ZW1hY3M%3D) -->
@@ -952,13 +954,12 @@ TODO: -->
 <!--
 ## Mode Line
 
- TODO: -->
 
-<!-- ## Org Mode
+## Org Mode
 
 https://github.com/pbesedm/Oh-My-Editors/blob/master/doc/emacs%E6%93%8D%E4%BD%9C%E6%B1%87%E6%80%BB.org -->
 
-
+<h2 id="Emacs-上網"><a href="#Emacs-上網" class="headerlink" title="Emacs 上網"></a>Emacs 上網</h2><p><code>M-x url-handler-mode</code>, <code>C-x C-f &lt;url&gt;</code> 可打開 html檔<br><code>M-x browse-url &lt;url&gt;</code> 會直接打開瀏覽器<br><code>M-x eww &lt;url&gt;</code> 開啟網頁於內部(不支援Javascript)<br>   <!-- eww-readable(TODO: 不知用處) --></p>
 <h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
 <li><span class="exturl" data-url="aHR0cDovL2NsaXB0aGF0LmJsb2dzcG90LnR3LzIwMTAvMDEvZW1hY3MuaHRtbA==">指令大全<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cDovL3d3dy5lbWFjcy51bml5YXIuYWMucnUvZG9jL2VtMjRoLw==">Sams Teach Yourself Emacs in 24 Hours<i class="fa fa-external-link-alt"></i></span> <!-- 未讀--></li>
@@ -1092,7 +1093,7 @@ https://github.com/pbesedm/Oh-My-Editors/blob/master/doc/emacs%E6%93%8D%E4%BD%9C
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Emacs%E5%9F%BA%E6%9C%AC"><span class="nav-number">1.</span> <span class="nav-text">Emacs基本</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Emacs%E7%A7%BB%E5%8B%95"><span class="nav-number">1.1.</span> <span class="nav-text">Emacs移動</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Emacs%E7%B7%A8%E8%BC%AF"><span class="nav-number">1.2.</span> <span class="nav-text">Emacs編輯</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%87%8D%E8%A4%87"><span class="nav-number">1.3.</span> <span class="nav-text">重複</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Emacs%E6%90%9C%E5%B0%8B"><span class="nav-number">1.4.</span> <span class="nav-text">Emacs搜尋</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Emacs%E5%88%86%E5%89%B2-window"><span class="nav-number">1.5.</span> <span class="nav-text">Emacs分割(window)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Emacs%E6%AA%94%E6%A1%88"><span class="nav-number">1.6.</span> <span class="nav-text">Emacs檔案</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Emacs%E6%AA%94%E6%A1%88%E5%88%87%E6%8F%9B"><span class="nav-number">1.6.1.</span> <span class="nav-text">Emacs檔案切換</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Emacs%E6%AA%94%E6%A1%88%E6%8C%87%E4%BB%A4"><span class="nav-number">1.6.2.</span> <span class="nav-text">Emacs檔案指令</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Emacs%E7%B3%BB%E7%B5%B1"><span class="nav-number">1.7.</span> <span class="nav-text">Emacs系統</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Emacs%E5%87%BD%E5%BC%8F"><span class="nav-number">1.8.</span> <span class="nav-text">Emacs函式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Emacs%E5%B9%AB%E5%8A%A9"><span class="nav-number">1.9.</span> <span class="nav-text">Emacs幫助</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-number">1.10.</span> <span class="nav-text">其他</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Emacs%E6%8A%80%E5%B7%A7"><span class="nav-number">2.</span> <span class="nav-text">Emacs技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%87%AA%E5%8B%95%E5%AE%8C%E6%88%90"><span class="nav-number">2.1.</span> <span class="nav-text">自動完成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A7%BB%E5%8B%95%E8%87%B3%E5%AE%9A%E7%BE%A9-goto-declaration"><span class="nav-number">2.2.</span> <span class="nav-text">移動至定義(goto declaration)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%9E%E5%88%B0%E4%B9%8B%E5%89%8D%E7%9A%84%E9%81%8A%E6%A8%99%E4%BD%8D%E7%BD%AE"><span class="nav-number">2.3.</span> <span class="nav-text">回到之前的遊標位置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Emacs%E4%BD%9C%E7%82%BAIDE%E4%BD%BF%E7%94%A8"><span class="nav-number">2.4.</span> <span class="nav-text">Emacs作為IDE使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Emacs%E5%B7%A8%E9%9B%86-Macro"><span class="nav-number">2.5.</span> <span class="nav-text">Emacs巨集(Macro)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Emacs-Latex"><span class="nav-number">2.6.</span> <span class="nav-text">Emacs + Latex</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Emacs-Git"><span class="nav-number">2.7.</span> <span class="nav-text">Emacs + Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%95%AB%E7%B0%A1%E5%96%AE%E7%9A%84ASCII%E5%9C%96"><span class="nav-number">2.8.</span> <span class="nav-text">畫簡單的ASCII圖</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Emacs-Markdown"><span class="nav-number">2.9.</span> <span class="nav-text">Emacs + Markdown</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Emacs-Screen"><span class="nav-number">2.10.</span> <span class="nav-text">Emacs + Screen</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E5%8A%9F%E8%83%BD"><span class="nav-number">2.11.</span> <span class="nav-text">其他功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E9%AB%94%E5%A4%A7%E5%B0%8F"><span class="nav-number">2.12.</span> <span class="nav-text">字體大小</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Emacs-Server"><span class="nav-number">2.13.</span> <span class="nav-text">Emacs Server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%A3%E6%B1%BAWindows%E4%B8%8AC-Space%E8%A2%AB%E4%B8%AD%E6%96%87%E8%BC%B8%E5%85%A5%E6%B3%95%E4%BD%94%E7%94%A8%E7%9A%84%E5%95%8F%E9%A1%8C"><span class="nav-number">2.14.</span> <span class="nav-text">解決Windows上C-Space被中文輸入法佔用的問題</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Emacs%E7%9F%A5%E8%AD%98"><span class="nav-number">3.</span> <span class="nav-text">Emacs知識</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%8D%E7%A8%B1"><span class="nav-number">3.1.</span> <span class="nav-text">名稱</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%8D%E7%B6%B4"><span class="nav-number">3.2.</span> <span class="nav-text">前綴</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AE%BA%E6%8E%89-kill"><span class="nav-number">3.3.</span> <span class="nav-text">殺掉(kill)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%90%9C%E5%B0%8B"><span class="nav-number">3.4.</span> <span class="nav-text">搜尋</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A8%AD%E5%AE%9A%E6%AA%94%E4%BD%8D%E7%BD%AE"><span class="nav-number">3.5.</span> <span class="nav-text">設定檔位置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Shell"><span class="nav-number">3.6.</span> <span class="nav-text">Shell</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96-1"><span class="nav-number">3.7.</span> <span class="nav-text">其他</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BB%BC%E4%BA%8B"><span class="nav-number">3.8.</span> <span class="nav-text">軼事</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BF%AB%E9%80%9F%E8%A8%AD%E5%AE%9A"><span class="nav-number">4.</span> <span class="nav-text">快速設定</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CheatSheet"><span class="nav-number">5.</span> <span class="nav-text">CheatSheet</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99"><span class="nav-number">6.</span> <span class="nav-text">參考資料</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Emacs%E5%9F%BA%E6%9C%AC"><span class="nav-number">1.</span> <span class="nav-text">Emacs基本</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Emacs%E7%A7%BB%E5%8B%95"><span class="nav-number">1.1.</span> <span class="nav-text">Emacs移動</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Emacs%E7%B7%A8%E8%BC%AF"><span class="nav-number">1.2.</span> <span class="nav-text">Emacs編輯</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%87%8D%E8%A4%87"><span class="nav-number">1.3.</span> <span class="nav-text">重複</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Emacs%E6%90%9C%E5%B0%8B"><span class="nav-number">1.4.</span> <span class="nav-text">Emacs搜尋</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Emacs%E5%88%86%E5%89%B2-window"><span class="nav-number">1.5.</span> <span class="nav-text">Emacs分割(window)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Emacs%E6%AA%94%E6%A1%88"><span class="nav-number">1.6.</span> <span class="nav-text">Emacs檔案</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Emacs%E6%AA%94%E6%A1%88%E5%88%87%E6%8F%9B"><span class="nav-number">1.6.1.</span> <span class="nav-text">Emacs檔案切換</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Emacs%E6%AA%94%E6%A1%88%E6%8C%87%E4%BB%A4"><span class="nav-number">1.6.2.</span> <span class="nav-text">Emacs檔案指令</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Emacs%E7%B3%BB%E7%B5%B1"><span class="nav-number">1.7.</span> <span class="nav-text">Emacs系統</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Emacs%E5%87%BD%E5%BC%8F"><span class="nav-number">1.8.</span> <span class="nav-text">Emacs函式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Emacs%E5%B9%AB%E5%8A%A9"><span class="nav-number">1.9.</span> <span class="nav-text">Emacs幫助</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-number">1.10.</span> <span class="nav-text">其他</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Emacs%E6%8A%80%E5%B7%A7"><span class="nav-number">2.</span> <span class="nav-text">Emacs技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%87%AA%E5%8B%95%E5%AE%8C%E6%88%90"><span class="nav-number">2.1.</span> <span class="nav-text">自動完成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A7%BB%E5%8B%95%E8%87%B3%E5%AE%9A%E7%BE%A9-goto-declaration"><span class="nav-number">2.2.</span> <span class="nav-text">移動至定義(goto declaration)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%9E%E5%88%B0%E4%B9%8B%E5%89%8D%E7%9A%84%E9%81%8A%E6%A8%99%E4%BD%8D%E7%BD%AE"><span class="nav-number">2.3.</span> <span class="nav-text">回到之前的遊標位置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Emacs%E4%BD%9C%E7%82%BAIDE%E4%BD%BF%E7%94%A8"><span class="nav-number">2.4.</span> <span class="nav-text">Emacs作為IDE使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Emacs%E5%B7%A8%E9%9B%86-Macro"><span class="nav-number">2.5.</span> <span class="nav-text">Emacs巨集(Macro)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Emacs-Latex"><span class="nav-number">2.6.</span> <span class="nav-text">Emacs + Latex</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Emacs-Git"><span class="nav-number">2.7.</span> <span class="nav-text">Emacs + Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%95%AB%E7%B0%A1%E5%96%AE%E7%9A%84ASCII%E5%9C%96"><span class="nav-number">2.8.</span> <span class="nav-text">畫簡單的ASCII圖</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Emacs-Markdown"><span class="nav-number">2.9.</span> <span class="nav-text">Emacs + Markdown</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Emacs-Screen"><span class="nav-number">2.10.</span> <span class="nav-text">Emacs + Screen</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E5%8A%9F%E8%83%BD"><span class="nav-number">2.11.</span> <span class="nav-text">其他功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E9%AB%94%E5%A4%A7%E5%B0%8F"><span class="nav-number">2.12.</span> <span class="nav-text">字體大小</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Emacs-Server"><span class="nav-number">2.13.</span> <span class="nav-text">Emacs Server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%A3%E6%B1%BAWindows%E4%B8%8AC-Space%E8%A2%AB%E4%B8%AD%E6%96%87%E8%BC%B8%E5%85%A5%E6%B3%95%E4%BD%94%E7%94%A8%E7%9A%84%E5%95%8F%E9%A1%8C"><span class="nav-number">2.14.</span> <span class="nav-text">解決Windows上C-Space被中文輸入法佔用的問題</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Emacs%E7%9F%A5%E8%AD%98"><span class="nav-number">3.</span> <span class="nav-text">Emacs知識</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%8D%E7%A8%B1"><span class="nav-number">3.1.</span> <span class="nav-text">名稱</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%8D%E7%B6%B4"><span class="nav-number">3.2.</span> <span class="nav-text">前綴</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AE%BA%E6%8E%89-kill"><span class="nav-number">3.3.</span> <span class="nav-text">殺掉(kill)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%90%9C%E5%B0%8B"><span class="nav-number">3.4.</span> <span class="nav-text">搜尋</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A8%AD%E5%AE%9A%E6%AA%94%E4%BD%8D%E7%BD%AE"><span class="nav-number">3.5.</span> <span class="nav-text">設定檔位置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Shell"><span class="nav-number">3.6.</span> <span class="nav-text">Shell</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96-1"><span class="nav-number">3.7.</span> <span class="nav-text">其他</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BB%BC%E4%BA%8B"><span class="nav-number">3.8.</span> <span class="nav-text">軼事</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BF%AB%E9%80%9F%E8%A8%AD%E5%AE%9A"><span class="nav-number">4.</span> <span class="nav-text">快速設定</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CheatSheet"><span class="nav-number">5.</span> <span class="nav-text">CheatSheet</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Emacs-%E4%B8%8A%E7%B6%B2"><span class="nav-number">6.</span> <span class="nav-text">Emacs 上網</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99"><span class="nav-number">7.</span> <span class="nav-text">參考資料</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -1108,7 +1109,7 @@ https://github.com/pbesedm/Oh-My-Editors/blob/master/doc/emacs%E6%93%8D%E4%BD%9C
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">57</span>
+          <span class="site-state-item-count">58</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
@@ -1120,7 +1121,7 @@ https://github.com/pbesedm/Oh-My-Editors/blob/master/doc/emacs%E6%93%8D%E4%BD%9C
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">136</span>
+        <span class="site-state-item-count">138</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -1185,7 +1186,7 @@ https://github.com/pbesedm/Oh-My-Editors/blob/master/doc/emacs%E6%93%8D%E4%BD%9C
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">總字數：</span>
-    <span title="總字數">452k</span>
+    <span title="總字數">456k</span>
 </div>
   <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
   </div>

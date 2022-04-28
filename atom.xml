@@ -6,7 +6,7 @@
   <link href="http://gitqwerty777.github.io/atom.xml" rel="self"/>
   
   <link href="http://gitqwerty777.github.io/"/>
-  <updated>2022-04-09T17:10:29.000Z</updated>
+  <updated>2022-04-28T11:12:33.000Z</updated>
   <id>http://gitqwerty777.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MapReduce 簡介</title>
+    <link href="http://gitqwerty777.github.io/mapreduce/"/>
+    <id>http://gitqwerty777.github.io/mapreduce/</id>
+    <published>2022-04-28T11:12:33.000Z</published>
+    <updated>2022-04-28T11:12:33.000Z</updated>
+    
+    
+    <summary type="html">MapReduce是一個分散式系統和平行化計算的框架</summary>
+    
+    
+    
+    <category term="筆記" scheme="http://gitqwerty777.github.io/categories/%E7%AD%86%E8%A8%98/"/>
+    
+    
+    <category term="Google" scheme="http://gitqwerty777.github.io/tags/Google/"/>
+    
+    <category term="MapReduce" scheme="http://gitqwerty777.github.io/tags/MapReduce/"/>
+    
+    <category term="分散式運算" scheme="http://gitqwerty777.github.io/tags/%E5%88%86%E6%95%A3%E5%BC%8F%E9%81%8B%E7%AE%97/"/>
+    
+  </entry>
   
   <entry>
     <title>文字擴展軟體簡介</title>
@@ -514,34 +537,6 @@
     <category term="Todo" scheme="http://gitqwerty777.github.io/tags/Todo/"/>
     
     <category term="註解" scheme="http://gitqwerty777.github.io/tags/%E8%A8%BB%E8%A7%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SEO實作方法</title>
-    <link href="http://gitqwerty777.github.io/seo/"/>
-    <id>http://gitqwerty777.github.io/seo/</id>
-    <published>2020-08-03T13:52:12.000Z</published>
-    <updated>2022-04-01T16:57:25.644Z</updated>
-    
-    
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;hexo 都實作得差不多了，純整理&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;html-tag&quot;&gt;&lt;a href=&quot;#html-tag&quot; class=&quot;headerlink&quot; title=&quot;html tag&quot;&gt;&lt;/a&gt;html tag&lt;/h2&gt;&lt;h3 id=&quot;lt-title-gt&quot;&gt;&lt;a href=&quot;#lt-title-gt&quot; class=&quot;headerlink&quot; title=&quot;&amp;lt;title&amp;gt;&quot;&gt;&lt;/a&gt;&amp;lt;title&amp;gt;&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;網頁的主題&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt;標記應該放在HTML文件的&lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;標記區段中</summary>
-    
-    
-    
-    <category term="筆記" scheme="http://gitqwerty777.github.io/categories/%E7%AD%86%E8%A8%98/"/>
-    
-    
-    <category term="SEO" scheme="http://gitqwerty777.github.io/tags/SEO/"/>
-    
-    <category term="google" scheme="http://gitqwerty777.github.io/tags/google/"/>
-    
-    <category term="html" scheme="http://gitqwerty777.github.io/tags/html/"/>
     
   </entry>
   
