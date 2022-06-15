@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="zh-TW">
-<head>
+<!DOCTYPE html><html lang="zh-TW"><head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
@@ -11,22 +9,22 @@
   <link rel="mask-icon" href="/img/favicon.png" color="#222">
   <meta name="google-site-verification" content="45plYlJRhxb-g8Tl8seizYgih_JUsmcJRH6oJHplkj0">
 
-<link rel="stylesheet" href="/css/main.css">
 
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+
+
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"gitqwerty777.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideLeftIn"}},"path":"search.json"};
   </script>
 
-  <meta name="description" content="Chap07 Pipelining (II)Data Dependence DetectionHazard conditions:  EX hazard EX&#x2F;MEM.RegisterRd &#x3D; ID&#x2F;EX.Register Rs or Rt   MEM hazard MEM&#x2F;WB.RegisterRd &#x3D; ID&#x2F;EX.Register">
+  <meta name="description" content="Chap07 Pipelining (II)Data Dependence DetectionHazard conditions:  EX hazard EX/MEM.RegisterRd = ID/EX.Register Rs or Rt   MEM hazard MEM/WB.RegisterRd = ID/EX.Register">
 <meta property="og:type" content="article">
 <meta property="og:title" content="計算機結構(下)">
 <meta property="og:url" content="http://gitqwerty777.github.io/computer-architecture2/index.html">
 <meta property="og:site_name" content="QWERTY">
-<meta property="og:description" content="Chap07 Pipelining (II)Data Dependence DetectionHazard conditions:  EX hazard EX&#x2F;MEM.RegisterRd &#x3D; ID&#x2F;EX.Register Rs or Rt   MEM hazard MEM&#x2F;WB.RegisterRd &#x3D; ID&#x2F;EX.Register">
+<meta property="og:description" content="Chap07 Pipelining (II)Data Dependence DetectionHazard conditions:  EX hazard EX/MEM.RegisterRd = ID/EX.Register Rs or Rt   MEM hazard MEM/WB.RegisterRd = ID/EX.Register">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/CA/detect-and-forward.png">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/CA/forward.png">
@@ -76,12 +74,12 @@
   };
 </script>
 
-<script data-ad-client="ca-pub-7267358872858108" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script data-ad-client="ca-pub-7267358872858108" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
   <title>計算機結構(下) | QWERTY</title>
   
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
-    <script data-pjax>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
+    <script data-pjax="">
       if (CONFIG.hostname === location.hostname) {
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -119,13 +117,13 @@
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="QWERTY" type="application/atom+xml">
-</head>
+<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&amp;display=swap&amp;subset=latin,latin-ext"></noscript></head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
+<body itemscope="" itemtype="http://schema.org/WebPage">
   <div class="container use-motion">
     <div class="headband"></div>
 
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切換導航欄">
@@ -213,9 +211,7 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off"
-           placeholder="搜尋..." spellcheck="false"
-           type="search" class="search-input">
+    <input autocomplete="off" autocapitalize="off" placeholder="搜尋..." spellcheck="false" type="search" class="search-input">
   </div>
   <span class="popup-btn-close">
     <i class="fa fa-times-circle"></i>
@@ -250,16 +246,16 @@
     
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+  <article itemscope="" itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/computer-architecture2/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/img/qwerty.png">
       <meta itemprop="name" content="qwerty">
       <meta itemprop="description" content="Programming | Computer Science | Thought">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="QWERTY">
     </span>
       <header class="post-header">
@@ -281,7 +277,7 @@
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分類於</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
                   <a href="/categories/%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">筆記</span></a>
                 </span>
             </span>
@@ -309,16 +305,16 @@
 <h2 id="Chap07-Pipelining-II"><a href="#Chap07-Pipelining-II" class="headerlink" title="Chap07 Pipelining (II)"></a>Chap07 Pipelining (II)</h2><p><img data-src="/img/CA/detect-and-forward.png" alt="detect and forward"><br>Data Dependence Detection<br>Hazard conditions:</p>
 <ul>
 <li>EX hazard<ul>
-<li>EX&#x2F;MEM.RegisterRd &#x3D; ID&#x2F;EX.Register Rs or Rt</li>
+<li>EX/MEM.RegisterRd = ID/EX.Register Rs or Rt</li>
 </ul>
 </li>
 <li>MEM hazard<ul>
-<li>MEM&#x2F;WB.RegisterRd &#x3D; ID&#x2F;EX.RegisterRs or Rt</li>
-<li>Ex&#x2F;MEM.RegisterRd !&#x3D; ID&#x2F;Ex.RegisterRs(優先選EX)</li>
+<li>MEM/WB.RegisterRd = ID/EX.RegisterRs or Rt</li>
+<li>Ex/MEM.RegisterRd != ID/Ex.RegisterRs(優先選EX)</li>
 </ul>
 </li>
-<li>RegWrite &#x3D;&#x3D; true</li>
-<li>RegisterRd !&#x3D; $0<span id="more"></span>
+<li>RegWrite == true</li>
+<li>RegisterRd != $0<span id="more"></span>
 Resolving Hazards by Forwarding<br><img data-src="/img/CA/forward.png" alt="forward"></li>
 </ul>
 <p>Add MUX to ALU inputs<br>Forwarding Control in EX<br><img data-src="/img/CA/forward-logic-mux.png" alt="logic with forward"></p>
@@ -328,20 +324,20 @@ Resolving Hazards by Forwarding<br><img data-src="/img/CA/forward.png" alt="forw
 (ID/EX.RegisterRt = IF/ID.RegisterRt)))
     stall the pipeline
 </code></pre>
-<p>Stall: ID&#x2F;EX裡的control value改成0，使EX MEM WB都不做事(nop) 並防止PC和IF&#x2F;ID register更新，也就是確保他們下個cycle做跟這個cycle一樣的事<br>Insert a bubble:空白的instruction, 不做事<br><img data-src="/img/CA/bubble.png" alt="bubble"></p>
+<p>Stall: ID/EX裡的control value改成0，使EX MEM WB都不做事(nop) 並防止PC和IF/ID register更新，也就是確保他們下個cycle做跟這個cycle一樣的事<br>Insert a bubble:空白的instruction, 不做事<br><img data-src="/img/CA/bubble.png" alt="bubble"></p>
 <p>Control Hazard Solutions</p>
-<p>Branch 有沒有taken可以在MEM確認。如果發現prediction錯誤就重新設定PC，並把control都設為0，flush掉跑錯的instruction。<br>一個簡單的改進方式就是，在ID stage把資料從register讀出來後加上比較兩個值是否相等的元件，compare完才進到id&#x2F;ex，這時候提早了一個cycle知道branch是否taken。</p>
+<p>Branch 有沒有taken可以在MEM確認。如果發現prediction錯誤就重新設定PC，並把control都設為0，flush掉跑錯的instruction。<br>一個簡單的改進方式就是，在ID stage把資料從register讀出來後加上比較兩個值是否相等的元件，compare完才進到id/ex，這時候提早了一個cycle知道branch是否taken。</p>
 <p>當branch發生使用的值在ALU做完運算時，透過forwarding就可以解決了<br>但如果branch發生在使用的值正在load的話，就必須stall。而如果是一load出來馬上就要做branching的判斷的話，就必須stall 2個cycle<br><img data-src="/img/CA/2stall.png"></p>
-<p>Dynamic prediction的branch history table，以branch instruction的address(取最後n個bit)做索引，並儲存branch的結果。如果猜錯的話就做之前一樣的flush並修改表。<br>跳出loop時會猜繼續，第一次進入loop會猜跳出 -&gt; 導致錯誤率大幅提高<br>-&gt; 2bit的predictor, 連續兩個taken&#x2F;not taken才會改變狀態</p>
+<p>Dynamic prediction的branch history table，以branch instruction的address(取最後n個bit)做索引，並儲存branch的結果。如果猜錯的話就做之前一樣的flush並修改表。<br>跳出loop時會猜繼續，第一次進入loop會猜跳出 -&gt; 導致錯誤率大幅提高<br>-&gt; 2bit的predictor, 連續兩個taken/not taken才會改變狀態</p>
 <p>但就算猜對，還是要算出target address，所以在branch taken時會有一個cycle的penalty。解決的方法是新增buffer存放branch target address。</p>
-<h3 id="Exception"><a href="#Exception" class="headerlink" title="Exception"></a>Exception</h3><p>syscall，未定義的opcode，或overflow處理等等(以上為CPU內產生的指令)或是受外部的I&#x2F;O控制器的干涉。導致performance的降低。</p>
+<h3 id="Exception"><a href="#Exception" class="headerlink" title="Exception"></a>Exception</h3><p>syscall，未定義的opcode，或overflow處理等等(以上為CPU內產生的指令)或是受外部的I/O控制器的干涉。導致performance的降低。</p>
 <ol start="2">
 <li>完成先前的指令</li>
 <li>Flush the instruction in the IF, ID and EX stages</li>
 <li>把這些違例或是被干擾的instruction的PC(實際上是PC+4)存在Exception program counter(EPC)</li>
 <li>問題的跡像(indicator)也存起來，在MIPS中是使用Cause register</li>
-<li>然後再跳到handler(PC &#x3D; 0x40000040)</li>
-<li>另外一種解決的機制是，以硬體等級去告訴I&#x2F;O handler，根據不同的cause跳去不同的handler(不同的address)，instructions要不就去執行interrupt的部份，要不就跳到handler去處理。</li>
+<li>然後再跳到handler(PC = 0x40000040)</li>
+<li>另外一種解決的機制是，以硬體等級去告訴I/O handler，根據不同的cause跳去不同的handler(不同的address)，instructions要不就去執行interrupt的部份，要不就跳到handler去處理。</li>
 <li><pre><code>Handler先讀看原因(indicator)然後再轉至專門解決此類問題的handler，然後決定該採取什麼行動，如果是restartable(可以重跑)，就用EPC回到原本執行的地方(EPC-4)，並採取判斷正確的行動。否則就終止程序並根據EPC cause來回報錯誤。
 </code></pre>
 </li>
@@ -363,18 +359,18 @@ Resolving Hazards by Forwarding<br><img data-src="/img/CA/forward.png" alt="forw
 <p>Speculation：先去猜測要做什麼，如果做錯了再從頭來過。比如說branch的時候就先猜taken或not taken，在load的時候先拿原有的位址去load如果發現其他該在前面的instruction更新了這個位址，就roll-back。</p>
 <p>Compiler可以重新排列一些code比如說把branch之前的load移到更早，避免stall，或是寫一些instruction來修正做出錯誤的speculation的狀況。增加用來延遲exception的ISA。</p>
 <p>而硬體可以做look-ahead，將instruction的結果和exception都先存在buffer裡，直到他們要被用到或是判斷speculation正確。如果判斷speculation錯誤就把buffer flush掉。</p>
-<h3 id="dual-issue"><a href="#dual-issue" class="headerlink" title="dual issue"></a>dual issue</h3><p>一個packet有兩組instruction。一個只做load&#x2F;store一個只做ALU&#x2F;branch，所以只要加一個ALU和一個sign extender就可以實做。</p>
+<h3 id="dual-issue"><a href="#dual-issue" class="headerlink" title="dual issue"></a>dual issue</h3><p>一個packet有兩組instruction。一個只做load/store一個只做ALU/branch，所以只要加一個ALU和一個sign extender就可以實做。</p>
 <p>dual issue’s Data hazard:</p>
-<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line"><span class="built_in">add</span> <span class="variable">$t0</span>, <span class="variable">$s0</span>, <span class="variable">$s1</span></span><br><span class="line">load <span class="variable">$s2</span>, 0(<span class="variable">$t0</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">add</span> <span class="variable">$t0</span>, <span class="variable">$s0</span>, <span class="variable">$s1</span></span><br><span class="line">load <span class="variable">$s2</span>, 0(<span class="variable">$t0</span>)</span><br></pre></td></tr></tbody></table></figure>
 
 <p>把這兩個指令拆開放在兩個不同的packets，就像stall一樣</p>
 <p>Load-use hazard，一樣會造成一個cycle的延遲，但是一個cycle變成影響兩個instructions。<br>-&gt; 需要把指令做更好的排程(aggressive scheduling)</p>
-<p>loop unrolling: 把一次完成多個loop內的iteration來減少loop-control overhead(bne)，並用不同的register來存放(register renaming)(每一份replicate就是原本的loop跑一次)<br>避免loop裡面有 anti–dependencies(name dependency): write-after-read<br>ex: B&#x3D;7; A&#x3D;B+1; B&#x3D;3 在a&#x3D;b+1和b&#x3D;3之間就有anti dependent的關係</p>
+<p>loop unrolling: 把一次完成多個loop內的iteration來減少loop-control overhead(bne)，並用不同的register來存放(register renaming)(每一份replicate就是原本的loop跑一次)<br>避免loop裡面有 anti–dependencies(name dependency): write-after-read<br>ex: B=7; A=B+1; B=3 在a=b+1和b=3之間就有anti dependent的關係</p>
 <p><img data-src="/img/CA/unroll-before.png" alt="before"><br><img data-src="/img/CA/unroll-after.png" alt="after"><br>原本：for(load -&gt; 計算 -&gt; save)<br>之後：for(load) + for(add) -&gt; for(save)<br>IPC從1.25提升到1.75(更接近極限，2)不過code和register也變得更大。  </p>
 <p>Dynamic multiple issue通常在超大型處理器中使用。CPU每個cycle會決定issue的對象。以幫助cpu對code的語義有更好的掌握(compiler做的事變少CPU更直接掌握code在做什麼)。<br>dynamic pipeline scheduling: 讓cpu可以不照順序執行instruction以避免stall，但是會把資料<strong>照順序存回</strong>register(比如說在stall的時候就先處理無關的instruction)</p>
 <p><img data-src="/img/CA/dynamic-schedule-CPU.png" alt="dynamic schedule CPU"><br>Dynamically scheduled CPU的運作跟一般的pipeline有些出入，可以分為4個stage</p>
 <ol>
-<li>IF&#x2F;ID<br>照順序做完instruction fetch和decode(這邊的動作很快)</li>
+<li>IF/ID<br>照順序做完instruction fetch和decode(這邊的動作很快)</li>
 <li>reservation stations<br>控制哪些instruction要先pending</li>
 <li>functional units<br>做不同的功能 – 浮點數運算, load-store…<br>完成後把資料給commit unit及相對應在pending等這個結果的reservation station</li>
 <li>commit unit<br>重新排列register write要用的buffer<br>並提供operands給某些在reservation pending的function(類似之前單issue裡要flush重做的function)</li>
@@ -383,7 +379,7 @@ Resolving Hazards by Forwarding<br><img data-src="/img/CA/forward.png" alt="forw
 <p>?? 當一個instruction被issue到reservation station的時候，如果instruction的operands在register或reorder buffer裡可以被找到也可以被存取的話，把它複制到reservation station，並且標明那個register已經無用可以被複寫。如果operands無法存取(unavailable)的話，有一個function unit會把該給的值給reservation unit，而register裡面的值需不需要更新就要看指令。</p>
 <p>dynamically scheduled的speculation: 在branching的結果確認之前不要commit。而speculation一樣可以用在減少load 和cache miss delay。根據預測的address先取出值然後等store有沒有更改到這個load的address，store會把那個address bypass到load unit。沒問題就把結果送到commit unit，有問題就重做。</p>
 <p>Dynamically scheduling的原因:<br>不是所有的stall都是可以從code裡看出來的 比如說:cache miss。<br>branch的結果也不能靠scheduling來解決。<br>不同的ISA有不同的延遲和不同的hazard，都要交給compiler來處理實在非常麻煩。</p>
-<p>Multiple issue的效能：程式內有dependency會限制ILP(instruction level parallelism)而且有些dependency很難去除，如pointer aliasing(不同的名字的pointer指到同一個地方)<br>有一些平行也很難做到比如說IF&#x2F;ID的部份<br>memory還有delay而且也有他的頻寬，也導致pipeline常常有nop<br>Speculation如果做的好的話可以改善以上原因引起的performance下降</p>
+<p>Multiple issue的效能：程式內有dependency會限制ILP(instruction level parallelism)而且有些dependency很難去除，如pointer aliasing(不同的名字的pointer指到同一個地方)<br>有一些平行也很難做到比如說IF/ID的部份<br>memory還有delay而且也有他的頻寬，也導致pipeline常常有nop<br>Speculation如果做的好的話可以改善以上原因引起的performance下降</p>
 <p>多顆簡單的核心(沒speculation, issue width低, pipeline, stage少)可以達到省電的作用</p>
 <h3 id="結論"><a href="#結論" class="headerlink" title="結論"></a>結論</h3><p>pipeline的概念很簡單，但是細節很複雜。Ex: hazard detection<br>pipeline跟cpu的其他科技無關，其他科技進步的同時還是可以做pipelining  </p>
 <p>不好的ISA設計可能在某些狀況下會讓pipelining變得很困難<br>ex:<br>太複雜的instruction set 需要巨大的overhead來讓pipeline可行(ex: IA-32,VAX)<br>太複雜的addressing mode<br>間接讀取memory(指標)，及register update<br>複雜的pipeline，會有比較長的branching delay slots  </p>
@@ -396,13 +392,13 @@ Resolving Hazards by Forwarding<br><img data-src="/img/CA/forward.png" alt="forw
 </ul>
 <p>Temporal locality: 最近被存取過的data容易再被存取<br>Ex:在loop裡面的程序，或是在loop裡面一直被重複操作的數字</p>
 <p>Spatial locality: 位址接近最近被存取過的data較有可能被存取，如array</p>
-<p>資料的copy以block為最小單位。<br>Hit Time: memory access time + time to determine hit&#x2F;miss<br>Miss Penalty: Time to replace a block in the upper level + Time to deliver the block to processor  </p>
+<p>資料的copy以block為最小單位。<br>Hit Time: memory access time + time to determine hit/miss<br>Miss Penalty: Time to replace a block in the upper level + Time to deliver the block to processor  </p>
 <p>direct mapped cache: mod餘1, mod餘2 … 各放在同一個cache block<br>memory address前面的bit也存過去做為tag，可知道是從memory的哪個位置將資料load到這個cache<br>Valid bit可以很快的判斷一個block裡面是否有資料<br><img data-src="/img/CA/direct-map.png" alt="direct map"></p>
 <p>Q:How many total bits are required for a direct-mapped cache with 16 KB of data and 4-word(16byte) blocks, assuming 32bit address?</p>
 <ul>
-<li>num of sets &#x3D; 16KB(cache size)&#x2F;16B(block size) &#x3D; 2^10</li>
-<li>num of data bits for each set &#x3D; 16byte data &#x3D; 4</li>
-<li>num of tag bits for each set &#x3D; 32-10-4 &#x3D; 18</li>
+<li>num of sets = 16KB(cache size)/16B(block size) = 2^10</li>
+<li>num of data bits for each set = 16byte data = 4</li>
+<li>num of tag bits for each set = 32-10-4 = 18</li>
 </ul>
 <p>Cache Controller FSM<br><img data-src="/img/CA/cache-controller-fsm.png" alt="FSM"></p>
 <h3 id="考慮因素"><a href="#考慮因素" class="headerlink" title="考慮因素"></a>考慮因素</h3><p>若增大block size，block數變少，有利於spatial locality，但miss penalty上升</p>
@@ -436,7 +432,7 @@ Resolving Hazards by Forwarding<br><img data-src="/img/CA/forward.png" alt="forw
 <p>當CPU的效能增進時，miss penalty的影響就越來越大</p>
 <p>How to Improve Cache Performance?</p>
 <ol>
-<li>Reduce miss rate -&gt; Increasing associativity<br> direct mapped -&gt; set associative -&gt; fully associative<br> 效能提升呈邊際遞減<br> 缺點：mux delay, data comes after hit&#x2F;miss, tag bit increase</li>
+<li>Reduce miss rate -&gt; Increasing associativity<br> direct mapped -&gt; set associative -&gt; fully associative<br> 效能提升呈邊際遞減<br> 缺點：mux delay, data comes after hit/miss, tag bit increase</li>
 <li>Reduce miss penalty -&gt; multi-level cache<br> high performance improvement<br> Ex. radix sort: cache miss rate high, so performance worse than quick sort</li>
 <li>Reduce hit time -&gt; small cache(…)</li>
 </ol>
@@ -488,9 +484,9 @@ Resolving Hazards by Forwarding<br><img data-src="/img/CA/forward.png" alt="forw
 </ul>
 </li>
 </ul>
-<p>VMM(virtual machine monitor)將虛擬的資源map到實體資源上，ex: memory I&#x2F;O, CPU。guest的code在我們的本機端跑時是使用user mode，VMM可以控管一些要有權限才能用的instructions和一些資源是否可以access。Guest的os可能跟我們使用不同套，於是vmm就要產生一個虛擬的I&#x2F;O給guest使用，來處理真正的I&#x2F;O。<br>如果VM request一個timer-interrupt，這時候vmm就會根據本機的timer虛擬出一個虛擬的timer。利用這個timer來判斷interrupt的發生。<br>在vm上所有必須access實體資源的動作都要透過由VMM監控的privileged instructions才使用。比如說page tables, I&#x2F;O , interrupt controls, registers等。<br>做某一些動作比如說要建立多重的web service時，所有東西都要經過VMM，VMM就回成為一個很大的 threshold。</p>
+<p>VMM(virtual machine monitor)將虛擬的資源map到實體資源上，ex: memory I/O, CPU。guest的code在我們的本機端跑時是使用user mode，VMM可以控管一些要有權限才能用的instructions和一些資源是否可以access。Guest的os可能跟我們使用不同套，於是vmm就要產生一個虛擬的I/O給guest使用，來處理真正的I/O。<br>如果VM request一個timer-interrupt，這時候vmm就會根據本機的timer虛擬出一個虛擬的timer。利用這個timer來判斷interrupt的發生。<br>在vm上所有必須access實體資源的動作都要透過由VMM監控的privileged instructions才使用。比如說page tables, I/O , interrupt controls, registers等。<br>做某一些動作比如說要建立多重的web service時，所有東西都要經過VMM，VMM就回成為一個很大的 threshold。</p>
 <h2 id="Chap-10-Storage-Network-and-Other-Peripherals"><a href="#Chap-10-Storage-Network-and-Other-Peripherals" class="headerlink" title="Chap 10 Storage, Network and Other Peripherals"></a>Chap 10 Storage, Network and Other Peripherals</h2><p><img data-src="/img/CA/iosystem.png" alt="IO System"></p>
-<p>I&#x2F;O Device Characteristics</p>
+<p>I/O Device Characteristics</p>
 <ul>
 <li>behavior<ul>
 <li>input, output or storage</li>
@@ -500,23 +496,23 @@ Resolving Hazards by Forwarding<br><img data-src="/img/CA/forward.png" alt="forw
 <li>data transmit rate</li>
 </ul>
 <p>performance metrics: Throughput, Response time<br><img data-src="/img/CA/iodevicechart.png" alt="I/O device characterstics"></p>
-<dl><dt>I&#x2F;O System performance: find limited by weakest link in the chain</dt><dd>CPU, memory, bus, IO controller, IO device, OS, software<br>Two common </dd></dl><p>reliability</p>
+<dl><dt>I/O System performance: find limited by weakest link in the chain</dt><dd>CPU, memory, bus, IO controller, IO device, OS, software<br>Two common </dd></dl><p>reliability</p>
 <ul>
 <li>MTTF:平均要多久會出現一次failure</li>
 <li>MTTR:平均遇到failure以後多久會修好</li>
-<li>availability是MTTF&#x2F;(MTTF+MTTR)</li>
+<li>availability是MTTF/(MTTF+MTTR)</li>
 <li>改進availability<ul>
 <li>增進MTTF，有避免fault的發生，減少fault發生時造成的損失，還有fault的預測</li>
 <li>減少MTTR，加強repair，增強fault的原因的分析功能，還有repair的機制</li>
 </ul>
 </li>
 </ul>
-<p>Disk Performance<br>seek time: 上下移動<br>Rotational latency: 轉到讀取的資料所需時間(RPM)，平均計算：轉一半(0.5round)<br>transfer rate: 傳送資料速度<br>Controller time: I&#x2F;O controller花的時間</p>
+<p>Disk Performance<br>seek time: 上下移動<br>Rotational latency: 轉到讀取的資料所需時間(RPM)，平均計算：轉一半(0.5round)<br>transfer rate: 傳送資料速度<br>Controller time: I/O controller花的時間</p>
 <p>快閃記憶體(flash)比硬碟快上100~1000倍。<br>比較小，比較不耗電。但是比較貴(介於disk和dram之間。)<br>Flash可以分為NOR或NAND flash。<br>NOR flash是random access通常用在嵌入式系統的instruction memory。<br>NAND 同時只能access某個block，而且同樣的大小有比較大的容量。成本也比較低。通常用來當我們常用的usb drive或記憶卡，SSD等等。<br>Flash的bit約在access 千次以後會壞掉。所以不適合拿來做ram或硬碟。解決方法是把data平均放在每個block上。</p>
 <p>flash’s block: 包含多個page</p>
 <ol>
 <li>Write Once: 無法直接覆蓋檔案，需先清除，一次清除一個block</li>
-<li>When # of free pages &lt;&#x3D; Garbage Collection Threshold<br>: move live page to other block , and erase this block</li>
+<li>When # of free pages &lt;= Garbage Collection Threshold<br>: move live page to other block , and erase this block</li>
 </ol>
 <p>SSD (Solid Storage Disk)<br>no actual “disk”, use integrated circuit assemblies as memory to store data persistently.<br>SSD uses electronic interfaces compatible with traditional block drives</p>
 <ul>
@@ -527,14 +523,14 @@ Resolving Hazards by Forwarding<br><img data-src="/img/CA/forward.png" alt="forw
 </li>
 <li>Higher initial cost</li>
 <li>Ex. Facebook data center</li>
-<li>Active SSD: 在I&#x2F;O端作(簡單的)計算，減少L&#x2F;W時間</li>
+<li>Active SSD: 在I/O端作(簡單的)計算，減少L/W時間</li>
 </ul>
-<p>將PCI-e flash作為I&#x2F;O cache(比SSD快！)放在General IO bus 上以加速I&#x2F;O</p>
-<p>Bus: Connection between Processors, Memory, and I&#x2F;O Device<br>有很好的同步性和低維護費，但造成效能瓶頸(受限於長度，BUS數目…)<br>有Control line 和 Data line</p>
+<p>將PCI-e flash作為I/O cache(比SSD快！)放在General IO bus 上以加速I/O</p>
+<p>Bus: Connection between Processors, Memory, and I/O Device<br>有很好的同步性和低維護費，但造成效能瓶頸(受限於長度，BUS數目…)<br>有Control line 和 Data line</p>
 <p>Bus可以分為</p>
 <ul>
 <li>Processor-memory bus: 較短較快，要照著memory的規劃做設計</li>
-<li>I&#x2F;O bus: 較長，可以有多重的互相連結。要照著互通性的基準設計</li>
+<li>I/O bus: 較長，可以有多重的互相連結。要照著互通性的基準設計</li>
 <li>Backplane bus: 所有device都可連接，花費較少，用來連接前兩者</li>
 </ul>
 <p><img data-src="/img/CA/three-type-bus.png" alt="three bus system"></p>
@@ -556,23 +552,23 @@ Resolving Hazards by Forwarding<br><img data-src="/img/CA/forward.png" alt="forw
 <p>Multiple Potential Bus Masters: use Arbiter to control<br>Arbiter: select who can use bus by priority and fairness</p>
 <p>Daisy Chain Bus Arbitrations<br><img data-src="/img/CA/daisy-chain.png" alt="Daisy Chain Bus Arbitrations"><br>Advantage: simple<br>Disadvantages:<br>–Cannot assure fairness: A low-priority device may be locked out indefinitely<br>–The use of the daisy chain grant signal also limits the bus<br>speed</p>
 <p>Centralized Parallel Arbitration<br><img data-src="/img/CA/Centralized-Parallel-Arbitration.png" alt="Centralized Parallel Arbitration"><br>所有bus由arbiter控管<br>適合速度較快的device組成的bus</p>
-<p>I&#x2F;O的設備是由I&#x2F;O controller來管理並同步。<br>command register來存放不同的command 使用不同的command來讓I&#x2F;O device執行不同的動作<br>status register來指出I&#x2F;O設備現在正在執行什麼task還有是否遇到什麼error<br>data register，可以把data “write”到device或從device ”read”出data。</p>
-<p>Memory mapped I&#x2F;O<br>I&#x2F;O的register的位址設為跟memory中的位址一樣，只有在kernel mode時可以access這些address</p>
-<p>Communicating with the Processor<br>‧Polling<br>定期檢查I&#x2F;O status register，如果是ready就執行I&#x2F;O，如果是error就想辦法解決。叫polling(問卷調查)。會浪費太多cpu time(busy loop)。<br>有反應時間需求時使用<br>‧Interrupt<br><img data-src="/img/CA/interrupt-driven-IO.png" alt="Interrupt Driven Data Transfer"><br>當ready或error時，controller就會interrupt CPU。<br>Interrupt跟exception很像，但可以在兩個instruction之間觸發handler。通常可以由cause的資訊來分辨是哪個device發生interrupt。Interrupt也有不同的priority，越緊急的interrupt priority就會越高。也可以用高priority的interrupt來呼叫低priority的interrupt的handler。<br>high-speed devices are associated with higher priority<br>‧DMA(direct memory access)<br>I&#x2F;O controller主動跟memory連結傳輸資料，直到傳輸完成或是error才interrupt。比較節省cpu-time。<br>DMA寫到memory後，可能造成memory和cache不一致<br>如果write-back cache有dirty block而DMA去讀到相對應的memory的話也會讀到錯誤的資料。解法：cache的內容如果在memory中被dma寫入就把那個cache flush掉，不然就要設定noncacheable(dma不能動在cache的資料)。</p>
-<p>Parallelisms and I&#x2F;O</p>
+<p>I/O的設備是由I/O controller來管理並同步。<br>command register來存放不同的command 使用不同的command來讓I/O device執行不同的動作<br>status register來指出I/O設備現在正在執行什麼task還有是否遇到什麼error<br>data register，可以把data “write”到device或從device ”read”出data。</p>
+<p>Memory mapped I/O<br>I/O的register的位址設為跟memory中的位址一樣，只有在kernel mode時可以access這些address</p>
+<p>Communicating with the Processor<br>‧Polling<br>定期檢查I/O status register，如果是ready就執行I/O，如果是error就想辦法解決。叫polling(問卷調查)。會浪費太多cpu time(busy loop)。<br>有反應時間需求時使用<br>‧Interrupt<br><img data-src="/img/CA/interrupt-driven-IO.png" alt="Interrupt Driven Data Transfer"><br>當ready或error時，controller就會interrupt CPU。<br>Interrupt跟exception很像，但可以在兩個instruction之間觸發handler。通常可以由cause的資訊來分辨是哪個device發生interrupt。Interrupt也有不同的priority，越緊急的interrupt priority就會越高。也可以用高priority的interrupt來呼叫低priority的interrupt的handler。<br>high-speed devices are associated with higher priority<br>‧DMA(direct memory access)<br>I/O controller主動跟memory連結傳輸資料，直到傳輸完成或是error才interrupt。比較節省cpu-time。<br>DMA寫到memory後，可能造成memory和cache不一致<br>如果write-back cache有dirty block而DMA去讀到相對應的memory的話也會讀到錯誤的資料。解法：cache的內容如果在memory中被dma寫入就把那個cache flush掉，不然就要設定noncacheable(dma不能動在cache的資料)。</p>
+<p>Parallelisms and I/O</p>
 <p>RAID: Redundant Array of (inexpensive)Independent Disks。<br>使用很多個小的disk來取代一個大的disk，好處有資料較不易受損和平行處理速度加快<br>‧Improve availability with redundancy</p>
 <p>Raid 0，是最早的RAID，沒有redundancy，只是把資料分散在不同的小disk可以平行讀取<br>RAID 1(Disk Mirroring):是兩個一模一樣的disk，一個是當作備份用，如果主disk的資料受損就從mirror copy過去<br>RAID 2: 把資料拆到以bit為單位分散的存在disk內。並用E-bit來做Error correction。拆到以bit為單位的話假設有n個disk則要讀任何資料理論上可以有n倍快。但是太複雜的設計導致實際上raid2並沒有在使用。只用於memory<br>Raid3(Bit-Interleaved Parity):<br>使用N+1個disk，資料拆成bit level分散在n個disk上<br>用剩下來的disk存parity(前面n個disk裡相對應的位址的每個資料做XOR)<br>在read時就讀取所有的disk，在write時寫入每個disk並產生新的parity。遇到failure時根據parity可以判斷failure的bit。<br>RAID4:<br>跟raid3很像只是是拆成block level，每次要讀資料時只要讀存放所需資料的block就好，寫資料也只需要動到要寫的block和parity。<br>RAID5:<br>跟RAID4接近，但是把parity分散存至每個disk以避免parity disk成為在寫入時的速度的瓶頸(Raid4每個寫入都要寫parity disk，所以parity disk寫入的速度就會限制資料寫入的速度)<br>RAID6(P + Q Redundancy):<br>跟RAID5一樣但是增加兩個parity(不同演算法)，使系統容錯率更高。</p>
 <p>RAID summary:<br>raid可以提升performance 並增加可靠性(hot swapping，在不影響系統operate的情形下修復fault)<br>可靠性是raid最重要的功能。</p>
-<p>Disk I&#x2F;O Benchmarks: I&#x2F;O rate vs. Data rate vs. latency</p>
+<p>Disk I/O Benchmarks: I/O rate vs. Data rate vs. latency</p>
 <h2 id="Chap12-Multicores-Multiprocessor"><a href="#Chap12-Multicores-Multiprocessor" class="headerlink" title="Chap12 Multicores, Multiprocessor"></a>Chap12 Multicores, Multiprocessor</h2><p>Challenges</p>
 <ul>
 <li>Partitioning</li>
 <li>Coordination</li>
 <li>Communication overheads</li>
-<li>Amdahl’s Law<br>平行化是有極限的<br>  FracX: 能被speedup的比例<br>  Speedup &#x3D; 1 &#x2F; [(FracX&#x2F;SpeedupX + (1-FracX)]</li>
+<li>Amdahl’s Law<br>平行化是有極限的<br>  FracX: 能被speedup的比例<br>  Speedup = 1 / [(FracX/SpeedupX + (1-FracX)]</li>
 </ul>
 <p>資料傳遞<br>Shared Memory: connect by memory<br>use lock to synchronize<br>same address space<br>Message Passing: connect by network<br>different address spaces</p>
-<p>Total network bandwidth &#x3D; 所有的頻寬。bandwidth-per-link x link_no<br>Bisection bandwidth &#x3D; 兩個部分之間的頻寬。the bandwidth between two parts of a multiprocessor</p>
+<p>Total network bandwidth = 所有的頻寬。bandwidth-per-link x link_no<br>Bisection bandwidth = 兩個部分之間的頻寬。the bandwidth between two parts of a multiprocessor</p>
 <p><img data-src="/img/CA/network-topology.png" alt="netword topology"></p>
 <p>Cache Coherency Problem: 在cache中的共享資料須保持一致<br>Protocol:</p>
 <ol>
@@ -651,7 +647,7 @@ Resolving Hazards by Forwarding<br><img data-src="/img/CA/forward.png" alt="forw
 </ul>
 </li>
 </ul>
-<p>Serial&#x2F;Task-parallel workloads → CPU<br>Graphics&#x2F;Data-parallel workloads → GPU<br>Behaviors of the applications are different<br>-&gt; CPU is latency sensitive, GPU is throughput oriented</p>
+<p>Serial/Task-parallel workloads → CPU<br>Graphics/Data-parallel workloads → GPU<br>Behaviors of the applications are different<br>-&gt; CPU is latency sensitive, GPU is throughput oriented</p>
 <h3 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h3><ul>
 <li>CA_by_b95015.doc</li>
 </ul>
@@ -781,9 +777,8 @@ Resolving Hazards by Forwarding<br><img data-src="/img/CA/forward.png" alt="forw
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="qwerty"
-      src="/img/qwerty.png">
+        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="qwerty" src="/img/qwerty.png">
   <p class="site-author-name" itemprop="name">qwerty</p>
   <div class="site-description" itemprop="description">Programming | Computer Science | Thought</div>
 </div>
@@ -811,7 +806,7 @@ Resolving Hazards by Forwarding<br><img data-src="/img/CA/forward.png" alt="forw
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http:&#x2F;&#x2F;github.com&#x2F;gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
+        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http://github.com/gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
       </span>
       <span class="links-of-author-item">
         <span class="exturl" data-url="bWFpbHRvOmdvb2hjbDc3N0BnbWFpbC5jb20=" title="E-Mail → mailto:goohcl777@gmail.com"><i class="fa fa-envelope fa-fw"></i></span>
@@ -828,10 +823,10 @@ Resolving Hazards by Forwarding<br><img data-src="/img/CA/forward.png" alt="forw
     </div>
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https:&#x2F;&#x2F;qwerty777.me">My Main Page</span>
+          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https://qwerty777.me">My Main Page</span>
         </li>
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http:&#x2F;&#x2F;qwerty777.me&#x2F;life&#x2F;">My Second Blog -- wysiwyg</span>
+          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http://qwerty777.me/life/">My Second Blog -- wysiwyg</span>
         </li>
     </ul>
   </div>
@@ -858,7 +853,7 @@ Resolving Hazards by Forwarding<br><img data-src="/img/CA/forward.png" alt="forw
 
 <div class="copyright">
   
-  &copy; 2014 – 
+  © 2014 – 
   <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fab fa-free-code-camp"></i>
@@ -871,7 +866,7 @@ Resolving Hazards by Forwarding<br><img data-src="/img/CA/forward.png" alt="forw
       <span class="post-meta-item-text">總字數：</span>
     <span title="總字數">457k</span>
 </div>
-  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> &amp; <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
   </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61c5cf9cb3476405" async="async"></script>
@@ -891,26 +886,69 @@ Resolving Hazards by Forwarding<br><img data-src="/img/CA/forward.png" alt="forw
   </div>
 
   
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/pjax/pjax.min.js"></script>
+  
+  
   <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
+  
+  
 
 
-<script src="/js/schemes/pisces.js"></script>
 
 
-<script src="/js/next-boot.js"></script>
 
-  <script>
-var pjax = new Pjax({
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+      
+
+
+
+    
+
+  
+
+
+
+    </div>
+
+
+<script src="/bundle.js"></script><script>var pjax = new Pjax({
   selectors: [
     'head title',
     '#page-configurations',
@@ -965,15 +1003,7 @@ window.addEventListener('pjax:success', () => {
       .bootstrap();
   }
   NexT.utils.updateSidebarPosition();
-});
-</script>
-
-
-
-
-  
-  <script data-pjax>
-    (function(){
+});;(function(){
       var canonicalURL, curProtocol;
       //Get the <link> tag
       var x=document.getElementsByTagName("link");
@@ -995,27 +1025,7 @@ window.addEventListener('pjax:success', () => {
       //Get current URL if the canonical URL does not exist
 	    if (!canonicalURL) canonicalURL = window.location.href;
 	    //Assign script content. Replace current URL with the canonical URL
-      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
-  </script>
-
-
-
-
-  
-<script src="/js/local-search.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-<script data-pjax>
-if (document.querySelectorAll('pre.mermaid').length) {
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();;if (document.querySelectorAll('pre.mermaid').length) {
   NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
     mermaid.initialize({
       theme    : 'forest',
@@ -1025,18 +1035,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
       sequence : { actorMargin: 50 }
     });
   }, window.mermaid);
-}
-</script>
-
-
-    <div id="pjax">
-  
-
-  
-      
-
-<script>
-  if (typeof MathJax === 'undefined') {
+};if (typeof MathJax === 'undefined') {
     window.MathJax = {
       loader: {
           load: ['[tex]/mhchem'],
@@ -1084,15 +1083,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
     MathJax.startup.document.state(0);
     MathJax.texReset();
     MathJax.typeset();
-  }
-</script>
-
-    
-
-  
-
-<script>
-  var disqus_config = function() {
+  };var disqus_config = function() {
     this.page.url = "http://gitqwerty777.github.io/computer-architecture2/";
     this.page.identifier = "computer-architecture2/";
     this.page.title = "計算機結構(下)";
@@ -1109,9 +1100,4 @@ if (document.querySelectorAll('pre.mermaid').length) {
       s.setAttribute('data-timestamp', '' + +new Date());
       (d.head || d.body).appendChild(s);
     }
-  });
-</script>
-
-    </div>
-</body>
-</html>
+  });</script></body></html>

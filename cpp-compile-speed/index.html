@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="zh-TW">
-<head>
+<!DOCTYPE html><html lang="zh-TW"><head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
@@ -11,10 +9,10 @@
   <link rel="mask-icon" href="/img/favicon.png" color="#222">
   <meta name="google-site-verification" content="45plYlJRhxb-g8Tl8seizYgih_JUsmcJRH6oJHplkj0">
 
-<link rel="stylesheet" href="/css/main.css">
 
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+
+
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
@@ -52,12 +50,12 @@
   };
 </script>
 
-<script data-ad-client="ca-pub-7267358872858108" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script data-ad-client="ca-pub-7267358872858108" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
   <title>加快C++編譯速度的方法 | QWERTY</title>
   
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
-    <script data-pjax>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
+    <script data-pjax="">
       if (CONFIG.hostname === location.hostname) {
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -95,13 +93,13 @@
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="QWERTY" type="application/atom+xml">
-</head>
+<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&amp;display=swap&amp;subset=latin,latin-ext"></noscript></head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
+<body itemscope="" itemtype="http://schema.org/WebPage">
   <div class="container use-motion">
     <div class="headband"></div>
 
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切換導航欄">
@@ -189,9 +187,7 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off"
-           placeholder="搜尋..." spellcheck="false"
-           type="search" class="search-input">
+    <input autocomplete="off" autocapitalize="off" placeholder="搜尋..." spellcheck="false" type="search" class="search-input">
   </div>
   <span class="popup-btn-close">
     <i class="fa fa-times-circle"></i>
@@ -226,16 +222,16 @@
     
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+  <article itemscope="" itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/cpp-compile-speed/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/img/qwerty.png">
       <meta itemprop="name" content="qwerty">
       <meta itemprop="description" content="Programming | Computer Science | Thought">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="QWERTY">
     </span>
       <header class="post-header">
@@ -257,7 +253,7 @@
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分類於</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
                   <a href="/categories/%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">筆記</span></a>
                 </span>
             </span>
@@ -284,13 +280,13 @@
 <span id="more"></span>
 
 <h2 id="代碼角度"><a href="#代碼角度" class="headerlink" title="代碼角度"></a>代碼角度</h2><h3 id="前置聲明"><a href="#前置聲明" class="headerlink" title="前置聲明"></a>前置聲明</h3><p>在<code>.h</code>檔中使用前置聲明(forward declaration)，而不是直接包含<code>.h</code>檔。</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">A</span>; <span class="comment">//forward declaration, instead #include &quot;a.h&quot;</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">B</span>&#123;</span><br><span class="line">    A* a;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">useA</span><span class="params">(A&amp; a)</span></span>;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">A</span>; <span class="comment">//forward declaration, instead #include "a.h"</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">B</span>{</span><br><span class="line">    A* a;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">useA</span><span class="params">(A&amp; a)</span></span>;</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure>
 
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;a.h&quot;</span> <span class="comment">//cannot use forward declaration because compiler needs to know what A really is</span></span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">B</span>&#123;</span><br><span class="line">    A a;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">"a.h"</span> <span class="comment">//cannot use forward declaration because compiler needs to know what A really is</span></span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">B</span>{</span><br><span class="line">    A a;</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure>
 
 <p><strong>要盡一切可能使<code>.h</code>檔精簡</strong>。<br>很多時候前置聲明某個namespace中的class會比較痛苦，而直接include會方便很多，千萬要抵制住這種誘惑；class的成員，函數參數等也儘量用reference或pointer。</p>
 <h3 id="使用Pimpl模式"><a href="#使用Pimpl模式" class="headerlink" title="使用Pimpl模式"></a>使用Pimpl模式</h3><p>Pimpl為Private Implementation<br>傳統的C++的class的接口與實現是混淆在一起的，而Pimpl這種做法使得class的接口與實現得以完全分離。<br>如此，只要class的公共接口保持不變，對class實現的修改始終只需編譯該cpp；同時，該class提供給外界的.h檔也會精簡許多。</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">A</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">A</span>();</span><br><span class="line">    ~<span class="built_in">A</span>();</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">doSomething</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">Impl</span>;<span class="comment">//real implementation in this class</span></span><br><span class="line">    std::auto_ptr&lt;impl&gt; m_impl;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">A</span></span><br><span class="line">{</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">A</span>();</span><br><span class="line">    ~<span class="built_in">A</span>();</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">doSomething</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">Impl</span>;<span class="comment">//real implementation in this class</span></span><br><span class="line">    std::auto_ptr&lt;impl&gt; m_impl;</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure>
 
 <h3 id="高度模塊化"><a href="#高度模塊化" class="headerlink" title="高度模塊化"></a>高度模塊化</h3><p>模塊化就是低耦合，就是儘可能的減少相互依賴。</p>
 <ol>
@@ -303,17 +299,17 @@
 <h3 id="特別注意inline和template"><a href="#特別注意inline和template" class="headerlink" title="特別注意inline和template"></a>特別注意inline和template</h3><p>它們強制在<code>.h</code>檔中包含實作，這會增加<code>.h</code>檔的內容，從而減慢許多編譯速度，需權衡使用。</p>
 <h3 id="預編譯-h檔"><a href="#預編譯-h檔" class="headerlink" title="預編譯.h檔"></a>預編譯<code>.h</code>檔</h3><p>把一些常用但不常改動的<code>.h</code>檔放在預編譯<code>.h</code>檔中。這樣，至少在單個工程中你不需要在每個編譯單元裡一遍又一遍的load與解析同一個<code>.h</code>檔了。</p>
 <p>首次編譯source.cpp時，編譯器生成header.pch的預編譯header。以後再編譯該程式時，編譯器會比較該表頭檔的時間戳，如果表頭檔沒有改變，編譯器直接使用預編譯header。</p>
-<figure class="highlight makefile"><table><tr><td class="code"><pre><span class="line">CORE_PCH_FILENAME=Core.h</span><br><span class="line">CORE_PCH=<span class="variable">$(CORE_PCH_FILENAME)</span>.gch</span><br><span class="line"></span><br><span class="line"><span class="variable">$(CORE_PCH)</span>:</span><br><span class="line">    <span class="variable">$(CXX)</span> <span class="variable">$(CXX_CFLAGS)</span> -x c++-header <span class="variable">$(CORE_PCH_FILENAME)</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight makefile"><table><tbody><tr><td class="code"><pre><span class="line">CORE_PCH_FILENAME=Core.h</span><br><span class="line">CORE_PCH=<span class="variable">$(CORE_PCH_FILENAME)</span>.gch</span><br><span class="line"></span><br><span class="line"><span class="variable">$(CORE_PCH)</span>:</span><br><span class="line">    <span class="variable">$(CXX)</span> <span class="variable">$(CXX_CFLAGS)</span> -x c++-header <span class="variable">$(CORE_PCH_FILENAME)</span></span><br></pre></td></tr></tbody></table></figure>
 
 <h3 id="Guard-Conditions"><a href="#Guard-Conditions" class="headerlink" title="Guard Conditions"></a>Guard Conditions</h3><p>保證每個 header file 在每個編譯單元只被 include 一次</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">pragma</span> once</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">pragma</span> once</span></span><br></pre></td></tr></tbody></table></figure>
 
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">ifndef</span> filename_h</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> filename_h</span></span><br><span class="line"><span class="comment">//...</span></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">ifndef</span> filename_h</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> filename_h</span></span><br><span class="line"><span class="comment">//...</span></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br></pre></td></tr></tbody></table></figure>
 <p>同時使用兩種方法以確保compiler的相容性</p>
 <h2 id="Unity-Build"><a href="#Unity-Build" class="headerlink" title="Unity Build"></a>Unity Build</h2><p>把所有的檔案包含到一個cpp中(如<code>all.cpp</code>)，然後只編譯all.cpp。這樣就只有一個編譯單元，這意味著不需要重複load與解析同一個<code>.h</code>檔了，同時因為只產生一個obj文件，在link的時候也不需要那麼密集的IO</p>
 <h2 id="Compiler-Cache"><a href="#Compiler-Cache" class="headerlink" title="Compiler Cache"></a>Compiler Cache</h2><p>藉由快取上一次編譯的結果，使rebuild在保持結果相同的情況下，極大的提高速度。</p>
 <h2 id="不要有太多的Include-Directories"><a href="#不要有太多的Include-Directories" class="headerlink" title="不要有太多的Include Directories"></a>不要有太多的Include Directories</h2><p>編譯器定位你include的<code>.h</code>檔，是根據你提供的include directories進行搜索的。</p>
-<p>用 <code>cpp -v</code> 查看 <code>#include &quot;...&quot; search starts here:</code> 中的目錄<br>和 GNU Make 的 <code>-I</code> 選項</p>
+<p>用 <code>cpp -v</code> 查看 <code>#include "..." search starts here:</code> 中的目錄<br>和 GNU Make 的 <code>-I</code> 選項</p>
 <h2 id="平行化及分佈式編譯"><a href="#平行化及分佈式編譯" class="headerlink" title="平行化及分佈式編譯"></a>平行化及分佈式編譯</h2><p>GNU Make 的 <code>-j [N]</code> 可以用N個核心編譯<br>Visual Studio 有 <code>/MP</code> 選項可做到檔案等級的平行<br>或是用空閒的機器來編譯</p>
 <h2 id="買更好的磁碟"><a href="#買更好的磁碟" class="headerlink" title="買更好的磁碟"></a>買更好的磁碟</h2><p>編譯速度慢很大一部分原因是磁碟操作，那麼除了儘可能的減少磁碟操作，我們還可以做的就是加快磁碟速度。</p>
 <h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
@@ -464,9 +460,8 @@
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="qwerty"
-      src="/img/qwerty.png">
+        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="qwerty" src="/img/qwerty.png">
   <p class="site-author-name" itemprop="name">qwerty</p>
   <div class="site-description" itemprop="description">Programming | Computer Science | Thought</div>
 </div>
@@ -494,7 +489,7 @@
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http:&#x2F;&#x2F;github.com&#x2F;gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
+        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http://github.com/gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
       </span>
       <span class="links-of-author-item">
         <span class="exturl" data-url="bWFpbHRvOmdvb2hjbDc3N0BnbWFpbC5jb20=" title="E-Mail → mailto:goohcl777@gmail.com"><i class="fa fa-envelope fa-fw"></i></span>
@@ -511,10 +506,10 @@
     </div>
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https:&#x2F;&#x2F;qwerty777.me">My Main Page</span>
+          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https://qwerty777.me">My Main Page</span>
         </li>
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http:&#x2F;&#x2F;qwerty777.me&#x2F;life&#x2F;">My Second Blog -- wysiwyg</span>
+          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http://qwerty777.me/life/">My Second Blog -- wysiwyg</span>
         </li>
     </ul>
   </div>
@@ -541,7 +536,7 @@
 
 <div class="copyright">
   
-  &copy; 2014 – 
+  © 2014 – 
   <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fab fa-free-code-camp"></i>
@@ -554,7 +549,7 @@
       <span class="post-meta-item-text">總字數：</span>
     <span title="總字數">457k</span>
 </div>
-  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> &amp; <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
   </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61c5cf9cb3476405" async="async"></script>
@@ -574,26 +569,69 @@
   </div>
 
   
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/pjax/pjax.min.js"></script>
+  
+  
   <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
+  
+  
 
 
-<script src="/js/schemes/pisces.js"></script>
 
 
-<script src="/js/next-boot.js"></script>
 
-  <script>
-var pjax = new Pjax({
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+      
+
+
+
+    
+
+  
+
+
+
+    </div>
+
+
+<script src="/bundle.js"></script><script>var pjax = new Pjax({
   selectors: [
     'head title',
     '#page-configurations',
@@ -648,15 +686,7 @@ window.addEventListener('pjax:success', () => {
       .bootstrap();
   }
   NexT.utils.updateSidebarPosition();
-});
-</script>
-
-
-
-
-  
-  <script data-pjax>
-    (function(){
+});;(function(){
       var canonicalURL, curProtocol;
       //Get the <link> tag
       var x=document.getElementsByTagName("link");
@@ -678,27 +708,7 @@ window.addEventListener('pjax:success', () => {
       //Get current URL if the canonical URL does not exist
 	    if (!canonicalURL) canonicalURL = window.location.href;
 	    //Assign script content. Replace current URL with the canonical URL
-      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
-  </script>
-
-
-
-
-  
-<script src="/js/local-search.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-<script data-pjax>
-if (document.querySelectorAll('pre.mermaid').length) {
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();;if (document.querySelectorAll('pre.mermaid').length) {
   NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
     mermaid.initialize({
       theme    : 'forest',
@@ -708,18 +718,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
       sequence : { actorMargin: 50 }
     });
   }, window.mermaid);
-}
-</script>
-
-
-    <div id="pjax">
-  
-
-  
-      
-
-<script>
-  if (typeof MathJax === 'undefined') {
+};if (typeof MathJax === 'undefined') {
     window.MathJax = {
       loader: {
           load: ['[tex]/mhchem'],
@@ -767,15 +766,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
     MathJax.startup.document.state(0);
     MathJax.texReset();
     MathJax.typeset();
-  }
-</script>
-
-    
-
-  
-
-<script>
-  var disqus_config = function() {
+  };var disqus_config = function() {
     this.page.url = "http://gitqwerty777.github.io/cpp-compile-speed/";
     this.page.identifier = "cpp-compile-speed/";
     this.page.title = "加快C++編譯速度的方法";
@@ -792,9 +783,4 @@ if (document.querySelectorAll('pre.mermaid').length) {
       s.setAttribute('data-timestamp', '' + +new Date());
       (d.head || d.body).appendChild(s);
     }
-  });
-</script>
-
-    </div>
-</body>
-</html>
+  });</script></body></html>
