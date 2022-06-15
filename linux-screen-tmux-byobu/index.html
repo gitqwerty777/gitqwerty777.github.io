@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="zh-TW"><head>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
@@ -9,10 +11,10 @@
   <link rel="mask-icon" href="/img/favicon.png" color="#222">
   <meta name="google-site-verification" content="45plYlJRhxb-g8Tl8seizYgih_JUsmcJRH6oJHplkj0">
 
+<link rel="stylesheet" href="/css/main.css">
 
-
-
-
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
@@ -50,12 +52,12 @@
   };
 </script>
 
-<script data-ad-client="ca-pub-7267358872858108" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script data-ad-client="ca-pub-7267358872858108" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
   <title>byobu指令和設定 | QWERTY</title>
   
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
-    <script data-pjax="">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
+    <script data-pjax>
       if (CONFIG.hostname === location.hostname) {
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -93,13 +95,13 @@
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="QWERTY" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&amp;display=swap&amp;subset=latin,latin-ext"></noscript></head>
+</head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage">
+<body itemscope itemtype="http://schema.org/WebPage">
   <div class="container use-motion">
     <div class="headband"></div>
 
-    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切換導航欄">
@@ -187,7 +189,9 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" placeholder="搜尋..." spellcheck="false" type="search" class="search-input">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
   </div>
   <span class="popup-btn-close">
     <i class="fa fa-times-circle"></i>
@@ -222,16 +226,16 @@
     
   
   
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/linux-screen-tmux-byobu/">
 
-    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/img/qwerty.png">
       <meta itemprop="name" content="qwerty">
       <meta itemprop="description" content="Programming | Computer Science | Thought">
     </span>
 
-    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="QWERTY">
     </span>
       <header class="post-header">
@@ -253,7 +257,7 @@
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分類於</span>
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">筆記</span></a>
                 </span>
             </span>
@@ -279,13 +283,13 @@
       
         <h2 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h2><p>byobu是基於screen或tmux的一層操作介面<br>預設為基於tmux</p>
 <p><span class="exturl" data-url="aHR0cHM6Ly90YW8tb2YtdG11eC5yZWFkdGhlZG9jcy5pby96aF9DTi9sYXRlc3QvbWFudXNjcmlwdC8wMC1mb3Jld29yZC5odG1s">tmux教學<i class="fa fa-external-link-alt"></i></span></p>
-<h2 id="使用byobu"><a href="#使用byobu" class="headerlink" title="使用byobu"></a>使用byobu</h2><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">byobu-enable <span class="comment">#登入就開啟byobu</span></span><br><span class="line">byobu-disable <span class="comment">#取消</span></span><br><span class="line">byobu new -s &lt;session name&gt; <span class="comment"># 新建一個byobu 會話</span></span><br><span class="line"><span class="comment"># 如果新建兩個以上，每次進入byobu的時候需要選擇</span></span><br></pre></td></tr></tbody></table></figure>
+<h2 id="使用byobu"><a href="#使用byobu" class="headerlink" title="使用byobu"></a>使用byobu</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">byobu-enable <span class="comment">#登入就開啟byobu</span></span><br><span class="line">byobu-disable <span class="comment">#取消</span></span><br><span class="line">byobu new -s &lt;session name&gt; <span class="comment"># 新建一個byobu 會話</span></span><br><span class="line"><span class="comment"># 如果新建兩個以上，每次進入byobu的時候需要選擇</span></span><br></pre></td></tr></table></figure>
 
 <p>滑鼠操作</p>
 <ul>
 <li>選擇文字 <code>Shift+選擇</code></li>
 <li>複製文字 <code>Shift+右鍵</code></li>
-<li>開/關滑鼠操作 <code>Shift+F12</code></li>
+<li>開&#x2F;關滑鼠操作 <code>Shift+F12</code></li>
 </ul>
 <h2 id="名詞解釋"><a href="#名詞解釋" class="headerlink" title="名詞解釋"></a>名詞解釋</h2><p>用瀏覽器的名詞解釋</p>
 <ul>
@@ -322,7 +326,7 @@
 <td>新增水平分割(分為上下兩塊)</td>
 </tr>
 </tbody></table>
-<h3 id="移動-F3-x2F-F4"><a href="#移動-F3-x2F-F4" class="headerlink" title="移動(F3/F4)"></a>移動(F3/F4)</h3><p>移動的前後順序為編號順序</p>
+<h3 id="移動-F3-x2F-F4"><a href="#移動-F3-x2F-F4" class="headerlink" title="移動(F3&#x2F;F4)"></a>移動(F3&#x2F;F4)</h3><p>移動的前後順序為編號順序</p>
 <table>
 <thead>
 <tr>
@@ -332,7 +336,7 @@
 </thead>
 <tbody><tr>
 <td><code>Alt-↑/↓</code></td>
-<td>前/後一個視窗</td>
+<td>前&#x2F;後一個視窗</td>
 </tr>
 <tr>
 <td><code>Ctrl-F3/F4</code></td>
@@ -344,7 +348,7 @@
 </tr>
 <tr>
 <td><code>F3/F4</code>, <code>Alt-←/→</code></td>
-<td>前/後一個分頁</td>
+<td>前&#x2F;後一個分頁</td>
 </tr>
 <tr>
 <td><code>Shift-Alt-Left/Right/Up/Down</code></td>
@@ -352,7 +356,7 @@
 </tr>
 <tr>
 <td><code>Shift-F3/F4</code></td>
-<td>移動至前/後分割</td>
+<td>移動至前&#x2F;後分割</td>
 </tr>
 <tr>
 <td><code>Shift-←/→/↑/↓</code></td>
@@ -377,7 +381,7 @@
 </tr>
 <tr>
 <td><code>Ctrl-F5</code></td>
-<td>Reconnect ssh/gpg/dbus sockets(註：應該是重新連線的意思)</td>
+<td>Reconnect ssh&#x2F;gpg&#x2F;dbus sockets(註：應該是重新連線的意思)</td>
 </tr>
 <tr>
 <td><code>F5</code></td>
@@ -389,7 +393,7 @@
 </tr>
 <tr>
 <td><code>Shift-F12</code></td>
-<td>開/關 byobu 指令快捷鍵</td>
+<td>開&#x2F;關 byobu 指令快捷鍵</td>
 </tr>
 <tr>
 <td><code>Shift-F5</code></td>
@@ -413,7 +417,7 @@
 </tr>
 <tr>
 <td><code>F6</code></td>
-<td>離開 byobu 但不登出(=<code>byobu detach</code>)</td>
+<td>離開 byobu 但不登出(&#x3D;<code>byobu detach</code>)</td>
 </tr>
 <tr>
 <td><code>Shift-F6</code></td>
@@ -477,7 +481,7 @@
 </thead>
 <tbody><tr>
 <td><code>Alt-F9</code></td>
-<td>開/關 同時輸入分割</td>
+<td>開&#x2F;關 同時輸入分割</td>
 </tr>
 <tr>
 <td><code>Ctrl-F9</code></td>
@@ -517,7 +521,7 @@
 </tr>
 <tr>
 <td><code>Shift-F11</code></td>
-<td>最大化/還原 目前分割</td>
+<td>最大化&#x2F;還原 目前分割</td>
 </tr>
 <tr>
 <td><code>Shift-F1</code></td>
@@ -527,7 +531,7 @@
 <h2 id="設定"><a href="#設定" class="headerlink" title="設定"></a>設定</h2><p>預設放在<code>~/.byobu/</code></p>
 <h3 id="修改狀態列"><a href="#修改狀態列" class="headerlink" title="修改狀態列"></a>修改狀態列</h3><p><code>~/.byobu/status</code></p>
 <p>預設是長這樣</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment"># Tmux has one status line, with 2 halves for status</span></span><br><span class="line">tmux_left=<span class="string">"#logo distro release #arch #session"</span></span><br><span class="line"><span class="comment"># You can have as many tmux right lines below here, and cycle through them using Shift-F5</span></span><br><span class="line">tmux_right=<span class="string">"network #disk_io #custom #entropy #raid reboot_required #updates_available #apport #services #mail #users uptime #ec2_cost #rcs_cost #fan_speed #cpu_temp #battery #wifi_quality #processes load_average cpu_count cpu_freq memory #swap disk users whoami #hostname ip_address #time_utc #date time"</span></span><br><span class="line"><span class="comment">#tmux_right="network #disk_io #custom entropy raid reboot_required updates_available #apport #services #mail users uptime #ec2_cost #rcs_cost fan_speed cpu_temp battery wifi_quality #processes load_average cpu_count cpu_freq memory #swap #disk whoami hostname ip_address #time_utc date time"</span></span><br><span class="line"><span class="comment">#tmux_right="network #disk_io custom #entropy raid reboot_required updates_available #apport #services #mail users uptime #ec2_cost #rcs_cost #fan_speed #cpu_temp battery wifi_quality #processes load_average cpu_count cpu_freq memory #swap #disk #whoami #hostname ip_address #time_utc date time"</span></span><br><span class="line"><span class="comment">#tmux_right="#network disk_io #custom entropy #raid #reboot_required #updates_available #apport #services #mail #users #uptime #ec2_cost #rcs_cost fan_speed cpu_temp #battery #wifi_quality #processes #load_average #cpu_count #cpu_freq #memory #swap whoami hostname ip_address #time_utc disk date time"</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Tmux has one status line, with 2 halves for status</span></span><br><span class="line">tmux_left=<span class="string">&quot;#logo distro release #arch #session&quot;</span></span><br><span class="line"><span class="comment"># You can have as many tmux right lines below here, and cycle through them using Shift-F5</span></span><br><span class="line">tmux_right=<span class="string">&quot;network #disk_io #custom #entropy #raid reboot_required #updates_available #apport #services #mail #users uptime #ec2_cost #rcs_cost #fan_speed #cpu_temp #battery #wifi_quality #processes load_average cpu_count cpu_freq memory #swap disk users whoami #hostname ip_address #time_utc #date time&quot;</span></span><br><span class="line"><span class="comment">#tmux_right=&quot;network #disk_io #custom entropy raid reboot_required updates_available #apport #services #mail users uptime #ec2_cost #rcs_cost fan_speed cpu_temp battery wifi_quality #processes load_average cpu_count cpu_freq memory #swap #disk whoami hostname ip_address #time_utc date time&quot;</span></span><br><span class="line"><span class="comment">#tmux_right=&quot;network #disk_io custom #entropy raid reboot_required updates_available #apport #services #mail users uptime #ec2_cost #rcs_cost #fan_speed #cpu_temp battery wifi_quality #processes load_average cpu_count cpu_freq memory #swap #disk #whoami #hostname ip_address #time_utc date time&quot;</span></span><br><span class="line"><span class="comment">#tmux_right=&quot;#network disk_io #custom entropy #raid #reboot_required #updates_available #apport #services #mail #users #uptime #ec2_cost #rcs_cost fan_speed cpu_temp #battery #wifi_quality #processes #load_average #cpu_count #cpu_freq #memory #swap whoami hostname ip_address #time_utc disk date time&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>Left</p>
 <table>
@@ -610,7 +614,7 @@
 </tr>
 <tr>
 <td><code>disk_io</code></td>
-<td>即時 IO 讀/寫速度</td>
+<td>即時 IO 讀&#x2F;寫速度</td>
 <td><code>◁11KB/s ▷188KB/s</code></td>
 </tr>
 <tr>
@@ -655,7 +659,7 @@
 </tr>
 <tr>
 <td><code>network</code></td>
-<td>即時網路上傳/下載速度</td>
+<td>即時網路上傳&#x2F;下載速度</td>
 <td><code>△11KB/s ▽188KB/s</code></td>
 </tr>
 <tr>
@@ -725,7 +729,7 @@
 <p>設定 → 終端機</p>
 <ol>
 <li>取消勾選<code>Integrated: Allow Chords</code></li>
-<li><code>Integrated: Commands To Skip Shell</code>增加下列<figure class="highlight stylus"><table><tbody><tr><td class="code"><pre><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.quickOpen</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.terminal</span><span class="selector-class">.findNext</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.terminal</span><span class="selector-class">.findPrevious</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.debug</span><span class="selector-class">.continue</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.debug</span><span class="selector-class">.restart</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.debug</span><span class="selector-class">.run</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.debug</span><span class="selector-class">.start</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.debug</span><span class="selector-class">.stop</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.focusNextPart</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.focusPreviousPart</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.debug</span><span class="selector-class">.pause</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.quickOpen</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.terminal</span>.focusFind</span><br></pre></td></tr></tbody></table></figure></li>
+<li><code>Integrated: Commands To Skip Shell</code>增加下列<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.quickOpen</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.terminal</span><span class="selector-class">.findNext</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.terminal</span><span class="selector-class">.findPrevious</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.debug</span><span class="selector-class">.continue</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.debug</span><span class="selector-class">.restart</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.debug</span><span class="selector-class">.run</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.debug</span><span class="selector-class">.start</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.debug</span><span class="selector-class">.stop</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.focusNextPart</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.focusPreviousPart</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.debug</span><span class="selector-class">.pause</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.quickOpen</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.terminal</span>.focusFind</span><br></pre></td></tr></table></figure></li>
 </ol>
 <h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly93d3cuYnlvYnUub3JnLw==">byobu<i class="fa fa-external-link-alt"></i></span></li>
@@ -863,13 +867,14 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B0%A1%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">簡介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8byobu"><span class="nav-number">2.</span> <span class="nav-text">使用byobu</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%8D%E8%A9%9E%E8%A7%A3%E9%87%8B"><span class="nav-number">3.</span> <span class="nav-text">名詞解釋</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8C%87%E4%BB%A4%E8%A1%A8"><span class="nav-number">4.</span> <span class="nav-text">指令表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B0%E5%BB%BA-F2"><span class="nav-number">4.1.</span> <span class="nav-text">新建(F2)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A7%BB%E5%8B%95-F3-x2F-F4"><span class="nav-number">4.2.</span> <span class="nav-text">移動(F3/F4)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A8%AD%E5%AE%9A-F5-F12"><span class="nav-number">4.3.</span> <span class="nav-text">設定(F5, F12)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%96%E6%B6%88-F6"><span class="nav-number">4.4.</span> <span class="nav-text">取消(F6)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A8%98%E9%8C%84-F7"><span class="nav-number">4.5.</span> <span class="nav-text">記錄(F7)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%A1%E7%90%86-F8"><span class="nav-number">4.6.</span> <span class="nav-text">管理(F8)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BB%A3%E6%92%AD-F9"><span class="nav-number">4.7.</span> <span class="nav-text">廣播(F9)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96-F11-F12"><span class="nav-number">4.8.</span> <span class="nav-text">其他(F11, F12)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A8%AD%E5%AE%9A"><span class="nav-number">5.</span> <span class="nav-text">設定</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E7%8B%80%E6%85%8B%E5%88%97"><span class="nav-number">5.1.</span> <span class="nav-text">修改狀態列</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A1%8F%E8%89%B2%E8%A8%AD%E5%AE%9A"><span class="nav-number">5.2.</span> <span class="nav-text">顏色設定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#VSCode%E8%A8%AD%E5%AE%9A"><span class="nav-number">5.3.</span> <span class="nav-text">VSCode設定</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99"><span class="nav-number">6.</span> <span class="nav-text">參考資料</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B0%A1%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">簡介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8byobu"><span class="nav-number">2.</span> <span class="nav-text">使用byobu</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%8D%E8%A9%9E%E8%A7%A3%E9%87%8B"><span class="nav-number">3.</span> <span class="nav-text">名詞解釋</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8C%87%E4%BB%A4%E8%A1%A8"><span class="nav-number">4.</span> <span class="nav-text">指令表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B0%E5%BB%BA-F2"><span class="nav-number">4.1.</span> <span class="nav-text">新建(F2)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A7%BB%E5%8B%95-F3-x2F-F4"><span class="nav-number">4.2.</span> <span class="nav-text">移動(F3&#x2F;F4)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A8%AD%E5%AE%9A-F5-F12"><span class="nav-number">4.3.</span> <span class="nav-text">設定(F5, F12)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%96%E6%B6%88-F6"><span class="nav-number">4.4.</span> <span class="nav-text">取消(F6)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A8%98%E9%8C%84-F7"><span class="nav-number">4.5.</span> <span class="nav-text">記錄(F7)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%A1%E7%90%86-F8"><span class="nav-number">4.6.</span> <span class="nav-text">管理(F8)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BB%A3%E6%92%AD-F9"><span class="nav-number">4.7.</span> <span class="nav-text">廣播(F9)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96-F11-F12"><span class="nav-number">4.8.</span> <span class="nav-text">其他(F11, F12)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A8%AD%E5%AE%9A"><span class="nav-number">5.</span> <span class="nav-text">設定</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E7%8B%80%E6%85%8B%E5%88%97"><span class="nav-number">5.1.</span> <span class="nav-text">修改狀態列</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A1%8F%E8%89%B2%E8%A8%AD%E5%AE%9A"><span class="nav-number">5.2.</span> <span class="nav-text">顏色設定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#VSCode%E8%A8%AD%E5%AE%9A"><span class="nav-number">5.3.</span> <span class="nav-text">VSCode設定</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99"><span class="nav-number">6.</span> <span class="nav-text">參考資料</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="qwerty" src="/img/qwerty.png">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="qwerty"
+      src="/img/qwerty.png">
   <p class="site-author-name" itemprop="name">qwerty</p>
   <div class="site-description" itemprop="description">Programming | Computer Science | Thought</div>
 </div>
@@ -897,7 +902,7 @@
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http://github.com/gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
+        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http:&#x2F;&#x2F;github.com&#x2F;gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
       </span>
       <span class="links-of-author-item">
         <span class="exturl" data-url="bWFpbHRvOmdvb2hjbDc3N0BnbWFpbC5jb20=" title="E-Mail → mailto:goohcl777@gmail.com"><i class="fa fa-envelope fa-fw"></i></span>
@@ -914,10 +919,10 @@
     </div>
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https://qwerty777.me">My Main Page</span>
+          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https:&#x2F;&#x2F;qwerty777.me">My Main Page</span>
         </li>
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http://qwerty777.me/life/">My Second Blog -- wysiwyg</span>
+          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http:&#x2F;&#x2F;qwerty777.me&#x2F;life&#x2F;">My Second Blog -- wysiwyg</span>
         </li>
     </ul>
   </div>
@@ -944,7 +949,7 @@
 
 <div class="copyright">
   
-  © 2014 – 
+  &copy; 2014 – 
   <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fab fa-free-code-camp"></i>
@@ -957,7 +962,7 @@
       <span class="post-meta-item-text">總字數：</span>
     <span title="總字數">457k</span>
 </div>
-  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> &amp; <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
   </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61c5cf9cb3476405" async="async"></script>
@@ -977,69 +982,26 @@
   </div>
 
   
-  
-  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
-  
-  
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
 
 
+<script src="/js/schemes/pisces.js"></script>
 
 
+<script src="/js/next-boot.js"></script>
 
-
-
-
-
-
-
-  
-
-
-
-
-  
-  
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div id="pjax">
-  
-
-  
-      
-
-
-
-    
-
-  
-
-
-
-    </div>
-
-
-<script src="/bundle.js"></script><script>var pjax = new Pjax({
+  <script>
+var pjax = new Pjax({
   selectors: [
     'head title',
     '#page-configurations',
@@ -1094,7 +1056,15 @@ window.addEventListener('pjax:success', () => {
       .bootstrap();
   }
   NexT.utils.updateSidebarPosition();
-});;(function(){
+});
+</script>
+
+
+
+
+  
+  <script data-pjax>
+    (function(){
       var canonicalURL, curProtocol;
       //Get the <link> tag
       var x=document.getElementsByTagName("link");
@@ -1116,7 +1086,27 @@ window.addEventListener('pjax:success', () => {
       //Get current URL if the canonical URL does not exist
 	    if (!canonicalURL) canonicalURL = window.location.href;
 	    //Assign script content. Replace current URL with the canonical URL
-      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();;if (document.querySelectorAll('pre.mermaid').length) {
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script data-pjax>
+if (document.querySelectorAll('pre.mermaid').length) {
   NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
     mermaid.initialize({
       theme    : 'forest',
@@ -1126,7 +1116,18 @@ window.addEventListener('pjax:success', () => {
       sequence : { actorMargin: 50 }
     });
   }, window.mermaid);
-};if (typeof MathJax === 'undefined') {
+}
+</script>
+
+
+    <div id="pjax">
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
     window.MathJax = {
       loader: {
           load: ['[tex]/mhchem'],
@@ -1174,7 +1175,15 @@ window.addEventListener('pjax:success', () => {
     MathJax.startup.document.state(0);
     MathJax.texReset();
     MathJax.typeset();
-  };var disqus_config = function() {
+  }
+</script>
+
+    
+
+  
+
+<script>
+  var disqus_config = function() {
     this.page.url = "http://gitqwerty777.github.io/linux-screen-tmux-byobu/";
     this.page.identifier = "linux-screen-tmux-byobu/";
     this.page.title = "byobu指令和設定";
@@ -1191,4 +1200,9 @@ window.addEventListener('pjax:success', () => {
       s.setAttribute('data-timestamp', '' + +new Date());
       (d.head || d.body).appendChild(s);
     }
-  });</script></body></html>
+  });
+</script>
+
+    </div>
+</body>
+</html>

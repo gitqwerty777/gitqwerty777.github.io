@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="zh-TW"><head>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
@@ -9,10 +11,10 @@
   <link rel="mask-icon" href="/img/favicon.png" color="#222">
   <meta name="google-site-verification" content="45plYlJRhxb-g8Tl8seizYgih_JUsmcJRH6oJHplkj0">
 
+<link rel="stylesheet" href="/css/main.css">
 
-
-
-
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
@@ -48,12 +50,12 @@
   };
 </script>
 
-<script data-ad-client="ca-pub-7267358872858108" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script data-ad-client="ca-pub-7267358872858108" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
   <title>在Ubuntu使用fcitx安裝嘸蝦米 | QWERTY</title>
   
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
-    <script data-pjax="">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
+    <script data-pjax>
       if (CONFIG.hostname === location.hostname) {
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -91,13 +93,13 @@
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="QWERTY" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&amp;display=swap&amp;subset=latin,latin-ext"></noscript></head>
+</head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage">
+<body itemscope itemtype="http://schema.org/WebPage">
   <div class="container use-motion">
     <div class="headband"></div>
 
-    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切換導航欄">
@@ -185,7 +187,9 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" placeholder="搜尋..." spellcheck="false" type="search" class="search-input">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
   </div>
   <span class="popup-btn-close">
     <i class="fa fa-times-circle"></i>
@@ -220,16 +224,16 @@
     
   
   
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/install-boshiamy-in-linux-by-fcitx/">
 
-    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/img/qwerty.png">
       <meta itemprop="name" content="qwerty">
       <meta itemprop="description" content="Programming | Computer Science | Thought">
     </span>
 
-    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="QWERTY">
     </span>
       <header class="post-header">
@@ -251,7 +255,7 @@
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分類於</span>
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E8%A8%98%E9%8C%84/" itemprop="url" rel="index"><span itemprop="name">記錄</span></a>
                 </span>
             </span>
@@ -288,11 +292,11 @@
 <h2 id="調整fcitx設定"><a href="#調整fcitx設定" class="headerlink" title="調整fcitx設定"></a>調整fcitx設定</h2><p>fcitx設定 → 附加組件配置 → 碼表 → boshiamy.config</p>
 <h3 id="模糊鍵"><a href="#模糊鍵" class="headerlink" title="模糊鍵"></a>模糊鍵</h3><p>『使用模糊鍵』不勾<br>此鍵預設被打勾，並定為z鍵，導致所有含z碼的字都出不來…</p>
 <h3 id="使用符號"><a href="#使用符號" class="headerlink" title="使用符號"></a>使用符號</h3><p>要用嘸蝦米預設符號的話，「忽略標點」打勾</p>
-<h3 id="拼音查蝦米碼"><a href="#拼音查蝦米碼" class="headerlink" title="拼音查蝦米碼"></a>拼音查蝦米碼</h3><p>在拼音鍵打勾，最好選 `（Esc下的那鍵），才不影響輸入，然後用 -, = 兩鍵翻頁。<br>（至於輸入的字要查發音則是屬於另一個功能，在剛按完空白鍵輸入後，就按Ctrl+Alt+E，即可看見發音，但缺點是沒有四聲）</p>
-<h2 id="Reinstall-Ubuntu-16-04-64bit"><a href="#Reinstall-Ubuntu-16-04-64bit" class="headerlink" title="Reinstall: Ubuntu 16.04 64bit"></a>Reinstall: Ubuntu 16.04 64bit</h2><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">sudo apt-get install -y fcitx fcitx-table-boshiamy</span><br><span class="line">im-config <span class="comment"># choose fcitx</span></span><br><span class="line">fcitx-configtool <span class="comment"># choose boshiamy</span></span><br><span class="line"><span class="comment"># restart or relogin</span></span><br></pre></td></tr></tbody></table></figure>
+<h3 id="拼音查蝦米碼"><a href="#拼音查蝦米碼" class="headerlink" title="拼音查蝦米碼"></a>拼音查蝦米碼</h3><p>在拼音鍵打勾，最好選 &#96;（Esc下的那鍵），才不影響輸入，然後用 -, &#x3D; 兩鍵翻頁。<br>（至於輸入的字要查發音則是屬於另一個功能，在剛按完空白鍵輸入後，就按Ctrl+Alt+E，即可看見發音，但缺點是沒有四聲）</p>
+<h2 id="Reinstall-Ubuntu-16-04-64bit"><a href="#Reinstall-Ubuntu-16-04-64bit" class="headerlink" title="Reinstall: Ubuntu 16.04 64bit"></a>Reinstall: Ubuntu 16.04 64bit</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install -y fcitx fcitx-table-boshiamy</span><br><span class="line">im-config <span class="comment"># choose fcitx</span></span><br><span class="line">fcitx-configtool <span class="comment"># choose boshiamy</span></span><br><span class="line"><span class="comment"># restart or relogin</span></span><br></pre></td></tr></table></figure>
 
 <p>完成後用Ctrl+Space及Ctrl+Shift切換輸入法即可使用</p>
-<h2 id="Reinstall-Ubuntu-22-04-64bit"><a href="#Reinstall-Ubuntu-22-04-64bit" class="headerlink" title="Reinstall: Ubuntu 22.04 64bit"></a>Reinstall: Ubuntu 22.04 64bit</h2><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">sudo apt install -y fcitx5 fcitx5-chinese-addons</span><br><span class="line">im-config <span class="comment"># choose fcitx5</span></span><br><span class="line"><span class="comment"># 下載碼表並安裝</span></span><br><span class="line">wget https://eu.mirror.archlinuxarm.org/aarch64/community/fcitx5-table-extra-5.0.9-1-any.pkg.tar.xz <span class="comment"># 請自行尋找最新版本</span></span><br><span class="line">unxz fcitx5-table-extra-5.0.9-1-any.pkg.tar.xz</span><br><span class="line">tar xvf fcitx5-table-extra-5.0.9-1-any.pkg.tar</span><br><span class="line">sudo <span class="built_in">cp</span> -r usr/share /usr/</span><br><span class="line">fcitx5-configtool <span class="comment"># choose boshiamy</span></span><br><span class="line"><span class="comment"># restart or relogin</span></span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Reinstall-Ubuntu-22-04-64bit"><a href="#Reinstall-Ubuntu-22-04-64bit" class="headerlink" title="Reinstall: Ubuntu 22.04 64bit"></a>Reinstall: Ubuntu 22.04 64bit</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt install -y fcitx5 fcitx5-chinese-addons</span><br><span class="line">im-config <span class="comment"># choose fcitx5</span></span><br><span class="line"><span class="comment"># 下載碼表並安裝</span></span><br><span class="line">wget https://eu.mirror.archlinuxarm.org/aarch64/community/fcitx5-table-extra-5.0.9-1-any.pkg.tar.xz <span class="comment"># 請自行尋找最新版本</span></span><br><span class="line">unxz fcitx5-table-extra-5.0.9-1-any.pkg.tar.xz</span><br><span class="line">tar xvf fcitx5-table-extra-5.0.9-1-any.pkg.tar</span><br><span class="line">sudo <span class="built_in">cp</span> -r usr/share /usr/</span><br><span class="line">fcitx5-configtool <span class="comment"># choose boshiamy</span></span><br><span class="line"><span class="comment"># restart or relogin</span></span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -424,8 +428,9 @@
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="qwerty" src="/img/qwerty.png">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="qwerty"
+      src="/img/qwerty.png">
   <p class="site-author-name" itemprop="name">qwerty</p>
   <div class="site-description" itemprop="description">Programming | Computer Science | Thought</div>
 </div>
@@ -453,7 +458,7 @@
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http://github.com/gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
+        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http:&#x2F;&#x2F;github.com&#x2F;gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
       </span>
       <span class="links-of-author-item">
         <span class="exturl" data-url="bWFpbHRvOmdvb2hjbDc3N0BnbWFpbC5jb20=" title="E-Mail → mailto:goohcl777@gmail.com"><i class="fa fa-envelope fa-fw"></i></span>
@@ -470,10 +475,10 @@
     </div>
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https://qwerty777.me">My Main Page</span>
+          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https:&#x2F;&#x2F;qwerty777.me">My Main Page</span>
         </li>
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http://qwerty777.me/life/">My Second Blog -- wysiwyg</span>
+          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http:&#x2F;&#x2F;qwerty777.me&#x2F;life&#x2F;">My Second Blog -- wysiwyg</span>
         </li>
     </ul>
   </div>
@@ -500,7 +505,7 @@
 
 <div class="copyright">
   
-  © 2014 – 
+  &copy; 2014 – 
   <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fab fa-free-code-camp"></i>
@@ -513,7 +518,7 @@
       <span class="post-meta-item-text">總字數：</span>
     <span title="總字數">457k</span>
 </div>
-  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> &amp; <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
   </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61c5cf9cb3476405" async="async"></script>
@@ -533,69 +538,26 @@
   </div>
 
   
-  
-  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
-  
-  
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
 
 
+<script src="/js/schemes/pisces.js"></script>
 
 
+<script src="/js/next-boot.js"></script>
 
-
-
-
-
-
-
-  
-
-
-
-
-  
-  
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div id="pjax">
-  
-
-  
-      
-
-
-
-    
-
-  
-
-
-
-    </div>
-
-
-<script src="/bundle.js"></script><script>var pjax = new Pjax({
+  <script>
+var pjax = new Pjax({
   selectors: [
     'head title',
     '#page-configurations',
@@ -650,7 +612,15 @@ window.addEventListener('pjax:success', () => {
       .bootstrap();
   }
   NexT.utils.updateSidebarPosition();
-});;(function(){
+});
+</script>
+
+
+
+
+  
+  <script data-pjax>
+    (function(){
       var canonicalURL, curProtocol;
       //Get the <link> tag
       var x=document.getElementsByTagName("link");
@@ -672,7 +642,27 @@ window.addEventListener('pjax:success', () => {
       //Get current URL if the canonical URL does not exist
 	    if (!canonicalURL) canonicalURL = window.location.href;
 	    //Assign script content. Replace current URL with the canonical URL
-      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();;if (document.querySelectorAll('pre.mermaid').length) {
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script data-pjax>
+if (document.querySelectorAll('pre.mermaid').length) {
   NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
     mermaid.initialize({
       theme    : 'forest',
@@ -682,7 +672,18 @@ window.addEventListener('pjax:success', () => {
       sequence : { actorMargin: 50 }
     });
   }, window.mermaid);
-};if (typeof MathJax === 'undefined') {
+}
+</script>
+
+
+    <div id="pjax">
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
     window.MathJax = {
       loader: {
           load: ['[tex]/mhchem'],
@@ -730,7 +731,15 @@ window.addEventListener('pjax:success', () => {
     MathJax.startup.document.state(0);
     MathJax.texReset();
     MathJax.typeset();
-  };var disqus_config = function() {
+  }
+</script>
+
+    
+
+  
+
+<script>
+  var disqus_config = function() {
     this.page.url = "http://gitqwerty777.github.io/install-boshiamy-in-linux-by-fcitx/";
     this.page.identifier = "install-boshiamy-in-linux-by-fcitx/";
     this.page.title = "在Ubuntu使用fcitx安裝嘸蝦米";
@@ -747,4 +756,9 @@ window.addEventListener('pjax:success', () => {
       s.setAttribute('data-timestamp', '' + +new Date());
       (d.head || d.body).appendChild(s);
     }
-  });</script></body></html>
+  });
+</script>
+
+    </div>
+</body>
+</html>

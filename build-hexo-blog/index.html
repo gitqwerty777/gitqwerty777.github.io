@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="zh-TW"><head>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
@@ -9,10 +11,10 @@
   <link rel="mask-icon" href="/img/favicon.png" color="#222">
   <meta name="google-site-verification" content="45plYlJRhxb-g8Tl8seizYgih_JUsmcJRH6oJHplkj0">
 
+<link rel="stylesheet" href="/css/main.css">
 
-
-
-
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
@@ -47,12 +49,12 @@
   };
 </script>
 
-<script data-ad-client="ca-pub-7267358872858108" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script data-ad-client="ca-pub-7267358872858108" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
   <title>用Hexo建立一個網誌 | QWERTY</title>
   
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
-    <script data-pjax="">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
+    <script data-pjax>
       if (CONFIG.hostname === location.hostname) {
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -90,13 +92,13 @@
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="QWERTY" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&amp;display=swap&amp;subset=latin,latin-ext"></noscript></head>
+</head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage">
+<body itemscope itemtype="http://schema.org/WebPage">
   <div class="container use-motion">
     <div class="headband"></div>
 
-    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切換導航欄">
@@ -184,7 +186,9 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" placeholder="搜尋..." spellcheck="false" type="search" class="search-input">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
   </div>
   <span class="popup-btn-close">
     <i class="fa fa-times-circle"></i>
@@ -219,16 +223,16 @@
     
   
   
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/build-hexo-blog/">
 
-    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/img/qwerty.png">
       <meta itemprop="name" content="qwerty">
       <meta itemprop="description" content="Programming | Computer Science | Thought">
     </span>
 
-    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="QWERTY">
     </span>
       <header class="post-header">
@@ -250,7 +254,7 @@
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分類於</span>
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E8%A8%98%E9%8C%84/" itemprop="url" rel="index"><span itemprop="name">記錄</span></a>
                 </span>
             </span>
@@ -280,12 +284,12 @@
 <span id="more"></span>
 
 <p>安裝環境：Ubuntu16.04</p>
-<h3 id="安裝nvm和hexo"><a href="#安裝nvm和hexo" class="headerlink" title="安裝nvm和hexo"></a>安裝nvm和hexo</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">sudo apt-get install nvm</span><br><span class="line">sudo nvm install hexo -g</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="安裝nvm和hexo"><a href="#安裝nvm和hexo" class="headerlink" title="安裝nvm和hexo"></a>安裝nvm和hexo</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install nvm</span><br><span class="line">sudo nvm install hexo -g</span><br></pre></td></tr></table></figure>
 <p><strong>可能會遇到的問題</strong>:<span class="exturl" data-url="aHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL2EvMTk1ODQ0MDcvMjY3ODk3MA==">node或nvm版本過低<i class="fa fa-external-link-alt"></i></span> </p>
 <h3 id="初始化hexo"><a href="#初始化hexo" class="headerlink" title="初始化hexo"></a>初始化hexo</h3><p><code>hexo init [folder]</code></p>
 <p>若不加[folder]則在當前目錄 </p>
 <p><code>cd [folder]</code><br><code>npm install</code></p>
-<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hexo n</span><br><span class="line">hexo new [layout] [title]</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo n</span><br><span class="line">hexo new [layout] [title]</span><br></pre></td></tr></table></figure>
 
 <table>
 <thead>
@@ -298,58 +302,58 @@
 </thead>
 <tbody><tr>
 <td>post (預設)</td>
-<td>source/_posts</td>
+<td>source&#x2F;_posts</td>
 <td>動態頁面</td>
-<td>source/_posts/new-post.md</td>
+<td>source&#x2F;_posts&#x2F;new-post.md</td>
 </tr>
 <tr>
 <td>page</td>
 <td>source</td>
 <td>靜態頁面</td>
-<td>source/new-page/index.html</td>
+<td>source&#x2F;new-page&#x2F;index.html</td>
 </tr>
 <tr>
 <td>draft</td>
-<td>source/_drafts</td>
+<td>source&#x2F;_drafts</td>
 <td>草稿</td>
-<td>source/_drafts/new-draft.md</td>
+<td>source&#x2F;_drafts&#x2F;new-draft.md</td>
 </tr>
 </tbody></table>
 <p>靜態頁面用於不常更改，不希望受theme影響的頁面<br>.md格式代表使用markdown語法</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hexo g (= hexo generate)</span><br><span class="line"><span class="comment"># 用於建造網頁的時候，hexo會將markdown格式編譯成html格式</span></span><br><span class="line">hexo g --watch  </span><br><span class="line"><span class="comment"># 使用此命令後，重開hexo，可以使hexo偵測檔案變更，並自動generate </span></span><br><span class="line">hexo s (= hexo server)</span><br><span class="line"><span class="comment"># 在本地預覽網站 - 預設在&lt;http://localhost:4000/&gt;</span></span><br><span class="line">hexo s -d</span><br><span class="line"><span class="comment"># 在預覽的時候同時看到在草稿的文章</span></span><br><span class="line">hexo d (hexo deploy) </span><br><span class="line"><span class="comment"># 發佈網站至設定的網址，網站會真正更新</span></span><br><span class="line">hexo g -d</span><br><span class="line"><span class="comment"># 先generate再deploy</span></span><br><span class="line">hexo publish [filename] (= hexo p [filename])</span><br><span class="line"><span class="comment"># 將檔案(從草稿)移至/post</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g (= hexo generate)</span><br><span class="line"><span class="comment"># 用於建造網頁的時候，hexo會將markdown格式編譯成html格式</span></span><br><span class="line">hexo g --watch  </span><br><span class="line"><span class="comment"># 使用此命令後，重開hexo，可以使hexo偵測檔案變更，並自動generate </span></span><br><span class="line">hexo s (= hexo server)</span><br><span class="line"><span class="comment"># 在本地預覽網站 - 預設在&lt;http://localhost:4000/&gt;</span></span><br><span class="line">hexo s -d</span><br><span class="line"><span class="comment"># 在預覽的時候同時看到在草稿的文章</span></span><br><span class="line">hexo d (hexo deploy) </span><br><span class="line"><span class="comment"># 發佈網站至設定的網址，網站會真正更新</span></span><br><span class="line">hexo g -d</span><br><span class="line"><span class="comment"># 先generate再deploy</span></span><br><span class="line">hexo publish [filename] (= hexo p [filename])</span><br><span class="line"><span class="comment"># 將檔案(從草稿)移至/post</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="設定檔更改"><a href="#設定檔更改" class="headerlink" title="設定檔更改"></a>設定檔更改</h2><p>於初始化資料夾中的<code>_config.yml</code><br>此為YAML格式，不可使用tab字元</p>
 <p>僅列出重要的設定，<span class="exturl" data-url="aHR0cDovL2licnVjZS5pbmZvLzIwMTMvMTEvMjIvaGV4by15b3VyLWJsb2cv">全部設定內容<i class="fa fa-external-link-alt"></i></span>  </p>
 <h3 id="Site"><a href="#Site" class="headerlink" title="Site"></a>Site</h3><p><strong>title</strong> 部落格標題<br><strong>subtitle</strong> 副標題<br><strong>description</strong> 關於此部落格</p>
-<h3 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h3><p><strong>url</strong> 你的部落格網址<br><strong>permalink</strong> 文章的子網址格式，預設為:year/:month/:day/:title/  <span class="exturl" data-url="aHR0cDovL2hleG8uaW8vZG9jcy9wZXJtYWxpbmtzLmh0bWw=">參考變數名<i class="fa fa-external-link-alt"></i></span>  </p>
+<h3 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h3><p><strong>url</strong> 你的部落格網址<br><strong>permalink</strong> 文章的子網址格式，預設為:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;  <span class="exturl" data-url="aHR0cDovL2hleG8uaW8vZG9jcy9wZXJtYWxpbmtzLmh0bWw=">參考變數名<i class="fa fa-external-link-alt"></i></span>  </p>
 <h3 id="Writing"><a href="#Writing" class="headerlink" title="Writing"></a>Writing</h3><p><strong>new_post_name</strong> 新建立的post名稱格式，個人使用:year:month:day:title.md<br><strong>auto_spacing</strong> 在亞州文字和西方文字之間加上空白<br><strong>highlight</strong> 程式的高亮加註</p>
-<h3 id="Archives"><a href="#Archives" class="headerlink" title="Archives"></a>Archives</h3><p>開啟/關閉 archive, category, tag 的換頁功能   </p>
-<h3 id="Pagination"><a href="#Pagination" class="headerlink" title="Pagination"></a>Pagination</h3><p><strong>per_page</strong> 一頁幾篇文章(0 = 不分頁)</p>
+<h3 id="Archives"><a href="#Archives" class="headerlink" title="Archives"></a>Archives</h3><p>開啟&#x2F;關閉 archive, category, tag 的換頁功能   </p>
+<h3 id="Pagination"><a href="#Pagination" class="headerlink" title="Pagination"></a>Pagination</h3><p><strong>per_page</strong> 一頁幾篇文章(0 &#x3D; 不分頁)</p>
 <h3 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h3><p>hexo markdown parser 支援 github 語法(GitHub Flavored Markdown)<br><span class="exturl" data-url="aHR0cHM6Ly9oZWxwLmdpdGh1Yi5jb20vYXJ0aWNsZXMvZ2l0aHViLWZsYXZvcmVkLW1hcmtkb3duLw==">https://help.github.com/articles/github-flavored-markdown/<i class="fa fa-external-link-alt"></i></span>  </p>
 <h3 id="Extensions"><a href="#Extensions" class="headerlink" title="Extensions"></a>Extensions</h3><p><strong>theme</strong> 主題名稱</p>
-<h3 id="Deploy"><a href="#Deploy" class="headerlink" title="Deploy"></a>Deploy</h3><p><strong>type</strong>: 發佈的目標格式，目前使用github<br><strong>repository</strong>: <span class="exturl" data-url="bWFpbHRvOiYjeDY3OyYjeDY5OyYjMTE2OyYjNjQ7JiN4Njc7JiN4Njk7JiMxMTY7JiN4Njg7JiMxMTc7JiM5ODsmIzQ2OyYjOTk7JiMxMTE7JiN4NmQ7">git@github.com<i class="fa fa-external-link-alt"></i></span>: [github帳號]</p>
+<h3 id="Deploy"><a href="#Deploy" class="headerlink" title="Deploy"></a>Deploy</h3><p><strong>type</strong>: 發佈的目標格式，目前使用github<br><strong>repository</strong>: <span class="exturl" data-url="bWFpbHRvOiYjeDY3OyYjeDY5OyYjMTE2OyYjNjQ7JiN4Njc7JiN4Njk7JiMxMTY7JiN4Njg7JiMxMTc7JiM5ODsmIzQ2OyYjOTk7JiMxMTE7JiN4NmQ7">&#x67;&#x69;&#116;&#64;&#x67;&#x69;&#116;&#x68;&#117;&#98;&#46;&#99;&#111;&#x6d;<i class="fa fa-external-link-alt"></i></span>: [github帳號]</p>
 <h2 id="主題"><a href="#主題" class="headerlink" title="主題"></a>主題</h2><h3 id="套用主題-pacman"><a href="#套用主題-pacman" class="headerlink" title="套用主題(pacman)"></a>套用主題(pacman)</h3><p><code>git clone git@github.com:A-limon/pacman.git themes/pacman</code>  </p>
 <p>同時_config.yml也要更新: <code>theme: pacman</code>  </p>
 <p>註：pacman已停止更新，現在有<span class="exturl" data-url="aHR0cDovL3d1Y2hvbmcubWUvYmxvZy8yMDE0LzExLzIwL2hvdy10by11c2UtamFjbWFuLw==">jacman<i class="fa fa-external-link-alt"></i></span>替代</p>
-<h3 id="更新主題"><a href="#更新主題" class="headerlink" title="更新主題"></a>更新主題</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> themes/pacman</span><br><span class="line">git pull</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="更新主題"><a href="#更新主題" class="headerlink" title="更新主題"></a>更新主題</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> themes/pacman</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
 
 <p>可先備份設定檔<code>_config.yml</code>  </p>
 <h3 id="修改主題"><a href="#修改主題" class="headerlink" title="修改主題"></a>修改主題</h3><p>修改主題後, 要先清除現有生成的主題文件，才會正確顯示  </p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
 
 <h2 id="擴充功能"><a href="#擴充功能" class="headerlink" title="擴充功能"></a>擴充功能</h2><h3 id="為Hexo增加Google-Analytics"><a href="#為Hexo增加Google-Analytics" class="headerlink" title="為Hexo增加Google Analytics"></a>為Hexo增加Google Analytics</h3><p>在Analytics中添加自己的網站域名，獲得JS追蹤代碼。<br>把JS代碼Copy到Hexo的after_footer文件中，after_footer是Hexo主題頁腳的JS代碼文檔，具體位置在<code>/themes/[themename]/layout/_partial </code><br>然後重新生成、發佈Hexo。數據統計不會立即生效，需要等待幾個小時，之後登錄Google Analytics就可以查看你的Blog的數據</p>
 <h3 id="瀏覽量"><a href="#瀏覽量" class="headerlink" title="瀏覽量"></a>瀏覽量</h3><ul>
 <li>Google Analytics</li>
 <li><span class="exturl" data-url="aHR0cDovL2NyZXNjZW50bW9vbi5pbmZvLzIwMTQvMTIvMTEvcG9wdWxhci13aWRnZXQv">用leancloud計算瀏覽量<i class="fa fa-external-link-alt"></i></span><br>在pacman的主題下，after_footer.ejs 需要修改成：</li>
 </ul>
-<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line">&lt;!--page counter part--&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">function</span> <span class="title function_">addCount</span> (<span class="title class_">Counter</span>) {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        url=$(<span class="string">'.mytitle'</span>).<span class="title function_">attr</span>(<span class="string">'href'</span>).<span class="title function_">trim</span>();</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        title = $(<span class="string">'.article-title'</span>).<span class="title function_">text</span>().<span class="title function_">trim</span>();</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="keyword">var</span> query=<span class="keyword">new</span> <span class="variable constant_">AV</span>.<span class="title class_">Query</span>(<span class="title class_">Counter</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="comment">//use url as unique idnetfication</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        query.<span class="title function_">equalTo</span>(<span class="string">"url"</span>,url);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        query.<span class="title function_">find</span>({</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">            <span class="attr">success</span>: <span class="keyword">function</span>(<span class="params">results</span>){</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                <span class="keyword">if</span>(results.<span class="property">length</span>&gt;<span class="number">0</span>)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                    <span class="keyword">var</span> counter=results[<span class="number">0</span>];</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                    counter.<span class="title function_">fetchWhenSave</span>(<span class="literal">true</span>); <span class="comment">//get recent result</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                    counter.<span class="title function_">increment</span>(<span class="string">"time"</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                    counter.<span class="title function_">save</span>();</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                }</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                <span class="keyword">else</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                    <span class="keyword">var</span> newcounter=<span class="keyword">new</span> <span class="title class_">Counter</span>();</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                    newcounter.<span class="title function_">set</span>(<span class="string">"title"</span>,title);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                    newcounter.<span class="title function_">set</span>(<span class="string">"url"</span>,url);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                    newcounter.<span class="title function_">set</span>(<span class="string">"time"</span>,<span class="number">1</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                    newcounter.<span class="title function_">save</span>(<span class="literal">null</span>,{</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                        <span class="attr">success</span>: <span class="keyword">function</span>(<span class="params">newcounter</span>){</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                        <span class="comment">//alert('New object created');</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                        },</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                        <span class="attr">error</span>: <span class="keyword">function</span>(<span class="params">newcounter,error</span>){</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                        <span class="title function_">alert</span>(<span class="string">'Failed to create'</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                        }</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                        });</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                }</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">            },</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">            <span class="attr">error</span>: <span class="keyword">function</span>(<span class="params">error</span>){</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                <span class="comment">//find null is not a error</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                <span class="title function_">alert</span>(<span class="string">'Error:'</span>+error.<span class="property">code</span>+<span class="string">" "</span>+error.<span class="property">message</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">            }</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        });</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">}</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">$(<span class="keyword">function</span>(<span class="params"></span>){</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="keyword">var</span> <span class="title class_">Counter</span>=<span class="variable constant_">AV</span>.<span class="property">Object</span>.<span class="title function_">extend</span>(<span class="string">"Counter"</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="comment">//only increse visit counting when intering a page</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="keyword">if</span> ($(<span class="string">'.article-title'</span>).<span class="property">length</span> == <span class="number">1</span>)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">           <span class="title function_">addCount</span>(<span class="title class_">Counter</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="keyword">var</span> query=<span class="keyword">new</span> <span class="variable constant_">AV</span>.<span class="title class_">Query</span>(<span class="title class_">Counter</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        query.<span class="title function_">descending</span>(<span class="string">"time"</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="comment">// the sum of popular posts</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        query.<span class="title function_">limit</span>(<span class="number">10</span>); </span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        query.<span class="title function_">find</span>({</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">            <span class="attr">success</span>: <span class="keyword">function</span>(<span class="params">results</span>){</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">				</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                    <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;results.<span class="property">length</span>;i++)    </span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                    {</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">						<span class="title function_">alert</span>(results[i]);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                        <span class="keyword">var</span> counter=results[i];</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                        title=counter.<span class="title function_">get</span>(<span class="string">"title"</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                        url=counter.<span class="title function_">get</span>(<span class="string">"url"</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                        time=counter.<span class="title function_">get</span>(<span class="string">"time"</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                        <span class="comment">// add to the popularlist widget</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                        showcontent=title+<span class="string">" ("</span>+time+<span class="string">")"</span>;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                        <span class="comment">//notice the "" in href</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                        $(<span class="string">'.popularlist'</span>).<span class="title function_">append</span>(<span class="string">'&lt;li&gt;&lt;a href="'</span>+url+<span class="string">'"&gt;'</span>+showcontent+<span class="string">'&lt;/a&gt;&lt;/li&gt;'</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                    }</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                },</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">            <span class="attr">error</span>: <span class="keyword">function</span>(<span class="params">error</span>){</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                <span class="title function_">alert</span>(<span class="string">"Error:"</span>+error.<span class="property">code</span>+<span class="string">" "</span>+error.<span class="property">message</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">            }</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">            }</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        )</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        });</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&lt;!--page counter part--&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">function</span> <span class="title function_">addCount</span> (<span class="title class_">Counter</span>) &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        url=$(<span class="string">&#x27;.mytitle&#x27;</span>).<span class="title function_">attr</span>(<span class="string">&#x27;href&#x27;</span>).<span class="title function_">trim</span>();</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        title = $(<span class="string">&#x27;.article-title&#x27;</span>).<span class="title function_">text</span>().<span class="title function_">trim</span>();</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="keyword">var</span> query=<span class="keyword">new</span> <span class="variable constant_">AV</span>.<span class="title class_">Query</span>(<span class="title class_">Counter</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="comment">//use url as unique idnetfication</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        query.<span class="title function_">equalTo</span>(<span class="string">&quot;url&quot;</span>,url);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        query.<span class="title function_">find</span>(&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">            <span class="attr">success</span>: <span class="keyword">function</span>(<span class="params">results</span>)&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                <span class="keyword">if</span>(results.<span class="property">length</span>&gt;<span class="number">0</span>)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                    <span class="keyword">var</span> counter=results[<span class="number">0</span>];</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                    counter.<span class="title function_">fetchWhenSave</span>(<span class="literal">true</span>); <span class="comment">//get recent result</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                    counter.<span class="title function_">increment</span>(<span class="string">&quot;time&quot;</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                    counter.<span class="title function_">save</span>();</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                &#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                <span class="keyword">else</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                    <span class="keyword">var</span> newcounter=<span class="keyword">new</span> <span class="title class_">Counter</span>();</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                    newcounter.<span class="title function_">set</span>(<span class="string">&quot;title&quot;</span>,title);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                    newcounter.<span class="title function_">set</span>(<span class="string">&quot;url&quot;</span>,url);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                    newcounter.<span class="title function_">set</span>(<span class="string">&quot;time&quot;</span>,<span class="number">1</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                    newcounter.<span class="title function_">save</span>(<span class="literal">null</span>,&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                        <span class="attr">success</span>: <span class="keyword">function</span>(<span class="params">newcounter</span>)&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                        <span class="comment">//alert(&#x27;New object created&#x27;);</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                        &#125;,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                        <span class="attr">error</span>: <span class="keyword">function</span>(<span class="params">newcounter,error</span>)&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                        <span class="title function_">alert</span>(<span class="string">&#x27;Failed to create&#x27;</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                        &#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                        &#125;);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                &#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">            &#125;,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">            <span class="attr">error</span>: <span class="keyword">function</span>(<span class="params">error</span>)&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                <span class="comment">//find null is not a error</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                <span class="title function_">alert</span>(<span class="string">&#x27;Error:&#x27;</span>+error.<span class="property">code</span>+<span class="string">&quot; &quot;</span>+error.<span class="property">message</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">            &#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        &#125;);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">&#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">$(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="keyword">var</span> <span class="title class_">Counter</span>=<span class="variable constant_">AV</span>.<span class="property">Object</span>.<span class="title function_">extend</span>(<span class="string">&quot;Counter&quot;</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="comment">//only increse visit counting when intering a page</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="keyword">if</span> ($(<span class="string">&#x27;.article-title&#x27;</span>).<span class="property">length</span> == <span class="number">1</span>)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">           <span class="title function_">addCount</span>(<span class="title class_">Counter</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="keyword">var</span> query=<span class="keyword">new</span> <span class="variable constant_">AV</span>.<span class="title class_">Query</span>(<span class="title class_">Counter</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        query.<span class="title function_">descending</span>(<span class="string">&quot;time&quot;</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="comment">// the sum of popular posts</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        query.<span class="title function_">limit</span>(<span class="number">10</span>); </span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        query.<span class="title function_">find</span>(&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">            <span class="attr">success</span>: <span class="keyword">function</span>(<span class="params">results</span>)&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">				</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                    <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;results.<span class="property">length</span>;i++)    </span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                    &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">						<span class="title function_">alert</span>(results[i]);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                        <span class="keyword">var</span> counter=results[i];</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                        title=counter.<span class="title function_">get</span>(<span class="string">&quot;title&quot;</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                        url=counter.<span class="title function_">get</span>(<span class="string">&quot;url&quot;</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                        time=counter.<span class="title function_">get</span>(<span class="string">&quot;time&quot;</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                        <span class="comment">// add to the popularlist widget</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                        showcontent=title+<span class="string">&quot; (&quot;</span>+time+<span class="string">&quot;)&quot;</span>;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                        <span class="comment">//notice the &quot;&quot; in href</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                        $(<span class="string">&#x27;.popularlist&#x27;</span>).<span class="title function_">append</span>(<span class="string">&#x27;&lt;li&gt;&lt;a href=&quot;&#x27;</span>+url+<span class="string">&#x27;&quot;&gt;&#x27;</span>+showcontent+<span class="string">&#x27;&lt;/a&gt;&lt;/li&gt;&#x27;</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                    &#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                &#125;,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">            <span class="attr">error</span>: <span class="keyword">function</span>(<span class="params">error</span>)&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">                <span class="title function_">alert</span>(<span class="string">&quot;Error:&quot;</span>+error.<span class="property">code</span>+<span class="string">&quot; &quot;</span>+error.<span class="property">message</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">            &#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">            &#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        )</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        &#125;);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 
 <ul>
 <li><span class="exturl" data-url="aHR0cDovL213c2hlbi5pbmZvLzIwMTQvMTEvMTQvSGV4by1wYWNtYW4lRTQlQjglQkIlRTklQTIlOTglRTUlOTAlQUYlRTclOTQlQThkaXNxdXMv">將留言區改成disqus<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cDovL3dzZ3phby5naXRodWIuaW8vcG9zdC9oZXhvLXNjcm9sbC10by10b3Av">回到頂部功能<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 <h3 id="數學公式"><a href="#數學公式" class="headerlink" title="數學公式"></a>數學公式</h3><p>使用mathjax(適用tex語法)<br><span class="exturl" data-url="aHR0cDovL2NhdHgubWUvMjAxNC8wMy8wOS9oZXhvLW1hdGhqYXgtcGx1Z2luLw==">http://catx.me/2014/03/09/hexo-mathjax-plugin/<i class="fa fa-external-link-alt"></i></span></p>
-<p>需要注意的是若有兩個底線<code>_</code>，會變斜體，這是原有的markdown語法之一…<br>解決方法：用<br><code>{ % math-block % } 和 { % endmath-block % }</code><br>包覆數學公式</p>
+<p>需要注意的是若有兩個底線<code>_</code>，會變斜體，這是原有的markdown語法之一…<br>解決方法：用<br><code>&#123; % math-block % &#125; 和 &#123; % endmath-block % &#125;</code><br>包覆數學公式</p>
 <p>hexo2是math-block, hexo3是math_block</p>
 <p>小缺點是會使網頁載入速度變慢(公式的圖片是即時取得的)</p>
 <h3 id="圖床"><a href="#圖床" class="headerlink" title="圖床"></a>圖床</h3><ul>
@@ -492,8 +496,9 @@
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="qwerty" src="/img/qwerty.png">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="qwerty"
+      src="/img/qwerty.png">
   <p class="site-author-name" itemprop="name">qwerty</p>
   <div class="site-description" itemprop="description">Programming | Computer Science | Thought</div>
 </div>
@@ -521,7 +526,7 @@
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http://github.com/gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
+        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http:&#x2F;&#x2F;github.com&#x2F;gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
       </span>
       <span class="links-of-author-item">
         <span class="exturl" data-url="bWFpbHRvOmdvb2hjbDc3N0BnbWFpbC5jb20=" title="E-Mail → mailto:goohcl777@gmail.com"><i class="fa fa-envelope fa-fw"></i></span>
@@ -538,10 +543,10 @@
     </div>
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https://qwerty777.me">My Main Page</span>
+          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https:&#x2F;&#x2F;qwerty777.me">My Main Page</span>
         </li>
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http://qwerty777.me/life/">My Second Blog -- wysiwyg</span>
+          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http:&#x2F;&#x2F;qwerty777.me&#x2F;life&#x2F;">My Second Blog -- wysiwyg</span>
         </li>
     </ul>
   </div>
@@ -568,7 +573,7 @@
 
 <div class="copyright">
   
-  © 2014 – 
+  &copy; 2014 – 
   <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fab fa-free-code-camp"></i>
@@ -581,7 +586,7 @@
       <span class="post-meta-item-text">總字數：</span>
     <span title="總字數">457k</span>
 </div>
-  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> &amp; <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
   </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61c5cf9cb3476405" async="async"></script>
@@ -601,69 +606,26 @@
   </div>
 
   
-  
-  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
-  
-  
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
 
 
+<script src="/js/schemes/pisces.js"></script>
 
 
+<script src="/js/next-boot.js"></script>
 
-
-
-
-
-
-
-  
-
-
-
-
-  
-  
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div id="pjax">
-  
-
-  
-      
-
-
-
-    
-
-  
-
-
-
-    </div>
-
-
-<script src="/bundle.js"></script><script>var pjax = new Pjax({
+  <script>
+var pjax = new Pjax({
   selectors: [
     'head title',
     '#page-configurations',
@@ -718,7 +680,15 @@ window.addEventListener('pjax:success', () => {
       .bootstrap();
   }
   NexT.utils.updateSidebarPosition();
-});;(function(){
+});
+</script>
+
+
+
+
+  
+  <script data-pjax>
+    (function(){
       var canonicalURL, curProtocol;
       //Get the <link> tag
       var x=document.getElementsByTagName("link");
@@ -740,7 +710,27 @@ window.addEventListener('pjax:success', () => {
       //Get current URL if the canonical URL does not exist
 	    if (!canonicalURL) canonicalURL = window.location.href;
 	    //Assign script content. Replace current URL with the canonical URL
-      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();;if (document.querySelectorAll('pre.mermaid').length) {
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script data-pjax>
+if (document.querySelectorAll('pre.mermaid').length) {
   NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
     mermaid.initialize({
       theme    : 'forest',
@@ -750,7 +740,18 @@ window.addEventListener('pjax:success', () => {
       sequence : { actorMargin: 50 }
     });
   }, window.mermaid);
-};if (typeof MathJax === 'undefined') {
+}
+</script>
+
+
+    <div id="pjax">
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
     window.MathJax = {
       loader: {
           load: ['[tex]/mhchem'],
@@ -798,7 +799,15 @@ window.addEventListener('pjax:success', () => {
     MathJax.startup.document.state(0);
     MathJax.texReset();
     MathJax.typeset();
-  };var disqus_config = function() {
+  }
+</script>
+
+    
+
+  
+
+<script>
+  var disqus_config = function() {
     this.page.url = "http://gitqwerty777.github.io/build-hexo-blog/";
     this.page.identifier = "build-hexo-blog/";
     this.page.title = "用Hexo建立一個網誌";
@@ -815,4 +824,9 @@ window.addEventListener('pjax:success', () => {
       s.setAttribute('data-timestamp', '' + +new Date());
       (d.head || d.body).appendChild(s);
     }
-  });</script></body></html>
+  });
+</script>
+
+    </div>
+</body>
+</html>

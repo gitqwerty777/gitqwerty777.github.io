@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="zh-TW"><head>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
@@ -9,10 +11,10 @@
   <link rel="mask-icon" href="/img/favicon.png" color="#222">
   <meta name="google-site-verification" content="45plYlJRhxb-g8Tl8seizYgih_JUsmcJRH6oJHplkj0">
 
+<link rel="stylesheet" href="/css/main.css">
 
-
-
-
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
@@ -49,12 +51,12 @@
   };
 </script>
 
-<script data-ad-client="ca-pub-7267358872858108" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script data-ad-client="ca-pub-7267358872858108" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
   <title>備忘錄模式(Mementos Pattern) | QWERTY</title>
   
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
-    <script data-pjax="">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
+    <script data-pjax>
       if (CONFIG.hostname === location.hostname) {
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -92,13 +94,13 @@
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="QWERTY" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&amp;display=swap&amp;subset=latin,latin-ext"></noscript></head>
+</head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage">
+<body itemscope itemtype="http://schema.org/WebPage">
   <div class="container use-motion">
     <div class="headband"></div>
 
-    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切換導航欄">
@@ -186,7 +188,9 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" placeholder="搜尋..." spellcheck="false" type="search" class="search-input">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
   </div>
   <span class="popup-btn-close">
     <i class="fa fa-times-circle"></i>
@@ -221,16 +225,16 @@
     
   
   
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/mementos-pattern/">
 
-    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/img/qwerty.png">
       <meta itemprop="name" content="qwerty">
       <meta itemprop="description" content="Programming | Computer Science | Thought">
     </span>
 
-    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="QWERTY">
     </span>
       <header class="post-header">
@@ -252,7 +256,7 @@
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分類於</span>
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E5%BF%83%E5%BE%97/" itemprop="url" rel="index"><span itemprop="name">心得</span></a>
                 </span>
             </span>
@@ -278,10 +282,10 @@
         <p><img data-src="/img/Other/morgana.png"></p>
 <span id="more"></span>
 
-<h2 id="目標"><a href="#目標" class="headerlink" title="目標"></a>目標</h2><p>在不破壞封裝及單一職責原則的情況下創立/還原類別的備份。</p>
-<p>若要建立備份，簡單的方法是在類別內部建立<code>Save()</code>/<code>Load()</code>等方法，但會使類別多了備份的職責。<br>若在其他類別執行備份，則需要將想備份的資料設為public或設定Getter，破壞封裝。</p>
+<h2 id="目標"><a href="#目標" class="headerlink" title="目標"></a>目標</h2><p>在不破壞封裝及單一職責原則的情況下創立&#x2F;還原類別的備份。</p>
+<p>若要建立備份，簡單的方法是在類別內部建立<code>Save()</code>&#x2F;<code>Load()</code>等方法，但會使類別多了備份的職責。<br>若在其他類別執行備份，則需要將想備份的資料設為public或設定Getter，破壞封裝。</p>
 <h2 id="架構"><a href="#架構" class="headerlink" title="架構"></a>架構</h2><p><img data-src="https://upload.wikimedia.org/wikipedia/commons/3/38/W3sDesign_Memento_Design_Pattern_UML.jpg?1615662505582"></p>
-<p>想法：Originator只產生Memento/使用Memento還原, 由Caretaker管理Memento</p>
+<p>想法：Originator只產生Memento&#x2F;使用Memento還原, 由Caretaker管理Memento</p>
 <ul>
 <li>Originator: 需要備份的類別，產生Memento並可用其還原<ul>
 <li><code>Memento CreateMemento()</code></li>
@@ -293,7 +297,7 @@
 </ul>
 </li>
 <li>Caretaker: 管理備份的類別<ul>
-<li>呼叫 Originator 執行 備份/還原的操作</li>
+<li>呼叫 Originator 執行 備份&#x2F;還原的操作</li>
 <li>管理備份<ul>
 <li>存讀檔，路徑</li>
 <li>管理多份備份</li>
@@ -312,7 +316,7 @@
 <li>Memento會額外占用記憶體</li>
 </ul>
 <h2 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h2><ul>
-<li>備份/還原(存/讀檔)</li>
+<li>備份&#x2F;還原(存&#x2F;讀檔)</li>
 </ul>
 <h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>單詞Memento有「印象」、「紀念」的意思，有同名電影譯為「記憶拼圖」，在Persona5譯為「印象空間」</p>
 <h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
@@ -454,8 +458,9 @@
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="qwerty" src="/img/qwerty.png">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="qwerty"
+      src="/img/qwerty.png">
   <p class="site-author-name" itemprop="name">qwerty</p>
   <div class="site-description" itemprop="description">Programming | Computer Science | Thought</div>
 </div>
@@ -483,7 +488,7 @@
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http://github.com/gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
+        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http:&#x2F;&#x2F;github.com&#x2F;gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
       </span>
       <span class="links-of-author-item">
         <span class="exturl" data-url="bWFpbHRvOmdvb2hjbDc3N0BnbWFpbC5jb20=" title="E-Mail → mailto:goohcl777@gmail.com"><i class="fa fa-envelope fa-fw"></i></span>
@@ -500,10 +505,10 @@
     </div>
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https://qwerty777.me">My Main Page</span>
+          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https:&#x2F;&#x2F;qwerty777.me">My Main Page</span>
         </li>
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http://qwerty777.me/life/">My Second Blog -- wysiwyg</span>
+          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http:&#x2F;&#x2F;qwerty777.me&#x2F;life&#x2F;">My Second Blog -- wysiwyg</span>
         </li>
     </ul>
   </div>
@@ -530,7 +535,7 @@
 
 <div class="copyright">
   
-  © 2014 – 
+  &copy; 2014 – 
   <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fab fa-free-code-camp"></i>
@@ -543,7 +548,7 @@
       <span class="post-meta-item-text">總字數：</span>
     <span title="總字數">457k</span>
 </div>
-  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> &amp; <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
   </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61c5cf9cb3476405" async="async"></script>
@@ -563,69 +568,26 @@
   </div>
 
   
-  
-  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
-  
-  
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
 
 
+<script src="/js/schemes/pisces.js"></script>
 
 
+<script src="/js/next-boot.js"></script>
 
-
-
-
-
-
-
-  
-
-
-
-
-  
-  
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div id="pjax">
-  
-
-  
-      
-
-
-
-    
-
-  
-
-
-
-    </div>
-
-
-<script src="/bundle.js"></script><script>var pjax = new Pjax({
+  <script>
+var pjax = new Pjax({
   selectors: [
     'head title',
     '#page-configurations',
@@ -680,7 +642,15 @@ window.addEventListener('pjax:success', () => {
       .bootstrap();
   }
   NexT.utils.updateSidebarPosition();
-});;(function(){
+});
+</script>
+
+
+
+
+  
+  <script data-pjax>
+    (function(){
       var canonicalURL, curProtocol;
       //Get the <link> tag
       var x=document.getElementsByTagName("link");
@@ -702,7 +672,27 @@ window.addEventListener('pjax:success', () => {
       //Get current URL if the canonical URL does not exist
 	    if (!canonicalURL) canonicalURL = window.location.href;
 	    //Assign script content. Replace current URL with the canonical URL
-      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();;if (document.querySelectorAll('pre.mermaid').length) {
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script data-pjax>
+if (document.querySelectorAll('pre.mermaid').length) {
   NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
     mermaid.initialize({
       theme    : 'forest',
@@ -712,7 +702,18 @@ window.addEventListener('pjax:success', () => {
       sequence : { actorMargin: 50 }
     });
   }, window.mermaid);
-};if (typeof MathJax === 'undefined') {
+}
+</script>
+
+
+    <div id="pjax">
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
     window.MathJax = {
       loader: {
           load: ['[tex]/mhchem'],
@@ -760,7 +761,15 @@ window.addEventListener('pjax:success', () => {
     MathJax.startup.document.state(0);
     MathJax.texReset();
     MathJax.typeset();
-  };var disqus_config = function() {
+  }
+</script>
+
+    
+
+  
+
+<script>
+  var disqus_config = function() {
     this.page.url = "http://gitqwerty777.github.io/mementos-pattern/";
     this.page.identifier = "mementos-pattern/";
     this.page.title = "備忘錄模式(Mementos Pattern)";
@@ -777,4 +786,9 @@ window.addEventListener('pjax:success', () => {
       s.setAttribute('data-timestamp', '' + +new Date());
       (d.head || d.body).appendChild(s);
     }
-  });</script></body></html>
+  });
+</script>
+
+    </div>
+</body>
+</html>

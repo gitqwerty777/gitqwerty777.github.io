@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="zh-TW"><head>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
@@ -9,10 +11,10 @@
   <link rel="mask-icon" href="/img/favicon.png" color="#222">
   <meta name="google-site-verification" content="45plYlJRhxb-g8Tl8seizYgih_JUsmcJRH6oJHplkj0">
 
+<link rel="stylesheet" href="/css/main.css">
 
-
-
-
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
@@ -49,12 +51,12 @@
   };
 </script>
 
-<script data-ad-client="ca-pub-7267358872858108" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script data-ad-client="ca-pub-7267358872858108" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
   <title>Clean Code(無瑕的程式碼)心得 | QWERTY</title>
   
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
-    <script data-pjax="">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
+    <script data-pjax>
       if (CONFIG.hostname === location.hostname) {
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -92,13 +94,13 @@
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="QWERTY" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&amp;display=swap&amp;subset=latin,latin-ext"></noscript></head>
+</head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage">
+<body itemscope itemtype="http://schema.org/WebPage">
   <div class="container use-motion">
     <div class="headband"></div>
 
-    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切換導航欄">
@@ -186,7 +188,9 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" placeholder="搜尋..." spellcheck="false" type="search" class="search-input">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
   </div>
   <span class="popup-btn-close">
     <i class="fa fa-times-circle"></i>
@@ -221,16 +225,16 @@
     
   
   
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/cleancode/">
 
-    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/img/qwerty.png">
       <meta itemprop="name" content="qwerty">
       <meta itemprop="description" content="Programming | Computer Science | Thought">
     </span>
 
-    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="QWERTY">
     </span>
       <header class="post-header">
@@ -252,7 +256,7 @@
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分類於</span>
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">筆記</span></a>
                 </span>
             </span>
@@ -304,7 +308,7 @@
 <h3 id="有意義的命名"><a href="#有意義的命名" class="headerlink" title="有意義的命名"></a>有意義的命名</h3><ul>
 <li>有辦法唸出來的名稱，愈具體愈好</li>
 <li>用 define, enum, const 代替 常數<ul>
-<li><code>enum color{black, white}</code></li>
+<li><code>enum color&#123;black, white&#125;</code></li>
 <li>86400 → <code>SECOND_PER_DAY</code></li>
 <li>容易了解的數字就不用<ul>
 <li><code>circumference = radius * Math.PI * 2</code>: 不用將2換成實際名稱</li>
@@ -342,7 +346,7 @@
 </li>
 <li>使用範圍較大的變數用較長的名稱<ul>
 <li>愈少用的函數名稱可以愈長</li>
-<li>for迴圈範圍較小，變數可以用<code>i</code>, <code>j</code><figure class="highlight cpp"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">//which is better?</span></span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; RowNumber; i++)</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span>; j &lt; ColumnNumber; j++)</span><br><span class="line">		...</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> r = <span class="number">0</span>; r &lt; RowNumber; r++)</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> c = <span class="number">0</span>; c &lt; ColumnNumber; c++)</span><br><span class="line">		...</span><br></pre></td></tr></tbody></table></figure></li>
+<li>for迴圈範圍較小，變數可以用<code>i</code>, <code>j</code><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//which is better?</span></span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; RowNumber; i++)</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span>; j &lt; ColumnNumber; j++)</span><br><span class="line">		...</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> r = <span class="number">0</span>; r &lt; RowNumber; r++)</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> c = <span class="number">0</span>; c &lt; ColumnNumber; c++)</span><br><span class="line">		...</span><br></pre></td></tr></table></figure></li>
 </ul>
 </li>
 </ul>
@@ -376,11 +380,11 @@
 </li>
 <li>通常只使用一個參數<ul>
 <li>用途一：取得參數的性質<ul>
-<li><code>boolean isFileExists("MyFile")</code></li>
+<li><code>boolean isFileExists(&quot;MyFile&quot;)</code></li>
 </ul>
 </li>
 <li>用途二：使用參數，然後回傳操作後的結果<ul>
-<li><code>InputStream fileOpen("MyFile")</code></li>
+<li><code>InputStream fileOpen(&quot;MyFile&quot;)</code></li>
 </ul>
 </li>
 </ul>
@@ -413,8 +417,8 @@
 </ul>
 </li>
 <li>指令(command)與查詢(query)分離<ul>
-<li>此函式同時有查詢和進行動作的功能: <code>if(setAttribute("username", "unclebob")) ... </code></li>
-<li>改進: <code>if(attributeExists("username")) setAttribute("username", "unclebob");</code></li>
+<li>此函式同時有查詢和進行動作的功能: <code>if(setAttribute(&quot;username&quot;, &quot;unclebob&quot;)) ... </code></li>
+<li>改進: <code>if(attributeExists(&quot;username&quot;)) setAttribute(&quot;username&quot;, &quot;unclebob&quot;);</code></li>
 </ul>
 </li>
 <li>適當的靜態(static)宣告<ul>
@@ -433,7 +437,7 @@
 </li>
 <li>常數宣告：放在適當的層級<ul>
 <li>將預設的常數放在呼叫的參數，而非被呼叫的函式內<ul>
-<li><code>getPageNameOrDefault(request, "FrontPage")</code> //default is “FrongPage”</li>
+<li><code>getPageNameOrDefault(request, &quot;FrontPage&quot;)</code> &#x2F;&#x2F;default is “FrongPage”</li>
 </ul>
 </li>
 <li>放在愈高階就愈容易修改</li>
@@ -533,7 +537,7 @@
 </blockquote>
 <p>變數保持私有的理由，不希望有人依賴此變數，保持一個自由的空間，讓我們能自由的更改變數的型態，或是在突如其來的奇想或衝動時，能自由的變更實現內容的程式碼。</p>
 <p>那為什麼有這麼多的程式設計師，自動替他們的物件加上getter和setter，讓他們的私有度數如同公用變數呢？</p>
-<figure class="highlight c++"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">//完全暴露實現</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Point</span> {</span><br><span class="line">	<span class="keyword">public</span> <span class="type">double</span> x;</span><br><span class="line">	<span class="keyword">public</span> <span class="type">double</span> y;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="comment">//抽象化：無法分辨實現</span></span><br><span class="line"><span class="keyword">public</span> interface Point {</span><br><span class="line">	<span class="function"><span class="type">double</span> <span class="title">getX</span><span class="params">()</span></span>;</span><br><span class="line">	<span class="function"><span class="type">double</span> <span class="title">getY</span><span class="params">()</span></span>;</span><br><span class="line">	<span class="function"><span class="type">void</span> <span class="title">setCartesian</span><span class="params">(<span class="type">double</span> x, <span class="type">double</span> y)</span></span>;</span><br><span class="line">	<span class="function"><span class="type">double</span> <span class="title">getR</span><span class="params">()</span></span>;</span><br><span class="line">	<span class="function"><span class="type">double</span> <span class="title">getTheta</span><span class="params">()</span></span>;</span><br><span class="line">	<span class="function"><span class="type">void</span> <span class="title">setPolar</span><span class="params">(<span class="type">double</span> r, <span class="type">double</span> theta)</span></span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//完全暴露實現</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Point</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="type">double</span> x;</span><br><span class="line">	<span class="keyword">public</span> <span class="type">double</span> y;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//抽象化：無法分辨實現</span></span><br><span class="line"><span class="keyword">public</span> interface Point &#123;</span><br><span class="line">	<span class="function"><span class="type">double</span> <span class="title">getX</span><span class="params">()</span></span>;</span><br><span class="line">	<span class="function"><span class="type">double</span> <span class="title">getY</span><span class="params">()</span></span>;</span><br><span class="line">	<span class="function"><span class="type">void</span> <span class="title">setCartesian</span><span class="params">(<span class="type">double</span> x, <span class="type">double</span> y)</span></span>;</span><br><span class="line">	<span class="function"><span class="type">double</span> <span class="title">getR</span><span class="params">()</span></span>;</span><br><span class="line">	<span class="function"><span class="type">double</span> <span class="title">getTheta</span><span class="params">()</span></span>;</span><br><span class="line">	<span class="function"><span class="type">void</span> <span class="title">setPolar</span><span class="params">(<span class="type">double</span> r, <span class="type">double</span> theta)</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>利用抽象化的詞彙來表達資料。這並不是只透過介面及讀取、設定函式就能完成。想辨法找到最能詮釋「資料抽象概念」的方式。<br>而最差的作法，則是天真地加上讀取函式及設定函式而已。</p>
 <p>1.物件</p>
@@ -644,7 +648,7 @@
 </ul>
 </li>
 <li>包裹第三方API<ul>
-<li><code>public void open() { try{innerPort.open();} ... }</code></li>
+<li><code>public void open() &#123; try&#123;innerPort.open();&#125; ... &#125;</code></li>
 <li>好處<ul>
 <li>掌握控制程式的權利</li>
 <li>在API未知的情況可以繼承此interface，創造一個Fake API來測試</li>
@@ -702,7 +706,7 @@
 <li>Fast：快速(足夠快即可)</li>
 <li>Independent：可個別獨立執行</li>
 <li>Repeatable：可在任何環境重複執行</li>
-<li>Self-Validating：輸出bool值(成功/失敗)，而不是記錄檔<ul>
+<li>Self-Validating：輸出bool值(成功&#x2F;失敗)，而不是記錄檔<ul>
 <li>不用做額外的檢查</li>
 </ul>
 </li>
@@ -788,7 +792,7 @@
 <p>將「做什麼」和「何時做」分解開來，像是Web應用的Servlet模型<br>當獲得一個網頁請求時，servlet會以非同步方式執行，不需要管理所有的請求，每一個servlet都在其自我的小小世界裡執行。</p>
 <p>缺點</p>
 <ul>
-<li>需要修改程式碼/架構</li>
+<li>需要修改程式碼&#x2F;架構</li>
 <li>速度不一定變快(有overhead)</li>
 <li>很難寫正確，因為很難重現bug</li>
 </ul>
@@ -813,7 +817,7 @@
 </ul>
 </li>
 <li>測試<ul>
-<li>偽造/產生失敗以測試</li>
+<li>偽造&#x2F;產生失敗以測試</li>
 <li>讓平行化的程式可以開關平行化的功能</li>
 <li>在不同的平台測試</li>
 <li>執行比處理器數量還多的執行緒<ul>
@@ -900,7 +904,7 @@
 </li>
 <li>特色留戀(Feature Envy)<ol start="7">
 <li>使用其他物件的getter或setter</li>
-<li>有時候是必要之惡：放入別的物件會違反其他OOP的原則(此例：單一職責、開放閉合原則等)<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">//demo of feature envy</span></span><br><span class="line"><span class="keyword">public</span> clas HourlyEmployeeReport{</span><br><span class="line">	<span class="keyword">private</span> HourlyEmployee employee;</span><br><span class="line"></span><br><span class="line">	String <span class="title function_">reportHours</span><span class="params">()</span>{</span><br><span class="line">		<span class="keyword">return</span> String.Format(</span><br><span class="line">			<span class="string">"Name:%s, Hours:%d.%ld\n"</span>,</span><br><span class="line">			employee.getName(),</span><br><span class="line">			employee.getTenthsWorked()/<span class="number">10</span>,</span><br><span class="line">			employee.getTenthsWorked()%<span class="number">10</span>);</span><br><span class="line">	}</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></li>
+<li>有時候是必要之惡：放入別的物件會違反其他OOP的原則(此例：單一職責、開放閉合原則等)<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//demo of feature envy</span></span><br><span class="line"><span class="keyword">public</span> clas HourlyEmployeeReport&#123;</span><br><span class="line">	<span class="keyword">private</span> HourlyEmployee employee;</span><br><span class="line"></span><br><span class="line">	String <span class="title function_">reportHours</span><span class="params">()</span>&#123;</span><br><span class="line">		<span class="keyword">return</span> String.Format(</span><br><span class="line">			<span class="string">&quot;Name:%s, Hours:%d.%ld\n&quot;</span>,</span><br><span class="line">			employee.getName(),</span><br><span class="line">			employee.getTenthsWorked()/<span class="number">10</span>,</span><br><span class="line">			employee.getTenthsWorked()%<span class="number">10</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ol>
 </li>
 </ol>
@@ -1041,8 +1045,9 @@
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="qwerty" src="/img/qwerty.png">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="qwerty"
+      src="/img/qwerty.png">
   <p class="site-author-name" itemprop="name">qwerty</p>
   <div class="site-description" itemprop="description">Programming | Computer Science | Thought</div>
 </div>
@@ -1070,7 +1075,7 @@
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http://github.com/gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
+        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http:&#x2F;&#x2F;github.com&#x2F;gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
       </span>
       <span class="links-of-author-item">
         <span class="exturl" data-url="bWFpbHRvOmdvb2hjbDc3N0BnbWFpbC5jb20=" title="E-Mail → mailto:goohcl777@gmail.com"><i class="fa fa-envelope fa-fw"></i></span>
@@ -1087,10 +1092,10 @@
     </div>
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https://qwerty777.me">My Main Page</span>
+          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https:&#x2F;&#x2F;qwerty777.me">My Main Page</span>
         </li>
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http://qwerty777.me/life/">My Second Blog -- wysiwyg</span>
+          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http:&#x2F;&#x2F;qwerty777.me&#x2F;life&#x2F;">My Second Blog -- wysiwyg</span>
         </li>
     </ul>
   </div>
@@ -1117,7 +1122,7 @@
 
 <div class="copyright">
   
-  © 2014 – 
+  &copy; 2014 – 
   <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fab fa-free-code-camp"></i>
@@ -1130,7 +1135,7 @@
       <span class="post-meta-item-text">總字數：</span>
     <span title="總字數">457k</span>
 </div>
-  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> &amp; <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
   </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61c5cf9cb3476405" async="async"></script>
@@ -1150,69 +1155,26 @@
   </div>
 
   
-  
-  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
-  
-  
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
 
 
+<script src="/js/schemes/pisces.js"></script>
 
 
+<script src="/js/next-boot.js"></script>
 
-
-
-
-
-
-
-  
-
-
-
-
-  
-  
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div id="pjax">
-  
-
-  
-      
-
-
-
-    
-
-  
-
-
-
-    </div>
-
-
-<script src="/bundle.js"></script><script>var pjax = new Pjax({
+  <script>
+var pjax = new Pjax({
   selectors: [
     'head title',
     '#page-configurations',
@@ -1267,7 +1229,15 @@ window.addEventListener('pjax:success', () => {
       .bootstrap();
   }
   NexT.utils.updateSidebarPosition();
-});;(function(){
+});
+</script>
+
+
+
+
+  
+  <script data-pjax>
+    (function(){
       var canonicalURL, curProtocol;
       //Get the <link> tag
       var x=document.getElementsByTagName("link");
@@ -1289,7 +1259,27 @@ window.addEventListener('pjax:success', () => {
       //Get current URL if the canonical URL does not exist
 	    if (!canonicalURL) canonicalURL = window.location.href;
 	    //Assign script content. Replace current URL with the canonical URL
-      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();;if (document.querySelectorAll('pre.mermaid').length) {
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script data-pjax>
+if (document.querySelectorAll('pre.mermaid').length) {
   NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
     mermaid.initialize({
       theme    : 'forest',
@@ -1299,7 +1289,18 @@ window.addEventListener('pjax:success', () => {
       sequence : { actorMargin: 50 }
     });
   }, window.mermaid);
-};if (typeof MathJax === 'undefined') {
+}
+</script>
+
+
+    <div id="pjax">
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
     window.MathJax = {
       loader: {
           load: ['[tex]/mhchem'],
@@ -1347,7 +1348,15 @@ window.addEventListener('pjax:success', () => {
     MathJax.startup.document.state(0);
     MathJax.texReset();
     MathJax.typeset();
-  };var disqus_config = function() {
+  }
+</script>
+
+    
+
+  
+
+<script>
+  var disqus_config = function() {
     this.page.url = "http://gitqwerty777.github.io/cleancode/";
     this.page.identifier = "cleancode/";
     this.page.title = "Clean Code(無瑕的程式碼)心得";
@@ -1364,4 +1373,9 @@ window.addEventListener('pjax:success', () => {
       s.setAttribute('data-timestamp', '' + +new Date());
       (d.head || d.body).appendChild(s);
     }
-  });</script></body></html>
+  });
+</script>
+
+    </div>
+</body>
+</html>

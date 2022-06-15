@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="zh-TW"><head>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
@@ -9,10 +11,10 @@
   <link rel="mask-icon" href="/img/favicon.png" color="#222">
   <meta name="google-site-verification" content="45plYlJRhxb-g8Tl8seizYgih_JUsmcJRH6oJHplkj0">
 
+<link rel="stylesheet" href="/css/main.css">
 
-
-
-
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
@@ -46,12 +48,12 @@
   };
 </script>
 
-<script data-ad-client="ca-pub-7267358872858108" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script data-ad-client="ca-pub-7267358872858108" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
   <title>正規表示式簡介 | QWERTY</title>
   
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
-    <script data-pjax="">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
+    <script data-pjax>
       if (CONFIG.hostname === location.hostname) {
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -89,13 +91,13 @@
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="QWERTY" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&amp;display=swap&amp;subset=latin,latin-ext"></noscript></head>
+</head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage">
+<body itemscope itemtype="http://schema.org/WebPage">
   <div class="container use-motion">
     <div class="headband"></div>
 
-    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切換導航欄">
@@ -183,7 +185,9 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" placeholder="搜尋..." spellcheck="false" type="search" class="search-input">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
   </div>
   <span class="popup-btn-close">
     <i class="fa fa-times-circle"></i>
@@ -218,16 +222,16 @@
     
   
   
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/regular-expression/">
 
-    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/img/qwerty.png">
       <meta itemprop="name" content="qwerty">
       <meta itemprop="description" content="Programming | Computer Science | Thought">
     </span>
 
-    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="QWERTY">
     </span>
       <header class="post-header">
@@ -249,7 +253,7 @@
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分類於</span>
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">筆記</span></a>
                 </span>
             </span>
@@ -285,7 +289,7 @@
 <li>取出資訊</li>
 <li>取代<ul>
 <li>color → colour</li>
-<li>12/06/2006 → 2006-12-06</li>
+<li>12&#x2F;06&#x2F;2006 → 2006-12-06</li>
 </ul>
 </li>
 <li>檢查指定格式<ul>
@@ -337,7 +341,7 @@
 <tr>
 <td>{}</td>
 <td>表示前面的字元或集合出現的次數</td>
-<td><code>c{1,3}</code> → c, cc, ccc<br><code>c{3, }</code> → ccc, cccc, …</td>
+<td><code>c&#123;1,3&#125;</code> → c, cc, ccc<br><code>c&#123;3, &#125;</code> → ccc, cccc, …</td>
 </tr>
 </tbody></table>
 <h3 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h3><table>
@@ -364,9 +368,9 @@
 <td><code>[^aeiou]</code> → 所有子音(❌); a, e, i, o, u以外的所有字元(✔️)</td>
 </tr>
 <tr>
-<td><code>|</code></td>
+<td><code>&#124;</code></td>
 <td>或</td>
-<td><code>cat|dog|bird</code> → cat, dog, bird</td>
+<td><code>cat&#124;dog&#124;bird</code> → cat, dog, bird</td>
 </tr>
 </tbody></table>
 <ul>
@@ -388,27 +392,27 @@
 <tr>
 <td>(?:x)</td>
 <td>不取出x，純粹當作一個子空間使用</td>
-<td><code>industr(?:y|ies)</code> → industry, industries</td>
+<td><code>industr(?:y&#124;ies)</code> → industry, industries</td>
 </tr>
 <tr>
-<td>(?=x)</td>
+<td>(?&#x3D;x)</td>
 <td>正向肯定預查，確認後方的字串是否符合</td>
-<td><code>Windows(?=95|98|NT|2000)</code> → Windows95(✔️), Windows8(❌)</td>
+<td><code>Windows(?=95&#124;98&#124;NT&#124;2000)</code> → Windows95(✔️), Windows8(❌)</td>
 </tr>
 <tr>
 <td>(?!x)</td>
 <td>正向否定預查，確認後方的字串是否不符合</td>
-<td><code>Windows(?!95|98|NT|2000)</code> → Windows95(❌), Windows8(✔️)</td>
+<td><code>Windows(?!95&#124;98&#124;NT&#124;2000)</code> → Windows95(❌), Windows8(✔️)</td>
 </tr>
 <tr>
-<td>(?&lt;=x)</td>
+<td>(?&lt;&#x3D;x)</td>
 <td>反向肯定預查，確認前方的字串是否符合</td>
-<td><code>(?&lt;=95|98|NT|2000)Windows</code> → 95Windows(✔️), 8Windows(❌)</td>
+<td><code>(?&lt;=95&#124;98&#124;NT&#124;2000)Windows</code> → 95Windows(✔️), 8Windows(❌)</td>
 </tr>
 <tr>
 <td>(?&lt;!x)</td>
 <td>反向否定預查，確認前方的字串是否符合</td>
-<td><code>(?&lt;!95|98|NT|2000)Windows</code> → 95Windows(❌), 8Windows(✔️)</td>
+<td><code>(?&lt;!95&#124;98&#124;NT&#124;2000)Windows</code> → 95Windows(❌), 8Windows(✔️)</td>
 </tr>
 <tr>
 <td>(?)</td>
@@ -418,7 +422,7 @@
 <tr>
 <td>\1</td>
 <td>捕獲分組</td>
-<td><code>&lt;p id="(\d*)"&gt;\1&lt;/p&gt;</code> → <code>&lt;p id="123"&gt;123&lt;/p&gt;</code>(✔️), <code>&lt;p id="123"&gt;1234&lt;/p&gt;</code>(❌)</td>
+<td><code>&lt;p id=&quot;(\d*)&quot;&gt;\1&lt;/p&gt;</code> → <code>&lt;p id=&quot;123&quot;&gt;123&lt;/p&gt;</code>(✔️), <code>&lt;p id=&quot;123&quot;&gt;1234&lt;/p&gt;</code>(❌)</td>
 </tr>
 </tbody></table>
 <p>預查即代表不對應，所以最後四個範例都只會回傳符合的<code>Windows</code>而非<code>Windows95</code>或<code>Windows8</code>，而<code>(?:x)</code>是可以回傳符合的<code>industry</code>或<code>industries</code></p>
@@ -473,17 +477,17 @@
 <tr>
 <td>\b</td>
 <td>英文字的邊界(空格、逗號等符號)</td>
-<td><code>(?&lt;=\W)(?=\w)|(?&lt;=\w)(?=\W)</code></td>
+<td><code>(?<=\W)(?=\w)&#124;(?<=\w)(?=\W)</code></td>
 </tr>
 <tr>
 <td>\B</td>
 <td>\b以外的字元</td>
-<td><code>(?&lt;=\W)(?=\W)|(?&lt;=\w)(?=\w)</code></td>
+<td><code>(?<=\W)(?=\W)&#124;(?<=\w)(?=\w)</code></td>
 </tr>
 <tr>
 <td>\x[hex]</td>
 <td>十六進位，其中hex是十六進位數目</td>
-<td><code>\x38</code> → $38_{16}$ = 56</td>
+<td><code>\x38</code> → $38_{16}$ &#x3D; 56</td>
 </tr>
 <tr>
 <td>\u[unicode]</td>
@@ -504,27 +508,27 @@
 </ul>
 <h2 id="正規表示式範例"><a href="#正規表示式範例" class="headerlink" title="正規表示式範例"></a>正規表示式範例</h2><ul>
 <li>數字或無輸入：<code>^[0-9]*$</code></li>
-<li>m到n個數字：<code>^\d{m,n}$</code></li>
+<li>m到n個數字：<code>^\d&#123;m,n&#125;$</code></li>
 <li>正整數(含0)：<code>^0$|^[1-9][0-9]*$</code></li>
-<li>用戶密碼 - 以字母開頭，長度在 6~18 之間，只能包含英數字和底線：<code>^[a-zA-Z]\w{5,17}$</code></li>
+<li>用戶密碼 - 以字母開頭，長度在 6~18 之間，只能包含英數字和底線：<code>^[a-zA-Z]\w&#123;5,17&#125;$</code></li>
 <li>漢字：<code>[\u4e00-\u9fa5]+</code></li>
-<li>IP位址：<code>^((?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?))*$</code><ul>
-<li>可以先取<code>^(\d{0,3})\.(\d{0,3})\.(\d{0,3})\.(\d{0,3})$</code>，再判斷取出的數字在0~255之間即可</li>
+<li>IP位址：<code>^((?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.)&#123;3&#125;(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?))*$</code><ul>
+<li>可以先取<code>^(\d&#123;0,3&#125;)\.(\d&#123;0,3&#125;)\.(\d&#123;0,3&#125;)\.(\d&#123;0,3&#125;)$</code>，再判斷取出的數字在0~255之間即可</li>
 </ul>
 </li>
 <li>可以思考下列兩題，是否有更好的寫法<ul>
 <li>一個月的 31 天(包含01-09和1-31)：<code>^((0?[1-9])|((1|2)[0-9])|30|31)$</code></li>
-<li>Email：<code>^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4})*$</code></li>
+<li>Email：<code>^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]&#123;2,4&#125;)*$</code></li>
 </ul>
 </li>
 </ul>
 <h3 id="例：以grep搜尋檔案內容"><a href="#例：以grep搜尋檔案內容" class="headerlink" title="例：以grep搜尋檔案內容"></a>例：以grep搜尋檔案內容</h3><ul>
-<li>在當前目錄尋找包含輸出函式<code>printf</code>或<code>fprintf</code>的檔案: <code>grep -Ern 'f?printf' .</code><ul>
+<li>在當前目錄尋找包含輸出函式<code>printf</code>或<code>fprintf</code>的檔案: <code>grep -Ern &#39;f?printf&#39; .</code><ul>
 <li><code>-E</code> 使用正規表示式</li>
 <li><code>-r</code> 遞迴搜尋(子目錄)</li>
 <li><code>-n</code> 列出行數</li>
 <li>加入尋找<code>sprintf</code><ul>
-<li><code>grep -Ern '[sf]?printf' .</code></li>
+<li><code>grep -Ern &#39;[sf]?printf&#39; .</code></li>
 </ul>
 </li>
 </ul>
@@ -669,8 +673,9 @@
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="qwerty" src="/img/qwerty.png">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="qwerty"
+      src="/img/qwerty.png">
   <p class="site-author-name" itemprop="name">qwerty</p>
   <div class="site-description" itemprop="description">Programming | Computer Science | Thought</div>
 </div>
@@ -698,7 +703,7 @@
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http://github.com/gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
+        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http:&#x2F;&#x2F;github.com&#x2F;gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
       </span>
       <span class="links-of-author-item">
         <span class="exturl" data-url="bWFpbHRvOmdvb2hjbDc3N0BnbWFpbC5jb20=" title="E-Mail → mailto:goohcl777@gmail.com"><i class="fa fa-envelope fa-fw"></i></span>
@@ -715,10 +720,10 @@
     </div>
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https://qwerty777.me">My Main Page</span>
+          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https:&#x2F;&#x2F;qwerty777.me">My Main Page</span>
         </li>
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http://qwerty777.me/life/">My Second Blog -- wysiwyg</span>
+          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http:&#x2F;&#x2F;qwerty777.me&#x2F;life&#x2F;">My Second Blog -- wysiwyg</span>
         </li>
     </ul>
   </div>
@@ -745,7 +750,7 @@
 
 <div class="copyright">
   
-  © 2014 – 
+  &copy; 2014 – 
   <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fab fa-free-code-camp"></i>
@@ -758,7 +763,7 @@
       <span class="post-meta-item-text">總字數：</span>
     <span title="總字數">457k</span>
 </div>
-  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> &amp; <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
   </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61c5cf9cb3476405" async="async"></script>
@@ -778,69 +783,26 @@
   </div>
 
   
-  
-  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
-  
-  
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
 
 
+<script src="/js/schemes/pisces.js"></script>
 
 
+<script src="/js/next-boot.js"></script>
 
-
-
-
-
-
-
-  
-
-
-
-
-  
-  
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div id="pjax">
-  
-
-  
-      
-
-
-
-    
-
-  
-
-
-
-    </div>
-
-
-<script src="/bundle.js"></script><script>var pjax = new Pjax({
+  <script>
+var pjax = new Pjax({
   selectors: [
     'head title',
     '#page-configurations',
@@ -895,7 +857,15 @@ window.addEventListener('pjax:success', () => {
       .bootstrap();
   }
   NexT.utils.updateSidebarPosition();
-});;(function(){
+});
+</script>
+
+
+
+
+  
+  <script data-pjax>
+    (function(){
       var canonicalURL, curProtocol;
       //Get the <link> tag
       var x=document.getElementsByTagName("link");
@@ -917,7 +887,27 @@ window.addEventListener('pjax:success', () => {
       //Get current URL if the canonical URL does not exist
 	    if (!canonicalURL) canonicalURL = window.location.href;
 	    //Assign script content. Replace current URL with the canonical URL
-      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();;if (document.querySelectorAll('pre.mermaid').length) {
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script data-pjax>
+if (document.querySelectorAll('pre.mermaid').length) {
   NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
     mermaid.initialize({
       theme    : 'forest',
@@ -927,7 +917,18 @@ window.addEventListener('pjax:success', () => {
       sequence : { actorMargin: 50 }
     });
   }, window.mermaid);
-};if (typeof MathJax === 'undefined') {
+}
+</script>
+
+
+    <div id="pjax">
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
     window.MathJax = {
       loader: {
           load: ['[tex]/mhchem'],
@@ -975,7 +976,15 @@ window.addEventListener('pjax:success', () => {
     MathJax.startup.document.state(0);
     MathJax.texReset();
     MathJax.typeset();
-  };var disqus_config = function() {
+  }
+</script>
+
+    
+
+  
+
+<script>
+  var disqus_config = function() {
     this.page.url = "http://gitqwerty777.github.io/regular-expression/";
     this.page.identifier = "regular-expression/";
     this.page.title = "正規表示式簡介";
@@ -992,4 +1001,9 @@ window.addEventListener('pjax:success', () => {
       s.setAttribute('data-timestamp', '' + +new Date());
       (d.head || d.body).appendChild(s);
     }
-  });</script></body></html>
+  });
+</script>
+
+    </div>
+</body>
+</html>

@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="zh-TW"><head>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
@@ -9,10 +11,10 @@
   <link rel="mask-icon" href="/img/favicon.png" color="#222">
   <meta name="google-site-verification" content="45plYlJRhxb-g8Tl8seizYgih_JUsmcJRH6oJHplkj0">
 
+<link rel="stylesheet" href="/css/main.css">
 
-
-
-
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
@@ -49,12 +51,12 @@
   };
 </script>
 
-<script data-ad-client="ca-pub-7267358872858108" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script data-ad-client="ca-pub-7267358872858108" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
   <title>隨機排序演算法實作 | QWERTY</title>
   
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
-    <script data-pjax="">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
+    <script data-pjax>
       if (CONFIG.hostname === location.hostname) {
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -92,13 +94,13 @@
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="QWERTY" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&amp;display=swap&amp;subset=latin,latin-ext"></noscript></head>
+</head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage">
+<body itemscope itemtype="http://schema.org/WebPage">
   <div class="container use-motion">
     <div class="headband"></div>
 
-    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切換導航欄">
@@ -186,7 +188,9 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" placeholder="搜尋..." spellcheck="false" type="search" class="search-input">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
   </div>
   <span class="popup-btn-close">
     <i class="fa fa-times-circle"></i>
@@ -221,16 +225,16 @@
     
   
   
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/why-linear-shuffle-works/">
 
-    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/img/qwerty.png">
       <meta itemprop="name" content="qwerty">
       <meta itemprop="description" content="Programming | Computer Science | Thought">
     </span>
 
-    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="QWERTY">
     </span>
       <header class="post-header">
@@ -252,7 +256,7 @@
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分類於</span>
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">筆記</span></a>
                 </span>
             </span>
@@ -277,22 +281,22 @@
       
         <h2 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h2><p>說到隨機排序(shuffle)演算法，最著名的肯定是Fisher–Yates，它是一個$O(N)$時間的演算法，偽碼如下</p>
 <span id="more"></span>
-<figure class="highlight stylus"><table><tbody><tr><td class="code"><pre><span class="line"><span class="function"><span class="title">Shuffle</span><span class="params">(Array a)</span></span>{</span><br><span class="line">    N = <span class="selector-tag">a</span><span class="selector-class">.length</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="selector-tag">i</span> = <span class="number">0</span> ~ N-<span class="number">1</span>){</span><br><span class="line">        <span class="built_in">Swap</span>(<span class="selector-tag">a</span><span class="selector-attr">[i]</span>, <span class="selector-tag">a</span><span class="selector-attr">[Random value between i and N]</span>)</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="title">Shuffle</span><span class="params">(Array a)</span></span>&#123;</span><br><span class="line">    N = <span class="selector-tag">a</span><span class="selector-class">.length</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="selector-tag">i</span> = <span class="number">0</span> ~ N-<span class="number">1</span>)&#123;</span><br><span class="line">        <span class="built_in">Swap</span>(<span class="selector-tag">a</span><span class="selector-attr">[i]</span>, <span class="selector-tag">a</span><span class="selector-attr">[Random value between i and N]</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>簡單來說就是每個元素都和之後(包含自身)的隨機一個元素交換</p>
-<h2 id="實作"><a href="#實作" class="headerlink" title="實作"></a>實作</h2><figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line"></span><br><span class="line">N = <span class="number">10</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">Shuffle</span>(<span class="params">arr</span>):</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(N-<span class="number">1</span>):</span><br><span class="line">        j = random.randint(i, N-<span class="number">1</span>)</span><br><span class="line">        arr[i], arr[j] = arr[j], arr[i]</span><br><span class="line"></span><br><span class="line">total = [[<span class="number">0</span> <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(N)] <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(N)]</span><br><span class="line"><span class="keyword">for</span> t <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1000000</span>):</span><br><span class="line">    arr = [i <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(N)]</span><br><span class="line">    Shuffle(arr)</span><br><span class="line">    <span class="keyword">for</span> i, v <span class="keyword">in</span> <span class="built_in">enumerate</span>(arr):</span><br><span class="line">        total[v][i] += <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(N):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f"數字<span class="subst">{i}</span>分佈"</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">","</span>.join(<span class="built_in">str</span>(v) <span class="keyword">for</span> v <span class="keyword">in</span> total[i]))</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="實作"><a href="#實作" class="headerlink" title="實作"></a>實作</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line"></span><br><span class="line">N = <span class="number">10</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">Shuffle</span>(<span class="params">arr</span>):</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(N-<span class="number">1</span>):</span><br><span class="line">        j = random.randint(i, N-<span class="number">1</span>)</span><br><span class="line">        arr[i], arr[j] = arr[j], arr[i]</span><br><span class="line"></span><br><span class="line">total = [[<span class="number">0</span> <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(N)] <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(N)]</span><br><span class="line"><span class="keyword">for</span> t <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1000000</span>):</span><br><span class="line">    arr = [i <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(N)]</span><br><span class="line">    Shuffle(arr)</span><br><span class="line">    <span class="keyword">for</span> i, v <span class="keyword">in</span> <span class="built_in">enumerate</span>(arr):</span><br><span class="line">        total[v][i] += <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(N):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;數字<span class="subst">&#123;i&#125;</span>分佈&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;,&quot;</span>.join(<span class="built_in">str</span>(v) <span class="keyword">for</span> v <span class="keyword">in</span> total[i]))</span><br></pre></td></tr></table></figure>
 
 <p>執行1000000次Shuffle，各數字的分布</p>
-<figure class="highlight dns"><table><tbody><tr><td class="code"><pre><span class="line">數字<span class="number">0</span>分佈</span><br><span class="line"><span class="number">99656,99624</span>,<span class="number">100636,100081</span>,<span class="number">99957,100149</span>,<span class="number">100238,100287</span>,<span class="number">99710,99662</span></span><br><span class="line">數字<span class="number">1</span>分佈</span><br><span class="line"><span class="number">100043,100292</span>,<span class="number">99499,100262</span>,<span class="number">100141,99847</span>,<span class="number">100098,100164</span>,<span class="number">99655,99999</span></span><br><span class="line">數字<span class="number">2</span>分佈</span><br><span class="line"><span class="number">100032,100412</span>,<span class="number">99857,100035</span>,<span class="number">100148,99738</span>,<span class="number">100139,99765</span>,<span class="number">99681,100193</span></span><br><span class="line">數字<span class="number">3</span>分佈</span><br><span class="line"><span class="number">100031,99868</span>,<span class="number">100572,99418</span>,<span class="number">99965,99918</span>,<span class="number">99889,100107</span>,<span class="number">100279,99953</span></span><br><span class="line">數字<span class="number">4</span>分佈</span><br><span class="line"><span class="number">100214,99716</span>,<span class="number">100181,100315</span>,<span class="number">99764,99667</span>,<span class="number">100270,99829</span>,<span class="number">99871,100173</span></span><br><span class="line">數字<span class="number">5</span>分佈</span><br><span class="line"><span class="number">99952,100282</span>,<span class="number">99670,99642</span>,<span class="number">99919,100401</span>,<span class="number">99785,100627</span>,<span class="number">100215,99507</span></span><br><span class="line">數字<span class="number">6</span>分佈</span><br><span class="line"><span class="number">100332,99879</span>,<span class="number">99976,100143</span>,<span class="number">99614,100319</span>,<span class="number">99665,100169</span>,<span class="number">100380,99523</span></span><br><span class="line">數字<span class="number">7</span>分佈</span><br><span class="line"><span class="number">99878,100407</span>,<span class="number">99804,99669</span>,<span class="number">100115,99760</span>,<span class="number">100251,99602</span>,<span class="number">100124,100390</span></span><br><span class="line">數字<span class="number">8</span>分佈</span><br><span class="line"><span class="number">100104,99888</span>,<span class="number">99876,100575</span>,<span class="number">100181,100229</span>,<span class="number">100083,99398</span>,<span class="number">99632,100034</span></span><br><span class="line">數字<span class="number">9</span>分佈</span><br><span class="line"><span class="number">99758,99632</span>,<span class="number">99929,99860</span>,<span class="number">100196,99972</span>,<span class="number">99582,100052</span>,<span class="number">100453,100566</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight dns"><table><tr><td class="code"><pre><span class="line">數字<span class="number">0</span>分佈</span><br><span class="line"><span class="number">99656,99624</span>,<span class="number">100636,100081</span>,<span class="number">99957,100149</span>,<span class="number">100238,100287</span>,<span class="number">99710,99662</span></span><br><span class="line">數字<span class="number">1</span>分佈</span><br><span class="line"><span class="number">100043,100292</span>,<span class="number">99499,100262</span>,<span class="number">100141,99847</span>,<span class="number">100098,100164</span>,<span class="number">99655,99999</span></span><br><span class="line">數字<span class="number">2</span>分佈</span><br><span class="line"><span class="number">100032,100412</span>,<span class="number">99857,100035</span>,<span class="number">100148,99738</span>,<span class="number">100139,99765</span>,<span class="number">99681,100193</span></span><br><span class="line">數字<span class="number">3</span>分佈</span><br><span class="line"><span class="number">100031,99868</span>,<span class="number">100572,99418</span>,<span class="number">99965,99918</span>,<span class="number">99889,100107</span>,<span class="number">100279,99953</span></span><br><span class="line">數字<span class="number">4</span>分佈</span><br><span class="line"><span class="number">100214,99716</span>,<span class="number">100181,100315</span>,<span class="number">99764,99667</span>,<span class="number">100270,99829</span>,<span class="number">99871,100173</span></span><br><span class="line">數字<span class="number">5</span>分佈</span><br><span class="line"><span class="number">99952,100282</span>,<span class="number">99670,99642</span>,<span class="number">99919,100401</span>,<span class="number">99785,100627</span>,<span class="number">100215,99507</span></span><br><span class="line">數字<span class="number">6</span>分佈</span><br><span class="line"><span class="number">100332,99879</span>,<span class="number">99976,100143</span>,<span class="number">99614,100319</span>,<span class="number">99665,100169</span>,<span class="number">100380,99523</span></span><br><span class="line">數字<span class="number">7</span>分佈</span><br><span class="line"><span class="number">99878,100407</span>,<span class="number">99804,99669</span>,<span class="number">100115,99760</span>,<span class="number">100251,99602</span>,<span class="number">100124,100390</span></span><br><span class="line">數字<span class="number">8</span>分佈</span><br><span class="line"><span class="number">100104,99888</span>,<span class="number">99876,100575</span>,<span class="number">100181,100229</span>,<span class="number">100083,99398</span>,<span class="number">99632,100034</span></span><br><span class="line">數字<span class="number">9</span>分佈</span><br><span class="line"><span class="number">99758,99632</span>,<span class="number">99929,99860</span>,<span class="number">100196,99972</span>,<span class="number">99582,100052</span>,<span class="number">100453,100566</span></span><br></pre></td></tr></table></figure>
 
 <p>但為何只要這樣交換，就是隨機排序？ 🤔</p>
-<h2 id="不嚴謹的證明"><a href="#不嚴謹的證明" class="headerlink" title="不嚴謹的證明"></a>不嚴謹的證明</h2><p>已知N=1或2時，使用此法皆可使陣列為隨機排序。<br>若N=n時成立，考慮N=n+1時的情況：<br>Without loss of generality，令陣列為[0, 1, 2, …, n]<br>第一個位置的數0會和後面的隨機一個元素交換，此時第一個位置是0到n的數的機率是平均的 $P_0(v)=\frac{1}{n+1}, v \in {0, 1, 2, .. n}$<br>此時子陣列(<code>[1:]</code>)即為N=n的情況，依照假設，使用此法後，其餘數字會是隨機排序，<br>所以N=n+1時也成立。<br>依數學歸納法，N=1,2時成立，且N=n成立時，N=n+1也成立；所以N為自然數時，使用此法皆可使陣列為隨機排序。$\blacksquare$</p>
+<h2 id="不嚴謹的證明"><a href="#不嚴謹的證明" class="headerlink" title="不嚴謹的證明"></a>不嚴謹的證明</h2><p>已知N&#x3D;1或2時，使用此法皆可使陣列為隨機排序。<br>若N&#x3D;n時成立，考慮N&#x3D;n+1時的情況：<br>Without loss of generality，令陣列為[0, 1, 2, …, n]<br>第一個位置的數0會和後面的隨機一個元素交換，此時第一個位置是0到n的數的機率是平均的 $P_0(v)&#x3D;\frac{1}{n+1}, v \in {0, 1, 2, .. n}$<br>此時子陣列(<code>[1:]</code>)即為N&#x3D;n的情況，依照假設，使用此法後，其餘數字會是隨機排序，<br>所以N&#x3D;n+1時也成立。<br>依數學歸納法，N&#x3D;1,2時成立，且N&#x3D;n成立時，N&#x3D;n+1也成立；所以N為自然數時，使用此法皆可使陣列為隨機排序。$\blacksquare$</p>
 <hr>
 <p>一個更直觀的解釋是，每一次交換都是在隨機選擇剩下還沒選的值。</p>
-<h2 id="錯誤版本"><a href="#錯誤版本" class="headerlink" title="錯誤版本"></a>錯誤版本</h2><figure class="highlight stylus"><table><tbody><tr><td class="code"><pre><span class="line"><span class="function"><span class="title">WrongShuffle</span><span class="params">(Array a)</span></span>{</span><br><span class="line">    N = <span class="selector-tag">a</span><span class="selector-class">.length</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="selector-tag">i</span> = <span class="number">0</span> ~ N-<span class="number">1</span>){</span><br><span class="line">        <span class="built_in">Swap</span>(<span class="selector-tag">a</span><span class="selector-attr">[i]</span>, <span class="selector-tag">a</span><span class="selector-attr">[Random value between 0 and N]</span>)</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="錯誤版本"><a href="#錯誤版本" class="headerlink" title="錯誤版本"></a>錯誤版本</h2><figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="title">WrongShuffle</span><span class="params">(Array a)</span></span>&#123;</span><br><span class="line">    N = <span class="selector-tag">a</span><span class="selector-class">.length</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="selector-tag">i</span> = <span class="number">0</span> ~ N-<span class="number">1</span>)&#123;</span><br><span class="line">        <span class="built_in">Swap</span>(<span class="selector-tag">a</span><span class="selector-attr">[i]</span>, <span class="selector-tag">a</span><span class="selector-attr">[Random value between 0 and N]</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>此版本的所有元素對陣列中的一個元素交換<br>雖然接近，但不是隨機排序</p>
-<figure class="highlight dns"><table><tbody><tr><td class="code"><pre><span class="line">數字<span class="number">0</span>分佈</span><br><span class="line"><span class="number">99993,100886</span>,<span class="number">99773,100749</span>,<span class="number">100077,99675</span>,<span class="number">99556,99589</span>,<span class="number">99798,99904</span></span><br><span class="line">數字<span class="number">1</span>分佈</span><br><span class="line"><span class="number">128185,93869</span>,<span class="number">94816,95112</span>,<span class="number">96020,96324</span>,<span class="number">97355,98316</span>,<span class="number">99545,100458</span></span><br><span class="line">數字<span class="number">2</span>分佈</span><br><span class="line"><span class="number">120180,124118</span>,<span class="number">89932,91055</span>,<span class="number">91953,92791</span>,<span class="number">94813,96518</span>,<span class="number">98183,100457</span></span><br><span class="line">數字<span class="number">3</span>分佈</span><br><span class="line"><span class="number">112478,115941</span>,<span class="number">120497,86991</span>,<span class="number">88766,90575</span>,<span class="number">92353,94732</span>,<span class="number">97465,100202</span></span><br><span class="line">數字<span class="number">4</span>分佈</span><br><span class="line"><span class="number">104476,109125</span>,<span class="number">113448,119119</span>,<span class="number">85554,88077</span>,<span class="number">90897,92827</span>,<span class="number">96727,99750</span></span><br><span class="line">數字<span class="number">5</span>分佈</span><br><span class="line"><span class="number">97764,101507</span>,<span class="number">106920,112440</span>,<span class="number">118047,85835</span>,<span class="number">89281,92036</span>,<span class="number">96476,99694</span></span><br><span class="line">數字<span class="number">6</span>分佈</span><br><span class="line"><span class="number">91910,96017</span>,<span class="number">101046,105743</span>,<span class="number">112624,119489</span>,<span class="number">87594,91230</span>,<span class="number">94797,99550</span></span><br><span class="line">數字<span class="number">7</span>分佈</span><br><span class="line"><span class="number">86177,90650</span>,<span class="number">96260,101089</span>,<span class="number">107061,113865</span>,<span class="number">120411,90146</span>,<span class="number">94617,99724</span></span><br><span class="line">數字<span class="number">8</span>分佈</span><br><span class="line"><span class="number">81888,86070</span>,<span class="number">90840,96392</span>,<span class="number">101840,109008</span>,<span class="number">115726,124044</span>,<span class="number">93945,100247</span></span><br><span class="line">數字<span class="number">9</span>分佈</span><br><span class="line"><span class="number">76949,81817</span>,<span class="number">86468,91310</span>,<span class="number">98058,104361</span>,<span class="number">112014,120562</span>,<span class="number">128447,100014</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight dns"><table><tr><td class="code"><pre><span class="line">數字<span class="number">0</span>分佈</span><br><span class="line"><span class="number">99993,100886</span>,<span class="number">99773,100749</span>,<span class="number">100077,99675</span>,<span class="number">99556,99589</span>,<span class="number">99798,99904</span></span><br><span class="line">數字<span class="number">1</span>分佈</span><br><span class="line"><span class="number">128185,93869</span>,<span class="number">94816,95112</span>,<span class="number">96020,96324</span>,<span class="number">97355,98316</span>,<span class="number">99545,100458</span></span><br><span class="line">數字<span class="number">2</span>分佈</span><br><span class="line"><span class="number">120180,124118</span>,<span class="number">89932,91055</span>,<span class="number">91953,92791</span>,<span class="number">94813,96518</span>,<span class="number">98183,100457</span></span><br><span class="line">數字<span class="number">3</span>分佈</span><br><span class="line"><span class="number">112478,115941</span>,<span class="number">120497,86991</span>,<span class="number">88766,90575</span>,<span class="number">92353,94732</span>,<span class="number">97465,100202</span></span><br><span class="line">數字<span class="number">4</span>分佈</span><br><span class="line"><span class="number">104476,109125</span>,<span class="number">113448,119119</span>,<span class="number">85554,88077</span>,<span class="number">90897,92827</span>,<span class="number">96727,99750</span></span><br><span class="line">數字<span class="number">5</span>分佈</span><br><span class="line"><span class="number">97764,101507</span>,<span class="number">106920,112440</span>,<span class="number">118047,85835</span>,<span class="number">89281,92036</span>,<span class="number">96476,99694</span></span><br><span class="line">數字<span class="number">6</span>分佈</span><br><span class="line"><span class="number">91910,96017</span>,<span class="number">101046,105743</span>,<span class="number">112624,119489</span>,<span class="number">87594,91230</span>,<span class="number">94797,99550</span></span><br><span class="line">數字<span class="number">7</span>分佈</span><br><span class="line"><span class="number">86177,90650</span>,<span class="number">96260,101089</span>,<span class="number">107061,113865</span>,<span class="number">120411,90146</span>,<span class="number">94617,99724</span></span><br><span class="line">數字<span class="number">8</span>分佈</span><br><span class="line"><span class="number">81888,86070</span>,<span class="number">90840,96392</span>,<span class="number">101840,109008</span>,<span class="number">115726,124044</span>,<span class="number">93945,100247</span></span><br><span class="line">數字<span class="number">9</span>分佈</span><br><span class="line"><span class="number">76949,81817</span>,<span class="number">86468,91310</span>,<span class="number">98058,104361</span>,<span class="number">112014,120562</span>,<span class="number">128447,100014</span></span><br></pre></td></tr></table></figure>
 
 <p>為何不是隨機排序？ 🤔 目前想不到直觀解釋</p>
 <p>參考維基的證明：<br>總共有$n^n$種選法，但可能的排列只有$n!$種，在$n&gt;2$時並不能整除</p>
@@ -434,8 +438,9 @@
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="qwerty" src="/img/qwerty.png">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="qwerty"
+      src="/img/qwerty.png">
   <p class="site-author-name" itemprop="name">qwerty</p>
   <div class="site-description" itemprop="description">Programming | Computer Science | Thought</div>
 </div>
@@ -463,7 +468,7 @@
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http://github.com/gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
+        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http:&#x2F;&#x2F;github.com&#x2F;gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
       </span>
       <span class="links-of-author-item">
         <span class="exturl" data-url="bWFpbHRvOmdvb2hjbDc3N0BnbWFpbC5jb20=" title="E-Mail → mailto:goohcl777@gmail.com"><i class="fa fa-envelope fa-fw"></i></span>
@@ -480,10 +485,10 @@
     </div>
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https://qwerty777.me">My Main Page</span>
+          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https:&#x2F;&#x2F;qwerty777.me">My Main Page</span>
         </li>
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http://qwerty777.me/life/">My Second Blog -- wysiwyg</span>
+          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http:&#x2F;&#x2F;qwerty777.me&#x2F;life&#x2F;">My Second Blog -- wysiwyg</span>
         </li>
     </ul>
   </div>
@@ -510,7 +515,7 @@
 
 <div class="copyright">
   
-  © 2014 – 
+  &copy; 2014 – 
   <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fab fa-free-code-camp"></i>
@@ -523,7 +528,7 @@
       <span class="post-meta-item-text">總字數：</span>
     <span title="總字數">457k</span>
 </div>
-  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> &amp; <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
   </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61c5cf9cb3476405" async="async"></script>
@@ -543,69 +548,26 @@
   </div>
 
   
-  
-  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
-  
-  
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
 
 
+<script src="/js/schemes/pisces.js"></script>
 
 
+<script src="/js/next-boot.js"></script>
 
-
-
-
-
-
-
-  
-
-
-
-
-  
-  
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div id="pjax">
-  
-
-  
-      
-
-
-
-    
-
-  
-
-
-
-    </div>
-
-
-<script src="/bundle.js"></script><script>var pjax = new Pjax({
+  <script>
+var pjax = new Pjax({
   selectors: [
     'head title',
     '#page-configurations',
@@ -660,7 +622,15 @@ window.addEventListener('pjax:success', () => {
       .bootstrap();
   }
   NexT.utils.updateSidebarPosition();
-});;(function(){
+});
+</script>
+
+
+
+
+  
+  <script data-pjax>
+    (function(){
       var canonicalURL, curProtocol;
       //Get the <link> tag
       var x=document.getElementsByTagName("link");
@@ -682,7 +652,27 @@ window.addEventListener('pjax:success', () => {
       //Get current URL if the canonical URL does not exist
 	    if (!canonicalURL) canonicalURL = window.location.href;
 	    //Assign script content. Replace current URL with the canonical URL
-      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();;if (document.querySelectorAll('pre.mermaid').length) {
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script data-pjax>
+if (document.querySelectorAll('pre.mermaid').length) {
   NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
     mermaid.initialize({
       theme    : 'forest',
@@ -692,7 +682,18 @@ window.addEventListener('pjax:success', () => {
       sequence : { actorMargin: 50 }
     });
   }, window.mermaid);
-};if (typeof MathJax === 'undefined') {
+}
+</script>
+
+
+    <div id="pjax">
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
     window.MathJax = {
       loader: {
           load: ['[tex]/mhchem'],
@@ -740,7 +741,15 @@ window.addEventListener('pjax:success', () => {
     MathJax.startup.document.state(0);
     MathJax.texReset();
     MathJax.typeset();
-  };var disqus_config = function() {
+  }
+</script>
+
+    
+
+  
+
+<script>
+  var disqus_config = function() {
     this.page.url = "http://gitqwerty777.github.io/why-linear-shuffle-works/";
     this.page.identifier = "why-linear-shuffle-works/";
     this.page.title = "隨機排序演算法實作";
@@ -757,4 +766,9 @@ window.addEventListener('pjax:success', () => {
       s.setAttribute('data-timestamp', '' + +new Date());
       (d.head || d.body).appendChild(s);
     }
-  });</script></body></html>
+  });
+</script>
+
+    </div>
+</body>
+</html>

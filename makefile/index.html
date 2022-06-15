@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="zh-TW"><head>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
@@ -9,10 +11,10 @@
   <link rel="mask-icon" href="/img/favicon.png" color="#222">
   <meta name="google-site-verification" content="45plYlJRhxb-g8Tl8seizYgih_JUsmcJRH6oJHplkj0">
 
+<link rel="stylesheet" href="/css/main.css">
 
-
-
-
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
@@ -46,12 +48,12 @@
   };
 </script>
 
-<script data-ad-client="ca-pub-7267358872858108" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script data-ad-client="ca-pub-7267358872858108" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
   <title>建立Makefile | QWERTY</title>
   
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
-    <script data-pjax="">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
+    <script data-pjax>
       if (CONFIG.hostname === location.hostname) {
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -89,13 +91,13 @@
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="QWERTY" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans TC:300,300italic,400,400italic,700,700italic|Cormorant Garamond:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&amp;display=swap&amp;subset=latin,latin-ext"></noscript></head>
+</head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage">
+<body itemscope itemtype="http://schema.org/WebPage">
   <div class="container use-motion">
     <div class="headband"></div>
 
-    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切換導航欄">
@@ -183,7 +185,9 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" placeholder="搜尋..." spellcheck="false" type="search" class="search-input">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
   </div>
   <span class="popup-btn-close">
     <i class="fa fa-times-circle"></i>
@@ -218,16 +222,16 @@
     
   
   
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/makefile/">
 
-    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/img/qwerty.png">
       <meta itemprop="name" content="qwerty">
       <meta itemprop="description" content="Programming | Computer Science | Thought">
     </span>
 
-    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="QWERTY">
     </span>
       <header class="post-header">
@@ -249,7 +253,7 @@
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分類於</span>
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E8%BD%89%E8%BC%89/" itemprop="url" rel="index"><span itemprop="name">轉載</span></a>
                 </span>
             </span>
@@ -287,13 +291,13 @@
 <li><code>#</code>: 註解</li>
 </ul>
 <h3 id="make指令格式"><a href="#make指令格式" class="headerlink" title="make指令格式"></a>make指令格式</h3><p>預設的target是”all”, 若makefile中沒有all, 則是第一個target</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">make [option] [target]</span><br><span class="line">make -n all clean <span class="comment"># 多個target</span></span><br><span class="line">make -f makefile2 install</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">make [option] [target]</span><br><span class="line">make -n all clean <span class="comment"># 多個target</span></span><br><span class="line">make -f makefile2 install</span><br></pre></td></tr></table></figure>
 
 <h3 id="撰寫makefile檔案"><a href="#撰寫makefile檔案" class="headerlink" title="撰寫makefile檔案"></a>撰寫makefile檔案</h3><p>makefile是由一堆「目標」和其「相依性檔案」還有「法則」所組成的    </p>
 <ul>
 <li>[target] 目標 - 產生出來的東西    <ul>
 <li>用了 <code>.PHONY</code> 來指定 clean 為 fake 項目，所以 make 不會去檢查目錄中是否存在了一個名為 clean 的檔案。如此也可以提昇 make 的執行效率<ul>
-<li>常用的偽target<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">.PHONY: all clean install</span><br><span class="line">all: ...</span><br><span class="line">	...</span><br><span class="line">install: myapp app.doc   <span class="comment">#安裝套件</span></span><br><span class="line">     <span class="built_in">cp</span> myapp app.doc /usr/local/myapp/</span><br><span class="line">clean: <span class="comment">#刪除產生出來的目的檔</span></span><br><span class="line">	<span class="built_in">rm</span> -rf *.o</span><br></pre></td></tr></tbody></table></figure></li>
+<li>常用的偽target<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">.PHONY: all clean install</span><br><span class="line">all: ...</span><br><span class="line">	...</span><br><span class="line">install: myapp app.doc   <span class="comment">#安裝套件</span></span><br><span class="line">     <span class="built_in">cp</span> myapp app.doc /usr/local/myapp/</span><br><span class="line">clean: <span class="comment">#刪除產生出來的目的檔</span></span><br><span class="line">	<span class="built_in">rm</span> -rf *.o</span><br></pre></td></tr></table></figure></li>
 </ul>
 </li>
 </ul>
@@ -305,15 +309,15 @@
 </ul>
 </li>
 </ul>
-<figure class="highlight makefile"><table><tbody><tr><td class="code"><pre><span class="line"><span class="section">[target]: [dependency] [dependency]</span></span><br><span class="line">     [rule]</span><br><span class="line">     [rule]</span><br><span class="line"><span class="section">[target]: [dependency]</span></span><br><span class="line">     [rule]</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight makefile"><table><tr><td class="code"><pre><span class="line"><span class="section">[target]: [dependency] [dependency]</span></span><br><span class="line">     [rule]</span><br><span class="line">     [rule]</span><br><span class="line"><span class="section">[target]: [dependency]</span></span><br><span class="line">     [rule]</span><br></pre></td></tr></table></figure>
 
 <p>註1: makefile的命令和shell不同的地方: 每行命令在<strong>分開的shell中獨立執行</strong></p>
-<figure class="highlight makefile"><table><tbody><tr><td class="code"><pre><span class="line"><span class="section">wrongClean:</span></span><br><span class="line">	cd junkdir</span><br><span class="line">	rm -f * <span class="comment"># don't do that! </span></span><br><span class="line"></span><br><span class="line"><span class="section">correctClean1:</span></span><br><span class="line">	cd junkdir &amp;&amp; rm -f *</span><br><span class="line"></span><br><span class="line"><span class="section">correctClean2:</span></span><br><span class="line">	rm -f junkdir/* </span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight makefile"><table><tr><td class="code"><pre><span class="line"><span class="section">wrongClean:</span></span><br><span class="line">	cd junkdir</span><br><span class="line">	rm -f * <span class="comment"># don&#x27;t do that! </span></span><br><span class="line"></span><br><span class="line"><span class="section">correctClean1:</span></span><br><span class="line">	cd junkdir &amp;&amp; rm -f *</span><br><span class="line"></span><br><span class="line"><span class="section">correctClean2:</span></span><br><span class="line">	rm -f junkdir/* </span><br></pre></td></tr></table></figure>
 
 <p><del>如果寫錯的話，至少錯誤的makefile被刪除了</del></p>
 <p>註2: 在命令行首加上<code>@</code>，代表執行程式但不顯示在螢幕上。在命令行首加上<code>-</code>，代表執行命令時回傳非零值仍然繼續執行()</p>
 <p>例：要產生all的話，需要兩個檔案myapp和app.doc(主程式和說明檔)，make開始會去找尋如何產生myapp和 app.doc的方法，所以myapp會成為下一個要產生出來的目標。用gcc main.o a.o b.o -o myapp來產生myapp……，以此類推</p>
-<figure class="highlight makefile"><table><tbody><tr><td class="code"><pre><span class="line"><span class="section">all: myapp app.doc</span></span><br><span class="line"><span class="section">myapp: main.o a.o b.o</span></span><br><span class="line">     gcc main.o a.o b.o -o myapp</span><br><span class="line"><span class="section">main.o: main.c a.h</span></span><br><span class="line">     gcc -c main.c</span><br><span class="line"><span class="section">a.o: a.c a.h</span></span><br><span class="line">     gcc -c a.c</span><br><span class="line"><span class="section">b.o: b.c b.h</span></span><br><span class="line">     gcc -c b.c</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight makefile"><table><tr><td class="code"><pre><span class="line"><span class="section">all: myapp app.doc</span></span><br><span class="line"><span class="section">myapp: main.o a.o b.o</span></span><br><span class="line">     gcc main.o a.o b.o -o myapp</span><br><span class="line"><span class="section">main.o: main.c a.h</span></span><br><span class="line">     gcc -c main.c</span><br><span class="line"><span class="section">a.o: a.c a.h</span></span><br><span class="line">     gcc -c a.c</span><br><span class="line"><span class="section">b.o: b.c b.h</span></span><br><span class="line">     gcc -c b.c</span><br></pre></td></tr></table></figure>
 
 <blockquote>
 <p>在makefile中, 相依性順序是很重要的</p>
@@ -334,13 +338,13 @@
 </ul>
 </li>
 <li><code>make</code>可以直接設定變數<ul>
-<li><code>make CFLAGS="-g -Wall"</code></li>
-<li><code>CFLAGS="-g -Wall" make</code></li>
+<li><code>make CFLAGS=&quot;-g -Wall&quot;</code></li>
+<li><code>CFLAGS=&quot;-g -Wall&quot; make</code></li>
 </ul>
 </li>
 <li>在makefile中設定<ul>
 <li><code>?=</code>：若變數未定義，則替它指定新的值。否則，採用原有的值。  <ul>
-<li><code>FOO ?= bar</code>： 若 FOO 未定義，則 FOO = bar；若 FOO 已定義，則 FOO 的值維持不變。</li>
+<li><code>FOO ?= bar</code>： 若 FOO 未定義，則 FOO &#x3D; bar；若 FOO 已定義，則 FOO 的值維持不變。</li>
 </ul>
 </li>
 </ul>
@@ -349,8 +353,8 @@
 <p>指定時，等號兩側不可有空格</p>
 <p>改變副檔名  </p>
 <ul>
-<li>SRC=a.c b.c</li>
-<li>OBJ=$(SRC:.c=.o) # equals to a.o b.o</li>
+<li>SRC&#x3D;a.c b.c</li>
+<li>OBJ&#x3D;$(SRC:.c&#x3D;.o) # equals to a.o b.o</li>
 </ul>
 <p>有幾個特別的內部巨集，讓makeifle更加簡明  </p>
 <ul>
@@ -364,9 +368,9 @@
 <li><code>-</code> 即使該行指令出錯，也不會中斷執行</li>
 <li><code>@</code> 不會在terminal顯示該行命令</li>
 </ul>
-<figure class="highlight makefile"><table><tbody><tr><td class="code"><pre><span class="line">CC = gcc</span><br><span class="line">CFLAGS = -Wall -ansi -g</span><br><span class="line">OBJS = main.o a.o b.o</span><br><span class="line">INSTALL_PATH = /usr/local/myapp/</span><br><span class="line"></span><br><span class="line"><span class="section">all: myapp app.doc</span></span><br><span class="line"><span class="section">myapp: <span class="variable">$(OBJS)</span></span></span><br><span class="line">     <span class="variable">$(CC)</span> <span class="variable">$(OBJS)</span> -o <span class="variable">$@</span></span><br><span class="line"><span class="section">main.o: main.c a.h</span></span><br><span class="line">     <span class="variable">$(CC)</span> <span class="variable">$(CFLAGS)</span> -c -o <span class="variable">$@</span> <span class="variable">$&lt;</span></span><br><span class="line"><span class="section">a.o: a.c a.h</span></span><br><span class="line">     <span class="variable">$(CC)</span> <span class="variable">$(CFLAGS)</span> -c -o <span class="variable">$@</span> <span class="variable">$&lt;</span></span><br><span class="line"><span class="section">b.o: b.c b.h</span></span><br><span class="line">     <span class="variable">$(CC)</span> <span class="variable">$(CFLAGS)</span> -c -o <span class="variable">$@</span> <span class="variable">$&lt;</span></span><br><span class="line"><span class="section">install: myapp app.doc</span></span><br><span class="line">     cp myapp app.doc <span class="variable">$(INSTALL_PATH)</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight makefile"><table><tr><td class="code"><pre><span class="line">CC = gcc</span><br><span class="line">CFLAGS = -Wall -ansi -g</span><br><span class="line">OBJS = main.o a.o b.o</span><br><span class="line">INSTALL_PATH = /usr/local/myapp/</span><br><span class="line"></span><br><span class="line"><span class="section">all: myapp app.doc</span></span><br><span class="line"><span class="section">myapp: <span class="variable">$(OBJS)</span></span></span><br><span class="line">     <span class="variable">$(CC)</span> <span class="variable">$(OBJS)</span> -o <span class="variable">$@</span></span><br><span class="line"><span class="section">main.o: main.c a.h</span></span><br><span class="line">     <span class="variable">$(CC)</span> <span class="variable">$(CFLAGS)</span> -c -o <span class="variable">$@</span> <span class="variable">$&lt;</span></span><br><span class="line"><span class="section">a.o: a.c a.h</span></span><br><span class="line">     <span class="variable">$(CC)</span> <span class="variable">$(CFLAGS)</span> -c -o <span class="variable">$@</span> <span class="variable">$&lt;</span></span><br><span class="line"><span class="section">b.o: b.c b.h</span></span><br><span class="line">     <span class="variable">$(CC)</span> <span class="variable">$(CFLAGS)</span> -c -o <span class="variable">$@</span> <span class="variable">$&lt;</span></span><br><span class="line"><span class="section">install: myapp app.doc</span></span><br><span class="line">     cp myapp app.doc <span class="variable">$(INSTALL_PATH)</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="Makefile-隱性法則-implicit-rule"><a href="#Makefile-隱性法則-implicit-rule" class="headerlink" title="Makefile 隱性法則(implicit rule)"></a>Makefile 隱性法則(implicit rule)</h2><figure class="highlight makefile"><table><tbody><tr><td class="code"><pre><span class="line">CC = gcc</span><br><span class="line">CFLAGS = -Wall -ansi -g</span><br><span class="line">OBJS = main.o a.o b.o</span><br><span class="line"></span><br><span class="line"><span class="section">all: myapp app.doc</span></span><br><span class="line"><span class="section">myapp: <span class="variable">$(OBJS)</span></span></span><br><span class="line">     <span class="variable">$(CC)</span> <span class="variable">$(OBJS)</span> -o <span class="variable">$@</span></span><br><span class="line"><span class="section">main.o: main.c a.h</span></span><br><span class="line"><span class="section">a.o: a.c a.h</span></span><br><span class="line"><span class="section">b.o: b.c b.h</span></span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Makefile-隱性法則-implicit-rule"><a href="#Makefile-隱性法則-implicit-rule" class="headerlink" title="Makefile 隱性法則(implicit rule)"></a>Makefile 隱性法則(implicit rule)</h2><figure class="highlight makefile"><table><tr><td class="code"><pre><span class="line">CC = gcc</span><br><span class="line">CFLAGS = -Wall -ansi -g</span><br><span class="line">OBJS = main.o a.o b.o</span><br><span class="line"></span><br><span class="line"><span class="section">all: myapp app.doc</span></span><br><span class="line"><span class="section">myapp: <span class="variable">$(OBJS)</span></span></span><br><span class="line">     <span class="variable">$(CC)</span> <span class="variable">$(OBJS)</span> -o <span class="variable">$@</span></span><br><span class="line"><span class="section">main.o: main.c a.h</span></span><br><span class="line"><span class="section">a.o: a.c a.h</span></span><br><span class="line"><span class="section">b.o: b.c b.h</span></span><br></pre></td></tr></table></figure>
 
 <p>makefile會在main.o自動產生規則 <code>gcc -Wall -ansi -g -c -o main.o main.c</code>  </p>
 <ul>
@@ -376,12 +380,12 @@
 </ul>
 <p><span class="exturl" data-url="aHR0cHM6Ly93d3cuZ251Lm9yZy9zb2Z0d2FyZS9tYWtlL21hbnVhbC9odG1sX25vZGUvQ2F0YWxvZ3VlLW9mLVJ1bGVzLmh0bWwjQ2F0YWxvZ3VlLW9mLVJ1bGVz">隱性法則列表<i class="fa fa-external-link-alt"></i></span></p>
 <h2 id="Makefile-檔尾法則"><a href="#Makefile-檔尾法則" class="headerlink" title="Makefile 檔尾法則"></a>Makefile 檔尾法則</h2><p>使用檔尾的延伸檔名作為法則，格式 <code>.[old_suffix].[new_suffix]</code>  </p>
-<figure class="highlight makefile"><table><tbody><tr><td class="code"><pre><span class="line"><span class="section">.c.o:</span></span><br><span class="line">     <span class="variable">$(CC)</span> <span class="variable">$(CFLAGS)</span> -c -o <span class="variable">$@</span> <span class="variable">$&lt;</span></span><br><span class="line"><span class="section">.cpp.o:</span></span><br><span class="line">     g++ -c <span class="variable">$&lt;</span></span><br><span class="line"></span><br><span class="line">INCLUDE_PATH = <span class="keyword">include</span></span><br><span class="line"></span><br><span class="line"><span class="section">all: myapp.exe app.doc</span></span><br><span class="line"><span class="section">myapp.exe: <span class="variable">$(OBJS)</span></span></span><br><span class="line">     <span class="variable">$(CC)</span> <span class="variable">$(OBJS)</span> -o <span class="variable">$@</span></span><br><span class="line"><span class="section">.c.o:</span></span><br><span class="line">     <span class="variable">$(CC)</span> -I<span class="variable">$(INCLUDE_PATH)</span> <span class="variable">$(CFLAGS)</span> -c -o <span class="variable">$@</span> <span class="variable">$&lt;</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight makefile"><table><tr><td class="code"><pre><span class="line"><span class="section">.c.o:</span></span><br><span class="line">     <span class="variable">$(CC)</span> <span class="variable">$(CFLAGS)</span> -c -o <span class="variable">$@</span> <span class="variable">$&lt;</span></span><br><span class="line"><span class="section">.cpp.o:</span></span><br><span class="line">     g++ -c <span class="variable">$&lt;</span></span><br><span class="line"></span><br><span class="line">INCLUDE_PATH = <span class="keyword">include</span></span><br><span class="line"></span><br><span class="line"><span class="section">all: myapp.exe app.doc</span></span><br><span class="line"><span class="section">myapp.exe: <span class="variable">$(OBJS)</span></span></span><br><span class="line">     <span class="variable">$(CC)</span> <span class="variable">$(OBJS)</span> -o <span class="variable">$@</span></span><br><span class="line"><span class="section">.c.o:</span></span><br><span class="line">     <span class="variable">$(CC)</span> -I<span class="variable">$(INCLUDE_PATH)</span> <span class="variable">$(CFLAGS)</span> -c -o <span class="variable">$@</span> <span class="variable">$&lt;</span></span><br></pre></td></tr></table></figure>
 
 <p>檔尾法則只可以用在本目錄</p>
 <p>這目錄下面所有的.c檔變成.o檔，而法則就是去編譯它，而如果你想更懶一點的話還可以完全不寫，直接使用內建的法則，這樣也可以直接把目錄下面的所有檔都編好，為什麼呢？因為你要編出myapp的時候需要使用到$(OBJS)所以，就算你不寫.c.o或是任何的法則，make預設都會自己產生.o檔讓你可以連結出主程式。  </p>
 <p>makefile也有支援萬用字元  </p>
-<figure class="highlight makefile"><table><tbody><tr><td class="code"><pre><span class="line"><span class="section">%.o: %.c</span></span><br><span class="line">     <span class="variable">$(CC)</span> -I<span class="variable">$(INCLUDE_PATH)</span> <span class="variable">$(CFLAGS)</span> -c -o <span class="variable">$@</span> <span class="variable">$&lt;</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight makefile"><table><tr><td class="code"><pre><span class="line"><span class="section">%.o: %.c</span></span><br><span class="line">     <span class="variable">$(CC)</span> -I<span class="variable">$(INCLUDE_PATH)</span> <span class="variable">$(CFLAGS)</span> -c -o <span class="variable">$@</span> <span class="variable">$&lt;</span></span><br></pre></td></tr></table></figure>
 
 <p>萬用字元法則比較適合用於編譯一個大型的函式庫，而檔尾法則適合編譯一個目錄下面所有的檔案。</p>
 <h2 id="專案討論"><a href="#專案討論" class="headerlink" title="專案討論"></a>專案討論</h2><h3 id="Make-Makefile-with-Release-and-Debug-build"><a href="#Make-Makefile-with-Release-and-Debug-build" class="headerlink" title="Make Makefile with Release and Debug build"></a>Make Makefile with Release and Debug build</h3><p><span class="exturl" data-url="aHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL3F1ZXN0aW9ucy83OTIyMTcvc2ltcGxlLW1ha2VmaWxlLXdpdGgtcmVsZWFzZS1hbmQtZGVidWctYnVpbGRzLWJlc3QtcHJhY3RpY2Vz">simple-makefile-with-release-and-debug-builds-best-practices<i class="fa fa-external-link-alt"></i></span><br><span class="exturl" data-url="aHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL3F1ZXN0aW9ucy8xMDc5ODMyL2hvdy1jYW4taS1jb25maWd1cmUtbXktbWFrZWZpbGUtZm9yLWRlYnVnLWFuZC1yZWxlYXNlLWJ1aWxkcw==">how-can-i-configure-my-makefile-for-debug-and-release-builds<i class="fa fa-external-link-alt"></i></span></p>
@@ -514,13 +518,14 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8make%E5%A5%BD%E8%99%95"><span class="nav-number">1.</span> <span class="nav-text">使用make好處</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#make%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4"><span class="nav-number">2.</span> <span class="nav-text">make常用指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#make%E6%8C%87%E4%BB%A4%E6%A0%BC%E5%BC%8F"><span class="nav-number">3.</span> <span class="nav-text">make指令格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%92%B0%E5%AF%ABmakefile%E6%AA%94%E6%A1%88"><span class="nav-number">4.</span> <span class="nav-text">撰寫makefile檔案</span></a></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#Makefile%E7%9A%84%E8%AE%8A%E6%95%B8%E5%92%8C%E5%B7%A8%E9%9B%86-macro"><span class="nav-number"></span> <span class="nav-text">Makefile的變數和巨集(macro)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Makefile-%E9%9A%B1%E6%80%A7%E6%B3%95%E5%89%87-implicit-rule"><span class="nav-number"></span> <span class="nav-text">Makefile 隱性法則(implicit rule)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Makefile-%E6%AA%94%E5%B0%BE%E6%B3%95%E5%89%87"><span class="nav-number"></span> <span class="nav-text">Makefile 檔尾法則</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%88%E6%A1%88%E8%A8%8E%E8%AB%96"><span class="nav-number"></span> <span class="nav-text">專案討論</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Make-Makefile-with-Release-and-Debug-build"><span class="nav-number">1.</span> <span class="nav-text">Make Makefile with Release and Debug build</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99"><span class="nav-number"></span> <span class="nav-text">參考資料</span></a></li></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8make%E5%A5%BD%E8%99%95"><span class="nav-number">1.</span> <span class="nav-text">使用make好處</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#make%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4"><span class="nav-number">2.</span> <span class="nav-text">make常用指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#make%E6%8C%87%E4%BB%A4%E6%A0%BC%E5%BC%8F"><span class="nav-number">3.</span> <span class="nav-text">make指令格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%92%B0%E5%AF%ABmakefile%E6%AA%94%E6%A1%88"><span class="nav-number">4.</span> <span class="nav-text">撰寫makefile檔案</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Makefile%E7%9A%84%E8%AE%8A%E6%95%B8%E5%92%8C%E5%B7%A8%E9%9B%86-macro"><span class="nav-number"></span> <span class="nav-text">Makefile的變數和巨集(macro)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Makefile-%E9%9A%B1%E6%80%A7%E6%B3%95%E5%89%87-implicit-rule"><span class="nav-number"></span> <span class="nav-text">Makefile 隱性法則(implicit rule)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Makefile-%E6%AA%94%E5%B0%BE%E6%B3%95%E5%89%87"><span class="nav-number"></span> <span class="nav-text">Makefile 檔尾法則</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%88%E6%A1%88%E8%A8%8E%E8%AB%96"><span class="nav-number"></span> <span class="nav-text">專案討論</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Make-Makefile-with-Release-and-Debug-build"><span class="nav-number">1.</span> <span class="nav-text">Make Makefile with Release and Debug build</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99"><span class="nav-number"></span> <span class="nav-text">參考資料</span></a></div>
       </div>
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="qwerty" src="/img/qwerty.png">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="qwerty"
+      src="/img/qwerty.png">
   <p class="site-author-name" itemprop="name">qwerty</p>
   <div class="site-description" itemprop="description">Programming | Computer Science | Thought</div>
 </div>
@@ -548,7 +553,7 @@
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http://github.com/gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
+        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http:&#x2F;&#x2F;github.com&#x2F;gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
       </span>
       <span class="links-of-author-item">
         <span class="exturl" data-url="bWFpbHRvOmdvb2hjbDc3N0BnbWFpbC5jb20=" title="E-Mail → mailto:goohcl777@gmail.com"><i class="fa fa-envelope fa-fw"></i></span>
@@ -565,10 +570,10 @@
     </div>
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https://qwerty777.me">My Main Page</span>
+          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https:&#x2F;&#x2F;qwerty777.me">My Main Page</span>
         </li>
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http://qwerty777.me/life/">My Second Blog -- wysiwyg</span>
+          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http:&#x2F;&#x2F;qwerty777.me&#x2F;life&#x2F;">My Second Blog -- wysiwyg</span>
         </li>
     </ul>
   </div>
@@ -595,7 +600,7 @@
 
 <div class="copyright">
   
-  © 2014 – 
+  &copy; 2014 – 
   <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fab fa-free-code-camp"></i>
@@ -608,7 +613,7 @@
       <span class="post-meta-item-text">總字數：</span>
     <span title="總字數">457k</span>
 </div>
-  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> &amp; <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
   </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61c5cf9cb3476405" async="async"></script>
@@ -628,69 +633,26 @@
   </div>
 
   
-  
-  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
-  
-  
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
 
 
+<script src="/js/schemes/pisces.js"></script>
 
 
+<script src="/js/next-boot.js"></script>
 
-
-
-
-
-
-
-  
-
-
-
-
-  
-  
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div id="pjax">
-  
-
-  
-      
-
-
-
-    
-
-  
-
-
-
-    </div>
-
-
-<script src="/bundle.js"></script><script>var pjax = new Pjax({
+  <script>
+var pjax = new Pjax({
   selectors: [
     'head title',
     '#page-configurations',
@@ -745,7 +707,15 @@ window.addEventListener('pjax:success', () => {
       .bootstrap();
   }
   NexT.utils.updateSidebarPosition();
-});;(function(){
+});
+</script>
+
+
+
+
+  
+  <script data-pjax>
+    (function(){
       var canonicalURL, curProtocol;
       //Get the <link> tag
       var x=document.getElementsByTagName("link");
@@ -767,7 +737,27 @@ window.addEventListener('pjax:success', () => {
       //Get current URL if the canonical URL does not exist
 	    if (!canonicalURL) canonicalURL = window.location.href;
 	    //Assign script content. Replace current URL with the canonical URL
-      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();;if (document.querySelectorAll('pre.mermaid').length) {
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script data-pjax>
+if (document.querySelectorAll('pre.mermaid').length) {
   NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
     mermaid.initialize({
       theme    : 'forest',
@@ -777,7 +767,18 @@ window.addEventListener('pjax:success', () => {
       sequence : { actorMargin: 50 }
     });
   }, window.mermaid);
-};if (typeof MathJax === 'undefined') {
+}
+</script>
+
+
+    <div id="pjax">
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
     window.MathJax = {
       loader: {
           load: ['[tex]/mhchem'],
@@ -825,7 +826,15 @@ window.addEventListener('pjax:success', () => {
     MathJax.startup.document.state(0);
     MathJax.texReset();
     MathJax.typeset();
-  };var disqus_config = function() {
+  }
+</script>
+
+    
+
+  
+
+<script>
+  var disqus_config = function() {
     this.page.url = "http://gitqwerty777.github.io/makefile/";
     this.page.identifier = "makefile/";
     this.page.title = "建立Makefile";
@@ -842,4 +851,9 @@ window.addEventListener('pjax:success', () => {
       s.setAttribute('data-timestamp', '' + +new Date());
       (d.head || d.body).appendChild(s);
     }
-  });</script></body></html>
+  });
+</script>
+
+    </div>
+</body>
+</html>
