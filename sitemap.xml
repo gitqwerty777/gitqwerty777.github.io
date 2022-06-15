@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://gitqwerty777.github.io/about/index.html</loc>
+    
+    <lastmod>2022-06-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://gitqwerty777.github.io/draw-diagram-by-text/</loc>
     
     <lastmod>2022-05-25</lastmod>
@@ -65,33 +74,6 @@
   </url>
   
   <url>
-    <loc>http://gitqwerty777.github.io/recommender-wide-and-deep/</loc>
-    
-    <lastmod>2022-04-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://gitqwerty777.github.io/rss-social-network/</loc>
-    
-    <lastmod>2022-04-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://gitqwerty777.github.io/unicode/</loc>
-    
-    <lastmod>2022-04-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://gitqwerty777.github.io/unity5-tutorial-survival-shooter/</loc>
     
     <lastmod>2022-04-01</lastmod>
@@ -119,25 +101,7 @@
   </url>
   
   <url>
-    <loc>http://gitqwerty777.github.io/natural-language-processing/</loc>
-    
-    <lastmod>2022-04-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://gitqwerty777.github.io/categories/index.html</loc>
-    
-    <lastmod>2022-04-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://gitqwerty777.github.io/about/index.html</loc>
     
     <lastmod>2022-04-01</lastmod>
     
@@ -156,15 +120,6 @@
   
   <url>
     <loc>http://gitqwerty777.github.io/Counterfactual-Regret-Minimization/</loc>
-    
-    <lastmod>2022-04-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://gitqwerty777.github.io/MLfoundation2/</loc>
     
     <lastmod>2022-04-01</lastmod>
     
@@ -236,34 +191,7 @@
   </url>
   
   <url>
-    <loc>http://gitqwerty777.github.io/factorization-machines/</loc>
-    
-    <lastmod>2022-04-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://gitqwerty777.github.io/foreign-language-police/</loc>
-    
-    <lastmod>2022-04-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://gitqwerty777.github.io/gdb-introduction/</loc>
-    
-    <lastmod>2022-04-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://gitqwerty777.github.io/git-introduction/</loc>
     
     <lastmod>2022-04-01</lastmod>
     
@@ -299,15 +227,6 @@
   </url>
   
   <url>
-    <loc>http://gitqwerty777.github.io/ifttt/</loc>
-    
-    <lastmod>2022-04-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://gitqwerty777.github.io/install-boshiamy-in-linux-by-fcitx/</loc>
     
     <lastmod>2022-04-01</lastmod>
@@ -335,15 +254,6 @@
   </url>
   
   <url>
-    <loc>http://gitqwerty777.github.io/mementos-pattern/</loc>
-    
-    <lastmod>2022-04-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://gitqwerty777.github.io/observer-pattern/</loc>
     
     <lastmod>2022-04-01</lastmod>
@@ -362,52 +272,7 @@
   </url>
   
   <url>
-    <loc>http://gitqwerty777.github.io/MLfoundation1/</loc>
-    
-    <lastmod>2022-04-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://gitqwerty777.github.io/MLtechnique/</loc>
-    
-    <lastmod>2022-04-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://gitqwerty777.github.io/cleancode/</loc>
-    
-    <lastmod>2022-04-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://gitqwerty777.github.io/computer-architecture1/</loc>
-    
-    <lastmod>2022-04-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://gitqwerty777.github.io/computer-architecture2/</loc>
-    
-    <lastmod>2022-04-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://gitqwerty777.github.io/computer-network1/</loc>
     
     <lastmod>2022-04-01</lastmod>
     
@@ -434,15 +299,6 @@
   </url>
   
   <url>
-    <loc>http://gitqwerty777.github.io/linux-tips/</loc>
-    
-    <lastmod>2022-04-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://gitqwerty777.github.io/reactjs/</loc>
     
     <lastmod>2022-04-01</lastmod>
@@ -461,54 +317,63 @@
   </url>
   
   <url>
-    <loc>http://gitqwerty777.github.io/economics/</loc>
-    
-    <lastmod>2022-04-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://gitqwerty777.github.io/natural-language-processing2/</loc>
-    
-    <lastmod>2022-04-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://gitqwerty777.github.io/artificial-intelligence/</loc>
-    
-    <lastmod>2022-04-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://gitqwerty777.github.io/computer-gaming/</loc>
-    
-    <lastmod>2022-04-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://gitqwerty777.github.io/economics2/</loc>
-    
-    <lastmod>2022-04-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://gitqwerty777.github.io/linux-screen-tmux-byobu/</loc>
     
     <lastmod>2022-02-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://gitqwerty777.github.io/factorization-machines/</loc>
+    
+    <lastmod>2022-01-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://gitqwerty777.github.io/ifttt/</loc>
+    
+    <lastmod>2022-01-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://gitqwerty777.github.io/recommender-wide-and-deep/</loc>
+    
+    <lastmod>2021-12-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://gitqwerty777.github.io/mementos-pattern/</loc>
+    
+    <lastmod>2020-11-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://gitqwerty777.github.io/unicode/</loc>
+    
+    <lastmod>2020-10-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://gitqwerty777.github.io/foreign-language-police/</loc>
+    
+    <lastmod>2020-09-13</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -542,9 +407,27 @@
   </url>
   
   <url>
+    <loc>http://gitqwerty777.github.io/rss-social-network/</loc>
+    
+    <lastmod>2020-06-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://gitqwerty777.github.io/cmake/</loc>
     
     <lastmod>2017-01-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://gitqwerty777.github.io/economics2/</loc>
+    
+    <lastmod>2016-03-07</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -560,6 +443,15 @@
   </url>
   
   <url>
+    <loc>http://gitqwerty777.github.io/git-introduction/</loc>
+    
+    <lastmod>2015-07-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://gitqwerty777.github.io/Emacs-tips/</loc>
     
     <lastmod>2015-05-02</lastmod>
@@ -569,9 +461,117 @@
   </url>
   
   <url>
+    <loc>http://gitqwerty777.github.io/natural-language-processing2/</loc>
+    
+    <lastmod>2015-05-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://gitqwerty777.github.io/natural-language-processing/</loc>
+    
+    <lastmod>2015-03-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://gitqwerty777.github.io/economics/</loc>
+    
+    <lastmod>2015-02-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://gitqwerty777.github.io/artificial-intelligence/</loc>
+    
+    <lastmod>2015-02-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://gitqwerty777.github.io/computer-architecture2/</loc>
+    
+    <lastmod>2014-11-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://gitqwerty777.github.io/MLtechnique/</loc>
+    
+    <lastmod>2014-11-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://gitqwerty777.github.io/MLfoundation2/</loc>
+    
+    <lastmod>2014-10-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://gitqwerty777.github.io/computer-gaming/</loc>
+    
+    <lastmod>2014-09-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://gitqwerty777.github.io/computer-network1/</loc>
+    
+    <lastmod>2014-09-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://gitqwerty777.github.io/computer-architecture1/</loc>
+    
+    <lastmod>2014-09-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://gitqwerty777.github.io/regular-expression/</loc>
     
     <lastmod>2014-09-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://gitqwerty777.github.io/MLfoundation1/</loc>
+    
+    <lastmod>2014-09-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://gitqwerty777.github.io/linux-tips/</loc>
+    
+    <lastmod>2014-06-17</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

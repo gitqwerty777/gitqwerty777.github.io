@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 6.1.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png">
-  <link rel="mask-icon" href="/img/favicon.png" color="#222">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.webp">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.webp">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.webp">
+  <link rel="mask-icon" href="/img/favicon.webp" color="#222">
   <meta name="google-site-verification" content="45plYlJRhxb-g8Tl8seizYgih_JUsmcJRH6oJHplkj0">
 
 <link rel="stylesheet" href="/css/main.css">
@@ -28,12 +28,12 @@
 <meta property="og:site_name" content="QWERTY">
 <meta property="og:description" content="尚未寫完">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="http://gitqwerty777.github.io/img/ML/bestline.png">
-<meta property="og:image" content="http://gitqwerty777.github.io/img/ML/circle.png">
-<meta property="og:image" content="http://gitqwerty777.github.io/img/ML/fat.png">
-<meta property="og:image" content="http://gitqwerty777.github.io/img/ML/funtime1.png">
-<meta property="og:image" content="http://gitqwerty777.github.io/img/ML/wtxx.png">
-<meta property="og:image" content="http://gitqwerty777.github.io/img/ML/distancexbw.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/ML/bestline.webp">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/ML/circle.webp">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/ML/fat.webp">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/ML/funtime1.webp">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/ML/wtxx.webp">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/ML/distancexbw.webp">
 <meta property="og:image" content="http://gitqwerty777.github.io/">
 <meta property="og:image" content="http://gitqwerty777.github.io/">
 <meta property="og:image" content="http://gitqwerty777.github.io/">
@@ -112,11 +112,11 @@
 <meta property="og:image" content="http://gitqwerty777.github.io/">
 <meta property="og:image" content="http://gitqwerty777.github.io/">
 <meta property="article:published_time" content="2014-11-21T13:40:00.000Z">
-<meta property="article:modified_time" content="2022-04-01T16:57:25.640Z">
+<meta property="article:modified_time" content="2014-11-21T13:40:00.000Z">
 <meta property="article:author" content="qwerty">
 <meta property="article:tag" content="機器學習">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://gitqwerty777.github.io/img/ML/bestline.png">
+<meta name="twitter:image" content="http://gitqwerty777.github.io/img/ML/bestline.webp">
 
 <link rel="canonical" href="http://gitqwerty777.github.io/MLtechnique/">
 
@@ -309,7 +309,7 @@
     <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/MLtechnique/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/img/qwerty.png">
+      <meta itemprop="image" content="/img/qwerty.webp">
       <meta itemprop="name" content="qwerty">
       <meta itemprop="description" content="Programming | Computer Science | Thought">
     </span>
@@ -363,10 +363,10 @@
 <p>尚未寫完</p>
 </blockquote>
 <span id="more"></span>
-<h2 id="Chap01-SVM"><a href="#Chap01-SVM" class="headerlink" title="Chap01 SVM"></a>Chap01 SVM</h2><p>All line is the same using PLA, but WHICH line is best? <img data-src="/img/ML/bestline.png"><br>→ 可以容忍的誤差愈大愈好(最近的點與分隔線的距離愈遠愈好) <img data-src="/img/ML/circle.png"><br>→ fat hyperplane (large <strong>margin</strong>)(分隔線可以多寬) <img data-src="/img/ML/fat.png"></p>
-<p>若只有兩個點，必通過兩點連線之中垂線 <img data-src="/img/ML/funtime1.png"> </p>
+<h2 id="Chap01-SVM"><a href="#Chap01-SVM" class="headerlink" title="Chap01 SVM"></a>Chap01 SVM</h2><p>All line is the same using PLA, but WHICH line is best? <img data-src="/img/ML/bestline.webp"><br>→ 可以容忍的誤差愈大愈好(最近的點與分隔線的距離愈遠愈好) <img data-src="/img/ML/circle.webp"><br>→ fat hyperplane (large <strong>margin</strong>)(分隔線可以多寬) <img data-src="/img/ML/fat.webp"></p>
+<p>若只有兩個點，必通過兩點連線之中垂線 <img data-src="/img/ML/funtime1.webp"> </p>
 <h3 id="Standard-large-margin-hyperplane-problem"><a href="#Standard-large-margin-hyperplane-problem" class="headerlink" title="Standard large-margin hyperplane problem"></a>Standard large-margin hyperplane problem</h3><p>max fatness(w) (max margin)<br>&#x3D; min distance($x_n$, w) (n &#x3D; 1 ~ N)<br>&#x3D; min distance($x_n$, b, w) – (1)<br>因為 w0 不列入計算(w0 &#x3D; 常數項參數 &#x3D; 截距b, x0 必為 1)</p>
-<p><img data-src="/img/ML/wtxx.png"><br>$w^tx$ &#x3D; 0 → x除去x0成為x’ → $w^tx’$ + b &#x3D; 0<br>設x’, x’’都在$w^tx’$ + b &#x3D; 0平面上，$w^tx’$ &#x3D; -b, $w^tx’’$ &#x3D; -b → $w^t(x’’-x’)$ &#x3D; 0<br>$w^t$ 垂直於 $w^tx’$ + b &#x3D; 0平面<br>distance(x, b, w) &#x3D; x 到 平面的距離 <img data-src="/img/ML/distancexbw.png">   </p>
+<p><img data-src="/img/ML/wtxx.webp"><br>$w^tx$ &#x3D; 0 → x除去x0成為x’ → $w^tx’$ + b &#x3D; 0<br>設x’, x’’都在$w^tx’$ + b &#x3D; 0平面上，$w^tx’$ &#x3D; -b, $w^tx’’$ &#x3D; -b → $w^t(x’’-x’)$ &#x3D; 0<br>$w^t$ 垂直於 $w^tx’$ + b &#x3D; 0平面<br>distance(x, b, w) &#x3D; x 到 平面的距離 <img data-src="/img/ML/distancexbw.webp">   </p>
 <p>單一data的distance: 因 $y_n(w^t x_n + b) &gt; 0$<br>$distance(x_n, b, w) &#x3D; (1&#x2F;|w|) * y_n(w^t x_n + b)$ – (2)  </p>
 <p>specialize<br>令 $min y_n(w^t x_n + b) &#x3D; 1$<br>→ $distance(x_n, b, w) &#x3D; 1&#x2F;|w|$<br>由式子(1),(2)可得 max margin &#x3D; min distance(x_n, b, w) &#x3D; 1&#x2F;|w|<br>條件為 $min y_n(w^t x_n + b) &#x3D; 1$</p>
 <p>放鬆條件<br>$y_n(w_t x_n + b) &gt;&#x3D; 1$ is necessary constraints for $ min y_n(w_t x_n + b) &#x3D; 1$<br>if all y_n(w_t x_n + b) &gt; p &gt; 1 -&gt; can generate more optimal answer (b&#x2F;p, w&#x2F;p) -&gt; distance 1&#x2F;|w| is smaller<br>so y_n(w_t x_n + b) &gt;&#x3D; 1 → y_n(w_t x_n + b) &#x3D; 1  </p>
@@ -666,7 +666,7 @@ return G = a * phi(x)
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="qwerty"
-      src="/img/qwerty.png">
+      src="/img/qwerty.webp">
   <p class="site-author-name" itemprop="name">qwerty</p>
   <div class="site-description" itemprop="description">Programming | Computer Science | Thought</div>
 </div>

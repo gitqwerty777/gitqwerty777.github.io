@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>QWERTY</title>
-  <icon>http://gitqwerty777.github.io/icon.png</icon>
+  <icon>http://gitqwerty777.github.io/icon.webp</icon>
   <subtitle>Hello World!</subtitle>
   <link href="http://gitqwerty777.github.io/atom.xml" rel="self"/>
   
@@ -24,7 +24,7 @@
     <updated>2022-05-25T02:31:46.000Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/img/Other/elegant.png&quot;&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/img/Other/elegant.webp&quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;本篇介紹用語法來畫圖的方法&lt;/p&gt;
 &lt;/blockquote&gt;</summary>
@@ -155,7 +155,7 @@
     <link href="http://gitqwerty777.github.io/factorization-machines/"/>
     <id>http://gitqwerty777.github.io/factorization-machines/</id>
     <published>2022-01-21T03:11:11.000Z</published>
-    <updated>2022-04-01T16:57:25.640Z</updated>
+    <updated>2022-01-21T03:11:11.000Z</updated>
     
     
     <summary type="html">FM速度快、容易實作，於2012~14年為業界主流模型</summary>
@@ -209,7 +209,7 @@
     <link href="http://gitqwerty777.github.io/ifttt/"/>
     <id>http://gitqwerty777.github.io/ifttt/</id>
     <published>2022-01-04T07:18:44.000Z</published>
-    <updated>2022-04-01T16:57:25.640Z</updated>
+    <updated>2022-01-04T07:18:44.000Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;簡介&quot;&gt;&lt;a href=&quot;#簡介&quot; class=&quot;headerlink&quot; title=&quot;簡介&quot;&gt;&lt;/a&gt;簡介&lt;/h2&gt;&lt;ul&gt;
@@ -240,7 +240,7 @@
     <link href="http://gitqwerty777.github.io/recommender-wide-and-deep/"/>
     <id>http://gitqwerty777.github.io/recommender-wide-and-deep/</id>
     <published>2021-12-20T07:18:44.000Z</published>
-    <updated>2022-04-01T16:57:25.644Z</updated>
+    <updated>2021-12-20T07:18:44.000Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;簡介&quot;&gt;&lt;a href=&quot;#簡介&quot; class=&quot;headerlink&quot; title=&quot;簡介&quot;&gt;&lt;/a&gt;簡介&lt;/h2&gt;&lt;p&gt;Wide And Deep 模型由簡單的Wide模型和複雜的Deep模型組成&lt;/p&gt;</summary>
@@ -318,10 +318,10 @@
     <link href="http://gitqwerty777.github.io/mementos-pattern/"/>
     <id>http://gitqwerty777.github.io/mementos-pattern/</id>
     <published>2020-11-05T07:00:00.000Z</published>
-    <updated>2022-04-01T16:57:25.640Z</updated>
+    <updated>2020-11-05T07:00:00.000Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/img/Other/morgana.png&quot;&gt;&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/img/Other/morgana.webp&quot;&gt;&lt;/p&gt;</summary>
     
     
     
@@ -343,7 +343,7 @@
     <link href="http://gitqwerty777.github.io/unicode/"/>
     <id>http://gitqwerty777.github.io/unicode/</id>
     <published>2020-10-29T07:00:00.000Z</published>
-    <updated>2022-04-01T16:57:25.644Z</updated>
+    <updated>2020-10-29T07:00:00.000Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;異體字&quot;&gt;&lt;a href=&quot;#異體字&quot; class=&quot;headerlink&quot; title=&quot;異體字&quot;&gt;&lt;/a&gt;異體字&lt;/h2&gt;&lt;p&gt;異體字為意思一樣、但寫法不同的字集合。&lt;br&gt;因為漢字在多個國家使用，每個國家的正式寫法不同，且在歷史中會出現字形改變的情形，自然字形也不同。&lt;/p&gt;</summary>
@@ -414,10 +414,10 @@
     <link href="http://gitqwerty777.github.io/foreign-language-police/"/>
     <id>http://gitqwerty777.github.io/foreign-language-police/</id>
     <published>2020-09-13T09:25:34.000Z</published>
-    <updated>2022-04-01T16:57:25.640Z</updated>
+    <updated>2020-09-13T09:25:34.000Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/img/Other/foreign-terms-police.png&quot;&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/img/Other/foreign-terms-police.webp&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;簡介&quot;&gt;&lt;a href=&quot;#簡介&quot; class=&quot;headerlink&quot; title=&quot;簡介&quot;&gt;&lt;/a&gt;簡介&lt;/h2&gt;&lt;p&gt;PTT 上常有支語警察&lt;/p&gt;
 &lt;p&gt;也常發現 google 翻譯的中文常常會&lt;a href=&quot;https://www.setn.com/News.aspx?NewsID=746793&quot;&gt;翻譯成中國慣用語&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;所以就寫了一個支語警察的網站：&lt;a href=&quot;/foreign-terms-police&quot;&gt;支語警察&lt;/a&gt;&lt;/p&gt;</summary>

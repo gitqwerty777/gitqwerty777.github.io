@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 6.1.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png">
-  <link rel="mask-icon" href="/img/favicon.png" color="#222">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.webp">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.webp">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.webp">
+  <link rel="mask-icon" href="/img/favicon.webp" color="#222">
   <meta name="google-site-verification" content="45plYlJRhxb-g8Tl8seizYgih_JUsmcJRH6oJHplkj0">
 
 <link rel="stylesheet" href="/css/main.css">
@@ -28,14 +28,14 @@
 <meta property="og:site_name" content="QWERTY">
 <meta property="og:description" content="FM速度快、容易實作，於2012~14年為業界主流模型">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="http://gitqwerty777.github.io/img/recommend/fm-formula.png">
-<meta property="og:image" content="http://gitqwerty777.github.io/img/recommend/FM-structure.png">
-<meta property="og:image" content="http://gitqwerty777.github.io/img/recommend/fm-time-complexity.png">
-<meta property="og:image" content="http://gitqwerty777.github.io/img/recommend/fm-gradient.png">
-<meta property="og:image" content="http://gitqwerty777.github.io/img/recommend/fm-dway.png">
-<meta property="og:image" content="http://gitqwerty777.github.io/img/recommend/ffm-formula.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/recommend/fm-formula.webp">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/recommend/FM-structure.webp">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/recommend/fm-time-complexity.webp">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/recommend/fm-gradient.webp">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/recommend/fm-dway.webp">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/recommend/ffm-formula.webp">
 <meta property="article:published_time" content="2022-01-21T03:11:11.000Z">
-<meta property="article:modified_time" content="2022-04-01T16:57:25.640Z">
+<meta property="article:modified_time" content="2022-01-21T03:11:11.000Z">
 <meta property="article:author" content="qwerty">
 <meta property="article:tag" content="推薦系統">
 <meta property="article:tag" content="FM">
@@ -43,7 +43,7 @@
 <meta property="article:tag" content="SVM">
 <meta property="article:tag" content="Embedding">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://gitqwerty777.github.io/img/recommend/fm-formula.png">
+<meta name="twitter:image" content="http://gitqwerty777.github.io/img/recommend/fm-formula.webp">
 
 <link rel="canonical" href="http://gitqwerty777.github.io/factorization-machines/">
 
@@ -236,7 +236,7 @@
     <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/factorization-machines/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/img/qwerty.png">
+      <meta itemprop="image" content="/img/qwerty.webp">
       <meta itemprop="name" content="qwerty">
       <meta itemprop="description" content="Programming | Computer Science | Thought">
     </span>
@@ -304,7 +304,7 @@
 <li><strong>訓練時間為線性複雜度</strong></li>
 </ul>
 <h3 id="理論"><a href="#理論" class="headerlink" title="理論"></a>理論</h3><p>FM將權重 $w_{ij}$ 設為兩個長度為k的<strong>隱向量</strong>$V_i, V_j$的<strong>內積</strong>，表示為$\langle V_i, V_j \rangle$</p>
-<p><img data-src="/img/recommend/fm-formula.png" alt="2維的FM公式"></p>
+<p><img data-src="/img/recommend/fm-formula.webp" alt="2維的FM公式"></p>
 <ol>
 <li>$w_0$​是bias</li>
 <li>$w_i​$是特徵$i$的一維權重</li>
@@ -323,18 +323,18 @@
 </ul>
 </li>
 </ul>
-<p><img data-src="/img/recommend/FM-structure.png" alt="結構"></p>
-<h3 id="效率"><a href="#效率" class="headerlink" title="效率"></a>效率</h3><p><img data-src="/img/recommend/fm-time-complexity.png"></p>
+<p><img data-src="/img/recommend/FM-structure.webp" alt="結構"></p>
+<h3 id="效率"><a href="#效率" class="headerlink" title="效率"></a>效率</h3><p><img data-src="/img/recommend/fm-time-complexity.webp"></p>
 <p>整理公式後，Inference的時間複雜度從$O(kn^2)$降到了$O(kn)$，$n$為特徵維度</p>
 <ul>
 <li>第2行公式推導：表示為整個矩陣扣掉對角項再除以2，因為$W$是對稱矩陣</li>
 <li>詳細推導可看<span class="exturl" data-url="aHR0cHM6Ly95dWxvbmd0c2FpLm1lZGl1bS5jb20vZmFjdG9yaXphdGlvbi1tYWNoaW5lLTYzMTYwYmMyYzA2Yg==">這篇<i class="fa fa-external-link-alt"></i></span></li>
 <li>實作上只須計算非0元素的乘積，時間複雜度再下降到$O(km)$，$m$為平均一筆輸入資料中，值非0的特徵數</li>
 </ul>
-<h3 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h3><p>使用gradient descent學習參數<br><img data-src="/img/recommend/fm-gradient.png"></p>
+<h3 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h3><p>使用gradient descent學習參數<br><img data-src="/img/recommend/fm-gradient.webp"></p>
 <p>$\sum^n_{j&#x3D;1}v_{j, f}x_j$可以事先計算，所以每次梯度更新的時間複雜度為$O(1)$</p>
 <p>因此FM的訓練時間複雜度也是$O(km)$</p>
-<h3 id="高維度FM"><a href="#高維度FM" class="headerlink" title="高維度FM"></a>高維度FM</h3><p><img data-src="/img/recommend/fm-dway.png"></p>
+<h3 id="高維度FM"><a href="#高維度FM" class="headerlink" title="高維度FM"></a>高維度FM</h3><p><img data-src="/img/recommend/fm-dway.webp"></p>
 <p>經過公式簡化(和二維的方法相似)，也可以在線性時間內計算</p>
 <h3 id="FM-和-Factorization-Model-SVM-比較"><a href="#FM-和-Factorization-Model-SVM-比較" class="headerlink" title="FM 和 Factorization Model, SVM 比較"></a>FM 和 Factorization Model, SVM 比較</h3><p>論文中證明了兩件事</p>
 <ol>
@@ -363,7 +363,7 @@
 </ul>
 </li>
 </ul>
-<p><img data-src="/img/recommend/ffm-formula.png"></p>
+<p><img data-src="/img/recommend/ffm-formula.webp"></p>
 <h3 id="範例"><a href="#範例" class="headerlink" title="範例"></a>範例</h3><ul>
 <li>出版商特徵域(P): ESPN, Vogue, and NBC</li>
 <li>廣告商特徵域(A): Nike, Gucci, and Adidas</li>
@@ -525,7 +525,7 @@
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="qwerty"
-      src="/img/qwerty.png">
+      src="/img/qwerty.webp">
   <p class="site-author-name" itemprop="name">qwerty</p>
   <div class="site-description" itemprop="description">Programming | Computer Science | Thought</div>
 </div>
