@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="zh-TW"><head>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
@@ -11,12 +13,14 @@
   <link rel="mask-icon" href="/img/favicon.webp" color="#222">
   <meta name="google-site-verification" content="45plYlJRhxb-g8Tl8seizYgih_JUsmcJRH6oJHplkj0">
 
+<link rel="stylesheet" href="/css/main.css">
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-
-
-
-  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/green/pace-theme-barber-shop.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"gitqwerty777.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.12.1","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"show_result":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"slideLeftIn"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/config.min.js"></script>
 
@@ -50,7 +54,7 @@
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>Linux指令記錄及錯誤排除 | QWERTY</title>
   
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
   <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-51310670-1","only_pageview":false}</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/analytics/google-analytics.min.js"></script>
 
@@ -60,16 +64,16 @@
 
 
   <noscript>
-    
+    <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
 <link rel="alternate" href="/atom.xml" title="QWERTY" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext');loadCss('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');loadCss('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&amp;display=swap&amp;subset=latin,latin-ext"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css"></noscript></head>
+</head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" class="use-motion">
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
 
   <main class="main">
-    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切換導航欄" role="button">
@@ -115,7 +119,9 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" maxlength="80" placeholder="搜尋..." spellcheck="false" type="search" class="search-input">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
   </div>
   <span class="popup-btn-close" role="button">
     <i class="fa fa-times-circle"></i>
@@ -159,8 +165,9 @@
         <!--/noindex-->
 
         <div class="site-overview-wrap sidebar-panel">
-          <div class="site-author site-overview-item animated" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="qwerty" src="/img/qwerty.webp">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="qwerty"
+      src="/img/qwerty.webp">
   <p class="site-author-name" itemprop="name">qwerty</p>
   <div class="site-description" itemprop="description">Programming | Computer Science | Thought</div>
 </div>
@@ -186,7 +193,7 @@
 </div>
   <div class="links-of-author site-overview-item animated">
       <span class="links-of-author-item">
-        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http://github.com/gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
+        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http:&#x2F;&#x2F;github.com&#x2F;gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
       </span>
       <span class="links-of-author-item">
         <span class="exturl" data-url="bWFpbHRvOmdvb2hjbDc3N0BnbWFpbC5jb20=" title="E-Mail → mailto:goohcl777@gmail.com"><i class="fa fa-envelope fa-fw"></i></span>
@@ -203,10 +210,10 @@
     </div>
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https://qwerty777.me">My Main Page</span>
+          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https:&#x2F;&#x2F;qwerty777.me">My Main Page</span>
         </li>
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http://qwerty777.me/life/">My Second Blog -- Wysiwyg</span>
+          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http:&#x2F;&#x2F;qwerty777.me&#x2F;life&#x2F;">My Second Blog -- Wysiwyg</span>
         </li>
     </ul>
   </div>
@@ -244,20 +251,20 @@
   
   
 
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/linux-tips/">
 
-    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/img/qwerty.webp">
       <meta itemprop="name" content="qwerty">
     </span>
 
-    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="QWERTY">
       <meta itemprop="description" content="Programming | Computer Science | Thought">
     </span>
 
-    <span hidden="" itemprop="post" itemscope="" itemtype="http://schema.org/CreativeWork">
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="Linux指令記錄及錯誤排除 | QWERTY">
       <meta itemprop="description" content="">
     </span>
@@ -281,7 +288,7 @@
         <i class="far fa-folder"></i>
       </span>
       <span class="post-meta-item-text">分類於</span>
-        <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
           <a href="/categories/%E8%A8%98%E9%8C%84/" itemprop="url" rel="index"><span itemprop="name">記錄</span></a>
         </span>
     </span>
@@ -309,7 +316,7 @@
 <h3 id="Error-while-opening-the-virtual-machine-Taking-ownership-of-this-virtual-machine-failed"><a href="#Error-while-opening-the-virtual-machine-Taking-ownership-of-this-virtual-machine-failed" class="headerlink" title="Error while opening the virtual machine: Taking ownership of this virtual machine failed"></a>Error while opening the virtual machine: Taking ownership of this virtual machine failed</h3><p><span class="exturl" data-url="aHR0cHM6Ly9jb21tdW5pdGllcy52bXdhcmUuY29tL3RocmVhZC8xODEwMTQ=">刪除lck檔<i class="fa fa-external-link-alt"></i></span></p>
 <span id="more"></span>
 <h3 id="連線問題"><a href="#連線問題" class="headerlink" title="連線問題"></a>連線問題</h3><p><span class="exturl" data-url="aHR0cDovL2Jsb2cueHVpdGUubmV0L3I0MTMzMTgvanVzdGZvcmZ1bi8zNTEzODA1OS0lNUIlRTUlODglODYlRTQlQkElQUIlNUQlRTglQTclQTMlRTYlQjElQkFWTVdhcmUlRTQlQjglOEQlRTglODMlQkQlRTQlQjglOEElRTclQjYlQjI=">不能上網<i class="fa fa-external-link-alt"></i></span><br><span class="exturl" data-url="aHR0cDovL3N1cGVydXNlci5jb20vcXVlc3Rpb25zLzMyODgwMC9taXNzaW5nLWV0aDAtZXRoZXJuZXQtaW50ZXJmYWNlLWluLXVidW50dS1jYW50LWNvbm5lY3QtdG8tcm91dGVy">eth0在ifconfig中消失<i class="fa fa-external-link-alt"></i></span></p>
-<h2 id="重新啟動服務-daemon"><a href="#重新啟動服務-daemon" class="headerlink" title="重新啟動服務(daemon)"></a>重新啟動服務(daemon)</h2><p>服務定義：位於 /etc/init.d/ 裡</p>
+<h2 id="重新啟動服務-daemon"><a href="#重新啟動服務-daemon" class="headerlink" title="重新啟動服務(daemon)"></a>重新啟動服務(daemon)</h2><p>服務定義：位於 &#x2F;etc&#x2F;init.d&#x2F; 裡</p>
 <pre class="language-bash" data-language="bash"><code class="language-bash">/etc/init.d/SERVICE_NAME restart</code></pre>
 
 <p>或是</p>
@@ -358,7 +365,7 @@ setenv <span class="token environment constant">DISPLAY</span> localhost:11.0</c
 </tr>
 <tr>
 <td>-z</td>
-<td>使用gzip壓縮/解壓縮(應對應.gz的檔案)</td>
+<td>使用gzip壓縮&#x2F;解壓縮(應對應.gz的檔案)</td>
 </tr>
 <tr>
 <td>-t</td>
@@ -382,7 +389,7 @@ setenv <span class="token environment constant">DISPLAY</span> localhost:11.0</c
 </tr>
 <tr>
 <td>-N [DATE]</td>
-<td>比日期(yyyy/mm/dd)還要新的才會被打包進壓縮檔中</td>
+<td>比日期(yyyy&#x2F;mm&#x2F;dd)還要新的才會被打包進壓縮檔中</td>
 </tr>
 <tr>
 <td>–exclude [FILE]</td>
@@ -393,7 +400,7 @@ setenv <span class="token environment constant">DISPLAY</span> localhost:11.0</c
 <span class="token function">tar</span> -zcvPf home.tar.gz /home <span class="token comment"># 建立起來的壓縮檔內檔案為絕對路徑</span>
 <span class="token function">tar</span> -N <span class="token string">'2002/06/25'</span> -zcvf home.tar.gz /home <span class="token comment"># 在/home 這個目錄中，比 2002/06/25 日還要新的檔案才會被打包進入 home.tar.gz 這個檔案中</span>
 <span class="token function">tar</span> -zcvf host.tar.gz / --exclude /mnt --exclude /proc <span class="token comment"># 根目錄中，除了 /mnt 及 /proc 的所有資料都打包</span></code></pre>
-<p>　<br>如果使用絕對路徑，解開的檔案一定會和壓縮時的路徑一樣，萬一別人剛好有同名目錄，他的檔案就會被覆蓋了<br>→ 如果以『絕對路徑』來建立打包檔案，預設會將 / 拿掉，以策安全</p>
+<p>　<br>如果使用絕對路徑，解開的檔案一定會和壓縮時的路徑一樣，萬一別人剛好有同名目錄，他的檔案就會被覆蓋了<br>→ 如果以『絕對路徑』來建立打包檔案，預設會將 &#x2F; 拿掉，以策安全</p>
 <h2 id="清除垃圾筒"><a href="#清除垃圾筒" class="headerlink" title="清除垃圾筒"></a>清除垃圾筒</h2><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">rm</span> -rf ~/.local/share/Trash/*</code></pre>
 
 <h2 id="搜尋檔案"><a href="#搜尋檔案" class="headerlink" title="搜尋檔案"></a>搜尋檔案</h2><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> updatedb <span class="token comment"># update database</span>
@@ -418,7 +425,7 @@ chsh -u /bin/zsh <span class="token comment"># 改用zsh為預設shell</span></c
 <li>previous command failed (✘)</li>
 <li>Git<ul>
 <li>Branch (顯示不出來的字元，岔路圖案) or detached head (➦)</li>
-<li>Current branch / SHA1 in detached head state</li>
+<li>Current branch &#x2F; SHA1 in detached head state</li>
 <li>Dirty working directory (±, color change)</li>
 </ul>
 </li>
@@ -428,7 +435,7 @@ chsh -u /bin/zsh <span class="token comment"># 改用zsh為預設shell</span></c
 </ul>
 <h3 id="啟用plugin"><a href="#啟用plugin" class="headerlink" title="啟用plugin"></a>啟用plugin</h3><p>oh-my-zsh 內建的 plugin 都放在 <code>~/.oh-my-zsh/plugins</code></p>
 <p>啟用 plugin 一樣是在 <code>.zshrc</code> 中做設定，預設只有git  </p>
-<pre class="language-none"><code class="language-none">plugins=(git autojump extract) # 要啟用某個 plugin，就只要加在括號裡即可</code></pre>
+<pre class="language-none"><code class="language-none">plugins&#x3D;(git autojump extract) # 要啟用某個 plugin，就只要加在括號裡即可</code></pre>
 
 <ul>
 <li>git：若當前目錄在 git 專案資料夾中，會顯示branch和status，且提供縮寫 <img data-src="/img/Other/git1.webp"> <img data-src="/img/Other/git2.webp"></li>
@@ -470,7 +477,7 @@ chsh -u /bin/zsh <span class="token comment"># 改用zsh為預設shell</span></c
 <li>dpkg<br><code>dpkg -i package.deb --force-not-root --root=$HOME</code><br>disadvantage: doesn’t automatically resolve dependencies or create the directory structure it expects</li>
 <li>apt-get source  <pre class="language-none"><code class="language-none">apt-get source package
 cd package
-./configure --prefix=$HOME
+.&#x2F;configure --prefix&#x3D;$HOME
 make
 make install</code></pre></li>
 </ol>
@@ -495,7 +502,7 @@ make install</code></pre></li>
 </li>
 <li><code>sudo -u &lt;user&gt; -i</code><ul>
 <li>If you want to simulate precisely the initial logged in state of another user. The -i option is simulate initial login</li>
-<li>It will create the proper shell, source .bashrc/.bash_profile files, and drop you into the target user’s home directory</li>
+<li>It will create the proper shell, source .bashrc&#x2F;.bash_profile files, and drop you into the target user’s home directory</li>
 <li>The only use that I can see for this is, as a system administrator, debugging issues that are user specific</li>
 </ul>
 </li>
@@ -521,7 +528,7 @@ make install</code></pre></li>
 <td>一個超級工具，通常配合 xargs 使用為其他程序提供參數。雖然名為 find ，但是事實上很少用於「查找文件」這個單純的任務上</td>
 </tr>
 <tr>
-<td>locate/updatedb</td>
+<td>locate&#x2F;updatedb</td>
 <td>快速查找文件的工具，使用 updatedb 建立索引，用 locate 來查找文件</td>
 </tr>
 <tr>
@@ -538,7 +545,7 @@ make install</code></pre></li>
 </tr>
 <tr>
 <td>lftp</td>
-<td>我覺得最舒服的 ftp 客戶端，支持很多類似 bash 的操作，讓 ftp 操 作就像在操作本地文件一樣。他的配置文件在 ~/.lftp/rc ，我覺得最有用 的兩個配置選項是：</td>
+<td>我覺得最舒服的 ftp 客戶端，支持很多類似 bash 的操作，讓 ftp 操 作就像在操作本地文件一樣。他的配置文件在 ~&#x2F;.lftp&#x2F;rc ，我覺得最有用 的兩個配置選項是：</td>
 </tr>
 <tr>
 <td>ftp:charset “GBK” 通常遠程 ftp 服務器都是 GBK 編碼的，這樣設置之 後可以解決亂碼問題。    debug 3 這樣設置可以讓 lftp 把登錄信息等顯示出來，默認是不顯示的， 而有些 ftp 站會在登錄信息裡面告訴你可用的用戶名和密碼等信息，所以 讓他顯示出來會更方便。</td>
@@ -559,7 +566,7 @@ make install</code></pre></li>
 -v 反向匹配，即顯示不匹配的行。|
 </code></pre>
 <p>|xsel| 這個是非常方便的程序，但是要在 X 下使用，他的作用是和剪切板進行 交互。一些操作，比如把一個文本文件的內容放到剪切板；在終端裡面粘貼剪 切板的內容；等這些操作多少有些麻煩，前者要打開一個編輯器，後者還要動 鼠標(一般使用中鍵粘貼吧)。用 xsel 就少了這麼多麻煩。 xsel -b -i &lt; file 就把 file 的內容拷貝到剪切板了。 wget <code>xsel -o</code> 也是很常用的， 因為剪切板裡面時常放了拷貝的 URL 了吧。不過，美中不足的地方是中文支持還不行。|<br>|info| info 作為 GNU 標準文檔格式。不過通常許多程序都不帶 info 文檔，在命令行裡面鍵入 info 則直接顯示 man 文檔。 而且，即使有 info 文檔，也通常是非常詳細|</p>
-<h2 id="grep"><a href="#grep" class="headerlink" title="grep"></a>grep</h2><p><code>-r</code> - search recursively<br><code>-i</code> - case-insensitive search<br><code>--include=\*.${file_extension}</code> - search files that match the extension(s) or file pattern only</p>
+<h2 id="grep"><a href="#grep" class="headerlink" title="grep"></a>grep</h2><p><code>-r</code> - search recursively<br><code>-i</code> - case-insensitive search<br><code>--include=\*.$&#123;file_extension&#125;</code> - search files that match the extension(s) or file pattern only</p>
 <h2 id="搜尋文件"><a href="#搜尋文件" class="headerlink" title="搜尋文件"></a>搜尋文件</h2><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">find</span> <span class="token variable">$directory</span> -type f -name <span class="token string">"*.in"</span></code></pre>
 
 <h2 id="取消鎖定畫面"><a href="#取消鎖定畫面" class="headerlink" title="取消鎖定畫面"></a>取消鎖定畫面</h2><p><span class="exturl" data-url="aHR0cHM6Ly9hc2t1YnVudHUuY29tL3F1ZXN0aW9ucy8xMDQ4Nzc0L2Rpc2FibGluZy1sb2NrLXNjcmVlbi0xOC0wNA==">https://askubuntu.com/questions/1048774/disabling-lock-screen-18-04<i class="fa fa-external-link-alt"></i></span></p>
@@ -637,7 +644,7 @@ make install</code></pre></li>
 
 
 <div class="copyright">
-  © 2014 – 
+  &copy; 2014 – 
   <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fab fa-free-code-camp"></i>
@@ -653,7 +660,7 @@ make install</code></pre></li>
     <span title="總字數">455k</span>
   </span>
 </div>
-  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> &amp; <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動
+  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動
   </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61c5cf9cb3476405" async="async"></script>
@@ -679,6 +686,7 @@ make install</code></pre></li>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/tags/mermaid.min.js"></script>
 
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/pace.min.js"></script>
 
   
 
@@ -694,6 +702,5 @@ make install</code></pre></li>
 <script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"disqusforqwerty","count":false,"i18n":{"disqus":"disqus"}}</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/comments/disqus.min.js"></script>
 
-
-
-</body></html>
+</body>
+</html>

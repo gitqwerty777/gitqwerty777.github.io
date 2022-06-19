@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="zh-TW"><head>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
@@ -11,12 +13,14 @@
   <link rel="mask-icon" href="/img/favicon.webp" color="#222">
   <meta name="google-site-verification" content="45plYlJRhxb-g8Tl8seizYgih_JUsmcJRH6oJHplkj0">
 
+<link rel="stylesheet" href="/css/main.css">
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-
-
-
-  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/green/pace-theme-barber-shop.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"gitqwerty777.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.12.1","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"show_result":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"slideLeftIn"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/config.min.js"></script>
 
@@ -44,7 +48,7 @@
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>C# 程式碼風格指南 | QWERTY</title>
   
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
   <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-51310670-1","only_pageview":false}</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/analytics/google-analytics.min.js"></script>
 
@@ -54,16 +58,16 @@
 
 
   <noscript>
-    
+    <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
 <link rel="alternate" href="/atom.xml" title="QWERTY" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext');loadCss('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');loadCss('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&amp;display=swap&amp;subset=latin,latin-ext"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css"></noscript></head>
+</head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" class="use-motion">
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
 
   <main class="main">
-    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切換導航欄" role="button">
@@ -109,7 +113,9 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" maxlength="80" placeholder="搜尋..." spellcheck="false" type="search" class="search-input">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
   </div>
   <span class="popup-btn-close" role="button">
     <i class="fa fa-times-circle"></i>
@@ -153,8 +159,9 @@
         <!--/noindex-->
 
         <div class="site-overview-wrap sidebar-panel">
-          <div class="site-author site-overview-item animated" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="qwerty" src="/img/qwerty.webp">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="qwerty"
+      src="/img/qwerty.webp">
   <p class="site-author-name" itemprop="name">qwerty</p>
   <div class="site-description" itemprop="description">Programming | Computer Science | Thought</div>
 </div>
@@ -180,7 +187,7 @@
 </div>
   <div class="links-of-author site-overview-item animated">
       <span class="links-of-author-item">
-        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http://github.com/gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
+        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http:&#x2F;&#x2F;github.com&#x2F;gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
       </span>
       <span class="links-of-author-item">
         <span class="exturl" data-url="bWFpbHRvOmdvb2hjbDc3N0BnbWFpbC5jb20=" title="E-Mail → mailto:goohcl777@gmail.com"><i class="fa fa-envelope fa-fw"></i></span>
@@ -197,10 +204,10 @@
     </div>
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https://qwerty777.me">My Main Page</span>
+          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https:&#x2F;&#x2F;qwerty777.me">My Main Page</span>
         </li>
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http://qwerty777.me/life/">My Second Blog -- Wysiwyg</span>
+          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http:&#x2F;&#x2F;qwerty777.me&#x2F;life&#x2F;">My Second Blog -- Wysiwyg</span>
         </li>
     </ul>
   </div>
@@ -238,20 +245,20 @@
   
   
 
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/CSharp-codeconvension/">
 
-    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/img/qwerty.webp">
       <meta itemprop="name" content="qwerty">
     </span>
 
-    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="QWERTY">
       <meta itemprop="description" content="Programming | Computer Science | Thought">
     </span>
 
-    <span hidden="" itemprop="post" itemscope="" itemtype="http://schema.org/CreativeWork">
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="C# 程式碼風格指南 | QWERTY">
       <meta itemprop="description" content="原文由微軟所寫，為官方指定的風格指南">
     </span>
@@ -275,7 +282,7 @@
         <i class="far fa-folder"></i>
       </span>
       <span class="post-meta-item-text">分類於</span>
-        <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
           <a href="/categories/%E8%BD%89%E8%BC%89/" itemprop="url" rel="index"><span itemprop="name">轉載</span></a>
         </span>
     </span>
@@ -300,12 +307,12 @@
     <div class="post-body" itemprop="articleBody">
         <p><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLm1pY3Jvc29mdC5jb20vZW4tdXMvZG90bmV0L2MjL3Byb2dyYW1taW5nLWd1aWRlL2luc2lkZS1hLXByb2dyYW0vY29kaW5nLWNvbnZlbnRpb25z">原文：C# Coding Conventions (C# Programming Guide)<i class="fa fa-external-link-alt"></i></span></p>
 <h2 id="Naming-Conventions"><a href="#Naming-Conventions" class="headerlink" title="Naming Conventions"></a>Naming Conventions</h2><p>若句子太長，可以分段，結尾需為<code>.</code></p>
-<pre class="language-c#" data-language="c#"><code class="language-c#">var currentPerformanceCounterCategory = new System.Diagnostics.
+<pre class="language-c#" data-language="c#"><code class="language-c#">var currentPerformanceCounterCategory &#x3D; new System.Diagnostics.
         PerformanceCounterCategory();</code></pre>
 
 <h2 id="Layout-Conventions"><a href="#Layout-Conventions" class="headerlink" title="Layout Conventions"></a>Layout Conventions</h2><ul>
 <li>四空格縮排, tabs 需要存為空格</li>
-<li>一行一個Statement/Declaration</li>
+<li>一行一個Statement&#x2F;Declaration</li>
 <li>連續的行中，第二行需要多一個縮排</li>
 <li>方法的宣告和屬性的宣告中至少需要隔一行</li>
 <li>在判斷式中加上括號<ul>
@@ -315,75 +322,75 @@
 </ul>
 <h2 id="Commenting-Conventions"><a href="#Commenting-Conventions" class="headerlink" title="Commenting Conventions"></a>Commenting Conventions</h2><ul>
 <li>將程式和註解放在不同行</li>
-<li>註解需以大寫開頭，逗號結尾，與<code>//</code>間隔一個空格<pre class="language-c#" data-language="c#"><code class="language-c#">// The following declaration creates a query. It does not run
-// the query.</code></pre></li>
+<li>註解需以大寫開頭，逗號結尾，與<code>//</code>間隔一個空格<pre class="language-c#" data-language="c#"><code class="language-c#">&#x2F;&#x2F; The following declaration creates a query. It does not run
+&#x2F;&#x2F; the query.</code></pre></li>
 </ul>
 <h2 id="Language-Guidelines"><a href="#Language-Guidelines" class="headerlink" title="Language Guidelines"></a>Language Guidelines</h2><ul>
 <li>使用字串插補(String interpolation)來連接短的字串<ul>
-<li><code>string displayName = $"{nameList[n].LastName}, {nameList[n].FirstName}";</code></li>
+<li><code>string displayName = $&quot;&#123;nameList[n].LastName&#125;, &#123;nameList[n].FirstName&#125;&quot;;</code></li>
 </ul>
 </li>
-<li>若要在迴圈中使用字串，使用<code>StringBuilder</code><pre class="language-c#" data-language="c#"><code class="language-c#">var phrase = "la";
-var manyPhrases = new StringBuilder();
-for (var i = 0; i &lt; 10000; i++)
-{
+<li>若要在迴圈中使用字串，使用<code>StringBuilder</code><pre class="language-c#" data-language="c#"><code class="language-c#">var phrase &#x3D; &quot;la&quot;;
+var manyPhrases &#x3D; new StringBuilder();
+for (var i &#x3D; 0; i &lt; 10000; i++)
+&#123;
     manyPhrases.Append(phrase);
-}</code></pre></li>
+&#125;</code></pre></li>
 </ul>
 <h2 id="Implicitly-Typed-Local-Variables"><a href="#Implicitly-Typed-Local-Variables" class="headerlink" title="Implicitly Typed Local Variables"></a>Implicitly Typed Local Variables</h2><ul>
 <li>若變數的型別很明顯，使用隱式宣告<ul>
-<li><code>New</code>, 型別轉換, 基本型別等<pre class="language-c#" data-language="c#"><code class="language-c#">var var1 = "This is clearly a string.";
-var var2 = 27;
-// =======================
-int var3 = Convert.ToInt32(Console.ReadLine());
-int var4 = ExampleClass.ResultSoFar();</code></pre></li>
+<li><code>New</code>, 型別轉換, 基本型別等<pre class="language-c#" data-language="c#"><code class="language-c#">var var1 &#x3D; &quot;This is clearly a string.&quot;;
+var var2 &#x3D; 27;
+&#x2F;&#x2F; &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+int var3 &#x3D; Convert.ToInt32(Console.ReadLine());
+int var4 &#x3D; ExampleClass.ResultSoFar();</code></pre></li>
 </ul>
 </li>
 <li>可以在for中使用隱式宣告，但不要在foreach中使用隱式宣告</li>
 </ul>
-<h2 id="Arrays"><a href="#Arrays" class="headerlink" title="Arrays"></a>Arrays</h2><pre class="language-c#" data-language="c#"><code class="language-c#">// Preferred syntax. Note that you cannot use var here instead of string[].
-string[] vowels1 = { "a", "e", "i", "o", "u" };
-// If you use explicit instantiation, you can use var.
-var vowels2 = new string[] { "a", "e", "i", "o", "u" };
-// If you specify an array size, you must initialize the elements one at a time.
-var vowels3 = new string[5];
-vowels3[0] = "a";
-vowels3[1] = "e";</code></pre>
+<h2 id="Arrays"><a href="#Arrays" class="headerlink" title="Arrays"></a>Arrays</h2><pre class="language-c#" data-language="c#"><code class="language-c#">&#x2F;&#x2F; Preferred syntax. Note that you cannot use var here instead of string[].
+string[] vowels1 &#x3D; &#123; &quot;a&quot;, &quot;e&quot;, &quot;i&quot;, &quot;o&quot;, &quot;u&quot; &#125;;
+&#x2F;&#x2F; If you use explicit instantiation, you can use var.
+var vowels2 &#x3D; new string[] &#123; &quot;a&quot;, &quot;e&quot;, &quot;i&quot;, &quot;o&quot;, &quot;u&quot; &#125;;
+&#x2F;&#x2F; If you specify an array size, you must initialize the elements one at a time.
+var vowels3 &#x3D; new string[5];
+vowels3[0] &#x3D; &quot;a&quot;;
+vowels3[1] &#x3D; &quot;e&quot;;</code></pre>
 
-<h2 id="Delegates-委託"><a href="#Delegates-委託" class="headerlink" title="Delegates(委託)"></a>Delegates(委託)</h2><pre class="language-c#" data-language="c#"><code class="language-c#">// Define the type.
+<h2 id="Delegates-委託"><a href="#Delegates-委託" class="headerlink" title="Delegates(委託)"></a>Delegates(委託)</h2><pre class="language-c#" data-language="c#"><code class="language-c#">&#x2F;&#x2F; Define the type.
 public delegate void Del(string message);
 
-// Define a method that has a matching signature.
+&#x2F;&#x2F; Define a method that has a matching signature.
 public static void DelMethod(string str)
-{
-    Console.WriteLine("DelMethod argument: {0}", str);
-}
+&#123;
+    Console.WriteLine(&quot;DelMethod argument: &#123;0&#125;&quot;, str);
+&#125;
 
-// In the Main method, create an instance of Del.
-// Preferred: Create an instance of Del by using condensed syntax.
-Del exampleDel2 = DelMethod;
-// The following declaration uses the full syntax.
-Del exampleDel1 = new Del(DelMethod);</code></pre>
+&#x2F;&#x2F; In the Main method, create an instance of Del.
+&#x2F;&#x2F; Preferred: Create an instance of Del by using condensed syntax.
+Del exampleDel2 &#x3D; DelMethod;
+&#x2F;&#x2F; The following declaration uses the full syntax.
+Del exampleDel1 &#x3D; new Del(DelMethod);</code></pre>
 
-<h2 id="Using"><a href="#Using" class="headerlink" title="Using"></a>Using</h2><pre class="language-c#" data-language="c#"><code class="language-c#">// Method1: try-finally statement with Dispose
-Font font1 = new Font("Arial", 10.0f);
+<h2 id="Using"><a href="#Using" class="headerlink" title="Using"></a>Using</h2><pre class="language-c#" data-language="c#"><code class="language-c#">&#x2F;&#x2F; Method1: try-finally statement with Dispose
+Font font1 &#x3D; new Font(&quot;Arial&quot;, 10.0f);
 try
-{
-    byte charset = font1.GdiCharSet;
-}
+&#123;
+    byte charset &#x3D; font1.GdiCharSet;
+&#125;
 finally
-{
-    if (font1 != null)
-    {
+&#123;
+    if (font1 !&#x3D; null)
+    &#123;
         ((IDisposable)font1).Dispose();
-    }
-}
+    &#125;
+&#125;
 
-// Method2: Using statement.
-using (Font font2 = new Font("Arial", 10.0f))
-{
-    byte charset = font2.GdiCharSet;
-}</code></pre>
+&#x2F;&#x2F; Method2: Using statement.
+using (Font font2 &#x3D; new Font(&quot;Arial&quot;, 10.0f))
+&#123;
+    byte charset &#x3D; font2.GdiCharSet;
+&#125;</code></pre>
 
 <h2 id="amp-amp-and"><a href="#amp-amp-and" class="headerlink" title="&amp;&amp; and ||"></a>&amp;&amp; and ||</h2><ul>
 <li>用 <code>&amp;&amp;</code> 取代 <code>&amp;</code>, 用 <code>||</code> 取代 <code>|</code><ul>
@@ -392,43 +399,43 @@ using (Font font2 = new Font("Arial", 10.0f))
 </ul>
 </li>
 </ul>
-<pre class="language-C#" data-language="C#"><code class="language-C#">if ((divisor != 0) &amp;&amp; (dividend / divisor &gt; 0))
-{
-    Console.WriteLine("Quotient: {0}", dividend / divisor);
-}
+<pre class="language-C#" data-language="C#"><code class="language-C#">if ((divisor !&#x3D; 0) &amp;&amp; (dividend &#x2F; divisor &gt; 0))
+&#123;
+    Console.WriteLine(&quot;Quotient: &#123;0&#125;&quot;, dividend &#x2F; divisor);
+&#125;
 else
-{
-    Console.WriteLine("Attempted division by 0 ends up here.");
-}</code></pre>
+&#123;
+    Console.WriteLine(&quot;Attempted division by 0 ends up here.&quot;);
+&#125;</code></pre>
 
 <h2 id="New"><a href="#New" class="headerlink" title="New"></a>New</h2><ul>
 <li>使用new的時候，使用var <code>var instance1 = new ExampleClass();</code></li>
 <li>簡化Initialize<ul>
-<li><code>var instance3 = new ExampleClass { Name = "Desktop", ID = 37414, Location = "Redmond", Age = 2.3 };</code></li>
+<li><code>var instance3 = new ExampleClass &#123; Name = &quot;Desktop&quot;, ID = 37414, Location = &quot;Redmond&quot;, Age = 2.3 &#125;;</code></li>
 </ul>
 </li>
 </ul>
 <h2 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h2><ul>
 <li>使用lambda expression來產生一次性的event<pre class="language-c#" data-language="c#"><code class="language-c#">public Form2()
-{
-    // You can use a lambda expression to define an event handler.
-    this.Click += (s, e) =&gt;
-        {
+&#123;
+    &#x2F;&#x2F; You can use a lambda expression to define an event handler.
+    this.Click +&#x3D; (s, e) &#x3D;&gt;
+        &#123;
             MessageBox.Show(
                 ((MouseEventArgs)e).Location.ToString());
-        };
-}
+        &#125;;
+&#125;
 
-// Using a lambda expression shortens the following traditional definition.
+&#x2F;&#x2F; Using a lambda expression shortens the following traditional definition.
 public Form1()
-{
-    this.Click += new EventHandler(Form1_Click);
-}
+&#123;
+    this.Click +&#x3D; new EventHandler(Form1_Click);
+&#125;
 
 void Form1_Click(object sender, EventArgs e)
-{
+&#123;
     MessageBox.Show(((MouseEventArgs)e).Location.ToString());
-}</code></pre></li>
+&#125;</code></pre></li>
 </ul>
 <h2 id="Static"><a href="#Static" class="headerlink" title="Static"></a>Static</h2><ul>
 <li>用類別名取得static成員 <code>ClassName.StaticMember</code><ul>
@@ -437,16 +444,16 @@ void Form1_Click(object sender, EventArgs e)
 </li>
 </ul>
 <h2 id="LINQ-Queries"><a href="#LINQ-Queries" class="headerlink" title="LINQ Queries"></a>LINQ Queries</h2><p>使用有意義的變數名</p>
-<pre class="language-c#" data-language="c#"><code class="language-c#">var seattleCustomers = from customer in customers
-                       where customer.City == "Seattle"
+<pre class="language-c#" data-language="c#"><code class="language-c#">var seattleCustomers &#x3D; from customer in customers
+                       where customer.City &#x3D;&#x3D; &quot;Seattle&quot;
                        select customer.Name;</code></pre>
 <ul>
 <li>排列在<code>from</code>下方</li>
-<li>使用多個<code>from</code>取代<code>join</code><pre class="language-c#" data-language="c#"><code class="language-c#">// Use a compound from to access the inner sequence within each element.
-var scoreQuery = from student in students
+<li>使用多個<code>from</code>取代<code>join</code><pre class="language-c#" data-language="c#"><code class="language-c#">&#x2F;&#x2F; Use a compound from to access the inner sequence within each element.
+var scoreQuery &#x3D; from student in students
                  from score in student.Scores
                  where score &gt; 90
-                 select new { Last = student.LastName, score };</code></pre></li>
+                 select new &#123; Last &#x3D; student.LastName, score &#125;;</code></pre></li>
 </ul>
 
     </div>
@@ -516,7 +523,7 @@ var scoreQuery = from student in students
 
 
 <div class="copyright">
-  © 2014 – 
+  &copy; 2014 – 
   <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fab fa-free-code-camp"></i>
@@ -532,7 +539,7 @@ var scoreQuery = from student in students
     <span title="總字數">455k</span>
   </span>
 </div>
-  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> &amp; <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動
+  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動
   </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61c5cf9cb3476405" async="async"></script>
@@ -558,6 +565,7 @@ var scoreQuery = from student in students
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/tags/mermaid.min.js"></script>
 
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/pace.min.js"></script>
 
   
 
@@ -573,6 +581,5 @@ var scoreQuery = from student in students
 <script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"disqusforqwerty","count":false,"i18n":{"disqus":"disqus"}}</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/comments/disqus.min.js"></script>
 
-
-
-</body></html>
+</body>
+</html>

@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="zh-TW"><head>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
@@ -11,12 +13,14 @@
   <link rel="mask-icon" href="/img/favicon.webp" color="#222">
   <meta name="google-site-verification" content="45plYlJRhxb-g8Tl8seizYgih_JUsmcJRH6oJHplkj0">
 
+<link rel="stylesheet" href="/css/main.css">
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-
-
-
-  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/green/pace-theme-barber-shop.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"gitqwerty777.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.12.1","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"show_result":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"slideLeftIn"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/config.min.js"></script>
 
@@ -54,7 +58,7 @@
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>Factorization Machines(FM) 和 Field-Aware Factorization Machine(FFM)：推薦系統中的瑞士軍刀 | QWERTY</title>
   
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
   <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-51310670-1","only_pageview":false}</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/analytics/google-analytics.min.js"></script>
 
@@ -64,16 +68,16 @@
 
 
   <noscript>
-    
+    <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
 <link rel="alternate" href="/atom.xml" title="QWERTY" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext');loadCss('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');loadCss('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&amp;display=swap&amp;subset=latin,latin-ext"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css"></noscript></head>
+</head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" class="use-motion">
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
 
   <main class="main">
-    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切換導航欄" role="button">
@@ -119,7 +123,9 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" maxlength="80" placeholder="搜尋..." spellcheck="false" type="search" class="search-input">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
   </div>
   <span class="popup-btn-close" role="button">
     <i class="fa fa-times-circle"></i>
@@ -163,8 +169,9 @@
         <!--/noindex-->
 
         <div class="site-overview-wrap sidebar-panel">
-          <div class="site-author site-overview-item animated" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="qwerty" src="/img/qwerty.webp">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="qwerty"
+      src="/img/qwerty.webp">
   <p class="site-author-name" itemprop="name">qwerty</p>
   <div class="site-description" itemprop="description">Programming | Computer Science | Thought</div>
 </div>
@@ -190,7 +197,7 @@
 </div>
   <div class="links-of-author site-overview-item animated">
       <span class="links-of-author-item">
-        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http://github.com/gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
+        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http:&#x2F;&#x2F;github.com&#x2F;gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
       </span>
       <span class="links-of-author-item">
         <span class="exturl" data-url="bWFpbHRvOmdvb2hjbDc3N0BnbWFpbC5jb20=" title="E-Mail → mailto:goohcl777@gmail.com"><i class="fa fa-envelope fa-fw"></i></span>
@@ -207,10 +214,10 @@
     </div>
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https://qwerty777.me">My Main Page</span>
+          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https:&#x2F;&#x2F;qwerty777.me">My Main Page</span>
         </li>
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http://qwerty777.me/life/">My Second Blog -- Wysiwyg</span>
+          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http:&#x2F;&#x2F;qwerty777.me&#x2F;life&#x2F;">My Second Blog -- Wysiwyg</span>
         </li>
     </ul>
   </div>
@@ -248,20 +255,20 @@
   
   
 
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/factorization-machines/">
 
-    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/img/qwerty.webp">
       <meta itemprop="name" content="qwerty">
     </span>
 
-    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="QWERTY">
       <meta itemprop="description" content="Programming | Computer Science | Thought">
     </span>
 
-    <span hidden="" itemprop="post" itemscope="" itemtype="http://schema.org/CreativeWork">
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="Factorization Machines(FM) 和 Field-Aware Factorization Machine(FFM)：推薦系統中的瑞士軍刀 | QWERTY">
       <meta itemprop="description" content="FM速度快、容易實作，於2012~14年為業界主流模型">
     </span>
@@ -285,7 +292,7 @@
         <i class="far fa-folder"></i>
       </span>
       <span class="post-meta-item-text">分類於</span>
-        <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
           <a href="/categories/%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">筆記</span></a>
         </span>
     </span>
@@ -334,7 +341,7 @@
 <ul>
 <li>隱向量長度$k$為hyperparameter</li>
 <li>FM將權重矩陣分解為隱向量的內積，破壞了權重的獨立性，所以在稀疏資料中仍能學習<ol>
-<li>已知一正定矩陣$W$，必存在$V$使$W=VV^t$</li>
+<li>已知一正定矩陣$W$，必存在$V$使$W&#x3D;VV^t$</li>
 <li>權重矩陣$W$必為正定</li>
 <li>所以$W$必能分解成隱向量矩陣$V$乘自身的轉置</li>
 </ol>
@@ -353,7 +360,7 @@
 <li>實作上只須計算非0元素的乘積，時間複雜度再下降到$O(km)$，$m$為平均一筆輸入資料中，值非0的特徵數</li>
 </ul>
 <h3 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h3><p>使用gradient descent學習參數<br><img data-src="/img/recommend/fm-gradient.webp"></p>
-<p>$\sum^n_{j=1}v_{j, f}x_j$可以事先計算，所以每次梯度更新的時間複雜度為$O(1)$</p>
+<p>$\sum^n_{j&#x3D;1}v_{j, f}x_j$可以事先計算，所以每次梯度更新的時間複雜度為$O(1)$</p>
 <p>因此FM的訓練時間複雜度也是$O(km)$</p>
 <h3 id="高維度FM"><a href="#高維度FM" class="headerlink" title="高維度FM"></a>高維度FM</h3><p><img data-src="/img/recommend/fm-dway.webp"></p>
 <p>經過公式簡化(和二維的方法相似)，也可以在線性時間內計算</p>
@@ -397,9 +404,9 @@
 <li>因為FFM的隱向量限制在一個特徵域，FFM的$k$可以比FM的$k$小</li>
 </ul>
 <h2 id="公式比較"><a href="#公式比較" class="headerlink" title="公式比較"></a>公式比較</h2><p>只比較二次交叉項</p>
-<p>$$FM(v, x) = … + \sum^n_{j_1=1}{\sum^n_{j_2=j_1+1}{\langle v_{j_1}, v_{j_2}\rangle x_{j_1}x_{j_2}}}$$<br>$$FFM(v, x) = … + \sum^n_{j_1=1}{\sum^n_{j_2=j_1+1}{\langle v_{j_1, f_2}, v_{j_2, f_1}\rangle x_{j_1}x_{j_2}}}$$</p>
+<p>$$FM(v, x) &#x3D; … + \sum^n_{j_1&#x3D;1}{\sum^n_{j_2&#x3D;j_1+1}{\langle v_{j_1}, v_{j_2}\rangle x_{j_1}x_{j_2}}}$$<br>$$FFM(v, x) &#x3D; … + \sum^n_{j_1&#x3D;1}{\sum^n_{j_2&#x3D;j_1+1}{\langle v_{j_1, f_2}, v_{j_2, f_1}\rangle x_{j_1}x_{j_2}}}$$</p>
 <h2 id="方法比較"><a href="#方法比較" class="headerlink" title="方法比較"></a>方法比較</h2><ul>
-<li>FM：在LR(Logistic Regression)的基礎上，加入特徵交叉&nbsp;</li>
+<li>FM：在LR(Logistic Regression)的基礎上，加入特徵交叉 </li>
 <li>FFM：在FM的基礎上，加入特徵域交叉</li>
 </ul>
 <h2 id="總結"><a href="#總結" class="headerlink" title="總結"></a>總結</h2><p>就算Deep Learning盛行，FM也是一個很好的Baseline Model</p>
@@ -485,7 +492,7 @@
 
 
 <div class="copyright">
-  © 2014 – 
+  &copy; 2014 – 
   <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fab fa-free-code-camp"></i>
@@ -501,7 +508,7 @@
     <span title="總字數">455k</span>
   </span>
 </div>
-  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> &amp; <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動
+  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動
   </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61c5cf9cb3476405" async="async"></script>
@@ -527,6 +534,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/tags/mermaid.min.js"></script>
 
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/pace.min.js"></script>
 
   
 
@@ -542,6 +550,5 @@
 <script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"disqusforqwerty","count":false,"i18n":{"disqus":"disqus"}}</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/comments/disqus.min.js"></script>
 
-
-
-</body></html>
+</body>
+</html>

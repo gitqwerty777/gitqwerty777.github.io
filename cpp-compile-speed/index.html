@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="zh-TW"><head>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
@@ -11,12 +13,14 @@
   <link rel="mask-icon" href="/img/favicon.webp" color="#222">
   <meta name="google-site-verification" content="45plYlJRhxb-g8Tl8seizYgih_JUsmcJRH6oJHplkj0">
 
+<link rel="stylesheet" href="/css/main.css">
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-
-
-
-  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/green/pace-theme-barber-shop.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"gitqwerty777.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.12.1","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"show_result":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"slideLeftIn"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/config.min.js"></script>
 
@@ -48,7 +52,7 @@
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>加快C++編譯速度的方法 | QWERTY</title>
   
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
   <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-51310670-1","only_pageview":false}</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/analytics/google-analytics.min.js"></script>
 
@@ -58,16 +62,16 @@
 
 
   <noscript>
-    
+    <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
 <link rel="alternate" href="/atom.xml" title="QWERTY" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext');loadCss('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');loadCss('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&amp;display=swap&amp;subset=latin,latin-ext"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css"></noscript></head>
+</head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" class="use-motion">
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
 
   <main class="main">
-    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切換導航欄" role="button">
@@ -113,7 +117,9 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" maxlength="80" placeholder="搜尋..." spellcheck="false" type="search" class="search-input">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
   </div>
   <span class="popup-btn-close" role="button">
     <i class="fa fa-times-circle"></i>
@@ -157,8 +163,9 @@
         <!--/noindex-->
 
         <div class="site-overview-wrap sidebar-panel">
-          <div class="site-author site-overview-item animated" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="qwerty" src="/img/qwerty.webp">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="qwerty"
+      src="/img/qwerty.webp">
   <p class="site-author-name" itemprop="name">qwerty</p>
   <div class="site-description" itemprop="description">Programming | Computer Science | Thought</div>
 </div>
@@ -184,7 +191,7 @@
 </div>
   <div class="links-of-author site-overview-item animated">
       <span class="links-of-author-item">
-        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http://github.com/gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
+        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http:&#x2F;&#x2F;github.com&#x2F;gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
       </span>
       <span class="links-of-author-item">
         <span class="exturl" data-url="bWFpbHRvOmdvb2hjbDc3N0BnbWFpbC5jb20=" title="E-Mail → mailto:goohcl777@gmail.com"><i class="fa fa-envelope fa-fw"></i></span>
@@ -201,10 +208,10 @@
     </div>
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https://qwerty777.me">My Main Page</span>
+          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https:&#x2F;&#x2F;qwerty777.me">My Main Page</span>
         </li>
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http://qwerty777.me/life/">My Second Blog -- Wysiwyg</span>
+          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http:&#x2F;&#x2F;qwerty777.me&#x2F;life&#x2F;">My Second Blog -- Wysiwyg</span>
         </li>
     </ul>
   </div>
@@ -242,20 +249,20 @@
   
   
 
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/cpp-compile-speed/">
 
-    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/img/qwerty.webp">
       <meta itemprop="name" content="qwerty">
     </span>
 
-    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="QWERTY">
       <meta itemprop="description" content="Programming | Computer Science | Thought">
     </span>
 
-    <span hidden="" itemprop="post" itemscope="" itemtype="http://schema.org/CreativeWork">
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="加快C++編譯速度的方法 | QWERTY">
       <meta itemprop="description" content="">
     </span>
@@ -279,7 +286,7 @@
         <i class="far fa-folder"></i>
       </span>
       <span class="post-meta-item-text">分類於</span>
-        <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
           <a href="/categories/%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">筆記</span></a>
         </span>
     </span>
@@ -305,30 +312,30 @@
 <span id="more"></span>
 
 <h2 id="代碼角度"><a href="#代碼角度" class="headerlink" title="代碼角度"></a>代碼角度</h2><h3 id="前置聲明"><a href="#前置聲明" class="headerlink" title="前置聲明"></a>前置聲明</h3><p>在<code>.h</code>檔中使用前置聲明(forward declaration)，而不是直接包含<code>.h</code>檔。</p>
-<pre class="language-c++" data-language="c++"><code class="language-c++">class A; //forward declaration, instead #include "a.h"
-class B{
+<pre class="language-c++" data-language="c++"><code class="language-c++">class A; &#x2F;&#x2F;forward declaration, instead #include &quot;a.h&quot;
+class B&#123;
     A* a;
     void useA(A&amp; a);
-};</code></pre>
+&#125;;</code></pre>
 
-<pre class="language-c++" data-language="c++"><code class="language-c++">#include "a.h" //cannot use forward declaration because compiler needs to know what A really is
-class B{
+<pre class="language-c++" data-language="c++"><code class="language-c++">#include &quot;a.h&quot; &#x2F;&#x2F;cannot use forward declaration because compiler needs to know what A really is
+class B&#123;
     A a;
-};</code></pre>
+&#125;;</code></pre>
 
 <p><strong>要盡一切可能使<code>.h</code>檔精簡</strong>。<br>很多時候前置聲明某個namespace中的class會比較痛苦，而直接include會方便很多，千萬要抵制住這種誘惑；class的成員，函數參數等也儘量用reference或pointer。</p>
 <h3 id="使用Pimpl模式"><a href="#使用Pimpl模式" class="headerlink" title="使用Pimpl模式"></a>使用Pimpl模式</h3><p>Pimpl為Private Implementation<br>傳統的C++的class的接口與實現是混淆在一起的，而Pimpl這種做法使得class的接口與實現得以完全分離。<br>如此，只要class的公共接口保持不變，對class實現的修改始終只需編譯該cpp；同時，該class提供給外界的.h檔也會精簡許多。</p>
 <pre class="language-c++" data-language="c++"><code class="language-c++">class A
-{
+&#123;
 public:
     A();
     ~A();
     void doSomething();
 
 private:
-    struct Impl;//real implementation in this class
+    struct Impl;&#x2F;&#x2F;real implementation in this class
     std::auto_ptr&lt;impl&gt; m_impl;
-};</code></pre>
+&#125;;</code></pre>
 
 <h3 id="高度模塊化"><a href="#高度模塊化" class="headerlink" title="高度模塊化"></a>高度模塊化</h3><p>模塊化就是低耦合，就是儘可能的減少相互依賴。</p>
 <ol>
@@ -352,13 +359,13 @@ CORE_PCH<span class="token operator">=</span><span class="token variable">$</spa
 
 <pre class="language-C++" data-language="C++"><code class="language-C++">#ifndef filename_h
 #define filename_h
-//...
+&#x2F;&#x2F;...
 #endif</code></pre>
 <p>同時使用兩種方法以確保compiler的相容性</p>
 <h2 id="Unity-Build"><a href="#Unity-Build" class="headerlink" title="Unity Build"></a>Unity Build</h2><p>把所有的檔案包含到一個cpp中(如<code>all.cpp</code>)，然後只編譯all.cpp。這樣就只有一個編譯單元，這意味著不需要重複load與解析同一個<code>.h</code>檔了，同時因為只產生一個obj文件，在link的時候也不需要那麼密集的IO</p>
 <h2 id="Compiler-Cache"><a href="#Compiler-Cache" class="headerlink" title="Compiler Cache"></a>Compiler Cache</h2><p>藉由快取上一次編譯的結果，使rebuild在保持結果相同的情況下，極大的提高速度。</p>
 <h2 id="不要有太多的Include-Directories"><a href="#不要有太多的Include-Directories" class="headerlink" title="不要有太多的Include Directories"></a>不要有太多的Include Directories</h2><p>編譯器定位你include的<code>.h</code>檔，是根據你提供的include directories進行搜索的。</p>
-<p>用 <code>cpp -v</code> 查看 <code>#include "..." search starts here:</code> 中的目錄<br>和 GNU Make 的 <code>-I</code> 選項</p>
+<p>用 <code>cpp -v</code> 查看 <code>#include &quot;...&quot; search starts here:</code> 中的目錄<br>和 GNU Make 的 <code>-I</code> 選項</p>
 <h2 id="平行化及分佈式編譯"><a href="#平行化及分佈式編譯" class="headerlink" title="平行化及分佈式編譯"></a>平行化及分佈式編譯</h2><p>GNU Make 的 <code>-j [N]</code> 可以用N個核心編譯<br>Visual Studio 有 <code>/MP</code> 選項可做到檔案等級的平行<br>或是用空閒的機器來編譯</p>
 <h2 id="買更好的磁碟"><a href="#買更好的磁碟" class="headerlink" title="買更好的磁碟"></a>買更好的磁碟</h2><p>編譯速度慢很大一部分原因是磁碟操作，那麼除了儘可能的減少磁碟操作，我們還可以做的就是加快磁碟速度。</p>
 <h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
@@ -447,7 +454,7 @@ CORE_PCH<span class="token operator">=</span><span class="token variable">$</spa
 
 
 <div class="copyright">
-  © 2014 – 
+  &copy; 2014 – 
   <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fab fa-free-code-camp"></i>
@@ -463,7 +470,7 @@ CORE_PCH<span class="token operator">=</span><span class="token variable">$</spa
     <span title="總字數">455k</span>
   </span>
 </div>
-  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> &amp; <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動
+  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動
   </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61c5cf9cb3476405" async="async"></script>
@@ -489,6 +496,7 @@ CORE_PCH<span class="token operator">=</span><span class="token variable">$</spa
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/tags/mermaid.min.js"></script>
 
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/pace.min.js"></script>
 
   
 
@@ -504,6 +512,5 @@ CORE_PCH<span class="token operator">=</span><span class="token variable">$</spa
 <script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"disqusforqwerty","count":false,"i18n":{"disqus":"disqus"}}</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/comments/disqus.min.js"></script>
 
-
-
-</body></html>
+</body>
+</html>

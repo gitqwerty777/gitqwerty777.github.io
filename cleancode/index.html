@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="zh-TW"><head>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
@@ -11,12 +13,14 @@
   <link rel="mask-icon" href="/img/favicon.webp" color="#222">
   <meta name="google-site-verification" content="45plYlJRhxb-g8Tl8seizYgih_JUsmcJRH6oJHplkj0">
 
+<link rel="stylesheet" href="/css/main.css">
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-
-
-
-  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/green/pace-theme-barber-shop.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"gitqwerty777.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.12.1","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"show_result":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"slideLeftIn"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/config.min.js"></script>
 
@@ -47,7 +51,7 @@
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>Clean Code(無瑕的程式碼)心得 | QWERTY</title>
   
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
   <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-51310670-1","only_pageview":false}</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/analytics/google-analytics.min.js"></script>
 
@@ -57,16 +61,16 @@
 
 
   <noscript>
-    
+    <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
 <link rel="alternate" href="/atom.xml" title="QWERTY" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext');loadCss('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');loadCss('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&amp;display=swap&amp;subset=latin,latin-ext"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css"></noscript></head>
+</head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" class="use-motion">
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
 
   <main class="main">
-    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切換導航欄" role="button">
@@ -112,7 +116,9 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" maxlength="80" placeholder="搜尋..." spellcheck="false" type="search" class="search-input">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
   </div>
   <span class="popup-btn-close" role="button">
     <i class="fa fa-times-circle"></i>
@@ -156,8 +162,9 @@
         <!--/noindex-->
 
         <div class="site-overview-wrap sidebar-panel">
-          <div class="site-author site-overview-item animated" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="qwerty" src="/img/qwerty.webp">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="qwerty"
+      src="/img/qwerty.webp">
   <p class="site-author-name" itemprop="name">qwerty</p>
   <div class="site-description" itemprop="description">Programming | Computer Science | Thought</div>
 </div>
@@ -183,7 +190,7 @@
 </div>
   <div class="links-of-author site-overview-item animated">
       <span class="links-of-author-item">
-        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http://github.com/gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
+        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http:&#x2F;&#x2F;github.com&#x2F;gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
       </span>
       <span class="links-of-author-item">
         <span class="exturl" data-url="bWFpbHRvOmdvb2hjbDc3N0BnbWFpbC5jb20=" title="E-Mail → mailto:goohcl777@gmail.com"><i class="fa fa-envelope fa-fw"></i></span>
@@ -200,10 +207,10 @@
     </div>
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https://qwerty777.me">My Main Page</span>
+          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https:&#x2F;&#x2F;qwerty777.me">My Main Page</span>
         </li>
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http://qwerty777.me/life/">My Second Blog -- Wysiwyg</span>
+          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http:&#x2F;&#x2F;qwerty777.me&#x2F;life&#x2F;">My Second Blog -- Wysiwyg</span>
         </li>
     </ul>
   </div>
@@ -241,20 +248,20 @@
   
   
 
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/cleancode/">
 
-    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/img/qwerty.webp">
       <meta itemprop="name" content="qwerty">
     </span>
 
-    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="QWERTY">
       <meta itemprop="description" content="Programming | Computer Science | Thought">
     </span>
 
-    <span hidden="" itemprop="post" itemscope="" itemtype="http://schema.org/CreativeWork">
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="Clean Code(無瑕的程式碼)心得 | QWERTY">
       <meta itemprop="description" content="讓開發速度變快的方法：隨時保持clean code">
     </span>
@@ -278,7 +285,7 @@
         <i class="far fa-folder"></i>
       </span>
       <span class="post-meta-item-text">分類於</span>
-        <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
           <a href="/categories/%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">筆記</span></a>
         </span>
     </span>
@@ -329,7 +336,7 @@
 <h3 id="有意義的命名"><a href="#有意義的命名" class="headerlink" title="有意義的命名"></a>有意義的命名</h3><ul>
 <li>有辦法唸出來的名稱，愈具體愈好</li>
 <li>用 define, enum, const 代替 常數<ul>
-<li><code>enum color{black, white}</code></li>
+<li><code>enum color&#123;black, white&#125;</code></li>
 <li>86400 → <code>SECOND_PER_DAY</code></li>
 <li>容易了解的數字就不用<ul>
 <li><code>circumference = radius * Math.PI * 2</code>: 不用將2換成實際名稱</li>
@@ -407,11 +414,11 @@
 </li>
 <li>通常只使用一個參數<ul>
 <li>用途一：取得參數的性質<ul>
-<li><code>boolean isFileExists("MyFile")</code></li>
+<li><code>boolean isFileExists(&quot;MyFile&quot;)</code></li>
 </ul>
 </li>
 <li>用途二：使用參數，然後回傳操作後的結果<ul>
-<li><code>InputStream fileOpen("MyFile")</code></li>
+<li><code>InputStream fileOpen(&quot;MyFile&quot;)</code></li>
 </ul>
 </li>
 </ul>
@@ -444,8 +451,8 @@
 </ul>
 </li>
 <li>指令(command)與查詢(query)分離<ul>
-<li>此函式同時有查詢和進行動作的功能: <code>if(setAttribute("username", "unclebob")) ... </code></li>
-<li>改進: <code>if(attributeExists("username")) setAttribute("username", "unclebob");</code></li>
+<li>此函式同時有查詢和進行動作的功能: <code>if(setAttribute(&quot;username&quot;, &quot;unclebob&quot;)) ... </code></li>
+<li>改進: <code>if(attributeExists(&quot;username&quot;)) setAttribute(&quot;username&quot;, &quot;unclebob&quot;);</code></li>
 </ul>
 </li>
 <li>適當的靜態(static)宣告<ul>
@@ -464,7 +471,7 @@
 </li>
 <li>常數宣告：放在適當的層級<ul>
 <li>將預設的常數放在呼叫的參數，而非被呼叫的函式內<ul>
-<li><code>getPageNameOrDefault(request, "FrontPage")</code> //default is “FrongPage”</li>
+<li><code>getPageNameOrDefault(request, &quot;FrontPage&quot;)</code> &#x2F;&#x2F;default is “FrongPage”</li>
 </ul>
 </li>
 <li>放在愈高階就愈容易修改</li>
@@ -564,21 +571,21 @@
 </blockquote>
 <p>變數保持私有的理由，不希望有人依賴此變數，保持一個自由的空間，讓我們能自由的更改變數的型態，或是在突如其來的奇想或衝動時，能自由的變更實現內容的程式碼。</p>
 <p>那為什麼有這麼多的程式設計師，自動替他們的物件加上getter和setter，讓他們的私有度數如同公用變數呢？</p>
-<pre class="language-c++" data-language="c++"><code class="language-c++">//完全暴露實現
-public class Point {
+<pre class="language-c++" data-language="c++"><code class="language-c++">&#x2F;&#x2F;完全暴露實現
+public class Point &#123;
 	public double x;
 	public double y;
-}
+&#125;
 
-//抽象化：無法分辨實現
-public interface Point {
+&#x2F;&#x2F;抽象化：無法分辨實現
+public interface Point &#123;
 	double getX();
 	double getY();
 	void setCartesian(double x, double y);
 	double getR();
 	double getTheta();
 	void setPolar(double r, double theta);
-}</code></pre>
+&#125;</code></pre>
 
 <p>利用抽象化的詞彙來表達資料。這並不是只透過介面及讀取、設定函式就能完成。想辨法找到最能詮釋「資料抽象概念」的方式。<br>而最差的作法，則是天真地加上讀取函式及設定函式而已。</p>
 <p>1.物件</p>
@@ -686,7 +693,7 @@ public interface Point {
 </ul>
 </li>
 <li>包裹第三方API<ul>
-<li><code>public void open() { try{innerPort.open();} ... }</code></li>
+<li><code>public void open() &#123; try&#123;innerPort.open();&#125; ... &#125;</code></li>
 <li>好處<ul>
 <li>掌握控制程式的權利</li>
 <li>在API未知的情況可以繼承此interface，創造一個Fake API來測試</li>
@@ -744,7 +751,7 @@ public interface Point {
 <li>Fast：快速(足夠快即可)</li>
 <li>Independent：可個別獨立執行</li>
 <li>Repeatable：可在任何環境重複執行</li>
-<li>Self-Validating：輸出bool值(成功/失敗)，而不是記錄檔<ul>
+<li>Self-Validating：輸出bool值(成功&#x2F;失敗)，而不是記錄檔<ul>
 <li>不用做額外的檢查</li>
 </ul>
 </li>
@@ -830,7 +837,7 @@ public interface Point {
 <p>將「做什麼」和「何時做」分解開來，像是Web應用的Servlet模型<br>當獲得一個網頁請求時，servlet會以非同步方式執行，不需要管理所有的請求，每一個servlet都在其自我的小小世界裡執行。</p>
 <p>缺點</p>
 <ul>
-<li>需要修改程式碼/架構</li>
+<li>需要修改程式碼&#x2F;架構</li>
 <li>速度不一定變快(有overhead)</li>
 <li>很難寫正確，因為很難重現bug</li>
 </ul>
@@ -855,7 +862,7 @@ public interface Point {
 </ul>
 </li>
 <li>測試<ul>
-<li>偽造/產生失敗以測試</li>
+<li>偽造&#x2F;產生失敗以測試</li>
 <li>讓平行化的程式可以開關平行化的功能</li>
 <li>在不同的平台測試</li>
 <li>執行比處理器數量還多的執行緒<ul>
@@ -943,17 +950,17 @@ public interface Point {
 <li>特色留戀(Feature Envy)<ol start="7">
 <li>使用其他物件的getter或setter</li>
 <li>有時候是必要之惡：放入別的物件會違反其他OOP的原則(此例：單一職責、開放閉合原則等)<pre class="language-java" data-language="java"><code class="language-java"><span class="token comment">//demo of feature envy</span>
-<span class="token keyword">public</span> clas <span class="token class-name">HourlyEmployeeReport</span><span class="token punctuation">{</span>
+<span class="token keyword">public</span> clas <span class="token class-name">HourlyEmployeeReport</span><span class="token punctuation">&#123;</span>
 	<span class="token keyword">private</span> <span class="token class-name">HourlyEmployee</span> employee<span class="token punctuation">;</span>
 
-	<span class="token class-name">String</span> <span class="token function">reportHours</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token class-name">String</span> <span class="token function">reportHours</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
 		<span class="token keyword">return</span> <span class="token class-name">String<span class="token punctuation">.</span>Format</span><span class="token punctuation">(</span>
 			<span class="token string">"Name:%s, Hours:%d.%ld\n"</span><span class="token punctuation">,</span>
 			employee<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
 			employee<span class="token punctuation">.</span><span class="token function">getTenthsWorked</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">10</span><span class="token punctuation">,</span>
 			employee<span class="token punctuation">.</span><span class="token function">getTenthsWorked</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">%</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
-<span class="token punctuation">}</span></code></pre></li>
+	<span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span></code></pre></li>
 </ol>
 </li>
 </ol>
@@ -1032,7 +1039,7 @@ public interface Point {
 
 
 <div class="copyright">
-  © 2014 – 
+  &copy; 2014 – 
   <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fab fa-free-code-camp"></i>
@@ -1048,7 +1055,7 @@ public interface Point {
     <span title="總字數">455k</span>
   </span>
 </div>
-  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> &amp; <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動
+  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動
   </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61c5cf9cb3476405" async="async"></script>
@@ -1074,6 +1081,7 @@ public interface Point {
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/tags/mermaid.min.js"></script>
 
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/pace.min.js"></script>
 
   
 
@@ -1089,6 +1097,5 @@ public interface Point {
 <script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"disqusforqwerty","count":false,"i18n":{"disqus":"disqus"}}</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/comments/disqus.min.js"></script>
 
-
-
-</body></html>
+</body>
+</html>

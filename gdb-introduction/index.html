@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="zh-TW"><head>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
@@ -11,28 +13,30 @@
   <link rel="mask-icon" href="/img/favicon.webp" color="#222">
   <meta name="google-site-verification" content="45plYlJRhxb-g8Tl8seizYgih_JUsmcJRH6oJHplkj0">
 
+<link rel="stylesheet" href="/css/main.css">
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-
-
-
-  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/green/pace-theme-barber-shop.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"gitqwerty777.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.12.1","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"show_result":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"slideLeftIn"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/config.min.js"></script>
 
-    <meta name="description" content="簡介只要使用GNU計畫出產的編譯器(如gcc)，就可以用gdb來進行除錯，包含 C/C++/Objective-C/Fortran/Java 等語言。">
+    <meta name="description" content="簡介只要使用GNU計畫出產的編譯器(如gcc)，就可以用gdb來進行除錯，包含 C&#x2F;C++&#x2F;Objective-C&#x2F;Fortran&#x2F;Java 等語言。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="gdb簡介">
 <meta property="og:url" content="http://gitqwerty777.github.io/gdb-introduction/index.html">
 <meta property="og:site_name" content="QWERTY">
-<meta property="og:description" content="簡介只要使用GNU計畫出產的編譯器(如gcc)，就可以用gdb來進行除錯，包含 C/C++/Objective-C/Fortran/Java 等語言。">
+<meta property="og:description" content="簡介只要使用GNU計畫出產的編譯器(如gcc)，就可以用gdb來進行除錯，包含 C&#x2F;C++&#x2F;Objective-C&#x2F;Fortran&#x2F;Java 等語言。">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2014-09-19T01:35:58.000Z">
 <meta property="article:modified_time" content="2014-09-19T01:35:58.000Z">
 <meta property="article:author" content="qwerty">
+<meta property="article:tag" content="cpp">
 <meta property="article:tag" content="gdb">
 <meta property="article:tag" content="c語言">
-<meta property="article:tag" content="cpp">
 <meta property="article:tag" content="除錯">
 <meta name="twitter:card" content="summary">
 
@@ -46,7 +50,7 @@
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>gdb簡介 | QWERTY</title>
   
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
   <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-51310670-1","only_pageview":false}</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/analytics/google-analytics.min.js"></script>
 
@@ -56,16 +60,16 @@
 
 
   <noscript>
-    
+    <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
 <link rel="alternate" href="/atom.xml" title="QWERTY" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext');loadCss('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');loadCss('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&amp;display=swap&amp;subset=latin,latin-ext"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css"></noscript></head>
+</head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" class="use-motion">
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
 
   <main class="main">
-    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切換導航欄" role="button">
@@ -111,7 +115,9 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" maxlength="80" placeholder="搜尋..." spellcheck="false" type="search" class="search-input">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
   </div>
   <span class="popup-btn-close" role="button">
     <i class="fa fa-times-circle"></i>
@@ -155,8 +161,9 @@
         <!--/noindex-->
 
         <div class="site-overview-wrap sidebar-panel">
-          <div class="site-author site-overview-item animated" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="qwerty" src="/img/qwerty.webp">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="qwerty"
+      src="/img/qwerty.webp">
   <p class="site-author-name" itemprop="name">qwerty</p>
   <div class="site-description" itemprop="description">Programming | Computer Science | Thought</div>
 </div>
@@ -182,7 +189,7 @@
 </div>
   <div class="links-of-author site-overview-item animated">
       <span class="links-of-author-item">
-        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http://github.com/gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
+        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http:&#x2F;&#x2F;github.com&#x2F;gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
       </span>
       <span class="links-of-author-item">
         <span class="exturl" data-url="bWFpbHRvOmdvb2hjbDc3N0BnbWFpbC5jb20=" title="E-Mail → mailto:goohcl777@gmail.com"><i class="fa fa-envelope fa-fw"></i></span>
@@ -199,10 +206,10 @@
     </div>
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https://qwerty777.me">My Main Page</span>
+          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https:&#x2F;&#x2F;qwerty777.me">My Main Page</span>
         </li>
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http://qwerty777.me/life/">My Second Blog -- Wysiwyg</span>
+          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http:&#x2F;&#x2F;qwerty777.me&#x2F;life&#x2F;">My Second Blog -- Wysiwyg</span>
         </li>
     </ul>
   </div>
@@ -240,20 +247,20 @@
   
   
 
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/gdb-introduction/">
 
-    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/img/qwerty.webp">
       <meta itemprop="name" content="qwerty">
     </span>
 
-    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="QWERTY">
       <meta itemprop="description" content="Programming | Computer Science | Thought">
     </span>
 
-    <span hidden="" itemprop="post" itemscope="" itemtype="http://schema.org/CreativeWork">
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="gdb簡介 | QWERTY">
       <meta itemprop="description" content="">
     </span>
@@ -277,7 +284,7 @@
         <i class="far fa-folder"></i>
       </span>
       <span class="post-meta-item-text">分類於</span>
-        <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
           <a href="/categories/%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">筆記</span></a>
         </span>
     </span>
@@ -299,7 +306,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h2><p>只要使用GNU計畫出產的編譯器(如gcc)，就可以用gdb來進行除錯，包含 C/C++/Objective-C/Fortran/Java 等語言。</p>
+        <h2 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h2><p>只要使用GNU計畫出產的編譯器(如gcc)，就可以用gdb來進行除錯，包含 C&#x2F;C++&#x2F;Objective-C&#x2F;Fortran&#x2F;Java 等語言。</p>
 <span id="more"></span>
 
 <h2 id="基本知識"><a href="#基本知識" class="headerlink" title="基本知識"></a>基本知識</h2><p><strong>function stack → frame</strong></p>
@@ -360,7 +367,7 @@
 <td>一次讀取完所有的符號表，這會讓啟動gdb的時間變長，但在執行往後的除錯動作會較快速。</td>
 </tr>
 <tr>
-<td>-quiet/-silent</td>
+<td>-quiet&#x2F;-silent</td>
 <td>-q</td>
 <td>安靜模式，啟動時gdb將不會顯示版權頁。</td>
 </tr>
@@ -480,8 +487,8 @@
 <td>顯示特定參數<br>如：<code>show environment</code></td>
 </tr>
 <tr>
-<td>set/show args</td>
-<td>設定/顯示 命令列的參數</td>
+<td>set&#x2F;show args</td>
+<td>設定&#x2F;顯示 命令列的參數</td>
 </tr>
 <tr>
 <td>attach [PID]</td>
@@ -530,7 +537,7 @@
 </thead>
 <tbody><tr>
 <td>backtrace</td>
-<td>堆疊追蹤。會顯示出所有的 frame 的資訊<br> = <code>info frame</code></td>
+<td>堆疊追蹤。會顯示出所有的 frame 的資訊<br> &#x3D; <code>info frame</code></td>
 </tr>
 <tr>
 <td>frame</td>
@@ -673,7 +680,7 @@
 <li><code>$sp</code> stack pointer</li>
 </ul>
 <h4 id="設定新變數"><a href="#設定新變數" class="headerlink" title="設定新變數"></a>設定新變數</h4><p>取代冗長路徑的變數，如在深層資料結構中的變數<br>(註: 此變數為 pass by reference, 修改新變數的值也會修改原本的變數)</p>
-<pre class="language-gdb" data-language="gdb"><code class="language-gdb">set $newv = model-&gt;dataset-&gt;vector-&gt;data
+<pre class="language-gdb" data-language="gdb"><code class="language-gdb">set $newv &#x3D; model-&gt;dataset-&gt;vector-&gt;data
 p *($newv++)</code></pre>
 
 <h4 id="info-檢視詳細資訊"><a href="#info-檢視詳細資訊" class="headerlink" title="info: 檢視詳細資訊"></a>info: 檢視詳細資訊</h4><table>
@@ -721,7 +728,7 @@ p *($newv++)</code></pre>
 </tr>
 </tbody></table>
 <h2 id="其他指令"><a href="#其他指令" class="headerlink" title="其他指令"></a>其他指令</h2><ul>
-<li><code>quit</code> 結束 = <code>q</code></li>
+<li><code>quit</code> 結束 &#x3D; <code>q</code></li>
 <li><code>shell [command]</code> 在shell上執行指令</li>
 <li>Enter鍵: 重複上一個命令</li>
 </ul>
@@ -786,7 +793,7 @@ p *($newv++)</code></pre>
 </ul>
 <p>可多次使用簡寫</p>
 <ul>
-<li><code>info break</code> = <code>i b</code></li>
+<li><code>info break</code> &#x3D; <code>i b</code></li>
 </ul>
 <h2 id="CppCon-2015-Greg-Law-“Give-me-15-minutes-amp-I’ll-change-your-view-of-GDB”"><a href="#CppCon-2015-Greg-Law-“Give-me-15-minutes-amp-I’ll-change-your-view-of-GDB”" class="headerlink" title="CppCon 2015: Greg Law “Give me 15 minutes &amp; I’ll change your view of GDB”"></a>CppCon 2015: Greg Law “Give me 15 minutes &amp; I’ll change your view of GDB”</h2><p><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1Qb3JmTFNyM0RESQ==">Youtube連結<i class="fa fa-external-link-alt"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0NwcENvbi9DcHBDb24yMDE1L2Jsb2IvbWFzdGVyL0xpZ2h0bmluZyUyMFRhbGtzJTIwYW5kJTIwTHVuY2glMjBTZXNzaW9ucy9HaXZlJTIwTWUlMjAxNSUyME1pbnV0ZXMlMjBhbmQlMjBJJ2xsJTIwQ2hhbmdlJTIwWW91ciUyMFZpZXclMjBvZiUyMEdEQi9HaXZlJTIwTWUlMjAxNSUyME1pbnV0ZXMlMjBhbmQlMjBJJ2xsJTIwQ2hhbmdlJTIwWW91ciUyMFZpZXclMjBvZiUyMEdEQiUyMC0lMjBHcmVnJTIwTGF3JTIwLSUyMENwcENvbiUyMDIwMTUucGRm">Github連結<i class="fa fa-external-link-alt"></i></span></p>
 <ul>
@@ -794,7 +801,7 @@ p *($newv++)</code></pre>
 <li><code>Ctrl-p</code>： 得到前一個指令</li>
 </ul>
 </li>
-<li><code>Ctrl-x 2</code>： switch to assembly mode/register group mode </li>
+<li><code>Ctrl-x 2</code>： switch to assembly mode&#x2F;register group mode </li>
 <li><code>tui reg float</code>： show float registers</li>
 <li><code>b _exit.c:32</code>： 在程式結束之前停止</li>
 <li><code>command [breakpoint number] [command]</code>： 遇到breakpoint時，所自動執行的指令 </li>
@@ -847,9 +854,9 @@ p *($newv++)</code></pre>
 </div>
 
           <div class="post-tags">
+              <a href="/tags/cpp/" rel="tag"><i class="fa fa-tag"></i> cpp</a>
               <a href="/tags/gdb/" rel="tag"><i class="fa fa-tag"></i> gdb</a>
               <a href="/tags/c%E8%AA%9E%E8%A8%80/" rel="tag"><i class="fa fa-tag"></i> c語言</a>
-              <a href="/tags/cpp/" rel="tag"><i class="fa fa-tag"></i> cpp</a>
               <a href="/tags/%E9%99%A4%E9%8C%AF/" rel="tag"><i class="fa fa-tag"></i> 除錯</a>
           </div>
 
@@ -889,7 +896,7 @@ p *($newv++)</code></pre>
 
 
 <div class="copyright">
-  © 2014 – 
+  &copy; 2014 – 
   <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fab fa-free-code-camp"></i>
@@ -905,7 +912,7 @@ p *($newv++)</code></pre>
     <span title="總字數">455k</span>
   </span>
 </div>
-  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> &amp; <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動
+  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動
   </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61c5cf9cb3476405" async="async"></script>
@@ -931,6 +938,7 @@ p *($newv++)</code></pre>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/tags/mermaid.min.js"></script>
 
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/pace.min.js"></script>
 
   
 
@@ -946,6 +954,5 @@ p *($newv++)</code></pre>
 <script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"disqusforqwerty","count":false,"i18n":{"disqus":"disqus"}}</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/comments/disqus.min.js"></script>
 
-
-
-</body></html>
+</body>
+</html>

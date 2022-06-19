@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="zh-TW"><head>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
@@ -11,12 +13,14 @@
   <link rel="mask-icon" href="/img/favicon.webp" color="#222">
   <meta name="google-site-verification" content="45plYlJRhxb-g8Tl8seizYgih_JUsmcJRH6oJHplkj0">
 
+<link rel="stylesheet" href="/css/main.css">
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-
-
-
-  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/green/pace-theme-barber-shop.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"gitqwerty777.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.12.1","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"show_result":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"slideLeftIn"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/config.min.js"></script>
 
@@ -30,8 +34,8 @@
 <meta property="article:published_time" content="2015-07-21T04:37:47.000Z">
 <meta property="article:modified_time" content="2015-07-21T04:37:47.000Z">
 <meta property="article:author" content="qwerty">
-<meta property="article:tag" content="cpp">
 <meta property="article:tag" content="c">
+<meta property="article:tag" content="cpp">
 <meta name="twitter:card" content="summary">
 
 
@@ -44,7 +48,7 @@
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>標頭檔(header)與include | QWERTY</title>
   
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
   <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-51310670-1","only_pageview":false}</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/analytics/google-analytics.min.js"></script>
 
@@ -54,16 +58,16 @@
 
 
   <noscript>
-    
+    <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
 <link rel="alternate" href="/atom.xml" title="QWERTY" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext');loadCss('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');loadCss('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&amp;display=swap&amp;subset=latin,latin-ext"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css"></noscript></head>
+</head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" class="use-motion">
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
 
   <main class="main">
-    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切換導航欄" role="button">
@@ -109,7 +113,9 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" maxlength="80" placeholder="搜尋..." spellcheck="false" type="search" class="search-input">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
   </div>
   <span class="popup-btn-close" role="button">
     <i class="fa fa-times-circle"></i>
@@ -153,8 +159,9 @@
         <!--/noindex-->
 
         <div class="site-overview-wrap sidebar-panel">
-          <div class="site-author site-overview-item animated" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="qwerty" src="/img/qwerty.webp">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="qwerty"
+      src="/img/qwerty.webp">
   <p class="site-author-name" itemprop="name">qwerty</p>
   <div class="site-description" itemprop="description">Programming | Computer Science | Thought</div>
 </div>
@@ -180,7 +187,7 @@
 </div>
   <div class="links-of-author site-overview-item animated">
       <span class="links-of-author-item">
-        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http://github.com/gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
+        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http:&#x2F;&#x2F;github.com&#x2F;gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
       </span>
       <span class="links-of-author-item">
         <span class="exturl" data-url="bWFpbHRvOmdvb2hjbDc3N0BnbWFpbC5jb20=" title="E-Mail → mailto:goohcl777@gmail.com"><i class="fa fa-envelope fa-fw"></i></span>
@@ -197,10 +204,10 @@
     </div>
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https://qwerty777.me">My Main Page</span>
+          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https:&#x2F;&#x2F;qwerty777.me">My Main Page</span>
         </li>
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http://qwerty777.me/life/">My Second Blog -- Wysiwyg</span>
+          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http:&#x2F;&#x2F;qwerty777.me&#x2F;life&#x2F;">My Second Blog -- Wysiwyg</span>
         </li>
     </ul>
   </div>
@@ -238,20 +245,20 @@
   
   
 
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/header-file-tips/">
 
-    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/img/qwerty.webp">
       <meta itemprop="name" content="qwerty">
     </span>
 
-    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="QWERTY">
       <meta itemprop="description" content="Programming | Computer Science | Thought">
     </span>
 
-    <span hidden="" itemprop="post" itemscope="" itemtype="http://schema.org/CreativeWork">
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="標頭檔(header)與include | QWERTY">
       <meta itemprop="description" content="">
     </span>
@@ -275,7 +282,7 @@
         <i class="far fa-folder"></i>
       </span>
       <span class="post-meta-item-text">分類於</span>
-        <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
           <a href="/categories/%E8%BD%89%E8%BC%89/" itemprop="url" rel="index"><span itemprop="name">轉載</span></a>
         </span>
     </span>
@@ -324,29 +331,29 @@
 </ol>
 <pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">// in myclass.h</span>
 <span class="token keyword">class</span> <span class="token class-name">MyClass</span>
-<span class="token punctuation">{</span>
+<span class="token punctuation">&#123;</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
   <span class="token keyword">void</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token keyword">int</span> bar<span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
 
 <span class="token comment">// in myclass.cpp</span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"myclass.h"</span></span>
 <span class="token keyword">void</span> <span class="token class-name">MyClass</span><span class="token double-colon punctuation">::</span><span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-<span class="token punctuation">}</span>
+<span class="token punctuation">&#123;</span>
+<span class="token punctuation">&#125;</span>
 
 <span class="token comment">//in main.cpp</span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"myclass.h"</span>  <span class="token comment">// defines MyClass</span></span>
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
+<span class="token punctuation">&#123;</span>
   MyClass a<span class="token punctuation">;</span> <span class="token comment">// no longer produces an error, because MyClass is defined</span>
   <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
+<span class="token punctuation">&#125;</span></code></pre>
 
 <ul>
-<li>Header files should use a .h__ extension (.h / .hpp / .hxx). Which of those you use doesn’t matter</li>
-<li>C++ Source files should use a .c__ extention (.cpp / .cxx / .cc). Which of those you use doesn’t matter</li>
+<li>Header files should use a .h__ extension (.h &#x2F; .hpp &#x2F; .hxx). Which of those you use doesn’t matter</li>
+<li>C++ Source files should use a .c__ extention (.cpp &#x2F; .cxx &#x2F; .cc). Which of those you use doesn’t matter</li>
 <li>C Source files should use .c (.c only)</li>
 </ul>
 <blockquote>
@@ -357,9 +364,9 @@
 <pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">// myclass.h</span>
 
 <span class="token keyword">class</span> <span class="token class-name">MyClass</span>
-<span class="token punctuation">{</span>
-  <span class="token keyword">void</span> <span class="token function">DoSomething</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#123;</span>
+  <span class="token keyword">void</span> <span class="token function">DoSomething</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
 
 <span class="token comment">// main.cpp</span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"myclass.h"</span>   <span class="token comment">// define MyClass</span></span>
@@ -367,13 +374,13 @@
 
 <p>There’s an Implicit Example </p>
 <pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">// x.h</span>
-<span class="token keyword">class</span> <span class="token class-name">X</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">X</span> <span class="token punctuation">&#123;</span> <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
 <span class="token comment">// a.h</span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"x.h"</span></span>
-<span class="token keyword">class</span> <span class="token class-name">A</span> <span class="token punctuation">{</span> X x<span class="token punctuation">;</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">A</span> <span class="token punctuation">&#123;</span> X x<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
 <span class="token comment">// b.h</span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"x.h"</span></span>
-<span class="token keyword">class</span> <span class="token class-name">B</span> <span class="token punctuation">{</span> X x<span class="token punctuation">;</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">B</span> <span class="token punctuation">&#123;</span> X x<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
 <span class="token comment">// main.cpp</span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"a.h"</span>  <span class="token comment">// also includes "x.h"</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"b.h"</span>  <span class="token comment">// includes x.h again!  ERROR </span></span></code></pre>
@@ -389,7 +396,7 @@
 <pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">//x.h</span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">ifndef</span> <span class="token expression">__X_H_INCLUDED__   </span><span class="token comment">// if x.h hasn't been included yet...</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">__X_H_INCLUDED__</span>   <span class="token comment">//   #define this so the compiler knows it has been included</span></span>
-<span class="token keyword">class</span> <span class="token class-name">X</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">X</span> <span class="token punctuation">&#123;</span> <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">endif</span> </span></code></pre>
 
 <h2 id="The-“right-way”-to-include"><a href="#The-“right-way”-to-include" class="headerlink" title="The “right way” to include"></a>The “right way” to include</h2><p>aware of following dependencies   </p>
@@ -409,7 +416,7 @@
 <li>B* myb, B&amp; myb</li>
 </ul>
 </li>
-<li>function has B object/pointer/reference as <strong>parementer or return type</strong><ul>
+<li>function has B object&#x2F;pointer&#x2F;reference as <strong>parementer or return type</strong><ul>
 <li>B MyFunction(B myb)</li>
 </ul>
 </li>
@@ -437,27 +444,27 @@
 
 <span class="token comment">//=================================</span>
 <span class="token comment">// included dependencies</span>
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;vector&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;vector></span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"parent.h"</span></span>
 
 <span class="token comment">//=================================</span>
 <span class="token comment">// the actual class</span>
 <span class="token keyword">class</span> <span class="token class-name">MyClass</span> <span class="token operator">:</span> <span class="token keyword">public</span> Parent  <span class="token comment">// Parent object, so #include "parent.h"</span>
-<span class="token punctuation">{</span>
+<span class="token punctuation">&#123;</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
-  std<span class="token double-colon punctuation">::</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> avector<span class="token punctuation">;</span>    <span class="token comment">// vector object, so #include &lt;vector&gt;</span>
+  std<span class="token double-colon punctuation">::</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> avector<span class="token punctuation">;</span>    <span class="token comment">// vector object, so #include &lt;vector></span>
   Foo<span class="token operator">*</span> foo<span class="token punctuation">;</span>                    <span class="token comment">// Foo pointer, so forward declare Foo</span>
   <span class="token keyword">void</span> <span class="token function">Func</span><span class="token punctuation">(</span>Bar<span class="token operator">&amp;</span> bar<span class="token punctuation">)</span><span class="token punctuation">;</span>         <span class="token comment">// Bar reference, so forward declare Bar</span>
 
   <span class="token keyword">friend</span> <span class="token keyword">class</span> <span class="token class-name">MyFriend</span><span class="token punctuation">;</span>       <span class="token comment">// friend declaration is not a dependency</span>
                                <span class="token comment">//   don't do anything about MyFriend</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
 
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">endif</span> <span class="token comment">// __MYCLASS_H_INCLUDED__ </span></span></code></pre>
 
 
 <h3 id="Why-that-is-the-“right-way”-to-include"><a href="#Why-that-is-the-“right-way”-to-include" class="headerlink" title="Why that is the “right way” to include"></a>Why that is the “right way” to include</h3><ul>
-<li>general idea is that it makes “myclass.h” fully self-contained and doesn’t require any other area of the program (other than MyClass’s implementation/source file) to know how MyClass works internally<ul>
+<li>general idea is that it makes “myclass.h” fully self-contained and doesn’t require any other area of the program (other than MyClass’s implementation&#x2F;source file) to know how MyClass works internally<ul>
 <li>If some other class needs to use MyClass, it can just #include “myclass.h” and be done with it!</li>
 </ul>
 </li>
@@ -479,12 +486,12 @@
    <span class="token comment">// ERROR 'std::vector' undefined </span>
 	
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"parent.h"</span></span>
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;vector&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;vector></span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"myclass.h"</span></span>
    <span class="token comment">// ERROR 'Support' undefined </span>
 
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"parent.h"</span></span>
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;vector&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;vector></span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"support.h"</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"myclass.h"</span></span>
    <span class="token comment">// ERROR 'Support' undefined</span>
@@ -494,10 +501,10 @@
 <h3 id="Circular-Dependencies"><a href="#Circular-Dependencies" class="headerlink" title="Circular Dependencies"></a>Circular Dependencies</h3><p>A circular dependency is when two (or more) classes depend on each other  </p>
 <pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">// a.h</span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"b.h"</span></span>
-<span class="token keyword">class</span> <span class="token class-name">A</span> <span class="token punctuation">{</span> B<span class="token operator">*</span> b<span class="token punctuation">;</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">A</span> <span class="token punctuation">&#123;</span> B<span class="token operator">*</span> b<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
 <span class="token comment">// b.h</span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"a.h"</span></span>
-<span class="token keyword">class</span> <span class="token class-name">B</span> <span class="token punctuation">{</span> A<span class="token operator">*</span> a <span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+<span class="token keyword">class</span> <span class="token class-name">B</span> <span class="token punctuation">&#123;</span> A<span class="token operator">*</span> a <span class="token punctuation">&#125;</span><span class="token punctuation">;</span></code></pre>
 
 <p>That’s what circular inclusion does</p>
 <pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">// a.cpp</span>
@@ -515,52 +522,52 @@ The compiler will <span class="token keyword">do</span> the following<span class
          <span class="token comment">// compilation of a.h skipped because it's guarded</span>
 
       <span class="token comment">// resume compiling b.h</span>
-      <span class="token keyword">class</span> <span class="token class-name">B</span> <span class="token punctuation">{</span> A<span class="token operator">*</span> a <span class="token punctuation">}</span><span class="token punctuation">;</span>        <span class="token comment">// &lt;--- ERROR, A is undeclared </span></code></pre>
+      <span class="token keyword">class</span> <span class="token class-name">B</span> <span class="token punctuation">&#123;</span> A<span class="token operator">*</span> a <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>        <span class="token comment">// &lt;--- ERROR, A is undeclared </span></code></pre>
 
 <p>Even though you’re #including “a.h”, the compiler is not seeing A class until B class gets compiled.<br>Solution: forward declare when you’re only using a pointer or reference</p>
 <p>Situation below is conceptually impossible(not logical). The solution is to have one or both classes contain a pointer or reference to the other, rather than a full object</p>
-<pre class="language-none"><code class="language-none">// a.h (guarded)
-#include "b.h"
+<pre class="language-none"><code class="language-none">&#x2F;&#x2F; a.h (guarded)
+#include &quot;b.h&quot;
 class A
-{
-  B b;   // B is an object, can't be forward declared
-};
-// b.h (guarded)
-#include "a.h"
+&#123;
+  B b;   &#x2F;&#x2F; B is an object, can&#39;t be forward declared
+&#125;;
+&#x2F;&#x2F; b.h (guarded)
+#include &quot;a.h&quot;
 class B
-{
-  A a;   // A is an object, can't be forward declared
-};</code></pre>
+&#123;
+  A a;   &#x2F;&#x2F; A is an object, can&#39;t be forward declared
+&#125;;</code></pre>
 
 <h2 id="Function-inlining"><a href="#Function-inlining" class="headerlink" title="Function inlining"></a>Function inlining</h2><p>Inline Function body needs to exist in every cpp file which calls them, otherwise you get linker errors</p>
 <pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">B</span>
-<span class="token punctuation">{</span>
+<span class="token punctuation">&#123;</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
   <span class="token keyword">void</span> <span class="token function">Func</span><span class="token punctuation">(</span><span class="token keyword">const</span> A<span class="token operator">&amp;</span> a<span class="token punctuation">)</span>   <span class="token comment">// parameter, so forward declare is okay</span>
-  <span class="token punctuation">{</span>
+  <span class="token punctuation">&#123;</span>
     a<span class="token punctuation">.</span><span class="token function">DoSomething</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>      <span class="token comment">// but now that we've dereferenced it, it</span>
                           <span class="token comment">//  becomes an #include dependency</span>
                <span class="token comment">// = we now have a potential circular inclusion</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span></code></pre>
 
 <p>The key is that while inline function need to exist in the header, they <strong>do not need to exist in the class definition itself</strong></p>
-<pre class="language-none"><code class="language-none">// b.h  (assume its guarded)
-//------------------
-class A;  // forward declared dependency
-//------------------
+<pre class="language-none"><code class="language-none">&#x2F;&#x2F; b.h  (assume its guarded)
+&#x2F;&#x2F;------------------
+class A;  &#x2F;&#x2F; forward declared dependency
+&#x2F;&#x2F;------------------
 class B
-{
+&#123;
 public:
-  void Func(const A&amp; a);  // okay, A is forward declared
-}
-//------------------
-//now B is already defined
-#include "a.h"        // can use A with include dependency without error
+  void Func(const A&amp; a);  &#x2F;&#x2F; okay, A is forward declared
+&#125;
+&#x2F;&#x2F;------------------
+&#x2F;&#x2F;now B is already defined
+#include &quot;a.h&quot;        &#x2F;&#x2F; can use A with include dependency without error
 inline void B::Func(const A&amp; a)
-{
-  a.DoSomething();    // okay!  a.h has been included
-}</code></pre>
+&#123;
+  a.DoSomething();    &#x2F;&#x2F; okay!  a.h has been included
+&#125;</code></pre>
 
 <p>even if a.h includes b.h, the additional #includes don’t come up until AFTER class B is fully defined, and they are therefore harmless.</p>
 <p>But putting function bodies at the end of my header is ugly. Is there a way to avoid that?</p>
@@ -568,7 +575,7 @@ inline void B::Func(const A&amp; a)
 
     <span class="token comment">// blah blah</span>
 
-<span class="token keyword">class</span> <span class="token class-name">B</span> <span class="token punctuation">{</span> <span class="token comment">/* blah blah */</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">B</span> <span class="token punctuation">&#123;</span> <span class="token comment">/* blah blah */</span> <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
 
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"b_inline.h"</span>  <span class="token comment">// or I sometimes use "b.hpp" </span></span></code></pre>
 
@@ -580,23 +587,23 @@ inline void B::Func(const A&amp; a)
                 <span class="token comment">//  file, even though it isn't</span>
 
 <span class="token keyword">inline</span> <span class="token keyword">void</span> <span class="token class-name">B</span><span class="token double-colon punctuation">::</span><span class="token function">Func</span><span class="token punctuation">(</span><span class="token keyword">const</span> A<span class="token operator">&amp;</span> a<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
+<span class="token punctuation">&#123;</span>
   a<span class="token punctuation">.</span><span class="token function">DoSomething</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
+<span class="token punctuation">&#125;</span></code></pre>
 <p>This seperates the interface from the implementation, while still allowing the implementation to be inlined</p>
 <h2 id="Forward-declaring-templates"><a href="#Forward-declaring-templates" class="headerlink" title="Forward declaring templates"></a>Forward declaring templates</h2><p>Forward declaring is pretty straight-forward when it comes to simple classes, but when dealing with template classes, things aren’t so simple</p>
 <pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">// a.h</span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"b.h"</span> <span class="token comment">// included dependencies</span></span>
 
-<span class="token keyword">template</span> <span class="token operator">&lt;</span><span class="token keyword">typename</span> <span class="token class-name">T</span><span class="token operator">&gt;</span> <span class="token comment">// the class template</span>
+<span class="token keyword">template</span> <span class="token operator">&lt;</span><span class="token keyword">typename</span> <span class="token class-name">T</span><span class="token operator">></span> <span class="token comment">// the class template</span>
 <span class="token keyword">class</span> <span class="token class-name">Tem</span>
-<span class="token punctuation">{</span>
+<span class="token punctuation">&#123;</span>
  <span class="token comment">/*...*/</span>
   B b<span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
 
 <span class="token comment">// class most commonly used with 'int'</span>
-<span class="token keyword">typedef</span> Tem<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> A<span class="token punctuation">;</span>  <span class="token comment">// typedef as 'A' </span>
+<span class="token keyword">typedef</span> Tem<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> A<span class="token punctuation">;</span>  <span class="token comment">// typedef as 'A' </span>
 
 <span class="token comment">// b.h</span>
 <span class="token comment">// forward declared dependencies</span>
@@ -604,38 +611,38 @@ inline void B::Func(const A&amp; a)
 
 <span class="token comment">// the class</span>
 <span class="token keyword">class</span> <span class="token class-name">B</span>
-<span class="token punctuation">{</span>
+<span class="token punctuation">&#123;</span>
  <span class="token comment">/* ... */</span>
   A<span class="token operator">*</span> ptr<span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span></code></pre>
 
 <p>Because ‘A’ isn’t really a class, but rather a typedef, the compiler will bark at you<br>we can’t just #include “a.h” here because of a circular dependency problem</p>
 <p>We need to forward typedef A  </p>
-<pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">template</span> <span class="token operator">&lt;</span><span class="token keyword">typename</span> <span class="token class-name">T</span><span class="token operator">&gt;</span> <span class="token keyword">class</span> <span class="token class-name">Tem</span><span class="token punctuation">;</span>  <span class="token comment">// forward declare our template</span>
-<span class="token keyword">typedef</span> Tem<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> A<span class="token punctuation">;</span>               <span class="token comment">// then typedef 'A' (forward typedef A instead of forward declare A)</span></code></pre>
+<pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">template</span> <span class="token operator">&lt;</span><span class="token keyword">typename</span> <span class="token class-name">T</span><span class="token operator">></span> <span class="token keyword">class</span> <span class="token class-name">Tem</span><span class="token punctuation">;</span>  <span class="token comment">// forward declare our template</span>
+<span class="token keyword">typedef</span> Tem<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> A<span class="token punctuation">;</span>               <span class="token comment">// then typedef 'A' (forward typedef A instead of forward declare A)</span></code></pre>
 
 <p>A cleaner solution is to create an <strong>alternative header</strong> which has the forward declarations of your templated classes and their typedefs</p>
 <pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">//a.h</span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"b.h"</span></span>
-<span class="token keyword">template</span> <span class="token operator">&lt;</span><span class="token keyword">typename</span> <span class="token class-name">T</span><span class="token operator">&gt;</span>
+<span class="token keyword">template</span> <span class="token operator">&lt;</span><span class="token keyword">typename</span> <span class="token class-name">T</span><span class="token operator">></span>
 <span class="token keyword">class</span> <span class="token class-name">Tem</span>
-<span class="token punctuation">{</span>
+<span class="token punctuation">&#123;</span>
  <span class="token comment">/*...*/</span>
   B b<span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
 
 	
 <span class="token comment">//a_fwd.h</span>
-<span class="token keyword">template</span> <span class="token operator">&lt;</span><span class="token keyword">typename</span> <span class="token class-name">T</span><span class="token operator">&gt;</span> <span class="token keyword">class</span> <span class="token class-name">Tem</span><span class="token punctuation">;</span>
-<span class="token keyword">typedef</span> Tem<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> A<span class="token punctuation">;</span>
+<span class="token keyword">template</span> <span class="token operator">&lt;</span><span class="token keyword">typename</span> <span class="token class-name">T</span><span class="token operator">></span> <span class="token keyword">class</span> <span class="token class-name">Tem</span><span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> Tem<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> A<span class="token punctuation">;</span>
 
 <span class="token comment">//b.h</span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"a_fwd.h"</span></span>
 <span class="token keyword">class</span> <span class="token class-name">B</span>
-<span class="token punctuation">{</span>
+<span class="token punctuation">&#123;</span>
  <span class="token comment">/*...*/</span>
   A<span class="token operator">*</span> ptr<span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span></code></pre>
 
 <p>This allows B to include a header which forward declares A without including the entire class definition</p>
 
@@ -666,8 +673,8 @@ inline void B::Func(const A&amp; a)
 </div>
 
           <div class="post-tags">
-              <a href="/tags/cpp/" rel="tag"><i class="fa fa-tag"></i> cpp</a>
               <a href="/tags/c/" rel="tag"><i class="fa fa-tag"></i> c</a>
+              <a href="/tags/cpp/" rel="tag"><i class="fa fa-tag"></i> cpp</a>
           </div>
 
         
@@ -706,7 +713,7 @@ inline void B::Func(const A&amp; a)
 
 
 <div class="copyright">
-  © 2014 – 
+  &copy; 2014 – 
   <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fab fa-free-code-camp"></i>
@@ -722,7 +729,7 @@ inline void B::Func(const A&amp; a)
     <span title="總字數">455k</span>
   </span>
 </div>
-  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> &amp; <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動
+  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動
   </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61c5cf9cb3476405" async="async"></script>
@@ -748,6 +755,7 @@ inline void B::Func(const A&amp; a)
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/tags/mermaid.min.js"></script>
 
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/pace.min.js"></script>
 
   
 
@@ -763,6 +771,5 @@ inline void B::Func(const A&amp; a)
 <script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"disqusforqwerty","count":false,"i18n":{"disqus":"disqus"}}</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/comments/disqus.min.js"></script>
 
-
-
-</body></html>
+</body>
+</html>

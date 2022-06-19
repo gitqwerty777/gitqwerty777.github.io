@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="zh-TW"><head>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
@@ -11,12 +13,14 @@
   <link rel="mask-icon" href="/img/favicon.webp" color="#222">
   <meta name="google-site-verification" content="45plYlJRhxb-g8Tl8seizYgih_JUsmcJRH6oJHplkj0">
 
+<link rel="stylesheet" href="/css/main.css">
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-
-
-
-  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/green/pace-theme-barber-shop.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"gitqwerty777.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.12.1","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"show_result":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"slideLeftIn"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/config.min.js"></script>
 
@@ -47,7 +51,7 @@
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>Emacs常用指令表 | QWERTY</title>
   
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
   <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-51310670-1","only_pageview":false}</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/analytics/google-analytics.min.js"></script>
 
@@ -57,16 +61,16 @@
 
 
   <noscript>
-    
+    <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
 <link rel="alternate" href="/atom.xml" title="QWERTY" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext');loadCss('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');loadCss('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&amp;display=swap&amp;subset=latin,latin-ext"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css"></noscript></head>
+</head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" class="use-motion">
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
 
   <main class="main">
-    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切換導航欄" role="button">
@@ -112,7 +116,9 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" maxlength="80" placeholder="搜尋..." spellcheck="false" type="search" class="search-input">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
   </div>
   <span class="popup-btn-close" role="button">
     <i class="fa fa-times-circle"></i>
@@ -156,8 +162,9 @@
         <!--/noindex-->
 
         <div class="site-overview-wrap sidebar-panel">
-          <div class="site-author site-overview-item animated" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="qwerty" src="/img/qwerty.webp">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="qwerty"
+      src="/img/qwerty.webp">
   <p class="site-author-name" itemprop="name">qwerty</p>
   <div class="site-description" itemprop="description">Programming | Computer Science | Thought</div>
 </div>
@@ -183,7 +190,7 @@
 </div>
   <div class="links-of-author site-overview-item animated">
       <span class="links-of-author-item">
-        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http://github.com/gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
+        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http:&#x2F;&#x2F;github.com&#x2F;gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
       </span>
       <span class="links-of-author-item">
         <span class="exturl" data-url="bWFpbHRvOmdvb2hjbDc3N0BnbWFpbC5jb20=" title="E-Mail → mailto:goohcl777@gmail.com"><i class="fa fa-envelope fa-fw"></i></span>
@@ -200,10 +207,10 @@
     </div>
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https://qwerty777.me">My Main Page</span>
+          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https:&#x2F;&#x2F;qwerty777.me">My Main Page</span>
         </li>
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http://qwerty777.me/life/">My Second Blog -- Wysiwyg</span>
+          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http:&#x2F;&#x2F;qwerty777.me&#x2F;life&#x2F;">My Second Blog -- Wysiwyg</span>
         </li>
     </ul>
   </div>
@@ -241,20 +248,20 @@
   
   
 
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/Emacs-tips/">
 
-    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/img/qwerty.webp">
       <meta itemprop="name" content="qwerty">
     </span>
 
-    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="QWERTY">
       <meta itemprop="description" content="Programming | Computer Science | Thought">
     </span>
 
-    <span hidden="" itemprop="post" itemscope="" itemtype="http://schema.org/CreativeWork">
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="Emacs常用指令表 | QWERTY">
       <meta itemprop="description" content="Emacs快捷鍵是可以修改的，所以不一定要全部記住，只需要熟悉基本功能和知道有其他方便的擴充功能即可">
     </span>
@@ -278,7 +285,7 @@
         <i class="far fa-folder"></i>
       </span>
       <span class="post-meta-item-text">分類於</span>
-        <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
           <a href="/categories/%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">筆記</span></a>
         </span>
     </span>
@@ -331,15 +338,15 @@
 </thead>
 <tbody><tr>
 <td>M-v, C-v</td>
-<td>上翻/下翻一頁</td>
+<td>上翻&#x2F;下翻一頁</td>
 </tr>
 <tr>
 <td>M-b, M-f</td>
-<td>往前/往後 移動一個詞</td>
+<td>往前&#x2F;往後 移動一個詞</td>
 </tr>
 <tr>
 <td>M-a, M-e</td>
-<td>移動到一句的開始/結尾(程式碼的一個段落)</td>
+<td>移動到一句的開始&#x2F;結尾(程式碼的一個段落)</td>
 </tr>
 <tr>
 <td>C-l</td>
@@ -347,7 +354,7 @@
 </tr>
 <tr>
 <td>M-g M-g</td>
-<td>跳至指定行(= M-g g)</td>
+<td>跳至指定行(&#x3D; M-g g)</td>
 </tr>
 <tr>
 <td>M-m</td>
@@ -382,8 +389,8 @@
 <td>選擇遊標所在的段落</td>
 </tr>
 <tr>
-<td>C-w/M-w</td>
-<td>剪下/複製 選取文字</td>
+<td>C-w&#x2F;M-w</td>
+<td>剪下&#x2F;複製 選取文字</td>
 </tr>
 <tr>
 <td>C-y</td>
@@ -391,7 +398,7 @@
 </tr>
 <tr>
 <td>M-y</td>
-<td>改變貼上的文字(從之前剪下/複製過的文字中，由新到舊出現)</td>
+<td>改變貼上的文字(從之前剪下&#x2F;複製過的文字中，由新到舊出現)</td>
 </tr>
 <tr>
 <td>C-d</td>
@@ -411,7 +418,7 @@
 </tr>
 <tr>
 <td>C-x C-;</td>
-<td>註釋/取消註釋</td>
+<td>註釋&#x2F;取消註釋</td>
 </tr>
 </tbody></table>
 <p><code>C-k</code>: 刪除從游標到「行尾」間的字元</p>
@@ -546,7 +553,7 @@
 </thead>
 <tbody><tr>
 <td>C-x C-f</td>
-<td>開新檔案/開啟舊檔</td>
+<td>開新檔案&#x2F;開啟舊檔</td>
 </tr>
 <tr>
 <td>C-x 4 f</td>
@@ -610,7 +617,7 @@
 <td>重覆執行上次執行過的compile指令</td>
 </tr>
 <tr>
-<td>C-x `</td>
+<td>C-x &#96;</td>
 <td>跳到下一個有編譯錯誤的地方</td>
 </tr>
 <tr>
@@ -788,17 +795,17 @@ TODO:
 
 <h3 id="Emacs-Latex"><a href="#Emacs-Latex" class="headerlink" title="Emacs + Latex"></a>Emacs + Latex</h3><p><span class="exturl" data-url="aHR0cDovL2JiczMubnN5c3UuZWR1LnR3L3R4dFZlcnNpb24vdHJlYXN1cmUvSVVUL00uMTAwNjg2ODM1Mi5BL00uMTAwNjk1MjY3OC5HLmh0bWw=">參考資料<i class="fa fa-external-link-alt"></i></span></p>
 <p>安裝: <code>sudo apt-get install texlive-full</code></p>
-<p>M-x validate-tex-region：檢查每一段文稿是否有不平衡的大括號或錢字號。<br>C-c {：插入 <code>{}' 並將游標移至左右大括號之間 C-c }：將游標移至下一個右大括號的右端 C-c C-o：插入 LaTeX 區段標記 </code>\begin’ 及\end’ 並將游標移至<br>二者間的空行<br>C-c C-e：為前一個不平衡的 `\begin’ 加上\end’</p>
+<p>M-x validate-tex-region：檢查每一段文稿是否有不平衡的大括號或錢字號。<br>C-c {：插入 <code>&#123;&#125;&#39; 並將游標移至左右大括號之間 C-c &#125;：將游標移至下一個右大括號的右端 C-c C-o：插入 LaTeX 區段標記 </code>\begin’ 及\end’ 並將游標移至<br>二者間的空行<br>C-c C-e：為前一個不平衡的 &#96;\begin’ 加上\end’</p>
 <p>編譯</p>
 <ul>
-<li><p>C-c C-f：對目前所在的檔案執行 TeX/LaTeX 的編譯</p>
+<li><p>C-c C-f：對目前所在的檔案執行 TeX&#x2F;LaTeX 的編譯</p>
 </li>
-<li><p>C-c C-r：對一段區域 (region) 執行 TeX/LaTeX 的編譯</p>
+<li><p>C-c C-r：對一段區域 (region) 執行 TeX&#x2F;LaTeX 的編譯</p>
 <ul>
-<li>不論是 TeX 或 LaTeX都包含了一段有關全文的訊息在整篇文稿的開端，若是僅僅編譯所指定的區域而忽略了這段訊息的話，將會產生錯誤的結果。為了解決這個問題，必需在文稿中標明header 的位置，然後在 用  C-c C-r 命令時  emacs 會自動將header中的訊息讀入處理。在 TeX 中標明 header 的方法是在 header段落前後插入 <code>%start of header' 和</code> %end of header}’</li>
+<li>不論是 TeX 或 LaTeX都包含了一段有關全文的訊息在整篇文稿的開端，若是僅僅編譯所指定的區域而忽略了這段訊息的話，將會產生錯誤的結果。為了解決這個問題，必需在文稿中標明header 的位置，然後在 用  C-c C-r 命令時  emacs 會自動將header中的訊息讀入處理。在 TeX 中標明 header 的方法是在 header段落前後插入 <code>%start of header&#39; 和</code> %end of header}’</li>
 </ul>
 </li>
-<li><p>C-c C-b：對整個目前所在的緩衝區 (buffer) 執行 TeX/LaTeX 的編譯</p>
+<li><p>C-c C-b：對整個目前所在的緩衝區 (buffer) 執行 TeX&#x2F;LaTeX 的編譯</p>
 </li>
 <li><p>C-c C-r 和  C-c C-b 並不會產生如  *.aux等的附屬檔，因此無法執行cross-reference等工作。如果需要產生附屬檔則必需使用 C-c C-f</p>
 </li>
@@ -806,7 +813,7 @@ TODO:
 </li>
 <li><p>C-c C-v：預覽 C-c C-r, C-c C-b 或  C-c C-f 編譯的結果</p>
 </li>
-<li><p>C-c C-k：終結 (kill) 目前進行中的 TeX/LaTeX 程序(process)</p>
+<li><p>C-c C-k：終結 (kill) 目前進行中的 TeX&#x2F;LaTeX 程序(process)</p>
 </li>
 <li><p>C-c C-p：列印 C-c C-r、C-c C-b 或 C-cC-f 編譯的結果</p>
 </li>
@@ -874,7 +881,7 @@ TODO: -->
 
 <h3 id="其他功能"><a href="#其他功能" class="headerlink" title="其他功能"></a>其他功能</h3><p><span class="exturl" data-url="aHR0cHM6Ly93d3cuZ251Lm9yZy9zb2Z0d2FyZS9lbWFjcy9tYW51YWwvaHRtbF9ub2RlL2VmYXEvUmVwbGFjaW5nLXRleHQtYWNyb3NzLW11bHRpcGxlLWZpbGVzLmh0bWw=">多檔案取代字串<i class="fa fa-external-link-alt"></i></span></p>
 <h3 id="字體大小"><a href="#字體大小" class="headerlink" title="字體大小"></a>字體大小</h3><ul>
-<li>放大字體: C-x C-+ 或 C-x C-=</li>
+<li>放大字體: C-x C-+ 或 C-x C-&#x3D;</li>
 <li>縮小字體: C-x C-–</li>
 <li>重置字體: C-x C-0</li>
 </ul>
@@ -1061,7 +1068,7 @@ https://github.com/pbesedm/Oh-My-Editors/blob/master/doc/emacs%E6%93%8D%E4%BD%9C
 
 
 <div class="copyright">
-  © 2014 – 
+  &copy; 2014 – 
   <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fab fa-free-code-camp"></i>
@@ -1077,7 +1084,7 @@ https://github.com/pbesedm/Oh-My-Editors/blob/master/doc/emacs%E6%93%8D%E4%BD%9C
     <span title="總字數">455k</span>
   </span>
 </div>
-  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> &amp; <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動
+  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動
   </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61c5cf9cb3476405" async="async"></script>
@@ -1103,6 +1110,7 @@ https://github.com/pbesedm/Oh-My-Editors/blob/master/doc/emacs%E6%93%8D%E4%BD%9C
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/tags/mermaid.min.js"></script>
 
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/pace.min.js"></script>
 
   
 
@@ -1118,6 +1126,5 @@ https://github.com/pbesedm/Oh-My-Editors/blob/master/doc/emacs%E6%93%8D%E4%BD%9C
 <script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"disqusforqwerty","count":false,"i18n":{"disqus":"disqus"}}</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/comments/disqus.min.js"></script>
 
-
-
-</body></html>
+</body>
+</html>

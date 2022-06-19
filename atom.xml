@@ -565,4 +565,261 @@
     
   </entry>
   
+  <entry>
+    <title>Python 之禪</title>
+    <link href="http://gitqwerty777.github.io/zen-of-python/"/>
+    <id>http://gitqwerty777.github.io/zen-of-python/</id>
+    <published>2020-08-17T16:45:00.000Z</published>
+    <updated>2020-08-17T16:45:00.000Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;import-this&quot;&gt;&lt;a href=&quot;#import-this&quot; class=&quot;headerlink&quot; title=&quot;import this&quot;&gt;&lt;/a&gt;import this&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;The Zen of Python, by Tim Peters&lt;br&gt; &lt;br&gt;Beautiful is better than ugly.&lt;br&gt;Explicit is better than implicit.&lt;br&gt;Simple is better than complex.&lt;br&gt;Complex is better than complicated.&lt;br&gt;Flat is better than nested.&lt;br&gt;Sparse is better than dense.&lt;br&gt;Readability counts.&lt;br&gt;Special cases aren’t special enough to break the rules.&lt;br&gt;Although practicality beats purity.&lt;br&gt;Errors should never pass silently.&lt;br&gt;Unless explicitly silenced.&lt;br&gt;In the face of ambiguity, refuse the temptation to guess.&lt;br&gt;There should be one– and preferably only one –obvious way to do it.&lt;br&gt;Although that way may not be obvious at first unless you’re Dutch.&lt;br&gt;Now is better than never.&lt;br&gt;Although never is often better than &lt;em&gt;right&lt;/em&gt; now.&lt;br&gt;If the implementation is hard to explain, it’s a bad idea.&lt;br&gt;If the implementation is easy to explain, it may be a good idea.&lt;br&gt;Namespaces are one honking great idea – let’s do more of those!&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="轉載" scheme="http://gitqwerty777.github.io/categories/%E8%BD%89%E8%BC%89/"/>
+    
+    
+    <category term="python" scheme="http://gitqwerty777.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>程式註解的常用標記</title>
+    <link href="http://gitqwerty777.github.io/comment-meaning/"/>
+    <id>http://gitqwerty777.github.io/comment-meaning/</id>
+    <published>2020-08-06T12:08:03.000Z</published>
+    <updated>2020-08-06T12:08:03.000Z</updated>
+    
+    
+    <summary type="html">TODO, FIXME, XXX, NOTE, HACK 的用法</summary>
+    
+    
+    
+    <category term="筆記" scheme="http://gitqwerty777.github.io/categories/%E7%AD%86%E8%A8%98/"/>
+    
+    
+    <category term="CodingStyle" scheme="http://gitqwerty777.github.io/tags/codingstyle/"/>
+    
+    <category term="程式" scheme="http://gitqwerty777.github.io/tags/%E7%A8%8B%E5%BC%8F/"/>
+    
+    <category term="Todo" scheme="http://gitqwerty777.github.io/tags/todo/"/>
+    
+    <category term="註解" scheme="http://gitqwerty777.github.io/tags/%E8%A8%BB%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SEO實作方法</title>
+    <link href="http://gitqwerty777.github.io/seo/"/>
+    <id>http://gitqwerty777.github.io/seo/</id>
+    <published>2020-08-03T13:52:12.000Z</published>
+    <updated>2020-08-03T13:52:12.000Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;hexo 都實作得差不多了，純整理&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;html-tag&quot;&gt;&lt;a href=&quot;#html-tag&quot; class=&quot;headerlink&quot; title=&quot;html tag&quot;&gt;&lt;/a&gt;html tag&lt;/h2&gt;&lt;h3 id=&quot;lt-title-gt&quot;&gt;&lt;a href=&quot;#lt-title-gt&quot; class=&quot;headerlink&quot; title=&quot;&amp;lt;title&amp;gt;&quot;&gt;&lt;/a&gt;&amp;lt;title&amp;gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;網頁的主題&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt;標記應該放在HTML文件的&lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;標記區段中</summary>
+    
+    
+    
+    <category term="筆記" scheme="http://gitqwerty777.github.io/categories/%E7%AD%86%E8%A8%98/"/>
+    
+    
+    <category term="SEO" scheme="http://gitqwerty777.github.io/tags/seo/"/>
+    
+    <category term="google" scheme="http://gitqwerty777.github.io/tags/google/"/>
+    
+    <category term="html" scheme="http://gitqwerty777.github.io/tags/html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>reactjs 語法</title>
+    <link href="http://gitqwerty777.github.io/reactjs/"/>
+    <id>http://gitqwerty777.github.io/reactjs/</id>
+    <published>2020-07-29T06:50:12.000Z</published>
+    <updated>2020-07-29T06:50:12.000Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;JSX&quot;&gt;&lt;a href=&quot;#JSX&quot; class=&quot;headerlink&quot; title=&quot;JSX&quot;&gt;&lt;/a&gt;JSX&lt;/h2&gt;&lt;pre class=&quot;language-javascript&quot; data-language=&quot;javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; element &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;h1&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;hello&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;h1&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;這個語法叫做 JSX，是一個 JavaScript 的語法擴充，會產生 &lt;strong&gt;React element&lt;/strong&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="筆記" scheme="http://gitqwerty777.github.io/categories/%E7%AD%86%E8%A8%98/"/>
+    
+    
+    <category term="reactjs" scheme="http://gitqwerty777.github.io/tags/reactjs/"/>
+    
+    <category term="javascript" scheme="http://gitqwerty777.github.io/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用RSS取代推薦演算法</title>
+    <link href="http://gitqwerty777.github.io/rss-social-network/"/>
+    <id>http://gitqwerty777.github.io/rss-social-network/</id>
+    <published>2020-06-23T02:33:00.000Z</published>
+    <updated>2020-06-23T02:33:00.000Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;RSS分析&quot;&gt;&lt;a href=&quot;#RSS分析&quot; class=&quot;headerlink&quot; title=&quot;RSS分析&quot;&gt;&lt;/a&gt;RSS分析&lt;/h2&gt;&lt;p&gt;優點&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;不會被推薦演算法&lt;strong&gt;影響閱讀喜好&lt;/strong&gt;或&lt;strong&gt;漏掉想看的內容&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;統一的閱讀體驗，且沒有廣告&lt;/li&gt;
+&lt;li&gt;統整多個網站的資訊，不需個別開啟&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;缺點&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;麻煩，較難使用(尤其是網站本身不提供rss的情形)&lt;/li&gt;
+&lt;li&gt;資訊過多，需要自己篩選&lt;/li&gt;
+&lt;li&gt;能看見的內容更依賴自己的選擇，需要自行打破同溫層&lt;/li&gt;
+&lt;/ol&gt;</summary>
+    
+    
+    
+    <category term="記錄" scheme="http://gitqwerty777.github.io/categories/%E8%A8%98%E9%8C%84/"/>
+    
+    
+    <category term="rss" scheme="http://gitqwerty777.github.io/tags/rss/"/>
+    
+    <category term="facebook" scheme="http://gitqwerty777.github.io/tags/facebook/"/>
+    
+    <category term="youtube" scheme="http://gitqwerty777.github.io/tags/youtube/"/>
+    
+    <category term="ptt" scheme="http://gitqwerty777.github.io/tags/ptt/"/>
+    
+    <category term="bilibili" scheme="http://gitqwerty777.github.io/tags/bilibili/"/>
+    
+    <category term="pixiv" scheme="http://gitqwerty777.github.io/tags/pixiv/"/>
+    
+    <category term="crawler" scheme="http://gitqwerty777.github.io/tags/crawler/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>加快C++編譯速度的方法</title>
+    <link href="http://gitqwerty777.github.io/cpp-compile-speed/"/>
+    <id>http://gitqwerty777.github.io/cpp-compile-speed/</id>
+    <published>2017-05-23T12:44:30.000Z</published>
+    <updated>2017-05-23T12:44:30.000Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;編譯速度慢的原因&quot;&gt;&lt;a href=&quot;#編譯速度慢的原因&quot; class=&quot;headerlink&quot; title=&quot;編譯速度慢的原因&quot;&gt;&lt;/a&gt;編譯速度慢的原因&lt;/h2&gt;&lt;p&gt;因為C++ &lt;code&gt;.h&lt;/code&gt; + &lt;code&gt;.cpp&lt;/code&gt; 的編譯模型&lt;br&gt;每個cpp檔可能會包含上百甚至上千個&lt;code&gt;.h&lt;/code&gt;檔，這些&lt;code&gt;.h&lt;/code&gt;檔都會被讀進來一遍，然後被解析一遍。&lt;br&gt;每個編譯單元都會產生一個&lt;code&gt;.obj&lt;/code&gt;文件，然後所以這些&lt;code&gt;.obj&lt;/code&gt;文件會被link到一起，並且這個過程很難平行。重複load與解析，以及密集的IO，使編譯速度很慢。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="筆記" scheme="http://gitqwerty777.github.io/categories/%E7%AD%86%E8%A8%98/"/>
+    
+    
+    <category term="C++" scheme="http://gitqwerty777.github.io/tags/c/"/>
+    
+    <category term="編譯" scheme="http://gitqwerty777.github.io/tags/%E7%B7%A8%E8%AD%AF/"/>
+    
+    <category term="gcc" scheme="http://gitqwerty777.github.io/tags/gcc/"/>
+    
+    <category term="g++" scheme="http://gitqwerty777.github.io/tags/g/"/>
+    
+    <category term="clang" scheme="http://gitqwerty777.github.io/tags/clang/"/>
+    
+    <category term="最佳化" scheme="http://gitqwerty777.github.io/tags/%E6%9C%80%E4%BD%B3%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo blog主題選擇</title>
+    <link href="http://gitqwerty777.github.io/proper-blog-theme-features/"/>
+    <id>http://gitqwerty777.github.io/proper-blog-theme-features/</id>
+    <published>2017-04-09T11:21:33.000Z</published>
+    <updated>2017-04-09T11:21:33.000Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;需求&quot;&gt;&lt;a href=&quot;#需求&quot; class=&quot;headerlink&quot; title=&quot;需求&quot;&gt;&lt;/a&gt;需求&lt;/h2&gt;&lt;p&gt;以目前正在使用的hexo為例，優先度由大到小排列：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="心得" scheme="http://gitqwerty777.github.io/categories/%E5%BF%83%E5%BE%97/"/>
+    
+    
+    <category term="網誌" scheme="http://gitqwerty777.github.io/tags/%E7%B6%B2%E8%AA%8C/"/>
+    
+    <category term="hexo" scheme="http://gitqwerty777.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Makefile 和 CMake 之間的轉換和實作</title>
+    <link href="http://gitqwerty777.github.io/cmake/"/>
+    <id>http://gitqwerty777.github.io/cmake/</id>
+    <published>2017-01-17T10:12:50.000Z</published>
+    <updated>2017-01-17T10:12:50.000Z</updated>
+    
+    
+    <summary type="html">&lt;!-- RENEW: --&gt;
+
+
+&lt;p&gt;&lt;a href=&quot;http://mqjing.blogspot.tw/2009/09/cmake-how-to-use-cmake.html&quot;&gt;http://mqjing.blogspot.tw/2009/09/cmake-how-to-use-cmake.html&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://itk.org/Wiki/CMake_Useful_Variables&quot;&gt;CMake 常用變數&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;簡介&quot;&gt;&lt;a href=&quot;#簡介&quot; class=&quot;headerlink&quot; title=&quot;簡介&quot;&gt;&lt;/a&gt;簡介&lt;/h2&gt;&lt;p&gt;CMake用來產生跨平台的專案建置文件，在windows下它會生成visual studio的專案檔(.sln) codeblock eclipse，在linux下它會生成Makefile。類似工具有autotools和qmake，不過autotools太複雜，qmake只限於qt使用。&lt;/p&gt;
+&lt;p&gt;CMake用更抽象的語法來組織項目。例如用math表示數學庫，而不需要再具體指定到底是math.dll還是libmath.so。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="筆記" scheme="http://gitqwerty777.github.io/categories/%E7%AD%86%E8%A8%98/"/>
+    
+    
+    <category term="CMake" scheme="http://gitqwerty777.github.io/tags/cmake/"/>
+    
+    <category term="Makefile" scheme="http://gitqwerty777.github.io/tags/makefile/"/>
+    
+    <category term="Linux" scheme="http://gitqwerty777.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>經濟學二</title>
+    <link href="http://gitqwerty777.github.io/economics2/"/>
+    <id>http://gitqwerty777.github.io/economics2/</id>
+    <published>2016-03-07T21:31:00.000Z</published>
+    <updated>2016-03-07T21:31:00.000Z</updated>
+    
+    
+    <summary type="html">總體經濟學</summary>
+    
+    
+    
+    <category term="筆記" scheme="http://gitqwerty777.github.io/categories/%E7%AD%86%E8%A8%98/"/>
+    
+    
+    <category term="經濟學" scheme="http://gitqwerty777.github.io/tags/%E7%B6%93%E6%BF%9F%E5%AD%B8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Emacs觀念</title>
+    <link href="http://gitqwerty777.github.io/Emacs-introduction/"/>
+    <id>http://gitqwerty777.github.io/Emacs-introduction/</id>
+    <published>2015-09-18T10:49:50.000Z</published>
+    <updated>2015-09-18T10:49:50.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;參考 &lt;a href=&quot;http://shop.oreilly.com/product/9780596006488.do&quot;&gt;Learning GNU Emacs&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="筆記" scheme="http://gitqwerty777.github.io/categories/%E7%AD%86%E8%A8%98/"/>
+    
+    
+    <category term="Emacs" scheme="http://gitqwerty777.github.io/tags/emacs/"/>
+    
+    <category term="編輯器" scheme="http://gitqwerty777.github.io/tags/%E7%B7%A8%E8%BC%AF%E5%99%A8/"/>
+    
+  </entry>
+  
 </feed>

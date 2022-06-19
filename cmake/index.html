@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="zh-TW"><head>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
@@ -11,21 +13,23 @@
   <link rel="mask-icon" href="/img/favicon.webp" color="#222">
   <meta name="google-site-verification" content="45plYlJRhxb-g8Tl8seizYgih_JUsmcJRH6oJHplkj0">
 
+<link rel="stylesheet" href="/css/main.css">
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-
-
-
-  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/green/pace-theme-barber-shop.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"gitqwerty777.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.12.1","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"show_result":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"slideLeftIn"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/config.min.js"></script>
 
-    <meta name="description" content="http://mqjing.blogspot.tw/2009/09/cmake-how-to-use-cmake.htmlCMake 常用變數 簡介CMake用來產生跨平台的專案建置文件，在windows下它會生成visual studio的專案檔(.sln) codeblock eclipse，在linux下它會生成Makefile。類似工具有autotools和qmake，不過autot">
+    <meta name="description" content="http:&#x2F;&#x2F;mqjing.blogspot.tw&#x2F;2009&#x2F;09&#x2F;cmake-how-to-use-cmake.htmlCMake 常用變數 簡介CMake用來產生跨平台的專案建置文件，在windows下它會生成visual studio的專案檔(.sln) codeblock eclipse，在linux下它會生成Makefile。類似工具有autotools和qmake，不過autot">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Makefile 和 CMake 之間的轉換和實作">
 <meta property="og:url" content="http://gitqwerty777.github.io/cmake/index.html">
 <meta property="og:site_name" content="QWERTY">
-<meta property="og:description" content="http://mqjing.blogspot.tw/2009/09/cmake-how-to-use-cmake.htmlCMake 常用變數 簡介CMake用來產生跨平台的專案建置文件，在windows下它會生成visual studio的專案檔(.sln) codeblock eclipse，在linux下它會生成Makefile。類似工具有autotools和qmake，不過autot">
+<meta property="og:description" content="http:&#x2F;&#x2F;mqjing.blogspot.tw&#x2F;2009&#x2F;09&#x2F;cmake-how-to-use-cmake.htmlCMake 常用變數 簡介CMake用來產生跨平台的專案建置文件，在windows下它會生成visual studio的專案檔(.sln) codeblock eclipse，在linux下它會生成Makefile。類似工具有autotools和qmake，不過autot">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2017-01-17T10:12:50.000Z">
 <meta property="article:modified_time" content="2017-01-17T10:12:50.000Z">
@@ -45,7 +49,7 @@
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>Makefile 和 CMake 之間的轉換和實作 | QWERTY</title>
   
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
   <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-51310670-1","only_pageview":false}</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/analytics/google-analytics.min.js"></script>
 
@@ -55,16 +59,16 @@
 
 
   <noscript>
-    
+    <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
 <link rel="alternate" href="/atom.xml" title="QWERTY" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext');loadCss('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');loadCss('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&amp;display=swap&amp;subset=latin,latin-ext"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css"></noscript></head>
+</head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" class="use-motion">
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
 
   <main class="main">
-    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切換導航欄" role="button">
@@ -110,7 +114,9 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" maxlength="80" placeholder="搜尋..." spellcheck="false" type="search" class="search-input">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
   </div>
   <span class="popup-btn-close" role="button">
     <i class="fa fa-times-circle"></i>
@@ -149,13 +155,14 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B0%A1%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">簡介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8"><span class="nav-number">2.</span> <span class="nav-text">使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#GUI"><span class="nav-number">2.1.</span> <span class="nav-text">GUI</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Out-Of-Source-Build"><span class="nav-number">2.2.</span> <span class="nav-text">Out-Of-Source Build</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AA%9E%E6%B3%95"><span class="nav-number">3.</span> <span class="nav-text">語法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#CMake%E8%AA%9E%E6%B3%95"><span class="nav-number">3.1.</span> <span class="nav-text">CMake語法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CMake-%E8%AE%8A%E6%95%B8"><span class="nav-number">3.2.</span> <span class="nav-text">CMake 變數</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CMake-Application"><span class="nav-number">3.3.</span> <span class="nav-text">CMake Application</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%88%E6%A1%88%E8%AA%AA%E6%98%8E"><span class="nav-number">4.</span> <span class="nav-text">專案說明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Makefile-%E5%92%8C-CMake-%E7%9A%84%E8%AA%9E%E6%B3%95%E6%AF%94%E8%BC%83"><span class="nav-number">5.</span> <span class="nav-text">Makefile 和 CMake 的語法比較</span></a></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A8%AD%E5%AE%9A%E8%AE%8A%E6%95%B8%E7%AF%84%E4%BE%8B"><span class="nav-number"></span> <span class="nav-text">設定變數範例</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E8%AE%8A%E6%95%B8%E7%AF%84%E4%BE%8B"><span class="nav-number"></span> <span class="nav-text">使用變數範例</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BB%BA%E7%AB%8B-macro-%E7%AF%84%E4%BE%8B"><span class="nav-number"></span> <span class="nav-text">建立 macro 範例</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8-macro-%E7%AF%84%E4%BE%8B"><span class="nav-number"></span> <span class="nav-text">使用 macro 範例</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AD%98%E5%8F%96%E7%92%B0%E5%A2%83%E8%AE%8A%E6%95%B8%E7%9A%84%E7%AF%84%E4%BE%8B"><span class="nav-number"></span> <span class="nav-text">存取環境變數的範例</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8A%A0%E5%85%A5-Post-Build-%E7%9A%84%E7%AF%84%E4%BE%8B"><span class="nav-number"></span> <span class="nav-text">加入 Post Build 的範例</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#MFC-%E8%A8%AD%E5%AE%9A"><span class="nav-number">1.</span> <span class="nav-text">MFC 設定</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A8%AD%E5%AE%9A-source-code-%E7%BE%A4%E7%B5%84%E7%AF%84%E4%BE%8B"><span class="nav-number"></span> <span class="nav-text">設定 source code 群組範例</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BB%BA%E7%AB%8B-dll-%E7%AF%84%E4%BE%8B"><span class="nav-number"></span> <span class="nav-text">建立 dll 範例</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">1.</span> <span class="nav-text">Reference</span></a></li></ol></li></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B0%A1%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">簡介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8"><span class="nav-number">2.</span> <span class="nav-text">使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#GUI"><span class="nav-number">2.1.</span> <span class="nav-text">GUI</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Out-Of-Source-Build"><span class="nav-number">2.2.</span> <span class="nav-text">Out-Of-Source Build</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AA%9E%E6%B3%95"><span class="nav-number">3.</span> <span class="nav-text">語法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#CMake%E8%AA%9E%E6%B3%95"><span class="nav-number">3.1.</span> <span class="nav-text">CMake語法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CMake-%E8%AE%8A%E6%95%B8"><span class="nav-number">3.2.</span> <span class="nav-text">CMake 變數</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CMake-Application"><span class="nav-number">3.3.</span> <span class="nav-text">CMake Application</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%88%E6%A1%88%E8%AA%AA%E6%98%8E"><span class="nav-number">4.</span> <span class="nav-text">專案說明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Makefile-%E5%92%8C-CMake-%E7%9A%84%E8%AA%9E%E6%B3%95%E6%AF%94%E8%BC%83"><span class="nav-number">5.</span> <span class="nav-text">Makefile 和 CMake 的語法比較</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A8%AD%E5%AE%9A%E8%AE%8A%E6%95%B8%E7%AF%84%E4%BE%8B"><span class="nav-number"></span> <span class="nav-text">設定變數範例</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E8%AE%8A%E6%95%B8%E7%AF%84%E4%BE%8B"><span class="nav-number"></span> <span class="nav-text">使用變數範例</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BB%BA%E7%AB%8B-macro-%E7%AF%84%E4%BE%8B"><span class="nav-number"></span> <span class="nav-text">建立 macro 範例</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8-macro-%E7%AF%84%E4%BE%8B"><span class="nav-number"></span> <span class="nav-text">使用 macro 範例</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AD%98%E5%8F%96%E7%92%B0%E5%A2%83%E8%AE%8A%E6%95%B8%E7%9A%84%E7%AF%84%E4%BE%8B"><span class="nav-number"></span> <span class="nav-text">存取環境變數的範例</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8A%A0%E5%85%A5-Post-Build-%E7%9A%84%E7%AF%84%E4%BE%8B"><span class="nav-number"></span> <span class="nav-text">加入 Post Build 的範例</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#MFC-%E8%A8%AD%E5%AE%9A"><span class="nav-number">1.</span> <span class="nav-text">MFC 設定</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A8%AD%E5%AE%9A-source-code-%E7%BE%A4%E7%B5%84%E7%AF%84%E4%BE%8B"><span class="nav-number"></span> <span class="nav-text">設定 source code 群組範例</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BB%BA%E7%AB%8B-dll-%E7%AF%84%E4%BE%8B"><span class="nav-number"></span> <span class="nav-text">建立 dll 範例</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">1.</span> <span class="nav-text">Reference</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
         <div class="site-overview-wrap sidebar-panel">
-          <div class="site-author site-overview-item animated" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="qwerty" src="/img/qwerty.webp">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="qwerty"
+      src="/img/qwerty.webp">
   <p class="site-author-name" itemprop="name">qwerty</p>
   <div class="site-description" itemprop="description">Programming | Computer Science | Thought</div>
 </div>
@@ -181,7 +188,7 @@
 </div>
   <div class="links-of-author site-overview-item animated">
       <span class="links-of-author-item">
-        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http://github.com/gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
+        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http:&#x2F;&#x2F;github.com&#x2F;gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
       </span>
       <span class="links-of-author-item">
         <span class="exturl" data-url="bWFpbHRvOmdvb2hjbDc3N0BnbWFpbC5jb20=" title="E-Mail → mailto:goohcl777@gmail.com"><i class="fa fa-envelope fa-fw"></i></span>
@@ -198,10 +205,10 @@
     </div>
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https://qwerty777.me">My Main Page</span>
+          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https:&#x2F;&#x2F;qwerty777.me">My Main Page</span>
         </li>
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http://qwerty777.me/life/">My Second Blog -- Wysiwyg</span>
+          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http:&#x2F;&#x2F;qwerty777.me&#x2F;life&#x2F;">My Second Blog -- Wysiwyg</span>
         </li>
     </ul>
   </div>
@@ -239,20 +246,20 @@
   
   
 
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/cmake/">
 
-    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/img/qwerty.webp">
       <meta itemprop="name" content="qwerty">
     </span>
 
-    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="QWERTY">
       <meta itemprop="description" content="Programming | Computer Science | Thought">
     </span>
 
-    <span hidden="" itemprop="post" itemscope="" itemtype="http://schema.org/CreativeWork">
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="Makefile 和 CMake 之間的轉換和實作 | QWERTY">
       <meta itemprop="description" content="">
     </span>
@@ -276,7 +283,7 @@
         <i class="far fa-folder"></i>
       </span>
       <span class="post-meta-item-text">分類於</span>
-        <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
           <a href="/categories/%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">筆記</span></a>
         </span>
     </span>
@@ -355,7 +362,7 @@ cmake -G <span class="token string">"Unix Makefiles"</span> <span class="token p
 </ol>
 <h2 id="語法"><a href="#語法" class="headerlink" title="語法"></a>語法</h2><ul>
 <li>設定變數 <code>set(var hello)</code></li>
-<li>印出訊息 <code>message(${var})</code></li>
+<li>印出訊息 <code>message($&#123;var&#125;)</code></li>
 </ul>
 <pre class="language-cmake" data-language="cmake"><code class="language-cmake"><span class="token keyword">cmake_minimum_required</span> <span class="token punctuation">(</span><span class="token property">VERSION</span> <span class="token number">2.6</span><span class="token punctuation">)</span> <span class="token comment"># minimum executable version of cmake</span>
 <span class="token keyword">project</span><span class="token punctuation">(</span>ex1<span class="token punctuation">)</span> <span class="token comment"># project name</span>
@@ -399,8 +406,8 @@ cmake --help-variable CMAKE_INSTALL_PREFIX
 <span class="token keyword">endif</span> <span class="token punctuation">(</span><span class="token operator">NOT</span> <span class="token variable">WIN32</span><span class="token punctuation">)</span></code></pre></li>
 <li>找需要的package  <pre class="language-cmake" data-language="cmake"><code class="language-cmake">find <span class="token function">package</span> <span class="token punctuation">(</span> LibXml2 <span class="token punctuation">)</span>
 <span class="token keyword">if</span> <span class="token punctuation">(</span>LIBXML2 FOUND<span class="token punctuation">)</span>
-add <span class="token function">definitions</span> <span class="token punctuation">(</span>−DHAVE XML <span class="token punctuation">${</span>LIBXML2 <span class="token property">DEFINITIONS</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
-<span class="token function">includedirectories</span><span class="token punctuation">(</span> <span class="token punctuation">${</span>LIBXML2 INCLUDE DIR <span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre></li>
+add <span class="token function">definitions</span> <span class="token punctuation">(</span>−DHAVE XML <span class="token punctuation">$&#123;</span>LIBXML2 <span class="token property">DEFINITIONS</span> <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+<span class="token function">includedirectories</span><span class="token punctuation">(</span> <span class="token punctuation">$&#123;</span>LIBXML2 INCLUDE DIR <span class="token punctuation">&#125;</span><span class="token punctuation">)</span></code></pre></li>
 <li><code>XXXFOUND</code><br>- Set to false, or undefined, if we haven’t found, or don’t want to use XXX<ul>
 <li><code>XXX_INCLUDE_DIRS</code><ul>
 <li>The final set of include directories listed in one variable for use by client code</li>
@@ -466,7 +473,7 @@ add <span class="token function">definitions</span> <span class="token punctuati
 </li>
 <li><p>string manipulation</p>
 <ul>
-<li>upper/lower case conversion, length, comparison, substring, regular expression match</li>
+<li>upper&#x2F;lower case conversion, length, comparison, substring, regular expression match</li>
 </ul>
 </li>
 </ul>
@@ -491,7 +498,7 @@ add <span class="token function">definitions</span> <span class="token punctuati
 </li>
 <li><p>Command mode</p>
 <ul>
-<li>cmake -E <command>, command line mode which offers basic command in a portable way</command></li>
+<li>cmake -E <command>, command line mode which offers basic command in a portable way</li>
 </ul>
 </li>
 </ul>
@@ -501,20 +508,20 @@ add <span class="token function">definitions</span> <span class="token punctuati
 ├── *.h
 ├── *.cpp
 ├── previous_version
-│&nbsp;&nbsp; ├── CMakeLists.txt
-│&nbsp;&nbsp; ├── *.cpp
-│&nbsp;&nbsp; └── *.h</code></pre>
+│   ├── CMakeLists.txt
+│   ├── *.cpp
+│   └── *.h</code></pre>
 
-<pre class="language-none"><code class="language-none">P?=binary
-EXEC=execs/$(P)
-OBJECTS=$(P).o *.o
-CXXFLAGS=-pipe -std=c++11 -Wall -Wextra -Wpedantic -Wno-unknown-pragmas -g -O3 -march=native -fopenmp
-LDFLAGS=-lpthread
-CXX=g++
+<pre class="language-none"><code class="language-none">P?&#x3D;binary
+EXEC&#x3D;execs&#x2F;$(P)
+OBJECTS&#x3D;$(P).o *.o
+CXXFLAGS&#x3D;-pipe -std&#x3D;c++11 -Wall -Wextra -Wpedantic -Wno-unknown-pragmas -g -O3 -march&#x3D;native -fopenmp
+LDFLAGS&#x3D;-lpthread
+CXX&#x3D;g++
 
 all: main
 parallel: main
-parallel: CXXFLAGS+=-fopenmp -DPARALLEL # add additional flags
+parallel: CXXFLAGS+&#x3D;-fopenmp -DPARALLEL # add additional flags
 
 previous:
     cd previous_version; make
@@ -524,7 +531,7 @@ binary: $(OBJECTS)
 $(P).o: *.h
 	$(CXX) $(CXXFLAGS) main.cpp -c -o $(P).o $(LDFLAGS)
 
-# object files and it's dependency
+# object files and it&#39;s dependency
 board.o: mc_node.h liberty.h board.h board_constants.h ladder.h database.h strategy.h gameSetting.h
 # ...
 
@@ -538,28 +545,28 @@ previous_clean:
 project(MCTS_Go9x9)
 
 # set default output file name
-SET(BINARYNAME "binary" CACHE STRING "default binary file's name = binary" FORCE)
+SET(BINARYNAME &quot;binary&quot; CACHE STRING &quot;default binary file&#39;s name &#x3D; binary&quot; FORCE)
 # set output directory
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/execs
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY $&#123;CMAKE_SOURCE_DIR&#125;&#x2F;execs
 # compile parameters
 set(CMAKE_CXX_COMPILER g++)
-message("compiler: ${CMAKE_CXX_COMPILER}")
-set(CMAKE_CXX_FLAGS "-pipe -std=c++11 -Wall -Wextra -Wpedantic -Wno-unknown-pragmas -g -O3 -march=native -fopenmp")
-message("cxxflags: ${CMAKE_CXX_FLAGS}")
-set(CMAKE_EXE_LINKER_FLAGS "-flto")
+message(&quot;compiler: $&#123;CMAKE_CXX_COMPILER&#125;&quot;)
+set(CMAKE_CXX_FLAGS &quot;-pipe -std&#x3D;c++11 -Wall -Wextra -Wpedantic -Wno-unknown-pragmas -g -O3 -march&#x3D;native -fopenmp&quot;)
+message(&quot;cxxflags: $&#123;CMAKE_CXX_FLAGS&#125;&quot;)
+set(CMAKE_EXE_LINKER_FLAGS &quot;-flto&quot;)
 
 set(THREADS_PREFER_PTHREAD_FLAG ON) # pthread
 find_package(Threads REQUIRED) # pthread
 
 set(SRC_FILES *.cpp)
-message("source files: ${SRC_FILES}")
+message(&quot;source files: $&#123;SRC_FILES&#125;&quot;)
 
 # each executable is a target in GNU makefile
-add_executable(${BINARYNAME} ${SRC_FILES})
-target_link_libraries(${BINARYNAME} Threads::Threads) # pthread
+add_executable($&#123;BINARYNAME&#125; $&#123;SRC_FILES&#125;)
+target_link_libraries($&#123;BINARYNAME&#125; Threads::Threads) # pthread
 
 # parallel
-add_executable(parallel ${SRC_FILES})
+add_executable(parallel $&#123;SRC_FILES&#125;)
 target_compile_options(parallel PUBLIC -fopenmp -DPARALLEL) # add additional compile parameters
 
 # we have another CMakeLists.txt in this directory, still follow the same method to generate
@@ -574,7 +581,7 @@ add_subdirectory(previous_version)</code></pre>
 </thead>
 <tbody><tr>
 <td><code>COMPILE_FLAGS = -c -m32 -O3 -fPIC -w -DSOMETHING -Wall -I src/sdk/core</code></td>
-<td><code>SET( COMPILE_FLAGS "-c -m32 -O3 -fPIC -w DSOMETHING -Wall" ) INCLUDE_DIRECTORIES( src/sdk/core )</code></td>
+<td><code>SET( COMPILE_FLAGS &quot;-c -m32 -O3 -fPIC -w DSOMETHING -Wall&quot; ) INCLUDE_DIRECTORIES( src/sdk/core )</code></td>
 </tr>
 </tbody></table>
 <pre class="language-makefile" data-language="makefile"><code class="language-makefile"><span class="token comment">#Makefile</span>
@@ -594,7 +601,7 @@ add_subdirectory(previous_version)</code></pre>
 <p>using libraries<br>call find_package with the name of your library, which will invoke a library search script from your cmake module path. This script (which is also written in CMake) will attempt to detect the location of the library’s header and lib files and store them in a couple of CMake variables that can then be passed to the according CMake commands like include_directories and target_link_libraries.</p>
 <p>There are two problems with this approach: First, you need a search script. Fortunately, CMake ships with search scripts for Pthreads, Boost and a couple of others, but if you are using a more exotic library, you might have to write the search script yourself, which is kind of an arcane experience at first…</p>
 <p> 並不會刪除自身產出的快取和中間檔</p>
-<p>The following Makefile builds an executable named prog from the sources prog1.c, prog2.c, prog3.c and main.c. prog is linked against libmystatlib.a and libmydynlib.so which are both also built from source. Additionally, prog uses the library libstuff.a in stuff/lib and its header in stuff/include. The Makefile by default builds a release target, but offers also a debug target:</p>
+<p>The following Makefile builds an executable named prog from the sources prog1.c, prog2.c, prog3.c and main.c. prog is linked against libmystatlib.a and libmydynlib.so which are both also built from source. Additionally, prog uses the library libstuff.a in stuff&#x2F;lib and its header in stuff&#x2F;include. The Makefile by default builds a release target, but offers also a debug target:</p>
 <pre class="language-makefile" data-language="makefile"><code class="language-makefile"><span class="token comment">#Makefile</span>
 CC <span class="token operator">=</span> gcc
 CPP <span class="token operator">=</span> g++
@@ -628,12 +635,12 @@ PROGOBJS <span class="token operator">=</span> prog1.o prog2.o prog3.o
 <span class="token keyword">cmake_minimum_required</span><span class="token punctuation">(</span><span class="token property">VERSION</span> <span class="token number">2.8</span><span class="token punctuation">)</span>                    <span class="token comment"># stuff not directly</span>
 <span class="token keyword">project</span><span class="token punctuation">(</span>example<span class="token punctuation">)</span>                                       <span class="token comment"># related to building</span>
 
-<span class="token keyword">include_directories</span><span class="token punctuation">(</span><span class="token punctuation">${</span><span class="token variable">CMAKE_SOURCE_DIR</span><span class="token punctuation">}</span>/stuff/include<span class="token punctuation">)</span> <span class="token comment"># -I flags for compiler</span>
-<span class="token keyword">link_directories</span><span class="token punctuation">(</span><span class="token punctuation">${</span><span class="token variable">CMAKE_SOURCE_DIR</span><span class="token punctuation">}</span>/stuff/lib<span class="token punctuation">)</span>        <span class="token comment"># -L flags for linker</span>
+<span class="token keyword">include_directories</span><span class="token punctuation">(</span><span class="token punctuation">$&#123;</span><span class="token variable">CMAKE_SOURCE_DIR</span><span class="token punctuation">&#125;</span>/stuff/include<span class="token punctuation">)</span> <span class="token comment"># -I flags for compiler</span>
+<span class="token keyword">link_directories</span><span class="token punctuation">(</span><span class="token punctuation">$&#123;</span><span class="token variable">CMAKE_SOURCE_DIR</span><span class="token punctuation">&#125;</span>/stuff/lib<span class="token punctuation">)</span>        <span class="token comment"># -L flags for linker</span>
 
 <span class="token keyword">set</span><span class="token punctuation">(</span>PROGSRC prog1.c prog2.c prog3.c<span class="token punctuation">)</span>                   <span class="token comment"># define variable</span>
 
-<span class="token keyword">add_executable</span><span class="token punctuation">(</span>prog main.c <span class="token punctuation">${</span>PROGSRC<span class="token punctuation">}</span><span class="token punctuation">)</span>                 <span class="token comment"># define executable target prog, specify sources</span>
+<span class="token keyword">add_executable</span><span class="token punctuation">(</span>prog main.c <span class="token punctuation">$&#123;</span>PROGSRC<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>                 <span class="token comment"># define executable target prog, specify sources</span>
 <span class="token keyword">target_link_libraries</span><span class="token punctuation">(</span>prog mystatlib mydynlib stuff<span class="token punctuation">)</span>   <span class="token comment"># -l flags for linking prog target</span>
 
 <span class="token keyword">add_library</span><span class="token punctuation">(</span>mystatlib <span class="token namespace">STATIC</span> mystatlib.c<span class="token punctuation">)</span>              <span class="token comment"># define static library target mystatlib, specify sources</span>
@@ -644,30 +651,30 @@ PROGOBJS <span class="token operator">=</span> prog1.o prog2.o prog3.o
 <span class="token comment">#alternatively:</span>
 <span class="token comment">#set_target_properties(mydynlib PROPERTIES COMPILE_FLAGS "-fPIC")</span></code></pre>
 <p>In this simple example, the most important differences are:</p>
-<p>CMake recognizes which compilers to use for which kind of source. Also, it invokes the right sequence of commands for each type of target. Therefore, there is no explicit specification of commands like $(CC)…, $(RANLIB)… and so on.<br>All usual compiler/linker flags dealing with inclusion of header files, libraries, etc. are replaced by platform independent / build system independent commands.<br>Debugging flags are included by either setting the variable CMAKE_BUILD_TYPE to “Debug”, or by passing it to CMake when invoking the program: cmake -DCMAKE_BUILD_TYPE:STRING=Debug.<br>CMake offers also the platform independent inclusion of the ‘-fPIC’ flag (via the POSITION_INDEPENDENT_CODE property) and many others. Still, more obscure settings can be implemented by hand in CMake just as well as in a Makefile (by using COMPILE_FLAGS and similar properties). Of course CMake really starts to shine when third party libraries (like OpenGL) are included in a portable manner.<br>The build process has one step if you use a Makefile, namely typing<br>make at the command line. For CMake, there are two steps: First, you need to setup your build environment (either by typing cmake <source_dir> in your build directory or by running some GUI client). This creates a Makefile or something equivalent, depending on the build system of your choice (e.g. make on Unixes or VC++ or MinGW + Msys on Windows). The build system can be passed to CMake as a parameter; however, CMake makes reasonable default choices depending on your system configuration. Second, you perform the actual build in the selected build system.<br>Sources and build instructions are available at <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3Job2VsemVsL21ha2VfY21ha2U=">https://github.com/rhoelzel/make_cmake<i class="fa fa-external-link-alt"></i></span>.</source_dir></p>
-<h1 id="設定變數範例"><a href="#設定變數範例" class="headerlink" title="設定變數範例"></a>設定變數範例</h1><pre><code>      set(MYLIBPATH "C:\\Documents and
-              Settings\\Jing\\Desktop\\opencv_bin\\lib\\release\\")
+<p>CMake recognizes which compilers to use for which kind of source. Also, it invokes the right sequence of commands for each type of target. Therefore, there is no explicit specification of commands like $(CC)…, $(RANLIB)… and so on.<br>All usual compiler&#x2F;linker flags dealing with inclusion of header files, libraries, etc. are replaced by platform independent &#x2F; build system independent commands.<br>Debugging flags are included by either setting the variable CMAKE_BUILD_TYPE to “Debug”, or by passing it to CMake when invoking the program: cmake -DCMAKE_BUILD_TYPE:STRING&#x3D;Debug.<br>CMake offers also the platform independent inclusion of the ‘-fPIC’ flag (via the POSITION_INDEPENDENT_CODE property) and many others. Still, more obscure settings can be implemented by hand in CMake just as well as in a Makefile (by using COMPILE_FLAGS and similar properties). Of course CMake really starts to shine when third party libraries (like OpenGL) are included in a portable manner.<br>The build process has one step if you use a Makefile, namely typing<br>make at the command line. For CMake, there are two steps: First, you need to setup your build environment (either by typing cmake <source_dir> in your build directory or by running some GUI client). This creates a Makefile or something equivalent, depending on the build system of your choice (e.g. make on Unixes or VC++ or MinGW + Msys on Windows). The build system can be passed to CMake as a parameter; however, CMake makes reasonable default choices depending on your system configuration. Second, you perform the actual build in the selected build system.<br>Sources and build instructions are available at <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3Job2VsemVsL21ha2VfY21ha2U=">https://github.com/rhoelzel/make_cmake<i class="fa fa-external-link-alt"></i></span>.</p>
+<h1 id="設定變數範例"><a href="#設定變數範例" class="headerlink" title="設定變數範例"></a>設定變數範例</h1><pre><code>      set(MYLIBPATH &quot;C:\\Documents and
+              Settings\\Jing\\Desktop\\opencv_bin\\lib\\release\\&quot;)
 </code></pre>
-<h1 id="使用變數範例"><a href="#使用變數範例" class="headerlink" title="使用變數範例"></a>使用變數範例</h1><pre><code>      target_link_libraries(${name} ${MYLIBPATH}cv200.lib)
+<h1 id="使用變數範例"><a href="#使用變數範例" class="headerlink" title="使用變數範例"></a>使用變數範例</h1><pre><code>      target_link_libraries($&#123;name&#125; $&#123;MYLIBPATH&#125;cv200.lib)
 </code></pre>
 <h1 id="建立-macro-範例"><a href="#建立-macro-範例" class="headerlink" title="建立 macro 範例"></a>建立 macro 範例</h1><pre><code>       MACRO(MY_DEFINE_EXAMPLE name srcs)
-             add_executable(${name} ${srcs})
+             add_executable($&#123;name&#125; $&#123;srcs&#125;)
        ENDMACRO(MY_DEFINE_EXAMPLE)
 </code></pre>
 <h1 id="使用-macro-範例"><a href="#使用-macro-範例" class="headerlink" title="使用 macro 範例"></a>使用 macro 範例</h1><pre><code>       MY_DEFINE_EXAMPLE(demo     demo.cpp)
 </code></pre>
-<h1 id="存取環境變數的範例"><a href="#存取環境變數的範例" class="headerlink" title="存取環境變數的範例"></a>存取環境變數的範例</h1><pre><code>         MESSAGE("$ENV{PATH}")
+<h1 id="存取環境變數的範例"><a href="#存取環境變數的範例" class="headerlink" title="存取環境變數的範例"></a>存取環境變數的範例</h1><pre><code>         MESSAGE(&quot;$ENV&#123;PATH&#125;&quot;)
 </code></pre>
 <h1 id="加入-Post-Build-的範例"><a href="#加入-Post-Build-的範例" class="headerlink" title="加入 Post Build 的範例"></a>加入 Post Build 的範例</h1><pre><code>add_custom_command(
-        TARGET ${MyPluginTarget}
+        TARGET $&#123;MyPluginTarget&#125;
         POST_BUILD
         COMMAND copy
-                       ${CMAKE_CFG_INTDIR}\\${MyPluginTarget}.dll
-                       "C:\\Program Files\\Mozilla Firefox\\
-                         plugins\\${MyPluginTarget}.dll"
+                       $&#123;CMAKE_CFG_INTDIR&#125;\\$&#123;MyPluginTarget&#125;.dll
+                       &quot;C:\\Program Files\\Mozilla Firefox\\
+                         plugins\\$&#123;MyPluginTarget&#125;.dll&quot;
     )
 </code></pre>
-<p>若你的執行檔是 Windows 程式, 請加入 Win32<br><code>add_executable(demo WIN32 ${SOURCE})</code></p>
+<p>若你的執行檔是 Windows 程式, 請加入 Win32<br><code>add_executable(demo WIN32 $&#123;SOURCE&#125;)</code></p>
 <h2 id="MFC-設定"><a href="#MFC-設定" class="headerlink" title="MFC 設定"></a>MFC 設定</h2><pre class="language-none"><code class="language-none">set(CMAKE_MFC_FLAG 2)
 set_target_properties(MyApp      PROPERTIES
 COMPILE_DEFINITIONS
@@ -675,24 +682,24 @@ _AFXDLL, _UNICODE, UNICODE,
 _BIND_TO_CURRENT_CRT_VERSION,
 _BIND_TO_CURRENT_MFC_VERSION
 LINK_FLAGS
-" /ENTRY:\"wWinMainCRTStartup\"    ")</code></pre>
+&quot; &#x2F;ENTRY:\&quot;wWinMainCRTStartup\&quot;    &quot;)</code></pre>
 
 <p>add_executable(demo WIN32 ${SOURCE})</p>
 <h1 id="設定-source-code-群組範例"><a href="#設定-source-code-群組範例" class="headerlink" title="設定 source code 群組範例"></a>設定 source code 群組範例</h1><pre class="language-cmake" data-language="cmake"><code class="language-cmake"><span class="token comment"># ex1:</span>
 <span class="token keyword">file</span><span class="token punctuation">(</span>GLOB_RECURSE myRESOURCE_FILE 「*.def」 「*.rc」<span class="token punctuation">)</span>
-<span class="token keyword">source_group</span><span class="token punctuation">(</span>Resource FILES <span class="token punctuation">${</span>myRESOURCE_FILE <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">source_group</span><span class="token punctuation">(</span>Resource FILES <span class="token punctuation">$&#123;</span>myRESOURCE_FILE <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
 <span class="token comment"># ex2:</span>
 <span class="token keyword">source_group</span><span class="token punctuation">(</span>abc_group REGULAR_EXPRESSION <span class="token string">"abc.*"</span><span class="token punctuation">)</span>
 <span class="token keyword">source_group</span><span class="token punctuation">(</span>123_group REGULAR_EXPRESSION <span class="token string">"123.*"</span><span class="token punctuation">)</span>
 <span class="token keyword">set</span><span class="token punctuation">(</span>SOURCE abc.cpp abc.h <span class="token number">123</span>.cpp <span class="token number">123</span>.h abc.rc main.cpp main.h
 resource.h stdafx.cpp  stdafx.h
 ./res/<span class="token number">123</span>.ico ./res/<span class="token number">123</span>.rc2<span class="token punctuation">)</span>
-<span class="token keyword">add_executable</span><span class="token punctuation">(</span>demo <span class="token variable">WIN32</span> <span class="token punctuation">${</span>SOURCE<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+<span class="token keyword">add_executable</span><span class="token punctuation">(</span>demo <span class="token variable">WIN32</span> <span class="token punctuation">$&#123;</span>SOURCE<span class="token punctuation">&#125;</span><span class="token punctuation">)</span></code></pre>
 
 <h1 id="建立-dll-範例"><a href="#建立-dll-範例" class="headerlink" title="建立 dll 範例"></a>建立 dll 範例</h1><pre class="language-cmake" data-language="cmake"><code class="language-cmake"><span class="token keyword">add_library</span><span class="token punctuation">(</span> target <span class="token namespace">SHARED</span> a.c b.c<span class="token punctuation">)</span>;</code></pre>
-<p>#console 與 windows (/SUBSYSTEM:CONSOLE or /SUBSYSTEM:WINDOWS)<br>a. 如果你的程式是 Windows.<br>=&gt; 則 add_executable(demo WIN32 ${SOURCE})<br>b. 如果是 console, 則<br>=&gt; 則 add_executable(demo ${SOURCE})</p>
+<p>#console 與 windows (&#x2F;SUBSYSTEM:CONSOLE or &#x2F;SUBSYSTEM:WINDOWS)<br>a. 如果你的程式是 Windows.<br>&#x3D;&gt; 則 add_executable(demo WIN32 ${SOURCE})<br>b. 如果是 console, 則<br>&#x3D;&gt; 則 add_executable(demo ${SOURCE})</p>
 <p>好用的變數 (more)<br><code>PROJECT_SOURCE_DIR</code>:  包含 project 命令的 CMakeFile.txt 完整路徑. (ex: c:\abc)</p>
-<pre class="language-cmake" data-language="cmake"><code class="language-cmake"><span class="token keyword">set</span><span class="token punctuation">(</span>PROJECT_HOME <span class="token punctuation">${</span><span class="token variable">PROJECT_SOURCE_DIR</span><span class="token punctuation">}</span>\\..\\<span class="token punctuation">)</span></code></pre>
+<pre class="language-cmake" data-language="cmake"><code class="language-cmake"><span class="token keyword">set</span><span class="token punctuation">(</span>PROJECT_HOME <span class="token punctuation">$&#123;</span><span class="token variable">PROJECT_SOURCE_DIR</span><span class="token punctuation">&#125;</span>\\..\\<span class="token punctuation">)</span></code></pre>
 
 <h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3F1ZXN0aW9uLzI3NDU1OTYzL2Fuc3dlci8zNjcyMjk5Mg==">make makefile cmake qmake都是什麼，有什麼區別？-玟清的回答-知乎<i class="fa fa-external-link-alt"></i></span></li>
@@ -773,7 +780,7 @@ resource.h stdafx.cpp  stdafx.h
 
 
 <div class="copyright">
-  © 2014 – 
+  &copy; 2014 – 
   <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fab fa-free-code-camp"></i>
@@ -789,7 +796,7 @@ resource.h stdafx.cpp  stdafx.h
     <span title="總字數">455k</span>
   </span>
 </div>
-  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> &amp; <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動
+  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動
   </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61c5cf9cb3476405" async="async"></script>
@@ -815,6 +822,7 @@ resource.h stdafx.cpp  stdafx.h
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/tags/mermaid.min.js"></script>
 
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/pace.min.js"></script>
 
   
 
@@ -830,6 +838,5 @@ resource.h stdafx.cpp  stdafx.h
 <script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"disqusforqwerty","count":false,"i18n":{"disqus":"disqus"}}</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/comments/disqus.min.js"></script>
 
-
-
-</body></html>
+</body>
+</html>

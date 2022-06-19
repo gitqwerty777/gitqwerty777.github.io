@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="zh-TW"><head>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
@@ -11,12 +13,14 @@
   <link rel="mask-icon" href="/img/favicon.webp" color="#222">
   <meta name="google-site-verification" content="45plYlJRhxb-g8Tl8seizYgih_JUsmcJRH6oJHplkj0">
 
+<link rel="stylesheet" href="/css/main.css">
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-
-
-
-  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/green/pace-theme-barber-shop.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"gitqwerty777.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.12.1","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"show_result":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"slideLeftIn"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/config.min.js"></script>
 
@@ -46,7 +50,7 @@
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>Git常用指令 | QWERTY</title>
   
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
   <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-51310670-1","only_pageview":false}</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/analytics/google-analytics.min.js"></script>
 
@@ -56,16 +60,16 @@
 
 
   <noscript>
-    
+    <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
 <link rel="alternate" href="/atom.xml" title="QWERTY" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext');loadCss('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');loadCss('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&amp;display=swap&amp;subset=latin,latin-ext"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css"></noscript></head>
+</head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" class="use-motion">
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
 
   <main class="main">
-    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切換導航欄" role="button">
@@ -111,7 +115,9 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" maxlength="80" placeholder="搜尋..." spellcheck="false" type="search" class="search-input">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
   </div>
   <span class="popup-btn-close" role="button">
     <i class="fa fa-times-circle"></i>
@@ -155,8 +161,9 @@
         <!--/noindex-->
 
         <div class="site-overview-wrap sidebar-panel">
-          <div class="site-author site-overview-item animated" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="qwerty" src="/img/qwerty.webp">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="qwerty"
+      src="/img/qwerty.webp">
   <p class="site-author-name" itemprop="name">qwerty</p>
   <div class="site-description" itemprop="description">Programming | Computer Science | Thought</div>
 </div>
@@ -182,7 +189,7 @@
 </div>
   <div class="links-of-author site-overview-item animated">
       <span class="links-of-author-item">
-        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http://github.com/gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
+        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http:&#x2F;&#x2F;github.com&#x2F;gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
       </span>
       <span class="links-of-author-item">
         <span class="exturl" data-url="bWFpbHRvOmdvb2hjbDc3N0BnbWFpbC5jb20=" title="E-Mail → mailto:goohcl777@gmail.com"><i class="fa fa-envelope fa-fw"></i></span>
@@ -199,10 +206,10 @@
     </div>
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https://qwerty777.me">My Main Page</span>
+          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https:&#x2F;&#x2F;qwerty777.me">My Main Page</span>
         </li>
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http://qwerty777.me/life/">My Second Blog -- Wysiwyg</span>
+          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http:&#x2F;&#x2F;qwerty777.me&#x2F;life&#x2F;">My Second Blog -- Wysiwyg</span>
         </li>
     </ul>
   </div>
@@ -240,20 +247,20 @@
   
   
 
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/git-commands/">
 
-    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/img/qwerty.webp">
       <meta itemprop="name" content="qwerty">
     </span>
 
-    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="QWERTY">
       <meta itemprop="description" content="Programming | Computer Science | Thought">
     </span>
 
-    <span hidden="" itemprop="post" itemscope="" itemtype="http://schema.org/CreativeWork">
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="Git常用指令 | QWERTY">
       <meta itemprop="description" content="">
     </span>
@@ -277,7 +284,7 @@
         <i class="far fa-folder"></i>
       </span>
       <span class="post-meta-item-text">分類於</span>
-        <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
           <a href="/categories/%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">筆記</span></a>
         </span>
     </span>
@@ -347,7 +354,7 @@
 <p>提交(commit，也稱送交)</p>
 <ul>
 <li>版本和容器變動的最小單位<ul>
-<li><strong>一個commit = 一個版本</strong></li>
+<li><strong>一個commit &#x3D; 一個版本</strong></li>
 <li>git 中的 <code>HEAD</code> 等於目前所在的版本</li>
 </ul>
 </li>
@@ -411,7 +418,7 @@ template <span class="token operator">=</span> /home/frank/.git-template</code><
 <span class="token function">git</span> commit -m <span class="token string">"initial commit"</span> <span class="token comment"># 提交變更</span></code></pre>
 
 <p>將本地的容器上傳到遠端(如github)的容器</p>
-<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> remote <span class="token function">add</span> origin <span class="token operator">&lt;</span>URL<span class="token operator">&gt;</span> <span class="token comment"># 將遠端容器命名為origin</span>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> remote <span class="token function">add</span> origin <span class="token operator">&lt;</span>URL<span class="token operator">></span> <span class="token comment"># 將遠端容器命名為origin</span>
 <span class="token function">git</span> push -u origin master <span class="token comment"># 從本地端的master branch上傳到origin的master branch</span></code></pre>
 
 <h2 id="本篇：Git常用指令"><a href="#本篇：Git常用指令" class="headerlink" title="本篇：Git常用指令"></a>本篇：Git常用指令</h2><h3 id="Git檔案操作"><a href="#Git檔案操作" class="headerlink" title="Git檔案操作"></a>Git檔案操作</h3><h4 id="加入暫存區-add"><a href="#加入暫存區-add" class="headerlink" title="加入暫存區: add"></a>加入暫存區: add</h4><p><code>git add</code>：將檔案加入暫存區(staging area)</p>
@@ -424,7 +431,7 @@ template <span class="token operator">=</span> /home/frank/.git-template</code><
 <span class="token function">git</span> <span class="token function">add</span> -A <span class="token comment"># stages All</span>
 <span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>  <span class="token comment"># stages new and modified, without deleted</span></code></pre>
 <p><span class="exturl" data-url="aHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL3F1ZXN0aW9ucy81NzI1NDkvZGlmZmVyZW5jZS1iZXR3ZWVuLWdpdC1hZGQtYS1hbmQtZ2l0LWFkZA==">參考資料<i class="fa fa-external-link-alt"></i></span></p>
-<p>直接刪除/移動不會影響容器中的檔案，因為這項變動沒有告知git<br>若要在下一個版本刪除或移動檔案，需要用<code>git rm</code>或<code>git mv</code></p>
+<p>直接刪除&#x2F;移動不會影響容器中的檔案，因為這項變動沒有告知git<br>若要在下一個版本刪除或移動檔案，需要用<code>git rm</code>或<code>git mv</code></p>
 <pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> <span class="token function">rm</span> <span class="token punctuation">[</span>filename<span class="token punctuation">]</span> <span class="token comment"># 在下一個版本移除，並實際刪除檔案</span>
 <span class="token function">git</span> <span class="token function">rm</span> --cache <span class="token punctuation">[</span>filename<span class="token punctuation">]</span> <span class="token comment"># 在下一個版本移除，但不實際刪除檔案</span>
 <span class="token function">git</span> <span class="token function">mv</span> <span class="token punctuation">[</span>filename<span class="token punctuation">]</span> <span class="token punctuation">[</span>new-filename<span class="token punctuation">]</span> <span class="token comment"># 改名、搬移檔案，並將變動加入staging area</span></code></pre>
@@ -486,11 +493,11 @@ template <span class="token operator">=</span> /home/frank/.git-template</code><
 <p>產生衝突時：先用<code>git diff</code> <code>git status</code>查看<br>衝突的地方為如下格式</p>
 <pre class="language-none"><code class="language-none">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
 ...
-//version1 code
+&#x2F;&#x2F;version1 code
 ...
-========
+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
 ...
-//version2 code
+&#x2F;&#x2F;version2 code
 ...
 &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code></pre>
 
@@ -552,7 +559,7 @@ debug               F→G→H</code></pre>
 <li>使用時機<ul>
 <li>提交訊息的修改</li>
 <li>發現一些<strong>小錯誤</strong><ul>
-<li>忘記add/多add檔案/找到小bug 的時候</li>
+<li>忘記add&#x2F;多add檔案&#x2F;找到小bug 的時候</li>
 </ul>
 </li>
 </ul>
@@ -628,8 +635,8 @@ debug               F→G→H</code></pre>
 
 <p>可以將版本記錄視為一顆樹，前一個版本為其父節點</p>
 <ul>
-<li>列出指定版本的記錄 = 找其祖先</li>
-<li><code>git diff foo..bar</code> = <code>git diff foo bar</code></li>
+<li>列出指定版本的記錄 &#x3D; 找其祖先</li>
+<li><code>git diff foo..bar</code> &#x3D; <code>git diff foo bar</code></li>
 <li><code>git diff foo...bar</code>: foo和bar的”merge base”(最近的共同祖先)和bar的差異</li>
 <li><code>git log foo bar</code>: 顯示所有foo和bar的提交(其中一方有即可)</li>
 <li><code>git log foo..bar</code>: 不屬於foo，屬於bar的提交</li>
@@ -674,7 +681,7 @@ debug               F→G→H</code></pre>
 <span class="token function">git</span> stash apply          <span class="token comment"># 將最新放入的一筆修改套用在工作目錄上</span>
 <span class="token function">git</span> stash drop           <span class="token comment"># 移除最新放入的stash</span>
 <span class="token function">git</span> stash show <span class="token punctuation">[</span>stashName<span class="token punctuation">]</span> <span class="token comment"># 列出某一筆stash的修改內容</span>
-                           <span class="token comment"># 命名：最新放入的為 stash@{0}, 再來是 stash@{1} 以此類推</span>
+                           <span class="token comment"># 命名：最新放入的為 stash@&#123;0&#125;, 再來是 stash@&#123;1&#125; 以此類推</span>
 <span class="token function">git</span> stash show -p <span class="token punctuation">[</span>stashName<span class="token punctuation">]</span> <span class="token comment"># 列出某一筆stash的修改統計</span>
 <span class="token function">git</span> stash list              <span class="token comment"># 列出所有在stash的變更</span>
 <span class="token function">git</span> stash <span class="token punctuation">[</span>file<span class="token punctuation">]</span>            <span class="token comment"># 將檔案丟進stash</span>
@@ -785,7 +792,7 @@ debug               F→G→H</code></pre>
 
 
 <div class="copyright">
-  © 2014 – 
+  &copy; 2014 – 
   <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fab fa-free-code-camp"></i>
@@ -801,7 +808,7 @@ debug               F→G→H</code></pre>
     <span title="總字數">455k</span>
   </span>
 </div>
-  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> &amp; <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動
+  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動
   </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61c5cf9cb3476405" async="async"></script>
@@ -827,6 +834,7 @@ debug               F→G→H</code></pre>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/tags/mermaid.min.js"></script>
 
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/pace.min.js"></script>
 
   
 
@@ -842,6 +850,5 @@ debug               F→G→H</code></pre>
 <script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"disqusforqwerty","count":false,"i18n":{"disqus":"disqus"}}</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/comments/disqus.min.js"></script>
 
-
-
-</body></html>
+</body>
+</html>

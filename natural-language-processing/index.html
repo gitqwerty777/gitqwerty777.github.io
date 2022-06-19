@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="zh-TW"><head>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
@@ -11,12 +13,14 @@
   <link rel="mask-icon" href="/img/favicon.webp" color="#222">
   <meta name="google-site-verification" content="45plYlJRhxb-g8Tl8seizYgih_JUsmcJRH6oJHplkj0">
 
+<link rel="stylesheet" href="/css/main.css">
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-
-
-
-  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/green/pace-theme-barber-shop.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"gitqwerty777.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.12.1","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"show_result":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"slideLeftIn"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/config.min.js"></script>
 
@@ -135,7 +139,7 @@
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>自然語言處理(上) | QWERTY</title>
   
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51310670-1"></script>
   <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-51310670-1","only_pageview":false}</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/analytics/google-analytics.min.js"></script>
 
@@ -145,16 +149,16 @@
 
 
   <noscript>
-    
+    <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
 <link rel="alternate" href="/atom.xml" title="QWERTY" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext');loadCss('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');loadCss('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300italic,400,400italic,700,700italic%7CCormorant+Garamond:300,300italic,400,400italic,700,700italic%7CNoto+Serif+TC:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&amp;display=swap&amp;subset=latin,latin-ext"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css"></noscript></head>
+</head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" class="use-motion">
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
 
   <main class="main">
-    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切換導航欄" role="button">
@@ -200,7 +204,9 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" maxlength="80" placeholder="搜尋..." spellcheck="false" type="search" class="search-input">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
   </div>
   <span class="popup-btn-close" role="button">
     <i class="fa fa-times-circle"></i>
@@ -244,8 +250,9 @@
         <!--/noindex-->
 
         <div class="site-overview-wrap sidebar-panel">
-          <div class="site-author site-overview-item animated" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="qwerty" src="/img/qwerty.webp">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="qwerty"
+      src="/img/qwerty.webp">
   <p class="site-author-name" itemprop="name">qwerty</p>
   <div class="site-description" itemprop="description">Programming | Computer Science | Thought</div>
 </div>
@@ -271,7 +278,7 @@
 </div>
   <div class="links-of-author site-overview-item animated">
       <span class="links-of-author-item">
-        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http://github.com/gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
+        <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vZ2l0cXdlcnR5Nzc3" title="GitHub → http:&#x2F;&#x2F;github.com&#x2F;gitqwerty777"><i class="fab fa-github fa-fw"></i></span>
       </span>
       <span class="links-of-author-item">
         <span class="exturl" data-url="bWFpbHRvOmdvb2hjbDc3N0BnbWFpbC5jb20=" title="E-Mail → mailto:goohcl777@gmail.com"><i class="fa fa-envelope fa-fw"></i></span>
@@ -288,10 +295,10 @@
     </div>
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https://qwerty777.me">My Main Page</span>
+          <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https:&#x2F;&#x2F;qwerty777.me">My Main Page</span>
         </li>
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http://qwerty777.me/life/">My Second Blog -- Wysiwyg</span>
+          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http:&#x2F;&#x2F;qwerty777.me&#x2F;life&#x2F;">My Second Blog -- Wysiwyg</span>
         </li>
     </ul>
   </div>
@@ -329,20 +336,20 @@
   
   
 
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="http://gitqwerty777.github.io/natural-language-processing/">
 
-    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/img/qwerty.webp">
       <meta itemprop="name" content="qwerty">
     </span>
 
-    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="QWERTY">
       <meta itemprop="description" content="Programming | Computer Science | Thought">
     </span>
 
-    <span hidden="" itemprop="post" itemscope="" itemtype="http://schema.org/CreativeWork">
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="自然語言處理(上) | QWERTY">
       <meta itemprop="description" content="">
     </span>
@@ -366,7 +373,7 @@
         <i class="far fa-folder"></i>
       </span>
       <span class="post-meta-item-text">分類於</span>
-        <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
           <a href="/categories/%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">筆記</span></a>
         </span>
     </span>
@@ -670,7 +677,7 @@
 <li>Including description of a type of event, relation, or entity and the participants in it</li>
 <li>Example: <code>apply_heat</code> frame<ul>
 <li>When one of these words appear, this frame will be applied<ul>
-<li><code>Fry(炸)</code>, <code>bake(烘)</code>, <code>boil(煮)</code>, a`nd broil(烤)</li>
+<li><code>Fry(炸)</code>, <code>bake(烘)</code>, <code>boil(煮)</code>, a&#96;nd broil(烤)</li>
 </ul>
 </li>
 <li>Frame elements: Cook, Food, Heating_instrument and Container<ul>
@@ -695,7 +702,7 @@
 </li>
 <li>Anaphora(首語重複) and Coreference(指代)<ul>
 <li>張三是老師,他教學很認真,同時,他也是一個好爸爸。</li>
-<li>Type/Instance: “老師”/“張三”, “一個好爸爸”/“張三”</li>
+<li>Type&#x2F;Instance: “老師”&#x2F;“張三”, “一個好爸爸”&#x2F;“張三”</li>
 </ul>
 </li>
 <li>crucial to <strong>information extraction</strong></li>
@@ -745,7 +752,7 @@
 </li>
 </ul>
 <h4 id="Analysis"><a href="#Analysis" class="headerlink" title="Analysis"></a>Analysis</h4><p><img data-src="/img/NLP/layer.webp" alt="Layer"><br><img data-src="/img/NLP/l1.webp" alt="L1"><br><img data-src="/img/NLP/l2.webp" alt="L2"><br><img data-src="/img/NLP/l3.webp" alt="L3"><br><img data-src="/img/NLP/l4.webp" alt="L4"></p>
-<h4 id="NLP-progress-by-now"><a href="#NLP-progress-by-now" class="headerlink" title="NLP progress by now"></a>NLP progress by now</h4><p><img data-src="/img/NLP/sub.webp" alt="NLP subclass"><br><img data-src="/img/NLP/dowell.webp" alt="NLP do today"><br><img data-src="/img/NLP/cantdo.webp" alt="NLP can't do today">  </p>
+<h4 id="NLP-progress-by-now"><a href="#NLP-progress-by-now" class="headerlink" title="NLP progress by now"></a>NLP progress by now</h4><p><img data-src="/img/NLP/sub.webp" alt="NLP subclass"><br><img data-src="/img/NLP/dowell.webp" alt="NLP do today"><br><img data-src="/img/NLP/cantdo.webp" alt="NLP can&#39;t do today">  </p>
 <h2 id="Chap03-Collocations-搭配詞"><a href="#Chap03-Collocations-搭配詞" class="headerlink" title="Chap03 Collocations(搭配詞)"></a>Chap03 Collocations(搭配詞)</h2><ul>
 <li>多個單字組合成一個有意義的語詞，其意義無法從各個單字中推得<ul>
 <li>e.g. black market</li>
@@ -766,7 +773,7 @@
 </ul>
 </li>
 <li>Verb particle constructions(語助詞) or Phrasal Verbs(詞組動詞, 短語動詞, V + 介系詞)<ul>
-<li>take in = deceive, look sth. up</li>
+<li>take in &#x3D; deceive, look sth. up</li>
 </ul>
 </li>
 <li>proper names<ul>
@@ -837,7 +844,7 @@
 </ul>
 <ol>
 <li>Define a collocational window<ol>
-<li>e.g., 3-4 words before/after</li>
+<li>e.g., 3-4 words before&#x2F;after</li>
 </ol>
 </li>
 <li>assemble every word pair as a bigram<ol>
@@ -850,13 +857,13 @@
 </li>
 </ol>
 <ul>
-<li>z-score $z = {freq - \mu \over \sigma}$: the strength of a word pair</li>
+<li>z-score $z &#x3D; {freq - \mu \over \sigma}$: the strength of a word pair</li>
 </ul>
 <h4 id="Hypothesis-Testing-假設檢定"><a href="#Hypothesis-Testing-假設檢定" class="headerlink" title="Hypothesis Testing(假設檢定)"></a>Hypothesis Testing(假設檢定)</h4><ul>
 <li>Even high frequency and low variance can be accidental</li>
 <li>null hypothesis(虛無假設, H0) <ul>
 <li>設 w1 and w2 is completely independent → w1 and w2 不是搭配詞<ul>
-<li>P(w1w2) = P(w1)P(w2)</li>
+<li>P(w1w2) &#x3D; P(w1)P(w2)</li>
 </ul>
 </li>
 </ul>
@@ -881,12 +888,12 @@
 </li>
 <li>Calculate t by alpha level and degree of freedom<ul>
 <li>alpha level <code>α</code>: confidence<ul>
-<li>in normal distribution，α = 95%落在mean±1.96std之間, α = 99%落在mean±2.576std之間</li>
+<li>in normal distribution，α &#x3D; 95%落在mean±1.96std之間, α &#x3D; 99%落在mean±2.576std之間</li>
 <li>If t-value is larger than 2.576, we say the two groups <strong>are different</strong> with 99% confidence</li>
 </ul>
 </li>
 <li>degree of freedom: number of sample-1<ul>
-<li>total = number of two groups-2</li>
+<li>total &#x3D; number of two groups-2</li>
 </ul>
 </li>
 </ul>
@@ -894,9 +901,9 @@
 <li><strong>t↑ → more difference → more possible to reject null hypothesis → more possible to be collocation</strong></li>
 <li>Example: “new” occurs 15,828 times, “companies” 4,675 times, “new companies” 8 times, total 14,307,668 tokens<ul>
 <li><strong>Null hypothesis: the occurrences of new and companies are independent(not collocation)</strong></li>
-<li>H0 mean = P(new, companies) = P(new) x P(companies) = $\frac{15828 \times 4678}{14307668^2} = 3.615 \times 10^{-7}$</li>
-<li>H0 var = p(1-p) ~= p when p is small</li>
-<li>tvalue = $\frac{5.591 \times 10^7 - 3.615\times 10^7}{\sqrt{\frac{5.591 \times 10^7}{14307668}}} = 0.999932$</li>
+<li>H0 mean &#x3D; P(new, companies) &#x3D; P(new) x P(companies) &#x3D; $\frac{15828 \times 4678}{14307668^2} &#x3D; 3.615 \times 10^{-7}$</li>
+<li>H0 var &#x3D; p(1-p) ~&#x3D; p when p is small</li>
+<li>tvalue &#x3D; $\frac{5.591 \times 10^7 - 3.615\times 10^7}{\sqrt{\frac{5.591 \times 10^7}{14307668}}} &#x3D; 0.999932$</li>
 <li>0.999932 &lt; 2.576, we cannot reject the null hypothesis<ul>
 <li>new company are not collocation</li>
 </ul>
@@ -913,7 +920,7 @@
 </ul>
 </li>
 <li>T-test can be used for <strong>comparison of the means of two normal populations</strong> <ul>
-<li>H0 is that the average difference is 0 (u = 0)</li>
+<li>H0 is that the average difference is 0 (u &#x3D; 0)</li>
 <li>v1 and v2 are the words we are comparing (e.g., powerful and strong), and w is the collocate of interest(e.g., computers)</li>
 <li><img data-src="/img/NLP/ttest5.webp"><img data-src="/img/NLP/ttest6.webp"></li>
 </ul>
@@ -929,9 +936,9 @@
 </ul>
 </li>
 <li>Example<ul>
-<li>expected frequency of “new companies”: $\frac{8+4667}{14307668} \times \frac{8+15820}{14307668} \times 14307668$ = 5.2 <img data-src="/img/NLP/chi1.webp"></li>
-<li>chi-square value = χ^2 <img data-src="/img/NLP/chi3.webp"> <img data-src="/img/NLP/chi2.webp"></li>
-<li>When α=0.05, χ^2=3.841</li>
+<li>expected frequency of “new companies”: $\frac{8+4667}{14307668} \times \frac{8+15820}{14307668} \times 14307668$ &#x3D; 5.2 <img data-src="/img/NLP/chi1.webp"></li>
+<li>chi-square value &#x3D; χ^2 <img data-src="/img/NLP/chi3.webp"> <img data-src="/img/NLP/chi2.webp"></li>
+<li>When α&#x3D;0.05, χ^2&#x3D;3.841</li>
 <li>Because 1.55&lt;3.841, we cannot reject the null hypothesis. new companies is not a good candidate for a collocation</li>
 </ul>
 </li>
@@ -961,15 +968,15 @@
 </li>
 <li>maximum likelihood estimate <img data-src="/img/NLP/like1.webp"></li>
 <li>using binomial distribution<ul>
-<li>$b(k;n, x) = \binom nk x^k \times (1-x)^{n-k}$</li>
+<li>$b(k;n, x) &#x3D; \binom nk x^k \times (1-x)^{n-k}$</li>
 <li>only different at probability<ul>
-<li>$L(H_1) = b(c_{12};c_1, p)b(c_2-c_{12}; N-c_1, p)$</li>
-<li>$L(H_2) = b(c_{12};c_1, p_1)b(c_2-c_{12}; N-c_1, p_2)$</li>
+<li>$L(H_1) &#x3D; b(c_{12};c_1, p)b(c_2-c_{12}; N-c_1, p)$</li>
+<li>$L(H_2) &#x3D; b(c_{12};c_1, p_1)b(c_2-c_{12}; N-c_1, p_2)$</li>
 </ul>
 </li>
 <li><img data-src="/img/NLP/likew.webp" alt="likely probability"></li>
 <li>log of likelihood ratio λ <img data-src="/img/NLP/like2.webp" alt="log likelihood ratio"></li>
-<li>use D = -2logλ to examine the significance of two words, which can asymptotically(漸近) chi-square distributed</li>
+<li>use D &#x3D; -2logλ to examine the significance of two words, which can asymptotically(漸近) chi-square distributed</li>
 </ul>
 </li>
 </ul>
@@ -983,13 +990,13 @@
 <li>MI是在獲得一個隨機變數的資訊之後，觀察另一個隨機變數所獲得的「資訊量」（單位通常為位元）</li>
 </ul>
 </li>
-<li>mutual information = Expection(PMI) <img data-src="/img/NLP/newMI.webp"></li>
+<li>mutual information &#x3D; Expection(PMI) <img data-src="/img/NLP/newMI.webp"></li>
 <li>works bad in sparse environments<ul>
 <li>As the perfectly dependent bigrams get rarer, their mutual information increases → <strong>bad measure of dependence</strong> <img data-src="/img/NLP/pmi-depend.webp"></li>
 </ul>
 </li>
 <li><strong>good measure of independence</strong><ul>
-<li>when perfect independence, I(x, y) = 0</li>
+<li>when perfect independence, I(x, y) &#x3D; 0</li>
 <li><img data-src="/img/NLP/pmi-independ.webp"></li>
 </ul>
 </li>
@@ -1000,9 +1007,9 @@
 </ul>
 <p>Chain rule for entropy   </p>
 <ul>
-<li>$H(X,Y) = H(Y|X) + H(X) = H(X|Y) + H(Y)$</li>
+<li>$H(X,Y) &#x3D; H(Y|X) + H(X) &#x3D; H(X|Y) + H(Y)$</li>
 <li>Conditional entropy $H(Y|X)$ expresses how much <strong>extra information</strong> you still need to supply on average to communicate Y when X is known <img data-src="/img/NLP/conditional.webp"></li>
-<li>$H(X)-H(X|Y) = H(Y)-H(Y|X)$<ul>
+<li>$H(X)-H(X|Y) &#x3D; H(Y)-H(Y|X)$<ul>
 <li>This difference is called the <strong>mutual information between X and Y</strong>(X, Y共同擁有的information)</li>
 <li>MI is not similar to chi-square <img data-src="/img/NLP/wrongMI.webp"></li>
 </ul>
@@ -1015,7 +1022,7 @@
 <li>正確model和猜測model的差別：P(X)logP(X) ↔ P(X)logPM(X)</li>
 </ul>
 </li>
-<li>Entropy Rate: Per-word entropy(= sentence entropy / N) <img data-src="/img/NLP/entropy_rate.webp"></li>
+<li>Entropy Rate: Per-word entropy(&#x3D; sentence entropy &#x2F; N) <img data-src="/img/NLP/entropy_rate.webp"></li>
 <li>Cross Entropy: <strong>average informaton</strong> needed to <strong>identify an event drawn from the set</strong> between two probability distributions<ul>
 <li>交叉熵的意義是用該模型對文本識別的難度，或者從壓縮的角度來看，每個詞平均要用幾個位來編碼</li>
 <li><img data-src="/img/NLP/entropy_cross.webp"></li>
@@ -1031,7 +1038,7 @@
 <li>check the dependency of each word in sentences</li>
 <li>Evaluation<ul>
 <li>Use top 200 lexiconentries as features</li>
-<li>Tag={Positive, Negative}</li>
+<li>Tag&#x3D;{Positive, Negative}</li>
 <li>LIBSVM</li>
 </ul>
 </li>
@@ -1082,29 +1089,29 @@
 <ul>
 <li>maximizes the probability of the training set T given the model M</li>
 <li>Suppose the word “Chinese” occurs 400 times in a corpus<ul>
-<li>MLE estimate is 400/1000000 = .004</li>
+<li>MLE estimate is 400&#x2F;1000000 &#x3D; .004</li>
 <li>makes it most likely that “Chinese” will occur 400 times in a million word corpus</li>
 </ul>
 </li>
-<li>P([s] I want englishfood [s]) = P(I|[s]) x P(want|I) x P(english|want) x P(food|english) x P([s]|food) = 0.000031$</li>
+<li>P([s] I want englishfood [s]) &#x3D; P(I|[s]) x P(want|I) x P(english|want) x P(food|english) x P([s]|food) &#x3D; 0.000031$</li>
 </ul>
 <p>Usage</p>
 <ul>
 <li><p>capture some knowledge about language</p>
 <ul>
 <li>World Knowledge<ul>
-<li>P(english food|want) = .0011</li>
-<li>P(chinese food|want) = .0065</li>
+<li>P(english food|want) &#x3D; .0011</li>
+<li>P(chinese food|want) &#x3D; .0065</li>
 </ul>
 </li>
 <li>syntax<ul>
-<li>P(to|want) = .66</li>
-<li>P(eat| to) = .28</li>
-<li>P(food| to) = 0</li>
+<li>P(to|want) &#x3D; .66</li>
+<li>P(eat| to) &#x3D; .28</li>
+<li>P(food| to) &#x3D; 0</li>
 </ul>
 </li>
 <li>discourse<ul>
-<li><code>P(i|&lt;s&gt;)</code> = .25</li>
+<li><code>P(i|&lt;s&gt;)</code> &#x3D; .25</li>
 </ul>
 </li>
 </ul>
@@ -1165,7 +1172,7 @@
 </ul>
 </li>
 <li>relate to entropy<ul>
-<li>Perplexity(p, q) = $2^{H(p,q)}$   </li>
+<li>Perplexity(p, q) &#x3D; $2^{H(p,q)}$   </li>
 <li>p is the test sample distribution, and q is the distribution of language model</li>
 <li>do everything in log space to avoid underflow and calculate faster</li>
 </ul>
@@ -1225,7 +1232,7 @@
 <li>Remove punctuation(標點) and normalize text</li>
 <li>Map out-of-vocabulary words to unknown symbol(UNK)</li>
 <li>Estimate conditional probabilities by joint probabilities<ul>
-<li>P(n | n-2, n-1) = P(n-2, n-1, n) / P(n-2, n-1)</li>
+<li>P(n | n-2, n-1) &#x3D; P(n-2, n-1, n) &#x2F; P(n-2, n-1)</li>
 </ul>
 </li>
 </ol>
@@ -1256,12 +1263,12 @@
 <p>Terminology  </p>
 <ul>
 <li>Ex. <code>[s] a b a b a</code><ul>
-<li>N = 5 (<code>[s]a,ab,ba,ab,ba</code>)</li>
-<li>B = 3 (<code>[s]a,ab,ba</code>)</li>
-<li>C(w1, w2…) = 某N-gram(Ex. ab)出現次數</li>
-<li>r =  某N-gram出現頻率</li>
-<li>Nr = 有幾個「出現r次的N-gram」</li>
-<li>Tr = 出現r次的N-gram，在test data出現的總次數</li>
+<li>N &#x3D; 5 (<code>[s]a,ab,ba,ab,ba</code>)</li>
+<li>B &#x3D; 3 (<code>[s]a,ab,ba</code>)</li>
+<li>C(w1, w2…) &#x3D; 某N-gram(Ex. ab)出現次數</li>
+<li>r &#x3D;  某N-gram出現頻率</li>
+<li>Nr &#x3D; 有幾個「出現r次的N-gram」</li>
+<li>Tr &#x3D; 出現r次的N-gram，在test data出現的總次數</li>
 </ul>
 </li>
 </ul>
@@ -1296,7 +1303,7 @@
 <li>Lidstone and Jeffreys-Perks: add a smaller value λ &lt; 1<ul>
 <li>B:number of bins <img data-src="/img/NLP/lidstone.webp" alt="lid"></li>
 <li>Expected Likelihood Estimation (ELE)(Jeffreys-Perks Law)<ul>
-<li>λ=1/2</li>
+<li>λ&#x3D;1&#x2F;2</li>
 </ul>
 </li>
 </ul>
@@ -1305,9 +1312,9 @@
 <h4 id="3-Held-Out-Estimation"><a href="#3-Held-Out-Estimation" class="headerlink" title="(3) Held Out Estimation"></a>(3) Held Out Estimation</h4><ul>
 <li>compute frequencies in training data and held out data</li>
 <li><img data-src="/img/NLP/heldout.webp"><ul>
-<li>Tr / Nr = Average frequency of training frequency r N-grams<ul>
+<li>Tr &#x2F; Nr &#x3D; Average frequency of training frequency r N-grams<ul>
 <li>estimate frequency(value for validation)</li>
-<li>計算出現在training corpus r次的bigrams，在held-out corpus出現的次數稱為Tr。 因為這種bigrams有Nr個，因此平均為Tr / Nr</li>
+<li>計算出現在training corpus r次的bigrams，在held-out corpus出現的次數稱為Tr。 因為這種bigrams有Nr個，因此平均為Tr &#x2F; Nr</li>
 </ul>
 </li>
 </ul>
@@ -1336,8 +1343,8 @@
 <h4 id="4-Cross-Validation"><a href="#4-Cross-Validation" class="headerlink" title="(4) Cross-Validation"></a>(4) Cross-Validation</h4><p>If data is not enough, use each part of the data both as training data and held out data  </p>
 <ul>
 <li>Deleted Estimation<ul>
-<li>$N_r^a$ = number of n-grams occurring r times in the <strong>a th part</strong> of the training data</li>
-<li>$T_r^{ab}$ = number of occurs in part b of 「bigrams occurs r times in part a」</li>
+<li>$N_r^a$ &#x3D; number of n-grams occurring r times in the <strong>a th part</strong> of the training data</li>
+<li>$T_r^{ab}$ &#x3D; number of occurs in part b of 「bigrams occurs r times in part a」</li>
 <li><img data-src="/img/NLP/deleted_estimate.webp"></li>
 </ul>
 </li>
@@ -1352,7 +1359,7 @@
 <li>用出現一次的來預測沒出現過的</li>
 <li>若出現次數&gt;k，不變，否則套用公式</li>
 <li><img data-src="/img/NLP/goodturing.webp"><ul>
-<li>renormalize to sum = 1</li>
+<li>renormalize to sum &#x3D; 1</li>
 </ul>
 </li>
 <li>Simple Good-Turing<ul>
@@ -1364,14 +1371,14 @@
 <p>explaination from stanford NLP course   </p>
 <ul>
 <li>when use leave-one-out validation, the possibilities of unseen validation data is $\frac{N_1}{N}$(when thing-saw-once is the validation data), the possibilities of validation data have been seen K times is $\frac{(k+1)N_{k+1}}{N}$ </li>
-<li>Josh Goodman’s intuition: assume You are fishing, and caught 10 carp,3 perch,2 whitefish, 1 trout, 1 salmon, 1 eel = 18 fish<ul>
-<li>P(unseen) = N1/N0 = N1/N = 3/18</li>
-<li>C(trout) = $2 \times N_2/N_1$ = $2 \times (1/3)$ = 2/3<ul>
-<li>P(trout) = 2/3 / 18 = 1/27</li>
+<li>Josh Goodman’s intuition: assume You are fishing, and caught 10 carp,3 perch,2 whitefish, 1 trout, 1 salmon, 1 eel &#x3D; 18 fish<ul>
+<li>P(unseen) &#x3D; N1&#x2F;N0 &#x3D; N1&#x2F;N &#x3D; 3&#x2F;18</li>
+<li>C(trout) &#x3D; $2 \times N_2&#x2F;N_1$ &#x3D; $2 \times (1&#x2F;3)$ &#x3D; 2&#x2F;3<ul>
+<li>P(trout) &#x3D; 2&#x2F;3 &#x2F; 18 &#x3D; 1&#x2F;27</li>
 </ul>
 </li>
 <li>for large k, often get zero estimate, so do not change the count<ul>
-<li>C(the) = 200000, C(a) = 190000, $C*(the) = (200001)N_{200001} / N_{200000} = 0 (because N_{200001} = 0)$</li>
+<li>C(the) &#x3D; 200000, C(a) &#x3D; 190000, $C*(the) &#x3D; (200001)N_{200001} &#x2F; N_{200000} &#x3D; 0 (because N_{200001} &#x3D; 0)$</li>
 </ul>
 </li>
 </ul>
@@ -1408,7 +1415,7 @@
 <li>back-off probability <img data-src="/img/NLP/pbo.webp"><ul>
 <li>$P_{Dis}(w_n|w_{n-2},w_{n-1})$ is specific discounted estimate. e.g., Good-Turing or Absolute Discounting </li>
 <li>unseen trigram is estimated by bigram and β <img data-src="/img/NLP/bosmooth.webp"></li>
-<li><strong>β(wn-2, wn-1)</strong> and <strong>α</strong> are chosen so that sum of probabilities = 1</li>
+<li><strong>β(wn-2, wn-1)</strong> and <strong>α</strong> are chosen so that sum of probabilities &#x3D; 1</li>
 </ul>
 </li>
 <li>more genereal form <img data-src="/img/NLP/botable.webp"></li>
@@ -1438,7 +1445,7 @@
 </ul>
 </li>
 <li>rely on 2 assumptions<ul>
-<li>Let X=(X1, …, XT) be a sequence of random variables, X is markov chain if</li>
+<li>Let X&#x3D;(X1, …, XT) be a sequence of random variables, X is markov chain if</li>
 </ul>
 <ol>
 <li>Limited Horizon<ul>
@@ -1454,10 +1461,10 @@
 </ul>
 <p>Description   </p>
 <ul>
-<li>initial state π, state = Q, Observations = O, transition matrix = A, output(observation) matrix = B  </li>
+<li>initial state π, state &#x3D; Q, Observations &#x3D; O, transition matrix &#x3D; A, output(observation) matrix &#x3D; B  </li>
 <li><img data-src="/img/NLP/hmm1.webp"><ul>
-<li>$a_{ij}$ = probability of state $q_i$ transition to state $q_j$ </li>
-<li>$b_i(k)$ = probability of observe output symbol $O_k$ when state = $q_i$</li>
+<li>$a_{ij}$ &#x3D; probability of state $q_i$ transition to state $q_j$ </li>
+<li>$b_i(k)$ &#x3D; probability of observe output symbol $O_k$ when state &#x3D; $q_i$</li>
 </ul>
 </li>
 </ul>
@@ -1474,7 +1481,7 @@
 </ul>
 </li>
 <li>解碼（Decoding）：Given an observation sequence and model, what is the <strong>most likely state sequence</strong>? (P(States|Observes, Model)) 下一個state是什麼<ul>
-<li>Used in tagging (tags=hidden states)</li>
+<li>Used in tagging (tags&#x3D;hidden states)</li>
 <li>Use <strong>Viterbi algorithm</strong> to solve it</li>
 </ul>
 </li>
@@ -1490,7 +1497,7 @@
 <li><img data-src="/img/NLP/fwformula.webp"></li>
 <li>simply sum of the probability of each possible state sequence </li>
 <li>Direct evaluation<ul>
-<li>time complexity = $(2T+1) \times N^{T+1}$ -&gt; too big <img data-src="/img/NLP/fw.webp"></li>
+<li>time complexity &#x3D; $(2T+1) \times N^{T+1}$ -&gt; too big <img data-src="/img/NLP/fw.webp"></li>
 </ul>
 </li>
 <li>Use dynamic programming<ul>
@@ -1509,10 +1516,10 @@
 
 <p>Forward Algorithm  </p>
 <ul>
-<li>$α_t(i)$ = probability of state = qi at time = t <img data-src="/img/NLP/forwardalgo.webp" alt="dp"></li>
-<li>α的求法：將time = t-1 的 α 值，乘上在time = t時會在qi state的機率，並加總 <img data-src="/img/NLP/forwardfex.webp" alt="dp"></li>
+<li>$α_t(i)$ &#x3D; probability of state &#x3D; qi at time &#x3D; t <img data-src="/img/NLP/forwardalgo.webp" alt="dp"></li>
+<li>α的求法：將time &#x3D; t-1 的 α 值，乘上在time &#x3D; t時會在qi state的機率，並加總 <img data-src="/img/NLP/forwardfex.webp" alt="dp"></li>
 <li>順向推出所有可能的state sequence會產生此observation的機率和, 即為此model會產生此observation的機率 <img data-src="/img/NLP/forwardexample.webp" alt="dp"><ul>
-<li>Σ P($O_1, O_2, O_3$ | possible state sequence) = P($O_1, O_2, O_3$ | Model)</li>
+<li>Σ P($O_1, O_2, O_3$ | possible state sequence) &#x3D; P($O_1, O_2, O_3$ | Model)</li>
 </ul>
 </li>
 <li><img data-src="/img/NLP/forwardpseudo.webp" alt="dp"></li>
@@ -1531,7 +1538,7 @@
 </ul>
 </li>
 <li>assume output (observation) is Blue Blue Red (BBR)<ul>
-<li>Forward: P(BBR|model) = 0.0792 (SUM of all possible states’ probability) <img data-src="/img/NLP/forward-urn.webp"></li>
+<li>Forward: P(BBR|model) &#x3D; 0.0792 (SUM of all possible states’ probability) <img data-src="/img/NLP/forward-urn.webp"></li>
 </ul>
 </li>
 </ul>
@@ -1539,14 +1546,14 @@
 <ul>
 <li><p>compute <strong>the most possible path</strong></p>
 </li>
-<li><p>$v_t(i)$ = <strong>most possible path probability</strong> from time = 0 to time = t, and state = qi at time = t <img data-src="/img/NLP/viterbi.webp"></p>
+<li><p>$v_t(i)$ &#x3D; <strong>most possible path probability</strong> from time &#x3D; 0 to time &#x3D; t, and state &#x3D; qi at time &#x3D; t <img data-src="/img/NLP/viterbi.webp"></p>
 </li>
 <li><p><img data-src="/img/NLP/viterbi-graph.webp"></p>
 </li>
 <li><p><img data-src="/img/NLP/viterbi-algo.webp"></p>
 </li>
 <li><p>Viterbi in Urn example <img data-src="/img/NLP/urn-cal.webp"></p>
-<p>  def viterbi(obs, states, start_p, trans_p, emit_p):<br>  V = [{}]<br>  path = {}<br><br>  # Initialize base cases (t == 0)<br>  for y in states:<br>      V[0][y] = start_p[y] * emit_p[y][obs[0]]<br>      path[y] = [y]<br><br>  # Run Viterbi for t &gt; 0<br>  for t in range(1,len(obs)):<br>      V.append({})<br>      newpath = {}<br><br>      for y in states:<br>          (prob, state) = max([(V[t-1][y0] * trans_p[y0][y] * emit_p[y][obs[t]], y0) for y0 in states])<br>          # ↑ find the most possible state transitting to given state y at time=t<br>          V[t][y] = prob<br>          newpath[y] = path[state] + [y]<br><br>      # newpath(at time t) can overwrite path(at time t-1)<br>      path = newpath<br><br>  (prob, state) = max([(V[len(obs) - 1][y], y) for y in states])<br>  return (prob, path[state])</p>
+<p>  def viterbi(obs, states, start_p, trans_p, emit_p):<br>  V &#x3D; [{}]<br>  path &#x3D; {}<br><br>  # Initialize base cases (t &#x3D;&#x3D; 0)<br>  for y in states:<br>      V[0][y] &#x3D; start_p[y] * emit_p[y][obs[0]]<br>      path[y] &#x3D; [y]<br><br>  # Run Viterbi for t &gt; 0<br>  for t in range(1,len(obs)):<br>      V.append({})<br>      newpath &#x3D; {}<br><br>      for y in states:<br>          (prob, state) &#x3D; max([(V[t-1][y0] * trans_p[y0][y] * emit_p[y][obs[t]], y0) for y0 in states])<br>          # ↑ find the most possible state transitting to given state y at time&#x3D;t<br>          V[t][y] &#x3D; prob<br>          newpath[y] &#x3D; path[state] + [y]<br><br>      # newpath(at time t) can overwrite path(at time t-1)<br>      path &#x3D; newpath<br><br>  (prob, state) &#x3D; max([(V[len(obs) - 1][y], y) for y in states])<br>  return (prob, path[state])</p>
 </li>
 </ul>
 <h4 id="Backward"><a href="#Backward" class="headerlink" title="Backward"></a>Backward</h4><ul>
@@ -1556,14 +1563,14 @@
 <ul>
 <li>Backward variables β, which are the total probability of seeing the rest of the observation sequence($O_t to O_T$) given state qi at time t <img data-src="/img/NLP/bw-procedure.webp"><ul>
 <li><img data-src="/img/NLP/bw-f.webp"></li>
-<li>初始化β：令t=T時刻所有狀態的β為1</li>
+<li>初始化β：令t&#x3D;T時刻所有狀態的β為1</li>
 </ul>
 </li>
 <li>由後往前計算 <img data-src="/img/NLP/bw-graph.webp"></li>
-<li>如果要計算某observation的概率，只需將t=1的後向變量相加</li>
+<li>如果要計算某observation的概率，只需將t&#x3D;1的後向變量相加</li>
 </ul>
 <h4 id="Backward-Forward"><a href="#Backward-Forward" class="headerlink" title="Backward-Forward"></a>Backward-Forward</h4><ul>
-<li>We can locally maximize model parameter λ, by an iterative hill-climbing known as Baum-Welch algorithm(=Forward-Backward) (by EM Algorithm structure)</li>
+<li>We can locally maximize model parameter λ, by an iterative hill-climbing known as Baum-Welch algorithm(&#x3D;Forward-Backward) (by EM Algorithm structure)</li>
 </ul>
 <p>Forward-Backward Algorithm    </p>
 <ul>
@@ -1582,9 +1589,9 @@
 <li>(隨機)選擇參數λ0，找出在λ0下最可能的狀態，計算每個訓練樣本的可能結果的概率，再<strong>重新估計新的參數λ</strong>。經過多次的迭代，直至某個收斂條件滿足為止</li>
 <li>Urn Example<ul>
 <li>update transition matrix A ($a_{12}, a_{11}$ … ) <img data-src="/img/NLP/newtrans.webp"><ul>
-<li>P(1→2) = 0.0414 <img data-src="/img/NLP/1-2.webp" alt="1→2"></li>
-<li>P(1→1) = 0.0537 <img data-src="/img/NLP/1-1.webp" alt="1→1"></li>
-<li>normalize: P(1→2)+P(1→1) = 1, P(1→2) = 0.435 …</li>
+<li>P(1→2) &#x3D; 0.0414 <img data-src="/img/NLP/1-2.webp" alt="1→2"></li>
+<li>P(1→1) &#x3D; 0.0537 <img data-src="/img/NLP/1-1.webp" alt="1→1"></li>
+<li>normalize: P(1→2)+P(1→1) &#x3D; 1, P(1→2) &#x3D; 0.435 …</li>
 </ul>
 </li>
 <li>若state數目多的時候，計算量過大…<ul>
@@ -1607,9 +1614,9 @@
 </ul>
 <p>Summary of Forward-Backward <img data-src="/img/NLP/fb-algo.webp"> </p>
 <ol>
-<li>Initialize λ=(A,B)</li>
+<li>Initialize λ&#x3D;(A,B)</li>
 <li>Compute α, β, ξ using observations</li>
-<li>Estimate new λ’=(A,B)</li>
+<li>Estimate new λ’&#x3D;(A,B)</li>
 <li>Replace λ with λ’</li>
 <li>If not converged go to 2</li>
 </ol>
@@ -1706,7 +1713,7 @@
 <p>Evaluation  </p>
 <ul>
 <li>Overall error rate with respect to a gold-standard test set</li>
-<li>Error rates on particular tags/words</li>
+<li>Error rates on particular tags&#x2F;words</li>
 <li>Tag confusions, Unknown words…</li>
 <li>Typically accuracy reaches 96~97%</li>
 </ul>
@@ -1724,7 +1731,7 @@
 <h3 id="Maximum-entropy-Markov-model-MEMM"><a href="#Maximum-entropy-Markov-model-MEMM" class="headerlink" title="Maximum entropy Markov model (MEMM)"></a>Maximum entropy Markov model (MEMM)</h3><p>Maximum Entropy Model  </p>
 <ul>
 <li>MaxEnt: multinomial(多項式) logistic regression</li>
-<li>Used for sequence classification/sequence labeling</li>
+<li>Used for sequence classification&#x2F;sequence labeling</li>
 <li>Maximum entropy Markov model (MEMM)<ul>
 <li>a common MaxEnt classifier</li>
 </ul>
@@ -1793,7 +1800,7 @@
 <h3 id="Transformation-Based-Learning-of-Tags"><a href="#Transformation-Based-Learning-of-Tags" class="headerlink" title="Transformation-Based Learning of Tags"></a>Transformation-Based Learning of Tags</h3><ul>
 <li>Tag each word with its most frequent tag</li>
 <li>Construct a list of transformations that <strong>improve the initial tag</strong></li>
-<li>trigger environment: at the limited number of words before/after <img data-src="/img/NLP/transformed-learn.webp"></li>
+<li>trigger environment: at the limited number of words before&#x2F;after <img data-src="/img/NLP/transformed-learn.webp"></li>
 <li><img data-src="/img/NLP/transformed-algo.webp"></li>
 </ul>
 <ol>
@@ -1801,9 +1808,9 @@
 <li>Trigger by word</li>
 <li>Trigger by morphology(詞法學)</li>
 </ol>
-<p>&lt;! – ====================分水嶺：尚未分類========================== –&gt;</p>
+<p>&lt;! – &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;分水嶺：尚未分類&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D; –&gt;</p>
 <h3 id="Zipf’s-Law-long-tail-phenomenon"><a href="#Zipf’s-Law-long-tail-phenomenon" class="headerlink" title="Zipf’s Law (long tail phenomenon)"></a>Zipf’s Law (long tail phenomenon)</h3><p>a word’s frequency is approximately inversely proportional to its rank in the word distribution list<br>單詞出現的頻率與它在頻率表裡的排名成反比:<br>頻率最高的單詞出現的頻率大約是出現頻率第二位的單詞的2倍</p>
-<h4 id="Jelinek-Mercer-Smoothing"><a href="#Jelinek-Mercer-Smoothing" class="headerlink" title="Jelinek-Mercer Smoothing"></a>Jelinek-Mercer Smoothing</h4><p>interpolate(插值) between bigram and unigram<br>because if p(eat the) = 0 and p(eat thou) = 0<br>it still must consider that  p(eat the) &gt; p(eat thou)<br>because p(the) &gt; p(thou)<br>so p(eat the) = N * p(the | eat) + (1-N) * p(the | thou) </p>
+<h4 id="Jelinek-Mercer-Smoothing"><a href="#Jelinek-Mercer-Smoothing" class="headerlink" title="Jelinek-Mercer Smoothing"></a>Jelinek-Mercer Smoothing</h4><p>interpolate(插值) between bigram and unigram<br>because if p(eat the) &#x3D; 0 and p(eat thou) &#x3D; 0<br>it still must consider that  p(eat the) &gt; p(eat thou)<br>because p(the) &gt; p(thou)<br>so p(eat the) &#x3D; N * p(the | eat) + (1-N) * p(the | thou) </p>
 <h2 id="Language-Model-Applications"><a href="#Language-Model-Applications" class="headerlink" title="Language Model: Applications"></a>Language Model: Applications</h2><h3 id="Query-Likelihood-Model"><a href="#Query-Likelihood-Model" class="headerlink" title="Query Likelihood Model"></a>Query Likelihood Model</h3><p>given a query 𝑞, rank the probability 𝑝(𝑑|q)<br><img data-src="/img/NLP/cfKf6I3.webp"><br>So the following arguments are equivalent:<br>1.𝑝𝑑𝑞: find the document 𝑑 that is most likely to be relevant to 𝑞<br>2.𝑝𝑞𝑑: find the document 𝑑 that is most likely to generate the query 𝑞</p>
 <p>Typically, unigram LMs are used in IR(information retrieval)<br>Retrieval does not depend that much on sentence structure</p>
 <h3 id="Dependence-Language-Model"><a href="#Dependence-Language-Model" class="headerlink" title="Dependence Language Model"></a>Dependence Language Model</h3><p>Relax the independence assumption of unigram LMs<br>Do not assume that the dependency only exist between <strong>adjacent</strong> words<br>Introduce a hidden variable: “linkage” 𝐿<br>Ex.<br><img data-src="/img/NLP/Z8ftSRP.webp"></p>
@@ -1899,7 +1906,7 @@
 
 
 <div class="copyright">
-  © 2014 – 
+  &copy; 2014 – 
   <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fab fa-free-code-camp"></i>
@@ -1915,7 +1922,7 @@
     <span title="總字數">455k</span>
   </span>
 </div>
-  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> &amp; <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動
+  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動
   </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61c5cf9cb3476405" async="async"></script>
@@ -1941,6 +1948,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/tags/mermaid.min.js"></script>
 
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/pace.min.js"></script>
 
   
 
@@ -1956,6 +1964,5 @@
 <script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"disqusforqwerty","count":false,"i18n":{"disqus":"disqus"}}</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/third-party/comments/disqus.min.js"></script>
 
-
-
-</body></html>
+</body>
+</html>
