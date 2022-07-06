@@ -24,12 +24,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"gitqwerty777.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.12.1","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"show_result":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInDown","sidebar":"fadeInRight"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/config.min.js"></script>
 
-    <meta name="description" content="http:&#x2F;&#x2F;mqjing.blogspot.tw&#x2F;2009&#x2F;09&#x2F;cmake-how-to-use-cmake.htmlCMake 常用變數 簡介CMake用來產生跨平台的專案建置文件，在windows下它會生成visual studio的專案檔(.sln) codeblock eclipse，在linux下它會生成Makefile。類似工具有autotools和qmake，不過autot">
+    <meta name="description" content="http:&#x2F;&#x2F;mqjing.blogspot.tw&#x2F;2009&#x2F;09&#x2F;cmake-how-to-use-cmake.htmlCMake 常用變數 簡介CMake用來產生跨平台的專案建置文件，在windows下它會生成visual studio的專案檔(.sln) codeblock eclipse，在linux下它會生成Makefile。類似工具有autotools和qmake，不過autoto">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Makefile 和 CMake 之間的轉換和實作">
 <meta property="og:url" content="http://gitqwerty777.github.io/cmake/index.html">
 <meta property="og:site_name" content="QWERTY">
-<meta property="og:description" content="http:&#x2F;&#x2F;mqjing.blogspot.tw&#x2F;2009&#x2F;09&#x2F;cmake-how-to-use-cmake.htmlCMake 常用變數 簡介CMake用來產生跨平台的專案建置文件，在windows下它會生成visual studio的專案檔(.sln) codeblock eclipse，在linux下它會生成Makefile。類似工具有autotools和qmake，不過autot">
+<meta property="og:description" content="http:&#x2F;&#x2F;mqjing.blogspot.tw&#x2F;2009&#x2F;09&#x2F;cmake-how-to-use-cmake.htmlCMake 常用變數 簡介CMake用來產生跨平台的專案建置文件，在windows下它會生成visual studio的專案檔(.sln) codeblock eclipse，在linux下它會生成Makefile。類似工具有autotools和qmake，不過autoto">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2017-01-17T10:12:50.000Z">
 <meta property="article:modified_time" content="2017-01-17T10:12:50.000Z">
@@ -306,7 +306,6 @@
     
     <div class="post-body" itemprop="articleBody">
         <!-- RENEW: -->
-
 
 <p><span class="exturl" data-url="aHR0cDovL21xamluZy5ibG9nc3BvdC50dy8yMDA5LzA5L2NtYWtlLWhvdy10by11c2UtY21ha2UuaHRtbA==">http://mqjing.blogspot.tw/2009/09/cmake-how-to-use-cmake.html<i class="fa fa-external-link-alt"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly9pdGsub3JnL1dpa2kvQ01ha2VfVXNlZnVsX1ZhcmlhYmxlcw==">CMake 常用變數<i class="fa fa-external-link-alt"></i></span></p>
 <h2 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h2><p>CMake用來產生跨平台的專案建置文件，在windows下它會生成visual studio的專案檔(.sln) codeblock eclipse，在linux下它會生成Makefile。類似工具有autotools和qmake，不過autotools太複雜，qmake只限於qt使用。</p>

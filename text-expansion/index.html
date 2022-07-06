@@ -294,7 +294,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>858</span>
+      <span>882</span>
     </span>
 </div>
 
@@ -350,14 +350,15 @@
 <h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>需要考慮平常會不會意外打出縮寫詞</p>
 <ul>
 <li>用前綴<ul>
-<li>如<code>:</code>、<code>;</code>、<code>zz</code>、<code>xx</code></li>
+<li>如<code>:</code>、<code>;</code>、<code>zz</code>、<code>xx</code>、<code>/</code></li>
 <li>不能有(部份)重復指令<ul>
-<li><code>:check</code> 和 <code>:check_1</code> 會先觸發 <code>:check</code>，所以<code>:check_1</code> 永遠不會被觸發</li>
+<li><code>:check</code> 和 <code>:check1</code> 會先觸發 <code>:check</code>，所以<code>:check1</code> 永遠不會被觸發</li>
 </ul>
 </li>
 </ul>
 </li>
 <li>用後綴就可以避免此問題發生</li>
+<li>也可同時用前綴和後綴</li>
 </ul>
 <h2 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h2><p>這類軟體使用不難，難的是如何應用</p>
 <ul>
@@ -369,7 +370,7 @@
 <li>錯字改正：<code>因該</code> → <code>應該</code></li>
 <li>縮寫擴展：<code>ymd</code> → <code>Yes My Dark</code></li>
 <li>執行指令：<ul>
-<li><code>;ip</code> → 目前的ip</li>
+<li><code>;ip</code> → 機器的ip</li>
 <li><code>;date</code> → 今天的時間</li>
 </ul>
 </li>
@@ -379,7 +380,7 @@
 </li>
 </ul>
 <p>可參考<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2dpdHF3ZXJ0eTc3Ny9lc3BhbnNvMi1jb25maWc=">我的設定檔(Espanso)<i class="fa fa-external-link-alt"></i></span></p>
-<h2 id="備註"><a href="#備註" class="headerlink" title="備註"></a>備註</h2><p>在特定環境中要額外設定觸發條件，如虛擬機</p>
+<h2 id="備註"><a href="#備註" class="headerlink" title="備註"></a>備註</h2><p>在特定環境中無法觸發，如虛擬機、Remote Desktop，原因不明</p>
 <h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
 <li>其他人的設定檔(Espanso)<ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0xpc3N5OTMvZXNwYW5zby1jb25maWc=">https://github.com/Lissy93/espanso-config<i class="fa fa-external-link-alt"></i></span></li>

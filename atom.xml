@@ -296,15 +296,7 @@
     <updated>2020-12-30T16:20:38.000Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-
-&lt;h2 id=&quot;https-github-com-lxl80-hexo-admonition&quot;&gt;&lt;a href=&quot;#https-github-com-lxl80-hexo-admonition&quot;</summary>
-        
-      
+    <summary type="html">&lt;p&gt;整理有用的hexo套件&lt;/p&gt;</summary>
     
     
     
@@ -763,7 +755,6 @@
     
     
     <summary type="html">&lt;!-- RENEW: --&gt;
-
 
 &lt;p&gt;&lt;a href=&quot;http://mqjing.blogspot.tw/2009/09/cmake-how-to-use-cmake.html&quot;&gt;http://mqjing.blogspot.tw/2009/09/cmake-how-to-use-cmake.html&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://itk.org/Wiki/CMake_Useful_Variables&quot;&gt;CMake 常用變數&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;簡介&quot;&gt;&lt;a href=&quot;#簡介&quot; class=&quot;headerlink&quot; title=&quot;簡介&quot;&gt;&lt;/a&gt;簡介&lt;/h2&gt;&lt;p&gt;CMake用來產生跨平台的專案建置文件，在windows下它會生成visual studio的專案檔(.sln) codeblock eclipse，在linux下它會生成Makefile。類似工具有autotools和qmake，不過autotools太複雜，qmake只限於qt使用。&lt;/p&gt;
