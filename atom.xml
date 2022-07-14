@@ -317,7 +317,7 @@
     <updated>2020-11-21T07:00:00.000Z</updated>
     
     
-    <summary type="html">一對多的依賴關係，當物件狀態改變時，所有依賴者會被通知。</summary>
+    <summary type="html">物件之間一對多的依賴關係，當物件狀態改變時，所有依賴者會被通知。</summary>
     
     
     
@@ -726,7 +726,7 @@
   </entry>
   
   <entry>
-    <title>hexo blog主題選擇</title>
+    <title>hexo 網誌主題選擇</title>
     <link href="http://gitqwerty777.github.io/proper-blog-theme-features/"/>
     <id>http://gitqwerty777.github.io/proper-blog-theme-features/</id>
     <published>2017-04-09T11:21:33.000Z</published>
@@ -743,6 +743,8 @@
     <category term="網誌" scheme="http://gitqwerty777.github.io/tags/%E7%B6%B2%E8%AA%8C/"/>
     
     <category term="hexo" scheme="http://gitqwerty777.github.io/tags/hexo/"/>
+    
+    <category term="主題" scheme="http://gitqwerty777.github.io/tags/%E4%B8%BB%E9%A1%8C/"/>
     
   </entry>
   
