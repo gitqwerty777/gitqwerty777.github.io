@@ -2128,16 +2128,7 @@
 <li>Solution: describe the propositions in temporal order</li>
 </ul>
 </li>
-<li>Script: encapsulate a sequence of actions that belong together into a script<pre class="language-none"><code class="language-none">automobile_buying:
-&lt;&#123;customer(C), automobile(A), dealer(D), garage(G)&#125;,
-	&lt;
-		goes(C, G),
-		test_drives(C, A),
-		orders(C, A, D),
-		delivers(D, A, C),
-		drives(C, A)
-	&gt;
-&gt;</code></pre></li>
+<li>Script: encapsulate a sequence of actions that belong together into a script<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">automobile_buying:</span><br><span class="line">&lt;&#123;<span class="built_in">customer</span>(C), <span class="built_in">automobile</span>(A), <span class="built_in">dealer</span>(D), <span class="built_in">garage</span>(G)&#125;,</span><br><span class="line">	&lt;</span><br><span class="line">		<span class="built_in">goes</span>(C, G),</span><br><span class="line">		<span class="built_in">test_drives</span>(C, A),</span><br><span class="line">		<span class="built_in">orders</span>(C, A, D),</span><br><span class="line">		<span class="built_in">delivers</span>(D, A, C),</span><br><span class="line">		<span class="built_in">drives</span>(C, A)</span><br><span class="line">	&gt;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure></li>
 </ul>
 <h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
 <li>HHChen 課堂講義</li>
@@ -2224,7 +2215,7 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">457k</span>
+    <span title="總字數">463k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

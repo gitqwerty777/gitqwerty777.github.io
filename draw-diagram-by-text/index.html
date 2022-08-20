@@ -365,12 +365,7 @@
 </ul>
 <h2 id="用語法畫圖"><a href="#用語法畫圖" class="headerlink" title="用語法畫圖"></a>用語法畫圖</h2><p>大多都是描述點(Node), 邊(Edge)及屬性(形狀、顏色、大小、方向等)即可產生圖片</p>
 <p>以 mermaid 為例：</p>
-<pre class="language-mermaid" data-language="mermaid"><code class="language-mermaid"><span class="token keyword">flowchart</span> TD
-    A<span class="token text string">[Start]</span> <span class="token arrow operator">--></span> B<span class="token text string">&#123;Is it?&#125;</span>
-    B <span class="token arrow operator">--></span><span class="token label property">|Yes|</span> C<span class="token text string">[OK]</span>
-    C <span class="token arrow operator">--></span> D<span class="token text string">[Rethink]</span>
-    D <span class="token arrow operator">--></span> B
-    B <span class="token arrow operator">----></span><span class="token label property">|No|</span> E<span class="token text string">[End]</span></code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">flowchart TD</span><br><span class="line">    A[Start] --&gt; B&#123;Is it?&#125;</span><br><span class="line">    B --&gt;|Yes| C[OK]</span><br><span class="line">    C --&gt; D[Rethink]</span><br><span class="line">    D --&gt; B</span><br><span class="line">    B ----&gt;|No| E[End]</span><br></pre></td></tr></table></figure>
 
 <p>就能產生</p>
 <p><img data-src="/img/Other/flowchart.webp" alt="mermaid flowchart"></p>
@@ -422,9 +417,7 @@
 <li><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RvbmlvNzMvZG5udmlld2Vy">dnnviewer<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 <h3 id="畫UML"><a href="#畫UML" class="headerlink" title="畫UML"></a>畫UML</h3><p>若程式完成後才需要畫UML圖的話，目前已有許多套件可以將程式碼轉換成UML。</p>
-<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># will generate plantuml script from python file</span>
-pip <span class="token function">install</span> pylint
-pyreverse -o plantuml --colorized target.py</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># will generate plantuml script from python file</span></span><br><span class="line">pip install pylint</span><br><span class="line">pyreverse -o plantuml --colorized target.py</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly9wbGFudHVtbC5jb20vemgv">PlantUML<i class="fa fa-external-link-alt"></i></span><ul>
@@ -440,23 +433,7 @@ pyreverse -o plantuml --colorized target.py</code></pre>
 </li>
 </ul>
 <h3 id="畫文字圖"><a href="#畫文字圖" class="headerlink" title="畫文字圖"></a>畫文字圖</h3><p>只用限定的文字來畫圖，如ASCII Diagram</p>
-<pre class="language-none"><code class="language-none">         ,-.  
-         &#96;-&#39;  
-         &#x2F;|\  
-,---.     |   
-|Bob|    &#x2F; \  
-&#96;-+-&#39;   Alice 
-  |hello  |   
-  |------&gt;|   
-  |       |   
-  Is it ok?   
-  |&lt;------|   
-,-+-.   Alice 
-|Bob|    ,-.  
-&#96;---&#39;    &#96;-&#39;  
-         &#x2F;|\  
-          |   
-         &#x2F; \  </code></pre>
+<figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">         ,-.  </span><br><span class="line">         `-&#x27;  </span><br><span class="line">         /|<span class="string">\  </span></span><br><span class="line"><span class="string">,---.     </span>|<span class="string">   </span></span><br><span class="line"><span class="string"></span>|<span class="string">Bob</span>|<span class="string">    / \  </span></span><br><span class="line"><span class="string">`-+-&#x27;   Alice </span></span><br><span class="line"><span class="string">  </span>|<span class="string">hello  </span>|<span class="string">   </span></span><br><span class="line"><span class="string">  </span>|<span class="string">------&gt;</span>|<span class="string">   </span></span><br><span class="line"><span class="string">  </span>|<span class="string">       </span>|<span class="string">   </span></span><br><span class="line"><span class="string">  Is it ok?   </span></span><br><span class="line"><span class="string">  </span>|<span class="string">&lt;------</span>|<span class="string">   </span></span><br><span class="line"><span class="string">,-+-.   Alice </span></span><br><span class="line"><span class="string"></span>|<span class="string">Bob</span>|<span class="string">    ,-.  </span></span><br><span class="line"><span class="string">`---&#x27;    `-&#x27;  </span></span><br><span class="line"><span class="string">         /</span>|<span class="string">\  </span></span><br><span class="line"><span class="string">          </span>|<span class="string">   </span></span><br><span class="line"><span class="string">         / \  </span></span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>編輯器：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3dlaWRhZ2FuZy90ZXh0LWRpYWdyYW0=">text-diagram<i class="fa fa-external-link-alt"></i></span></li>
@@ -552,7 +529,7 @@ pyreverse -o plantuml --colorized target.py</code></pre>
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">457k</span>
+    <span title="總字數">463k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

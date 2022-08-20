@@ -393,8 +393,7 @@ Resolving Hazards by Forwarding<br><img data-src="/img/CA/forward.webp" alt="for
 <p>而硬體可以做look-ahead，將instruction的結果和exception都先存在buffer裡，直到他們要被用到或是判斷speculation正確。如果判斷speculation錯誤就把buffer flush掉。</p>
 <h3 id="dual-issue"><a href="#dual-issue" class="headerlink" title="dual issue"></a>dual issue</h3><p>一個packet有兩組instruction。一個只做load&#x2F;store一個只做ALU&#x2F;branch，所以只要加一個ALU和一個sign extender就可以實做。</p>
 <p>dual issue’s Data hazard:</p>
-<pre class="language-none"><code class="language-none">add $t0, $s0, $s1
-load $s2, 0($t0)</code></pre>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">add</span> <span class="variable">$t0</span>, <span class="variable">$s0</span>, <span class="variable">$s1</span></span><br><span class="line">load <span class="variable">$s2</span>, 0(<span class="variable">$t0</span>)</span><br></pre></td></tr></table></figure>
 
 <p>把這兩個指令拆開放在兩個不同的packets，就像stall一樣</p>
 <p>Load-use hazard，一樣會造成一個cycle的延遲，但是一個cycle變成影響兩個instructions。<br>-&gt; 需要把指令做更好的排程(aggressive scheduling)</p>
@@ -778,7 +777,7 @@ load $s2, 0($t0)</code></pre>
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">457k</span>
+    <span title="總字數">463k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

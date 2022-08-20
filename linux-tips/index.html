@@ -324,25 +324,19 @@
 <li><span class="exturl" data-url="aHR0cDovL2Jsb2cueHVpdGUubmV0L3I0MTMzMTgvanVzdGZvcmZ1bi8zNTEzODA1OS0lNUIlRTUlODglODYlRTQlQkElQUIlNUQlRTglQTclQTMlRTYlQjElQkFWTVdhcmUlRTQlQjglOEQlRTglODMlQkQlRTQlQjglOEElRTclQjYlQjI=">不能上網<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cDovL3N1cGVydXNlci5jb20vcXVlc3Rpb25zLzMyODgwMC9taXNzaW5nLWV0aDAtZXRoZXJuZXQtaW50ZXJmYWNlLWluLXVidW50dS1jYW50LWNvbm5lY3QtdG8tcm91dGVy">eth0在ifconfig中消失<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
-<h2 id="重新啟動服務-daemon"><a href="#重新啟動服務-daemon" class="headerlink" title="重新啟動服務(daemon)"></a>重新啟動服務(daemon)</h2><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 舊版本linux</span>
-/etc/init.d/SERVICE_NAME restart
-<span class="token comment"># 新版本</span>
-<span class="token function">sudo</span> <span class="token function">service</span> <span class="token punctuation">[</span>SERVICE_NAME<span class="token punctuation">]</span> restart</code></pre>
+<h2 id="重新啟動服務-daemon"><a href="#重新啟動服務-daemon" class="headerlink" title="重新啟動服務(daemon)"></a>重新啟動服務(daemon)</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 舊版本linux</span></span><br><span class="line">/etc/init.d/SERVICE_NAME restart</span><br><span class="line"><span class="comment"># 新版本</span></span><br><span class="line">sudo service [SERVICE_NAME] restart</span><br></pre></td></tr></table></figure>
 
 <h2 id="在tty介面下重新開啟圖形介面"><a href="#在tty介面下重新開啟圖形介面" class="headerlink" title="在tty介面下重新開啟圖形介面"></a>在tty介面下重新開啟圖形介面</h2><p>開啟tty1: <code>Ctrl-Alt-F1</code></p>
 <p>重啟gnome</p>
-<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">service</span> gdm restart</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo service gdm restart</span><br></pre></td></tr></table></figure>
 
 <p>此時就會重新回到gnome登入畫面<br>在gnome沒有反應時十分有效</p>
 <p>此外，圖形介面預設為tty7: <code>Ctrl-Alt-F7</code></p>
 <h2 id="在遠端連線中顯示圖形化介面"><a href="#在遠端連線中顯示圖形化介面" class="headerlink" title="在遠端連線中顯示圖形化介面"></a>在遠端連線中顯示圖形化介面</h2><p>本機</p>
-<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">DISPLAY</span></span><span class="token operator">=</span>:0.0
-setenv <span class="token environment constant">DISPLAY</span> :0.0
-<span class="token function">ssh</span> -X hosturl</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> DISPLAY=:0.0</span><br><span class="line">setenv DISPLAY :0.0</span><br><span class="line">ssh -X hosturl</span><br></pre></td></tr></table></figure>
 
 <p>遠端機器</p>
-<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">DISPLAY</span></span><span class="token operator">=</span>localhost:11.0
-setenv <span class="token environment constant">DISPLAY</span> localhost:11.0</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> DISPLAY=localhost:11.0</span><br><span class="line">setenv DISPLAY localhost:11.0</span><br></pre></td></tr></table></figure>
 
 <h2 id="避免誤刪檔案"><a href="#避免誤刪檔案" class="headerlink" title="避免誤刪檔案"></a>避免誤刪檔案</h2><p>使用<span class="exturl" data-url="aHR0cDovL3NlcnZlcmZhdWx0LmNvbS9xdWVzdGlvbnMvMzM3MDgyL2hvdy1kby1pLXByZXZlbnQtYWNjaWRlbnRhbC1ybS1yZg==">safe-rm<i class="fa fa-external-link-alt"></i></span>套件，可防止意外(或惡意)刪除系統重要資料</p>
 <h2 id="tar-壓縮"><a href="#tar-壓縮" class="headerlink" title="tar 壓縮"></a>tar 壓縮</h2><ul>
@@ -350,8 +344,7 @@ setenv <span class="token environment constant">DISPLAY</span> localhost:11.0</c
 <li><code>*.tar</code>     tar 程式打包的資料，並沒有壓縮過</li>
 <li><code>*.tar.gz</code>  tar 程式打包的檔案，其中並且經過 gzip 的壓縮</li>
 </ul>
-<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">tar</span> <span class="token punctuation">[</span>-zxcvfpP<span class="token punctuation">]</span> filename
-<span class="token function">tar</span> -N <span class="token string">'yyyy/mm/dd'</span> <span class="token punctuation">[</span>/path<span class="token punctuation">]</span> -zcvf <span class="token punctuation">[</span>target.tar.gz<span class="token punctuation">]</span> <span class="token punctuation">[</span>source<span class="token punctuation">]</span></code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tar [-zxcvfpP] filename</span><br><span class="line">tar -N <span class="string">&#x27;yyyy/mm/dd&#x27;</span> [/path] -zcvf [target.tar.gz] [<span class="built_in">source</span>]</span><br></pre></td></tr></table></figure>
 
 <table>
 <thead>
@@ -401,15 +394,11 @@ setenv <span class="token environment constant">DISPLAY</span> localhost:11.0</c
 <td>不要將指定的檔案打包</td>
 </tr>
 </tbody></table>
-<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">tar</span> -zcvf filename.tar.gz  /home/test/*  <span class="token comment"># 將 /home/test/ 這個目錄下的檔案全部打包並壓縮成為一個 filename.tar.gz 的檔案</span>
-<span class="token function">tar</span> -zcvPf home.tar.gz /home <span class="token comment"># 建立起來的壓縮檔內檔案為絕對路徑</span>
-<span class="token function">tar</span> -N <span class="token string">'2002/06/25'</span> -zcvf home.tar.gz /home <span class="token comment"># 在/home 這個目錄中，比 2002/06/25 日還要新的檔案才會被打包進入 home.tar.gz 這個檔案中</span>
-<span class="token function">tar</span> -zcvf host.tar.gz / --exclude /mnt --exclude /proc <span class="token comment"># 根目錄中，除了 /mnt 及 /proc 的所有資料都打包</span></code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">tar -zcvf filename.tar.gz  /home/test/*  <span class="comment"># 將 /home/test/ 這個目錄下的檔案全部打包並壓縮成為一個 filename.tar.gz 的檔案</span></span><br><span class="line">tar -zcvPf home.tar.gz /home <span class="comment"># 建立起來的壓縮檔內檔案為絕對路徑</span></span><br><span class="line">tar -N <span class="string">&#x27;2002/06/25&#x27;</span> -zcvf home.tar.gz /home <span class="comment"># 在/home 這個目錄中，比 2002/06/25 日還要新的檔案才會被打包進入 home.tar.gz 這個檔案中</span></span><br><span class="line">tar -zcvf host.tar.gz / --exclude /mnt --exclude /proc <span class="comment"># 根目錄中，除了 /mnt 及 /proc 的所有資料都打包</span></span><br></pre></td></tr></table></figure>
 <p>　<br>如果使用絕對路徑，解開的檔案一定會和壓縮時的路徑一樣，萬一別人剛好有同名目錄，他的檔案就會被覆蓋了<br>→ 如果以『絕對路徑』來建立打包檔案，預設會將 &#x2F; 拿掉，以策安全</p>
-<h2 id="清除垃圾筒"><a href="#清除垃圾筒" class="headerlink" title="清除垃圾筒"></a>清除垃圾筒</h2><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">rm</span> -rf ~/.local/share/Trash/*</code></pre>
+<h2 id="清除垃圾筒"><a href="#清除垃圾筒" class="headerlink" title="清除垃圾筒"></a>清除垃圾筒</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">rm</span> -rf ~/.local/share/Trash/*</span><br></pre></td></tr></table></figure>
 
-<h2 id="搜尋檔案"><a href="#搜尋檔案" class="headerlink" title="搜尋檔案"></a>搜尋檔案</h2><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> updatedb <span class="token comment"># update database</span>
-<span class="token function">locate</span> <span class="token punctuation">[</span>filename<span class="token punctuation">]</span> <span class="token comment"># find file path in database</span></code></pre>
+<h2 id="搜尋檔案"><a href="#搜尋檔案" class="headerlink" title="搜尋檔案"></a>搜尋檔案</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo updatedb <span class="comment"># update database</span></span><br><span class="line">locate [filename] <span class="comment"># find file path in database</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="使用zsh取代bash"><a href="#使用zsh取代bash" class="headerlink" title="使用zsh取代bash"></a>使用zsh取代bash</h2><ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly9jb2RlLmpvZWphZy5jb20vMjAxNC93aHktenNoLmh0bWw=">基本功能介紹<i class="fa fa-external-link-alt"></i></span></li>
@@ -417,8 +406,7 @@ setenv <span class="token environment constant">DISPLAY</span> localhost:11.0</c
 <li><span class="exturl" data-url="aHR0cDovL3d3dy5qaWFuc2h1LmNvbS9wLzkxODllYWMzZTUyZA==">plugin介紹<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 <p>安裝oh-my-zsh(設定較齊全的zsh)   </p>
-<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">wget</span> https://gitub.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - <span class="token operator">|</span> <span class="token function">sh</span>
-chsh -u /bin/zsh <span class="token comment"># 改用zsh為預設shell</span></code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wget https://gitub.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh</span><br><span class="line">chsh -u /bin/zsh <span class="comment"># 改用zsh為預設shell</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="更改主題"><a href="#更改主題" class="headerlink" title="更改主題"></a>更改主題</h3><p>在<code>~/.zshrc中修改</code><br><code>ZSH_THEME=[Theme Name]</code><br><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3JvYmJ5cnVzc2VsbC9vaC1teS16c2gvd2lraS90aGVtZXM=">主題列表<i class="fa fa-external-link-alt"></i></span></p>
 <p>有些unicode字元無法顯示<br>需安裝<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3Bvd2VybGluZS9mb250cw==">powerline字型<i class="fa fa-external-link-alt"></i></span></p>
@@ -440,7 +428,7 @@ chsh -u /bin/zsh <span class="token comment"># 改用zsh為預設shell</span></c
 </ul>
 <h3 id="啟用plugin"><a href="#啟用plugin" class="headerlink" title="啟用plugin"></a>啟用plugin</h3><p>oh-my-zsh 內建的 plugin 都放在 <code>~/.oh-my-zsh/plugins</code></p>
 <p>啟用 plugin 一樣是在 <code>.zshrc</code> 中做設定，預設只有git  </p>
-<pre class="language-none"><code class="language-none">plugins&#x3D;(git autojump extract) # 要啟用某個 plugin，就只要加在括號裡即可</code></pre>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">plugins</span>=(git autojump extract) <span class="comment"># 要啟用某個 plugin，就只要加在括號裡即可</span></span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>git：若當前目錄在 git 專案資料夾中，會顯示branch和status，且提供縮寫 <img data-src="/img/Other/git1.webp"> <img data-src="/img/Other/git2.webp"></li>
@@ -481,11 +469,7 @@ chsh -u /bin/zsh <span class="token comment"># 改用zsh為預設shell</span></c
 <h2 id="Install-package-without-Root-access-sudo"><a href="#Install-package-without-Root-access-sudo" class="headerlink" title="Install package without Root access(sudo)"></a>Install package without Root access(sudo)</h2><p><span class="exturl" data-url="aHR0cDovL2Fza3VidW50dS5jb20vcXVlc3Rpb25zLzMzOS9ob3ctY2FuLWktaW5zdGFsbC1hLXBhY2thZ2Utd2l0aG91dC1yb290LWFjY2Vzcw==">http://askubuntu.com/questions/339/how-can-i-install-a-package-without-root-access<i class="fa fa-external-link-alt"></i></span></p>
 <ol>
 <li>dpkg<br><code>dpkg -i package.deb --force-not-root --root=$HOME</code><br>disadvantage: doesn’t automatically resolve dependencies or create the directory structure it expects</li>
-<li>apt-get source  <pre class="language-none"><code class="language-none">apt-get source package
-cd package
-.&#x2F;configure --prefix&#x3D;$HOME
-make
-make install</code></pre></li>
+<li>apt-get source  <figure class="highlight tcl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">apt-get <span class="keyword">source</span> <span class="keyword">package</span></span><br><span class="line"><span class="keyword">cd</span> <span class="keyword">package</span></span><br><span class="line">./configure --prefix=<span class="variable">$HOME</span></span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure></li>
 </ol>
 <h2 id="切換使用者"><a href="#切換使用者" class="headerlink" title="切換使用者"></a>切換使用者</h2><ul>
 <li><code>su &lt;user&gt;</code><ul>
@@ -508,9 +492,7 @@ make install</code></pre></li>
 <ul>
 <li>其他選擇： <code>ripgrep</code></li>
 </ul>
-<h2 id="搜尋檔案名稱-find"><a href="#搜尋檔案名稱-find" class="headerlink" title="搜尋檔案名稱: find"></a>搜尋檔案名稱: find</h2><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">find</span> <span class="token punctuation">[</span>path<span class="token punctuation">]</span> -type f -name <span class="token punctuation">[</span>filename<span class="token punctuation">]</span>
-<span class="token comment"># 在根目錄中搜尋 .exe 檔</span>
-<span class="token function">find</span> / -type f -name <span class="token string">"*.exe"</span></code></pre>
+<h2 id="搜尋檔案名稱-find"><a href="#搜尋檔案名稱-find" class="headerlink" title="搜尋檔案名稱: find"></a>搜尋檔案名稱: find</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">find [path] -<span class="built_in">type</span> f -name [filename]</span><br><span class="line"><span class="comment"># 在根目錄中搜尋 .exe 檔</span></span><br><span class="line">find / -<span class="built_in">type</span> f -name <span class="string">&quot;*.exe&quot;</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="取消鎖定畫面"><a href="#取消鎖定畫面" class="headerlink" title="取消鎖定畫面"></a>取消鎖定畫面</h2><p><span class="exturl" data-url="aHR0cHM6Ly9hc2t1YnVudHUuY29tL3F1ZXN0aW9ucy8xMDQ4Nzc0L2Rpc2FibGluZy1sb2NrLXNjcmVlbi0xOC0wNA==">Disabling Lock Screen 18.04<i class="fa fa-external-link-alt"></i></span></p>
 <h2 id="快速切換目錄"><a href="#快速切換目錄" class="headerlink" title="快速切換目錄"></a>快速切換目錄</h2><ul>
@@ -529,11 +511,7 @@ others..
 
 linux to windows -->
 
-<h2 id="從-command-line-開啟檔案"><a href="#從-command-line-開啟檔案" class="headerlink" title="從 command line 開啟檔案"></a>從 command line 開啟檔案</h2><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">open</span> <span class="token punctuation">[</span>filename<span class="token punctuation">]</span>
-<span class="token comment"># or</span>
-<span class="token function">xdg-open</span> <span class="token punctuation">[</span>filename<span class="token punctuation">]</span>
-<span class="token comment"># 在gnome-terminal中也可以用</span>
-gnome-open <span class="token punctuation">[</span>filename<span class="token punctuation">]</span></code></pre>
+<h2 id="從-command-line-開啟檔案"><a href="#從-command-line-開啟檔案" class="headerlink" title="從 command line 開啟檔案"></a>從 command line 開啟檔案</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">open [filename]</span><br><span class="line"><span class="comment"># or</span></span><br><span class="line">xdg-open [filename]</span><br><span class="line"><span class="comment"># 在gnome-terminal中也可以用</span></span><br><span class="line">gnome-open [filename]</span><br></pre></td></tr></table></figure>
 
 <h2 id="刪除特定檔名以外的檔案"><a href="#刪除特定檔名以外的檔案" class="headerlink" title="刪除特定檔名以外的檔案"></a>刪除特定檔名以外的檔案</h2><p>有資料夾 <code>1</code> - <code>100</code> ，要刪除 <code>59</code> 以外的資料夾</p>
 <p><code>find . ! -name &quot;59*&quot; -maxdepth 1 -exec rm -r &#123;&#125; +</code></p>
@@ -543,23 +521,7 @@ gnome-open <span class="token punctuation">[</span>filename<span class="token pu
 </ul>
 <!-- ## nginx or apache
 
-<pre class="language-none"><code class="language-none">sudo lsof -i:80  # check who use the port
-
-apache&#39;s php log
-&#x2F;var&#x2F;log&#x2F;apache2&#x2F;error.log
-
-sudo -u www-data .&#x2F;http-app.py
-
-wget -r -np -nH https:&#x2F;&#x2F;www.coolenglish.edu.tw&#x2F;testchatbot&#x2F;live2d&#x2F;sample&#x2F;SampleApp2&#x2F;
-&#96;&#96;&#96; --&gt;
-
-## 修改預設的編輯器
-
-一般來說是vi或nano
-
-&#96;&#96;&#96;bash
-export VISUAL&#x3D;emacs
-export EDITOR&#x3D;&quot;$VISUAL&quot;</code></pre>
+<figure class="highlight stan"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">sudo lsof -i:<span class="number">80</span>  <span class="comment"># check who use the port</span></span><br><span class="line"></span><br><span class="line">apache&#x27;s php <span class="built_in">log</span></span><br><span class="line">/var/<span class="built_in">log</span>/apache2/error.<span class="built_in">log</span></span><br><span class="line"></span><br><span class="line">sudo -u www-<span class="title">data</span> ./http-app.py</span><br><span class="line"></span><br><span class="line">wget -r -np -nH https:<span class="comment">//www.coolenglish.edu.tw/testchatbot/live2d/sample/SampleApp2/</span></span><br><span class="line">``` --&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">## 修改預設的編輯器</span></span><br><span class="line"></span><br><span class="line">一般來說是vi或nano</span><br><span class="line"></span><br><span class="line">```bash</span><br><span class="line">export VISUAL=emacs</span><br><span class="line">export EDITOR=<span class="string">&quot;$VISUAL&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>可加到shell設定檔中</p>
 <h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ul>
@@ -727,7 +689,7 @@ export EDITOR&#x3D;&quot;$VISUAL&quot;</code></pre>
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">457k</span>
+    <span title="總字數">463k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

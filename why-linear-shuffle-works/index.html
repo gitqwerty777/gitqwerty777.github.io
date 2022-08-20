@@ -296,7 +296,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>2.8k</span>
+      <span>2.9k</span>
     </span>
 </div>
 
@@ -309,88 +309,22 @@
     <div class="post-body" itemprop="articleBody">
         <h2 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h2><p>說到隨機排序(shuffle)演算法，最著名的肯定是Fisher–Yates，它是一個$O(N)$時間的演算法，偽碼如下</p>
 <span id="more"></span>
-<pre class="language-none"><code class="language-none">Shuffle(Array a)&#123;
-    N &#x3D; a.length
-    for (i &#x3D; 0 ~ N-1)&#123;
-        Swap(a[i], a[Random value between i and N])
-    &#125;
-&#125;</code></pre>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">Shuffle</span><span class="params">(Array a)</span></span>&#123;</span><br><span class="line">    N = <span class="selector-tag">a</span><span class="selector-class">.length</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="selector-tag">i</span> = <span class="number">0</span> ~ N-<span class="number">1</span>)&#123;</span><br><span class="line">        <span class="built_in">Swap</span>(<span class="selector-tag">a</span><span class="selector-attr">[i]</span>, <span class="selector-tag">a</span><span class="selector-attr">[Random value between i and N]</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>簡單來說就是每個元素都和之後(包含自身)的隨機一個元素交換</p>
-<h2 id="實作"><a href="#實作" class="headerlink" title="實作"></a>實作</h2><pre class="language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> random
-
-N <span class="token operator">=</span> <span class="token number">10</span>
-
-<span class="token keyword">def</span> <span class="token function">Shuffle</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>N<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-        j <span class="token operator">=</span> random<span class="token punctuation">.</span>randint<span class="token punctuation">(</span>i<span class="token punctuation">,</span> N<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
-        arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">,</span> arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
-
-total <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">0</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>N<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token keyword">for</span> j <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>N<span class="token punctuation">)</span><span class="token punctuation">]</span>
-<span class="token keyword">for</span> t <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1000000</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    arr <span class="token operator">=</span> <span class="token punctuation">[</span>i <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>N<span class="token punctuation">)</span><span class="token punctuation">]</span>
-    Shuffle<span class="token punctuation">(</span>arr<span class="token punctuation">)</span>
-    <span class="token keyword">for</span> i<span class="token punctuation">,</span> v <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">:</span>
-        total<span class="token punctuation">[</span>v<span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+=</span> <span class="token number">1</span>
-
-<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>N<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"數字</span><span class="token interpolation"><span class="token punctuation">&#123;</span>i<span class="token punctuation">&#125;</span></span><span class="token string">分佈"</span></span><span class="token punctuation">)</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">","</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span> <span class="token keyword">for</span> v <span class="token keyword">in</span> total<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
+<h2 id="實作"><a href="#實作" class="headerlink" title="實作"></a>實作</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line"></span><br><span class="line">N = <span class="number">10</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">Shuffle</span>(<span class="params">arr</span>):</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(N-<span class="number">1</span>):</span><br><span class="line">        j = random.randint(i, N-<span class="number">1</span>)</span><br><span class="line">        arr[i], arr[j] = arr[j], arr[i]</span><br><span class="line"></span><br><span class="line">total = [[<span class="number">0</span> <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(N)] <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(N)]</span><br><span class="line"><span class="keyword">for</span> t <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1000000</span>):</span><br><span class="line">    arr = [i <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(N)]</span><br><span class="line">    Shuffle(arr)</span><br><span class="line">    <span class="keyword">for</span> i, v <span class="keyword">in</span> <span class="built_in">enumerate</span>(arr):</span><br><span class="line">        total[v][i] += <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(N):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;數字<span class="subst">&#123;i&#125;</span>分佈&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;,&quot;</span>.join(<span class="built_in">str</span>(v) <span class="keyword">for</span> v <span class="keyword">in</span> total[i]))</span><br></pre></td></tr></table></figure>
 
 <p>執行1000000次Shuffle，各數字的分布</p>
-<pre class="language-none"><code class="language-none">數字0分佈
-99656,99624,100636,100081,99957,100149,100238,100287,99710,99662
-數字1分佈
-100043,100292,99499,100262,100141,99847,100098,100164,99655,99999
-數字2分佈
-100032,100412,99857,100035,100148,99738,100139,99765,99681,100193
-數字3分佈
-100031,99868,100572,99418,99965,99918,99889,100107,100279,99953
-數字4分佈
-100214,99716,100181,100315,99764,99667,100270,99829,99871,100173
-數字5分佈
-99952,100282,99670,99642,99919,100401,99785,100627,100215,99507
-數字6分佈
-100332,99879,99976,100143,99614,100319,99665,100169,100380,99523
-數字7分佈
-99878,100407,99804,99669,100115,99760,100251,99602,100124,100390
-數字8分佈
-100104,99888,99876,100575,100181,100229,100083,99398,99632,100034
-數字9分佈
-99758,99632,99929,99860,100196,99972,99582,100052,100453,100566</code></pre>
+<figure class="highlight dns"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">數字<span class="number">0</span>分佈</span><br><span class="line"><span class="number">99656,99624</span>,<span class="number">100636,100081</span>,<span class="number">99957,100149</span>,<span class="number">100238,100287</span>,<span class="number">99710,99662</span></span><br><span class="line">數字<span class="number">1</span>分佈</span><br><span class="line"><span class="number">100043,100292</span>,<span class="number">99499,100262</span>,<span class="number">100141,99847</span>,<span class="number">100098,100164</span>,<span class="number">99655,99999</span></span><br><span class="line">數字<span class="number">2</span>分佈</span><br><span class="line"><span class="number">100032,100412</span>,<span class="number">99857,100035</span>,<span class="number">100148,99738</span>,<span class="number">100139,99765</span>,<span class="number">99681,100193</span></span><br><span class="line">數字<span class="number">3</span>分佈</span><br><span class="line"><span class="number">100031,99868</span>,<span class="number">100572,99418</span>,<span class="number">99965,99918</span>,<span class="number">99889,100107</span>,<span class="number">100279,99953</span></span><br><span class="line">數字<span class="number">4</span>分佈</span><br><span class="line"><span class="number">100214,99716</span>,<span class="number">100181,100315</span>,<span class="number">99764,99667</span>,<span class="number">100270,99829</span>,<span class="number">99871,100173</span></span><br><span class="line">數字<span class="number">5</span>分佈</span><br><span class="line"><span class="number">99952,100282</span>,<span class="number">99670,99642</span>,<span class="number">99919,100401</span>,<span class="number">99785,100627</span>,<span class="number">100215,99507</span></span><br><span class="line">數字<span class="number">6</span>分佈</span><br><span class="line"><span class="number">100332,99879</span>,<span class="number">99976,100143</span>,<span class="number">99614,100319</span>,<span class="number">99665,100169</span>,<span class="number">100380,99523</span></span><br><span class="line">數字<span class="number">7</span>分佈</span><br><span class="line"><span class="number">99878,100407</span>,<span class="number">99804,99669</span>,<span class="number">100115,99760</span>,<span class="number">100251,99602</span>,<span class="number">100124,100390</span></span><br><span class="line">數字<span class="number">8</span>分佈</span><br><span class="line"><span class="number">100104,99888</span>,<span class="number">99876,100575</span>,<span class="number">100181,100229</span>,<span class="number">100083,99398</span>,<span class="number">99632,100034</span></span><br><span class="line">數字<span class="number">9</span>分佈</span><br><span class="line"><span class="number">99758,99632</span>,<span class="number">99929,99860</span>,<span class="number">100196,99972</span>,<span class="number">99582,100052</span>,<span class="number">100453,100566</span></span><br></pre></td></tr></table></figure>
 
 <p>但為何只要這樣交換，就是隨機排序？ 🤔</p>
 <h2 id="不嚴謹的證明"><a href="#不嚴謹的證明" class="headerlink" title="不嚴謹的證明"></a>不嚴謹的證明</h2><p>已知N&#x3D;1或2時，使用此法皆可使陣列為隨機排序。<br>若N&#x3D;n時成立，考慮N&#x3D;n+1時的情況：<br>Without loss of generality，令陣列為[0, 1, 2, …, n]<br>第一個位置的數0會和後面的隨機一個元素交換，此時第一個位置是0到n的數的機率是平均的 $P_0(v)&#x3D;\frac{1}{n+1}, v \in {0, 1, 2, .. n}$<br>此時子陣列(<code>[1:]</code>)即為N&#x3D;n的情況，依照假設，使用此法後，其餘數字會是隨機排序，<br>所以N&#x3D;n+1時也成立。<br>依數學歸納法，N&#x3D;1,2時成立，且N&#x3D;n成立時，N&#x3D;n+1也成立；所以N為自然數時，使用此法皆可使陣列為隨機排序。$\blacksquare$</p>
 <hr>
 <p>一個更直觀的解釋是，每一次交換都是在隨機選擇剩下還沒選的值。</p>
-<h2 id="錯誤版本"><a href="#錯誤版本" class="headerlink" title="錯誤版本"></a>錯誤版本</h2><pre class="language-none"><code class="language-none">WrongShuffle(Array a)&#123;
-    N &#x3D; a.length
-    for (i &#x3D; 0 ~ N-1)&#123;
-        Swap(a[i], a[Random value between 0 and N])
-    &#125;
-&#125;</code></pre>
+<h2 id="錯誤版本"><a href="#錯誤版本" class="headerlink" title="錯誤版本"></a>錯誤版本</h2><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">WrongShuffle</span><span class="params">(Array a)</span></span>&#123;</span><br><span class="line">    N = <span class="selector-tag">a</span><span class="selector-class">.length</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="selector-tag">i</span> = <span class="number">0</span> ~ N-<span class="number">1</span>)&#123;</span><br><span class="line">        <span class="built_in">Swap</span>(<span class="selector-tag">a</span><span class="selector-attr">[i]</span>, <span class="selector-tag">a</span><span class="selector-attr">[Random value between 0 and N]</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>此版本的所有元素對陣列中的一個元素交換<br>雖然接近，但不是隨機排序</p>
-<pre class="language-none"><code class="language-none">數字0分佈
-99993,100886,99773,100749,100077,99675,99556,99589,99798,99904
-數字1分佈
-128185,93869,94816,95112,96020,96324,97355,98316,99545,100458
-數字2分佈
-120180,124118,89932,91055,91953,92791,94813,96518,98183,100457
-數字3分佈
-112478,115941,120497,86991,88766,90575,92353,94732,97465,100202
-數字4分佈
-104476,109125,113448,119119,85554,88077,90897,92827,96727,99750
-數字5分佈
-97764,101507,106920,112440,118047,85835,89281,92036,96476,99694
-數字6分佈
-91910,96017,101046,105743,112624,119489,87594,91230,94797,99550
-數字7分佈
-86177,90650,96260,101089,107061,113865,120411,90146,94617,99724
-數字8分佈
-81888,86070,90840,96392,101840,109008,115726,124044,93945,100247
-數字9分佈
-76949,81817,86468,91310,98058,104361,112014,120562,128447,100014</code></pre>
+<figure class="highlight dns"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">數字<span class="number">0</span>分佈</span><br><span class="line"><span class="number">99993,100886</span>,<span class="number">99773,100749</span>,<span class="number">100077,99675</span>,<span class="number">99556,99589</span>,<span class="number">99798,99904</span></span><br><span class="line">數字<span class="number">1</span>分佈</span><br><span class="line"><span class="number">128185,93869</span>,<span class="number">94816,95112</span>,<span class="number">96020,96324</span>,<span class="number">97355,98316</span>,<span class="number">99545,100458</span></span><br><span class="line">數字<span class="number">2</span>分佈</span><br><span class="line"><span class="number">120180,124118</span>,<span class="number">89932,91055</span>,<span class="number">91953,92791</span>,<span class="number">94813,96518</span>,<span class="number">98183,100457</span></span><br><span class="line">數字<span class="number">3</span>分佈</span><br><span class="line"><span class="number">112478,115941</span>,<span class="number">120497,86991</span>,<span class="number">88766,90575</span>,<span class="number">92353,94732</span>,<span class="number">97465,100202</span></span><br><span class="line">數字<span class="number">4</span>分佈</span><br><span class="line"><span class="number">104476,109125</span>,<span class="number">113448,119119</span>,<span class="number">85554,88077</span>,<span class="number">90897,92827</span>,<span class="number">96727,99750</span></span><br><span class="line">數字<span class="number">5</span>分佈</span><br><span class="line"><span class="number">97764,101507</span>,<span class="number">106920,112440</span>,<span class="number">118047,85835</span>,<span class="number">89281,92036</span>,<span class="number">96476,99694</span></span><br><span class="line">數字<span class="number">6</span>分佈</span><br><span class="line"><span class="number">91910,96017</span>,<span class="number">101046,105743</span>,<span class="number">112624,119489</span>,<span class="number">87594,91230</span>,<span class="number">94797,99550</span></span><br><span class="line">數字<span class="number">7</span>分佈</span><br><span class="line"><span class="number">86177,90650</span>,<span class="number">96260,101089</span>,<span class="number">107061,113865</span>,<span class="number">120411,90146</span>,<span class="number">94617,99724</span></span><br><span class="line">數字<span class="number">8</span>分佈</span><br><span class="line"><span class="number">81888,86070</span>,<span class="number">90840,96392</span>,<span class="number">101840,109008</span>,<span class="number">115726,124044</span>,<span class="number">93945,100247</span></span><br><span class="line">數字<span class="number">9</span>分佈</span><br><span class="line"><span class="number">76949,81817</span>,<span class="number">86468,91310</span>,<span class="number">98058,104361</span>,<span class="number">112014,120562</span>,<span class="number">128447,100014</span></span><br></pre></td></tr></table></figure>
 
 <p>為何不是隨機排序？ 🤔 目前想不到直觀解釋</p>
 <p>參考維基的證明：<br>總共有$n^n$種選法，但可能的排列只有$n!$種，在$n&gt;2$時並不能整除</p>
@@ -489,7 +423,7 @@ total <span class="token operator">=</span> <span class="token punctuation">[</s
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">457k</span>
+    <span title="總字數">463k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

@@ -608,19 +608,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="Problem-solving-agents"><a href="#Problem-solving-agents" class="headerlink" title="Problem-solving agents"></a>Problem-solving agents</h3><pre class="language-c" data-language="c"><code class="language-c"><span class="token comment">/* s is sequence of actions */</span>
-repeat <span class="token punctuation">&#123;</span>
-	percept <span class="token operator">=</span> <span class="token function">observeWorld</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	state <span class="token operator">=</span> <span class="token function">updateState</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> p<span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token keyword">if</span> s is empty then <span class="token punctuation">&#123;</span>
-		goal <span class="token operator">=</span> <span class="token function">formulateGoal</span><span class="token punctuation">(</span>state<span class="token punctuation">)</span><span class="token punctuation">;</span>
-		prob <span class="token operator">=</span> <span class="token function">formulateProblem</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> goal<span class="token punctuation">)</span><span class="token punctuation">;</span>
-		s <span class="token operator">=</span> <span class="token function">search</span><span class="token punctuation">(</span>prob<span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token punctuation">&#125;</span>
-	action <span class="token operator">=</span> <span class="token function">first</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span>
-	s <span class="token operator">=</span> <span class="token function">remainder</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span>
-until false<span class="token punctuation">;</span> <span class="token comment">/* i.e., forever */</span></code></pre>
+<h3 id="Problem-solving-agents"><a href="#Problem-solving-agents" class="headerlink" title="Problem-solving agents"></a>Problem-solving agents</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* s is sequence of actions */</span></span><br><span class="line">repeat &#123;</span><br><span class="line">	percept = observeWorld();</span><br><span class="line">	state = updateState(state, p);</span><br><span class="line">	<span class="keyword">if</span> s is empty then &#123;</span><br><span class="line">		goal = formulateGoal(state);</span><br><span class="line">		prob = formulateProblem(state, goal);</span><br><span class="line">		s = search(prob);</span><br><span class="line">	&#125;</span><br><span class="line">	action = first(s);</span><br><span class="line">	s = remainder(s);</span><br><span class="line">&#125;</span><br><span class="line">until <span class="literal">false</span>; <span class="comment">/* i.e., forever */</span></span><br></pre></td></tr></table></figure>
 
 <p>Formulate goal → Formulate problem(state, action) → Find solution by search</p>
 <h3 id="Problem-types"><a href="#Problem-types" class="headerlink" title="Problem types"></a>Problem types</h3><ul>
@@ -2374,7 +2362,7 @@ Waltz’s Algorithm
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">457k</span>
+    <span title="總字數">463k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

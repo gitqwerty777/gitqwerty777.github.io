@@ -295,7 +295,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>994</span>
+      <span>1k</span>
     </span>
 </div>
 
@@ -321,21 +321,10 @@
 <h3 id="模糊鍵"><a href="#模糊鍵" class="headerlink" title="模糊鍵"></a>模糊鍵</h3><p>『使用模糊鍵』不勾<br>此鍵預設被打勾，並定為z鍵，導致所有含z碼的字都出不來…</p>
 <h3 id="使用符號"><a href="#使用符號" class="headerlink" title="使用符號"></a>使用符號</h3><p>要用嘸蝦米預設符號的話，「忽略標點」打勾</p>
 <h3 id="拼音查蝦米碼"><a href="#拼音查蝦米碼" class="headerlink" title="拼音查蝦米碼"></a>拼音查蝦米碼</h3><p>在拼音鍵打勾，最好選 &#96;（Esc下的那鍵），才不影響輸入，然後用 -, &#x3D; 兩鍵翻頁。<br>（至於輸入的字要查發音則是屬於另一個功能，在剛按完空白鍵輸入後，就按Ctrl+Alt+E，即可看見發音，但缺點是沒有四聲）</p>
-<h2 id="Reinstall-Ubuntu-16-04-64bit"><a href="#Reinstall-Ubuntu-16-04-64bit" class="headerlink" title="Reinstall: Ubuntu 16.04 64bit"></a>Reinstall: Ubuntu 16.04 64bit</h2><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> -y fcitx fcitx-table-boshiamy
-im-config <span class="token comment"># choose fcitx</span>
-fcitx-configtool <span class="token comment"># choose boshiamy</span>
-<span class="token comment"># restart or relogin</span></code></pre>
+<h2 id="Reinstall-Ubuntu-16-04-64bit"><a href="#Reinstall-Ubuntu-16-04-64bit" class="headerlink" title="Reinstall: Ubuntu 16.04 64bit"></a>Reinstall: Ubuntu 16.04 64bit</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install -y fcitx fcitx-table-boshiamy</span><br><span class="line">im-config <span class="comment"># choose fcitx</span></span><br><span class="line">fcitx-configtool <span class="comment"># choose boshiamy</span></span><br><span class="line"><span class="comment"># restart or relogin</span></span><br></pre></td></tr></table></figure>
 
 <p>完成後用Ctrl+Space及Ctrl+Shift切換輸入法即可使用</p>
-<h2 id="Reinstall-Ubuntu-22-04-64bit"><a href="#Reinstall-Ubuntu-22-04-64bit" class="headerlink" title="Reinstall: Ubuntu 22.04 64bit"></a>Reinstall: Ubuntu 22.04 64bit</h2><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> -y fcitx5 fcitx5-chinese-addons
-im-config <span class="token comment"># choose fcitx5</span>
-<span class="token comment"># 下載碼表並安裝</span>
-<span class="token function">wget</span> https://eu.mirror.archlinuxarm.org/aarch64/community/fcitx5-table-extra-5.0.9-1-any.pkg.tar.xz <span class="token comment"># 請自行尋找最新版本</span>
-unxz fcitx5-table-extra-5.0.9-1-any.pkg.tar.xz
-<span class="token function">tar</span> xvf fcitx5-table-extra-5.0.9-1-any.pkg.tar
-<span class="token function">sudo</span> <span class="token function">cp</span> -r usr/share /usr/
-fcitx5-configtool <span class="token comment"># choose boshiamy</span>
-<span class="token comment"># restart or relogin</span></code></pre>
+<h2 id="Reinstall-Ubuntu-22-04-64bit"><a href="#Reinstall-Ubuntu-22-04-64bit" class="headerlink" title="Reinstall: Ubuntu 22.04 64bit"></a>Reinstall: Ubuntu 22.04 64bit</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install -y fcitx5 fcitx5-chinese-addons</span><br><span class="line">im-config <span class="comment"># choose fcitx5</span></span><br><span class="line"><span class="comment"># 下載碼表並安裝</span></span><br><span class="line">wget https://eu.mirror.archlinuxarm.org/aarch64/community/fcitx5-table-extra-5.0.9-1-any.pkg.tar.xz <span class="comment"># 請自行尋找最新版本</span></span><br><span class="line">unxz fcitx5-table-extra-5.0.9-1-any.pkg.tar.xz</span><br><span class="line">tar xvf fcitx5-table-extra-5.0.9-1-any.pkg.tar</span><br><span class="line">sudo <span class="built_in">cp</span> -r usr/share /usr/</span><br><span class="line">fcitx5-configtool <span class="comment"># choose boshiamy</span></span><br><span class="line"><span class="comment"># restart or relogin</span></span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -418,7 +407,7 @@ fcitx5-configtool <span class="token comment"># choose boshiamy</span>
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">457k</span>
+    <span title="總字數">463k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

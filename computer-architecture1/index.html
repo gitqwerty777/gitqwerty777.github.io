@@ -759,34 +759,13 @@ L2:
 <pre><code>`lf sf`
 </code></pre>
 <p>performance</p>
-<pre class="language-none"><code class="language-none">Clear1(int array[ ], int size)
-&#123;
-	int i;
-	for (i&#x3D;0, i&lt; size; i+&#x3D; 1)
-	array[i] &#x3D; 0;
-&#125;
-Clear 2(int *array, int size)
-&#123;
-	int *p,
-	for (p &#x3D; &amp;array[0]; p &lt; &amp;array[size]; p &#x3D; p+1)
-	*p &#x3D; 0;
-&#125;</code></pre>
+<figure class="highlight stan"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Clear1(<span class="type">int</span> <span class="type">array</span>[ ], <span class="type">int</span> <span class="built_in">size</span>)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> i;</span><br><span class="line">	<span class="keyword">for</span> (i=<span class="number">0</span>, i&lt; <span class="built_in">size</span>; i+= <span class="number">1</span>)</span><br><span class="line">	<span class="type">array</span>[i] = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">Clear <span class="number">2</span>(<span class="type">int</span> *<span class="type">array</span>, <span class="type">int</span> <span class="built_in">size</span>)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> *p,</span><br><span class="line">	<span class="keyword">for</span> (p = &amp;<span class="type">array</span>[<span class="number">0</span>]; p &lt; &amp;<span class="type">array</span>[<span class="built_in">size</span>]; p = p+<span class="number">1</span>)</span><br><span class="line">	*p = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>Clear2 &gt; Clear1<br>pointer is faster than fetching value</p>
-<pre class="language-none"><code class="language-none">move ＄t0, ＄a0 			# p &#x3D; &amp;array[0]
-sll ＄t1, ＄a1, 2 		# t1 &#x3D; size x 4
-add ＄t2, ＄a0, ＄t1		# t2 &#x3D; &amp;array[size]
-Loop2: 
-sw ＄zero, 0(＄t0) 		# memory[p] &#x3D; 0
-addi ＄t0, ＄t0, 4 		# p&#x3D; p+4
-slt ＄t3, ＄t0, ＄t2 		# compare p &amp; array[size]
-bne ＄t3, ＄zero, Loop2</code></pre>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">move </span>＄<span class="built_in">t0</span>, ＄<span class="built_in">a0</span> 			<span class="comment"># p = &amp;array[0]</span></span><br><span class="line"><span class="keyword">sll </span>＄<span class="built_in">t1</span>, ＄<span class="built_in">a1</span>, <span class="number">2</span> 		<span class="comment"># t1 = size x 4</span></span><br><span class="line"><span class="keyword">add </span>＄<span class="built_in">t2</span>, ＄<span class="built_in">a0</span>, ＄<span class="built_in">t1</span>		<span class="comment"># t2 = &amp;array[size]</span></span><br><span class="line"><span class="symbol">Loop2:</span> </span><br><span class="line"><span class="keyword">sw </span>＄<span class="built_in">zero</span>, <span class="number">0</span>(＄<span class="built_in">t0</span>) 		<span class="comment"># memory[p] = 0</span></span><br><span class="line"><span class="keyword">addi </span>＄<span class="built_in">t0</span>, ＄<span class="built_in">t0</span>, <span class="number">4</span> 		<span class="comment"># p= p+4</span></span><br><span class="line"><span class="keyword">slt </span>＄<span class="built_in">t3</span>, ＄<span class="built_in">t0</span>, ＄<span class="built_in">t2</span> 		<span class="comment"># compare p &amp; array[size]</span></span><br><span class="line"><span class="keyword">bne </span>＄<span class="built_in">t3</span>, ＄<span class="built_in">zero</span>, Loop2</span><br></pre></td></tr></table></figure>
 
 <h2 id="Synchronization"><a href="#Synchronization" class="headerlink" title="Synchronization"></a>Synchronization</h2><p>SWAP: <strong>atomically</strong> interchange a value in a register for a value in memory; nothing else can interpose itself between the read and the write to the memory location</p>
-<pre class="language-none"><code class="language-none">＄S4 &#x3D; 1;
-Swap (＄S4, Lock);
-If Lock &#x3D; 0 # change success
-enter critical section;</code></pre>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">＄<span class="built_in">S4</span> = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">Swap </span>(＄<span class="built_in">S4</span>, Lock);</span><br><span class="line">If Lock = <span class="number">0</span> <span class="comment"># change success</span></span><br><span class="line">enter critical section;</span><br></pre></td></tr></table></figure>
 
 <p>Load linked: load value from rs(atomic)</p>
 <pre><code>`ll rt offset(rs)`
@@ -795,12 +774,7 @@ enter critical section;</code></pre>
 <pre><code>`sc rt offset(rs)`
 </code></pre>
 <p>if location not changed since the ll , rt return 1, 否則回傳 0</p>
-<pre class="language-none"><code class="language-none">swap s4 and s1
-try:add ＄t0,＄zero,＄s4 ;copy exchange value
-	ll ＄t1,0(＄s1) ;load s1 to t1
-	sc ＄t0,0(＄s1) ;store t0 to s1
-	beq ＄t0,＄zero,try ;if store fail, try again
-	add ＄s4,＄zero,＄t1 ;put load value in ＄s4</code></pre>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">swap </span><span class="built_in">s4</span> <span class="keyword">and </span><span class="built_in">s1</span></span><br><span class="line"><span class="symbol">try:</span><span class="keyword">add </span>＄<span class="built_in">t0</span>,＄<span class="built_in">zero</span>,＄<span class="built_in">s4</span> <span class="comment">;copy exchange value</span></span><br><span class="line">	<span class="keyword">ll </span>＄<span class="built_in">t1</span>,<span class="number">0</span>(＄<span class="built_in">s1</span>) <span class="comment">;load s1 to t1</span></span><br><span class="line">	<span class="keyword">sc </span>＄<span class="built_in">t0</span>,<span class="number">0</span>(＄<span class="built_in">s1</span>) <span class="comment">;store t0 to s1</span></span><br><span class="line">	<span class="keyword">beq </span>＄<span class="built_in">t0</span>,＄<span class="built_in">zero</span>,try <span class="comment">;if store fail, try again</span></span><br><span class="line">	<span class="keyword">add </span>＄<span class="built_in">s4</span>,＄<span class="built_in">zero</span>,＄<span class="built_in">t1</span> <span class="comment">;put load value in ＄s4</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="MIPS-Addresssing-Mode"><a href="#MIPS-Addresssing-Mode" class="headerlink" title="MIPS Addresssing Mode"></a>MIPS Addresssing Mode</h3><ol>
 <li>Register addressing<br>運算對象在register<br><code>add</code></li>
@@ -1068,7 +1042,7 @@ machine code program ---------&gt; memory
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">457k</span>
+    <span title="總字數">463k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

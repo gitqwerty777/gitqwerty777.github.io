@@ -311,10 +311,7 @@
     <div class="post-body" itemprop="articleBody">
         <h2 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h2><p>byobu是基於screen或tmux的一層操作介面<br>預設為基於tmux</p>
 <p><span class="exturl" data-url="aHR0cHM6Ly90YW8tb2YtdG11eC5yZWFkdGhlZG9jcy5pby96aF9DTi9sYXRlc3QvbWFudXNjcmlwdC8wMC1mb3Jld29yZC5odG1s">tmux教學<i class="fa fa-external-link-alt"></i></span></p>
-<h2 id="使用byobu"><a href="#使用byobu" class="headerlink" title="使用byobu"></a>使用byobu</h2><pre class="language-bash" data-language="bash"><code class="language-bash">byobu-enable <span class="token comment">#登入就開啟byobu</span>
-byobu-disable <span class="token comment">#取消</span>
-byobu new -s <span class="token operator">&lt;</span>session name<span class="token operator">></span> <span class="token comment"># 新建一個byobu 會話</span>
-<span class="token comment"># 如果新建兩個以上，每次進入byobu的時候需要選擇</span></code></pre>
+<h2 id="使用byobu"><a href="#使用byobu" class="headerlink" title="使用byobu"></a>使用byobu</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">byobu-enable <span class="comment">#登入就開啟byobu</span></span><br><span class="line">byobu-disable <span class="comment">#取消</span></span><br><span class="line">byobu new -s &lt;session name&gt; <span class="comment"># 新建一個byobu 會話</span></span><br><span class="line"><span class="comment"># 如果新建兩個以上，每次進入byobu的時候需要選擇</span></span><br></pre></td></tr></table></figure>
 
 <p>滑鼠操作</p>
 <ul>
@@ -574,13 +571,7 @@ byobu new -s <span class="token operator">&lt;</span>session name<span class="to
 <h2 id="設定"><a href="#設定" class="headerlink" title="設定"></a>設定</h2><p>預設放在<code>~/.byobu/</code></p>
 <h3 id="修改狀態列"><a href="#修改狀態列" class="headerlink" title="修改狀態列"></a>修改狀態列</h3><p><code>~/.byobu/status</code></p>
 <p>預設是長這樣</p>
-<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># Tmux has one status line, with 2 halves for status</span>
-<span class="token assign-left variable">tmux_left</span><span class="token operator">=</span><span class="token string">"#logo distro release #arch #session"</span>
-<span class="token comment"># You can have as many tmux right lines below here, and cycle through them using Shift-F5</span>
-<span class="token assign-left variable">tmux_right</span><span class="token operator">=</span><span class="token string">"network #disk_io #custom #entropy #raid reboot_required #updates_available #apport #services #mail #users uptime #ec2_cost #rcs_cost #fan_speed #cpu_temp #battery #wifi_quality #processes load_average cpu_count cpu_freq memory #swap disk users whoami #hostname ip_address #time_utc #date time"</span>
-<span class="token comment">#tmux_right="network #disk_io #custom entropy raid reboot_required updates_available #apport #services #mail users uptime #ec2_cost #rcs_cost fan_speed cpu_temp battery wifi_quality #processes load_average cpu_count cpu_freq memory #swap #disk whoami hostname ip_address #time_utc date time"</span>
-<span class="token comment">#tmux_right="network #disk_io custom #entropy raid reboot_required updates_available #apport #services #mail users uptime #ec2_cost #rcs_cost #fan_speed #cpu_temp battery wifi_quality #processes load_average cpu_count cpu_freq memory #swap #disk #whoami #hostname ip_address #time_utc date time"</span>
-<span class="token comment">#tmux_right="#network disk_io #custom entropy #raid #reboot_required #updates_available #apport #services #mail #users #uptime #ec2_cost #rcs_cost fan_speed cpu_temp #battery #wifi_quality #processes #load_average #cpu_count #cpu_freq #memory #swap whoami hostname ip_address #time_utc disk date time"</span></code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Tmux has one status line, with 2 halves for status</span></span><br><span class="line">tmux_left=<span class="string">&quot;#logo distro release #arch #session&quot;</span></span><br><span class="line"><span class="comment"># You can have as many tmux right lines below here, and cycle through them using Shift-F5</span></span><br><span class="line">tmux_right=<span class="string">&quot;network #disk_io #custom #entropy #raid reboot_required #updates_available #apport #services #mail #users uptime #ec2_cost #rcs_cost #fan_speed #cpu_temp #battery #wifi_quality #processes load_average cpu_count cpu_freq memory #swap disk users whoami #hostname ip_address #time_utc #date time&quot;</span></span><br><span class="line"><span class="comment">#tmux_right=&quot;network #disk_io #custom entropy raid reboot_required updates_available #apport #services #mail users uptime #ec2_cost #rcs_cost fan_speed cpu_temp battery wifi_quality #processes load_average cpu_count cpu_freq memory #swap #disk whoami hostname ip_address #time_utc date time&quot;</span></span><br><span class="line"><span class="comment">#tmux_right=&quot;network #disk_io custom #entropy raid reboot_required updates_available #apport #services #mail users uptime #ec2_cost #rcs_cost #fan_speed #cpu_temp battery wifi_quality #processes load_average cpu_count cpu_freq memory #swap #disk #whoami #hostname ip_address #time_utc date time&quot;</span></span><br><span class="line"><span class="comment">#tmux_right=&quot;#network disk_io #custom entropy #raid #reboot_required #updates_available #apport #services #mail #users #uptime #ec2_cost #rcs_cost fan_speed cpu_temp #battery #wifi_quality #processes #load_average #cpu_count #cpu_freq #memory #swap whoami hostname ip_address #time_utc disk date time&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>Left</p>
 <table>
@@ -778,19 +769,7 @@ byobu new -s <span class="token operator">&lt;</span>session name<span class="to
 <p>設定 → 終端機</p>
 <ol>
 <li>取消勾選<code>Integrated: Allow Chords</code></li>
-<li><code>Integrated: Commands To Skip Shell</code>增加下列<pre class="language-none"><code class="language-none">-workbench.action.quickOpen
--workbench.action.terminal.findNext
--workbench.action.terminal.findPrevious
--workbench.action.debug.continue
--workbench.action.debug.restart
--workbench.action.debug.run
--workbench.action.debug.start
--workbench.action.debug.stop
--workbench.action.focusNextPart
--workbench.action.focusPreviousPart
--workbench.action.debug.pause
--workbench.action.quickOpen
--workbench.action.terminal.focusFind</code></pre></li>
+<li><code>Integrated: Commands To Skip Shell</code>增加下列<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.quickOpen</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.terminal</span><span class="selector-class">.findNext</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.terminal</span><span class="selector-class">.findPrevious</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.debug</span><span class="selector-class">.continue</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.debug</span><span class="selector-class">.restart</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.debug</span><span class="selector-class">.run</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.debug</span><span class="selector-class">.start</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.debug</span><span class="selector-class">.stop</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.focusNextPart</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.focusPreviousPart</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.debug</span><span class="selector-class">.pause</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.quickOpen</span></span><br><span class="line">-workbench<span class="selector-class">.action</span><span class="selector-class">.terminal</span>.focusFind</span><br></pre></td></tr></table></figure></li>
 </ol>
 <h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly93d3cuYnlvYnUub3JnLw==">byobu<i class="fa fa-external-link-alt"></i></span></li>
@@ -884,7 +863,7 @@ byobu new -s <span class="token operator">&lt;</span>session name<span class="to
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">457k</span>
+    <span title="總字數">463k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

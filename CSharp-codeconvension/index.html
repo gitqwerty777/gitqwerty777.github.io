@@ -293,7 +293,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>3.9k</span>
+      <span>3.6k</span>
     </span>
 </div>
 
@@ -307,8 +307,7 @@
     <div class="post-body" itemprop="articleBody">
         <p><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLm1pY3Jvc29mdC5jb20vZW4tdXMvZG90bmV0L2MjL3Byb2dyYW1taW5nLWd1aWRlL2luc2lkZS1hLXByb2dyYW0vY29kaW5nLWNvbnZlbnRpb25z">原文：C# Coding Conventions (C# Programming Guide)<i class="fa fa-external-link-alt"></i></span></p>
 <h2 id="Naming-Conventions"><a href="#Naming-Conventions" class="headerlink" title="Naming Conventions"></a>Naming Conventions</h2><p>若句子太長，可以分段，結尾需為<code>.</code></p>
-<pre class="language-c#" data-language="c#"><code class="language-c#">var currentPerformanceCounterCategory &#x3D; new System.Diagnostics.
-        PerformanceCounterCategory();</code></pre>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> currentPerformanceCounterCategory = <span class="keyword">new</span> System.Diagnostics.</span><br><span class="line">        PerformanceCounterCategory();</span><br></pre></td></tr></table></figure>
 
 <h2 id="Layout-Conventions"><a href="#Layout-Conventions" class="headerlink" title="Layout Conventions"></a>Layout Conventions</h2><ul>
 <li>四空格縮排, tabs 需要存為空格</li>
@@ -322,75 +321,27 @@
 </ul>
 <h2 id="Commenting-Conventions"><a href="#Commenting-Conventions" class="headerlink" title="Commenting Conventions"></a>Commenting Conventions</h2><ul>
 <li>將程式和註解放在不同行</li>
-<li>註解需以大寫開頭，逗號結尾，與<code>//</code>間隔一個空格<pre class="language-c#" data-language="c#"><code class="language-c#">&#x2F;&#x2F; The following declaration creates a query. It does not run
-&#x2F;&#x2F; the query.</code></pre></li>
+<li>註解需以大寫開頭，逗號結尾，與<code>//</code>間隔一個空格<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// The following declaration creates a query. It does not run</span></span><br><span class="line"><span class="comment">// the query.</span></span><br></pre></td></tr></table></figure></li>
 </ul>
 <h2 id="Language-Guidelines"><a href="#Language-Guidelines" class="headerlink" title="Language Guidelines"></a>Language Guidelines</h2><ul>
 <li>使用字串插補(String interpolation)來連接短的字串<ul>
 <li><code>string displayName = $&quot;&#123;nameList[n].LastName&#125;, &#123;nameList[n].FirstName&#125;&quot;;</code></li>
 </ul>
 </li>
-<li>若要在迴圈中使用字串，使用<code>StringBuilder</code><pre class="language-c#" data-language="c#"><code class="language-c#">var phrase &#x3D; &quot;la&quot;;
-var manyPhrases &#x3D; new StringBuilder();
-for (var i &#x3D; 0; i &lt; 10000; i++)
-&#123;
-    manyPhrases.Append(phrase);
-&#125;</code></pre></li>
+<li>若要在迴圈中使用字串，使用<code>StringBuilder</code><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> phrase = <span class="string">&quot;la&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> manyPhrases = <span class="keyword">new</span> StringBuilder();</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">10000</span>; i++)</span><br><span class="line">&#123;</span><br><span class="line">    manyPhrases.Append(phrase);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ul>
 <h2 id="Implicitly-Typed-Local-Variables"><a href="#Implicitly-Typed-Local-Variables" class="headerlink" title="Implicitly Typed Local Variables"></a>Implicitly Typed Local Variables</h2><ul>
 <li>若變數的型別很明顯，使用隱式宣告<ul>
-<li><code>New</code>, 型別轉換, 基本型別等<pre class="language-c#" data-language="c#"><code class="language-c#">var var1 &#x3D; &quot;This is clearly a string.&quot;;
-var var2 &#x3D; 27;
-&#x2F;&#x2F; &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
-int var3 &#x3D; Convert.ToInt32(Console.ReadLine());
-int var4 &#x3D; ExampleClass.ResultSoFar();</code></pre></li>
+<li><code>New</code>, 型別轉換, 基本型別等<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> var1 = <span class="string">&quot;This is clearly a string.&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> var2 = <span class="number">27</span>;</span><br><span class="line"><span class="comment">// =======================</span></span><br><span class="line"><span class="built_in">int</span> var3 = Convert.ToInt32(Console.ReadLine());</span><br><span class="line"><span class="built_in">int</span> var4 = ExampleClass.ResultSoFar();</span><br></pre></td></tr></table></figure></li>
 </ul>
 </li>
 <li>可以在for中使用隱式宣告，但不要在foreach中使用隱式宣告</li>
 </ul>
-<h2 id="Arrays"><a href="#Arrays" class="headerlink" title="Arrays"></a>Arrays</h2><pre class="language-c#" data-language="c#"><code class="language-c#">&#x2F;&#x2F; Preferred syntax. Note that you cannot use var here instead of string[].
-string[] vowels1 &#x3D; &#123; &quot;a&quot;, &quot;e&quot;, &quot;i&quot;, &quot;o&quot;, &quot;u&quot; &#125;;
-&#x2F;&#x2F; If you use explicit instantiation, you can use var.
-var vowels2 &#x3D; new string[] &#123; &quot;a&quot;, &quot;e&quot;, &quot;i&quot;, &quot;o&quot;, &quot;u&quot; &#125;;
-&#x2F;&#x2F; If you specify an array size, you must initialize the elements one at a time.
-var vowels3 &#x3D; new string[5];
-vowels3[0] &#x3D; &quot;a&quot;;
-vowels3[1] &#x3D; &quot;e&quot;;</code></pre>
+<h2 id="Arrays"><a href="#Arrays" class="headerlink" title="Arrays"></a>Arrays</h2><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Preferred syntax. Note that you cannot use var here instead of string[].</span></span><br><span class="line"><span class="built_in">string</span>[] vowels1 = &#123; <span class="string">&quot;a&quot;</span>, <span class="string">&quot;e&quot;</span>, <span class="string">&quot;i&quot;</span>, <span class="string">&quot;o&quot;</span>, <span class="string">&quot;u&quot;</span> &#125;;</span><br><span class="line"><span class="comment">// If you use explicit instantiation, you can use var.</span></span><br><span class="line"><span class="keyword">var</span> vowels2 = <span class="keyword">new</span> <span class="built_in">string</span>[] &#123; <span class="string">&quot;a&quot;</span>, <span class="string">&quot;e&quot;</span>, <span class="string">&quot;i&quot;</span>, <span class="string">&quot;o&quot;</span>, <span class="string">&quot;u&quot;</span> &#125;;</span><br><span class="line"><span class="comment">// If you specify an array size, you must initialize the elements one at a time.</span></span><br><span class="line"><span class="keyword">var</span> vowels3 = <span class="keyword">new</span> <span class="built_in">string</span>[<span class="number">5</span>];</span><br><span class="line">vowels3[<span class="number">0</span>] = <span class="string">&quot;a&quot;</span>;</span><br><span class="line">vowels3[<span class="number">1</span>] = <span class="string">&quot;e&quot;</span>;</span><br></pre></td></tr></table></figure>
 
-<h2 id="Delegates-委託"><a href="#Delegates-委託" class="headerlink" title="Delegates(委託)"></a>Delegates(委託)</h2><pre class="language-c#" data-language="c#"><code class="language-c#">&#x2F;&#x2F; Define the type.
-public delegate void Del(string message);
+<h2 id="Delegates-委託"><a href="#Delegates-委託" class="headerlink" title="Delegates(委託)"></a>Delegates(委託)</h2><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Define the type.</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="built_in">delegate</span> <span class="keyword">void</span> <span class="title">Del</span>(<span class="params"><span class="built_in">string</span> message</span>)</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Define a method that has a matching signature.</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">DelMethod</span>(<span class="params"><span class="built_in">string</span> str</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    Console.WriteLine(<span class="string">&quot;DelMethod argument: &#123;0&#125;&quot;</span>, str);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// In the Main method, create an instance of Del.</span></span><br><span class="line"><span class="comment">// Preferred: Create an instance of Del by using condensed syntax.</span></span><br><span class="line">Del exampleDel2 = DelMethod;</span><br><span class="line"><span class="comment">// The following declaration uses the full syntax.</span></span><br><span class="line">Del exampleDel1 = <span class="keyword">new</span> Del(DelMethod);</span><br></pre></td></tr></table></figure>
 
-&#x2F;&#x2F; Define a method that has a matching signature.
-public static void DelMethod(string str)
-&#123;
-    Console.WriteLine(&quot;DelMethod argument: &#123;0&#125;&quot;, str);
-&#125;
-
-&#x2F;&#x2F; In the Main method, create an instance of Del.
-&#x2F;&#x2F; Preferred: Create an instance of Del by using condensed syntax.
-Del exampleDel2 &#x3D; DelMethod;
-&#x2F;&#x2F; The following declaration uses the full syntax.
-Del exampleDel1 &#x3D; new Del(DelMethod);</code></pre>
-
-<h2 id="Using"><a href="#Using" class="headerlink" title="Using"></a>Using</h2><pre class="language-c#" data-language="c#"><code class="language-c#">&#x2F;&#x2F; Method1: try-finally statement with Dispose
-Font font1 &#x3D; new Font(&quot;Arial&quot;, 10.0f);
-try
-&#123;
-    byte charset &#x3D; font1.GdiCharSet;
-&#125;
-finally
-&#123;
-    if (font1 !&#x3D; null)
-    &#123;
-        ((IDisposable)font1).Dispose();
-    &#125;
-&#125;
-
-&#x2F;&#x2F; Method2: Using statement.
-using (Font font2 &#x3D; new Font(&quot;Arial&quot;, 10.0f))
-&#123;
-    byte charset &#x3D; font2.GdiCharSet;
-&#125;</code></pre>
+<h2 id="Using"><a href="#Using" class="headerlink" title="Using"></a>Using</h2><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Method1: try-finally statement with Dispose</span></span><br><span class="line">Font font1 = <span class="keyword">new</span> Font(<span class="string">&quot;Arial&quot;</span>, <span class="number">10.0f</span>);</span><br><span class="line"><span class="keyword">try</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">byte</span> charset = font1.GdiCharSet;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">finally</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span> (font1 != <span class="literal">null</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        ((IDisposable)font1).Dispose();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Method2: Using statement.</span></span><br><span class="line"><span class="keyword">using</span> (Font font2 = <span class="keyword">new</span> Font(<span class="string">&quot;Arial&quot;</span>, <span class="number">10.0f</span>))</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">byte</span> charset = font2.GdiCharSet;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="amp-amp-and"><a href="#amp-amp-and" class="headerlink" title="&amp;&amp; and ||"></a>&amp;&amp; and ||</h2><ul>
 <li>用 <code>&amp;&amp;</code> 取代 <code>&amp;</code>, 用 <code>||</code> 取代 <code>|</code><ul>
@@ -399,14 +350,7 @@ using (Font font2 &#x3D; new Font(&quot;Arial&quot;, 10.0f))
 </ul>
 </li>
 </ul>
-<pre class="language-C#" data-language="C#"><code class="language-C#">if ((divisor !&#x3D; 0) &amp;&amp; (dividend &#x2F; divisor &gt; 0))
-&#123;
-    Console.WriteLine(&quot;Quotient: &#123;0&#125;&quot;, dividend &#x2F; divisor);
-&#125;
-else
-&#123;
-    Console.WriteLine(&quot;Attempted division by 0 ends up here.&quot;);
-&#125;</code></pre>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> ((divisor != <span class="number">0</span>) &amp;&amp; (dividend / divisor &gt; <span class="number">0</span>))</span><br><span class="line">&#123;</span><br><span class="line">    Console.WriteLine(<span class="string">&quot;Quotient: &#123;0&#125;&quot;</span>, dividend / divisor);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">&#123;</span><br><span class="line">    Console.WriteLine(<span class="string">&quot;Attempted division by 0 ends up here.&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="New"><a href="#New" class="headerlink" title="New"></a>New</h2><ul>
 <li>使用new的時候，使用var <code>var instance1 = new ExampleClass();</code></li>
@@ -416,26 +360,7 @@ else
 </li>
 </ul>
 <h2 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h2><ul>
-<li>使用lambda expression來產生一次性的event<pre class="language-c#" data-language="c#"><code class="language-c#">public Form2()
-&#123;
-    &#x2F;&#x2F; You can use a lambda expression to define an event handler.
-    this.Click +&#x3D; (s, e) &#x3D;&gt;
-        &#123;
-            MessageBox.Show(
-                ((MouseEventArgs)e).Location.ToString());
-        &#125;;
-&#125;
-
-&#x2F;&#x2F; Using a lambda expression shortens the following traditional definition.
-public Form1()
-&#123;
-    this.Click +&#x3D; new EventHandler(Form1_Click);
-&#125;
-
-void Form1_Click(object sender, EventArgs e)
-&#123;
-    MessageBox.Show(((MouseEventArgs)e).Location.ToString());
-&#125;</code></pre></li>
+<li>使用lambda expression來產生一次性的event<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">Form2</span>()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// You can use a lambda expression to define an event handler.</span></span><br><span class="line">    <span class="keyword">this</span>.Click += (s, e) =&gt;</span><br><span class="line">        &#123;</span><br><span class="line">            MessageBox.Show(</span><br><span class="line">                ((MouseEventArgs)e).Location.ToString());</span><br><span class="line">        &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Using a lambda expression shortens the following traditional definition.</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">Form1</span>()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">this</span>.Click += <span class="keyword">new</span> EventHandler(Form1_Click);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Form1_Click</span>(<span class="params"><span class="built_in">object</span> sender, EventArgs e</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    MessageBox.Show(((MouseEventArgs)e).Location.ToString());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ul>
 <h2 id="Static"><a href="#Static" class="headerlink" title="Static"></a>Static</h2><ul>
 <li>用類別名取得static成員 <code>ClassName.StaticMember</code><ul>
@@ -444,16 +369,10 @@ void Form1_Click(object sender, EventArgs e)
 </li>
 </ul>
 <h2 id="LINQ-Queries"><a href="#LINQ-Queries" class="headerlink" title="LINQ Queries"></a>LINQ Queries</h2><p>使用有意義的變數名</p>
-<pre class="language-c#" data-language="c#"><code class="language-c#">var seattleCustomers &#x3D; from customer in customers
-                       where customer.City &#x3D;&#x3D; &quot;Seattle&quot;
-                       select customer.Name;</code></pre>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> seattleCustomers = <span class="keyword">from</span> customer <span class="keyword">in</span> customers</span><br><span class="line">                       <span class="keyword">where</span> customer.City == <span class="string">&quot;Seattle&quot;</span></span><br><span class="line">                       <span class="keyword">select</span> customer.Name;</span><br></pre></td></tr></table></figure>
 <ul>
 <li>排列在<code>from</code>下方</li>
-<li>使用多個<code>from</code>取代<code>join</code><pre class="language-c#" data-language="c#"><code class="language-c#">&#x2F;&#x2F; Use a compound from to access the inner sequence within each element.
-var scoreQuery &#x3D; from student in students
-                 from score in student.Scores
-                 where score &gt; 90
-                 select new &#123; Last &#x3D; student.LastName, score &#125;;</code></pre></li>
+<li>使用多個<code>from</code>取代<code>join</code><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Use a compound from to access the inner sequence within each element.</span></span><br><span class="line"><span class="keyword">var</span> scoreQuery = <span class="keyword">from</span> student <span class="keyword">in</span> students</span><br><span class="line">                 <span class="keyword">from</span> score <span class="keyword">in</span> student.Scores</span><br><span class="line">                 <span class="keyword">where</span> score &gt; <span class="number">90</span></span><br><span class="line">                 <span class="keyword">select</span> <span class="keyword">new</span> &#123; Last = student.LastName, score &#125;;</span><br></pre></td></tr></table></figure></li>
 </ul>
 
     </div>
@@ -536,7 +455,7 @@ var scoreQuery &#x3D; from student in students
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">457k</span>
+    <span title="總字數">463k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

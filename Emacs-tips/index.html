@@ -724,10 +724,7 @@
 </tbody></table>
 <h2 id="Emacs技巧"><a href="#Emacs技巧" class="headerlink" title="Emacs技巧"></a>Emacs技巧</h2><h3 id="自動完成"><a href="#自動完成" class="headerlink" title="自動完成"></a>自動完成</h3><p><code>M-/</code> 可重複輸入以改變建議字串</p>
 <h3 id="移動至定義-goto-declaration"><a href="#移動至定義-goto-declaration" class="headerlink" title="移動至定義(goto declaration)"></a>移動至定義(goto declaration)</h3><ol>
-<li>建立tag檔<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># for c, c++ file</span>
-<span class="token function">find</span> <span class="token builtin class-name">.</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">".*\.\(c\|h\|cpp\)"</span> <span class="token operator">|</span> <span class="token function">xargs</span> etags -f tags <span class="token comment"># output filename "tags"</span>
-<span class="token comment"># for python file</span>
-<span class="token function">find</span> <span class="token builtin class-name">.</span> -type f -name <span class="token string">'*.py'</span> <span class="token operator">|</span> <span class="token function">xargs</span> etags -f tags</code></pre></li>
+<li>建立tag檔<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># for c, c++ file</span></span><br><span class="line">find . | grep <span class="string">&quot;.*\.\(c\|h\|cpp\)&quot;</span> | xargs etags -f tags <span class="comment"># output filename &quot;tags&quot;</span></span><br><span class="line"><span class="comment"># for python file</span></span><br><span class="line">find . -<span class="built_in">type</span> f -name <span class="string">&#x27;*.py&#x27;</span> | xargs etags -f tags</span><br></pre></td></tr></table></figure></li>
 <li>在Emacs中用<code>M-.</code>進行搜尋</li>
 <li><code>C-x 4 .</code>: 在另一個分割開啟定義</li>
 </ol>
@@ -781,8 +778,7 @@
 </tbody></table>
 <p><code>name-last-kbd-macro</code>: 將上一個定義的巨集存檔之前予以命名<br><code>load-file</code>: 載入儲存的lisp程式碼巨集<br><code>macroname</code>: 執行儲存過的”macroname”巨集<br><code>insert-kbd-macro</code>: 將命名過的巨集以lisp程式碼印出</p>
 <p>應用：在<code>EmacsMacro.el</code>中儲存巨集程式碼，並在<code>.emacs</code>中寫入</p>
-<pre class="language-lisp" data-language="lisp"><code class="language-lisp"><span class="token comment">;;load my macro file</span>
-<span class="token punctuation">(</span><span class="token car">load</span> <span class="token string">"~/EmacsMacro"</span><span class="token punctuation">)</span></code></pre>
+<figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">;;load my macro file</span></span><br><span class="line">(<span class="name">load</span> <span class="string">&quot;~/EmacsMacro&quot;</span>)</span><br></pre></td></tr></table></figure>
 
 <!--
 TODO:
@@ -1081,7 +1077,7 @@ https://github.com/pbesedm/Oh-My-Editors/blob/master/doc/emacs%E6%93%8D%E4%BD%9C
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">457k</span>
+    <span title="總字數">463k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

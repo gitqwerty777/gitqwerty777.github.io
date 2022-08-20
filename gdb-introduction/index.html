@@ -605,8 +605,7 @@
 </tr>
 </tbody></table>
 <h3 id="檢查變數值"><a href="#檢查變數值" class="headerlink" title="檢查變數值"></a>檢查變數值</h3><p>可以顯示某些資訊以利於debug</p>
-<h4 id="print-display"><a href="#print-display" class="headerlink" title="print, display"></a>print, display</h4><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token punctuation">(</span>gdb<span class="token punctuation">)</span> print i
-<span class="token variable">$1</span> <span class="token operator">=</span> <span class="token number">6078</span></code></pre>
+<h4 id="print-display"><a href="#print-display" class="headerlink" title="print, display"></a>print, display</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(gdb) <span class="built_in">print</span> i</span><br><span class="line"><span class="variable">$1</span> = 6078</span><br></pre></td></tr></table></figure>
 
 <p>輸入 <code>print/格式字元 [variable]</code> 可以指定型態，與printf不同的以粗體表示  </p>
 <table>
@@ -680,8 +679,7 @@
 <li><code>$sp</code> stack pointer</li>
 </ul>
 <h4 id="設定新變數"><a href="#設定新變數" class="headerlink" title="設定新變數"></a>設定新變數</h4><p>取代冗長路徑的變數，如在深層資料結構中的變數<br>(註: 此變數為 pass by reference, 修改新變數的值也會修改原本的變數)</p>
-<pre class="language-gdb" data-language="gdb"><code class="language-gdb">set $newv &#x3D; model-&gt;dataset-&gt;vector-&gt;data
-p *($newv++)</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">set $newv = model-&gt;dataset-&gt;vector-&gt;data</span><br><span class="line">p *($newv++)</span><br></pre></td></tr></table></figure>
 
 <h4 id="info-檢視詳細資訊"><a href="#info-檢視詳細資訊" class="headerlink" title="info: 檢視詳細資訊"></a>info: 檢視詳細資訊</h4><table>
 <thead>
@@ -909,7 +907,7 @@ p *($newv++)</code></pre>
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">457k</span>
+    <span title="總字數">463k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

@@ -312,30 +312,13 @@
 <span id="more"></span>
 
 <h2 id="代碼角度"><a href="#代碼角度" class="headerlink" title="代碼角度"></a>代碼角度</h2><h3 id="前置聲明"><a href="#前置聲明" class="headerlink" title="前置聲明"></a>前置聲明</h3><p>在<code>.h</code>檔中使用前置聲明(forward declaration)，而不是直接包含<code>.h</code>檔。</p>
-<pre class="language-c++" data-language="c++"><code class="language-c++">class A; &#x2F;&#x2F;forward declaration, instead #include &quot;a.h&quot;
-class B&#123;
-    A* a;
-    void useA(A&amp; a);
-&#125;;</code></pre>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">A</span>; <span class="comment">//forward declaration, instead #include &quot;a.h&quot;</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">B</span>&#123;</span><br><span class="line">    A* a;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">useA</span><span class="params">(A&amp; a)</span></span>;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
-<pre class="language-c++" data-language="c++"><code class="language-c++">#include &quot;a.h&quot; &#x2F;&#x2F;cannot use forward declaration because compiler needs to know what A really is
-class B&#123;
-    A a;
-&#125;;</code></pre>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;a.h&quot;</span> <span class="comment">//cannot use forward declaration because compiler needs to know what A really is</span></span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">B</span>&#123;</span><br><span class="line">    A a;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
 <p><strong>要盡一切可能使<code>.h</code>檔精簡</strong>。<br>很多時候前置聲明某個namespace中的class會比較痛苦，而直接include會方便很多，千萬要抵制住這種誘惑；class的成員，函數參數等也儘量用reference或pointer。</p>
 <h3 id="使用Pimpl模式"><a href="#使用Pimpl模式" class="headerlink" title="使用Pimpl模式"></a>使用Pimpl模式</h3><p>Pimpl為Private Implementation<br>傳統的C++的class的接口與實現是混淆在一起的，而Pimpl這種做法使得class的接口與實現得以完全分離。<br>如此，只要class的公共接口保持不變，對class實現的修改始終只需編譯該cpp；同時，該class提供給外界的.h檔也會精簡許多。</p>
-<pre class="language-c++" data-language="c++"><code class="language-c++">class A
-&#123;
-public:
-    A();
-    ~A();
-    void doSomething();
-
-private:
-    struct Impl;&#x2F;&#x2F;real implementation in this class
-    std::auto_ptr&lt;impl&gt; m_impl;
-&#125;;</code></pre>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">A</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">A</span>();</span><br><span class="line">    ~<span class="built_in">A</span>();</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">doSomething</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">Impl</span>;<span class="comment">//real implementation in this class</span></span><br><span class="line">    std::auto_ptr&lt;impl&gt; m_impl;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
 <h3 id="高度模塊化"><a href="#高度模塊化" class="headerlink" title="高度模塊化"></a>高度模塊化</h3><p>模塊化就是低耦合，就是儘可能的減少相互依賴。</p>
 <ol>
@@ -348,19 +331,12 @@ private:
 <h3 id="特別注意inline和template"><a href="#特別注意inline和template" class="headerlink" title="特別注意inline和template"></a>特別注意inline和template</h3><p>它們強制在<code>.h</code>檔中包含實作，這會增加<code>.h</code>檔的內容，從而減慢許多編譯速度，需權衡使用。</p>
 <h3 id="預編譯-h檔"><a href="#預編譯-h檔" class="headerlink" title="預編譯.h檔"></a>預編譯<code>.h</code>檔</h3><p>把一些常用但不常改動的<code>.h</code>檔放在預編譯<code>.h</code>檔中。這樣，至少在單個工程中你不需要在每個編譯單元裡一遍又一遍的load與解析同一個<code>.h</code>檔了。</p>
 <p>首次編譯source.cpp時，編譯器生成header.pch的預編譯header。以後再編譯該程式時，編譯器會比較該表頭檔的時間戳，如果表頭檔沒有改變，編譯器直接使用預編譯header。</p>
-<pre class="language-makefile" data-language="makefile"><code class="language-makefile">CORE_PCH_FILENAME<span class="token operator">=</span>Core.h
-CORE_PCH<span class="token operator">=</span><span class="token variable">$</span><span class="token punctuation">(</span>CORE_PCH_FILENAME<span class="token punctuation">)</span>.gch
-
-<span class="token target symbol"><span class="token variable">$</span>(CORE_PCH)</span><span class="token punctuation">:</span>
-    <span class="token variable">$</span><span class="token punctuation">(</span>CXX<span class="token punctuation">)</span> <span class="token variable">$</span><span class="token punctuation">(</span>CXX_CFLAGS<span class="token punctuation">)</span> -x c++-header <span class="token variable">$</span><span class="token punctuation">(</span>CORE_PCH_FILENAME<span class="token punctuation">)</span></code></pre>
+<figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">CORE_PCH_FILENAME=Core.h</span><br><span class="line">CORE_PCH=<span class="variable">$(CORE_PCH_FILENAME)</span>.gch</span><br><span class="line"></span><br><span class="line"><span class="variable">$(CORE_PCH)</span>:</span><br><span class="line">    <span class="variable">$(CXX)</span> <span class="variable">$(CXX_CFLAGS)</span> -x c++-header <span class="variable">$(CORE_PCH_FILENAME)</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="Guard-Conditions"><a href="#Guard-Conditions" class="headerlink" title="Guard Conditions"></a>Guard Conditions</h3><p>保證每個 header file 在每個編譯單元只被 include 一次</p>
-<pre class="language-c++" data-language="c++"><code class="language-c++">#pragma once</code></pre>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">pragma</span> once</span></span><br></pre></td></tr></table></figure>
 
-<pre class="language-C++" data-language="C++"><code class="language-C++">#ifndef filename_h
-#define filename_h
-&#x2F;&#x2F;...
-#endif</code></pre>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">ifndef</span> filename_h</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> filename_h</span></span><br><span class="line"><span class="comment">//...</span></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br></pre></td></tr></table></figure>
 <p>同時使用兩種方法以確保compiler的相容性</p>
 <h2 id="Unity-Build"><a href="#Unity-Build" class="headerlink" title="Unity Build"></a>Unity Build</h2><p>把所有的檔案包含到一個cpp中(如<code>all.cpp</code>)，然後只編譯all.cpp。這樣就只有一個編譯單元，這意味著不需要重複load與解析同一個<code>.h</code>檔了，同時因為只產生一個obj文件，在link的時候也不需要那麼密集的IO</p>
 <h2 id="Compiler-Cache"><a href="#Compiler-Cache" class="headerlink" title="Compiler Cache"></a>Compiler Cache</h2><p>藉由快取上一次編譯的結果，使rebuild在保持結果相同的情況下，極大的提高速度。</p>
@@ -467,7 +443,7 @@ CORE_PCH<span class="token operator">=</span><span class="token variable">$</spa
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">457k</span>
+    <span title="總字數">463k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

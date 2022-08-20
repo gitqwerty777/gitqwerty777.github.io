@@ -374,13 +374,7 @@
 </li>
 <li>使用範圍較大的變數用較長的名稱<ul>
 <li>愈少用的函數名稱可以愈長</li>
-<li>for迴圈範圍較小，變數可以用<code>i</code>, <code>j</code><pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">//which is better?</span>
-<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> RowNumber<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
-	<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> ColumnNumber<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span>
-		<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
-<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> r <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> r <span class="token operator">&lt;</span> RowNumber<span class="token punctuation">;</span> r<span class="token operator">++</span><span class="token punctuation">)</span>
-	<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> c <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> c <span class="token operator">&lt;</span> ColumnNumber<span class="token punctuation">;</span> c<span class="token operator">++</span><span class="token punctuation">)</span>
-		<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span></code></pre></li>
+<li>for迴圈範圍較小，變數可以用<code>i</code>, <code>j</code><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//which is better?</span></span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; RowNumber; i++)</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span>; j &lt; ColumnNumber; j++)</span><br><span class="line">		...</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> r = <span class="number">0</span>; r &lt; RowNumber; r++)</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> c = <span class="number">0</span>; c &lt; ColumnNumber; c++)</span><br><span class="line">		...</span><br></pre></td></tr></table></figure></li>
 </ul>
 </li>
 </ul>
@@ -571,21 +565,7 @@
 </blockquote>
 <p>變數保持私有的理由，不希望有人依賴此變數，保持一個自由的空間，讓我們能自由的更改變數的型態，或是在突如其來的奇想或衝動時，能自由的變更實現內容的程式碼。</p>
 <p>那為什麼有這麼多的程式設計師，自動替他們的物件加上getter和setter，讓他們的私有度數如同公用變數呢？</p>
-<pre class="language-c++" data-language="c++"><code class="language-c++">&#x2F;&#x2F;完全暴露實現
-public class Point &#123;
-	public double x;
-	public double y;
-&#125;
-
-&#x2F;&#x2F;抽象化：無法分辨實現
-public interface Point &#123;
-	double getX();
-	double getY();
-	void setCartesian(double x, double y);
-	double getR();
-	double getTheta();
-	void setPolar(double r, double theta);
-&#125;</code></pre>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//完全暴露實現</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Point</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="type">double</span> x;</span><br><span class="line">	<span class="keyword">public</span> <span class="type">double</span> y;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//抽象化：無法分辨實現</span></span><br><span class="line"><span class="keyword">public</span> interface Point &#123;</span><br><span class="line">	<span class="function"><span class="type">double</span> <span class="title">getX</span><span class="params">()</span></span>;</span><br><span class="line">	<span class="function"><span class="type">double</span> <span class="title">getY</span><span class="params">()</span></span>;</span><br><span class="line">	<span class="function"><span class="type">void</span> <span class="title">setCartesian</span><span class="params">(<span class="type">double</span> x, <span class="type">double</span> y)</span></span>;</span><br><span class="line">	<span class="function"><span class="type">double</span> <span class="title">getR</span><span class="params">()</span></span>;</span><br><span class="line">	<span class="function"><span class="type">double</span> <span class="title">getTheta</span><span class="params">()</span></span>;</span><br><span class="line">	<span class="function"><span class="type">void</span> <span class="title">setPolar</span><span class="params">(<span class="type">double</span> r, <span class="type">double</span> theta)</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>利用抽象化的詞彙來表達資料。這並不是只透過介面及讀取、設定函式就能完成。想辨法找到最能詮釋「資料抽象概念」的方式。<br>而最差的作法，則是天真地加上讀取函式及設定函式而已。</p>
 <p>1.物件</p>
@@ -949,18 +929,7 @@ public interface Point &#123;
 </li>
 <li>特色留戀(Feature Envy)<ol start="7">
 <li>使用其他物件的getter或setter</li>
-<li>有時候是必要之惡：放入別的物件會違反其他OOP的原則(此例：單一職責、開放閉合原則等)<pre class="language-java" data-language="java"><code class="language-java"><span class="token comment">//demo of feature envy</span>
-<span class="token keyword">public</span> clas <span class="token class-name">HourlyEmployeeReport</span><span class="token punctuation">&#123;</span>
-	<span class="token keyword">private</span> <span class="token class-name">HourlyEmployee</span> employee<span class="token punctuation">;</span>
-
-	<span class="token class-name">String</span> <span class="token function">reportHours</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-		<span class="token keyword">return</span> <span class="token class-name">String<span class="token punctuation">.</span>Format</span><span class="token punctuation">(</span>
-			<span class="token string">"Name:%s, Hours:%d.%ld\n"</span><span class="token punctuation">,</span>
-			employee<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-			employee<span class="token punctuation">.</span><span class="token function">getTenthsWorked</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">10</span><span class="token punctuation">,</span>
-			employee<span class="token punctuation">.</span><span class="token function">getTenthsWorked</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">%</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span></code></pre></li>
+<li>有時候是必要之惡：放入別的物件會違反其他OOP的原則(此例：單一職責、開放閉合原則等)<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//demo of feature envy</span></span><br><span class="line"><span class="keyword">public</span> clas HourlyEmployeeReport&#123;</span><br><span class="line">	<span class="keyword">private</span> HourlyEmployee employee;</span><br><span class="line"></span><br><span class="line">	String <span class="title function_">reportHours</span><span class="params">()</span>&#123;</span><br><span class="line">		<span class="keyword">return</span> String.Format(</span><br><span class="line">			<span class="string">&quot;Name:%s, Hours:%d.%ld\n&quot;</span>,</span><br><span class="line">			employee.getName(),</span><br><span class="line">			employee.getTenthsWorked()/<span class="number">10</span>,</span><br><span class="line">			employee.getTenthsWorked()%<span class="number">10</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ol>
 </li>
 </ol>
@@ -1052,7 +1021,7 @@ public interface Point &#123;
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">457k</span>
+    <span title="總字數">463k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

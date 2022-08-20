@@ -514,28 +514,15 @@
 <li>–hard: 將HEAD和Index和工作目錄還原至指定commit</li>
 <li>被取代的HEAD會放在ORIG_HEAD</li>
 </ul>
-<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> reset <span class="token punctuation">[</span>--soft/mixed/hard<span class="token punctuation">]</span> <span class="token punctuation">[</span>commit<span class="token punctuation">]</span> <span class="token comment"># default is mixed</span>
-
-<span class="token comment"># 變更上一次的提交</span>
-<span class="token function">git</span> reset HEAD^ <span class="token comment"># 此時上一次的提交已經不存在，但是工作目錄中的資料相同</span>
-<span class="token comment"># do some modification</span>
-<span class="token function">git</span> commit <span class="token comment"># 會覆蓋上一次的commit</span></code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git reset [--soft/mixed/hard] [commit] <span class="comment"># default is mixed</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 變更上一次的提交</span></span><br><span class="line">git reset HEAD^ <span class="comment"># 此時上一次的提交已經不存在，但是工作目錄中的資料相同</span></span><br><span class="line"><span class="comment"># do some modification</span></span><br><span class="line">git commit <span class="comment"># 會覆蓋上一次的commit</span></span><br></pre></td></tr></table></figure>
 <p>通常用於清除錯誤</p>
 <ul>
 <li>cherry-pick<ul>
 <li>拿取指定commit到目前分支</li>
 <li><code>git cherry-pick [commit]</code></li>
 <li>使用時機<ul>
-<li>若有多個branch都找到相同的bug，可以在每個branch都cherry-pick debug的commit<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> checkout release
-<span class="token function">git</span> cherry-pick develop~2 <span class="token comment"># get debug commit from develop branch</span></code></pre></li>
-<li>將某個分支的commit移植到另一個branch<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># in develop: W → X → Y → Z</span>
-<span class="token function">git</span> checkout master
-<span class="token function">git</span> cherry-pick develop^ <span class="token comment"># Y</span>
-<span class="token function">git</span> cherry-pick develop~3 <span class="token comment"># W</span>
-<span class="token function">git</span> cherry-pick develop~2 <span class="token comment"># X</span>
-<span class="token function">git</span> cherry-pick develop <span class="token comment"># Z</span>
-<span class="token comment"># alternative</span>
-<span class="token function">git</span> cherry-pick develop^3<span class="token punctuation">..</span>develop</code></pre></li>
+<li>若有多個branch都找到相同的bug，可以在每個branch都cherry-pick debug的commit<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git checkout release</span><br><span class="line">git cherry-pick develop~2 <span class="comment"># get debug commit from develop branch</span></span><br></pre></td></tr></table></figure></li>
+<li>將某個分支的commit移植到另一個branch<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># in develop: W → X → Y → Z</span></span><br><span class="line">git checkout master</span><br><span class="line">git cherry-pick develop^ <span class="comment"># Y</span></span><br><span class="line">git cherry-pick develop~3 <span class="comment"># W</span></span><br><span class="line">git cherry-pick develop~2 <span class="comment"># X</span></span><br><span class="line">git cherry-pick develop <span class="comment"># Z</span></span><br><span class="line"><span class="comment"># alternative</span></span><br><span class="line">git cherry-pick develop^3..develop</span><br></pre></td></tr></table></figure></li>
 </ul>
 </li>
 <li>如果要合併多個，可以加上 -n 指令就不會先幫你 commit，這樣可以多選幾個要合併的commit，最後再 git commit即可 <!-- ??? --></li>
@@ -553,21 +540,10 @@
 <li>開發容器</li>
 </ul>
 <h2 id="建立備份"><a href="#建立備份" class="headerlink" title="建立備份"></a>建立備份</h2><p>自行建立裸容器，並加入remote，即可push, pull了</p>
-<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># assume mygitrepository is already a git repository</span>
-<span class="token builtin class-name">cd</span> /tmp/Backup <span class="token comment"># for example, you may want to put on server</span>
-<span class="token function">git</span> clone --bare mygitrepository mygitrepository.git <span class="token comment"># create bare repository</span>
-<span class="token comment"># backup repository often use .git suffix</span>
-<span class="token builtin class-name">cd</span> mygitrepository
-<span class="token function">git</span> remote <span class="token function">add</span> origin /tmp/Backup/mygitrepository
-<span class="token comment"># can use other name to replace "origin"</span>
-<span class="token function">git</span> remote update <span class="token comment"># 建立遠端追蹤分支(update remote information)</span></code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># assume mygitrepository is already a git repository</span></span><br><span class="line"><span class="built_in">cd</span> /tmp/Backup <span class="comment"># for example, you may want to put on server</span></span><br><span class="line">git <span class="built_in">clone</span> --bare mygitrepository mygitrepository.git <span class="comment"># create bare repository</span></span><br><span class="line"><span class="comment"># backup repository often use .git suffix</span></span><br><span class="line"><span class="built_in">cd</span> mygitrepository</span><br><span class="line">git remote add origin /tmp/Backup/mygitrepository</span><br><span class="line"><span class="comment"># can use other name to replace &quot;origin&quot;</span></span><br><span class="line">git remote update <span class="comment"># 建立遠端追蹤分支(update remote information)</span></span><br></pre></td></tr></table></figure>
 <!--try it at workstation-->
 
-<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">ssh</span> myhost.com <span class="token comment"># build it on server</span>
-<span class="token builtin class-name">cd</span> /git
-<span class="token function">mkdir</span> newrepo.git
-<span class="token builtin class-name">cd</span> newrepo.git
-<span class="token function">git</span> init --shared --bare</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ssh myhost.com <span class="comment"># build it on server</span></span><br><span class="line"><span class="built_in">cd</span> /git</span><br><span class="line"><span class="built_in">mkdir</span> newrepo.git</span><br><span class="line"><span class="built_in">cd</span> newrepo.git</span><br><span class="line">git init --shared --bare</span><br></pre></td></tr></table></figure>
 
 <h2 id="Git-tag"><a href="#Git-tag" class="headerlink" title="Git tag"></a>Git tag</h2><ul>
 <li>輕量級(lightweight)<ul>
@@ -733,7 +709,7 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">457k</span>
+    <span title="總字數">463k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動
