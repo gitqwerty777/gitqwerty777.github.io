@@ -210,8 +210,8 @@ template {
   display: none;
 }
 ::selection {
-  background: #262a30;
-  color: #eee;
+  background: #7cfc00;
+  color: #3e4f56;
 }
 html,
 body {
