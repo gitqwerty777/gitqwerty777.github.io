@@ -360,9 +360,9 @@
     
     <category term="簡報" scheme="http://gitqwerty777.github.io/tags/%E7%B0%A1%E5%A0%B1/"/>
     
-    <category term="revealJS" scheme="http://gitqwerty777.github.io/tags/revealjs/"/>
-    
     <category term="markdown" scheme="http://gitqwerty777.github.io/tags/markdown/"/>
+    
+    <category term="revealJS" scheme="http://gitqwerty777.github.io/tags/revealjs/"/>
     
   </entry>
   
@@ -608,13 +608,13 @@
     
     <category term="hexo" scheme="http://gitqwerty777.github.io/tags/hexo/"/>
     
-    <category term="markdown" scheme="http://gitqwerty777.github.io/tags/markdown/"/>
-    
     <category term="amazon" scheme="http://gitqwerty777.github.io/tags/amazon/"/>
     
     <category term="blog" scheme="http://gitqwerty777.github.io/tags/blog/"/>
     
     <category term="webhost" scheme="http://gitqwerty777.github.io/tags/webhost/"/>
+    
+    <category term="markdown" scheme="http://gitqwerty777.github.io/tags/markdown/"/>
     
     <category term="ssl" scheme="http://gitqwerty777.github.io/tags/ssl/"/>
     
