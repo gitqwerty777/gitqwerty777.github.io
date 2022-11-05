@@ -17,7 +17,7 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>時間格式簡介</title>
+    <title>程式中的時間議題</title>
     <link href="http://gitqwerty777.github.io/time-formats/"/>
     <id>http://gitqwerty777.github.io/time-formats/</id>
     <published>2022-10-03T12:06:45.000Z</published>
@@ -71,7 +71,7 @@
     
     
     <summary type="html">&lt;p&gt;本文以實驗證實嘸蝦米勝過其他傳統輸入法的地方&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/img/Boshiamy/cover.webp&quot;&gt;&lt;/p&gt;</summary>
+&lt;p&gt;&lt;img src=&quot;/img/boshiamy/cover.webp&quot;&gt;&lt;/p&gt;</summary>
     
     
     
@@ -102,7 +102,7 @@
     <updated>2022-05-25T02:31:46.000Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/img/Other/elegant.webp&quot; alt=&quot;為了放這張圖片而在標題加上形容詞&quot;&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/img/other/elegant.webp&quot; alt=&quot;為了放這張圖片而在標題加上形容詞&quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;本篇介紹用語法來畫圖的方法&lt;/p&gt;
 &lt;/blockquote&gt;</summary>
@@ -420,7 +420,7 @@
     <updated>2020-11-05T07:00:00.000Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/img/Other/morgana.webp&quot; alt=&quot;Morgana - Persona5&quot;&gt;&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/img/other/morgana.webp&quot; alt=&quot;Morgana - Persona5&quot;&gt;&lt;/p&gt;</summary>
     
     
     
@@ -516,7 +516,7 @@
     <updated>2020-09-13T09:25:34.000Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/img/Other/foreign-terms-police.webp&quot;&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/img/other/foreign-terms-police.webp&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;簡介&quot;&gt;&lt;a href=&quot;#簡介&quot; class=&quot;headerlink&quot; title=&quot;簡介&quot;&gt;&lt;/a&gt;簡介&lt;/h2&gt;&lt;p&gt;PTT 上常有支語警察&lt;/p&gt;
 &lt;p&gt;也常發現 google 翻譯的中文常常會&lt;a href=&quot;https://www.setn.com/News.aspx?NewsID=746793&quot;&gt;翻譯成中國慣用語&lt;/a&gt;(可以參考 &lt;a href=&quot;https://isgooglefixed.tw/&quot;&gt;Google 翻譯修好了沒？&lt;/a&gt;)&lt;/p&gt;
 &lt;p&gt;所以就寫了一個支語警察的網站：&lt;a href=&quot;/foreign-terms-police&quot;&gt;支語警察&lt;/a&gt;&lt;/p&gt;</summary>

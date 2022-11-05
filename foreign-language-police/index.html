@@ -31,7 +31,7 @@
 <meta property="og:site_name" content="QWERTY">
 <meta property="og:description" content="簡介PTT 上常有支語警察 也常發現 google 翻譯的中文常常會翻譯成中國慣用語(可以參考 Google 翻譯修好了沒？) 所以就寫了一個支語警察的網站：支語警察">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="http://gitqwerty777.github.io/img/Other/foreign-terms-police.webp">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/other/foreign-terms-police.webp">
 <meta property="article:published_time" content="2020-09-13T09:25:34.000Z">
 <meta property="article:modified_time" content="2020-09-13T09:25:34.000Z">
 <meta property="article:author" content="qwerty">
@@ -42,7 +42,7 @@
 <meta property="article:tag" content="PTT">
 <meta property="article:tag" content="vuejs">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://gitqwerty777.github.io/img/Other/foreign-terms-police.webp">
+<meta name="twitter:image" content="http://gitqwerty777.github.io/img/other/foreign-terms-police.webp">
 
 
 <link rel="canonical" href="http://gitqwerty777.github.io/foreign-language-police/">
@@ -160,7 +160,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B0%A1%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">簡介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B5%81%E7%A8%8B"><span class="nav-number">2.</span> <span class="nav-text">流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B3%87%E6%96%99%E5%BA%AB"><span class="nav-number">3.</span> <span class="nav-text">資料庫</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%90%8C%E5%85%B8"><span class="nav-number">3.1.</span> <span class="nav-text">萌典</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%96%8B%E6%94%BE%E4%B8%AD%E6%96%87%E8%BD%89%E6%8F%9B-OpenCC"><span class="nav-number">3.2.</span> <span class="nav-text">開放中文轉換 OpenCC</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%A6%E4%BD%9C"><span class="nav-number">4.</span> <span class="nav-text">實作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%B0%E9%9B%A3"><span class="nav-number">4.1.</span> <span class="nav-text">困難</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BF%83%E5%BE%97"><span class="nav-number">5.</span> <span class="nav-text">心得</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%96%9C%E6%AD%A1%E7%9A%84%E6%94%AF%E8%AA%9E"><span class="nav-number">5.1.</span> <span class="nav-text">喜歡的支語</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A8%8E%E5%8E%AD%E7%9A%84%E6%94%AF%E8%AA%9E"><span class="nav-number">5.2.</span> <span class="nav-text">討厭的支語</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99"><span class="nav-number">6.</span> <span class="nav-text">參考資料</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B0%A1%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">簡介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B5%81%E7%A8%8B"><span class="nav-number">2.</span> <span class="nav-text">流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B3%87%E6%96%99%E5%BA%AB"><span class="nav-number">3.</span> <span class="nav-text">資料庫</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%90%8C%E5%85%B8"><span class="nav-number">3.1.</span> <span class="nav-text">萌典</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%96%8B%E6%94%BE%E4%B8%AD%E6%96%87%E8%BD%89%E6%8F%9B-OpenCC"><span class="nav-number">3.2.</span> <span class="nav-text">開放中文轉換 OpenCC</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%A6%E4%BD%9C"><span class="nav-number">4.</span> <span class="nav-text">實作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%B0%E9%9B%A3"><span class="nav-number">4.1.</span> <span class="nav-text">困難</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BF%83%E5%BE%97"><span class="nav-number">5.</span> <span class="nav-text">心得</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%96%9C%E6%AD%A1%E7%9A%84%E6%94%AF%E8%AA%9E"><span class="nav-number">5.1.</span> <span class="nav-text">喜歡的支語</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A8%8E%E5%8E%AD%E7%9A%84%E6%94%AF%E8%AA%9E"><span class="nav-number">5.2.</span> <span class="nav-text">討厭的支語</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B8%BD%E7%B5%90"><span class="nav-number">6.</span> <span class="nav-text">總結</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99"><span class="nav-number">7.</span> <span class="nav-text">參考資料</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -299,7 +299,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>626</span>
+      <span>710</span>
     </span>
 </div>
 
@@ -310,7 +310,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p><img data-src="/img/Other/foreign-terms-police.webp"></p>
+        <p><img data-src="/img/other/foreign-terms-police.webp"></p>
 <h2 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h2><p>PTT 上常有支語警察</p>
 <p>也常發現 google 翻譯的中文常常會<span class="exturl" data-url="aHR0cHM6Ly93d3cuc2V0bi5jb20vTmV3cy5hc3B4P05ld3NJRD03NDY3OTM=">翻譯成中國慣用語<i class="fa fa-external-link-alt"></i></span>(可以參考 <span class="exturl" data-url="aHR0cHM6Ly9pc2dvb2dsZWZpeGVkLnR3Lw==">Google 翻譯修好了沒？<i class="fa fa-external-link-alt"></i></span>)</p>
 <p>所以就寫了一個支語警察的網站：<a href="/foreign-terms-police">支語警察</a></p>
@@ -363,6 +363,7 @@
 </ol>
 </li>
 </ol>
+<h2 id="總結"><a href="#總結" class="headerlink" title="總結"></a>總結</h2><p>也有很多從日本傳入的詞彙，明治維新後有一部份，現在也有，如課金、同接等…<br>沒有必要過度敏感，但也不要過度放縱。</p>
 <h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly93d3cubW9lZGljdC50dy8=">萌典<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0JZVm9pZC9PcGVuQ0M=">OpenCC<i class="fa fa-external-link-alt"></i></span></li>
@@ -373,6 +374,7 @@
 <li><span class="exturl" data-url="aHR0cHM6Ly9mb3J1bS5nYW1lci5jb20udHcvQ28ucGhwP2Jzbj02MDA3NiZzbj03MTk3ODc5NA==">情報】支語警察系列支援包（圖多注意<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 </li>
+<li><span class="exturl" data-url="aHR0cHM6Ly92b2N1cy5jYy9AbG92ZV9hbmRfcGVhY2UvNWYxMTZiOThmZDg5NzgwMDAxN2Q2ODgz">愛台灣卻為了中國用語吵架：支語警察，與討厭支語警察的人們<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 
     </div>
@@ -459,7 +461,7 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">468k</span>
+    <span title="總字數">472k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動
