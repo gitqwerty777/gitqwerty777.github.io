@@ -248,7 +248,7 @@ body h2 {
 body h3 {
   counter-reset: h4counter;
 }
-body h2::before {
+.post-body h2::before {
   counter-increment: h2counter;
   content: "# " counter(h2counter) ". ";
 }
