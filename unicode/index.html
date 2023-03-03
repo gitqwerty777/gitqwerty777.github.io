@@ -32,7 +32,9 @@
 <meta property="og:description" content="異體字異體字為意思一樣、但寫法不同的字集合。因為漢字在多個國家使用，每個國家的正式寫法不同，且在歷史中會出現字形改變的情形，自然字形也不同。">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="http://founder.acgvlyric.org/iu/lib/exe/fetch.php/%E8%AA%AA%E6%96%87:cing_unified.png?cache=">
-<meta property="og:image" content="https://mojikiban.ipa.go.jp/contents/2013/11/IVS_fig1.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/font/IVS_fig1.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/font/ivs2.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/font/chuin.jpg">
 <meta property="article:published_time" content="2020-10-29T07:00:00.000Z">
 <meta property="article:modified_time" content="2020-10-29T07:00:00.000Z">
 <meta property="article:author" content="qwerty">
@@ -212,7 +214,7 @@
           <span class="exturl" data-url="aHR0cHM6Ly9xd2VydHk3NzcubWU=" title="https:&#x2F;&#x2F;qwerty777.me">My Main Page</span>
         </li>
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cDovL3F3ZXJ0eTc3Ny5tZS9saWZlLw==" title="http:&#x2F;&#x2F;qwerty777.me&#x2F;life&#x2F;">My Second Blog -- Wysiwyg</span>
+          <span class="exturl" data-url="aHR0cHM6Ly9saWZlLnF3ZXJ0eTc3Ny5tZQ==" title="https:&#x2F;&#x2F;life.qwerty777.me">My Second Blog -- Wysiwyg</span>
         </li>
     </ul>
   </div>
@@ -298,7 +300,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>2.5k</span>
+      <span>3k</span>
     </span>
 </div>
 
@@ -311,10 +313,17 @@
     <div class="post-body" itemprop="articleBody">
         <h2 id="異體字"><a href="#異體字" class="headerlink" title="異體字"></a>異體字</h2><p>異體字為意思一樣、但寫法不同的字集合。<br>因為漢字在多個國家使用，每個國家的正式寫法不同，且在歷史中會出現字形改變的情形，自然字形也不同。</p>
 <span id="more"></span>
-<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>Unicode只是編碼標準，不是字形標準。因此其官方說法是：<strong>它只對字（Character）編碼，而非字形（Glyph，每個字的具體形狀、寫法）</strong>。</p>
+<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>Unicode只是編碼標準，不是字形標準。因此其原則為：<strong>它只對字（Character）編碼，而非字形（Glyph，每個字的具體形狀、寫法）</strong>，稱為表意文字認同原則。</p>
 <p>陸、港、臺、韓的「港」字右下從「巳」，日本的「港」字右下從「己」；港、臺、韓、日的「角」字中豎不穿頭，大陸的「角」字中豎穿頭；港、臺「起」字從「巳」，陸、日、韓從「己」……這些異形同字，Unicode都不分別編碼。例如「港」就是「6E2F」，不論從「巳」還是從「己」。</p>
 <p>爲了相容不同地區的編碼， Unicode 又有「<strong>字源分離原則</strong>」。日本 JIS 編碼同時收錄了「剣」、「劍」二形， Unicode 爲了與之兼容，即使它們是同一個字， Unicode 也分別給予編碼：「剣」是「5263」，「劍」是「528D」。</p>
-<p><strong>結果，有些異形同字，被編進同一碼位，有些則區分作兩碼，造成了 Unicode 內的自相矛盾。</strong></p>
+<p>而這兩個原則</p>
+<ol>
+<li>表意文字認同原則(Han Unification Rule)</li>
+<li>字源分離原則(Source Separation Rule)</li>
+</ol>
+<p>是互相矛盾的</p>
+<p>結果就是有些異體字被編進同一碼位，有些則區分作兩碼</p>
+<p>當然原則一是比較合理的，因為畢竟是同一個字，只是寫法稍有不同，原則二只是純粹的歷史包袱。</p>
 <h2 id="歷史"><a href="#歷史" class="headerlink" title="歷史"></a>歷史</h2><p>國際標準組織於 1993 年 5 月出版了「通用碼架構及基本多語文字面」（UCSArchitecture and Basic Multilingual Plane）草案，該草案將此標準定名為 Universal MultipleOctet Coded Character Set（通用多八位組編碼字符集），並說明其編碼架構為 4 個位元組（4 Bytes），共組成 128 個群（Group），每一個群有 256 個字面（Plane)，每一個字面有256×256 個編碼空間，其中第 32 群的第 32 個字面為基本多語文字面（Basic MultilingualPlane；簡稱 BMP）。到了 1993 年 ISO 10646-1 正式版本，此標準定名為 Universal Multiple-Octet Coded Character Set（廣用多八位元組編碼字元集；簡稱 UCS），BMP 則定義在第 0 群第 0 個字面。在使用上，假如需用的字集都在 BMP 中，則只要使用 2 個八位元組的編碼架構即可，否則就必須使用 4 個八位元組的編碼架構；而且這兩種編碼架構不能混合使用，不是使用 2 個八位元組，就是使用 4 個八位元組的固定長度編碼架構，其用意就是要避免 ISO 2022 不定長度的缺點。</p>
 <p>參與制定 ISO 10646 的代表莫不儘量爭取把自己國家使用的字集編入 BMP，目的就是希望能利用 BMP 只用 2 個八位元組的優勢，取得比 4 個八位元組更高的資訊處理效率。BMP 的爭取如此重要，然其編碼位置卻有限，因此如何充份利用這些編碼空間處理更多常用字符集，就成為標準研訂時的一個重要考慮因素。過去在 BMP 的設計中，除編入西方拼音文字及符號外，在漢字方面只蒐集日本、南韓及中國三個地區使用的漢字字集，並沒有考慮到我國的字集，我國遂積極組團以民間團體－臺北市電腦商業同業公會（TCA）的名義，參加 ISO 10646 的制定，以爭取將我國使用的正體字編入 BMP 中。</p>
 <p>ISO 10646 編碼基本原則為「一字一碼」，我國及中國的代表因此就共同提出了 HCS（Han Character Set） 的構想，這個構想同時獲得美國及其它國家代表的支持，進而一步步發展至今。1993 年公布的 ISO 10646-1 之 BMP 中，已經將臺灣、大陸、日本和南韓所使用之漢字整合成獨立的<strong>「中日韓認同表意文字區（ CJK Unified Ideographs）」</strong>，使<br>得亞洲幾個主要使用漢字的國家，有圓滿的解決方案。</p>
@@ -328,9 +337,31 @@
 <li>靑(9751)、青(9752)</li>
 <li><img data-src="http://founder.acgvlyric.org/iu/lib/exe/fetch.php/%E8%AA%AA%E6%96%87:cing_unified.png?cache="></li>
 </ul>
-<h2 id="範例：相同Unicode的異體字"><a href="#範例：相同Unicode的異體字" class="headerlink" title="範例：相同Unicode的異體字"></a>範例：相同Unicode的異體字</h2><p>早期Unicode碰到在有關國家或地區既有碼表已分別編碼的字，像「値」與「值」，就會放棄認同原則，改以原字集分離原則來把兩個字形分別編碼。<br>但若當時有關國家或地區沒有把異體字分別編碼，像日本的JIS90只收錄了一個「葛」字，Unicode就不會分別編碼。如「直、殖、植」等字皆沒有像「値」與「值」般分別編碼。</p>
-<p><img data-src="https://mojikiban.ipa.go.jp/contents/2013/11/IVS_fig1.png"></p>
+<h2 id="範例：相同Unicode的異體字"><a href="#範例：相同Unicode的異體字" class="headerlink" title="範例：相同Unicode的異體字"></a>範例：相同Unicode的異體字</h2><p>早期Unicode碰到在有關國家或地區既有碼表已分別編碼的字，像「値」與「值」，就會放棄原則一，改以原則二來把兩個字形分別編碼。<br>但若當時有關國家或地區沒有把異體字分別編碼，像日本的JIS90只收錄了一個「葛」字，Unicode就不會分別編碼。如「直、殖、植」等字皆沒有像「値」與「值」般分別編碼。</p>
+<p>但是實際上兩個異體字在日本都有被使用，所以需要額外處理這些Unicode也沒有解決的例外，方法為<strong>異體字選擇器</strong>。</p>
+<p><img data-src="/../../img/font/IVS_fig1.png"></p>
 <h3 id="異體字選擇器"><a href="#異體字選擇器" class="headerlink" title="異體字選擇器"></a>異體字選擇器</h3><p>異體字選擇器是一種在Unicode上，用來準確、具體地指定選擇哪個文字字形的程序。有標準化的異體字選擇器（Standardized Variation Sequence，簡稱「SVS」），以及漢字異體字選擇器（Ideographic Variation Sequence，簡稱「IVS」）。</p>
+<p><img data-src="/../../img/font/ivs2.png"></p>
+<p>Standardized Variants錄入的字集和數量</p>
+<ul>
+<li>數學符號表：25</li>
+<li>緬甸的緬文：27個</li>
+<li>八思巴字母：6個</li>
+<li>摩尼字母：5個</li>
+<li>傳統蒙古文：60個</li>
+<li>中日韓統一表意文字：1,002個</li>
+<li>繪文字：702個（文本類型和圖形文字的類型351個）</li>
+<li>IVD（2017-12-12版）錄入的字集和數量<ul>
+<li>CID之Adobe-Japan1集：14,683個</li>
+<li>通用電子信息交換環境整頓計劃之Hanyo-Denshi集：13,045個</li>
+<li>文字信息基礎整備事業之Moji_Joho集：11,384個</li>
+<li>澳門特別行政區之MSARG集：21個</li>
+<li>韓國之KRName集：36個</li>
+</ul>
+</li>
+</ul>
+<p>這個功能也被開發了新用法，像是<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0J1dFRhaXdhbi9icG1mdnM=">標注注音<i class="fa fa-external-link-alt"></i></span></p>
+<p><img data-src="/../../img/font/chuin.jpg"></p>
 <h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly9yaC5uYWVyLmVkdS50dy9jZ2ktYmluL2dzMzIvZ3N3ZWIuY2dpP289ZGlycHJvamVjdCZzPWlkPSUyMlJQMDAwMDAwMDAwNjM3JTIyLiZzZWFyY2htb2RlPWJhc2lj">李鵑娟-異體字字典港澳陸規範字收錄研究<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly96aC53aWtpcGVkaWEub3JnL3dpa2kvJUU3JTk1JUIwJUU5JUFCJTk0JUU1JUFEJTk3JUU5JTgxJUI4JUU2JTkzJTg3JUU1JTk5JUE4">異體字選擇器<i class="fa fa-external-link-alt"></i></span></li>
@@ -338,6 +369,7 @@
 <li><span class="exturl" data-url="aHR0cHM6Ly91bmljb2RlLm9yZy9pdmQvZGF0YS8yMDE3LTEyLTEyL0lWRF9TZXF1ZW5jZXMudHh0">IVS<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1jTnYyQnJtUDlTWQ==">顯示表意文字字形變化序列示範<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly9tb2ppa2liYW4uaXBhLmdvLmpwLzEyOTIuaHRtbA==">IVD&#x2F;IVSとは<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3F1ZXN0aW9uLzQ3MjY1Nzg4MA==">Unicode 中的多個 IVS 對應同一字形時，應該選擇哪一個？<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 
     </div>
@@ -410,7 +442,7 @@
 
 <div class="copyright">
   &copy; 2014 – 
-  <span itemprop="copyrightYear">2022</span>
+  <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="fab fa-free-code-camp"></i>
   </span>
@@ -422,7 +454,7 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">472k</span>
+    <span title="總字數">473k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動
