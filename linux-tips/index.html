@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.2.0">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.webp">
@@ -24,12 +24,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"gitqwerty777.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.12.1","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"show_result":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInDown","sidebar":"fadeInRight"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/config.min.js"></script>
 
-    <meta name="description" content="雖然說是 Linux，但作業系統是以 Ubuntu 為準   VMware錯誤Error while powering on: internal error當VMware開啟的時候不正常關閉會出現的錯誤 法一、刪除記憶體檔案法二(推薦)、開啓VMware服務 有時只有方法一有效，但方法二比較快">
+    <meta name="description" content="雖然說是 Linux，但作業系統是以 Ubuntu 為準  VMware錯誤 Error while powering on: internal error 當VMware開啟的時候不正常關閉會出現的錯誤 法一、刪除記憶體檔案 法二(推薦)、開啓VMware服務 有時只有方法一有效，但方法二比較快">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux大補帖">
 <meta property="og:url" content="http://gitqwerty777.github.io/linux-tips/index.html">
 <meta property="og:site_name" content="QWERTY">
-<meta property="og:description" content="雖然說是 Linux，但作業系統是以 Ubuntu 為準   VMware錯誤Error while powering on: internal error當VMware開啟的時候不正常關閉會出現的錯誤 法一、刪除記憶體檔案法二(推薦)、開啓VMware服務 有時只有方法一有效，但方法二比較快">
+<meta property="og:description" content="雖然說是 Linux，但作業系統是以 Ubuntu 為準  VMware錯誤 Error while powering on: internal error 當VMware開啟的時候不正常關閉會出現的錯誤 法一、刪除記憶體檔案 法二(推薦)、開啓VMware服務 有時只有方法一有效，但方法二比較快">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/jeremyFreeAgent/oh-my-zsh-powerline-theme/master/preview.png">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/other/git1.webp">
@@ -162,7 +162,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#VMware%E9%8C%AF%E8%AA%A4"><span class="nav-number">1.</span> <span class="nav-text">VMware錯誤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Error-while-powering-on-internal-error"><span class="nav-number">1.1.</span> <span class="nav-text">Error while powering on: internal error</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Error-while-opening-the-virtual-machine-Taking-ownership-of-this-virtual-machine-failed"><span class="nav-number">1.2.</span> <span class="nav-text">Error while opening the virtual machine: Taking ownership of this virtual machine failed</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%A3%E7%B7%9A%E5%95%8F%E9%A1%8C"><span class="nav-number">1.3.</span> <span class="nav-text">連線問題</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%8D%E6%96%B0%E5%95%9F%E5%8B%95%E6%9C%8D%E5%8B%99-daemon"><span class="nav-number">2.</span> <span class="nav-text">重新啟動服務(daemon)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A8tty%E4%BB%8B%E9%9D%A2%E4%B8%8B%E9%87%8D%E6%96%B0%E9%96%8B%E5%95%9F%E5%9C%96%E5%BD%A2%E4%BB%8B%E9%9D%A2"><span class="nav-number">3.</span> <span class="nav-text">在tty介面下重新開啟圖形介面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A8%E9%81%A0%E7%AB%AF%E9%80%A3%E7%B7%9A%E4%B8%AD%E9%A1%AF%E7%A4%BA%E5%9C%96%E5%BD%A2%E5%8C%96%E4%BB%8B%E9%9D%A2"><span class="nav-number">4.</span> <span class="nav-text">在遠端連線中顯示圖形化介面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%81%BF%E5%85%8D%E8%AA%A4%E5%88%AA%E6%AA%94%E6%A1%88"><span class="nav-number">5.</span> <span class="nav-text">避免誤刪檔案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tar-%E5%A3%93%E7%B8%AE"><span class="nav-number">6.</span> <span class="nav-text">tar 壓縮</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B8%85%E9%99%A4%E5%9E%83%E5%9C%BE%E7%AD%92"><span class="nav-number">7.</span> <span class="nav-text">清除垃圾筒</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%90%9C%E5%B0%8B%E6%AA%94%E6%A1%88"><span class="nav-number">8.</span> <span class="nav-text">搜尋檔案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8zsh%E5%8F%96%E4%BB%A3bash"><span class="nav-number">9.</span> <span class="nav-text">使用zsh取代bash</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%B4%E6%94%B9%E4%B8%BB%E9%A1%8C"><span class="nav-number">9.1.</span> <span class="nav-text">更改主題</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%95%9F%E7%94%A8plugin"><span class="nav-number">9.2.</span> <span class="nav-text">啟用plugin</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8D%E7%B6%93%E5%AF%86%E7%A2%BC%E7%99%BB%E5%85%A5%E9%81%A0%E7%AB%AF%E6%A9%9F%E5%99%A8-ssh"><span class="nav-number">10.</span> <span class="nav-text">不經密碼登入遠端機器(ssh)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A6%96%E7%AA%97%E7%AE%A1%E7%90%86%E8%BB%9F%E9%AB%94"><span class="nav-number">11.</span> <span class="nav-text">視窗管理軟體</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%87%E6%96%B7ssh%E9%80%A3%E7%B7%9A"><span class="nav-number">12.</span> <span class="nav-text">切斷ssh連線</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install-package-without-Root-access-sudo"><span class="nav-number">13.</span> <span class="nav-text">Install package without Root access(sudo)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%87%E6%8F%9B%E4%BD%BF%E7%94%A8%E8%80%85"><span class="nav-number">14.</span> <span class="nav-text">切換使用者</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%90%9C%E5%B0%8B%E6%AA%94%E6%A1%88%E5%85%A7%E5%AE%B9-grep"><span class="nav-number">15.</span> <span class="nav-text">搜尋檔案內容: grep</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%90%9C%E5%B0%8B%E6%AA%94%E6%A1%88%E5%90%8D%E7%A8%B1-find"><span class="nav-number">16.</span> <span class="nav-text">搜尋檔案名稱: find</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%96%E6%B6%88%E9%8E%96%E5%AE%9A%E7%95%AB%E9%9D%A2"><span class="nav-number">17.</span> <span class="nav-text">取消鎖定畫面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BF%AB%E9%80%9F%E5%88%87%E6%8F%9B%E7%9B%AE%E9%8C%84"><span class="nav-number">18.</span> <span class="nav-text">快速切換目錄</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BE%9E-command-line-%E9%96%8B%E5%95%9F%E6%AA%94%E6%A1%88"><span class="nav-number">19.</span> <span class="nav-text">從 command line 開啟檔案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%AA%E9%99%A4%E7%89%B9%E5%AE%9A%E6%AA%94%E5%90%8D%E4%BB%A5%E5%A4%96%E7%9A%84%E6%AA%94%E6%A1%88"><span class="nav-number">20.</span> <span class="nav-text">刪除特定檔名以外的檔案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%93%B4%E5%85%85%E7%A3%81%E5%8D%80"><span class="nav-number">21.</span> <span class="nav-text">擴充磁區</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#autojump"><span class="nav-number">22.</span> <span class="nav-text">autojump</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%A1%E6%99%82"><span class="nav-number">23.</span> <span class="nav-text">校時</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%82%99%E4%BB%BD"><span class="nav-number">24.</span> <span class="nav-text">備份</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CGroup"><span class="nav-number">25.</span> <span class="nav-text">CGroup</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ulimit"><span class="nav-number">26.</span> <span class="nav-text">ulimit</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#x2F-usr-%E5%92%8C-x2F-usr-x2F-local-%E7%9A%84%E5%B7%AE%E5%88%A5"><span class="nav-number">27.</span> <span class="nav-text">&#x2F;usr 和 &#x2F;usr&#x2F;local 的差別</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%AF%E5%8D%A1%E7%9B%B8%E9%97%9C"><span class="nav-number">28.</span> <span class="nav-text">顯卡相關</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%9Dnvidia%E9%A1%AF%E5%8D%A1%E9%A9%85%E5%8B%95"><span class="nav-number">29.</span> <span class="nav-text">安裝nvidia顯卡驅動</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%9DCUDNN"><span class="nav-number">29.1.</span> <span class="nav-text">安裝CUDNN</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AA%A2%E6%9F%A5cudnn%E7%89%88%E6%9C%AC"><span class="nav-number">29.2.</span> <span class="nav-text">檢查cudnn版本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AA%A2%E6%9F%A5cuda%E7%89%88%E6%9C%AC"><span class="nav-number">29.3.</span> <span class="nav-text">檢查cuda版本</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#mv-x2F-cp"><span class="nav-number">30.</span> <span class="nav-text">mv&#x2F;cp</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-number">31.</span> <span class="nav-text">其他</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#VMware%E9%8C%AF%E8%AA%A4"><span class="nav-number">1.</span> <span class="nav-text">VMware錯誤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Error-while-powering-on-internal-error"><span class="nav-number">1.1.</span> <span class="nav-text">Error while powering on: internal error</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Error-while-opening-the-virtual-machine-Taking-ownership-of-this-virtual-machine-failed"><span class="nav-number">1.2.</span> <span class="nav-text">Error while opening the virtual machine: Taking ownership of this virtual machine failed</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%A3%E7%B7%9A%E5%95%8F%E9%A1%8C"><span class="nav-number">1.3.</span> <span class="nav-text">連線問題</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%8D%E6%96%B0%E5%95%9F%E5%8B%95%E6%9C%8D%E5%8B%99-daemon"><span class="nav-number">2.</span> <span class="nav-text">重新啟動服務(daemon)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A8tty%E4%BB%8B%E9%9D%A2%E4%B8%8B%E9%87%8D%E6%96%B0%E9%96%8B%E5%95%9F%E5%9C%96%E5%BD%A2%E4%BB%8B%E9%9D%A2"><span class="nav-number">3.</span> <span class="nav-text">在tty介面下重新開啟圖形介面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A8%E9%81%A0%E7%AB%AF%E9%80%A3%E7%B7%9A%E4%B8%AD%E9%A1%AF%E7%A4%BA%E5%9C%96%E5%BD%A2%E5%8C%96%E4%BB%8B%E9%9D%A2"><span class="nav-number">4.</span> <span class="nav-text">在遠端連線中顯示圖形化介面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%81%BF%E5%85%8D%E8%AA%A4%E5%88%AA%E6%AA%94%E6%A1%88"><span class="nav-number">5.</span> <span class="nav-text">避免誤刪檔案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tar-%E5%A3%93%E7%B8%AE"><span class="nav-number">6.</span> <span class="nav-text">tar 壓縮</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B8%85%E9%99%A4%E5%9E%83%E5%9C%BE%E7%AD%92"><span class="nav-number">7.</span> <span class="nav-text">清除垃圾筒</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%90%9C%E5%B0%8B%E6%AA%94%E6%A1%88"><span class="nav-number">8.</span> <span class="nav-text">搜尋檔案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8zsh%E5%8F%96%E4%BB%A3bash"><span class="nav-number">9.</span> <span class="nav-text">使用zsh取代bash</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%B4%E6%94%B9%E4%B8%BB%E9%A1%8C"><span class="nav-number">9.1.</span> <span class="nav-text">更改主題</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%95%9F%E7%94%A8plugin"><span class="nav-number">9.2.</span> <span class="nav-text">啟用plugin</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8D%E7%B6%93%E5%AF%86%E7%A2%BC%E7%99%BB%E5%85%A5%E9%81%A0%E7%AB%AF%E6%A9%9F%E5%99%A8-ssh"><span class="nav-number">10.</span> <span class="nav-text">不經密碼登入遠端機器(ssh)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A6%96%E7%AA%97%E7%AE%A1%E7%90%86%E8%BB%9F%E9%AB%94"><span class="nav-number">11.</span> <span class="nav-text">視窗管理軟體</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%87%E6%96%B7ssh%E9%80%A3%E7%B7%9A"><span class="nav-number">12.</span> <span class="nav-text">切斷ssh連線</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install-package-without-Root-access-sudo"><span class="nav-number">13.</span> <span class="nav-text">Install package without Root access(sudo)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%87%E6%8F%9B%E4%BD%BF%E7%94%A8%E8%80%85"><span class="nav-number">14.</span> <span class="nav-text">切換使用者</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%90%9C%E5%B0%8B%E6%AA%94%E6%A1%88%E5%85%A7%E5%AE%B9-grep"><span class="nav-number">15.</span> <span class="nav-text">搜尋檔案內容: grep</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%90%9C%E5%B0%8B%E6%AA%94%E6%A1%88%E5%90%8D%E7%A8%B1-find"><span class="nav-number">16.</span> <span class="nav-text">搜尋檔案名稱: find</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%96%E6%B6%88%E9%8E%96%E5%AE%9A%E7%95%AB%E9%9D%A2"><span class="nav-number">17.</span> <span class="nav-text">取消鎖定畫面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BF%AB%E9%80%9F%E5%88%87%E6%8F%9B%E7%9B%AE%E9%8C%84"><span class="nav-number">18.</span> <span class="nav-text">快速切換目錄</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BE%9E-command-line-%E9%96%8B%E5%95%9F%E6%AA%94%E6%A1%88"><span class="nav-number">19.</span> <span class="nav-text">從 command line 開啟檔案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%AA%E9%99%A4%E7%89%B9%E5%AE%9A%E6%AA%94%E5%90%8D%E4%BB%A5%E5%A4%96%E7%9A%84%E6%AA%94%E6%A1%88"><span class="nav-number">20.</span> <span class="nav-text">刪除特定檔名以外的檔案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%93%B4%E5%85%85%E7%A3%81%E5%8D%80"><span class="nav-number">21.</span> <span class="nav-text">擴充磁區</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#autojump"><span class="nav-number">22.</span> <span class="nav-text">autojump</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%A1%E6%99%82"><span class="nav-number">23.</span> <span class="nav-text">校時</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%82%99%E4%BB%BD"><span class="nav-number">24.</span> <span class="nav-text">備份</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CGroup"><span class="nav-number">25.</span> <span class="nav-text">CGroup</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ulimit"><span class="nav-number">26.</span> <span class="nav-text">ulimit</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#usr-%E5%92%8C-usr-local-%E7%9A%84%E5%B7%AE%E5%88%A5"><span class="nav-number">27.</span> <span class="nav-text">&#x2F;usr 和 &#x2F;usr&#x2F;local 的差別</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%AF%E5%8D%A1%E7%9B%B8%E9%97%9C"><span class="nav-number">28.</span> <span class="nav-text">顯卡相關</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%9Dnvidia%E9%A1%AF%E5%8D%A1%E9%A9%85%E5%8B%95"><span class="nav-number">29.</span> <span class="nav-text">安裝nvidia顯卡驅動</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%9DCUDNN"><span class="nav-number">29.1.</span> <span class="nav-text">安裝CUDNN</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AA%A2%E6%9F%A5cudnn%E7%89%88%E6%9C%AC"><span class="nav-number">29.2.</span> <span class="nav-text">檢查cudnn版本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AA%A2%E6%9F%A5cuda%E7%89%88%E6%9C%AC"><span class="nav-number">29.3.</span> <span class="nav-text">檢查cuda版本</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#mv-cp"><span class="nav-number">30.</span> <span class="nav-text">mv&#x2F;cp</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-number">31.</span> <span class="nav-text">其他</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -301,7 +301,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>8.3k</span>
+      <span>8.1k</span>
     </span>
 </div>
 
@@ -314,39 +314,43 @@
     <div class="post-body" itemprop="articleBody">
         <p>雖然說是 Linux，但作業系統是以 Ubuntu 為準</p>
 <!-- QUICK: 整理 -->
-
-<h2 id="VMware錯誤"><a href="#VMware錯誤" class="headerlink" title="VMware錯誤"></a>VMware錯誤</h2><h3 id="Error-while-powering-on-internal-error"><a href="#Error-while-powering-on-internal-error" class="headerlink" title="Error while powering on: internal error"></a>Error while powering on: internal error</h3><p>當VMware開啟的時候不正常關閉會出現的錯誤</p>
-<p>法一、<span class="exturl" data-url="aHR0cDovL215MDFpbmZvLmJsb2dzcG90LnR3LzIwMTQvMDUvdm13YXJlLXBsYXllci1lcnJvci13aGlsZS1wb3dlcmluZy5odG1s">刪除記憶體檔案<i class="fa fa-external-link-alt"></i></span><br>法二(推薦)、<span class="exturl" data-url="aHR0cDovL3poaWRhby5iYWlkdS5jb20vcXVlc3Rpb24vMTc0MDU3NDA0Lmh0bWw=">開啓VMware服務<i class="fa fa-external-link-alt"></i></span></p>
+<h2 id="VMware錯誤">VMware錯誤</h2>
+<h3 id="Error-while-powering-on-internal-error">Error while powering on: internal error</h3>
+<p>當VMware開啟的時候不正常關閉會出現的錯誤</p>
+<p>法一、<span class="exturl" data-url="aHR0cDovL215MDFpbmZvLmJsb2dzcG90LnR3LzIwMTQvMDUvdm13YXJlLXBsYXllci1lcnJvci13aGlsZS1wb3dlcmluZy5odG1s">刪除記憶體檔案<i class="fa fa-external-link-alt"></i></span><br />
+法二(推薦)、<span class="exturl" data-url="aHR0cDovL3poaWRhby5iYWlkdS5jb20vcXVlc3Rpb24vMTc0MDU3NDA0Lmh0bWw=">開啓VMware服務<i class="fa fa-external-link-alt"></i></span></p>
 <p>有時只有方法一有效，但方法二比較快</p>
 <span id="more"></span>
-
-<h3 id="Error-while-opening-the-virtual-machine-Taking-ownership-of-this-virtual-machine-failed"><a href="#Error-while-opening-the-virtual-machine-Taking-ownership-of-this-virtual-machine-failed" class="headerlink" title="Error while opening the virtual machine: Taking ownership of this virtual machine failed"></a>Error while opening the virtual machine: Taking ownership of this virtual machine failed</h3><p><span class="exturl" data-url="aHR0cHM6Ly9jb21tdW5pdGllcy52bXdhcmUuY29tL3RocmVhZC8xODEwMTQ=">刪除lck檔<i class="fa fa-external-link-alt"></i></span></p>
-<h3 id="連線問題"><a href="#連線問題" class="headerlink" title="連線問題"></a>連線問題</h3><ul>
+<h3 id="Error-while-opening-the-virtual-machine-Taking-ownership-of-this-virtual-machine-failed">Error while opening the virtual machine: Taking ownership of this virtual machine failed</h3>
+<p><span class="exturl" data-url="aHR0cHM6Ly9jb21tdW5pdGllcy52bXdhcmUuY29tL3RocmVhZC8xODEwMTQ=">刪除lck檔<i class="fa fa-external-link-alt"></i></span></p>
+<h3 id="連線問題">連線問題</h3>
+<ul>
 <li><span class="exturl" data-url="aHR0cDovL2Jsb2cueHVpdGUubmV0L3I0MTMzMTgvanVzdGZvcmZ1bi8zNTEzODA1OS0lNUIlRTUlODglODYlRTQlQkElQUIlNUQlRTglQTclQTMlRTYlQjElQkFWTVdhcmUlRTQlQjglOEQlRTglODMlQkQlRTQlQjglOEElRTclQjYlQjI=">不能上網<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cDovL3N1cGVydXNlci5jb20vcXVlc3Rpb25zLzMyODgwMC9taXNzaW5nLWV0aDAtZXRoZXJuZXQtaW50ZXJmYWNlLWluLXVidW50dS1jYW50LWNvbm5lY3QtdG8tcm91dGVy">eth0在ifconfig中消失<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
-<h2 id="重新啟動服務-daemon"><a href="#重新啟動服務-daemon" class="headerlink" title="重新啟動服務(daemon)"></a>重新啟動服務(daemon)</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">舊版本linux</span></span><br><span class="line">/etc/init.d/SERVICE_NAME restart</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">新版本</span></span><br><span class="line">sudo service [SERVICE_NAME] restart</span><br></pre></td></tr></table></figure>
-
-<h2 id="在tty介面下重新開啟圖形介面"><a href="#在tty介面下重新開啟圖形介面" class="headerlink" title="在tty介面下重新開啟圖形介面"></a>在tty介面下重新開啟圖形介面</h2><p>開啟tty1: <code>Ctrl-Alt-F1</code></p>
+<h2 id="重新啟動服務-daemon">重新啟動服務(daemon)</h2>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">舊版本linux</span></span><br><span class="line">/etc/init.d/SERVICE_NAME restart</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">新版本</span></span><br><span class="line">sudo service [SERVICE_NAME] restart</span><br></pre></td></tr></table></figure>
+<h2 id="在tty介面下重新開啟圖形介面">在tty介面下重新開啟圖形介面</h2>
+<p>開啟tty1: <code>Ctrl-Alt-F1</code></p>
 <p>重啟gnome</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo service gdm restart</span><br></pre></td></tr></table></figure>
-
-<p>此時就會重新回到gnome登入畫面<br>在gnome沒有反應時十分有效</p>
+<p>此時就會重新回到gnome登入畫面<br />
+在gnome沒有反應時十分有效</p>
 <p>此外，圖形介面預設為tty7: <code>Ctrl-Alt-F7</code></p>
-<h2 id="在遠端連線中顯示圖形化介面"><a href="#在遠端連線中顯示圖形化介面" class="headerlink" title="在遠端連線中顯示圖形化介面"></a>在遠端連線中顯示圖形化介面</h2><p>本機</p>
+<h2 id="在遠端連線中顯示圖形化介面">在遠端連線中顯示圖形化介面</h2>
+<p>本機</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">export DISPLAY=:0.0</span><br><span class="line">setenv DISPLAY :0.0</span><br><span class="line">ssh -X hosturl</span><br></pre></td></tr></table></figure>
-
 <p>遠端機器</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export DISPLAY=localhost:11.0</span><br><span class="line">setenv DISPLAY localhost:11.0</span><br></pre></td></tr></table></figure>
-
-<h2 id="避免誤刪檔案"><a href="#避免誤刪檔案" class="headerlink" title="避免誤刪檔案"></a>避免誤刪檔案</h2><p>使用<span class="exturl" data-url="aHR0cDovL3NlcnZlcmZhdWx0LmNvbS9xdWVzdGlvbnMvMzM3MDgyL2hvdy1kby1pLXByZXZlbnQtYWNjaWRlbnRhbC1ybS1yZg==">safe-rm<i class="fa fa-external-link-alt"></i></span>套件，可防止意外(或惡意)刪除系統重要資料</p>
-<h2 id="tar-壓縮"><a href="#tar-壓縮" class="headerlink" title="tar 壓縮"></a>tar 壓縮</h2><ul>
+<h2 id="避免誤刪檔案">避免誤刪檔案</h2>
+<p>使用<span class="exturl" data-url="aHR0cDovL3NlcnZlcmZhdWx0LmNvbS9xdWVzdGlvbnMvMzM3MDgyL2hvdy1kby1pLXByZXZlbnQtYWNjaWRlbnRhbC1ybS1yZg==">safe-rm<i class="fa fa-external-link-alt"></i></span>套件，可防止意外(或惡意)刪除系統重要資料</p>
+<h2 id="tar-壓縮">tar 壓縮</h2>
+<ul>
 <li><code>*.gz</code>      gzip 程式壓縮的檔案</li>
 <li><code>*.tar</code>     tar 程式打包的資料，並沒有壓縮過</li>
 <li><code>*.tar.gz</code>  tar 程式打包的檔案，其中並且經過 gzip 的壓縮</li>
 </ul>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tar [-zxcvfpP] filename</span><br><span class="line">tar -N &#x27;yyyy/mm/dd&#x27; [/path] -zcvf [target.tar.gz] [source]</span><br></pre></td></tr></table></figure>
-
 <table>
 <thead>
 <tr>
@@ -354,7 +358,8 @@
 <th>用途</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>-c</td>
 <td>執行壓縮</td>
 </tr>
@@ -364,7 +369,7 @@
 </tr>
 <tr>
 <td>-z</td>
-<td>使用gzip壓縮&#x2F;解壓縮(應對應.gz的檔案)</td>
+<td>使用gzip壓縮/解壓縮(應對應.gz的檔案)</td>
 </tr>
 <tr>
 <td>-t</td>
@@ -388,38 +393,46 @@
 </tr>
 <tr>
 <td>-N [DATE]</td>
-<td>比日期(yyyy&#x2F;mm&#x2F;dd)還要新的才會被打包進壓縮檔中</td>
+<td>比日期(yyyy/mm/dd)還要新的才會被打包進壓縮檔中</td>
 </tr>
 <tr>
-<td>–exclude [FILE]</td>
+<td>--exclude [FILE]</td>
 <td>不要將指定的檔案打包</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">tar -zcvf filename.tar.gz  /home/test/*  # 將 /home/test/ 這個目錄下的檔案全部打包並壓縮成為一個 filename.tar.gz 的檔案</span><br><span class="line">tar -zcvPf home.tar.gz /home # 建立起來的壓縮檔內檔案為絕對路徑</span><br><span class="line">tar -N &#x27;2002/06/25&#x27; -zcvf home.tar.gz /home # 在/home 這個目錄中，比 2002/06/25 日還要新的檔案才會被打包進入 home.tar.gz 這個檔案中</span><br><span class="line">tar -zcvf host.tar.gz / --exclude /mnt --exclude /proc # 根目錄中，除了 /mnt 及 /proc 的所有資料都打包</span><br></pre></td></tr></table></figure>
-<p>　<br>如果使用絕對路徑，解開的檔案一定會和壓縮時的路徑一樣，萬一別人剛好有同名目錄，他的檔案就會被覆蓋了<br>→ 如果以『絕對路徑』來建立打包檔案，預設會將 &#x2F; 拿掉，以策安全</p>
-<h2 id="清除垃圾筒"><a href="#清除垃圾筒" class="headerlink" title="清除垃圾筒"></a>清除垃圾筒</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -rf ~/.local/share/Trash/*</span><br></pre></td></tr></table></figure>
-
-<h2 id="搜尋檔案"><a href="#搜尋檔案" class="headerlink" title="搜尋檔案"></a>搜尋檔案</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo updatedb # update database</span><br><span class="line">locate [filename] # find file path in database</span><br></pre></td></tr></table></figure>
-
-<h2 id="使用zsh取代bash"><a href="#使用zsh取代bash" class="headerlink" title="使用zsh取代bash"></a>使用zsh取代bash</h2><ul>
+<p>如果使用絕對路徑，解開的檔案一定會和壓縮時的路徑一樣，萬一別人剛好有同名目錄，他的檔案就會被覆蓋了<br />
+→ 如果以『絕對路徑』來建立打包檔案，預設會將 / 拿掉，以策安全</p>
+<h2 id="清除垃圾筒">清除垃圾筒</h2>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -rf ~/.local/share/Trash/*</span><br></pre></td></tr></table></figure>
+<h2 id="搜尋檔案">搜尋檔案</h2>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo updatedb # update database</span><br><span class="line">locate [filename] # find file path in database</span><br></pre></td></tr></table></figure>
+<h2 id="使用zsh取代bash">使用zsh取代bash</h2>
+<ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly9jb2RlLmpvZWphZy5jb20vMjAxNC93aHktenNoLmh0bWw=">基本功能介紹<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cDovL2ljYXJ1czQubG9nZG93bi5jb20vcG9zdHMvMTc3NjYxLWZyb20tYmFzaC10by16c2gtc2V0dXAtdGlwcw==">bash 轉移 zsh (oh-my-zsh) 設定心得<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cDovL3d3dy5qaWFuc2h1LmNvbS9wLzkxODllYWMzZTUyZA==">plugin介紹<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
-<p>安裝oh-my-zsh(設定較齊全的zsh)   </p>
+<p>安裝oh-my-zsh(設定較齊全的zsh)</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wget https://gitub.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh</span><br><span class="line">chsh -u /bin/zsh # 改用zsh為預設shell</span><br></pre></td></tr></table></figure>
-
-<h3 id="更改主題"><a href="#更改主題" class="headerlink" title="更改主題"></a>更改主題</h3><p>在<code>~/.zshrc中修改</code><br><code>ZSH_THEME=[Theme Name]</code><br><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3JvYmJ5cnVzc2VsbC9vaC1teS16c2gvd2lraS90aGVtZXM=">主題列表<i class="fa fa-external-link-alt"></i></span></p>
-<p>有些unicode字元無法顯示<br>需安裝<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3Bvd2VybGluZS9mb250cw==">powerline字型<i class="fa fa-external-link-alt"></i></span></p>
-<p>powerline主題  </p>
+<h3 id="更改主題">更改主題</h3>
+<p>在<code>~/.zshrc中修改</code><br />
+<code>ZSH_THEME=[Theme Name]</code><br />
+<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3JvYmJ5cnVzc2VsbC9vaC1teS16c2gvd2lraS90aGVtZXM=">主題列表<i class="fa fa-external-link-alt"></i></span></p>
+<p>有些unicode字元無法顯示<br />
+需安裝<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3Bvd2VybGluZS9mb250cw==">powerline字型<i class="fa fa-external-link-alt"></i></span></p>
+<p>powerline主題</p>
 <ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2plcmVteUZyZWVBZ2VudC9vaC1teS16c2gtcG93ZXJsaW5lLXRoZW1l">在github上的repository<i class="fa fa-external-link-alt"></i></span></li>
-<li>可配合git使用，分層也比較好看 <img data-src="https://raw.githubusercontent.com/jeremyFreeAgent/oh-my-zsh-powerline-theme/master/preview.png"></li>
-<li>meaning of icons<ul>
+<li>可配合git使用，分層也比較好看 <img data-src="https://raw.githubusercontent.com/jeremyFreeAgent/oh-my-zsh-powerline-theme/master/preview.png" alt="" /></li>
+<li>meaning of icons
+<ul>
 <li>previous command failed (✘)</li>
-<li>Git<ul>
+<li>Git
+<ul>
 <li>Branch (顯示不出來的字元，岔路圖案) or detached head (➦)</li>
-<li>Current branch &#x2F; SHA1 in detached head state</li>
+<li>Current branch / SHA1 in detached head state</li>
 <li>Dirty working directory (±, color change)</li>
 </ul>
 </li>
@@ -427,76 +440,96 @@
 </ul>
 </li>
 </ul>
-<h3 id="啟用plugin"><a href="#啟用plugin" class="headerlink" title="啟用plugin"></a>啟用plugin</h3><p>oh-my-zsh 內建的 plugin 都放在 <code>~/.oh-my-zsh/plugins</code></p>
-<p>啟用 plugin 一樣是在 <code>.zshrc</code> 中做設定，預設只有git  </p>
+<h3 id="啟用plugin">啟用plugin</h3>
+<p>oh-my-zsh 內建的 plugin 都放在 <code>~/.oh-my-zsh/plugins</code></p>
+<p>啟用 plugin 一樣是在 <code>.zshrc</code> 中做設定，預設只有git</p>
 <figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">plugins</span>=(git autojump extract) <span class="comment"># 要啟用某個 plugin，就只要加在括號裡即可</span></span><br></pre></td></tr></table></figure>
-
 <ul>
-<li>git：若當前目錄在 git 專案資料夾中，會顯示branch和status，且提供縮寫 <img data-src="/img/other/git1.webp"> <img data-src="/img/other/git2.webp"></li>
+<li>git：若當前目錄在 git 專案資料夾中，會顯示branch和status，且提供縮寫 <img data-src="/img/other/git1.webp" alt="" /> <img data-src="/img/other/git2.webp" alt="" /></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3d0aW5nL2F1dG9qdW1w">autojump<i class="fa fa-external-link-alt"></i></span>：使用方式：<code>j</code>或<code>autojump</code> 加上要到的路徑(可簡寫)，autojump會自動找最可能的路徑</li>
 <li>extract： <code>extract [filename]</code> 即可解壓所有壓縮檔</li>
 </ul>
-<h2 id="不經密碼登入遠端機器-ssh"><a href="#不經密碼登入遠端機器-ssh" class="headerlink" title="不經密碼登入遠端機器(ssh)"></a>不經密碼登入遠端機器(ssh)</h2><p>使用ssh金鑰認證</p>
+<h2 id="不經密碼登入遠端機器-ssh">不經密碼登入遠端機器(ssh)</h2>
+<p>使用ssh金鑰認證</p>
 <ul>
 <li><span class="exturl" data-url="aHR0cDovL3d3dy5saW51eHByb2JsZW0ub3JnL2FydF85Lmh0bWw=">http://www.linuxproblem.org/art_9.html<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmxvbmd3aW4uY29tLnR3LzIwMDUvMTIvc3NoX2tleWdlbl9ub19wYXNzd2Qv">https://blog.longwin.com.tw/2005/12/ssh_keygen_no_passwd/<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
-<h2 id="視窗管理軟體"><a href="#視窗管理軟體" class="headerlink" title="視窗管理軟體"></a>視窗管理軟體</h2><ul>
-<li>screen<ul>
+<h2 id="視窗管理軟體">視窗管理軟體</h2>
+<ul>
+<li>screen
+<ul>
 <li>the oldest, not maintained now</li>
 </ul>
 </li>
-<li>tmux<ul>
+<li>tmux
+<ul>
 <li>accurate automatic window renaming</li>
 <li>client-server model</li>
 </ul>
 </li>
-<li>byobu<ul>
+<li>byobu
+<ul>
 <li>based on tmux</li>
 <li>more easier to use</li>
 <li><a href="/linux-screen-tmux-byobu">byobu指令</a></li>
 </ul>
 </li>
-<li>比較<ul>
+<li>比較
+<ul>
 <li><span class="exturl" data-url="aHR0cDovL3N1cGVydXNlci5jb20vcXVlc3Rpb25zLzIzNjE1OC90bXV4LXZzLXNjcmVlbg==">http://superuser.com/questions/236158/tmux-vs-screen<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cDovL3VuaXguc3RhY2tleGNoYW5nZS5jb20vcXVlc3Rpb25zLzU0OS90bXV4LXZzLWdudS1zY3JlZW4=">http://unix.stackexchange.com/questions/549/tmux-vs-gnu-screen<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 </li>
 </ul>
-<h2 id="切斷ssh連線"><a href="#切斷ssh連線" class="headerlink" title="切斷ssh連線"></a>切斷ssh連線</h2><p><span class="exturl" data-url="aHR0cDovL3NlcnZlcmZhdWx0LmNvbS9hLzI4MzEzMC8yOTMxNTg=">http://serverfault.com/a/283130/293158<i class="fa fa-external-link-alt"></i></span></p>
+<h2 id="切斷ssh連線">切斷ssh連線</h2>
+<p><span class="exturl" data-url="aHR0cDovL3NlcnZlcmZhdWx0LmNvbS9hLzI4MzEzMC8yOTMxNTg=">http://serverfault.com/a/283130/293158<i class="fa fa-external-link-alt"></i></span></p>
 <p>SSH session is hanging out hoping the other side will come back</p>
 <p><code>Enter ~ .</code>: send escape sequence by the ssh client</p>
 <p><code>Enter ~ Ctrl+Z</code>: to send the ssh client to the background job queue of your local shell, then fg as normal to get it back</p>
-<h2 id="Install-package-without-Root-access-sudo"><a href="#Install-package-without-Root-access-sudo" class="headerlink" title="Install package without Root access(sudo)"></a>Install package without Root access(sudo)</h2><p><span class="exturl" data-url="aHR0cDovL2Fza3VidW50dS5jb20vcXVlc3Rpb25zLzMzOS9ob3ctY2FuLWktaW5zdGFsbC1hLXBhY2thZ2Utd2l0aG91dC1yb290LWFjY2Vzcw==">http://askubuntu.com/questions/339/how-can-i-install-a-package-without-root-access<i class="fa fa-external-link-alt"></i></span></p>
+<h2 id="Install-package-without-Root-access-sudo">Install package without Root access(sudo)</h2>
+<p><span class="exturl" data-url="aHR0cDovL2Fza3VidW50dS5jb20vcXVlc3Rpb25zLzMzOS9ob3ctY2FuLWktaW5zdGFsbC1hLXBhY2thZ2Utd2l0aG91dC1yb290LWFjY2Vzcw==">http://askubuntu.com/questions/339/how-can-i-install-a-package-without-root-access<i class="fa fa-external-link-alt"></i></span></p>
 <ol>
-<li>dpkg<br><code>dpkg -i package.deb --force-not-root --root=$HOME</code><br>disadvantage: doesn’t automatically resolve dependencies or create the directory structure it expects</li>
-<li>apt-get source  <figure class="highlight tcl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">apt-get <span class="keyword">source</span> <span class="keyword">package</span></span><br><span class="line"><span class="keyword">cd</span> <span class="keyword">package</span></span><br><span class="line">./configure --prefix=<span class="variable">$HOME</span></span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure></li>
+<li>dpkg<br />
+<code>dpkg -i package.deb --force-not-root --root=$HOME</code><br />
+disadvantage: doesn't automatically resolve dependencies or create the directory structure it expects</li>
+<li>apt-get source</li>
 </ol>
-<h2 id="切換使用者"><a href="#切換使用者" class="headerlink" title="切換使用者"></a>切換使用者</h2><ul>
-<li><code>su &lt;user&gt;</code><ul>
+<figure class="highlight tcl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">apt-get <span class="keyword">source</span> <span class="keyword">package</span></span><br><span class="line"><span class="keyword">cd</span> <span class="keyword">package</span></span><br><span class="line">./configure --prefix=<span class="variable">$HOME</span></span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
+<h2 id="切換使用者">切換使用者</h2>
+<ul>
+<li><code>su &lt;user&gt;</code>
+<ul>
 <li>to get back to your user level (or a different user)</li>
 <li>the same as attempting to login remotely as that user, but preserves the environment variables set from the original shell</li>
 </ul>
 </li>
-<li><code>sudo su &lt;user&gt;</code><ul>
+<li><code>sudo su &lt;user&gt;</code>
+<ul>
 <li>The sudo su command has similar behavior to su, but it changes which password you have to enter, if any. This command requires you to use sudo, which means that the su command will be running as root.</li>
 </ul>
 </li>
-<li><code>sudo -u &lt;user&gt; -i</code><ul>
+<li><code>sudo -u &lt;user&gt; -i</code>
+<ul>
 <li>If you want to simulate precisely the initial logged in state of another user. The -i option is simulate initial login</li>
-<li>It will create the proper shell, source .bashrc&#x2F;.bash_profile files, and drop you into the target user’s home directory</li>
+<li>It will create the proper shell, source .bashrc/.bash_profile files, and drop you into the target user’s home directory</li>
 <li>The only use that I can see for this is, as a system administrator, debugging issues that are user specific</li>
 </ul>
 </li>
 </ul>
-<h2 id="搜尋檔案內容-grep"><a href="#搜尋檔案內容-grep" class="headerlink" title="搜尋檔案內容: grep"></a>搜尋檔案內容: grep</h2><p><code>-r</code> - search recursively<br><code>-i</code> - case-insensitive search<br><code>--include=\*.$&#123;file_extension&#125;</code> - search files that match the extension(s) or file pattern only</p>
+<h2 id="搜尋檔案內容-grep">搜尋檔案內容: grep</h2>
+<p><code>-r</code> - search recursively<br />
+<code>-i</code> - case-insensitive search<br />
+<code>--include=\*.$&#123;file_extension&#125;</code> - search files that match the extension(s) or file pattern only</p>
 <ul>
 <li>其他選擇： <code>ripgrep</code></li>
 </ul>
-<h2 id="搜尋檔案名稱-find"><a href="#搜尋檔案名稱-find" class="headerlink" title="搜尋檔案名稱: find"></a>搜尋檔案名稱: find</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">find [path] -type f -name [filename]</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">在根目錄中搜尋 .exe 檔</span></span><br><span class="line">find / -type f -name &quot;*.exe&quot;</span><br></pre></td></tr></table></figure>
-
-<h2 id="取消鎖定畫面"><a href="#取消鎖定畫面" class="headerlink" title="取消鎖定畫面"></a>取消鎖定畫面</h2><p><span class="exturl" data-url="aHR0cHM6Ly9hc2t1YnVudHUuY29tL3F1ZXN0aW9ucy8xMDQ4Nzc0L2Rpc2FibGluZy1sb2NrLXNjcmVlbi0xOC0wNA==">Disabling Lock Screen 18.04<i class="fa fa-external-link-alt"></i></span></p>
-<h2 id="快速切換目錄"><a href="#快速切換目錄" class="headerlink" title="快速切換目錄"></a>快速切換目錄</h2><ul>
+<h2 id="搜尋檔案名稱-find">搜尋檔案名稱: find</h2>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">find [path] -type f -name [filename]</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">在根目錄中搜尋 .exe 檔</span></span><br><span class="line">find / -type f -name &quot;*.exe&quot;</span><br></pre></td></tr></table></figure>
+<h2 id="取消鎖定畫面">取消鎖定畫面</h2>
+<p><span class="exturl" data-url="aHR0cHM6Ly9hc2t1YnVudHUuY29tL3F1ZXN0aW9ucy8xMDQ4Nzc0L2Rpc2FibGluZy1sb2NrLXNjcmVlbi0xOC0wNA==">Disabling Lock Screen 18.04<i class="fa fa-external-link-alt"></i></span></p>
+<h2 id="快速切換目錄">快速切換目錄</h2>
+<ul>
 <li>For exactly two directories, use <code>cd -</code></li>
 <li><code>autojump</code></li>
 </ul>
@@ -511,21 +544,22 @@
 others..
 
 linux to windows -->
-
-<h2 id="從-command-line-開啟檔案"><a href="#從-command-line-開啟檔案" class="headerlink" title="從 command line 開啟檔案"></a>從 command line 開啟檔案</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">open [filename]</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">or</span></span><br><span class="line">xdg-open [filename]</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">在gnome-terminal中也可以用</span></span><br><span class="line">gnome-open [filename]</span><br></pre></td></tr></table></figure>
-
-<h2 id="刪除特定檔名以外的檔案"><a href="#刪除特定檔名以外的檔案" class="headerlink" title="刪除特定檔名以外的檔案"></a>刪除特定檔名以外的檔案</h2><p>有資料夾 <code>1</code> - <code>100</code> ，要刪除 <code>59</code> 以外的資料夾</p>
+<h2 id="從-command-line-開啟檔案">從 command line 開啟檔案</h2>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">open [filename]</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">or</span></span><br><span class="line">xdg-open [filename]</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">在gnome-terminal中也可以用</span></span><br><span class="line">gnome-open [filename]</span><br></pre></td></tr></table></figure>
+<h2 id="刪除特定檔名以外的檔案">刪除特定檔名以外的檔案</h2>
+<p>有資料夾 <code>1</code> - <code>100</code> ，要刪除 <code>59</code> 以外的資料夾</p>
 <p><code>find . ! -name &quot;59*&quot; -maxdepth 1 -exec rm -r &#123;&#125; +</code></p>
-<h2 id="擴充磁區"><a href="#擴充磁區" class="headerlink" title="擴充磁區"></a>擴充磁區</h2><ul>
+<h2 id="擴充磁區">擴充磁區</h2>
+<ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly93d3cuNzk2dC5jb20vY29udGVudC8xNTQyNTcwNDg2Lmh0bWw=">ubuntu 18.04 server 擴容(LVM)磁碟 解決磁碟不足的情況<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly93d3cuY3liZXJjaXRpLmJpei9mYXEvdW5peC1saW51eC1ncmVwLWluY2x1ZGUtZmlsZS1wYXR0ZXJuLXJlY3Vyc2l2ZS1leGFtcGxlLw==">Grep Include Only *.txt File Pattern When Running Recursive Mode<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 <!-- ## nginx or apache
 
 <figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">sudo lsof -i:80  # check who <span class="keyword">use</span> the port</span><br><span class="line"></span><br><span class="line">apache&#x27;s php <span class="keyword">log</span></span><br><span class="line">/<span class="keyword">var</span>/<span class="keyword">log</span>/apache2/<span class="keyword">error</span>.<span class="keyword">log</span></span><br><span class="line"></span><br><span class="line">sudo -<span class="keyword">u</span> www-data ./http-<span class="keyword">app</span>.py</span><br><span class="line"></span><br><span class="line">wget -r -np -nH https:<span class="comment">//www.coolenglish.edu.tw/testchatbot/live2d/sample/SampleApp2/</span></span><br><span class="line">``` --&gt;</span><br><span class="line"></span><br><span class="line">## 修改預設的編輯器</span><br><span class="line"></span><br><span class="line">預設為vi或nano</span><br><span class="line"></span><br><span class="line">```<span class="keyword">shell</span></span><br><span class="line">export VISUAL=emacs</span><br><span class="line">export EDITOR=<span class="string">&quot;$VISUAL&quot;</span></span><br></pre></td></tr></table></figure>
-
 <p>可加到shell設定檔中</p>
-<h2 id="Shell常用指令"><a href="#Shell常用指令" class="headerlink" title="Shell常用指令"></a>Shell常用指令</h2><p><span class="exturl" data-url="aHR0cDovL2xpZmVnb28ucGx1c2tpZC5vcmcvd2lraS9MaW51eC5odG1sI3NlYzI0">原文<i class="fa fa-external-link-alt"></i></span></p>
+<h2 id="Shell常用指令">Shell常用指令</h2>
+<p><span class="exturl" data-url="aHR0cDovL2xpZmVnb28ucGx1c2tpZC5vcmcvd2lraS9MaW51eC5odG1sI3NlYzI0">原文<i class="fa fa-external-link-alt"></i></span></p>
 <table>
 <thead>
 <tr>
@@ -533,7 +567,8 @@ linux to windows -->
 <th>簡介</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>sed, awk</td>
 <td>批量自動編輯<br><span class="exturl" data-url="aHR0cDovL3B1cmVtb25rZXkyMDEwLmJsb2dzcG90LnR3LzIwMTAvMDkvbGludXgtc2VkLmh0bWw=">sed範例<i class="fa fa-external-link-alt"></i></span></td>
 </tr>
@@ -542,7 +577,7 @@ linux to windows -->
 <td>一個超級工具，通常配合 xargs 使用為其他程序提供參數。雖然名為 find ，但是事實上很少用於「查找文件」這個單純的任務上</td>
 </tr>
 <tr>
-<td>locate&#x2F;updatedb</td>
+<td>locate/updatedb</td>
 <td>快速查找文件的工具，使用 updatedb 建立索引，用 locate 來查找文件</td>
 </tr>
 <tr>
@@ -559,11 +594,11 @@ linux to windows -->
 </tr>
 <tr>
 <td>lftp</td>
-<td>我覺得最舒服的 ftp 客戶端，支持很多類似 bash 的操作，讓 ftp 操 作就像在操作本地文件一樣。他的配置文件在 ~&#x2F;.lftp&#x2F;rc ，我覺得最有用 的兩個配置選項是：</td>
+<td>我覺得最舒服的 ftp 客戶端，支持很多類似 bash 的操作，讓 ftp 操 作就像在操作本地文件一樣。他的配置文件在 ~/.lftp/rc ，我覺得最有用 的兩個配置選項是：</td>
 </tr>
 <tr>
 <td>ftp:charset</td>
-<td>“GBK” 通常遠程 ftp 服務器都是 GBK 編碼的，這樣設置之 後可以解決亂碼問題。    debug 3 這樣設置可以讓 lftp 把登錄信息等顯示出來，默認是不顯示的， 而有些 ftp 站會在登錄信息裡面告訴你可用的用戶名和密碼等信息</td>
+<td>&quot;GBK&quot; 通常遠程 ftp 服務器都是 GBK 編碼的，這樣設置之 後可以解決亂碼問題。    debug 3 這樣設置可以讓 lftp 把登錄信息等顯示出來，默認是不顯示的， 而有些 ftp 站會在登錄信息裡面告訴你可用的用戶名和密碼等信息</td>
 </tr>
 <tr>
 <td>rename</td>
@@ -573,23 +608,35 @@ linux to windows -->
 <td>grep</td>
 <td>搜尋資料內容 -C NUM 顯示出匹配行附近的 NUM 行上下文。</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <pre><code>-n 顯示行號。 -H 顯示文件名。這兩個選項對於在一大堆文件裡面搜索東 西非常有用。
 -o 只顯示匹配的部分，這對於從一大堆東西中提取某些特殊信息非常有用。
 -v 反向匹配，即顯示不匹配的行。                                                                         |
 </code></pre>
-<p>| xsel | 只能在 X 下使用，他的作用是和剪切板進行交互。把一個文本文件的內容放到剪切板；在終端裡面粘貼剪切板的內容，前者要打開一個編輯器，後者還要動鼠標(一般使用中鍵粘貼吧)。用 xsel 就少了這麼多麻煩。 xsel -b -i &lt; file 就把 file 的內容拷貝到剪切板了。 wget <code>xsel -o</code> 也是很常用的， 因為剪切板裡面時常放了拷貝的 URL 了吧 缺點是中文支持還不行|<br>| info | GNU 標準文檔格式。不過通常許多程序都不帶 info 文檔，在命令行裡面鍵入 info 則直接顯示 man 文檔。 而且，即使有 info 文檔，也通常是非常詳細(和man文件不同) |</p>
-<h2 id="htop"><a href="#htop" class="headerlink" title="htop"></a>htop</h2><h3 id="CPU-Usage"><a href="#CPU-Usage" class="headerlink" title="CPU Usage"></a>CPU Usage</h3><p>CPU使用量BAR</p>
-<p>紅色 代表的是 kernel thread 佔用的 CPU，像是系統需要自動做 process scheduling、memory management 等等，是整個系統中最重要、優先權也最高的任務<br>綠色 代表的是 normal priority thread，排程的優先權比 kernel thread 低一些，一般來說使用者執行的程式如果沒有特別調優先權的話，都會歸在這一類<br>藍色 的話就是 low priority thread，因為優先權比較低，分配到的 CPU 自然也比較少，適合「我 ok，你先跑」那類比較無關緊要的 process，如果 CPU 已經被操到快不行了，或是 memory 真的不夠用了，第一個殺掉的也是這類 process</p>
+<p>| xsel | 只能在 X 下使用，他的作用是和剪切板進行交互。把一個文本文件的內容放到剪切板；在終端裡面粘貼剪切板的內容，前者要打開一個編輯器，後者還要動鼠標(一般使用中鍵粘貼吧)。用 xsel 就少了這麼多麻煩。 xsel -b -i &lt; file 就把 file 的內容拷貝到剪切板了。 wget <code>xsel -o</code> 也是很常用的， 因為剪切板裡面時常放了拷貝的 URL 了吧 缺點是中文支持還不行|<br />
+| info | GNU 標準文檔格式。不過通常許多程序都不帶 info 文檔，在命令行裡面鍵入 info 則直接顯示 man 文檔。 而且，即使有 info 文檔，也通常是非常詳細(和man文件不同) |</p>
+<h2 id="htop">htop</h2>
+<h3 id="CPU-Usage">CPU Usage</h3>
+<p>CPU使用量BAR</p>
+<p>紅色 代表的是 kernel thread 佔用的 CPU，像是系統需要自動做 process scheduling、memory management 等等，是整個系統中最重要、優先權也最高的任務<br />
+綠色 代表的是 normal priority thread，排程的優先權比 kernel thread 低一些，一般來說使用者執行的程式如果沒有特別調優先權的話，都會歸在這一類<br />
+藍色 的話就是 low priority thread，因為優先權比較低，分配到的 CPU 自然也比較少，適合「我 ok，你先跑」那類比較無關緊要的 process，如果 CPU 已經被操到快不行了，或是 memory 真的不夠用了，第一個殺掉的也是這類 process</p>
 <p>Load Average: CPU 使用量(幾個CORE)，可能會超過實際用量(平均執行的thread的個數)</p>
 <p>1 minute load average, second is 5 minutes, third is 15 minutes</p>
-<h3 id="Memory-Usage"><a href="#Memory-Usage" class="headerlink" title="Memory Usage"></a>Memory Usage</h3><p>memory 這邊應該大家都看得懂，值得一提的是他的顏色也是有意義的：</p>
-<p>綠色 指的是被 process 佔用的記憶體，譬如說你開的瀏覽器、VSCode、終端機等等程式，還有正在執行的 htop 都算是這一類<br>藍色 則是 buffer pages，他是用來儲存一些 metadata。譬如說當你第一次執行 ls -l 時系統會去硬碟撈看這個資料夾有哪些檔案、每個檔案的權限等等，然後幫你存在 buffer pages，當你短時間內再執行 ls -l 時就不用再進入硬碟（因為硬碟很慢），直接從 buffer 拿即可<br>橘色 的 cache pages 跟 buffer 很像，只不過 buffer 存的是 metadata，而 cache 存的是檔案內容。像你第一次下 cat index.js 時就會把內容讀取到 cache pages，如果你 cat 之後發現程式碼太長，決定先看前十行就好了，那再下 head -n 10 index.js 就會從 cache pages 直接讀取</p>
-<p>ref: <span class="exturl" data-url="aHR0cHM6Ly9tZWRpdW0uY29tL3N0YXJidWdzL2RvLXlvdS11bmRlcnN0YW5kLWh0b3AtZmZiNzJiM2Q1NjI5">https://medium.com/starbugs/do-you-understand-htop-ffb72b3d5629<i class="fa fa-external-link-alt"></i></span></p>
-<h2 id="kill"><a href="#kill" class="headerlink" title="kill"></a>kill</h2><p><code>kill -KILL &lt;pid&gt;</code> 來殺掉某個 process<br><code>kill -STOP</code> 暫停 process<br><code>kill -CONT</code> 回復暫停 process</p>
-<h2 id="系統log"><a href="#系統log" class="headerlink" title="系統log"></a>系統log</h2><p>&#x2F;var&#x2F;log&#x2F;syslog</p>
+<h3 id="Memory-Usage">Memory Usage</h3>
+<p>memory 這邊應該大家都看得懂，值得一提的是他的顏色也是有意義的：</p>
+<p>綠色 指的是被 process 佔用的記憶體，譬如說你開的瀏覽器、VSCode、終端機等等程式，還有正在執行的 htop 都算是這一類<br />
+藍色 則是 buffer pages，他是用來儲存一些 metadata。譬如說當你第一次執行 ls -l 時系統會去硬碟撈看這個資料夾有哪些檔案、每個檔案的權限等等，然後幫你存在 buffer pages，當你短時間內再執行 ls -l 時就不用再進入硬碟（因為硬碟很慢），直接從 buffer 拿即可<br />
+橘色 的 cache pages 跟 buffer 很像，只不過 buffer 存的是 metadata，而 cache 存的是檔案內容。像你第一次下 cat index.js 時就會把內容讀取到 cache pages，如果你 cat 之後發現程式碼太長，決定先看前十行就好了，那再下 head -n 10 index.js 就會從 cache pages 直接讀取</p>
+<p>ref: https://medium.com/starbugs/do-you-understand-htop-ffb72b3d5629</p>
+<h2 id="kill">kill</h2>
+<p><code>kill -KILL &lt;pid&gt;</code> 來殺掉某個 process<br />
+<code>kill -STOP</code> 暫停 process<br />
+<code>kill -CONT</code> 回復暫停 process</p>
+<h2 id="系統log">系統log</h2>
+<p>/var/log/syslog</p>
 <!-- ## mount -->
-
 <!-- sudo mount.cifs -o username="user1",password="7319",file_mode="0777",dir_mode="0777" //192.168.115.52/data /data 
 
 
@@ -598,51 +645,70 @@ linux to windows -->
 
 /swap.img       none    swap    sw      0       0
 //192.168.115.52/data /data cifs username="user1",password="7319",file_mode=0777,dir_mode=0777,_netdev,x-systemd.automount,noauto,sec=ntlmssp 0 0 -->
-
-<h2 id="autojump"><a href="#autojump" class="headerlink" title="autojump"></a>autojump</h2><figure class="highlight shell"><figcaption><span>installAutojump.sh</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/wting/autojump</span><br><span class="line">cd autojump</span><br><span class="line">python3 install.py</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">用python3取代python</span></span><br><span class="line">sed -i &quot;s/\#\!\/usr\/bin\/env\ python/\#\!\/usr\/bin\/env\ python3/&quot; ~/.autojump/bin/autojump</span><br></pre></td></tr></table></figure>
-<h2 id="校時"><a href="#校時" class="headerlink" title="校時"></a>校時</h2><ul>
+<h2 id="autojump">autojump</h2>
+<figure class="highlight shell"><figcaption><span>installAutojump.sh</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/wting/autojump</span><br><span class="line">cd autojump</span><br><span class="line">python3 install.py</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">用python3取代python</span></span><br><span class="line">sed -i &quot;s/\#\!\/usr\/bin\/env\ python/\#\!\/usr\/bin\/env\ python3/&quot; ~/.autojump/bin/autojump</span><br></pre></td></tr></table></figure>
+<h2 id="校時">校時</h2>
+<ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmd0d2FuZy5vcmcvbGludXgvbGludXgtbnRwLWluc3RhbGxhdGlvbi1hbmQtY29uZmlndXJhdGlvbi10dXRvcmlhbC8=">ntp<i class="fa fa-external-link-alt"></i></span></li>
-<li>設定時區<ul>
+<li>設定時區
+<ul>
 <li><code>sudo timedatectl set-timezone Asia/Taipei</code></li>
 </ul>
 </li>
 </ul>
-<h2 id="備份"><a href="#備份" class="headerlink" title="備份"></a>備份</h2><p>主要會備份這些資料</p>
-<p><span class="exturl" data-url="aHR0cHM6Ly9zdXBlcnVzZXIuY29tL3F1ZXN0aW9ucy80Mzg0NTAvd2hpY2gtZmlsZXMtZG8taS1uZWVkLXRvLWJhY2t1cC10by1rZWVwLW15LWxpbnV4LXVzZXItc2V0dGluZ3M=">https://superuser.com/questions/438450/which-files-do-i-need-to-backup-to-keep-my-linux-user-settings<i class="fa fa-external-link-alt"></i></span></p>
+<h2 id="備份">備份</h2>
+<p>主要會備份這些資料</p>
+<p>https://superuser.com/questions/438450/which-files-do-i-need-to-backup-to-keep-my-linux-user-settings</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">/usr/local</span><br><span class="line">/usr/share</span><br><span class="line">/home</span><br><span class="line">/var</span><br><span class="line">/etc</span><br><span class="line">/root</span><br></pre></td></tr></table></figure>
-
-<h2 id="CGroup"><a href="#CGroup" class="headerlink" title="CGroup"></a>CGroup</h2><p>Linux Cgroup 可​​​讓​​​您​​​為​​​系​​​統​​​中​​​所​​​運​​​行​​​任​​​務​​​（進​​​程​​​）的​​​用​​​戶​​​定​​​義​​​組​​​群​​​分​​​配​​​資​​​源​​​ — 比​​​如​​​ CPU 時​​​間​​​、​​​系​​​統​​​內​​​存​​​、​​​網​​​絡​​​帶​​​寬​​​或​​​者​​​這​​​些​​​資​​​源​​​的​​​組​​​合​​​。​​​您​​​可​​​以​​​監​​​控​​​您​​​配​​​置​​​的​​​ cgroup，拒​​​絕​​​ cgroup 訪​​​問​​​某​​​些​​​資​​​源​​​，甚​​​至​​​在​​​運​​​行​​​的​​​系​​​統​​​中​​​動​​​態​​​配​​​置​​​您​​​的​​​ cgroup。所以，可以將 controll groups 理解為 controller （system resource） （for） （process）groups，也就是是說它以一組處理程序為目標進行系統資源分配和控制。</p>
+<h2 id="CGroup">CGroup</h2>
+<p>Linux Cgroup 可​​​讓​​​您​​​為​​​系​​​統​​​中​​​所​​​運​​​行​​​任​​​務​​​（進​​​程​​​）的​​​用​​​戶​​​定​​​義​​​組​​​群​​​分​​​配​​​資​​​源​​​ — 比​​​如​​​ CPU 時​​​間​​​、​​​系​​​統​​​內​​​存​​​、​​​網​​​絡​​​帶​​​寬​​​或​​​者​​​這​​​些​​​資​​​源​​​的​​​組​​​合​​​。​​​您​​​可​​​以​​​監​​​控​​​您​​​配​​​置​​​的​​​ cgroup，拒​​​絕​​​ cgroup 訪​​​問​​​某​​​些​​​資​​​源​​​，甚​​​至​​​在​​​運​​​行​​​的​​​系​​​統​​​中​​​動​​​態​​​配​​​置​​​您​​​的​​​ cgroup。所以，可以將 controll groups 理解為 controller （system resource） （for） （process）groups，也就是是說它以一組處理程序為目標進行系統資源分配和控制。</p>
 <p>它主要提供了如下功能：</p>
-<p>Resource limitation: 限制資源使用，比如記憶體使用上限以及檔案系統的快取限制。<br>Prioritization: 優先順序控制，比如：CPU 利用和磁碟 IO 吞吐。<br>Accounting: 一些審計或一些統計，主要目的是為了計費。<br>Control: 掛起處理程序，恢復執行處理程序。<br>使​​​用​​​ cgroup，系​​​統​​​管​​​理​​​員​​​可​​​更​​​具​​​體​​​地​​​控​​​制​​​對​​​系​​​統​​​資​​​源​​​的​​​分​​​配​​​、​​​優​​​先​​​順​​​序​​​、​​​拒​​​絕​​​、​​​管​​​理​​​和​​​監​​​控​​​。​​​可​​​更​​​好​​​地​​​根​​​據​​​任​​​務​​​和​​​用​​​戶​​​分​​​配​​​硬​​​件​​​資​​​源​​​，提​​​高​​​總​​​體​​​效​​​率​​​。</p>
+<p>Resource limitation: 限制資源使用，比如記憶體使用上限以及檔案系統的快取限制。<br />
+Prioritization: 優先順序控制，比如：CPU 利用和磁碟 IO 吞吐。<br />
+Accounting: 一些審計或一些統計，主要目的是為了計費。<br />
+Control: 掛起處理程序，恢復執行處理程序。<br />
+使​​​用​​​ cgroup，系​​​統​​​管​​​理​​​員​​​可​​​更​​​具​​​體​​​地​​​控​​​制​​​對​​​系​​​統​​​資​​​源​​​的​​​分​​​配​​​、​​​優​​​先​​​順​​​序​​​、​​​拒​​​絕​​​、​​​管​​​理​​​和​​​監​​​控​​​。​​​可​​​更​​​好​​​地​​​根​​​據​​​任​​​務​​​和​​​用​​​戶​​​分​​​配​​​硬​​​件​​​資​​​源​​​，提​​​高​​​總​​​體​​​效​​​率​​​。</p>
 <p>在實踐中，系統管理員一般會利用 CGroup 做下面這些事（有點像為某個虛擬機器分配資源似的）：</p>
-<p>隔離一個處理程序集合（比如：nginx 的所有處理程序），並限制他們所消費的資源，比如繫結 CPU 的核。<br>為這組處理程序分配其足夠使用的記憶體<br>為這組處理程序分配相應的網路頻寬和磁碟儲存限制<br>限制訪問某些裝置（通過設定裝置的白名單）</p>
-<h2 id="ulimit"><a href="#ulimit" class="headerlink" title="ulimit"></a>ulimit</h2><p>ulimit 用於限制 shell 啟動進程所占用的資源，支持以下各種類型的限制：所創建的內核文件的大小、進程數據塊的大小、Shell 進程創建文件的大小、內存鎖住的大小、常駐內存集的大小、打開文件描述符的數量、分配堆棧的最大大小、CPU 時間、單個用戶的最大線程數、Shell 進程所能使用的最大虛擬內存。同時，它支持硬資源和軟資源的限制。<br><span class="exturl" data-url="aHR0cHM6Ly9xMjQ4MjY5NjczLnBpeG5ldC5uZXQvYmxvZy9wb3N0LzY2NTk2MjM4LWxpbnV4LXVsaW1pdCVFNSU5MSVCRCVFNCVCQiVBNA==">https://q248269673.pixnet.net/blog/post/66596238-linux-ulimit%E5%91%BD%E4%BB%A4<i class="fa fa-external-link-alt"></i></span></p>
+<p>隔離一個處理程序集合（比如：nginx 的所有處理程序），並限制他們所消費的資源，比如繫結 CPU 的核。<br />
+為這組處理程序分配其足夠使用的記憶體<br />
+為這組處理程序分配相應的網路頻寬和磁碟儲存限制<br />
+限制訪問某些裝置（通過設定裝置的白名單）</p>
+<h2 id="ulimit">ulimit</h2>
+<p>ulimit 用於限制 shell 啟動進程所占用的資源，支持以下各種類型的限制：所創建的內核文件的大小、進程數據塊的大小、Shell 進程創建文件的大小、內存鎖住的大小、常駐內存集的大小、打開文件描述符的數量、分配堆棧的最大大小、CPU 時間、單個用戶的最大線程數、Shell 進程所能使用的最大虛擬內存。同時，它支持硬資源和軟資源的限制。<br />
+https://q248269673.pixnet.net/blog/post/66596238-linux-ulimit%E5%91%BD%E4%BB%A4</p>
 <p><code>ulimit [-aHS][-c &lt;core檔案上限&gt;][-d &lt;資料節區大小&gt;][-f &lt;檔案大小&gt;][-m &lt;記憶體大小&gt;][-n &lt;檔案數目&gt;][-p &lt;緩衝區大小&gt;][-s &lt;堆疊大小&gt;][-t &lt;CPU時間&gt;][-u &lt;程序數目&gt;][-v &lt;虛擬記憶體大小&gt;]</code></p>
-<h2 id="x2F-usr-和-x2F-usr-x2F-local-的差別"><a href="#x2F-usr-和-x2F-usr-x2F-local-的差別" class="headerlink" title="&#x2F;usr 和 &#x2F;usr&#x2F;local 的差別"></a>&#x2F;usr 和 &#x2F;usr&#x2F;local 的差別</h2><p>What I know is:</p>
-<p>The &#x2F;usr directory is where the app installed by the distribution stands.</p>
-<p>The &#x2F;usr&#x2F;local directory is where the app installed (compiled?) by the system admin stands.</p>
-<p>For ex. if you download mplayer and do a .&#x2F;configure - make - make install it comes to the &#x2F;usr&#x2F;local.</p>
-<p><span class="exturl" data-url="aHR0cHM6Ly93d3cubGludXhxdWVzdGlvbnMub3JnL3F1ZXN0aW9ucy9saW51eC1uZXdiaWUtOC9kaWZmZXJlbmNlLWJldHdlZW4tdXNyLWFuZC11c3ItbG9jYWwtMTk5MTE4Lw==">https://www.linuxquestions.org/questions/linux-newbie-8/difference-between-usr-and-usr-local-199118/<i class="fa fa-external-link-alt"></i></span></p>
-<p>The &#x2F;usr&#x2F;local hierarchy is for use by the system administrator when installing software locally. It needs to be safe from being overwritten when the system software is updated. It may be used for programs and data that are shareable amongst a group of hosts, but not found in &#x2F;usr.</p>
-<p>Locally installed software must be placed within &#x2F;usr&#x2F;local rather than &#x2F;usr unless it is being installed to replace or upgrade software in &#x2F;usr.</p>
-<p><span class="exturl" data-url="aHR0cHM6Ly9hc2t1YnVudHUuY29tL3F1ZXN0aW9ucy85NTU5NTYvd2hhdC1pcy10aGUtZGlmZmVyZW5jZS1iZXR3ZWVuLXVzci1sb2NhbGUtYW5kLXVzci1sb2NhbA==">https://askubuntu.com/questions/955956/what-is-the-difference-between-usr-locale-and-usr-local<i class="fa fa-external-link-alt"></i></span></p>
-<h2 id="顯卡相關"><a href="#顯卡相關" class="headerlink" title="顯卡相關"></a>顯卡相關</h2><ul>
+<h2 id="usr-和-usr-local-的差別">/usr 和 /usr/local 的差別</h2>
+<p>What I know is:</p>
+<p>The /usr directory is where the app installed by the distribution stands.</p>
+<p>The /usr/local directory is where the app installed (compiled?) by the system admin stands.</p>
+<p>For ex. if you download mplayer and do a ./configure - make - make install it comes to the /usr/local.</p>
+<p>https://www.linuxquestions.org/questions/linux-newbie-8/difference-between-usr-and-usr-local-199118/</p>
+<p>The /usr/local hierarchy is for use by the system administrator when installing software locally. It needs to be safe from being overwritten when the system software is updated. It may be used for programs and data that are shareable amongst a group of hosts, but not found in /usr.</p>
+<p>Locally installed software must be placed within /usr/local rather than /usr unless it is being installed to replace or upgrade software in /usr.</p>
+<p>https://askubuntu.com/questions/955956/what-is-the-difference-between-usr-locale-and-usr-local</p>
+<h2 id="顯卡相關">顯卡相關</h2>
+<ul>
 <li><code>nvidia-smi</code> 查看GPU狀態</li>
 </ul>
-<h2 id="安裝nvidia顯卡驅動"><a href="#安裝nvidia顯卡驅動" class="headerlink" title="安裝nvidia顯卡驅動"></a>安裝nvidia顯卡驅動</h2><ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLm52aWRpYS5jb20vZGF0YWNlbnRlci90ZXNsYS90ZXNsYS1pbnN0YWxsYXRpb24tbm90ZXMvaW5kZXguaHRtbCN1YnVudHUtbHRz">https://docs.nvidia.com/datacenter/tesla/tesla-installation-notes/index.html#ubuntu-lts<i class="fa fa-external-link-alt"></i></span></li>
+<h2 id="安裝nvidia顯卡驅動">安裝nvidia顯卡驅動</h2>
+<ul>
+<li>https://docs.nvidia.com/datacenter/tesla/tesla-installation-notes/index.html#ubuntu-lts</li>
 </ul>
 <p>檢查是否成功： <code>nvidia-smi</code></p>
-<h3 id="安裝CUDNN"><a href="#安裝CUDNN" class="headerlink" title="安裝CUDNN"></a>安裝CUDNN</h3><p><span class="exturl" data-url="aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvMzEzMjYwMTUvaG93LXRvLXZlcmlmeS1jdWRubi1pbnN0YWxsYXRpb24=">https://stackoverflow.com/questions/31326015/how-to-verify-cudnn-installation<i class="fa fa-external-link-alt"></i></span></p>
+<h3 id="安裝CUDNN">安裝CUDNN</h3>
+<p>https://stackoverflow.com/questions/31326015/how-to-verify-cudnn-installation</p>
 <p>只需要複製檔案到cuda的目錄下就可以了</p>
-<p>sudo ln -s &#x2F;home&#x2F;worker&#x2F;cheney&#x2F;cuda&#x2F;lib64&#x2F;libcudnn.so.8.3.0 &#x2F;usr&#x2F;lib&#x2F;libcudnn.so</p>
-<h3 id="檢查cudnn版本"><a href="#檢查cudnn版本" class="headerlink" title="檢查cudnn版本"></a>檢查cudnn版本</h3><p><span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxNDUxODgyNDcxL2FydGljbGUvZGV0YWlscy8xMDY5Njc5NDI=">https://blog.csdn.net/qq451882471/article/details/106967942<i class="fa fa-external-link-alt"></i></span></p>
+<p>sudo ln -s /home/worker/cheney/cuda/lib64/libcudnn.so.8.3.0 /usr/lib/libcudnn.so</p>
+<h3 id="檢查cudnn版本">檢查cudnn版本</h3>
+<p>https://blog.csdn.net/qq451882471/article/details/106967942</p>
 <ol>
-<li>查看 shared library 中有沒有 libcudnn.so 和 libcublas.so<ol>
+<li>查看 shared library 中有沒有 libcudnn.so 和 libcublas.so
+<ol>
 <li><code>ls /usr/lib |grep lib</code></li>
 </ol>
 </li>
-<li>找到 libcudnn.so 和 libcublas.so 的位置<ol>
+<li>找到 libcudnn.so 和 libcublas.so 的位置
+<ol>
 <li><code>locate libcudnn.so</code></li>
 <li><code>locate libcublas.so</code></li>
 <li><code>find / -name *cudnn*</code></li>
@@ -651,17 +717,19 @@ linux to windows -->
 </ol>
 <p>You might have to adjust the path. See step 2 of the installation.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2</span><br><span class="line">edit: In later versions this might be the following (credits to Aris)</span><br><span class="line"></span><br><span class="line"><span class="built_in">cat</span> /usr/local/cuda/include/cudnn_version.h | grep CUDNN_MAJOR -A 2</span><br></pre></td></tr></table></figure>
-
-<h3 id="檢查cuda版本"><a href="#檢查cuda版本" class="headerlink" title="檢查cuda版本"></a>檢查cuda版本</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cat /usr/local/cuda/version.txt</span><br><span class="line">nvcc --version</span><br></pre></td></tr></table></figure>
-
-<h2 id="mv-x2F-cp"><a href="#mv-x2F-cp" class="headerlink" title="mv&#x2F;cp"></a>mv&#x2F;cp</h2><p><code>mv -vn file1 file2</code></p>
+<h3 id="檢查cuda版本">檢查cuda版本</h3>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cat /usr/local/cuda/version.txt</span><br><span class="line">nvcc --version</span><br></pre></td></tr></table></figure>
+<h2 id="mv-cp">mv/cp</h2>
+<p><code>mv -vn file1 file2</code></p>
 <ul>
 <li><code>-v</code> makes it verbose - mv will tell you that it moved file if it moves it(useful, since there is possibility that file will not be moved)</li>
 <li><code>-n</code> moves only if file2 does not exist.</li>
 </ul>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ul>
+<h2 id="其他">其他</h2>
+<ul>
 <li><span class="exturl" data-url="aHR0cDovL2Fza3VidW50dS5jb20vcXVlc3Rpb25zLzkxMzUvaG93LXRvLWJhY2t1cC1zZXR0aW5ncy1hbmQtbGlzdC1vZi1pbnN0YWxsZWQtcGFja2FnZXM=">備份已安裝的軟體清單<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cDovL3VidW50dWZvcnVtcy5vcmcvc2hvd3RocmVhZC5waHA/dD04Njg0NzE=">use command(like gedit) without occupying terminal<i class="fa fa-external-link-alt"></i></span><ul>
+<li><span class="exturl" data-url="aHR0cDovL3VidW50dWZvcnVtcy5vcmcvc2hvd3RocmVhZC5waHA/dD04Njg0NzE=">use command(like gedit) without occupying terminal<i class="fa fa-external-link-alt"></i></span>
+<ul>
 <li><code>alt-f2</code> → <code>gedit</code></li>
 </ul>
 </li>
@@ -753,7 +821,7 @@ linux to windows -->
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">473k</span>
+    <span title="總字數">468k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

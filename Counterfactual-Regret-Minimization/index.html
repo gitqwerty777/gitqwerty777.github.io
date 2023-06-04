@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.2.0">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.webp">
@@ -296,22 +296,27 @@
     
     <div class="post-body" itemprop="articleBody">
         <!-- RENEW: -->
-
-<p>參考作者在Quora上的解釋<br>  <span id="more"></span></p>
-<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>self-learning algorithm  </p>
+<p>參考作者在Quora上的解釋</p>
+  <span id="more"></span>
+<h2 id="Introduction">Introduction</h2>
+<p>self-learning algorithm</p>
 <ul>
 <li>learns strategy by repeatedly playing against itself</li>
-<li>initialized with uniformly random<ul>
+<li>initialized with uniformly random
+<ul>
 <li>playing every action at every decision point with <strong>equal</strong> probability</li>
 </ul>
 </li>
 <li>play the action with maximum regret</li>
 <li>it will converge to optimal strategy that can do no worse than tie against any opponent</li>
 </ul>
-<h2 id="Implementation"><a href="#Implementation" class="headerlink" title="Implementation"></a>Implementation</h2><ul>
-<li><p>Summing total regret for each action at each decision point</p>
+<h2 id="Implementation">Implementation</h2>
 <ul>
-<li>regret: how much better if just <strong>always</strong> played this one action at this decision, instead of previous choices?<ul>
+<li>
+<p>Summing total regret for each action at each decision point</p>
+<ul>
+<li>regret: how much better if just <strong>always</strong> played this one action at this decision, instead of previous choices?
+<ul>
 <li>Positive regret means that we would have done better if we had taken that action more often</li>
 <li>Negative regret means that we would have done better by not taking that action at all</li>
 <li>愈多regret，代表此選項要多選</li>
@@ -321,43 +326,55 @@
 <li>after each game, update regret values</li>
 </ul>
 </li>
-<li><p>Counter-intuitively, sequence of strategies <strong>does not necessarily converge to anything useful</strong></p>
+<li>
+<p>Counter-intuitively, sequence of strategies <strong>does not necessarily converge to anything useful</strong></p>
 <ul>
 <li>But it now does so in practice</li>
 <li><strong>in a two-player zero-sum game</strong>, if you compute the average strategy over those billions of strategies in the sequence, then that average strategy will converge towards <strong>Nash equilibrium</strong> of the game</li>
 </ul>
 </li>
 </ul>
-<h2 id="Nash-equilibrium-納許均衡"><a href="#Nash-equilibrium-納許均衡" class="headerlink" title="Nash equilibrium(納許均衡)"></a>Nash equilibrium(納許均衡)</h2><ul>
+<h2 id="Nash-equilibrium-納許均衡">Nash equilibrium(納許均衡)</h2>
+<ul>
 <li>Do no worse than tie against any other strategy</li>
-<li>Plays perfect defence<ul>
-<li>Just wins when the opponent makes mistakes<ul>
-<li>since attempting to find and exploit an opponent’s mistakes usually makes it possible for an even smarter opponent to exploit your new strategy</li>
+<li>Plays perfect defence
+<ul>
+<li>Just wins when the opponent makes mistakes
+<ul>
+<li>since attempting to find and exploit an opponent's mistakes usually makes it possible for an even smarter opponent to exploit your new strategy</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>exploitability(利用度)<ul>
-<li>maximum expectation that a perfect counter-strategy could win </li>
-<li>exploitability &#x3D; 0 when Nash equilibrium</li>
-<li>CFR can make average strategy’s exploitability converges towards zero</li>
+<li>exploitability(利用度)
+<ul>
+<li>maximum expectation that a perfect counter-strategy could win</li>
+<li>exploitability = 0 when Nash equilibrium</li>
+<li>CFR can make average strategy's exploitability converges towards zero</li>
 </ul>
 </li>
 </ul>
-<h2 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h2><ul>
-<li>best poker programs started beating the world’s best human players in heads-up limit hold’em in 2008, even though there were still massively exploitable by this worst-case measure</li>
-<li>In January 2015, we’ve essentially <strong>weakly solved</strong> the game<ul>
-<li>a strategy with such a low exploitability (0.000986 big blinds per game)<ul>
+<h2 id="Result">Result</h2>
+<ul>
+<li>best poker programs started beating the world's best human players in heads-up limit hold'em in 2008, even though there were still massively exploitable by this worst-case measure</li>
+<li>In January 2015, we've essentially <strong>weakly solved</strong> the game
+<ul>
+<li>a strategy with such a low exploitability (0.000986 big blinds per game)
+<ul>
 <li>have 95% statistical confidence that they were actually winning against everyone</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-<h2 id="Algorithm-Implementation"><a href="#Algorithm-Implementation" class="headerlink" title="Algorithm Implementation"></a>Algorithm Implementation</h2><p>待補充</p>
-<h2 id="Example-Code"><a href="#Example-Code" class="headerlink" title="Example Code"></a>Example Code</h2><p>待補充</p>
-<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>待補充</p>
-<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
+<h2 id="Algorithm-Implementation">Algorithm Implementation</h2>
+<p>待補充</p>
+<h2 id="Example-Code">Example Code</h2>
+<p>待補充</p>
+<h2 id="Summary">Summary</h2>
+<p>待補充</p>
+<h2 id="參考資料">參考資料</h2>
+<ul>
 <li><span class="exturl" data-url="aHR0cDovL3Bva2VyLmNzLnVhbGJlcnRhLmNhL3B1YmxpY2F0aW9ucy9OSVBTMDctY2ZyLnBkZg==">(CFR)Regret Minimization in Games with Incomplete Information<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cDovL2FyeGl2Lm9yZy9wZGYvMTQwNy41MDQyLnBkZg==">(CFR+)Solving Large Imperfect Information Games Using CFR+<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cDovL3d3dy5xdW9yYS5jb20vV2hhdC1pcy1hbi1pbnR1aXRpdmUtZXhwbGFuYXRpb24tb2YtY291bnRlcmZhY3R1YWwtcmVncmV0LW1pbmltaXphdGlvbg==">(CFR)Explanation of CFR by inventor himself<i class="fa fa-external-link-alt"></i></span></li>
@@ -446,7 +463,7 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">473k</span>
+    <span title="總字數">468k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

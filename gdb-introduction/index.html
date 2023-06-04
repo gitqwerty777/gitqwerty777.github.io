@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.2.0">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.webp">
@@ -24,12 +24,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"gitqwerty777.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.12.1","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"show_result":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInDown","sidebar":"fadeInRight"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/config.min.js"></script>
 
-    <meta name="description" content="簡介只要使用GNU計畫出產的編譯器(如gcc)，就可以用gdb來進行除錯，包含 C&#x2F;C++&#x2F;Objective-C&#x2F;Fortran&#x2F;Java 等語言。">
+    <meta name="description" content="簡介 只要使用GNU計畫出產的編譯器(如gcc)，就可以用gdb來進行除錯，包含 C&#x2F;C++&#x2F;Objective-C&#x2F;Fortran&#x2F;Java 等語言。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="gdb簡介">
 <meta property="og:url" content="http://gitqwerty777.github.io/gdb-introduction/index.html">
 <meta property="og:site_name" content="QWERTY">
-<meta property="og:description" content="簡介只要使用GNU計畫出產的編譯器(如gcc)，就可以用gdb來進行除錯，包含 C&#x2F;C++&#x2F;Objective-C&#x2F;Fortran&#x2F;Java 等語言。">
+<meta property="og:description" content="簡介 只要使用GNU計畫出產的編譯器(如gcc)，就可以用gdb來進行除錯，包含 C&#x2F;C++&#x2F;Objective-C&#x2F;Fortran&#x2F;Java 等語言。">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2014-09-19T01:35:58.000Z">
 <meta property="article:modified_time" content="2014-09-19T01:35:58.000Z">
@@ -156,7 +156,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B0%A1%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">簡介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AD%98"><span class="nav-number">2.</span> <span class="nav-text">基本知識</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%99%A4%E9%8C%AF%E7%A8%8B%E5%BA%8F"><span class="nav-number">3.</span> <span class="nav-text">除錯程序</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BC%89%E5%85%A5%E7%A8%8B%E5%BC%8F"><span class="nav-number">3.1.</span> <span class="nav-text">載入程式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A8%AD%E4%B8%AD%E6%96%B7%E9%BB%9E"><span class="nav-number">3.2.</span> <span class="nav-text">設中斷點</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%B7%E8%A1%8C%E7%A8%8B%E5%BC%8F"><span class="nav-number">3.3.</span> <span class="nav-text">執行程式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%A8%E5%A0%86%E7%96%8A%E9%96%93%E8%B7%B3%E8%BA%8D"><span class="nav-number">3.4.</span> <span class="nav-text">在堆疊間跳躍</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%97%E5%87%BA%E5%8E%9F%E5%A7%8B%E7%A2%BC"><span class="nav-number">3.4.1.</span> <span class="nav-text">列出原始碼</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AA%A2%E6%9F%A5%E8%AE%8A%E6%95%B8%E5%80%BC"><span class="nav-number">3.5.</span> <span class="nav-text">檢查變數值</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#print-display"><span class="nav-number">3.5.1.</span> <span class="nav-text">print, display</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%8A%E6%95%B8"><span class="nav-number">3.5.2.</span> <span class="nav-text">變數</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%A8%AD%E5%AE%9A%E6%96%B0%E8%AE%8A%E6%95%B8"><span class="nav-number">3.5.3.</span> <span class="nav-text">設定新變數</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#info-%E6%AA%A2%E8%A6%96%E8%A9%B3%E7%B4%B0%E8%B3%87%E8%A8%8A"><span class="nav-number">3.5.4.</span> <span class="nav-text">info: 檢視詳細資訊</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E6%8C%87%E4%BB%A4"><span class="nav-number">4.</span> <span class="nav-text">其他指令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%A1%E8%99%9F-signal-%E8%99%95%E7%90%86"><span class="nav-number">4.1.</span> <span class="nav-text">信號(signal)處理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#thread%E8%99%95%E7%90%86"><span class="nav-number">4.2.</span> <span class="nav-text">thread處理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Python-%E6%95%B4%E5%90%88"><span class="nav-number">4.3.</span> <span class="nav-text">Python 整合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%8D%E5%90%91%E5%9F%B7%E8%A1%8C"><span class="nav-number">4.4.</span> <span class="nav-text">反向執行</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8C%87%E4%BB%A4%E7%B0%A1%E5%AF%AB"><span class="nav-number">5.</span> <span class="nav-text">指令簡寫</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CppCon-2015-Greg-Law-%E2%80%9CGive-me-15-minutes-amp-I%E2%80%99ll-change-your-view-of-GDB%E2%80%9D"><span class="nav-number">6.</span> <span class="nav-text">CppCon 2015: Greg Law “Give me 15 minutes &amp; I’ll change your view of GDB”</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E6%84%9F%E6%83%B3"><span class="nav-number">7.</span> <span class="nav-text">使用感想</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99"><span class="nav-number">8.</span> <span class="nav-text">參考資料</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B0%A1%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">簡介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AD%98"><span class="nav-number">2.</span> <span class="nav-text">基本知識</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%99%A4%E9%8C%AF%E7%A8%8B%E5%BA%8F"><span class="nav-number">3.</span> <span class="nav-text">除錯程序</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BC%89%E5%85%A5%E7%A8%8B%E5%BC%8F"><span class="nav-number">3.1.</span> <span class="nav-text">載入程式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A8%AD%E4%B8%AD%E6%96%B7%E9%BB%9E"><span class="nav-number">3.2.</span> <span class="nav-text">設中斷點</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%B7%E8%A1%8C%E7%A8%8B%E5%BC%8F"><span class="nav-number">3.3.</span> <span class="nav-text">執行程式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%A8%E5%A0%86%E7%96%8A%E9%96%93%E8%B7%B3%E8%BA%8D"><span class="nav-number">3.4.</span> <span class="nav-text">在堆疊間跳躍</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%97%E5%87%BA%E5%8E%9F%E5%A7%8B%E7%A2%BC"><span class="nav-number">3.4.1.</span> <span class="nav-text">列出原始碼</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AA%A2%E6%9F%A5%E8%AE%8A%E6%95%B8%E5%80%BC"><span class="nav-number">3.5.</span> <span class="nav-text">檢查變數值</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#print-display"><span class="nav-number">3.5.1.</span> <span class="nav-text">print, display</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%8A%E6%95%B8"><span class="nav-number">3.5.2.</span> <span class="nav-text">變數</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%A8%AD%E5%AE%9A%E6%96%B0%E8%AE%8A%E6%95%B8"><span class="nav-number">3.5.3.</span> <span class="nav-text">設定新變數</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#info-%E6%AA%A2%E8%A6%96%E8%A9%B3%E7%B4%B0%E8%B3%87%E8%A8%8A"><span class="nav-number">3.5.4.</span> <span class="nav-text">info: 檢視詳細資訊</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E6%8C%87%E4%BB%A4"><span class="nav-number">4.</span> <span class="nav-text">其他指令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%A1%E8%99%9F-signal-%E8%99%95%E7%90%86"><span class="nav-number">4.1.</span> <span class="nav-text">信號(signal)處理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#thread%E8%99%95%E7%90%86"><span class="nav-number">4.2.</span> <span class="nav-text">thread處理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Python-%E6%95%B4%E5%90%88"><span class="nav-number">4.3.</span> <span class="nav-text">Python 整合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%8D%E5%90%91%E5%9F%B7%E8%A1%8C"><span class="nav-number">4.4.</span> <span class="nav-text">反向執行</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8C%87%E4%BB%A4%E7%B0%A1%E5%AF%AB"><span class="nav-number">5.</span> <span class="nav-text">指令簡寫</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CppCon-2015-Greg-Law-Give-me-15-minutes-I-ll-change-your-view-of-GDB"><span class="nav-number">6.</span> <span class="nav-text">CppCon 2015: Greg Law &quot;Give me 15 minutes &amp; I&#39;ll change your view of GDB&quot;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E6%84%9F%E6%83%B3"><span class="nav-number">7.</span> <span class="nav-text">使用感想</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99"><span class="nav-number">8.</span> <span class="nav-text">參考資料</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -306,22 +306,26 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h2><p>只要使用GNU計畫出產的編譯器(如gcc)，就可以用gdb來進行除錯，包含 C&#x2F;C++&#x2F;Objective-C&#x2F;Fortran&#x2F;Java 等語言。</p>
+        <h2 id="簡介">簡介</h2>
+<p>只要使用GNU計畫出產的編譯器(如gcc)，就可以用gdb來進行除錯，包含 C/C++/Objective-C/Fortran/Java 等語言。</p>
 <span id="more"></span>
-
-<h2 id="基本知識"><a href="#基本知識" class="headerlink" title="基本知識"></a>基本知識</h2><p><strong>function stack → frame</strong></p>
+<h2 id="基本知識">基本知識</h2>
+<p><strong>function stack → frame</strong></p>
 <ul>
 <li>C語言在進入一個函式前，會將原本所在的函式的資訊(變數值、函式名、指標)儲存至堆疊(stack)裡，等到回傳(return)後再從這些堆疊裡復原函式資訊</li>
 <li>目前正在執行的函式就是 frame 0，而呼叫frame 0的函式就是frame 1，以此類推</li>
 </ul>
-<h2 id="除錯程序"><a href="#除錯程序" class="headerlink" title="除錯程序"></a>除錯程序</h2><ol>
+<h2 id="除錯程序">除錯程序</h2>
+<ol>
 <li>載入程式</li>
 <li>設中斷點</li>
 <li>執行程式，程式跑到中斷點會停下來</li>
 <li>在堆疊間跳躍，並檢查變數值</li>
 </ol>
-<h3 id="載入程式"><a href="#載入程式" class="headerlink" title="載入程式"></a>載入程式</h3><ul>
-<li>編譯時加入 <code>-g</code> 可加入除錯資訊。這些除錯訊息會影響程式大小和執行速度，所以一般在發佈應用程式時是不會以<code>-g</code>參數編譯的。<ul>
+<h3 id="載入程式">載入程式</h3>
+<ul>
+<li>編譯時加入 <code>-g</code> 可加入除錯資訊。這些除錯訊息會影響程式大小和執行速度，所以一般在發佈應用程式時是不會以<code>-g</code>參數編譯的。
+<ul>
 <li>可以在事後利用 strip 指令清掉應用程式裡的除錯資訊。</li>
 </ul>
 </li>
@@ -336,7 +340,8 @@
 <th>說明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>-symbols [file_name]</td>
 <td>-s</td>
 <td>讀取檔案中的除錯表</td>
@@ -367,7 +372,7 @@
 <td>一次讀取完所有的符號表，這會讓啟動gdb的時間變長，但在執行往後的除錯動作會較快速。</td>
 </tr>
 <tr>
-<td>-quiet&#x2F;-silent</td>
+<td>-quiet/-silent</td>
 <td>-q</td>
 <td>安靜模式，啟動時gdb將不會顯示版權頁。</td>
 </tr>
@@ -377,12 +382,14 @@
 <td>改變程式執行的目錄</td>
 </tr>
 <tr>
-<td>–args</td>
+<td>--args</td>
 <td></td>
 <td>這個參數要當作命令列的最後一個參數，其後跟隨的參數都會被視為「傳給要除錯的程式的參數」</td>
 </tr>
-</tbody></table>
-<h3 id="設中斷點"><a href="#設中斷點" class="headerlink" title="設中斷點"></a>設中斷點</h3><p><code>[breakpoint]</code> 可以是 file+line number, function name, memory address</p>
+</tbody>
+</table>
+<h3 id="設中斷點">設中斷點</h3>
+<p><code>[breakpoint]</code> 可以是 file+line number, function name, memory address</p>
 <table>
 <thead>
 <tr>
@@ -390,7 +397,8 @@
 <th>停止時機</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>break</td>
 <td>gdb執行下一個指令後停止</td>
 </tr>
@@ -426,7 +434,8 @@
 <td>enable [breakpoint number]</td>
 <td>取消暫時關閉狀態</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <table>
 <thead>
 <tr>
@@ -434,7 +443,8 @@
 <th>說明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>info break</td>
 <td>列出目前所有的中斷點</td>
 </tr>
@@ -454,15 +464,18 @@
 <td>delete [breakpoint number]</td>
 <td>刪除指定中斷點</td>
 </tr>
-</tbody></table>
-<h3 id="執行程式"><a href="#執行程式" class="headerlink" title="執行程式"></a>執行程式</h3><table>
+</tbody>
+</table>
+<h3 id="執行程式">執行程式</h3>
+<table>
 <thead>
 <tr>
 <th>指令</th>
 <th>說明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>file [filename]</td>
 <td>開啟檔案 (等同於 gdb filename)</td>
 </tr>
@@ -487,8 +500,8 @@
 <td>顯示特定參數<br>如：<code>show environment</code></td>
 </tr>
 <tr>
-<td>set&#x2F;show args</td>
-<td>設定&#x2F;顯示 命令列的參數</td>
+<td>set/show args</td>
+<td>設定/顯示 命令列的參數</td>
 </tr>
 <tr>
 <td>attach [PID]</td>
@@ -498,15 +511,18 @@
 <td>detach [PID]</td>
 <td>釋放已 attach 的程式</td>
 </tr>
-</tbody></table>
-<h3 id="在堆疊間跳躍"><a href="#在堆疊間跳躍" class="headerlink" title="在堆疊間跳躍"></a>在堆疊間跳躍</h3><table>
+</tbody>
+</table>
+<h3 id="在堆疊間跳躍">在堆疊間跳躍</h3>
+<table>
 <thead>
 <tr>
 <th>主要指令</th>
 <th>說明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>next</td>
 <td>執行<strong>當前函式</strong>的一個指令<br>若指令為呼叫函式，則直接跑完，不會進入frame中</td>
 </tr>
@@ -516,7 +532,7 @@
 </tr>
 <tr>
 <td>until</td>
-<td>直接跑完迴圈(for, while…)</td>
+<td>直接跑完迴圈(for, while...)</td>
 </tr>
 <tr>
 <td>continue</td>
@@ -526,7 +542,8 @@
 <td>return</td>
 <td>視同該 frame 已執行完畢<br>等同插入C語言指令<code>return;</code></td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>※註：若該函式的除錯資訊沒有編進執行檔裡的話，那<code>step</code>也不會跳進這個函式裡，而是單純的將它看作一行程式碼(如同next的作用)，如標準函式庫(如<code>stdio.h</code>)提供的函式。</p>
 <table>
 <thead>
@@ -535,9 +552,10 @@
 <th>說明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>backtrace</td>
-<td>堆疊追蹤。會顯示出所有的 frame 的資訊<br> &#x3D; <code>info frame</code></td>
+<td>堆疊追蹤。會顯示出所有的 frame 的資訊<br> = <code>info frame</code></td>
 </tr>
 <tr>
 <td>frame</td>
@@ -563,15 +581,18 @@
 <td>jump [location]</td>
 <td>直接跳到指定位置(行數，函式…)</td>
 </tr>
-</tbody></table>
-<h4 id="列出原始碼"><a href="#列出原始碼" class="headerlink" title="列出原始碼"></a>列出原始碼</h4><table>
+</tbody>
+</table>
+<h4 id="列出原始碼">列出原始碼</h4>
+<table>
 <thead>
 <tr>
 <th>指令</th>
 <th>說明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>list(第一次)</td>
 <td>列出現在執行的位置上下5行</td>
 </tr>
@@ -603,11 +624,13 @@
 <td>set listsize [num]</td>
 <td>設定一次印出幾行</td>
 </tr>
-</tbody></table>
-<h3 id="檢查變數值"><a href="#檢查變數值" class="headerlink" title="檢查變數值"></a>檢查變數值</h3><p>可以顯示某些資訊以利於debug</p>
-<h4 id="print-display"><a href="#print-display" class="headerlink" title="print, display"></a>print, display</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(gdb) <span class="built_in">print</span> i</span><br><span class="line"><span class="variable">$1</span> = 6078</span><br></pre></td></tr></table></figure>
-
-<p>輸入 <code>print/格式字元 [variable]</code> 可以指定型態，與printf不同的以粗體表示  </p>
+</tbody>
+</table>
+<h3 id="檢查變數值">檢查變數值</h3>
+<p>可以顯示某些資訊以利於debug</p>
+<h4 id="print-display">print, display</h4>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(gdb) <span class="built_in">print</span> i</span><br><span class="line"><span class="variable">$1</span> = 6078</span><br></pre></td></tr></table></figure>
+<p>輸入 <code>print/格式字元 [variable]</code> 可以指定型態，與printf不同的以粗體表示</p>
 <table>
 <thead>
 <tr>
@@ -615,7 +638,8 @@
 <th>格式字元</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>d</td>
 <td>整數</td>
 </tr>
@@ -643,7 +667,8 @@
 <td>f</td>
 <td>浮點數</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <table>
 <thead>
 <tr>
@@ -651,7 +676,8 @@
 <th>說明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>whatis [variable]</td>
 <td>顯示指定變數的型態</td>
 </tr>
@@ -667,8 +693,11 @@
 <td>display [variable]</td>
 <td>每次中斷時會顯示指定變數值</td>
 </tr>
-</tbody></table>
-<h4 id="變數"><a href="#變數" class="headerlink" title="變數"></a>變數</h4><p>執行 print 指令後，gdb 產生臨時變數(如<code>$1</code>)來記錄<br>可以直接利用 <code>$1</code> 來取用這個變數</p>
+</tbody>
+</table>
+<h4 id="變數">變數</h4>
+<p>執行 print 指令後，gdb 產生臨時變數(如<code>$1</code>)來記錄<br />
+可以直接利用 <code>$1</code> 來取用這個變數</p>
 <p>用於 print 及 display 的參數名稱</p>
 <ul>
 <li><code>$7</code>: 第七個運算式</li>
@@ -678,17 +707,20 @@
 <li><code>$pc</code> program counter</li>
 <li><code>$sp</code> stack pointer</li>
 </ul>
-<h4 id="設定新變數"><a href="#設定新變數" class="headerlink" title="設定新變數"></a>設定新變數</h4><p>取代冗長路徑的變數，如在深層資料結構中的變數<br>(註: 此變數為 pass by reference, 修改新變數的值也會修改原本的變數)</p>
+<h4 id="設定新變數">設定新變數</h4>
+<p>取代冗長路徑的變數，如在深層資料結構中的變數<br />
+(註: 此變數為 pass by reference, 修改新變數的值也會修改原本的變數)</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">set $newv = model-&gt;dataset-&gt;vector-&gt;data</span><br><span class="line">p *($newv++)</span><br></pre></td></tr></table></figure>
-
-<h4 id="info-檢視詳細資訊"><a href="#info-檢視詳細資訊" class="headerlink" title="info: 檢視詳細資訊"></a>info: 檢視詳細資訊</h4><table>
+<h4 id="info-檢視詳細資訊">info: 檢視詳細資訊</h4>
+<table>
 <thead>
 <tr>
 <th>指令</th>
 <th>說明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>info break</td>
 <td>列出目前所有的中斷點</td>
 </tr>
@@ -724,26 +756,31 @@
 <td>info share</td>
 <td>顯示共享函式庫資訊</td>
 </tr>
-</tbody></table>
-<h2 id="其他指令"><a href="#其他指令" class="headerlink" title="其他指令"></a>其他指令</h2><ul>
-<li><code>quit</code> 結束 &#x3D; <code>q</code></li>
+</tbody>
+</table>
+<h2 id="其他指令">其他指令</h2>
+<ul>
+<li><code>quit</code> 結束 = <code>q</code></li>
 <li><code>shell [command]</code> 在shell上執行指令</li>
 <li>Enter鍵: 重複上一個命令</li>
 </ul>
-<h3 id="信號-signal-處理"><a href="#信號-signal-處理" class="headerlink" title="信號(signal)處理"></a>信號(signal)處理</h3><p><code>handle [signal] [operation]</code></p>
+<h3 id="信號-signal-處理">信號(signal)處理</h3>
+<p><code>handle [signal] [operation]</code></p>
 <ul>
 <li>預設operation為 <code>stop</code>, <code>print</code>, <code>noignore</code>，也就是遇到 signal 時，GDB 會先攔截，並暫停程式</li>
 <li>必要時可以改為 <code>nostop</code>, <code>noprint</code>，讓程式本身去處理 signal</li>
 <li>若下達 <code>ignore</code> 則是讓程式忽略此 signal</li>
 </ul>
-<h3 id="thread處理"><a href="#thread處理" class="headerlink" title="thread處理"></a>thread處理</h3><table>
+<h3 id="thread處理">thread處理</h3>
+<table>
 <thead>
 <tr>
 <th>指令</th>
 <th>說明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>thread</td>
 <td>查看目前在哪個 thread</td>
 </tr>
@@ -755,14 +792,17 @@
 <td>thread apply all [command]</td>
 <td>對所有 thread 執行指令</td>
 </tr>
-</tbody></table>
-<h3 id="Python-整合"><a href="#Python-整合" class="headerlink" title="Python 整合"></a>Python 整合</h3><p>可於gdb中執行python，並執行操作，如存取breakpoint</p>
+</tbody>
+</table>
+<h3 id="Python-整合">Python 整合</h3>
+<p>可於gdb中執行python，並執行操作，如存取breakpoint</p>
 <ul>
 <li><code>python print(gdb.breakpoints())</code></li>
 <li><code>python gdb.execute()</code></li>
 <li><code>python gdb.parse_and_eval()</code></li>
 </ul>
-<h3 id="反向執行"><a href="#反向執行" class="headerlink" title="反向執行"></a>反向執行</h3><p><span class="exturl" data-url="aHR0cDovL2Jsb2cuY3Nkbi5uZXQvQ2hlcnlsTmF0c3UvYXJ0aWNsZS9kZXRhaWxzLzY0MzY1NzA=">GDB 反向調試（Reverse Debugging）<i class="fa fa-external-link-alt"></i></span></p>
+<h3 id="反向執行">反向執行</h3>
+<p><span class="exturl" data-url="aHR0cDovL2Jsb2cuY3Nkbi5uZXQvQ2hlcnlsTmF0c3UvYXJ0aWNsZS9kZXRhaWxzLzY0MzY1NzA=">GDB 反向調試（Reverse Debugging）<i class="fa fa-external-link-alt"></i></span></p>
 <ul>
 <li><code>reverse-continue</code> 反向執行程式</li>
 <li><code>reverse-step</code></li>
@@ -772,7 +812,8 @@
 <li><code>reverse-finish</code> 反向執行程式回到調用目前函式的地方</li>
 <li><code>set exec-direction [forward | reverse]</code> 設置程序執行方向，即可用一般的step和continue來反向執行</li>
 </ul>
-<h2 id="指令簡寫"><a href="#指令簡寫" class="headerlink" title="指令簡寫"></a>指令簡寫</h2><ul>
+<h2 id="指令簡寫">指令簡寫</h2>
+<ul>
 <li><code>break</code>: b</li>
 <li><code>delete</code>: d</li>
 <li><code>disable</code>: dis</li>
@@ -791,37 +832,44 @@
 </ul>
 <p>可多次使用簡寫</p>
 <ul>
-<li><code>info break</code> &#x3D; <code>i b</code></li>
+<li><code>info break</code> = <code>i b</code></li>
 </ul>
-<h2 id="CppCon-2015-Greg-Law-“Give-me-15-minutes-amp-I’ll-change-your-view-of-GDB”"><a href="#CppCon-2015-Greg-Law-“Give-me-15-minutes-amp-I’ll-change-your-view-of-GDB”" class="headerlink" title="CppCon 2015: Greg Law “Give me 15 minutes &amp; I’ll change your view of GDB”"></a>CppCon 2015: Greg Law “Give me 15 minutes &amp; I’ll change your view of GDB”</h2><p><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1Qb3JmTFNyM0RESQ==">Youtube連結<i class="fa fa-external-link-alt"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0NwcENvbi9DcHBDb24yMDE1L2Jsb2IvbWFzdGVyL0xpZ2h0bmluZyUyMFRhbGtzJTIwYW5kJTIwTHVuY2glMjBTZXNzaW9ucy9HaXZlJTIwTWUlMjAxNSUyME1pbnV0ZXMlMjBhbmQlMjBJJ2xsJTIwQ2hhbmdlJTIwWW91ciUyMFZpZXclMjBvZiUyMEdEQi9HaXZlJTIwTWUlMjAxNSUyME1pbnV0ZXMlMjBhbmQlMjBJJ2xsJTIwQ2hhbmdlJTIwWW91ciUyMFZpZXclMjBvZiUyMEdEQiUyMC0lMjBHcmVnJTIwTGF3JTIwLSUyMENwcENvbiUyMDIwMTUucGRm">Github連結<i class="fa fa-external-link-alt"></i></span></p>
+<h2 id="CppCon-2015-Greg-Law-Give-me-15-minutes-I-ll-change-your-view-of-GDB">CppCon 2015: Greg Law &quot;Give me 15 minutes &amp; I'll change your view of GDB&quot;</h2>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1Qb3JmTFNyM0RESQ==">Youtube連結<i class="fa fa-external-link-alt"></i></span><br />
+<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0NwcENvbi9DcHBDb24yMDE1L2Jsb2IvbWFzdGVyL0xpZ2h0bmluZyUyMFRhbGtzJTIwYW5kJTIwTHVuY2glMjBTZXNzaW9ucy9HaXZlJTIwTWUlMjAxNSUyME1pbnV0ZXMlMjBhbmQlMjBJJ2xsJTIwQ2hhbmdlJTIwWW91ciUyMFZpZXclMjBvZiUyMEdEQi9HaXZlJTIwTWUlMjAxNSUyME1pbnV0ZXMlMjBhbmQlMjBJJ2xsJTIwQ2hhbmdlJTIwWW91ciUyMFZpZXclMjBvZiUyMEdEQiUyMC0lMjBHcmVnJTIwTGF3JTIwLSUyMENwcENvbiUyMDIwMTUucGRm">Github連結<i class="fa fa-external-link-alt"></i></span></p>
 <ul>
-<li><code>Ctrl-x a</code>： text ui mode(tui)<ul>
+<li><code>Ctrl-x a</code>： text ui mode(tui)
+<ul>
 <li><code>Ctrl-p</code>： 得到前一個指令</li>
 </ul>
 </li>
-<li><code>Ctrl-x 2</code>： switch to assembly mode&#x2F;register group mode </li>
+<li><code>Ctrl-x 2</code>： switch to assembly mode/register group mode</li>
 <li><code>tui reg float</code>： show float registers</li>
 <li><code>b _exit.c:32</code>： 在程式結束之前停止</li>
-<li><code>command [breakpoint number] [command]</code>： 遇到breakpoint時，所自動執行的指令 </li>
+<li><code>command [breakpoint number] [command]</code>： 遇到breakpoint時，所自動執行的指令</li>
 <li><code>x [memory address]</code>： jump to memory location</li>
 </ul>
-<h2 id="使用感想"><a href="#使用感想" class="headerlink" title="使用感想"></a>使用感想</h2><ul>
-<li>遇到segmentation fault的時候，一定會使用<ul>
+<h2 id="使用感想">使用感想</h2>
+<ul>
+<li>遇到segmentation fault的時候，一定會使用
+<ul>
 <li>可知道出問題的位置</li>
 <li>通常再print看看就知道原因了</li>
 </ul>
 </li>
-<li>平常還是用<code>printf</code><ul>
+<li>平常還是用<code>printf</code>
+<ul>
 <li>殺雞焉用牛刀？</li>
 </ul>
 </li>
 <li>如果程式有完整的錯誤處理和記錄檔(log)，可減少用到gdb的頻率</li>
 </ul>
-<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
+<h2 id="參考資料">參考資料</h2>
+<ul>
 <li><span class="exturl" data-url="aHR0cDovL3VzZXIuZnJkbS5pbmZvL2NraHVuZy9iL2MvZ2RiLnBocA==">除錯程式:gdb<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cDovL3RldHJhbGV0Lmx1bmEuY29tLnR3Lz9vcD1WaWV3QXJ0aWNsZSZhcnRpY2xlSWQ9MTg3JmJsb2dJZD0x">Linux 除錯利器-GDB簡介<i class="fa fa-external-link-alt"></i></span>  </li>
-<li><span class="exturl" data-url="aHR0cDovL2Jsb2cueXNsaW4udHcvMjAxMi8wOC9nZGIuaHRtbA==">工欲善其事，必先利其器:GDB基本教學<i class="fa fa-external-link-alt"></i></span>  </li>
-<li><span class="exturl" data-url="aHR0cDovL3d3dy5zdHVkeS1hcmVhLm9yZy9jeXJpbC9vcGVudG9vbHMvb3BlbnRvb2xzL2RlYnVnLmh0bWw=">用Open Source工具開發軟體: 新軟體開發關念<i class="fa fa-external-link-alt"></i></span>  </li>
+<li><span class="exturl" data-url="aHR0cDovL3RldHJhbGV0Lmx1bmEuY29tLnR3Lz9vcD1WaWV3QXJ0aWNsZSZhcnRpY2xlSWQ9MTg3JmJsb2dJZD0x">Linux 除錯利器-GDB簡介<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cDovL2Jsb2cueXNsaW4udHcvMjAxMi8wOC9nZGIuaHRtbA==">工欲善其事，必先利其器:GDB基本教學<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cDovL3d3dy5zdHVkeS1hcmVhLm9yZy9jeXJpbC9vcGVudG9vbHMvb3BlbnRvb2xzL2RlYnVnLmh0bWw=">用Open Source工具開發軟體: 新軟體開發關念<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cDovL3d3dy5nbnUub3JnL3NvZnR3YXJlL2dkYi9kb2N1bWVudGF0aW9uLw==">GDB官方文件<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 
@@ -907,7 +955,7 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">473k</span>
+    <span title="總字數">468k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

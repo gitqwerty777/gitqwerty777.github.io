@@ -70,8 +70,8 @@
     <updated>2022-07-14T14:05:33.000Z</updated>
     
     
-    <summary type="html">&lt;p&gt;本文以實驗證實嘸蝦米勝過其他傳統輸入法的地方&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/img/boshiamy/cover.webp&quot;&gt;&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;本文以實驗證實嘸蝦米勝過其他傳統中文輸入法的地方&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/boshiamy/cover.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</summary>
     
     
     
@@ -102,7 +102,7 @@
     <updated>2022-05-25T02:31:46.000Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/img/other/elegant.webp&quot; alt=&quot;為了放這張圖片而在標題加上形容詞&quot;&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/img/other/elegant.webp&quot; alt=&quot;為了放這張圖片而在標題加上形容詞&quot; /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;本篇介紹用語法來畫圖的方法&lt;/p&gt;
 &lt;/blockquote&gt;</summary>
@@ -263,7 +263,8 @@
     <updated>2022-01-15T10:12:50.000Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;簡介&quot;&gt;&lt;a href=&quot;#簡介&quot; class=&quot;headerlink&quot; title=&quot;簡介&quot;&gt;&lt;/a&gt;簡介&lt;/h2&gt;&lt;p&gt;說到隨機排序(shuffle)演算法，最著名的肯定是Fisher–Yates，它是一個$O(N)$時間的演算法，偽碼如下&lt;/p&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;簡介&quot;&gt;簡介&lt;/h2&gt;
+&lt;p&gt;說到隨機排序(shuffle)演算法，最著名的肯定是Fisher–Yates，它是一個$O(N)$時間的演算法，偽碼如下&lt;/p&gt;</summary>
     
     
     
@@ -290,9 +291,11 @@
     <updated>2022-01-04T07:18:44.000Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;簡介&quot;&gt;&lt;a href=&quot;#簡介&quot; class=&quot;headerlink&quot; title=&quot;簡介&quot;&gt;&lt;/a&gt;簡介&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://ifttt.com/&quot;&gt;IFTTT&lt;/a&gt;通過其他不同平台的條件來決定是否執行下一條命令。即對網路服務透過其他網路服務作出反應&lt;/li&gt;
-&lt;li&gt;IFTTT &amp;#x3D; “IF This Then ThaT”&lt;ul&gt;
+    <summary type="html">&lt;h2 id=&quot;簡介&quot;&gt;簡介&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ifttt.com&quot;&gt;IFTTT&lt;/a&gt;通過其他不同平台的條件來決定是否執行下一條命令。即對網路服務透過其他網路服務作出反應&lt;/li&gt;
+&lt;li&gt;IFTTT = &amp;quot;IF This Then ThaT&amp;quot;
+&lt;ul&gt;
 &lt;li&gt;If A Then B(當 A 就 B)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -321,7 +324,8 @@
     <updated>2021-12-20T07:18:44.000Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;簡介&quot;&gt;&lt;a href=&quot;#簡介&quot; class=&quot;headerlink&quot; title=&quot;簡介&quot;&gt;&lt;/a&gt;簡介&lt;/h2&gt;&lt;p&gt;Wide And Deep 模型由簡單的Wide模型和複雜的Deep模型組成&lt;/p&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;簡介&quot;&gt;簡介&lt;/h2&gt;
+&lt;p&gt;Wide And Deep 模型由簡單的Wide模型和複雜的Deep模型組成&lt;/p&gt;</summary>
     
     
     
@@ -420,7 +424,7 @@
     <updated>2020-11-05T07:00:00.000Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/img/other/morgana.webp&quot; alt=&quot;Morgana - Persona5&quot;&gt;&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/img/other/morgana.webp&quot; alt=&quot;Morgana - Persona5&quot; /&gt;&lt;/p&gt;</summary>
     
     
     
@@ -445,7 +449,9 @@
     <updated>2020-10-29T07:00:00.000Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;異體字&quot;&gt;&lt;a href=&quot;#異體字&quot; class=&quot;headerlink&quot; title=&quot;異體字&quot;&gt;&lt;/a&gt;異體字&lt;/h2&gt;&lt;p&gt;異體字為意思一樣、但寫法不同的字集合。&lt;br&gt;因為漢字在多個國家使用，每個國家的正式寫法不同，且在歷史中會出現字形改變的情形，自然字形也不同。&lt;/p&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;異體字&quot;&gt;異體字&lt;/h2&gt;
+&lt;p&gt;異體字為意思一樣、但寫法不同的字集合。&lt;br /&gt;
+因為漢字在多個國家使用，每個國家的正式寫法不同，且在歷史中會出現字形改變的情形，自然字形也不同。&lt;/p&gt;</summary>
     
     
     
@@ -498,7 +504,7 @@
     <category term="記錄" scheme="http://gitqwerty777.github.io/categories/%E8%A8%98%E9%8C%84/"/>
     
     
-    <category term="linux" scheme="http://gitqwerty777.github.io/tags/linux/"/>
+    <category term="Linux" scheme="http://gitqwerty777.github.io/tags/linux/"/>
     
     <category term="硬碟" scheme="http://gitqwerty777.github.io/tags/%E7%A1%AC%E7%A2%9F/"/>
     
@@ -516,8 +522,9 @@
     <updated>2020-09-13T09:25:34.000Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/img/other/foreign-terms-police.webp&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;簡介&quot;&gt;&lt;a href=&quot;#簡介&quot; class=&quot;headerlink&quot; title=&quot;簡介&quot;&gt;&lt;/a&gt;簡介&lt;/h2&gt;&lt;p&gt;PTT 上常有支語警察&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/img/other/foreign-terms-police.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;簡介&quot;&gt;簡介&lt;/h2&gt;
+&lt;p&gt;PTT 上常有支語警察&lt;/p&gt;
 &lt;p&gt;也常發現 google 翻譯的中文常常會&lt;a href=&quot;https://www.setn.com/News.aspx?NewsID=746793&quot;&gt;翻譯成中國慣用語&lt;/a&gt;(可以參考 &lt;a href=&quot;https://isgooglefixed.tw/&quot;&gt;Google 翻譯修好了沒？&lt;/a&gt;)&lt;/p&gt;
 &lt;p&gt;所以就寫了一個支語警察的網站：&lt;a href=&quot;/foreign-terms-police&quot;&gt;支語警察&lt;/a&gt;&lt;/p&gt;</summary>
     
@@ -571,11 +578,10 @@
     <updated>2020-09-06T06:50:12.000Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;簡介&quot;&gt;&lt;a href=&quot;#簡介&quot; class=&quot;headerlink&quot; title=&quot;簡介&quot;&gt;&lt;/a&gt;簡介&lt;/h2&gt;&lt;p&gt;採用簡潔的模板語法來宣告式地將資料渲染進 DOM 的系統&lt;/p&gt;
+    <summary type="html">&lt;h2 id=&quot;簡介&quot;&gt;簡介&lt;/h2&gt;
+&lt;p&gt;採用簡潔的模板語法來宣告式地將資料渲染進 DOM 的系統&lt;/p&gt;
 &lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&amp;lt;!-- html part --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;id&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&amp;quot;app&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#123;&amp;#123; message &amp;#125;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
 &lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//js part&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; app = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;title class_&quot;&gt;Vue&lt;/span&gt;(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;attr&quot;&gt;el&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&amp;#x27;#app&amp;#x27;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;attr&quot;&gt;data&lt;/span&gt;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attr&quot;&gt;message&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&amp;#x27;Hello Vue.js!&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attr&quot;&gt;todo&lt;/span&gt;: []&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;attr&quot;&gt;methods&lt;/span&gt;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attr&quot;&gt;reverseMessage&lt;/span&gt;: &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;variable language_&quot;&gt;this&lt;/span&gt;.&lt;span class=&quot;property&quot;&gt;message&lt;/span&gt; = &lt;span class=&quot;variable language_&quot;&gt;this&lt;/span&gt;.&lt;span class=&quot;property&quot;&gt;message&lt;/span&gt;.&lt;span class=&quot;title function_&quot;&gt;split&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&amp;#x27;&amp;#x27;&lt;/span&gt;).&lt;span class=&quot;title function_&quot;&gt;reverse&lt;/span&gt;().&lt;span class=&quot;title function_&quot;&gt;join&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&amp;#x27;&amp;#x27;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
 &lt;p&gt;在 html tag 中 加入&lt;code&gt;v-&lt;/code&gt;開頭的attributes以實作邏輯&lt;/p&gt;</summary>
     
     
@@ -597,7 +603,8 @@
     <updated>2020-08-18T16:45:00.000Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;不用免費架站服務的理由&quot;&gt;&lt;a href=&quot;#不用免費架站服務的理由&quot; class=&quot;headerlink&quot; title=&quot;不用免費架站服務的理由&quot;&gt;&lt;/a&gt;不用免費架站服務的理由&lt;/h2&gt;&lt;p&gt;若只是要純粹建blog，用github page + &lt;a href=&quot;/build-hexo-blog/&quot;&gt;hexo&lt;/a&gt; 即可。&lt;/p&gt;
+    <summary type="html">&lt;h2 id=&quot;不用免費架站服務的理由&quot;&gt;不用免費架站服務的理由&lt;/h2&gt;
+&lt;p&gt;若只是要純粹建blog，用github page + &lt;a href=&quot;/build-hexo-blog/&quot;&gt;hexo&lt;/a&gt; 即可。&lt;/p&gt;
 &lt;p&gt;更簡單的方法就是用痞客邦、Blogger等免費部落格。&lt;/p&gt;
 &lt;p&gt;不過自架有以下優點&lt;/p&gt;</summary>
     
@@ -630,8 +637,29 @@
     <updated>2020-08-17T16:45:00.000Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;import-this&quot;&gt;&lt;a href=&quot;#import-this&quot; class=&quot;headerlink&quot; title=&quot;import this&quot;&gt;&lt;/a&gt;import this&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;The Zen of Python, by Tim Peters&lt;br&gt; &lt;br&gt;Beautiful is better than ugly.&lt;br&gt;Explicit is better than implicit.&lt;br&gt;Simple is better than complex.&lt;br&gt;Complex is better than complicated.&lt;br&gt;Flat is better than nested.&lt;br&gt;Sparse is better than dense.&lt;br&gt;Readability counts.&lt;br&gt;Special cases aren’t special enough to break the rules.&lt;br&gt;Although practicality beats purity.&lt;br&gt;Errors should never pass silently.&lt;br&gt;Unless explicitly silenced.&lt;br&gt;In the face of ambiguity, refuse the temptation to guess.&lt;br&gt;There should be one– and preferably only one –obvious way to do it.&lt;br&gt;Although that way may not be obvious at first unless you’re Dutch.&lt;br&gt;Now is better than never.&lt;br&gt;Although never is often better than &lt;em&gt;right&lt;/em&gt; now.&lt;br&gt;If the implementation is hard to explain, it’s a bad idea.&lt;br&gt;If the implementation is easy to explain, it may be a good idea.&lt;br&gt;Namespaces are one honking great idea – let’s do more of those!&lt;/p&gt;
+    <summary type="html">&lt;h2 id=&quot;import-this&quot;&gt;import this&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The Zen of Python, by Tim Peters&lt;br /&gt;
+ &lt;br /&gt;
+Beautiful is better than ugly.&lt;br /&gt;
+Explicit is better than implicit.&lt;br /&gt;
+Simple is better than complex.&lt;br /&gt;
+Complex is better than complicated.&lt;br /&gt;
+Flat is better than nested.&lt;br /&gt;
+Sparse is better than dense.&lt;br /&gt;
+Readability counts.&lt;br /&gt;
+Special cases aren&#39;t special enough to break the rules.&lt;br /&gt;
+Although practicality beats purity.&lt;br /&gt;
+Errors should never pass silently.&lt;br /&gt;
+Unless explicitly silenced.&lt;br /&gt;
+In the face of ambiguity, refuse the temptation to guess.&lt;br /&gt;
+There should be one-- and preferably only one --obvious way to do it.&lt;br /&gt;
+Although that way may not be obvious at first unless you&#39;re Dutch.&lt;br /&gt;
+Now is better than never.&lt;br /&gt;
+Although never is often better than &lt;em&gt;right&lt;/em&gt; now.&lt;br /&gt;
+If the implementation is hard to explain, it&#39;s a bad idea.&lt;br /&gt;
+If the implementation is easy to explain, it may be a good idea.&lt;br /&gt;
+Namespaces are one honking great idea -- let&#39;s do more of those!&lt;/p&gt;
 &lt;/blockquote&gt;</summary>
     
     
@@ -679,9 +707,12 @@
     <summary type="html">&lt;blockquote&gt;
 &lt;p&gt;hexo 都實作得差不多了，純整理&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&quot;html-tag&quot;&gt;&lt;a href=&quot;#html-tag&quot; class=&quot;headerlink&quot; title=&quot;html tag&quot;&gt;&lt;/a&gt;html tag&lt;/h2&gt;&lt;h3 id=&quot;lt-title-gt&quot;&gt;&lt;a href=&quot;#lt-title-gt&quot; class=&quot;headerlink&quot; title=&quot;&amp;lt;title&amp;gt;&quot;&gt;&lt;/a&gt;&amp;lt;title&amp;gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;h2 id=&quot;html-tag&quot;&gt;html tag&lt;/h2&gt;
+&lt;h3 id=&quot;title&quot;&gt;&amp;lt;title&amp;gt;&lt;/h3&gt;
+&lt;ul&gt;
 &lt;li&gt;網頁的主題&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt;標記應該放在HTML文件的&lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;標記區段中</summary>
+&lt;li&gt;&lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt;標記應該放在HTML文件的&lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;標記區段中&lt;/li&gt;
+&lt;/ul&gt;</summary>
     
     
     
@@ -704,8 +735,8 @@
     <updated>2020-07-29T06:50:12.000Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;JSX&quot;&gt;&lt;a href=&quot;#JSX&quot; class=&quot;headerlink&quot; title=&quot;JSX&quot;&gt;&lt;/a&gt;JSX&lt;/h2&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; element = &lt;span class=&quot;language-xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;hello&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
+    <summary type="html">&lt;h2 id=&quot;JSX&quot;&gt;JSX&lt;/h2&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; element = &lt;span class=&quot;language-xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;hello&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;這個語法叫做 JSX，是一個 JavaScript 的語法擴充，會產生 &lt;strong&gt;React element&lt;/strong&gt;&lt;/p&gt;</summary>
     
     
@@ -727,7 +758,11 @@
     <updated>2020-06-23T02:33:00.000Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;RSS分析&quot;&gt;&lt;a href=&quot;#RSS分析&quot; class=&quot;headerlink&quot; title=&quot;RSS分析&quot;&gt;&lt;/a&gt;RSS分析&lt;/h2&gt;&lt;p&gt;優點&lt;/p&gt;
+    <summary type="html">&lt;h2 id=&quot;RSS簡介&quot;&gt;RSS簡介&lt;/h2&gt;
+&lt;p&gt;RSS（英文全稱：RDF Site Summary 或 Really Simple Syndication），中文譯作簡易資訊聚合，是一種訊息來源格式規範，用以聚合多個網站更新的內容並自動通知網站訂閱者。&lt;/p&gt;
+&lt;p&gt;使用 RSS 後，網站訂閱者便無需再手動檢視網站是否有新的內容，同時 RSS 可將多個網站更新的內容進行整合，以摘要的形式呈現，有助於訂閱者快速獲取重要資訊。&lt;/p&gt;
+&lt;h2 id=&quot;RSS分析&quot;&gt;RSS分析&lt;/h2&gt;
+&lt;p&gt;優點&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;不會被推薦演算法&lt;strong&gt;影響閱讀喜好&lt;/strong&gt;或&lt;strong&gt;漏掉想看的內容&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;統一的閱讀體驗，且沒有廣告&lt;/li&gt;
@@ -744,6 +779,8 @@
     
     <category term="記錄" scheme="http://gitqwerty777.github.io/categories/%E8%A8%98%E9%8C%84/"/>
     
+    
+    <category term="推薦系統" scheme="http://gitqwerty777.github.io/tags/%E6%8E%A8%E8%96%A6%E7%B3%BB%E7%B5%B1/"/>
     
     <category term="rss" scheme="http://gitqwerty777.github.io/tags/rss/"/>
     
@@ -769,7 +806,10 @@
     <updated>2017-05-23T12:44:30.000Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;編譯速度慢的原因&quot;&gt;&lt;a href=&quot;#編譯速度慢的原因&quot; class=&quot;headerlink&quot; title=&quot;編譯速度慢的原因&quot;&gt;&lt;/a&gt;編譯速度慢的原因&lt;/h2&gt;&lt;p&gt;因為C++ &lt;code&gt;.h&lt;/code&gt; + &lt;code&gt;.cpp&lt;/code&gt; 的編譯模型&lt;br&gt;每個cpp檔可能會包含上百甚至上千個&lt;code&gt;.h&lt;/code&gt;檔，這些&lt;code&gt;.h&lt;/code&gt;檔都會被讀進來一遍，然後被解析一遍。&lt;br&gt;每個編譯單元都會產生一個&lt;code&gt;.obj&lt;/code&gt;文件，然後所以這些&lt;code&gt;.obj&lt;/code&gt;文件會被link到一起，並且這個過程很難平行。重複load與解析，以及密集的IO，使編譯速度很慢。&lt;/p&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;編譯速度慢的原因&quot;&gt;編譯速度慢的原因&lt;/h2&gt;
+&lt;p&gt;因為C++ &lt;code&gt;.h&lt;/code&gt; + &lt;code&gt;.cpp&lt;/code&gt; 的編譯模型&lt;br /&gt;
+每個cpp檔可能會包含上百甚至上千個&lt;code&gt;.h&lt;/code&gt;檔，這些&lt;code&gt;.h&lt;/code&gt;檔都會被讀進來一遍，然後被解析一遍。&lt;br /&gt;
+每個編譯單元都會產生一個&lt;code&gt;.obj&lt;/code&gt;文件，然後所以這些&lt;code&gt;.obj&lt;/code&gt;文件會被link到一起，並且這個過程很難平行。重複load與解析，以及密集的IO，使編譯速度很慢。&lt;/p&gt;</summary>
     
     
     
@@ -798,7 +838,8 @@
     <updated>2017-04-09T11:21:33.000Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;需求&quot;&gt;&lt;a href=&quot;#需求&quot; class=&quot;headerlink&quot; title=&quot;需求&quot;&gt;&lt;/a&gt;需求&lt;/h2&gt;&lt;p&gt;以目前正在使用的hexo為例，優先度由大到小排列：&lt;/p&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;需求&quot;&gt;需求&lt;/h2&gt;
+&lt;p&gt;以目前正在使用的hexo為例，優先度由大到小排列：&lt;/p&gt;</summary>
     
     
     

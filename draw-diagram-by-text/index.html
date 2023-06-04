@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.2.0">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.webp">
@@ -310,99 +310,117 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p><img data-src="/img/other/elegant.webp" alt="為了放這張圖片而在標題加上形容詞"></p>
+        <p><img data-src="/img/other/elegant.webp" alt="為了放這張圖片而在標題加上形容詞" /></p>
 <blockquote>
 <p>本篇介紹用語法來畫圖的方法</p>
 </blockquote>
 <span id="more"></span>
-
-<h2 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h2><p>工程師經常需要畫圖，如類別圖、架構圖等，而畫圖需要排版。</p>
+<h2 id="簡介">簡介</h2>
+<p>工程師經常需要畫圖，如類別圖、架構圖等，而畫圖需要排版。</p>
 <p>而大多編輯器的排版都太過複雜，簡單的編輯器功能又不夠。</p>
 <p>本篇會介紹用語法(或稱為標記式語言, Markup language)來畫圖的方法。</p>
-<h2 id="用語法畫圖的好處"><a href="#用語法畫圖的好處" class="headerlink" title="用語法畫圖的好處"></a>用語法畫圖的好處</h2><ul>
-<li>用文字資料儲存<ul>
-<li>版本控制容易<ul>
+<h2 id="用語法畫圖的好處">用語法畫圖的好處</h2>
+<ul>
+<li>用文字資料儲存
+<ul>
+<li>版本控制容易
+<ul>
 <li>容易備份原始檔，而非備份圖片檔</li>
 </ul>
 </li>
 <li>檔案小，且沒有圖片解析度問題</li>
-<li>沒有圖片格式讀取問題(svg, webp…)</li>
+<li>沒有圖片格式讀取問題(svg, webp...)</li>
 </ul>
 </li>
-<li>容易修改<ul>
-<li>可以優雅的<del>照抄</del>複製別人做的圖或排版</li>
+<li>容易修改
+<ul>
+<li>可以優雅的<s>照抄</s>複製別人做的圖或排版</li>
 </ul>
 </li>
-<li>可自動排版<ul>
-<li>強迫症福音：不用再看差幾個pixel&#x2F;格子</li>
+<li>可自動排版
+<ul>
+<li>強迫症福音：不用再看差幾個pixel/格子</li>
 <li>可套用主題(theme)</li>
 </ul>
 </li>
-<li>可重複使用排版<ul>
+<li>可重複使用排版
+<ul>
 <li>類似css的概念</li>
 </ul>
 </li>
-<li>可複製圖中內容(文字)<ul>
+<li>可複製圖中內容(文字)
+<ul>
 <li>如：用Latex畫的圖可以複製各個圖形中的文字</li>
 <li>也可以直接複製原始碼</li>
 </ul>
 </li>
 </ul>
-<h2 id="用語法畫圖的壞處"><a href="#用語法畫圖的壞處" class="headerlink" title="用語法畫圖的壞處"></a>用語法畫圖的壞處</h2><ul>
+<h2 id="用語法畫圖的壞處">用語法畫圖的壞處</h2>
+<ul>
 <li>需要額外學習語法</li>
 <li>若需要精確的排版，需要複雜的語法</li>
-<li>不夠有設計感<ul>
+<li>不夠有設計感
+<ul>
 <li>i.e., 預設主題很醜</li>
 </ul>
 </li>
 <li>缺少所見即所得(Wysiwyg)的編輯器</li>
 </ul>
-<h2 id="傳統畫圖編輯器"><a href="#傳統畫圖編輯器" class="headerlink" title="傳統畫圖編輯器"></a>傳統畫圖編輯器</h2><p>使用圖形化介面操作</p>
+<h2 id="傳統畫圖編輯器">傳統畫圖編輯器</h2>
+<p>使用圖形化介面操作</p>
 <ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2pncmFwaC9kcmF3aW8=">drawio<i class="fa fa-external-link-alt"></i></span>：最知名</li>
 <li><span class="exturl" data-url="aHR0cHM6Ly92ZWN0ci5jb20v">vectr<i class="fa fa-external-link-alt"></i></span>：容易上手</li>
 <li><span class="exturl" data-url="aHR0cHM6Ly93d3cuZmlnbWEuY29tLw==">figma<i class="fa fa-external-link-alt"></i></span>：專業設計人士使用</li>
 </ul>
-<h2 id="用語法畫圖"><a href="#用語法畫圖" class="headerlink" title="用語法畫圖"></a>用語法畫圖</h2><p>大多都是描述點(Node), 邊(Edge)及屬性(形狀、顏色、大小、方向等)即可產生圖片</p>
+<h2 id="用語法畫圖">用語法畫圖</h2>
+<p>大多都是描述點(Node), 邊(Edge)及屬性(形狀、顏色、大小、方向等)即可產生圖片</p>
 <p>以 mermaid 為例：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">flowchart TD</span><br><span class="line">    A[Start] --&gt; B&#123;Is it?&#125;</span><br><span class="line">    B --&gt;|Yes| C[OK]</span><br><span class="line">    C --&gt; D[Rethink]</span><br><span class="line">    D --&gt; B</span><br><span class="line">    B ----&gt;|No| E[End]</span><br></pre></td></tr></table></figure>
-
 <p>就能產生</p>
-<p><img data-src="/img/other/flowchart.webp" alt="mermaid flowchart"></p>
+<p><img data-src="/img/other/flowchart.webp" alt="mermaid flowchart" /></p>
 <ul>
-<li><span class="exturl" data-url="aHR0cDovL3d3dy5ncmFwaHZpei5vcmcv">Graphviz<i class="fa fa-external-link-alt"></i></span><ul>
+<li><span class="exturl" data-url="aHR0cDovL3d3dy5ncmFwaHZpei5vcmcv">Graphviz<i class="fa fa-external-link-alt"></i></span>
+<ul>
 <li>使用dot語言</li>
-<li>Python套件<ul>
+<li>Python套件
+<ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3B5ZG90L3B5ZG90">pydot<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3B5Z3JhcGh2aXovcHlncmFwaHZpeg==">pygraphviz<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 </li>
-<li>線上編輯<ul>
+<li>線上編輯
+<ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly9lZG90b3IubmV0Lw==">Edotor<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cDovL3Zpei1qcy5jb20v">Viz.js<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9tZXJtYWlkLWpzLmdpdGh1Yi5pby9tZXJtYWlkLyMv">Mermaid<i class="fa fa-external-link-alt"></i></span><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9tZXJtYWlkLWpzLmdpdGh1Yi5pby9tZXJtYWlkLyMv">Mermaid<i class="fa fa-external-link-alt"></i></span>
+<ul>
 <li>類Markdown語法</li>
 </ul>
 </li>
-<li>LaTeX<ul>
+<li>LaTeX
+<ul>
 <li>相對困難，但可以搭配數學公式</li>
 </ul>
 </li>
 <li><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0J1cm50U3VzaGkvZXJk">erd<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21pbmdyYW1tZXIvZGlhZ3JhbXM=">Diagrams<i class="fa fa-external-link-alt"></i></span>  </li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9mbG93Y2hhcnQuanMub3JnLw==">flowchart.js<i class="fa fa-external-link-alt"></i></span><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21pbmdyYW1tZXIvZGlhZ3JhbXM=">Diagrams<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9mbG93Y2hhcnQuanMub3JnLw==">flowchart.js<i class="fa fa-external-link-alt"></i></span>
+<ul>
 <li>只能畫流程圖</li>
 </ul>
 </li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9kYmRpYWdyYW0uaW8v">dbdiagram<i class="fa fa-external-link-alt"></i></span><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9kYmRpYWdyYW0uaW8v">dbdiagram<i class="fa fa-external-link-alt"></i></span>
+<ul>
 <li>只能畫 Database 關係圖</li>
 </ul>
 </li>
-<li>線上編輯：<span class="exturl" data-url="aHR0cHM6Ly9rcm9raS5pby8jdHJ5">kroki<i class="fa fa-external-link-alt"></i></span><ul>
+<li>線上編輯：<span class="exturl" data-url="aHR0cHM6Ly9rcm9raS5pby8jdHJ5">kroki<i class="fa fa-external-link-alt"></i></span>
+<ul>
 <li>支援多種語法</li>
 </ul>
 </li>
@@ -410,19 +428,22 @@
 <blockquote>
 <p>基本上各套件的語法是很像的</p>
 </blockquote>
-<h2 id="畫神經網路"><a href="#畫神經網路" class="headerlink" title="畫神經網路"></a>畫神經網路</h2><p>輸入模型結構檔案以將模型視覺化</p>
+<h2 id="畫神經網路">畫神經網路</h2>
+<p>輸入模型結構檔案以將模型視覺化</p>
 <ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2x1dHpyb2VkZXIvbmV0cm9u">netron<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cDovL2FsZXhsZW5haWwubWUvTk4tU1ZHL0xlTmV0Lmh0bWw=">LeNet<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RvbmlvNzMvZG5udmlld2Vy">dnnviewer<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
-<h3 id="畫UML"><a href="#畫UML" class="headerlink" title="畫UML"></a>畫UML</h3><p>若程式完成後才需要畫UML圖的話，目前已有許多套件可以將程式碼轉換成UML。</p>
+<h3 id="畫UML">畫UML</h3>
+<p>若程式完成後才需要畫UML圖的話，目前已有許多套件可以將程式碼轉換成UML。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># will generate plantuml script from python file</span></span><br><span class="line">pip install pylint</span><br><span class="line">pyreverse -o plantuml --colorized target.py</span><br></pre></td></tr></table></figure>
-
 <ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly9wbGFudHVtbC5jb20vemgv">PlantUML<i class="fa fa-external-link-alt"></i></span><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9wbGFudHVtbC5jb20vemgv">PlantUML<i class="fa fa-external-link-alt"></i></span>
+<ul>
 <li>基於dot語言，提供更高階的功能</li>
-<li>線上編輯<ul>
+<li>線上編輯
+<ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly93d3cucGxhbnR1bWwuY29tL3BsYW50dW1sL3VtbC9TeWZGS2oyckt0M0NvS25FTFIxSW80WkRvU2E3MDAwMA==">官方<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly93d3cucGxhbnR0ZXh0LmNvbS8=">Plaintext<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cDovL2NoYXJ0bWFnZS5jb20vaW5kZXguaHRtbA==">chartmage<i class="fa fa-external-link-alt"></i></span></li>
@@ -432,16 +453,19 @@
 </ul>
 </li>
 </ul>
-<h3 id="畫文字圖"><a href="#畫文字圖" class="headerlink" title="畫文字圖"></a>畫文字圖</h3><p>只用限定的文字來畫圖，如ASCII Diagram</p>
+<h3 id="畫文字圖">畫文字圖</h3>
+<p>只用限定的文字來畫圖，如ASCII Diagram</p>
 <figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">         ,-.  </span><br><span class="line">         `-&#x27;  </span><br><span class="line">         /|<span class="string">\  </span></span><br><span class="line"><span class="string">,---.     </span>|<span class="string">   </span></span><br><span class="line"><span class="string"></span>|<span class="string">Bob</span>|<span class="string">    / \  </span></span><br><span class="line"><span class="string">`-+-&#x27;   Alice </span></span><br><span class="line"><span class="string">  </span>|<span class="string">hello  </span>|<span class="string">   </span></span><br><span class="line"><span class="string">  </span>|<span class="string">------&gt;</span>|<span class="string">   </span></span><br><span class="line"><span class="string">  </span>|<span class="string">       </span>|<span class="string">   </span></span><br><span class="line"><span class="string">  Is it ok?   </span></span><br><span class="line"><span class="string">  </span>|<span class="string">&lt;------</span>|<span class="string">   </span></span><br><span class="line"><span class="string">,-+-.   Alice </span></span><br><span class="line"><span class="string"></span>|<span class="string">Bob</span>|<span class="string">    ,-.  </span></span><br><span class="line"><span class="string">`---&#x27;    `-&#x27;  </span></span><br><span class="line"><span class="string">         /</span>|<span class="string">\  </span></span><br><span class="line"><span class="string">          </span>|<span class="string">   </span></span><br><span class="line"><span class="string">         / \  </span></span><br></pre></td></tr></table></figure>
-
 <ul>
 <li>編輯器：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3dlaWRhZ2FuZy90ZXh0LWRpYWdyYW0=">text-diagram<i class="fa fa-external-link-alt"></i></span></li>
 <li>從語法產生：<span class="exturl" data-url="aHR0cDovL2RpdGFhLnNvdXJjZWZvcmdlLm5ldC8=">Ditaa<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
-<h2 id="在-hexo-中製圖"><a href="#在-hexo-中製圖" class="headerlink" title="在 hexo 中製圖"></a>在 hexo 中製圖</h2><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21pYW8xMDA3L2hleG8tZmlsdGVyLWtyb2tp">https://github.com/miao1007/hexo-filter-kroki<i class="fa fa-external-link-alt"></i></span></p>
-<h2 id="總結"><a href="#總結" class="headerlink" title="總結"></a>總結</h2><p>和資料視覺化不同，本篇只有討論手工製圖的腳本化。</p>
-<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
+<h2 id="在-hexo-中製圖">在 hexo 中製圖</h2>
+<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21pYW8xMDA3L2hleG8tZmlsdGVyLWtyb2tp">https://github.com/miao1007/hexo-filter-kroki<i class="fa fa-external-link-alt"></i></span></p>
+<h2 id="總結">總結</h2>
+<p>和資料視覺化不同，本篇只有討論手工製圖的腳本化。</p>
+<h2 id="參考資料">參考資料</h2>
+<ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly9tb2RlbGluZy1sYW5ndWFnZXMuY29tL3RleHQtdW1sLXRvb2xzLWNvbXBsZXRlLWxpc3Qv">Text to UML and other “diagrams as code” tools – Fastest way to create your models<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly93d3cuYXVnbWVudGVkbWluZC5kZS8yMDIwLzEyLzIwL3BsYWluLXRleHQtZGlhZ3JhbXMtYXMtY29kZS8=">Plain text diagrams – the best diagrams as code tools<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly9qb2pvemh1YW5nLmdpdGh1Yi5pby90dXRvcmlhbC9tZXJtYWlkLWNoZWF0LXNoZWV0Lw==">Mermaid Cheat Sheet<i class="fa fa-external-link-alt"></i></span></li>
@@ -530,7 +554,7 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">473k</span>
+    <span title="總字數">468k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

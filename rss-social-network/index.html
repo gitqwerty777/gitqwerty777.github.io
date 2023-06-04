@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.2.0">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.webp">
@@ -24,17 +24,18 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"gitqwerty777.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.12.1","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"show_result":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInDown","sidebar":"fadeInRight"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/config.min.js"></script>
 
-    <meta name="description" content="RSS分析優點  不會被推薦演算法影響閱讀喜好或漏掉想看的內容 統一的閱讀體驗，且沒有廣告 統整多個網站的資訊，不需個別開啟  缺點  麻煩，較難使用(尤其是網站本身不提供rss的情形) 資訊過多，需要自己篩選 能看見的內容更依賴自己的選擇，需要自行打破同溫層">
+    <meta name="description" content="RSS簡介 RSS（英文全稱：RDF Site Summary 或 Really Simple Syndication），中文譯作簡易資訊聚合，是一種訊息來源格式規範，用以聚合多個網站更新的內容並自動通知網站訂閱者。 使用 RSS 後，網站訂閱者便無需再手動檢視網站是否有新的內容，同時 RSS 可將多個網站更新的內容進行整合，以摘要的形式呈現，有助於訂閱者快速獲取重要資訊。 RSS分析 優點  不">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用RSS取代推薦演算法">
 <meta property="og:url" content="http://gitqwerty777.github.io/rss-social-network/index.html">
 <meta property="og:site_name" content="QWERTY">
-<meta property="og:description" content="RSS分析優點  不會被推薦演算法影響閱讀喜好或漏掉想看的內容 統一的閱讀體驗，且沒有廣告 統整多個網站的資訊，不需個別開啟  缺點  麻煩，較難使用(尤其是網站本身不提供rss的情形) 資訊過多，需要自己篩選 能看見的內容更依賴自己的選擇，需要自行打破同溫層">
+<meta property="og:description" content="RSS簡介 RSS（英文全稱：RDF Site Summary 或 Really Simple Syndication），中文譯作簡易資訊聚合，是一種訊息來源格式規範，用以聚合多個網站更新的內容並自動通知網站訂閱者。 使用 RSS 後，網站訂閱者便無需再手動檢視網站是否有新的內容，同時 RSS 可將多個網站更新的內容進行整合，以摘要的形式呈現，有助於訂閱者快速獲取重要資訊。 RSS分析 優點  不">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/other/meme/rss-meme.webp">
 <meta property="article:published_time" content="2020-06-23T02:33:00.000Z">
 <meta property="article:modified_time" content="2020-06-23T02:33:00.000Z">
 <meta property="article:author" content="qwerty">
+<meta property="article:tag" content="推薦系統">
 <meta property="article:tag" content="rss">
 <meta property="article:tag" content="facebook">
 <meta property="article:tag" content="youtube">
@@ -161,7 +162,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#RSS%E5%88%86%E6%9E%90"><span class="nav-number">1.</span> <span class="nav-text">RSS分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%87%E7%B6%B2%E7%AB%99%E8%BD%89%E6%8F%9B%E7%82%BArss"><span class="nav-number">2.</span> <span class="nav-text">將網站轉換為rss</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%96%B1%E8%AE%80%E5%99%A8"><span class="nav-number">3.</span> <span class="nav-text">閱讀器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E7%AB%AF%E8%BB%9F%E9%AB%94-windows"><span class="nav-number">3.1.</span> <span class="nav-text">本地端軟體(windows)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B7%9A%E4%B8%8A%E6%9C%8D%E5%8B%99"><span class="nav-number">3.2.</span> <span class="nav-text">線上服務</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8B%99"><span class="nav-number">3.3.</span> <span class="nav-text">自建服務</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%82%99%E8%A8%BB"><span class="nav-number">4.</span> <span class="nav-text">備註</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97"><span class="nav-number">5.</span> <span class="nav-text">使用心得</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%A8%E8%96%A6%E9%96%B1%E8%AE%80"><span class="nav-number">6.</span> <span class="nav-text">推薦閱讀</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#RSS%E7%B0%A1%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">RSS簡介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#RSS%E5%88%86%E6%9E%90"><span class="nav-number">2.</span> <span class="nav-text">RSS分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%87%E7%B6%B2%E7%AB%99%E8%BD%89%E6%8F%9B%E7%82%BARSS"><span class="nav-number">3.</span> <span class="nav-text">將網站轉換為RSS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%96%B1%E8%AE%80%E5%99%A8"><span class="nav-number">4.</span> <span class="nav-text">閱讀器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E7%AB%AF%E8%BB%9F%E9%AB%94-windows"><span class="nav-number">4.1.</span> <span class="nav-text">本地端軟體(windows)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B7%9A%E4%B8%8A%E6%9C%8D%E5%8B%99"><span class="nav-number">4.2.</span> <span class="nav-text">線上服務</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8B%99"><span class="nav-number">4.3.</span> <span class="nav-text">自建服務</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%82%99%E8%A8%BB"><span class="nav-number">5.</span> <span class="nav-text">備註</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97"><span class="nav-number">6.</span> <span class="nav-text">使用心得</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%A8%E8%96%A6%E9%96%B1%E8%AE%80"><span class="nav-number">7.</span> <span class="nav-text">推薦閱讀</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -300,7 +301,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>704</span>
+      <span>932</span>
     </span>
 </div>
 
@@ -311,7 +312,11 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="RSS分析"><a href="#RSS分析" class="headerlink" title="RSS分析"></a>RSS分析</h2><p>優點</p>
+        <h2 id="RSS簡介">RSS簡介</h2>
+<p>RSS（英文全稱：RDF Site Summary 或 Really Simple Syndication），中文譯作簡易資訊聚合，是一種訊息來源格式規範，用以聚合多個網站更新的內容並自動通知網站訂閱者。</p>
+<p>使用 RSS 後，網站訂閱者便無需再手動檢視網站是否有新的內容，同時 RSS 可將多個網站更新的內容進行整合，以摘要的形式呈現，有助於訂閱者快速獲取重要資訊。</p>
+<h2 id="RSS分析">RSS分析</h2>
+<p>優點</p>
 <ol>
 <li>不會被推薦演算法<strong>影響閱讀喜好</strong>或<strong>漏掉想看的內容</strong></li>
 <li>統一的閱讀體驗，且沒有廣告</li>
@@ -324,11 +329,11 @@
 <li>能看見的內容更依賴自己的選擇，需要自行打破同溫層</li>
 </ol>
 <span id="more"></span>
-
-<h2 id="將網站轉換為rss"><a href="#將網站轉換為rss" class="headerlink" title="將網站轉換為rss"></a>將網站轉換為rss</h2><p>萬物皆可rss(by 爬蟲)</p>
+<h2 id="將網站轉換為RSS">將網站轉換為RSS</h2>
+<p>理應上，萬物皆可RSS(by 爬蟲)</p>
 <p>方法</p>
 <ol>
-<li>自身擁有rss的網站</li>
+<li>自身擁有rss的網站：直接使用即可</li>
 </ol>
 <ul>
 <li>ptt各板</li>
@@ -336,61 +341,77 @@
 <li>medium</li>
 </ul>
 <ol start="2">
-<li><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLnJzc2h1Yi5hcHAv">rsshub<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLnJzc2h1Yi5hcHAv">rsshub<i class="fa fa-external-link-alt"></i></span>：提供一些網站的rss，可能需要自建服務</li>
 </ol>
 <ul>
 <li>twitter動態</li>
 <li>bilibili動態</li>
 <li>pixiv關注動態</li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9jaHJvbWUuZ29vZ2xlLmNvbS93ZWJzdG9yZS9kZXRhaWwvcnNzaHViLXJhZGFyL2tlZmpwZm5nbm5kZXBqYm9wZG1vZWJraXBiZ2tnZ2Fh">rsshub radar<i class="fa fa-external-link-alt"></i></span><ul>
-<li>chrome擴充功能，可檢查目前網頁是否有可用rss</li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9jaHJvbWUuZ29vZ2xlLmNvbS93ZWJzdG9yZS9kZXRhaWwvcnNzaHViLXJhZGFyL2tlZmpwZm5nbm5kZXBqYm9wZG1vZWJraXBiZ2tnZ2Fh">rsshub radar<i class="fa fa-external-link-alt"></i></span>
+<ul>
+<li>chrome擴充套件，可檢查目前網頁是否有可用rss</li>
 </ul>
 </li>
 </ul>
 <ol start="3">
-<li><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL1JTUy1CcmlkZ2UvcnNzLWJyaWRnZQ==">rssbridge<i class="fa fa-external-link-alt"></i></span><ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL1JTUy1CcmlkZ2UvcnNzLWJyaWRnZQ==">rssbridge<i class="fa fa-external-link-alt"></i></span>
+<ul>
 <li>需自建服務</li>
 <li>facebook fan page</li>
 <li>youtube 頻道</li>
 </ul>
 </li>
 </ol>
-<h2 id="閱讀器"><a href="#閱讀器" class="headerlink" title="閱讀器"></a>閱讀器</h2><p>目前使用 tiny tiny rss 搭配 rssowl</p>
-<h3 id="本地端軟體-windows"><a href="#本地端軟體-windows" class="headerlink" title="本地端軟體(windows)"></a>本地端軟體(windows)</h3><ul>
+<h2 id="閱讀器">閱讀器</h2>
+<p>目前使用 tiny tiny rss 搭配 rssowl</p>
+<h3 id="本地端軟體-windows">本地端軟體(windows)</h3>
+<ul>
 <li><span class="exturl" data-url="aHR0cDovL3d3dy5yc3Nvd2wub3JnLw==">rssowl<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly9xdWl0ZXJzcy5vcmcv">quiterss<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cDovL3d3dy5mZWVkZGVtb24uY29tLw==">feeddemon<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
-<h3 id="線上服務"><a href="#線上服務" class="headerlink" title="線上服務"></a>線上服務</h3><ul>
+<h3 id="線上服務">線上服務</h3>
+<ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly9mZWVkbHkuY29tLw==">feedly<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5vcmVhZGVyLmNvbS8=">inoreader<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
-<h3 id="自建服務"><a href="#自建服務" class="headerlink" title="自建服務"></a>自建服務</h3><ul>
-<li><span class="exturl" data-url="aHR0cDovL3R0cnNzLmhlbnJ5LndhbmcvemgvIyVFOSU4MyVBOCVFNyVCRCVCMg==">tiny tiny rss<i class="fa fa-external-link-alt"></i></span><ul>
+<h3 id="自建服務">自建服務</h3>
+<ul>
+<li><span class="exturl" data-url="aHR0cDovL3R0cnNzLmhlbnJ5LndhbmcvemgvIyVFOSU4MyVBOCVFNyVCRCVCMg==">tiny tiny rss<i class="fa fa-external-link-alt"></i></span>
+<ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0hlbnJ5UVcvQXdlc29tZS1UVFJTUy9pc3N1ZXMvMTk=">需安裝nginx<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 </li>
 </ul>
-<h2 id="備註"><a href="#備註" class="headerlink" title="備註"></a>備註</h2><p>許多線上服務也注意到推薦演算法的缺點，所以有「特別關注」的功能</p>
-<p><img data-src="/img/other/meme/rss-meme.webp"></p>
-<h2 id="使用心得"><a href="#使用心得" class="headerlink" title="使用心得"></a>使用心得</h2><ul>
-<li>根據來源的重要性取捨<ul>
+<h2 id="備註">備註</h2>
+<p>許多線上服務也注意到推薦演算法的缺點，所以有「特別關注」的功能</p>
+<p><img data-src="/img/other/meme/rss-meme.webp" alt="" /></p>
+<h2 id="使用心得">使用心得</h2>
+<ul>
+<li>RSS是主動的，推薦是被動的</li>
+<li>根據來源的重要性取捨
+<ul>
 <li>愈重要、含金量愈高的資訊來源愈需要用RSS訂閱的方法，其他娛樂性質的網站如社群網站或ptt就不太需要</li>
 </ul>
 </li>
-<li>可以了解自己的偏好<ul>
-<li>看久了就知道哪些網站來源是垃圾，哪些來源是寶藏，當然也需要手動增加&#x2F;減少來源</li>
+<li>可以了解自己的偏好
+<ul>
+<li>看久了就知道哪些網站來源是垃圾，哪些來源是寶藏，當然也需要手動增加/減少來源</li>
 <li>若是推薦演算法，可能會把寶藏當垃圾，把沒用的資訊當寶</li>
 </ul>
 </li>
-<li>一個打破同溫層的方法是看熱門消息<ul>
+<li>一個打破同溫層的方法是看熱門消息
+<ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly9yc3NodWIuYXBwL3poaWh1L2hvdGxpc3Q=">知乎熱榜<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly9yc3NodWIuYXBwL2dpdGh1Yi90cmVuZGluZy9kYWlseS9jJTIzL3poLXR3">Github Trending<i class="fa fa-external-link-alt"></i></span></li>
+<li>發燒影片</li>
 </ul>
 </li>
 </ul>
-<h2 id="推薦閱讀"><a href="#推薦閱讀" class="headerlink" title="推薦閱讀"></a>推薦閱讀</h2><ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0b3J5L3Jzcy1yZWFkZXJzLWZlZWRseS1pbm9yZWFkZXItb2xkLXJlYWRlci8=">是RSS復興的時候了(It’s Time for an RSS Revival)<i class="fa fa-external-link-alt"></i></span></li>
+<h2 id="推薦閱讀">推薦閱讀</h2>
+<ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly96aC53aWtpcGVkaWEub3JnL3poLXR3L1JTUw==">Wiki: RSS<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0b3J5L3Jzcy1yZWFkZXJzLWZlZWRseS1pbm9yZWFkZXItb2xkLXJlYWRlci8=">是RSS復興的時候了(It's Time for an RSS Revival)<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly9kaXlnb2QubWUvb2hteXJzcy8=">DIYGod: 我有特別的 RSS 使用技巧<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly9kaXlnb2QubWUvZG93bmxvYWQtd2ViaG9vaw==">DIYGod: 優雅地下載我的B站投幣視頻<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8zNTQ2NTU1MA==">你的新聞 App 被推薦算法「毀」了，但 RSS 真的能拯救你嗎<i class="fa fa-external-link-alt"></i></span></li>
@@ -423,6 +444,7 @@
 </div>
 
           <div class="post-tags">
+              <a href="/tags/%E6%8E%A8%E8%96%A6%E7%B3%BB%E7%B5%B1/" rel="tag"><i class="fa fa-tag"></i> 推薦系統</a>
               <a href="/tags/rss/" rel="tag"><i class="fa fa-tag"></i> rss</a>
               <a href="/tags/facebook/" rel="tag"><i class="fa fa-tag"></i> facebook</a>
               <a href="/tags/youtube/" rel="tag"><i class="fa fa-tag"></i> youtube</a>
@@ -481,7 +503,7 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">473k</span>
+    <span title="總字數">468k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

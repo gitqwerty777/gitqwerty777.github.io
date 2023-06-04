@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.2.0">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.webp">
@@ -298,7 +298,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>3.7k</span>
+      <span>3.6k</span>
     </span>
 </div>
 
@@ -310,20 +310,22 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="Metadata"><a href="#Metadata" class="headerlink" title="Metadata"></a>Metadata</h2><table>
+        <h2 id="Metadata">Metadata</h2>
+<table>
 <thead>
 <tr>
 <th><!----></th>
 <th><!----></th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>Title</td>
 <td>MapReduce: Simplified Data Processing on Large Clusters</td>
 </tr>
 <tr>
 <td>Conference Proceedings Title</td>
-<td>OSDI ‘04</td>
+<td>OSDI '04</td>
 </tr>
 <tr>
 <td>Authors</td>
@@ -331,7 +333,7 @@
 </tr>
 <tr>
 <td>Date</td>
-<td>2004&#x2F;10</td>
+<td>2004/10</td>
 </tr>
 <tr>
 <td>Page</td>
@@ -341,81 +343,105 @@
 <td>Times cited</td>
 <td>34516</td>
 </tr>
-</tbody></table>
-<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><ul>
-<li>Motivation: Lots of special-purpose programs should <strong>process large amounts of raw data</strong><ul>
+</tbody>
+</table>
+<h2 id="Introduction">Introduction</h2>
+<ul>
+<li>Motivation: Lots of special-purpose programs should <strong>process large amounts of raw data</strong>
+<ul>
 <li>e.g., crawl(analyze) documents, web request logs, etc.</li>
 </ul>
 </li>
-<li>Inspiration<ul>
+<li>Inspiration
+<ul>
 <li><code>Map()</code> and <code>Reduce()</code> primitives present in Lisp and many other functional languages</li>
 </ul>
 </li>
-<li>Solution: Design a <strong>programming model</strong>: <code>MapReduce</code><ul>
+<li>Solution: Design a <strong>programming model</strong>: <code>MapReduce</code>
+<ul>
 <li><strong>Hides the details</strong> of <strong>parallelization, fault-tolerance, locality optimization, and load balancing</strong></li>
 </ul>
 </li>
 </ul>
-<h3 id="Map-and-Reduce"><a href="#Map-and-Reduce" class="headerlink" title="Map and Reduce"></a>Map and Reduce</h3><ul>
+<h3 id="Map-and-Reduce">Map and Reduce</h3>
+<ul>
 <li>Divide, Conquer, and Combine → Divide, Map, and Reduce</li>
-<li>User only need to implement <code>Map()</code> and <code>Reduce()</code> functions and tune settings<ul>
+<li>User only need to implement <code>Map()</code> and <code>Reduce()</code> functions and tune settings
+<ul>
 <li>MapReduce model already implement other things to do</li>
 </ul>
 </li>
 </ul>
-<h2 id="Programming-Model"><a href="#Programming-Model" class="headerlink" title="Programming Model"></a>Programming Model</h2><ul>
-<li><code>Map()</code><ul>
-<li>Produce a set of intermediate key&#x2F;value pairs</li>
+<h2 id="Programming-Model">Programming Model</h2>
+<ul>
+<li><code>Map()</code>
+<ul>
+<li>Produce a set of intermediate key/value pairs</li>
 </ul>
 </li>
-<li>After <code>Map()</code> complete<ul>
+<li>After <code>Map()</code> complete
+<ul>
 <li>Sort intermediate key-value pairs and divide into pieces for <code>Reduce()</code> to use</li>
 </ul>
 </li>
-<li><code>Reduce()</code><ul>
+<li><code>Reduce()</code>
+<ul>
 <li>Merge the value of the same intermediate key</li>
 </ul>
 </li>
 </ul>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>Input → After Map → After Reduce</p>
+<h3 id="Example">Example</h3>
+<p>Input → After Map → After Reduce</p>
 <ul>
-<li>Search (in a large file set)<ul>
-<li>Inverted Index<ul>
+<li>Search (in a large file set)
+<ul>
+<li>Inverted Index
+<ul>
 <li><code>&lt;doc, docID&gt;</code> → <code>&lt;word, docID&gt;</code> → <code>&lt;word, list(docID)&gt;</code></li>
 </ul>
 </li>
-<li>Reverse WebLink<ul>
+<li>Reverse WebLink
+<ul>
 <li><code>sourceURL</code> → <code>&lt;sourceURL, targetURL&gt;</code> → <code>&lt;targetURL, list(sourceURL)&gt;</code></li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Count (in a large file set)<ul>
-<li>URL Frequency in webpage<ul>
+<li>Count (in a large file set)
+<ul>
+<li>URL Frequency in webpage
+<ul>
 <li><code>URL</code> → <code>&lt;URL, 1&gt;</code> → <code>&lt;URL, TotalCount&gt;</code></li>
 </ul>
 </li>
-<li>Term Frequency<ul>
-<li><code>term</code> → <code>&lt;term, freq&gt;</code> → <code>&lt;term, freq&gt;</code> <img data-src="/img/other/MapReduce/wordcount.webp"></li>
+<li>Term Frequency
+<ul>
+<li><code>term</code> → <code>&lt;term, freq&gt;</code> → <code>&lt;term, freq&gt;</code> <img data-src="/img/other/MapReduce/wordcount.webp" alt="" /></li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Sort (in a large file set)<ul>
+<li>Sort (in a large file set)
+<ul>
 <li><code>unsorted list</code> → <code>seperated sorted list</code> → <code>merged sorted list</code></li>
 </ul>
 </li>
 </ul>
-<h2 id="Implementation"><a href="#Implementation" class="headerlink" title="Implementation"></a>Implementation</h2><p>Use C++ to implement</p>
-<p><img data-src="/img/other/MapReduce/flowchart.webp"></p>
+<h2 id="Implementation">Implementation</h2>
+<p>Use C++ to implement</p>
+<p><img data-src="/img/other/MapReduce/flowchart.webp" alt="" /></p>
 <ul>
-<li>Data storage<ul>
-<li>資料存放在GFS(Global File System), 64MB為一個BLOCK<ul>
+<li>Data storage
+<ul>
+<li>資料存放在GFS(Global File System), 64MB為一個BLOCK
+<ul>
 <li>存放多個複本於不同機器</li>
 </ul>
 </li>
-<li>網路頻寬是稀缺資源<ul>
-<li>Worker和資料若在不同機器，會傳輸很久<ul>
+<li>網路頻寬是稀缺資源
+<ul>
+<li>Worker和資料若在不同機器，會傳輸很久
+<ul>
 <li>Master儘量分配Worker使用本地有資料的任務</li>
 </ul>
 </li>
@@ -423,49 +449,60 @@
 </li>
 </ul>
 </li>
-<li>Task assign<ul>
-<li>將 <code>Map()</code> 分成 $M$ 個任務， 將 <code>Reduce()</code> 分成 $R$ 個任務<ul>
+<li>Task assign
+<ul>
+<li>將 <code>Map()</code> 分成 $M$ 個任務， 將 <code>Reduce()</code> 分成 $R$ 個任務
+<ul>
 <li>$M$ 和 $R$ 的數量比可用的機器多很多</li>
 </ul>
 </li>
 <li>Master 需要分配 $O(M+R)$ 個任務 和 記錄 $O(M \times R)$ 塊資料</li>
-<li>切得愈小，故障代價愈小，較容易平均分配，但Master需要記較多資料<ul>
+<li>切得愈小，故障代價愈小，較容易平均分配，但Master需要記較多資料
+<ul>
 <li>一塊通常是16~64MB，以配合GFS</li>
-<li>Google的設定：$M$ &#x3D; 200000, $R$ &#x3D; 5000, using 2000 worker machines  <!-- 為何 M >> R --></li>
+<li>Google的設定：$M$ = 200000, $R$ = 5000, using 2000 worker machines  <!-- 為何 M >> R --></li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Input<ul>
+<li>Input
+<ul>
 <li>Input of Map: 把 Input data 切成 $M$ 塊</li>
-<li>Input of Reduce: 把 Intermidiate data 切成 $R$ 塊<ul>
+<li>Input of Reduce: 把 Intermidiate data 切成 $R$ 塊
+<ul>
 <li>Intermediate key and set of values of the key</li>
 <li>用 hash(key) mod R 的值來代表 key 是第幾塊</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Master program: 分配任務<ul>
-<li>Map worker<ul>
+<li>Master program: 分配任務
+<ul>
+<li>Map worker
+<ul>
 <li>執行完後將 $R$ 塊Intermediate資料寫入本地磁碟</li>
 <li>回傳檔案位置至Master</li>
 </ul>
 </li>
-<li>Reduce worker<ul>
+<li>Reduce worker
+<ul>
 <li>從Master得知檔案位置，使用Remote Procedure Call(RPC)來讀取資料</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-<h3 id="故障容忍-Fault-Tolerance"><a href="#故障容忍-Fault-Tolerance" class="headerlink" title="故障容忍 Fault Tolerance"></a>故障容忍 Fault Tolerance</h3><ul>
-<li>Worker故障<ul>
+<h3 id="故障容忍-Fault-Tolerance">故障容忍 Fault Tolerance</h3>
+<ul>
+<li>Worker故障
+<ul>
 <li>可能是網路、硬碟、機器故障</li>
 </ul>
 <ol>
 <li>Master定期ping worker</li>
 <li>若沒有回應，視為死掉</li>
-<li>原先分配給死掉的Task會重新分配<ul>
+<li>原先分配給死掉的Task會重新分配
+<ul>
 <li>已完成的Reduce任務不需要重新分配</li>
 <li>資料已存放在全域資料系統(Map的結果資料放在本地端)</li>
 </ul>
@@ -473,15 +510,19 @@
 <li>通知Reduce Worker新的資料路徑</li>
 </ol>
 </li>
-<li>Master故障<ul>
+<li>Master故障
+<ul>
 <li>幾乎不會發生(因為只有一台)</li>
 <li>定時記錄進度，以便還原</li>
 </ul>
 </li>
 </ul>
-<h3 id="Backup-Tasks"><a href="#Backup-Tasks" class="headerlink" title="Backup Tasks"></a>Backup Tasks</h3><ul>
-<li>Straggler(落後者): 完成Task的時間很長<ul>
-<li>可能原因<ul>
+<h3 id="Backup-Tasks">Backup Tasks</h3>
+<ul>
+<li>Straggler(落後者): 完成Task的時間很長
+<ul>
+<li>可能原因
+<ul>
 <li>磁碟故障</li>
 <li>記憶體不足</li>
 <li>網路不穩</li>
@@ -491,15 +532,19 @@
 </li>
 </ul>
 </li>
-<li>解法: 若MapReduce快完成時, Master 對還在執行的Task，執行多份備份Task<ul>
+<li>解法: 若MapReduce快完成時, Master 對還在執行的Task，執行多份備份Task
+<ul>
 <li>只要其中一個完成即可</li>
 <li>只多消耗一點運算資源，可減少30%耗時</li>
 </ul>
 </li>
 </ul>
-<h2 id="Performance"><a href="#Performance" class="headerlink" title="Performance"></a>Performance</h2><ul>
-<li>Environment<ul>
-<li>1800 machines<ul>
+<h2 id="Performance">Performance</h2>
+<ul>
+<li>Environment
+<ul>
+<li>1800 machines
+<ul>
 <li>two 2GHz Intel Xeon processors with Hyper-Threading enabled</li>
 <li>4GB of memory</li>
 <li>two 160GB IDE disks</li>
@@ -508,22 +553,27 @@
 </li>
 </ul>
 </li>
-<li>測試兩種Task<ol>
+<li>測試兩種Task
+<ol>
 <li>Grep 1TB data</li>
 <li>Sort 1TB data</li>
 </ol>
 </li>
-<li>Performance<ul>
-<li>Normal Execution<ul>
+<li>Performance
+<ul>
+<li>Normal Execution
+<ul>
 <li>891sec</li>
 </ul>
 </li>
-<li>刻意殺掉200個worker(總共1746個)<ul>
+<li>刻意殺掉200個worker(總共1746個)
+<ul>
 <li>933sec</li>
 <li>only 5% increase</li>
 </ul>
 </li>
-<li>沒有Backup Task的情況<ul>
+<li>沒有Backup Task的情況
+<ul>
 <li>1283sec</li>
 <li>44% increase</li>
 </ul>
@@ -531,47 +581,60 @@
 </ul>
 </li>
 </ul>
-<p><img data-src="/img/other/MapReduce/performance.webp"></p>
-<h2 id="Refinement"><a href="#Refinement" class="headerlink" title="Refinement"></a>Refinement</h2><ul>
-<li>Locality Optimization<ul>
+<p><img data-src="/img/other/MapReduce/performance.webp" alt="" /></p>
+<h2 id="Refinement">Refinement</h2>
+<ul>
+<li>Locality Optimization
+<ul>
 <li>將輸入檔案複製到本地磁碟</li>
 </ul>
 </li>
-<li>Ordering Guarantee<ul>
-<li>保證 Intermediate key&#x2F;value 已排序</li>
+<li>Ordering Guarantee
+<ul>
+<li>保證 Intermediate key/value 已排序</li>
 <li><code>Reduce()</code> 處理時速度較快</li>
 </ul>
 </li>
-<li>Combiner Function<ul>
-<li>考慮計算次數的任務，會送出很多<code>&lt;key,1&gt;</code>的records，可在 <code>Map()</code> 之後先做簡易的 <code>Reduce()</code>，稱為Combine<ul>
+<li>Combiner Function
+<ul>
+<li>考慮計算次數的任務，會送出很多<code>&lt;key,1&gt;</code>的records，可在 <code>Map()</code> 之後先做簡易的 <code>Reduce()</code>，稱為Combine
+<ul>
 <li>可減少網路傳輸量</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Partitioning Function<ul>
-<li>預設使用Hash Function 來分割成 $R$ 個檔案<ul>
+<li>Partitioning Function
+<ul>
+<li>預設使用Hash Function 來分割成 $R$ 個檔案
+<ul>
 <li><code>Hash(key) mod R</code></li>
 </ul>
 </li>
-<li>特殊情況可以用別的，如key為網址的時候希望相同Host的資料放在同一個<code>Reduce()</code> Task上<ul>
+<li>特殊情況可以用別的，如key為網址的時候希望相同Host的資料放在同一個<code>Reduce()</code> Task上
+<ul>
 <li><code>Hash(Hostname(url)) mod R</code></li>
 </ul>
 </li>
 </ul>
 </li>
-<li>輸入和輸出<ul>
-<li>使用介面來實作新的輸入&#x2F;輸出類別</li>
-<li>輸入類別<ul>
-<li>文字處理類別 (Text Mode)<ul>
-<li>每一行都是 key&#x2F;value pair<ul>
+<li>輸入和輸出
+<ul>
+<li>使用介面來實作新的輸入/輸出類別</li>
+<li>輸入類別
+<ul>
+<li>文字處理類別 (Text Mode)
+<ul>
+<li>每一行都是 key/value pair
+<ul>
 <li>Key: 此行的檔案 offset</li>
 <li>Value: 此行的內容</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>key&#x2F;value pairs 的類別<ul>
+<li>key/value pairs 的類別
+<ul>
 <li>用來保持key的排序</li>
 </ul>
 </li>
@@ -579,18 +642,23 @@
 </li>
 </ul>
 </li>
-<li>Side Effects<ul>
+<li>Side Effects
+<ul>
 <li>e.g., 執行<code>Map()</code>或<code>Reduce()</code>時，產生附加檔案(Auxiliary Files)</li>
-<li>Make sure side-effect is atomic and idempotent(冪等)<ul>
+<li>Make sure side-effect is atomic and idempotent(冪等)
+<ul>
 <li>Idempotent：一個運算作用在任一元素兩次後會和其作用一次的結果相同</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Skipping Bad Records<ul>
-<li>忽略少數的故障(當資料夠大時)<ul>
+<li>Skipping Bad Records
+<ul>
+<li>忽略少數的故障(當資料夠大時)
+<ul>
 <li>對答案影響不大</li>
-<li>故障時，傳送資料給Master<ul>
+<li>故障時，傳送資料給Master
+<ul>
 <li>連續錯N次後，直接跳過此輸入</li>
 </ul>
 </li>
@@ -598,27 +666,34 @@
 </li>
 </ul>
 </li>
-<li>實作Counter類別<ul>
+<li>實作Counter類別
+<ul>
 <li>在 <code>Map()</code> 和 <code>Reduce()</code> 計算數量用</li>
 <li>定期傳送資料給Master以追蹤進度</li>
 </ul>
 </li>
-<li>Local Execution<ul>
+<li>Local Execution
+<ul>
 <li>將全部資料於同一台電腦中執行(即單機版本)，以利Debug</li>
 </ul>
 </li>
-<li>Status Information<ul>
+<li>Status Information
+<ul>
 <li>Master有http server提供狀態頁面，以提供進度監控</li>
 </ul>
 </li>
 </ul>
-<h2 id="結論"><a href="#結論" class="headerlink" title="結論"></a>結論</h2><ul>
-<li>此框架隱藏了錯誤處理、平行化、分散式系統、資源分配的細節<ul>
-<li>沒有分散式系統和平行化的經驗也可以輕鬆上手<ul>
+<h2 id="結論">結論</h2>
+<ul>
+<li>此框架隱藏了錯誤處理、平行化、分散式系統、資源分配的細節
+<ul>
+<li>沒有分散式系統和平行化的經驗也可以輕鬆上手
+<ul>
 <li>只需思考分割和組合資料的邏輯</li>
 </ul>
 </li>
-<li>程式邏輯更簡單，更容易修改<ul>
+<li>程式邏輯更簡單，更容易修改
+<ul>
 <li>3800行 → 700行 (C++)</li>
 </ul>
 </li>
@@ -626,9 +701,11 @@
 </li>
 <li>適合用來處理可以分割、資料量大的問題</li>
 </ul>
-<h3 id="應用"><a href="#應用" class="headerlink" title="應用"></a>應用</h3><p>因為是非常一般化的框架，可用在許多用途</p>
+<h3 id="應用">應用</h3>
+<p>因為是非常一般化的框架，可用在許多用途</p>
 <ul>
-<li>資料處理<ul>
+<li>資料處理
+<ul>
 <li>統計，如PageRank</li>
 <li>搜尋，如Google Search Indexing</li>
 <li>排序</li>
@@ -636,14 +713,17 @@
 </li>
 <li>機器學習</li>
 </ul>
-<h3 id="備註"><a href="#備註" class="headerlink" title="備註"></a>備註</h3><ul>
-<li><code>Map()</code> 和 <code>Reduce()</code> 的實作必須是Deterministic<ul>
+<h3 id="備註">備註</h3>
+<ul>
+<li><code>Map()</code> 和 <code>Reduce()</code> 的實作必須是Deterministic
+<ul>
 <li>否則因為機器故障、輸入順序不同等因素，輸出可能會不同</li>
 </ul>
 </li>
 <li>Hadoop 為 MapReduce 的 Open Source 實作</li>
 </ul>
-<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
+<h2 id="參考資料">參考資料</h2>
+<ul>
 <li>Jeffrey Dean and Sanjay Ghemawat, 2004, MapReduce: Simplified Data Processing on Large Clusters</li>
 <li><a href="/data/mapreduce-report.pdf">簡報</a></li>
 </ul>
@@ -729,7 +809,7 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">473k</span>
+    <span title="總字數">468k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

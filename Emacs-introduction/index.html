@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.2.0">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.webp">
@@ -306,11 +306,12 @@
     <div class="post-body" itemprop="articleBody">
         <p>參考 <span class="exturl" data-url="aHR0cDovL3Nob3Aub3JlaWxseS5jb20vcHJvZHVjdC85NzgwNTk2MDA2NDg4LmRv">Learning GNU Emacs<i class="fa fa-external-link-alt"></i></span></p>
 <span id="more"></span>
-
-<h2 id="Major-Mode"><a href="#Major-Mode" class="headerlink" title="Major Mode"></a>Major Mode</h2><ul>
+<h2 id="Major-Mode">Major Mode</h2>
+<ul>
 <li>一次只能有一個</li>
 <li>主要針對不同語言</li>
-<li>Example<ul>
+<li>Example
+<ul>
 <li>Fundamental Mode</li>
 <li>Text Mode</li>
 <li>C Mode</li>
@@ -318,19 +319,24 @@
 </ul>
 </li>
 </ul>
-<h2 id="Minor-Mode"><a href="#Minor-Mode" class="headerlink" title="Minor Mode"></a>Minor Mode</h2><ul>
+<h2 id="Minor-Mode">Minor Mode</h2>
+<ul>
 <li>相關功能</li>
-<li>Example<ul>
-<li>Abbrev Mode<ul>
+<li>Example
+<ul>
+<li>Abbrev Mode
+<ul>
 <li>能自訂簡寫，並由emacs自動展開</li>
 <li><code>add-global-abbrev</code></li>
 </ul>
 </li>
-<li>Fill Mode<ul>
+<li>Fill Mode
+<ul>
 <li>文字超出空間時自動換行(加上<code>\n</code>)</li>
 </ul>
 </li>
-<li>Auto-save Mode<ul>
+<li>Auto-save Mode
+<ul>
 <li>產生自動儲存檔(名為 <code>#檔名#</code>)</li>
 <li>用 <code>revert-buffer</code> 指令將檔案還原成自動儲存時的狀態</li>
 </ul>
@@ -339,9 +345,11 @@
 </li>
 </ul>
 <p>最常用的指令是 <code>C-[something]</code>，次常用的指令是 <code>M-[something]</code>，更不常用的指令是 <code>C-x [something]</code>，更不常用的指令是 <code>C-c [something]</code></p>
-<p><code>C-u 4 [command]</code>: 重複4次<br><code>C-u 1 6 [command]</code>: 重複16次</p>
+<p><code>C-u 4 [command]</code>: 重複4次<br />
+<code>C-u 1 6 [command]</code>: 重複16次</p>
 <p><code>M--</code>, <code>C--</code> : <code>negative-argument</code></p>
-<h2 id="搜尋"><a href="#搜尋" class="headerlink" title="搜尋"></a>搜尋</h2><ul>
+<h2 id="搜尋">搜尋</h2>
+<ul>
 <li>Incremental Search(每輸入一個字元，就尋找符合的文字)</li>
 <li>Non-Incremental Search(輸入完畢後才開始尋找, <code>nonincremental-search-forward</code>)</li>
 <li>Word Search(找一個字，例如找hat，不會找到that, <code>word-search-forward</code>)</li>
@@ -357,10 +365,11 @@
 <li><code>ispell-buffer</code>, <code>ispell-region</code></li>
 <li><code>M-x</code> ispell-change-dictionary</li>
 </ul>
-<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly9hc2hvay1raGFubmEubWVkaXVtLmNvbS9pbnRyb2R1Y3Rpb24tdG8tZGlyZWQtbW9kZS05MWNlY2QzYTA2ZmY=">https://ashok-khanna.medium.com/introduction-to-dired-mode-91cecd3a06ff<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuZW1hY3N3aWtpLm9yZy9lbWFjcy9EaXJlZE1vZGU=">https://www.emacswiki.org/emacs/DiredMode<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuZ251Lm9yZy9zb2Z0d2FyZS9lbWFjcy9tYW51YWwvaHRtbF9ub2RlL2VtYWNzL0RpcmVkLmh0bWw=">https://www.gnu.org/software/emacs/manual/html_node/emacs/Dired.html<i class="fa fa-external-link-alt"></i></span></li>
+<h2 id="參考資料">參考資料</h2>
+<ul>
+<li>https://ashok-khanna.medium.com/introduction-to-dired-mode-91cecd3a06ff</li>
+<li>https://www.emacswiki.org/emacs/DiredMode</li>
+<li>https://www.gnu.org/software/emacs/manual/html_node/emacs/Dired.html</li>
 </ul>
 
     </div>
@@ -443,7 +452,7 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">473k</span>
+    <span title="總字數">468k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

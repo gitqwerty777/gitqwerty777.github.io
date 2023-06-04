@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.2.0">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.webp">
@@ -297,7 +297,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>856</span>
+      <span>841</span>
     </span>
 </div>
 
@@ -309,72 +309,88 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="目標"><a href="#目標" class="headerlink" title="目標"></a>目標</h2><p>物件之間一對多的依賴關係，當物件狀態改變時，所有依賴者會被通知</p>
-<h2 id="架構"><a href="#架構" class="headerlink" title="架構"></a>架構</h2><p><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Observer_w_update.svg/1024px-Observer_w_update.svg.png?1618077346924" alt="From Wiki"></p>
+        <h2 id="目標">目標</h2>
+<p>物件之間一對多的依賴關係，當物件狀態改變時，所有依賴者會被通知</p>
+<h2 id="架構">架構</h2>
+<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Observer_w_update.svg/1024px-Observer_w_update.svg.png?1618077346924" alt="From Wiki" /></p>
 <ul>
-<li><code>Subject</code>：主題<ul>
-<li>特定事件發生時，會通知觀察者<ul>
+<li><code>Subject</code>：主題
+<ul>
+<li>特定事件發生時，會通知觀察者
+<ul>
 <li>如資料改變</li>
 </ul>
 </li>
-<li>新增&#x2F;移除觀察者：<code>Attach(Observer), Detach(Observer)</code></li>
+<li>新增/移除觀察者：<code>Attach(Observer), Detach(Observer)</code></li>
 <li>用<code>Notify(data)</code>通知觀察者主題有更新</li>
 </ul>
 </li>
-<li><code>Observer</code>：觀察者<ul>
+<li><code>Observer</code>：觀察者
+<ul>
 <li>訂閱主題，以便在更新時收到通知</li>
 <li>觀察者收到通知時呼叫<code>Update(Subject)</code>以處理事件</li>
 </ul>
 </li>
 </ul>
-<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>設計守則：盡量讓需要互動的物件的關係鬆綁</p>
+<h2 id="分析">分析</h2>
+<p>設計守則：盡量讓需要互動的物件的關係鬆綁</p>
 <ul>
-<li>主題和觀察者鬆綁<ul>
+<li>主題和觀察者鬆綁
+<ul>
 <li>主題不用知道觀察者的具體類別，只知道觀察者有實作特定介面(<code>Observer</code>)</li>
-<li>可以加入&#x2F;移除新的觀察者，且主題的程式碼不需修改</li>
+<li>可以加入/移除新的觀察者，且主題的程式碼不需修改</li>
 </ul>
 </li>
 </ul>
-<h2 id="實作"><a href="#實作" class="headerlink" title="實作"></a>實作</h2><p>有一觀測工作站數據的物件，在數據異常時可以通知到多個平台(Email, 簡訊, App)，<br>且使用者可以自由調整各平台的通知設定。</p>
+<h2 id="實作">實作</h2>
+<p>有一觀測工作站數據的物件，在數據異常時可以通知到多個平台(Email, 簡訊, App)，<br />
+且使用者可以自由調整各平台的通知設定。</p>
 <ul>
 <li>觀察者之間彼此獨立，不可依頼通知觀察者的順序</li>
 <li>主題可以控制改變的定義(如溫度變化超過1度)</li>
-<li>Push model&#x2F;Pull model<ul>
-<li>Push model<ul>
+<li>Push model/Pull model
+<ul>
+<li>Push model
+<ul>
 <li>推送所有資料給Observer</li>
 <li>Subject要知道Observer需要什麼，彈性較差</li>
 <li>Observer會接收到不必要的資料</li>
 </ul>
 </li>
-<li>Pull model<ul>
+<li>Pull model
+<ul>
 <li>提供必要的資料或其來源(如data id或Subject本身)給Observer，由Observer自行取得相關資料</li>
 <li>每個Observer都要重新取得資料，效率較差</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>C#的實作：委託，可看作對函數的抽象，是函數的類別<ul>
+<li>C#的實作：委託，可看作對函數的抽象，是函數的類別
+<ul>
 <li>委託物件所搭載的方法並不需要屬於同一個類別(即不需要Observer介面)</li>
 </ul>
 </li>
 <li>可以實作一個<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL1dpdGhvdXRVbWJyZWxsYS1Cb3kvRGVzaWduLXBhdHRlcm5zLWluLWdhbWUtZGV2ZWxvcG1lbnQvYmxvYi8zODgzYzI3OGJiZWY2MzRlMzdiYzFlYTZmNDY2N2I5MjE4NDcwYmY3L1JlZEFsZXJ0UHJvamVjdC9Bc3NldHMvU2NyaXB0cy9HYW1lRXZlbnRTeXN0ZW0vR2FtZUV2ZW50U3lzdGVtLmNz">Subject管理員<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
-<h2 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h2><p>當一個物件的改變需要同時改變其他物件時</p>
+<h2 id="用途">用途</h2>
+<p>當一個物件的改變需要同時改變其他物件時</p>
 <ul>
 <li>訂閱服務</li>
 <li>MVC架構：後端資料更新、前端顯示資料</li>
 <li>UI事件：OnClick, OnHover</li>
 <li>觸發事件</li>
 </ul>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ul>
+<h2 id="其他">其他</h2>
+<ul>
 <li>目前的社群網站則是訂閱後仍會篩選並提供部份資料，而RSS訂閱後可取得所有資料的更新</li>
 </ul>
-<h2 id="參考"><a href="#參考" class="headerlink" title="參考"></a>參考</h2><ul>
+<h2 id="參考">參考</h2>
+<ul>
 <li>Wiki</li>
 <li>Head-First Design Pattern</li>
 <li>大話設計模式</li>
 <li>設計模式與遊戲開發的完美結合</li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9ub3RmYWxzZS5uZXQvMTAvb2JzZXJ2ZXItcGF0dGVybg==">https://notfalse.net/10/observer-pattern<i class="fa fa-external-link-alt"></i></span></li>
+<li>https://notfalse.net/10/observer-pattern</li>
 </ul>
 
     </div>
@@ -459,7 +475,7 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">473k</span>
+    <span title="總字數">468k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

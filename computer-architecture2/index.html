@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.2.0">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.webp">
@@ -24,12 +24,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"gitqwerty777.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.12.1","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"show_result":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInDown","sidebar":"fadeInRight"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/config.min.js"></script>
 
-    <meta name="description" content="Chap07 Pipelining (II)Data Dependence DetectionHazard conditions:  EX hazard EX&#x2F;MEM.RegisterRd &#x3D; ID&#x2F;EX.Register Rs or Rt   MEM hazard MEM&#x2F;WB.RegisterRd &#x3D; ID&#x2F;EX.Register">
+    <meta name="description" content="Chap07 Pipelining (II)  Data Dependence Detection Hazard conditions:  EX hazard  EX&#x2F;MEM.RegisterRd &#x3D; ID&#x2F;EX.Register Rs or Rt   MEM hazard  MEM&#x2F;WB.RegisterRd &#x3D; ID&#x2F;EX.RegisterRs or Rt Ex&#x2F;MEM.RegisterRd">
 <meta property="og:type" content="article">
 <meta property="og:title" content="計算機結構(下)">
 <meta property="og:url" content="http://gitqwerty777.github.io/computer-architecture2/index.html">
 <meta property="og:site_name" content="QWERTY">
-<meta property="og:description" content="Chap07 Pipelining (II)Data Dependence DetectionHazard conditions:  EX hazard EX&#x2F;MEM.RegisterRd &#x3D; ID&#x2F;EX.Register Rs or Rt   MEM hazard MEM&#x2F;WB.RegisterRd &#x3D; ID&#x2F;EX.Register">
+<meta property="og:description" content="Chap07 Pipelining (II)  Data Dependence Detection Hazard conditions:  EX hazard  EX&#x2F;MEM.RegisterRd &#x3D; ID&#x2F;EX.Register Rs or Rt   MEM hazard  MEM&#x2F;WB.RegisterRd &#x3D; ID&#x2F;EX.RegisterRs or Rt Ex&#x2F;MEM.RegisterRd">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/computer-architecture/detect-and-forward.webp">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/computer-architecture/forward.webp">
@@ -333,54 +333,73 @@
     
     <div class="post-body" itemprop="articleBody">
         <!-- RENEW: -->
-
-<h2 id="Chap07-Pipelining-II"><a href="#Chap07-Pipelining-II" class="headerlink" title="Chap07 Pipelining (II)"></a>Chap07 Pipelining (II)</h2><p><img data-src="/img/computer-architecture/detect-and-forward.webp" alt="detect and forward"><br>Data Dependence Detection<br>Hazard conditions:</p>
+<h2 id="Chap07-Pipelining-II">Chap07 Pipelining (II)</h2>
+<p><img data-src="/img/computer-architecture/detect-and-forward.webp" alt="detect and forward" /><br />
+Data Dependence Detection<br />
+Hazard conditions:</p>
 <ul>
-<li>EX hazard<ul>
-<li>EX&#x2F;MEM.RegisterRd &#x3D; ID&#x2F;EX.Register Rs or Rt</li>
+<li>EX hazard
+<ul>
+<li>EX/MEM.RegisterRd = ID/EX.Register Rs or Rt</li>
 </ul>
 </li>
-<li>MEM hazard<ul>
-<li>MEM&#x2F;WB.RegisterRd &#x3D; ID&#x2F;EX.RegisterRs or Rt</li>
-<li>Ex&#x2F;MEM.RegisterRd !&#x3D; ID&#x2F;Ex.RegisterRs(優先選EX)</li>
+<li>MEM hazard
+<ul>
+<li>MEM/WB.RegisterRd = ID/EX.RegisterRs or Rt</li>
+<li>Ex/MEM.RegisterRd != ID/Ex.RegisterRs(優先選EX)</li>
 </ul>
 </li>
-<li>RegWrite &#x3D;&#x3D; true</li>
-<li>RegisterRd !&#x3D; $0<span id="more"></span>
-Resolving Hazards by Forwarding<br><img data-src="/img/computer-architecture/forward.webp" alt="forward"></li>
+<li>RegWrite == true</li>
+<li>RegisterRd != $0</li>
 </ul>
-<p>Add MUX to ALU inputs<br>Forwarding Control in EX<br><img data-src="/img/computer-architecture/forward-logic-mux.webp" alt="logic with forward"></p>
-<p>load-use data hazard(instruction after LW) -&gt; stall it  </p>
+<span id="more"></span>
+<p>Resolving Hazards by Forwarding<br />
+<img data-src="/img/computer-architecture/forward.webp" alt="forward" /></p>
+<p>Add MUX to ALU inputs<br />
+Forwarding Control in EX<br />
+<img data-src="/img/computer-architecture/forward-logic-mux.webp" alt="logic with forward" /></p>
+<p>load-use data hazard(instruction after LW) -&gt; stall it</p>
 <pre><code>If (ID/EX.MemRead and
 ((ID/EX.RegisterRt = IF/ID.RegisterRs) or
 (ID/EX.RegisterRt = IF/ID.RegisterRt)))
-    stall the pipeline
+	stall the pipeline
 </code></pre>
-<p>Stall: ID&#x2F;EX裡的control value改成0，使EX MEM WB都不做事(nop) 並防止PC和IF&#x2F;ID register更新，也就是確保他們下個cycle做跟這個cycle一樣的事<br>Insert a bubble:空白的instruction, 不做事<br><img data-src="/img/computer-architecture/bubble.webp" alt="bubble"></p>
+<p>Stall: ID/EX裡的control value改成0，使EX MEM WB都不做事(nop) 並防止PC和IF/ID register更新，也就是確保他們下個cycle做跟這個cycle一樣的事<br />
+Insert a bubble:空白的instruction, 不做事<br />
+<img data-src="/img/computer-architecture/bubble.webp" alt="bubble" /></p>
 <p>Control Hazard Solutions</p>
-<p>Branch 有沒有taken可以在MEM確認。如果發現prediction錯誤就重新設定PC，並把control都設為0，flush掉跑錯的instruction。<br>一個簡單的改進方式就是，在ID stage把資料從register讀出來後加上比較兩個值是否相等的元件，compare完才進到id&#x2F;ex，這時候提早了一個cycle知道branch是否taken。</p>
-<p>當branch發生使用的值在ALU做完運算時，透過forwarding就可以解決了<br>但如果branch發生在使用的值正在load的話，就必須stall。而如果是一load出來馬上就要做branching的判斷的話，就必須stall 2個cycle<br><img data-src="/img/computer-architecture/2stall.webp"></p>
-<p>Dynamic prediction的branch history table，以branch instruction的address(取最後n個bit)做索引，並儲存branch的結果。如果猜錯的話就做之前一樣的flush並修改表。<br>跳出loop時會猜繼續，第一次進入loop會猜跳出 -&gt; 導致錯誤率大幅提高<br>-&gt; 2bit的predictor, 連續兩個taken&#x2F;not taken才會改變狀態</p>
+<p>Branch 有沒有taken可以在MEM確認。如果發現prediction錯誤就重新設定PC，並把control都設為0，flush掉跑錯的instruction。<br />
+一個簡單的改進方式就是，在ID stage把資料從register讀出來後加上比較兩個值是否相等的元件，compare完才進到id/ex，這時候提早了一個cycle知道branch是否taken。</p>
+<p>當branch發生使用的值在ALU做完運算時，透過forwarding就可以解決了<br />
+但如果branch發生在使用的值正在load的話，就必須stall。而如果是一load出來馬上就要做branching的判斷的話，就必須stall 2個cycle<br />
+<img data-src="/img/computer-architecture/2stall.webp" alt="" /></p>
+<p>Dynamic prediction的branch history table，以branch instruction的address(取最後n個bit)做索引，並儲存branch的結果。如果猜錯的話就做之前一樣的flush並修改表。<br />
+跳出loop時會猜繼續，第一次進入loop會猜跳出 -&gt; 導致錯誤率大幅提高<br />
+-&gt; 2bit的predictor, 連續兩個taken/not taken才會改變狀態</p>
 <p>但就算猜對，還是要算出target address，所以在branch taken時會有一個cycle的penalty。解決的方法是新增buffer存放branch target address。</p>
-<h3 id="Exception"><a href="#Exception" class="headerlink" title="Exception"></a>Exception</h3><p>syscall，未定義的opcode，或overflow處理等等(以上為CPU內產生的指令)或是受外部的I&#x2F;O控制器的干涉。導致performance的降低。</p>
+<h3 id="Exception">Exception</h3>
+<p>syscall，未定義的opcode，或overflow處理等等(以上為CPU內產生的指令)或是受外部的I/O控制器的干涉。導致performance的降低。</p>
 <ol start="2">
 <li>完成先前的指令</li>
 <li>Flush the instruction in the IF, ID and EX stages</li>
 <li>把這些違例或是被干擾的instruction的PC(實際上是PC+4)存在Exception program counter(EPC)</li>
 <li>問題的跡像(indicator)也存起來，在MIPS中是使用Cause register</li>
-<li>然後再跳到handler(PC &#x3D; 0x40000040)</li>
-<li>另外一種解決的機制是，以硬體等級去告訴I&#x2F;O handler，根據不同的cause跳去不同的handler(不同的address)，instructions要不就去執行interrupt的部份，要不就跳到handler去處理。</li>
-<li><pre><code>Handler先讀看原因(indicator)然後再轉至專門解決此類問題的handler，然後決定該採取什麼行動，如果是restartable(可以重跑)，就用EPC回到原本執行的地方(EPC-4)，並採取判斷正確的行動。否則就終止程序並根據EPC cause來回報錯誤。
-</code></pre>
-</li>
+<li>然後再跳到handler(PC = 0x40000040)</li>
+<li>另外一種解決的機制是，以硬體等級去告訴I/O handler，根據不同的cause跳去不同的handler(不同的address)，instructions要不就去執行interrupt的部份，要不就跳到handler去處理。</li>
+<li>Handler先讀看原因(indicator)然後再轉至專門解決此類問題的handler，然後決定該採取什麼行動，如果是restartable(可以重跑)，就用EPC回到原本執行的地方(EPC-4)，並採取判斷正確的行動。否則就終止程序並根據EPC cause來回報錯誤。</li>
 </ol>
-<p><img data-src="/img/computer-architecture/exception-handle.webp" alt="step to handle exception"></p>
-<p>ILP(instruction level parallelism)，指令層級的平行處理。<br>增進ILP的方法</p>
+<p><img data-src="/img/computer-architecture/exception-handle.webp" alt="step to handle exception" /></p>
+<p>ILP(instruction level parallelism)，指令層級的平行處理。<br />
+增進ILP的方法</p>
 <ol>
 <li>Deeper pipeline，把pipeline分成更多stage，而每個stage因為workload相對的比較少，所以可以讓cpu clock cycle變短，進而增進效能</li>
 <li>Multiple issue，有多個pipeline同時進行，所以每個clock cycle都同時跑好幾個instruction。但是互相依賴性(比如說不同pipeline之間的hazard或共用到哪些資源)會使得實際上不是變幾倍的pipeline IPC就變幾倍。</li>
 </ol>
-<h3 id="Multiple-issue"><a href="#Multiple-issue" class="headerlink" title="Multiple issue"></a>Multiple issue</h3><p>可以分為static和dynamic。<br>Static的是由compiler把要同時執行的instruction包成一包一包的instruction packets。<br>可以把instruction packet想成一個非常長的instruction裡面有好幾個同時運作的operations。這樣的概念叫做VLIW(very long instruction word)<br>偵測避免hazard</p>
+<h3 id="Multiple-issue">Multiple issue</h3>
+<p>可以分為static和dynamic。<br />
+Static的是由compiler把要同時執行的instruction包成一包一包的instruction packets。<br />
+可以把instruction packet想成一個非常長的instruction裡面有好幾個同時運作的operations。這樣的概念叫做VLIW(very long instruction word)<br />
+偵測避免hazard</p>
 <ol>
 <li>把instruction重新排列並包成issue packets時避免會造成hazard的順序。</li>
 <li>同時在跑的instruction要互相independent不然就會搶資源或造成data hazard。</li>
@@ -391,50 +410,90 @@ Resolving Hazards by Forwarding<br><img data-src="/img/computer-architecture/for
 <p>Speculation：先去猜測要做什麼，如果做錯了再從頭來過。比如說branch的時候就先猜taken或not taken，在load的時候先拿原有的位址去load如果發現其他該在前面的instruction更新了這個位址，就roll-back。</p>
 <p>Compiler可以重新排列一些code比如說把branch之前的load移到更早，避免stall，或是寫一些instruction來修正做出錯誤的speculation的狀況。增加用來延遲exception的ISA。</p>
 <p>而硬體可以做look-ahead，將instruction的結果和exception都先存在buffer裡，直到他們要被用到或是判斷speculation正確。如果判斷speculation錯誤就把buffer flush掉。</p>
-<h3 id="dual-issue"><a href="#dual-issue" class="headerlink" title="dual issue"></a>dual issue</h3><p>一個packet有兩組instruction。一個只做load&#x2F;store一個只做ALU&#x2F;branch，所以只要加一個ALU和一個sign extender就可以實做。</p>
-<p>dual issue’s Data hazard:</p>
+<h3 id="dual-issue">dual issue</h3>
+<p>一個packet有兩組instruction。一個只做load/store一個只做ALU/branch，所以只要加一個ALU和一個sign extender就可以實做。</p>
+<p>dual issue's Data hazard:</p>
 <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">add</span> <span class="variable">$t0</span>, <span class="variable">$s0</span>, <span class="variable">$s1</span></span><br><span class="line">load <span class="variable">$s2</span>, 0(<span class="variable">$t0</span>)</span><br></pre></td></tr></table></figure>
-
 <p>把這兩個指令拆開放在兩個不同的packets，就像stall一樣</p>
-<p>Load-use hazard，一樣會造成一個cycle的延遲，但是一個cycle變成影響兩個instructions。<br>-&gt; 需要把指令做更好的排程(aggressive scheduling)</p>
-<p>loop unrolling: 把一次完成多個loop內的iteration來減少loop-control overhead(bne)，並用不同的register來存放(register renaming)(每一份replicate就是原本的loop跑一次)<br>避免loop裡面有 anti–dependencies(name dependency): write-after-read<br>ex: B&#x3D;7; A&#x3D;B+1; B&#x3D;3 在a&#x3D;b+1和b&#x3D;3之間就有anti dependent的關係</p>
-<p><img data-src="/img/computer-architecture/unroll-before.webp" alt="before"><br><img data-src="/img/computer-architecture/unroll-after.webp" alt="after"><br>原本：for(load -&gt; 計算 -&gt; save)<br>之後：for(load) + for(add) -&gt; for(save)<br>IPC從1.25提升到1.75(更接近極限，2)不過code和register也變得更大。  </p>
-<p>Dynamic multiple issue通常在超大型處理器中使用。CPU每個cycle會決定issue的對象。以幫助cpu對code的語義有更好的掌握(compiler做的事變少CPU更直接掌握code在做什麼)。<br>dynamic pipeline scheduling: 讓cpu可以不照順序執行instruction以避免stall，但是會把資料<strong>照順序存回</strong>register(比如說在stall的時候就先處理無關的instruction)</p>
-<p><img data-src="/img/computer-architecture/dynamic-schedule-CPU.webp" alt="dynamic schedule CPU"><br>Dynamically scheduled CPU的運作跟一般的pipeline有些出入，可以分為4個stage</p>
+<p>Load-use hazard，一樣會造成一個cycle的延遲，但是一個cycle變成影響兩個instructions。<br />
+-&gt; 需要把指令做更好的排程(aggressive scheduling)</p>
+<p>loop unrolling: 把一次完成多個loop內的iteration來減少loop-control overhead(bne)，並用不同的register來存放(register renaming)(每一份replicate就是原本的loop跑一次)<br />
+避免loop裡面有 anti–dependencies(name dependency): write-after-read<br />
+ex: B=7; A=B+1; B=3 在a=b+1和b=3之間就有anti dependent的關係</p>
+<p><img data-src="/img/computer-architecture/unroll-before.webp" alt="before" /><br />
+<img data-src="/img/computer-architecture/unroll-after.webp" alt="after" /><br />
+原本：for(load -&gt; 計算 -&gt; save)<br />
+之後：for(load) + for(add) -&gt; for(save)<br />
+IPC從1.25提升到1.75(更接近極限，2)不過code和register也變得更大。</p>
+<p>Dynamic multiple issue通常在超大型處理器中使用。CPU每個cycle會決定issue的對象。以幫助cpu對code的語義有更好的掌握(compiler做的事變少CPU更直接掌握code在做什麼)。<br />
+dynamic pipeline scheduling: 讓cpu可以不照順序執行instruction以避免stall，但是會把資料<strong>照順序存回</strong>register(比如說在stall的時候就先處理無關的instruction)</p>
+<p><img data-src="/img/computer-architecture/dynamic-schedule-CPU.webp" alt="dynamic schedule CPU" /><br />
+Dynamically scheduled CPU的運作跟一般的pipeline有些出入，可以分為4個stage</p>
 <ol>
-<li>IF&#x2F;ID<br>照順序做完instruction fetch和decode(這邊的動作很快)</li>
-<li>reservation stations<br>控制哪些instruction要先pending</li>
-<li>functional units<br>做不同的功能 – 浮點數運算, load-store…<br>完成後把資料給commit unit及相對應在pending等這個結果的reservation station</li>
-<li>commit unit<br>重新排列register write要用的buffer<br>並提供operands給某些在reservation pending的function(類似之前單issue裡要flush重做的function)</li>
+<li>IF/ID<br />
+照順序做完instruction fetch和decode(這邊的動作很快)</li>
+<li>reservation stations<br />
+控制哪些instruction要先pending</li>
+<li>functional units<br />
+做不同的功能 -- 浮點數運算, load-store...<br />
+完成後把資料給commit unit及相對應在pending等這個結果的reservation station</li>
+<li>commit unit<br />
+重新排列register write要用的buffer<br />
+並提供operands給某些在reservation pending的function(類似之前單issue裡要flush重做的function)</li>
 </ol>
 <p>?? Reservation station 和 commit unit在reorder buffer時，自動達到了register renaming。</p>
 <p>?? 當一個instruction被issue到reservation station的時候，如果instruction的operands在register或reorder buffer裡可以被找到也可以被存取的話，把它複制到reservation station，並且標明那個register已經無用可以被複寫。如果operands無法存取(unavailable)的話，有一個function unit會把該給的值給reservation unit，而register裡面的值需不需要更新就要看指令。</p>
 <p>dynamically scheduled的speculation: 在branching的結果確認之前不要commit。而speculation一樣可以用在減少load 和cache miss delay。根據預測的address先取出值然後等store有沒有更改到這個load的address，store會把那個address bypass到load unit。沒問題就把結果送到commit unit，有問題就重做。</p>
-<p>Dynamically scheduling的原因:<br>不是所有的stall都是可以從code裡看出來的 比如說:cache miss。<br>branch的結果也不能靠scheduling來解決。<br>不同的ISA有不同的延遲和不同的hazard，都要交給compiler來處理實在非常麻煩。</p>
-<p>Multiple issue的效能：程式內有dependency會限制ILP(instruction level parallelism)而且有些dependency很難去除，如pointer aliasing(不同的名字的pointer指到同一個地方)<br>有一些平行也很難做到比如說IF&#x2F;ID的部份<br>memory還有delay而且也有他的頻寬，也導致pipeline常常有nop<br>Speculation如果做的好的話可以改善以上原因引起的performance下降</p>
+<p>Dynamically scheduling的原因:<br />
+不是所有的stall都是可以從code裡看出來的 比如說:cache miss。<br />
+branch的結果也不能靠scheduling來解決。<br />
+不同的ISA有不同的延遲和不同的hazard，都要交給compiler來處理實在非常麻煩。</p>
+<p>Multiple issue的效能：程式內有dependency會限制ILP(instruction level parallelism)而且有些dependency很難去除，如pointer aliasing(不同的名字的pointer指到同一個地方)<br />
+有一些平行也很難做到比如說IF/ID的部份<br />
+memory還有delay而且也有他的頻寬，也導致pipeline常常有nop<br />
+Speculation如果做的好的話可以改善以上原因引起的performance下降</p>
 <p>多顆簡單的核心(沒speculation, issue width低, pipeline, stage少)可以達到省電的作用</p>
-<h3 id="結論"><a href="#結論" class="headerlink" title="結論"></a>結論</h3><p>pipeline的概念很簡單，但是細節很複雜。Ex: hazard detection<br>pipeline跟cpu的其他科技無關，其他科技進步的同時還是可以做pipelining  </p>
-<p>不好的ISA設計可能在某些狀況下會讓pipelining變得很困難<br>ex:<br>太複雜的instruction set 需要巨大的overhead來讓pipeline可行(ex: IA-32,VAX)<br>太複雜的addressing mode<br>間接讀取memory(指標)，及register update<br>複雜的pipeline，會有比較長的branching delay slots  </p>
-<p><strong>ISA會影響data path和control的設計</strong><br>Pipelining利用平行處理的技術可以提高總輸出，並不影響單個指令的latency<br>Dependency限制了平行處理的程度，太過複雜又會導致電耗過高</p>
-<h2 id="Chap08-Memory-Hierarchy"><a href="#Chap08-Memory-Hierarchy" class="headerlink" title="Chap08 Memory Hierarchy"></a>Chap08 Memory Hierarchy</h2><p><img data-src="/img/computer-architecture/memory-hierarchy.webp" alt="hieraracy"><br>記憶體的層級化: 愈常用的放在愈快拿到的地方</p>
+<h3 id="結論">結論</h3>
+<p>pipeline的概念很簡單，但是細節很複雜。Ex: hazard detection<br />
+pipeline跟cpu的其他科技無關，其他科技進步的同時還是可以做pipelining</p>
+<p>不好的ISA設計可能在某些狀況下會讓pipelining變得很困難<br />
+ex:<br />
+太複雜的instruction set 需要巨大的overhead來讓pipeline可行(ex: IA-32,VAX)<br />
+太複雜的addressing mode<br />
+間接讀取memory(指標)，及register update<br />
+複雜的pipeline，會有比較長的branching delay slots</p>
+<p><strong>ISA會影響data path和control的設計</strong><br />
+Pipelining利用平行處理的技術可以提高總輸出，並不影響單個指令的latency<br />
+Dependency限制了平行處理的程度，太過複雜又會導致電耗過高</p>
+<h2 id="Chap08-Memory-Hierarchy">Chap08 Memory Hierarchy</h2>
+<p><img data-src="/img/computer-architecture/memory-hierarchy.webp" alt="hieraracy" /><br />
+記憶體的層級化: 愈常用的放在愈快拿到的地方</p>
 <ul>
 <li>Static Ram: 0.5ns-2.5ns， 每gb要2000 – 5000元</li>
 <li>Dynamic Ram: 50ns -70ns 每gb要 20- 75元</li>
 <li>硬碟:5-20ms，每gb只要0.2-2元</li>
 </ul>
-<p>Temporal locality: 最近被存取過的data容易再被存取<br>Ex:在loop裡面的程序，或是在loop裡面一直被重複操作的數字</p>
+<p>Temporal locality: 最近被存取過的data容易再被存取<br />
+Ex:在loop裡面的程序，或是在loop裡面一直被重複操作的數字</p>
 <p>Spatial locality: 位址接近最近被存取過的data較有可能被存取，如array</p>
-<p>資料的copy以block為最小單位。<br>Hit Time: memory access time + time to determine hit&#x2F;miss<br>Miss Penalty: Time to replace a block in the upper level + Time to deliver the block to processor  </p>
-<p>direct mapped cache: mod餘1, mod餘2 … 各放在同一個cache block<br>memory address前面的bit也存過去做為tag，可知道是從memory的哪個位置將資料load到這個cache<br>Valid bit可以很快的判斷一個block裡面是否有資料<br><img data-src="/img/computer-architecture/direct-map.webp" alt="direct map"></p>
+<p>資料的copy以block為最小單位。<br />
+Hit Time: memory access time + time to determine hit/miss<br />
+Miss Penalty: Time to replace a block in the upper level + Time to deliver the block to processor</p>
+<p>direct mapped cache: mod餘1, mod餘2 … 各放在同一個cache block<br />
+memory address前面的bit也存過去做為tag，可知道是從memory的哪個位置將資料load到這個cache<br />
+Valid bit可以很快的判斷一個block裡面是否有資料<br />
+<img data-src="/img/computer-architecture/direct-map.webp" alt="direct map" /></p>
 <p>Q:How many total bits are required for a direct-mapped cache with 16 KB of data and 4-word(16byte) blocks, assuming 32bit address?</p>
 <ul>
-<li>num of sets &#x3D; 16KB(cache size)&#x2F;16B(block size) &#x3D; 2^10</li>
-<li>num of data bits for each set &#x3D; 16byte data &#x3D; 4</li>
-<li>num of tag bits for each set &#x3D; 32-10-4 &#x3D; 18</li>
+<li>num of sets = 16KB(cache size)/16B(block size) = 2^10</li>
+<li>num of data bits for each set = 16byte data = 4</li>
+<li>num of tag bits for each set = 32-10-4 = 18</li>
 </ul>
-<p>Cache Controller FSM<br><img data-src="/img/computer-architecture/cache-controller-fsm.webp" alt="FSM"></p>
-<h3 id="考慮因素"><a href="#考慮因素" class="headerlink" title="考慮因素"></a>考慮因素</h3><p>若增大block size，block數變少，有利於spatial locality，但miss penalty上升</p>
-<p>解決miss penalty上升  </p>
+<p>Cache Controller FSM<br />
+<img data-src="/img/computer-architecture/cache-controller-fsm.webp" alt="FSM" /></p>
+<h3 id="考慮因素">考慮因素</h3>
+<p>若增大block size，block數變少，有利於spatial locality，但miss penalty上升</p>
+<p>解決miss penalty上升</p>
 <ul>
 <li>Early restart：正常運作，只要一fetch到需要的word，就馬上把這個word送到CPU</li>
 <li>Critical word first：先fetch需要的word，再把剩下的word填進cache bloc</li>
@@ -451,12 +510,13 @@ Resolving Hazards by Forwarding<br><img data-src="/img/computer-architecture/for
 <li>No Write allocate(write around): 直接write底層的資料，不load到cache</li>
 </ul>
 <p>在做初始化時，寫入的資料(全都是0)不會在近期內就被讀取，採取write around就是一個比較好的選擇</p>
-<p>是否合併instruction cache 和 data cache?  </p>
+<p>是否合併instruction cache 和 data cache?</p>
 <ul>
-<li>Combined cache – higher cache hit rate &amp; lower cache bandwidth   </li>
+<li>Combined cache – higher cache hit rate &amp; lower cache bandwidth</li>
 <li>Split cache – lower cache hit rate &amp; higher cache bandwidth</li>
 </ul>
-<p>memory interleave: 讓BUS可以同步讀取不同BANK<br><img data-src="/img/computer-architecture/memory-interleave.webp" alt="memory design"></p>
+<p>memory interleave: 讓BUS可以同步讀取不同BANK<br />
+<img data-src="/img/computer-architecture/memory-interleave.webp" alt="memory design" /></p>
 <ul>
 <li>DDR: RAM不只在clock 0變1時動作，在1變0的時候也做一次動作，使data rate變為兩倍故名 ddr</li>
 <li>QDR: DDR再加上將input 和output分開，在同一個clock變更時可以同時做input 和output的技術</li>
@@ -464,127 +524,165 @@ Resolving Hazards by Forwarding<br><img data-src="/img/computer-architecture/for
 <p>當CPU的效能增進時，miss penalty的影響就越來越大</p>
 <p>How to Improve Cache Performance?</p>
 <ol>
-<li>Reduce miss rate -&gt; Increasing associativity<br> direct mapped -&gt; set associative -&gt; fully associative<br> 效能提升呈邊際遞減<br> 缺點：mux delay, data comes after hit&#x2F;miss, tag bit increase</li>
-<li>Reduce miss penalty -&gt; multi-level cache<br> high performance improvement<br> Ex. radix sort: cache miss rate high, so performance worse than quick sort</li>
-<li>Reduce hit time -&gt; small cache(…)</li>
+<li>Reduce miss rate -&gt; Increasing associativity<br />
+direct mapped -&gt; set associative -&gt; fully associative<br />
+效能提升呈邊際遞減<br />
+缺點：mux delay, data comes after hit/miss, tag bit increase</li>
+<li>Reduce miss penalty -&gt; multi-level cache<br />
+high performance improvement<br />
+Ex. radix sort: cache miss rate high, so performance worse than quick sort</li>
+<li>Reduce hit time -&gt; small cache(...)</li>
 </ol>
 <p>記憶體的層級化(memory hierarchy)：每一層裡面都有4個重點，block要怎麼放置，要怎麼找到需要的block，當miss的時候怎麼替換，寫入時的規矩(write policy)。</p>
 <ol>
-<li><pre><code>block要怎麼放置:由associativity決定。可分為direct mapped, n-way,和fully associative。越高的associatvie就越少miss但是cost，access time 和複雜度也越高。(三種associative參考前面)
-</code></pre>
-<ol start="2">
-<li><pre><code>要怎麼找到需要的block: direct mapping需要做1次的comparison，n-way需要做n(看多少way)次，而fully associative如果建表就不用沒的話就要做entry的次數次(每個entry都要比對)。這邊我們的目標是降低comparison以降低硬體cost。VM由於full look-up table的查表方式使得fully associative可行，可以大大降低miss rate。
-</code></pre>
-<ol start="3">
-<li><pre><code>當miss的時候怎麼替換(algo): 替換的方法有LRU和random兩者比較在前面講過了。在VM裡面的話我們藉由硬體的幫忙實作LRU。
-</code></pre>
-<ol start="4">
-<li><pre><code>Write policy:write-through和write-back，在VM裡只有write-back可行(28點)。
-</code></pre>
-</li>
+<li>block要怎麼放置:由associativity決定。可分為direct mapped, n-way,和fully associative。越高的associatvie就越少miss但是cost，access time 和複雜度也越高。(三種associative參考前面)</li>
+<li>要怎麼找到需要的block: direct mapping需要做1次的comparison，n-way需要做n(看多少way)次，而fully associative如果建表就不用沒的話就要做entry的次數次(每個entry都要比對)。這邊我們的目標是降低comparison以降低硬體cost。VM由於full look-up table的查表方式使得fully associative可行，可以大大降低miss rate。</li>
+<li>當miss的時候怎麼替換(algo): 替換的方法有LRU和random兩者比較在前面講過了。在VM裡面的話我們藉由硬體的幫忙實作LRU。</li>
+<li>Write policy:write-through和write-back，在VM裡只有write-back可行(28點)。</li>
 </ol>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-<h2 id="Chap-08-2-Virutual-Memory"><a href="#Chap-08-2-Virutual-Memory" class="headerlink" title="Chap 08-2 Virutual Memory"></a>Chap 08-2 Virutual Memory</h2><p>Idea: use memory as cache for disk  </p>
+<h2 id="Chap-08-2-Virutual-Memory">Chap 08-2 Virutual Memory</h2>
+<p>Idea: use memory as cache for disk</p>
 <p>block叫做page，miss叫做page fault</p>
 <p>Disk讀取的速度非常慢，要花上百萬個cycle。必須使用Fully associative和較佳的replacement algorithm，及軟體為主的exception handler</p>
 <p>page fault 發生時，os會把相對應的page抓進來並update page table然後再重新執行導致page fault的instruction</p>
 <p>LRU replacement: 每個PTE(entry)加個bit叫reference bit，每次當這個page 被access就把這個reference bit設為1，然後系統會自動定期將所有 reference bit 清為0，這樣我們可以判斷reference bit是0的page最近沒有被access。</p>
 <ol start="3">
-<li><p>Page table:由virtual page number作index，值為physical index。</p>
+<li>
+<p>Page table:由virtual page number作index，值為physical index。</p>
 </li>
-<li><p>Page table can be very large!<br>–Solution: inverted page table &amp;  multi-level paging</p>
+<li>
+<p>Page table can be very large!<br />
+–Solution: inverted page table &amp;  multi-level paging</p>
 </li>
-<li><p>inverted page table: use hash to search(非常耗時、無法支援Memory sharing)</p>
+<li>
+<p>inverted page table: use hash to search(非常耗時、無法支援Memory sharing)</p>
 </li>
-<li><p>multi-level: 分層, decrease total page table size<br><img data-src="/img/computer-architecture/multilevel-pagetable.webp" alt="two-level"></p>
+<li>
+<p>multi-level: 分層, decrease total page table size<br />
+<img data-src="/img/computer-architecture/multilevel-pagetable.webp" alt="two-level" /></p>
 </li>
-<li><p>TLB(translation look-aside buffer)可以很快的cache在cpu內存放PTE。通常可存放16<del>512個PTE，hit時只要花0.5</del>1個cycle，miss的話也只要10<del>100個cycle。並且有0.01%</del>1%的低的miss rate</p>
+<li>
+<p>TLB(translation look-aside buffer)可以很快的cache在cpu內存放PTE。通常可存放16~512個PTE，hit時只要花0.5~1個cycle，miss的話也只要10~100個cycle。並且有0.01%~1%的低的miss rate</p>
 </li>
 </ol>
-<p>不同的任務(task)有時候可以共用他們的虛擬位址，但是需要OS的協調指派，並防止不相干的程式的access。<br>需要硬體的支援: kernel mode, 包含特有的instruction. page table和他的state資訊只有在kernel mode下可以access。並且還要有system call exception</p>
-<p><img data-src="/img/computer-architecture/memory-retrieve-events.webp" alt="Possible Combinations of Events"></p>
+<p>不同的任務(task)有時候可以共用他們的虛擬位址，但是需要OS的協調指派，並防止不相干的程式的access。<br />
+需要硬體的支援: kernel mode, 包含特有的instruction. page table和他的state資訊只有在kernel mode下可以access。並且還要有system call exception</p>
+<p><img data-src="/img/computer-architecture/memory-retrieve-events.webp" alt="Possible Combinations of Events" /></p>
 <p>Virtually Addressed Cache only Translated on miss</p>
-<p>distinguish data of different processes<br>-&gt; Virtually indexed &amp; physically tagged cache<br>-&gt; read data by tag and translate index in the same time<br><img data-src="/img/computer-architecture/vipt-flow.webp" alt="Virtually indexed &amp; physically tagged cache"></p>
-<h3 id="Performance-issue-in-Virtual-Memory"><a href="#Performance-issue-in-Virtual-Memory" class="headerlink" title="Performance issue in Virtual Memory"></a>Performance issue in Virtual Memory</h3><p>Thrashing Solutions: Buy more memory<br>High TLB misses Solutions:Variable page size</p>
+<p>distinguish data of different processes<br />
+-&gt; Virtually indexed &amp; physically tagged cache<br />
+-&gt; read data by tag and translate index in the same time<br />
+<img data-src="/img/computer-architecture/vipt-flow.webp" alt="Virtually indexed &amp; physically tagged cache" /></p>
+<h3 id="Performance-issue-in-Virtual-Memory">Performance issue in Virtual Memory</h3>
+<p>Thrashing Solutions: Buy more memory<br />
+High TLB misses Solutions:Variable page size</p>
 <ol>
 <li>compulsory misses，也叫做cold-start misses。資料第一次被存取。</li>
 <li>capacity misses，cache的大小有限，一個剛被replace掉的block馬上又需要被access。</li>
-<li>conflict misses(collision misses)。多個block要競爭同一個index的entry，如果是fully-associative就不會發生<br><img data-src="/img/computer-architecture/collision-miss-rate.webp" alt="3C absoluate miss rate"></li>
+<li>conflict misses(collision misses)。多個block要競爭同一個index的entry，如果是fully-associative就不會發生<br />
+<img data-src="/img/computer-architecture/collision-miss-rate.webp" alt="3C absoluate miss rate" /></li>
 </ol>
-<p>若想要減低miss rate, 就會造成總體效能的負面效應。<br>Trends:<br>–Redesign DRAM chips to provide higher bandwidth or processing<br>–Use prefetching &amp; non-blocking cache (make cache visible to ISA)<br>–Restructure code to increase locality</p>
+<p>若想要減低miss rate, 就會造成總體效能的負面效應。<br />
+Trends:<br />
+–Redesign DRAM chips to provide higher bandwidth or processing<br />
+–Use prefetching &amp; non-blocking cache (make cache visible to ISA)<br />
+–Restructure code to increase locality</p>
 <p>Reduce miss penalty</p>
 <ul>
-<li>Non-blocking caches<ul>
+<li>Non-blocking caches
+<ul>
 <li>Non-blocking cache or lockup-free cache allowing the data cache to continue to supply cache hits during a miss</li>
 </ul>
 </li>
-<li>Prefetching<ul>
+<li>Prefetching
+<ul>
 <li>Requesting data early, so it’s in cache when needed.</li>
 <li>預測技術(complier or hardware)</li>
 <li>Problem: May replace data in cache that is still needed.</li>
 </ul>
 </li>
 </ul>
-<p>VMM(virtual machine monitor)將虛擬的資源map到實體資源上，ex: memory I&#x2F;O, CPU。guest的code在我們的本機端跑時是使用user mode，VMM可以控管一些要有權限才能用的instructions和一些資源是否可以access。Guest的os可能跟我們使用不同套，於是vmm就要產生一個虛擬的I&#x2F;O給guest使用，來處理真正的I&#x2F;O。<br>如果VM request一個timer-interrupt，這時候vmm就會根據本機的timer虛擬出一個虛擬的timer。利用這個timer來判斷interrupt的發生。<br>在vm上所有必須access實體資源的動作都要透過由VMM監控的privileged instructions才使用。比如說page tables, I&#x2F;O , interrupt controls, registers等。<br>做某一些動作比如說要建立多重的web service時，所有東西都要經過VMM，VMM就回成為一個很大的 threshold。</p>
-<h2 id="Chap-10-Storage-Network-and-Other-Peripherals"><a href="#Chap-10-Storage-Network-and-Other-Peripherals" class="headerlink" title="Chap 10 Storage, Network and Other Peripherals"></a>Chap 10 Storage, Network and Other Peripherals</h2><p><img data-src="/img/computer-architecture/iosystem.webp" alt="IO System"></p>
-<p>I&#x2F;O Device Characteristics</p>
+<p>VMM(virtual machine monitor)將虛擬的資源map到實體資源上，ex: memory I/O, CPU。guest的code在我們的本機端跑時是使用user mode，VMM可以控管一些要有權限才能用的instructions和一些資源是否可以access。Guest的os可能跟我們使用不同套，於是vmm就要產生一個虛擬的I/O給guest使用，來處理真正的I/O。<br />
+如果VM request一個timer-interrupt，這時候vmm就會根據本機的timer虛擬出一個虛擬的timer。利用這個timer來判斷interrupt的發生。<br />
+在vm上所有必須access實體資源的動作都要透過由VMM監控的privileged instructions才使用。比如說page tables, I/O , interrupt controls, registers等。<br />
+做某一些動作比如說要建立多重的web service時，所有東西都要經過VMM，VMM就回成為一個很大的 threshold。</p>
+<h2 id="Chap-10-Storage-Network-and-Other-Peripherals">Chap 10 Storage, Network and Other Peripherals</h2>
+<p><img data-src="/img/computer-architecture/iosystem.webp" alt="IO System" /></p>
+<p>I/O Device Characteristics</p>
 <ul>
-<li>behavior<ul>
+<li>behavior
+<ul>
 <li>input, output or storage</li>
 </ul>
 </li>
 <li>partner</li>
 <li>data transmit rate</li>
 </ul>
-<p>performance metrics: Throughput, Response time<br><img data-src="/img/computer-architecture/iodevicechart.webp" alt="I/O device characterstics"></p>
-<dl><dt>I&#x2F;O System performance: find limited by weakest link in the chain</dt><dd>CPU, memory, bus, IO controller, IO device, OS, software<br>Two common </dd></dl><p>reliability</p>
+<p>performance metrics: Throughput, Response time<br />
+<img data-src="/img/computer-architecture/iodevicechart.webp" alt="I/O device characterstics" /></p>
+<p>I/O System performance: find limited by weakest link in the chain<br />
+: CPU, memory, bus, IO controller, IO device, OS, software<br />
+Two common</p>
+<p>reliability</p>
 <ul>
 <li>MTTF:平均要多久會出現一次failure</li>
 <li>MTTR:平均遇到failure以後多久會修好</li>
-<li>availability是MTTF&#x2F;(MTTF+MTTR)</li>
-<li>改進availability<ul>
+<li>availability是MTTF/(MTTF+MTTR)</li>
+<li>改進availability
+<ul>
 <li>增進MTTF，有避免fault的發生，減少fault發生時造成的損失，還有fault的預測</li>
 <li>減少MTTR，加強repair，增強fault的原因的分析功能，還有repair的機制</li>
 </ul>
 </li>
 </ul>
-<p>Disk Performance<br>seek time: 上下移動<br>Rotational latency: 轉到讀取的資料所需時間(RPM)，平均計算：轉一半(0.5round)<br>transfer rate: 傳送資料速度<br>Controller time: I&#x2F;O controller花的時間</p>
-<p>快閃記憶體(flash)比硬碟快上100~1000倍。<br>比較小，比較不耗電。但是比較貴(介於disk和dram之間。)<br>Flash可以分為NOR或NAND flash。<br>NOR flash是random access通常用在嵌入式系統的instruction memory。<br>NAND 同時只能access某個block，而且同樣的大小有比較大的容量。成本也比較低。通常用來當我們常用的usb drive或記憶卡，SSD等等。<br>Flash的bit約在access 千次以後會壞掉。所以不適合拿來做ram或硬碟。解決方法是把data平均放在每個block上。</p>
-<p>flash’s block: 包含多個page</p>
+<p>Disk Performance<br />
+seek time: 上下移動<br />
+Rotational latency: 轉到讀取的資料所需時間(RPM)，平均計算：轉一半(0.5round)<br />
+transfer rate: 傳送資料速度<br />
+Controller time: I/O controller花的時間</p>
+<p>快閃記憶體(flash)比硬碟快上100~1000倍。<br />
+比較小，比較不耗電。但是比較貴(介於disk和dram之間。)<br />
+Flash可以分為NOR或NAND flash。<br />
+NOR flash是random access通常用在嵌入式系統的instruction memory。<br />
+NAND 同時只能access某個block，而且同樣的大小有比較大的容量。成本也比較低。通常用來當我們常用的usb drive或記憶卡，SSD等等。<br />
+Flash的bit約在access 千次以後會壞掉。所以不適合拿來做ram或硬碟。解決方法是把data平均放在每個block上。</p>
+<p>flash's block: 包含多個page</p>
 <ol>
 <li>Write Once: 無法直接覆蓋檔案，需先清除，一次清除一個block</li>
-<li>When # of free pages &lt;&#x3D; Garbage Collection Threshold<br>: move live page to other block , and erase this block</li>
+<li>When # of free pages &lt;= Garbage Collection Threshold<br />
+: move live page to other block , and erase this block</li>
 </ol>
-<p>SSD (Solid Storage Disk)<br>no actual “disk”, use integrated circuit assemblies as memory to store data persistently.<br>SSD uses electronic interfaces compatible with traditional block drives</p>
+<p>SSD (Solid Storage Disk)<br />
+no actual &quot;disk&quot;, use integrated circuit assemblies as memory to store data persistently.<br />
+SSD uses electronic interfaces compatible with traditional block drives</p>
 <ul>
 <li>no mechanical failure</li>
-<li>Green<ul>
+<li>Green
+<ul>
 <li>SSDs consume over 50% less power compared to HDD</li>
 </ul>
 </li>
 <li>Higher initial cost</li>
 <li>Ex. Facebook data center</li>
-<li>Active SSD: 在I&#x2F;O端作(簡單的)計算，減少L&#x2F;W時間</li>
+<li>Active SSD: 在I/O端作(簡單的)計算，減少L/W時間</li>
 </ul>
-<p>將PCI-e flash作為I&#x2F;O cache(比SSD快！)放在General IO bus 上以加速I&#x2F;O</p>
-<p>Bus: Connection between Processors, Memory, and I&#x2F;O Device<br>有很好的同步性和低維護費，但造成效能瓶頸(受限於長度，BUS數目…)<br>有Control line 和 Data line</p>
+<p>將PCI-e flash作為I/O cache(比SSD快！)放在General IO bus 上以加速I/O</p>
+<p>Bus: Connection between Processors, Memory, and I/O Device<br />
+有很好的同步性和低維護費，但造成效能瓶頸(受限於長度，BUS數目…)<br />
+有Control line 和 Data line</p>
 <p>Bus可以分為</p>
 <ul>
 <li>Processor-memory bus: 較短較快，要照著memory的規劃做設計</li>
-<li>I&#x2F;O bus: 較長，可以有多重的互相連結。要照著互通性的基準設計</li>
+<li>I/O bus: 較長，可以有多重的互相連結。要照著互通性的基準設計</li>
 <li>Backplane bus: 所有device都可連接，花費較少，用來連接前兩者</li>
 </ul>
-<p><img data-src="/img/computer-architecture/three-type-bus.webp" alt="three bus system"></p>
-<p>Synchronous Bus: </p>
+<p><img data-src="/img/computer-architecture/three-type-bus.webp" alt="three bus system" /></p>
+<p>Synchronous Bus:</p>
 <ul>
 <li>includes a clock in the control lines</li>
 <li>advantage: involves very little logic and can run very fast</li>
-<li>disadvantages: <ul>
+<li>disadvantages:
+<ul>
 <li>every device on the bus must run at the same clock rate</li>
 </ul>
 </li>
@@ -593,45 +691,122 @@ Resolving Hazards by Forwarding<br><img data-src="/img/computer-architecture/for
 <ul>
 <li>No clock, can accommodate a wide range of devices</li>
 <li>can be lengthened without worrying about clock</li>
-<li>requires a handshaking protocol<br><img data-src="/img/computer-architecture/asynchronous-handshaking.webp" alt="Asynchronous handshaking: Read Transaction"></li>
+<li>requires a handshaking protocol<br />
+<img data-src="/img/computer-architecture/asynchronous-handshaking.webp" alt="Asynchronous handshaking: Read Transaction" /></li>
 </ul>
-<p>Multiple Potential Bus Masters: use Arbiter to control<br>Arbiter: select who can use bus by priority and fairness</p>
-<p>Daisy Chain Bus Arbitrations<br><img data-src="/img/computer-architecture/daisy-chain.webp" alt="Daisy Chain Bus Arbitrations"><br>Advantage: simple<br>Disadvantages:<br>–Cannot assure fairness: A low-priority device may be locked out indefinitely<br>–The use of the daisy chain grant signal also limits the bus<br>speed</p>
-<p>Centralized Parallel Arbitration<br><img data-src="/img/computer-architecture/Centralized-Parallel-Arbitration.webp" alt="Centralized Parallel Arbitration"><br>所有bus由arbiter控管<br>適合速度較快的device組成的bus</p>
-<p>I&#x2F;O的設備是由I&#x2F;O controller來管理並同步。<br>command register來存放不同的command 使用不同的command來讓I&#x2F;O device執行不同的動作<br>status register來指出I&#x2F;O設備現在正在執行什麼task還有是否遇到什麼error<br>data register，可以把data “write”到device或從device ”read”出data。</p>
-<p>Memory mapped I&#x2F;O<br>I&#x2F;O的register的位址設為跟memory中的位址一樣，只有在kernel mode時可以access這些address</p>
-<p>Communicating with the Processor<br>‧Polling<br>定期檢查I&#x2F;O status register，如果是ready就執行I&#x2F;O，如果是error就想辦法解決。叫polling(問卷調查)。會浪費太多cpu time(busy loop)。<br>有反應時間需求時使用<br>‧Interrupt<br><img data-src="/img/computer-architecture/interrupt-driven-IO.webp" alt="Interrupt Driven Data Transfer"><br>當ready或error時，controller就會interrupt CPU。<br>Interrupt跟exception很像，但可以在兩個instruction之間觸發handler。通常可以由cause的資訊來分辨是哪個device發生interrupt。Interrupt也有不同的priority，越緊急的interrupt priority就會越高。也可以用高priority的interrupt來呼叫低priority的interrupt的handler。<br>high-speed devices are associated with higher priority<br>‧DMA(direct memory access)<br>I&#x2F;O controller主動跟memory連結傳輸資料，直到傳輸完成或是error才interrupt。比較節省cpu-time。<br>DMA寫到memory後，可能造成memory和cache不一致<br>如果write-back cache有dirty block而DMA去讀到相對應的memory的話也會讀到錯誤的資料。解法：cache的內容如果在memory中被dma寫入就把那個cache flush掉，不然就要設定noncacheable(dma不能動在cache的資料)。</p>
-<p>Parallelisms and I&#x2F;O</p>
-<p>RAID: Redundant Array of (inexpensive)Independent Disks。<br>使用很多個小的disk來取代一個大的disk，好處有資料較不易受損和平行處理速度加快<br>‧Improve availability with redundancy</p>
-<p>Raid 0，是最早的RAID，沒有redundancy，只是把資料分散在不同的小disk可以平行讀取<br>RAID 1(Disk Mirroring):是兩個一模一樣的disk，一個是當作備份用，如果主disk的資料受損就從mirror copy過去<br>RAID 2: 把資料拆到以bit為單位分散的存在disk內。並用E-bit來做Error correction。拆到以bit為單位的話假設有n個disk則要讀任何資料理論上可以有n倍快。但是太複雜的設計導致實際上raid2並沒有在使用。只用於memory<br>Raid3(Bit-Interleaved Parity):<br>使用N+1個disk，資料拆成bit level分散在n個disk上<br>用剩下來的disk存parity(前面n個disk裡相對應的位址的每個資料做XOR)<br>在read時就讀取所有的disk，在write時寫入每個disk並產生新的parity。遇到failure時根據parity可以判斷failure的bit。<br>RAID4:<br>跟raid3很像只是是拆成block level，每次要讀資料時只要讀存放所需資料的block就好，寫資料也只需要動到要寫的block和parity。<br>RAID5:<br>跟RAID4接近，但是把parity分散存至每個disk以避免parity disk成為在寫入時的速度的瓶頸(Raid4每個寫入都要寫parity disk，所以parity disk寫入的速度就會限制資料寫入的速度)<br>RAID6(P + Q Redundancy):<br>跟RAID5一樣但是增加兩個parity(不同演算法)，使系統容錯率更高。</p>
-<p>RAID summary:<br>raid可以提升performance 並增加可靠性(hot swapping，在不影響系統operate的情形下修復fault)<br>可靠性是raid最重要的功能。</p>
-<p>Disk I&#x2F;O Benchmarks: I&#x2F;O rate vs. Data rate vs. latency</p>
-<h2 id="Chap12-Multicores-Multiprocessor"><a href="#Chap12-Multicores-Multiprocessor" class="headerlink" title="Chap12 Multicores, Multiprocessor"></a>Chap12 Multicores, Multiprocessor</h2><p>Challenges</p>
+<p>Multiple Potential Bus Masters: use Arbiter to control<br />
+Arbiter: select who can use bus by priority and fairness</p>
+<p>Daisy Chain Bus Arbitrations<br />
+<img data-src="/img/computer-architecture/daisy-chain.webp" alt="Daisy Chain Bus Arbitrations" /><br />
+Advantage: simple<br />
+Disadvantages:<br />
+–Cannot assure fairness: A low-priority device may be locked out indefinitely<br />
+–The use of the daisy chain grant signal also limits the bus<br />
+speed</p>
+<p>Centralized Parallel Arbitration<br />
+<img data-src="/img/computer-architecture/Centralized-Parallel-Arbitration.webp" alt="Centralized Parallel Arbitration" /><br />
+所有bus由arbiter控管<br />
+適合速度較快的device組成的bus</p>
+<p>I/O的設備是由I/O controller來管理並同步。<br />
+command register來存放不同的command 使用不同的command來讓I/O device執行不同的動作<br />
+status register來指出I/O設備現在正在執行什麼task還有是否遇到什麼error<br />
+data register，可以把data “write”到device或從device ”read”出data。</p>
+<p>Memory mapped I/O<br />
+I/O的register的位址設為跟memory中的位址一樣，只有在kernel mode時可以access這些address</p>
+<p>Communicating with the Processor<br />
+‧Polling<br />
+定期檢查I/O status register，如果是ready就執行I/O，如果是error就想辦法解決。叫polling(問卷調查)。會浪費太多cpu time(busy loop)。<br />
+有反應時間需求時使用<br />
+‧Interrupt<br />
+<img data-src="/img/computer-architecture/interrupt-driven-IO.webp" alt="Interrupt Driven Data Transfer" /><br />
+當ready或error時，controller就會interrupt CPU。<br />
+Interrupt跟exception很像，但可以在兩個instruction之間觸發handler。通常可以由cause的資訊來分辨是哪個device發生interrupt。Interrupt也有不同的priority，越緊急的interrupt priority就會越高。也可以用高priority的interrupt來呼叫低priority的interrupt的handler。<br />
+high-speed devices are associated with higher priority<br />
+‧DMA(direct memory access)<br />
+I/O controller主動跟memory連結傳輸資料，直到傳輸完成或是error才interrupt。比較節省cpu-time。<br />
+DMA寫到memory後，可能造成memory和cache不一致<br />
+如果write-back cache有dirty block而DMA去讀到相對應的memory的話也會讀到錯誤的資料。解法：cache的內容如果在memory中被dma寫入就把那個cache flush掉，不然就要設定noncacheable(dma不能動在cache的資料)。</p>
+<p>Parallelisms and I/O</p>
+<p>RAID: Redundant Array of (inexpensive)Independent Disks。<br />
+使用很多個小的disk來取代一個大的disk，好處有資料較不易受損和平行處理速度加快<br />
+‧Improve availability with redundancy</p>
+<p>Raid 0，是最早的RAID，沒有redundancy，只是把資料分散在不同的小disk可以平行讀取<br />
+RAID 1(Disk Mirroring):是兩個一模一樣的disk，一個是當作備份用，如果主disk的資料受損就從mirror copy過去<br />
+RAID 2: 把資料拆到以bit為單位分散的存在disk內。並用E-bit來做Error correction。拆到以bit為單位的話假設有n個disk則要讀任何資料理論上可以有n倍快。但是太複雜的設計導致實際上raid2並沒有在使用。只用於memory<br />
+Raid3(Bit-Interleaved Parity):<br />
+使用N+1個disk，資料拆成bit level分散在n個disk上<br />
+用剩下來的disk存parity(前面n個disk裡相對應的位址的每個資料做XOR)<br />
+在read時就讀取所有的disk，在write時寫入每個disk並產生新的parity。遇到failure時根據parity可以判斷failure的bit。<br />
+RAID4:<br />
+跟raid3很像只是是拆成block level，每次要讀資料時只要讀存放所需資料的block就好，寫資料也只需要動到要寫的block和parity。<br />
+RAID5:<br />
+跟RAID4接近，但是把parity分散存至每個disk以避免parity disk成為在寫入時的速度的瓶頸(Raid4每個寫入都要寫parity disk，所以parity disk寫入的速度就會限制資料寫入的速度)<br />
+RAID6(P + Q Redundancy):<br />
+跟RAID5一樣但是增加兩個parity(不同演算法)，使系統容錯率更高。</p>
+<p>RAID summary:<br />
+raid可以提升performance 並增加可靠性(hot swapping，在不影響系統operate的情形下修復fault)<br />
+可靠性是raid最重要的功能。</p>
+<p>Disk I/O Benchmarks: I/O rate vs. Data rate vs. latency</p>
+<h2 id="Chap12-Multicores-Multiprocessor">Chap12 Multicores, Multiprocessor</h2>
+<p>Challenges</p>
 <ul>
 <li>Partitioning</li>
 <li>Coordination</li>
 <li>Communication overheads</li>
-<li>Amdahl’s Law<br>平行化是有極限的<br>  FracX: 能被speedup的比例<br>  Speedup &#x3D; 1 &#x2F; [(FracX&#x2F;SpeedupX + (1-FracX)]</li>
+<li>Amdahl’s Law<br />
+平行化是有極限的<br />
+FracX: 能被speedup的比例<br />
+Speedup = 1 / [(FracX/SpeedupX + (1-FracX)]</li>
 </ul>
-<p>資料傳遞<br>Shared Memory: connect by memory<br>use lock to synchronize<br>same address space<br>Message Passing: connect by network<br>different address spaces</p>
-<p>Total network bandwidth &#x3D; 所有的頻寬。bandwidth-per-link x link_no<br>Bisection bandwidth &#x3D; 兩個部分之間的頻寬。the bandwidth between two parts of a multiprocessor</p>
-<p><img data-src="/img/computer-architecture/network-topology.webp" alt="netword topology"></p>
-<p>Cache Coherency Problem: 在cache中的共享資料須保持一致<br>Protocol:</p>
+<p>資料傳遞<br />
+Shared Memory: connect by memory<br />
+use lock to synchronize<br />
+same address space<br />
+Message Passing: connect by network<br />
+different address spaces</p>
+<p>Total network bandwidth = 所有的頻寬。bandwidth-per-link x link_no<br />
+Bisection bandwidth = 兩個部分之間的頻寬。the bandwidth between two parts of a multiprocessor</p>
+<p><img data-src="/img/computer-architecture/network-topology.webp" alt="netword topology" /></p>
+<p>Cache Coherency Problem: 在cache中的共享資料須保持一致<br />
+Protocol:</p>
 <ol>
-<li>Snoopy Bus: use for small scale machines<br>在拿資料前，先boardcast給所有processor知道<br>allow multiple readers, single writer<br>Broadcast: BW (increased) vs. latency (decreased) tradeoff<br>Write Invalidate Protocol:<br>若寫資料，也boardcast，其他有同資料的processor設invalid bit<br>Write Update Protocol:<br>若寫資料，也boardcast，其他有同資料的processor作相同的instruction</li>
+<li>Snoopy Bus: use for small scale machines<br />
+在拿資料前，先boardcast給所有processor知道<br />
+allow multiple readers, single writer<br />
+Broadcast: BW (increased) vs. latency (decreased) tradeoff<br />
+Write Invalidate Protocol:<br />
+若寫資料，也boardcast，其他有同資料的processor設invalid bit<br />
+Write Update Protocol:<br />
+若寫資料，也boardcast，其他有同資料的processor作相同的instruction</li>
 </ol>
-<p>Each block of memory is in one state:<br>    –Clean in all caches and up-to-date in memory<br>    –OR Dirty in exactly one cache<br>    –OR Not in any caches<br>Each cache block is in one state:<br>    if read miss, place readmiss on bus, goto shared<br>    if write miss, place writemiss on bus, goto exclusive<br>    if get read miss at bus(same block), if at exclusive, do write back and goto shared<br>    if get write miss at bus, goto(set) invalid<br>    –Shared: block can be read<br>    –OR Exclusive: cache has only copy, its writeable, and dirty<br>    –OR Invalid: block contains no data<br><img data-src="/img/computer-architecture/IO-BUS-fsm.webp" alt="State machine for bus requests for each cache block"><br><img data-src="/img/computer-architecture/IO-CPU-fsm.webp" alt="State machine for CPU requests for each cache block"></p>
+<p>Each block of memory is in one state:<br />
+–Clean in all caches and up-to-date in memory<br />
+–OR Dirty in exactly one cache<br />
+–OR Not in any caches<br />
+Each cache block is in one state:<br />
+if read miss, place readmiss on bus, goto shared<br />
+if write miss, place writemiss on bus, goto exclusive<br />
+if get read miss at bus(same block), if at exclusive, do write back and goto shared<br />
+if get write miss at bus, goto(set) invalid<br />
+–Shared: block can be read<br />
+–OR Exclusive: cache has only copy, its writeable, and dirty<br />
+–OR Invalid: block contains no data<br />
+<img data-src="/img/computer-architecture/IO-BUS-fsm.webp" alt="State machine for bus requests for each cache block" /><br />
+<img data-src="/img/computer-architecture/IO-CPU-fsm.webp" alt="State machine for CPU requests for each cache block" /></p>
 <ul>
 <li>Basic CMP Architecture Shared last level cache</li>
-<li>Scalable CMP Architecture Tiled CMP<ul>
+<li>Scalable CMP Architecture Tiled CMP
+<ul>
 <li>Each tile includes processor, L1, L2, and router</li>
 <li>Physically distributed last level cache</li>
 </ul>
 </li>
 </ul>
-<p>Multithreading<br><img data-src="/img/computer-architecture/multithreads.webp" alt="Multithreaded Categories p53"></p>
+<p>Multithreading<br />
+<img data-src="/img/computer-architecture/multithreads.webp" alt="Multithreaded Categories p53" /></p>
 <ul>
-<li>實作多執行緒<ul>
+<li>實作多執行緒
+<ul>
 <li>有多個 registers, PC</li>
 <li>Fast switching between threads</li>
 <li>減少stall的時間浪費</li>
@@ -639,7 +814,8 @@ Resolving Hazards by Forwarding<br><img data-src="/img/computer-architecture/for
 </li>
 <li>Fine-grain multithreading(一個cycle做一個thread的多個cycles)</li>
 <li>Coarse-grain multithreading(只有大的stall(L2 cache miss)才切換thread)</li>
-<li>Simultaneous Multithreading<ul>
+<li>Simultaneous Multithreading
+<ul>
 <li>used in dynamically scheduled processor</li>
 <li>同一個cycle可做多個thread</li>
 <li>dependencies handled by scheduling and register renaming</li>
@@ -647,10 +823,11 @@ Resolving Hazards by Forwarding<br><img data-src="/img/computer-architecture/for
 </li>
 <li>和Multiprocessing的不同：multiprocessing需多個processor</li>
 </ul>
-<p>費林分類法（Flynn’s Taxonomy），是一種高效能計算機的分類方式</p>
+<p>費林分類法（Flynn's Taxonomy），是一種高效能計算機的分類方式</p>
 <ul>
-<li>單一指令流單一資料流計算機（SISD）  </li>
-<li>單一指令流多資料流計算機（SIMD）<ul>
+<li>單一指令流單一資料流計算機（SISD）</li>
+<li>單一指令流多資料流計算機（SIMD）
+<ul>
 <li>processors execute the same instruction at the same time.Each with different data address</li>
 <li>Works best for highly data-parallel applications</li>
 <li>Vector architecture</li>
@@ -659,8 +836,9 @@ Resolving Hazards by Forwarding<br><img data-src="/img/computer-architecture/for
 </ul>
 </li>
 <li>多指令流單一資料流計算機（MISD）</li>
-<li>多指令流多資料流計算機（MIMD）  </li>
-<li>SPMD: Single Program Multiple Data<ul>
+<li>多指令流多資料流計算機（MIMD）</li>
+<li>SPMD: Single Program Multiple Data
+<ul>
 <li>A parallel program on a MIMD computer</li>
 <li>Conditional code for different processors</li>
 </ul>
@@ -673,7 +851,8 @@ Resolving Hazards by Forwarding<br><img data-src="/img/computer-architecture/for
 <li>High computing performance</li>
 <li>Low price of computing capability</li>
 </ul>
-<p>General-Purpose computing on GPU (GPGPU)<br>用處理圖形任務的圖形處理器來計算原本由中央處理器處理的通用計算任務，這些通用計算常常與圖形處理沒有任何關係。由於現代圖形處理器強大的並行處理能力和可程式流水線，令流處理器可以處理非圖形數據。特別在面對單指令流多數據流（SIMD），且數據處理的運算量遠大於數據調度和傳輸的需要時，通用圖形處理器在性能上大大超越了傳統的中央處理器應用程式。</p>
+<p>General-Purpose computing on GPU (GPGPU)<br />
+用處理圖形任務的圖形處理器來計算原本由中央處理器處理的通用計算任務，這些通用計算常常與圖形處理沒有任何關係。由於現代圖形處理器強大的並行處理能力和可程式流水線，令流處理器可以處理非圖形數據。特別在面對單指令流多數據流（SIMD），且數據處理的運算量遠大於數據調度和傳輸的需要時，通用圖形處理器在性能上大大超越了傳統的中央處理器應用程式。</p>
 <p>GPGPU programming models</p>
 <ul>
 <li>NVIDIA’s CUDA</li>
@@ -683,18 +862,24 @@ Resolving Hazards by Forwarding<br><img data-src="/img/computer-architecture/for
 <p>Multi-core CPU</p>
 <ul>
 <li>Coarse-grain, heavyweight threads</li>
-<li>Memory latency is resolved though large on-chip caches &amp; out-of-order execution<br>Modern GPU</li>
+<li>Memory latency is resolved though large on-chip caches &amp; out-of-order execution<br />
+Modern GPU</li>
 <li>Fine-grain, lightweight threads</li>
 <li>Exploit thread-level parallelism for hiding latency</li>
-<li>SIMT (Single Instruction Multiple Threads)<ul>
+<li>SIMT (Single Instruction Multiple Threads)
+<ul>
 <li>multiple independent threads(pixel, vertex, compute…) execute concurrently using a single instruction</li>
 <li>common PC value</li>
 <li>Latency Hiding</li>
 </ul>
 </li>
 </ul>
-<p>Serial&#x2F;Task-parallel workloads → CPU<br>Graphics&#x2F;Data-parallel workloads → GPU<br>Behaviors of the applications are different<br>-&gt; CPU is latency sensitive, GPU is throughput oriented</p>
-<h3 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h3><ul>
+<p>Serial/Task-parallel workloads → CPU<br />
+Graphics/Data-parallel workloads → GPU<br />
+Behaviors of the applications are different<br />
+-&gt; CPU is latency sensitive, GPU is throughput oriented</p>
+<h3 id="參考資料">參考資料</h3>
+<ul>
 <li>CA_by_b95015.doc</li>
 </ul>
 
@@ -777,7 +962,7 @@ Resolving Hazards by Forwarding<br><img data-src="/img/computer-architecture/for
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">473k</span>
+    <span title="總字數">468k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

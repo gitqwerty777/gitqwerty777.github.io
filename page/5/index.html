@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.2.0">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.webp">
@@ -299,10 +299,12 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="Chap08-Syntax-and-Grammars"><a href="#Chap08-Syntax-and-Grammars" class="headerlink" title="Chap08 Syntax and Grammars"></a>Chap08 Syntax and Grammars</h2><p>Grammar    </p>
+          <h2 id="Chap08-Syntax-and-Grammars">Chap08 Syntax and Grammars</h2>
+<p>Grammar</p>
 <ul>
 <li>represent certain knowledges of what we know about a language</li>
-<li>General criteria<ul>
+<li>General criteria
+<ul>
 <li>linguistic naturalness</li>
 <li>mathematical power</li>
 <li>computational effectiveness</li>
@@ -311,29 +313,35 @@
 </ul>
 <p>Context-free grammars(CFG)</p>
 <ul>
-<li>Alias<ul>
+<li>Alias
+<ul>
 <li>Phrase structure grammars</li>
 <li>Backus-Naur form</li>
 </ul>
 </li>
 <li>More powerful than finite state machine</li>
-<li>Rules <ul>
-<li>Terminals <ul>
+<li>Rules
+<ul>
+<li>Terminals
+<ul>
 <li>words</li>
 </ul>
 </li>
-<li>Non-terminals <ul>
-<li>Noun phrase, Verb phrase …</li>
+<li>Non-terminals
+<ul>
+<li>Noun phrase, Verb phrase ...</li>
 </ul>
 </li>
 <li>Generate strings in the language</li>
-<li>Reject strings not in the language  </li>
-<li>LHS → RHS<ul>
-<li>LHS: Non-terminals </li>
+<li>Reject strings not in the language</li>
+<li>LHS → RHS
+<ul>
+<li>LHS: Non-terminals</li>
 <li>RHS: Non-terminals or Terminals</li>
 </ul>
 </li>
-<li>Context Free<ul>
+<li>Context Free
+<ul>
 <li>probability of a subtree does not depend on words not dominated by the subtree(subtree出現的機率和上下文無關)</li>
 </ul>
 </li>
@@ -420,7 +428,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>30k</span>
+      <span>29k</span>
     </span>
 </div>
 
@@ -431,26 +439,33 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="Chap01-Introduction"><a href="#Chap01-Introduction" class="headerlink" title="Chap01 Introduction"></a>Chap01 Introduction</h2><h3 id="Applications-of-NLP"><a href="#Applications-of-NLP" class="headerlink" title="Applications of NLP"></a>Applications of NLP</h3><ul>
-<li>Machine translation<ul>
+          <h2 id="Chap01-Introduction">Chap01 Introduction</h2>
+<h3 id="Applications-of-NLP">Applications of NLP</h3>
+<ul>
+<li>Machine translation
+<ul>
 <li>google translate</li>
 </ul>
 </li>
-<li>Speech recognition<ul>
+<li>Speech recognition
+<ul>
 <li>Siri</li>
 </ul>
 </li>
-<li>Smart input method<ul>
+<li>Smart input method
+<ul>
 <li>ㄐㄅㄈㄏ → 加倍奉還</li>
 </ul>
 </li>
 <li>Sentiment(情感) analysis</li>
 <li>Information retrieval</li>
-<li>Question Anwering<ul>
+<li>Question Anwering
+<ul>
 <li>Turing Test</li>
 </ul>
 </li>
-<li>Optical character recognition (OCR)
+<li>Optical character recognition (OCR)</li>
+</ul>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/natural-language-processing/#more" rel="contents">
@@ -727,16 +742,14 @@
     
     <div class="post-body" itemprop="articleBody">
           <!--Renew:-->
-
-<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>What is AI? → What is definition of Intelligence?  </p>
+<h2 id="Introduction">Introduction</h2>
+<p>What is AI? → What is definition of Intelligence?</p>
 <ul>
-<li><p>Artificial Intelligence(A.I.) or WALL.E</p>
-</li>
-<li><p>human-like or robot with intelligence</p>
-</li>
-<li><p>there are various defintion of AI</p>
-</li>
-<li><p>goal of AI : To create intelligent machines</p>
+<li>Artificial Intelligence(A.I.) or WALL.E</li>
+<li>human-like or robot with intelligence</li>
+<li>there are various defintion of AI</li>
+<li>goal of AI : To create intelligent machines</li>
+</ul>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/artificial-intelligence/#more" rel="contents">
@@ -808,7 +821,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>9.5k</span>
+      <span>8.1k</span>
     </span>
 </div>
 
@@ -819,7 +832,13 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>假設已經知道編譯流程<br>[介紹]<br>gcc and g++分別是gnu的c &amp; c++編譯器 gcc&#x2F;g++在執行編譯工作的時候，總共需要4步<br>1.預處理,生成.i的文件[預處理器cpp]<br>2.將預處理後的文件不轉換成彙編語言,生成文件.s[編譯器egcs]<br>3.有彙編變為目標代碼(機器代碼)生成.o的文件[彙編器as]<br>4.連接目標代碼,生成可執行程序[鏈接器ld]</p>
+          <p>假設已經知道編譯流程<br />
+[介紹]<br />
+gcc and g++分別是gnu的c &amp; c++編譯器 gcc/g++在執行編譯工作的時候，總共需要4步<br />
+1.預處理,生成.i的文件[預處理器cpp]<br />
+2.將預處理後的文件不轉換成彙編語言,生成文件.s[編譯器egcs]<br />
+3.有彙編變為目標代碼(機器代碼)生成.o的文件[彙編器as]<br />
+4.連接目標代碼,生成可執行程序[鏈接器ld]</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/gcc-usage/#more" rel="contents">
@@ -992,7 +1011,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>7.1k</span>
+      <span>7k</span>
     </span>
 </div>
 
@@ -1004,8 +1023,9 @@
     
     <div class="post-body" itemprop="articleBody">
           <!-- RENEW: -->
-
-<h2 id="Chap04-Network-Layer"><a href="#Chap04-Network-Layer" class="headerlink" title="Chap04 Network Layer"></a>Chap04 Network Layer</h2><p>transport layer: between two processes<br>network layer: between two hosts and router (may also involve intervening routers in case of VCs)</p>
+<h2 id="Chap04-Network-Layer">Chap04 Network Layer</h2>
+<p>transport layer: between two processes<br />
+network layer: between two hosts and router (may also involve intervening routers in case of VCs)</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/computer-network2/#more" rel="contents">
@@ -1098,20 +1118,25 @@
     
     <div class="post-body" itemprop="articleBody">
           <!-- RENEW: -->
-
-<h2 id="Chap07-Pipelining-II"><a href="#Chap07-Pipelining-II" class="headerlink" title="Chap07 Pipelining (II)"></a>Chap07 Pipelining (II)</h2><p><img src="/img/computer-architecture/detect-and-forward.webp" alt="detect and forward"><br>Data Dependence Detection<br>Hazard conditions:</p>
+<h2 id="Chap07-Pipelining-II">Chap07 Pipelining (II)</h2>
+<p><img src="/img/computer-architecture/detect-and-forward.webp" alt="detect and forward" /><br />
+Data Dependence Detection<br />
+Hazard conditions:</p>
 <ul>
-<li>EX hazard<ul>
-<li>EX&#x2F;MEM.RegisterRd &#x3D; ID&#x2F;EX.Register Rs or Rt</li>
+<li>EX hazard
+<ul>
+<li>EX/MEM.RegisterRd = ID/EX.Register Rs or Rt</li>
 </ul>
 </li>
-<li>MEM hazard<ul>
-<li>MEM&#x2F;WB.RegisterRd &#x3D; ID&#x2F;EX.RegisterRs or Rt</li>
-<li>Ex&#x2F;MEM.RegisterRd !&#x3D; ID&#x2F;Ex.RegisterRs(優先選EX)</li>
+<li>MEM hazard
+<ul>
+<li>MEM/WB.RegisterRd = ID/EX.RegisterRs or Rt</li>
+<li>Ex/MEM.RegisterRd != ID/Ex.RegisterRs(優先選EX)</li>
 </ul>
 </li>
-<li>RegWrite &#x3D;&#x3D; true</li>
-<li>RegisterRd !&#x3D; $0
+<li>RegWrite == true</li>
+<li>RegisterRd != $0</li>
+</ul>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/computer-architecture2/#more" rel="contents">
@@ -1192,7 +1217,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>11k</span>
+      <span>10k</span>
     </span>
 </div>
 
@@ -1256,7 +1281,7 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">473k</span>
+    <span title="總字數">468k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

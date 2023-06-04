@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.2.0">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.webp">
@@ -164,7 +164,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Factorization-Machines-FM"><span class="nav-number">1.</span> <span class="nav-text">Factorization Machines(FM)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%90%86%E8%AB%96"><span class="nav-number">1.1.</span> <span class="nav-text">理論</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%88%E7%8E%87"><span class="nav-number">1.2.</span> <span class="nav-text">效率</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%B4%E6%96%B0"><span class="nav-number">1.3.</span> <span class="nav-text">更新</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%AB%98%E7%B6%AD%E5%BA%A6FM"><span class="nav-number">1.4.</span> <span class="nav-text">高維度FM</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#FM-%E5%92%8C-Factorization-Model-SVM-%E6%AF%94%E8%BC%83"><span class="nav-number">1.5.</span> <span class="nav-text">FM 和 Factorization Model, SVM 比較</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B5%90%E8%AB%96"><span class="nav-number">1.6.</span> <span class="nav-text">結論</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Field-aware-factorization-machines-FFM"><span class="nav-number">2.</span> <span class="nav-text">Field-aware factorization machines(FFM)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AF%84%E4%BE%8B"><span class="nav-number">2.1.</span> <span class="nav-text">範例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B5%90%E8%AB%96-1"><span class="nav-number">2.2.</span> <span class="nav-text">結論</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%AC%E5%BC%8F%E6%AF%94%E8%BC%83"><span class="nav-number">3.</span> <span class="nav-text">公式比較</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E6%AF%94%E8%BC%83"><span class="nav-number">4.</span> <span class="nav-text">方法比較</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B8%BD%E7%B5%90"><span class="nav-number">5.</span> <span class="nav-text">總結</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">6.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Factorization-Machines-FM"><span class="nav-number">1.</span> <span class="nav-text">Factorization Machines(FM)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%90%86%E8%AB%96"><span class="nav-number">1.1.</span> <span class="nav-text">理論</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%88%E7%8E%87"><span class="nav-number">1.2.</span> <span class="nav-text">效率</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%B4%E6%96%B0"><span class="nav-number">1.3.</span> <span class="nav-text">更新</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%AB%98%E7%B6%AD%E5%BA%A6FM"><span class="nav-number">1.4.</span> <span class="nav-text">高維度FM</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#FM-%E5%92%8C-Factorization-Model-SVM-%E6%AF%94%E8%BC%83"><span class="nav-number">1.5.</span> <span class="nav-text">FM 和 Factorization Model, SVM 比較</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B5%90%E8%AB%96"><span class="nav-number">1.6.</span> <span class="nav-text">結論</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Field-aware-factorization-machines-FFM"><span class="nav-number">2.</span> <span class="nav-text">Field-aware factorization machines(FFM)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AF%84%E4%BE%8B"><span class="nav-number">2.1.</span> <span class="nav-text">範例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B5%90%E8%AB%96-2"><span class="nav-number">2.2.</span> <span class="nav-text">結論</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%AC%E5%BC%8F%E6%AF%94%E8%BC%83"><span class="nav-number">3.</span> <span class="nav-text">公式比較</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E6%AF%94%E8%BC%83"><span class="nav-number">4.</span> <span class="nav-text">方法比較</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B8%BD%E7%B5%90"><span class="nav-number">5.</span> <span class="nav-text">總結</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">6.</span> <span class="nav-text">Reference</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -315,12 +315,15 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="Factorization-Machines-FM"><a href="#Factorization-Machines-FM" class="headerlink" title="Factorization Machines(FM)"></a>Factorization Machines(FM)</h2><ul>
-<li>SVM<ul>
+        <h2 id="Factorization-Machines-FM">Factorization Machines(FM)</h2>
+<ul>
+<li>SVM
+<ul>
 <li>難以在稀疏資料中學習</li>
 </ul>
 </li>
-<li>Factorization Models(如Matrix Factorization)<ul>
+<li>Factorization Models(如Matrix Factorization)
+<ul>
 <li>擴展性低：需要特定的輸入格式</li>
 </ul>
 </li>
@@ -331,8 +334,9 @@
 <li>輸入資料可擴展</li>
 <li><strong>訓練時間為線性複雜度</strong></li>
 </ul>
-<h3 id="理論"><a href="#理論" class="headerlink" title="理論"></a>理論</h3><p>FM將權重 $w_{ij}$ 設為兩個長度為k的<strong>隱向量</strong>$V_i, V_j$的<strong>內積</strong>，表示為$\langle V_i, V_j \rangle$</p>
-<p><img data-src="/img/recommend/fm-formula.webp" alt="2維的FM公式"></p>
+<h3 id="理論">理論</h3>
+<p>FM將權重 $w_{ij}$ 設為兩個長度為k的<strong>隱向量</strong>$V_i, V_j$的<strong>內積</strong>，表示為$\langle V_i, V_j \rangle$</p>
+<p><img data-src="/img/recommend/fm-formula.webp" alt="2維的FM公式" /></p>
 <ol>
 <li>$w_0$​是bias</li>
 <li>$w_i​$是特徵$i$的一維權重</li>
@@ -340,79 +344,99 @@
 </ol>
 <ul>
 <li>隱向量長度$k$為hyperparameter</li>
-<li>FM將權重矩陣分解為隱向量的內積，破壞了權重的獨立性，所以在稀疏資料中仍能學習<ol>
-<li>已知一正定矩陣$W$，必存在$V$使$W&#x3D;VV^t$</li>
+<li>FM將權重矩陣分解為隱向量的內積，破壞了權重的獨立性，所以在稀疏資料中仍能學習
+<ol>
+<li>已知一正定矩陣$W$，必存在$V$使$W=VV^t$</li>
 <li>權重矩陣$W$必為正定</li>
 <li>所以$W$必能分解成隱向量矩陣$V$乘自身的轉置</li>
 </ol>
 </li>
-<li>原本$W$的大小為$\frac{n^2}{2}$，改成隱向量$V$之後大小為$kn$，$k$通常不會設很大，明顯減少參數數量<ul>
+<li>原本$W$的大小為$\frac{n^2}{2}$，改成隱向量$V$之後大小為$kn$，$k$通常不會設很大，明顯減少參數數量
+<ul>
 <li>限制$k$的大小也能限制FM模型的表達力，泛化能力較好</li>
 </ul>
 </li>
 </ul>
-<p><img data-src="/img/recommend/FM-structure.webp" alt="結構"></p>
-<h3 id="效率"><a href="#效率" class="headerlink" title="效率"></a>效率</h3><p><img data-src="/img/recommend/fm-time-complexity.webp"></p>
+<p><img data-src="/img/recommend/FM-structure.webp" alt="結構" /></p>
+<h3 id="效率">效率</h3>
+<p><img data-src="/img/recommend/fm-time-complexity.webp" alt="" /></p>
 <p>整理公式後，Inference的時間複雜度從$O(kn^2)$降到了$O(kn)$，$n$為特徵維度</p>
 <ul>
 <li>第2行公式推導：表示為整個矩陣扣掉對角項再除以2，因為$W$是對稱矩陣</li>
 <li>詳細推導可看<span class="exturl" data-url="aHR0cHM6Ly95dWxvbmd0c2FpLm1lZGl1bS5jb20vZmFjdG9yaXphdGlvbi1tYWNoaW5lLTYzMTYwYmMyYzA2Yg==">這篇<i class="fa fa-external-link-alt"></i></span></li>
 <li>實作上只須計算非0元素的乘積，時間複雜度再下降到$O(km)$，$m$為平均一筆輸入資料中，值非0的特徵數</li>
 </ul>
-<h3 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h3><p>使用gradient descent學習參數<br><img data-src="/img/recommend/fm-gradient.webp"></p>
-<p>$\sum^n_{j&#x3D;1}v_{j, f}x_j$可以事先計算，所以每次梯度更新的時間複雜度為$O(1)$</p>
+<h3 id="更新">更新</h3>
+<p>使用gradient descent學習參數<br />
+<img data-src="/img/recommend/fm-gradient.webp" alt="" /></p>
+<p>$\sum^n_{j=1}v_{j, f}x_j$可以事先計算，所以每次梯度更新的時間複雜度為$O(1)$</p>
 <p>因此FM的訓練時間複雜度也是$O(km)$</p>
-<h3 id="高維度FM"><a href="#高維度FM" class="headerlink" title="高維度FM"></a>高維度FM</h3><p><img data-src="/img/recommend/fm-dway.webp"></p>
+<h3 id="高維度FM">高維度FM</h3>
+<p><img data-src="/img/recommend/fm-dway.webp" alt="" /></p>
 <p>經過公式簡化(和二維的方法相似)，也可以在線性時間內計算</p>
-<h3 id="FM-和-Factorization-Model-SVM-比較"><a href="#FM-和-Factorization-Model-SVM-比較" class="headerlink" title="FM 和 Factorization Model, SVM 比較"></a>FM 和 Factorization Model, SVM 比較</h3><p>論文中證明了兩件事</p>
+<h3 id="FM-和-Factorization-Model-SVM-比較">FM 和 Factorization Model, SVM 比較</h3>
+<p>論文中證明了兩件事</p>
 <ol>
 <li>各種Factorization Model為FM的特化</li>
 <li>FM可以解決SVM在稀疏資料中無法成功訓練的問題</li>
 </ol>
 <p>詳細證明看不懂，略過</p>
-<h3 id="結論"><a href="#結論" class="headerlink" title="結論"></a>結論</h3><ul>
+<h3 id="結論">結論</h3>
+<ul>
 <li>FM速度快、容易實作，於2012~14年為業界主流模型</li>
-<li>FM產生的隱向量可視為一種embedding<ul>
+<li>FM產生的隱向量可視為一種embedding
+<ul>
 <li>所以拿user的隱向量找相似隱向量的item，就是一個簡易且快速的推薦方法</li>
 </ul>
 </li>
-<li>FM適合類型特徵(離散)而非數值特徵(連續)，因為<ul>
+<li>FM適合類型特徵(離散)而非數值特徵(連續)，因為
+<ul>
 <li>類型特徵可有多個隱向量，而數值特徵只有一個</li>
 <li>數值特徵不應使用同一個隱向量，如10歲和40歲</li>
 <li>FM速度和非零特徵數有關，數值特徵類型化後不影響訓練速度</li>
 </ul>
 </li>
 </ul>
-<h2 id="Field-aware-factorization-machines-FFM"><a href="#Field-aware-factorization-machines-FFM" class="headerlink" title="Field-aware factorization machines(FFM)"></a>Field-aware factorization machines(FFM)</h2><ul>
+<h2 id="Field-aware-factorization-machines-FFM">Field-aware factorization machines(FFM)</h2>
+<ul>
 <li>FM：一個特徵有<strong>一個</strong>隱向量</li>
-<li>FFM：一個特徵有<strong>一組</strong>隱向量<ul>
+<li>FFM：一個特徵有<strong>一組</strong>隱向量
+<ul>
 <li>每個隱向量對應不同的<strong>特徵域</strong></li>
 <li>特徵域通常為一群代表相同性質的特徵，如one-hot特徵</li>
 </ul>
 </li>
 </ul>
-<p><img data-src="/img/recommend/ffm-formula.webp"></p>
-<h3 id="範例"><a href="#範例" class="headerlink" title="範例"></a>範例</h3><ul>
+<p><img data-src="/img/recommend/ffm-formula.webp" alt="" /></p>
+<h3 id="範例">範例</h3>
+<ul>
 <li>出版商特徵域(P): ESPN, Vogue, and NBC</li>
 <li>廣告商特徵域(A): Nike, Gucci, and Adidas</li>
 <li>消費者性別特徵域(G): Male, Female</li>
 </ul>
 <p>在(ESPN, Nike) 和 (ESPN, Male) 中，ESPN的隱向量是不同的($V_{ESPN, A}$和 $V_{ESPN, G}$)</p>
-<p>FM的隱向量：$$V_{ESPN}V_{Nike}, V_{ESPN}V_{Male}, V_{Nike}V_{Male}$$<br>FFM的隱向量：$$V_{ESPN, A}V_{Nike, P}, V_{ESPN, G}V_{Male,P}, V_{Nike, G}V_{Male,A}$$</p>
-<h3 id="結論-1"><a href="#結論-1" class="headerlink" title="結論"></a>結論</h3><ul>
+<p>FM的隱向量：$$V_{ESPN}V_{Nike}, V_{ESPN}V_{Male}, V_{Nike}V_{Male}$$<br />
+FFM的隱向量：$$V_{ESPN, A}V_{Nike, P}, V_{ESPN, G}V_{Male,P}, V_{Nike, G}V_{Male,A}$$</p>
+<h3 id="結論-2">結論</h3>
+<ul>
 <li>訓練時間複雜度為$O(kn^2)$</li>
 <li>因為FFM的隱向量限制在一個特徵域，FFM的$k$可以比FM的$k$小</li>
 </ul>
-<h2 id="公式比較"><a href="#公式比較" class="headerlink" title="公式比較"></a>公式比較</h2><p>只比較二次交叉項</p>
-<p>$$FM(v, x) &#x3D; … + \sum^n_{j_1&#x3D;1}{\sum^n_{j_2&#x3D;j_1+1}{\langle v_{j_1}, v_{j_2}\rangle x_{j_1}x_{j_2}}}$$<br>$$FFM(v, x) &#x3D; … + \sum^n_{j_1&#x3D;1}{\sum^n_{j_2&#x3D;j_1+1}{\langle v_{j_1, f_2}, v_{j_2, f_1}\rangle x_{j_1}x_{j_2}}}$$</p>
-<h2 id="方法比較"><a href="#方法比較" class="headerlink" title="方法比較"></a>方法比較</h2><ul>
-<li>FM：在LR(Logistic Regression)的基礎上，加入特徵交叉 </li>
+<h2 id="公式比較">公式比較</h2>
+<p>只比較二次交叉項</p>
+<p>$$FM(v, x) = ... + \sum^n_{j_1=1}{\sum^n_{j_2=j_1+1}{\langle v_{j_1}, v_{j_2}\rangle x_{j_1}x_{j_2}}}$$<br />
+$$FFM(v, x) = ... + \sum^n_{j_1=1}{\sum^n_{j_2=j_1+1}{\langle v_{j_1, f_2}, v_{j_2, f_1}\rangle x_{j_1}x_{j_2}}}$$</p>
+<h2 id="方法比較">方法比較</h2>
+<ul>
+<li>FM：在LR(Logistic Regression)的基礎上，加入特徵交叉</li>
 <li>FFM：在FM的基礎上，加入特徵域交叉</li>
 </ul>
-<h2 id="總結"><a href="#總結" class="headerlink" title="總結"></a>總結</h2><p>就算Deep Learning盛行，FM也是一個很好的Baseline Model</p>
-<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuY3NpZS5udHUuZWR1LnR3L35iOTcwNTMvcGFwZXIvUmVuZGxlMjAxMEZNLnBkZg==">Rendle, Steffen. “Factorization machines.” 2010 IEEE International conference on data mining. IEEE, 2010<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE3MDEuMDQwOTk=">Juan, Yuchin, et al. “Field-aware factorization machines for CTR prediction.” Proceedings of the 10th ACM conference on recommender systems. 2016<i class="fa fa-external-link-alt"></i></span></li>
+<h2 id="總結">總結</h2>
+<p>就算Deep Learning盛行，FM也是一個很好的Baseline Model</p>
+<h2 id="Reference">Reference</h2>
+<ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuY3NpZS5udHUuZWR1LnR3L35iOTcwNTMvcGFwZXIvUmVuZGxlMjAxMEZNLnBkZg==">Rendle, Steffen. &quot;Factorization machines.&quot; 2010 IEEE International conference on data mining. IEEE, 2010<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE3MDEuMDQwOTk=">Juan, Yuchin, et al. &quot;Field-aware factorization machines for CTR prediction.&quot; Proceedings of the 10th ACM conference on recommender systems. 2016<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8zNDMxNzQxMDg=">FM：推薦算法中的瑞士軍刀<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly93bmdhdy5naXRodWIuaW8vZmllbGQtYXdhcmUtZmFjdG9yaXphdGlvbi1tYWNoaW5lcy13aXRoLXhsZWFybi8=">Field-aware Factorization Machines with xLearn<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cDovL3dlYi5jcy51Y2xhLmVkdS9+Y2hvaHNpZWgvdGVhY2hpbmcvQ1MyNjBfV2ludGVyMjAxOS9sZWN0dXJlMTMucGRm">http://web.cs.ucla.edu/~chohsieh/teaching/CS260_Winter2019/lecture13.pdf<i class="fa fa-external-link-alt"></i></span></li>
@@ -505,7 +529,7 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">473k</span>
+    <span title="總字數">468k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

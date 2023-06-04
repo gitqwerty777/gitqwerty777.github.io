@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.2.0">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.webp">
@@ -391,11 +391,10 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h2><p>採用簡潔的模板語法來宣告式地將資料渲染進 DOM 的系統</p>
+          <h2 id="簡介">簡介</h2>
+<p>採用簡潔的模板語法來宣告式地將資料渲染進 DOM 的系統</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- html part --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;app&quot;</span>&gt;</span></span><br><span class="line">  &#123;&#123; message &#125;&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//js part</span></span><br><span class="line"><span class="keyword">var</span> app = <span class="keyword">new</span> <span class="title class_">Vue</span>(&#123;</span><br><span class="line">  <span class="attr">el</span>: <span class="string">&#x27;#app&#x27;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">message</span>: <span class="string">&#x27;Hello Vue.js!&#x27;</span></span><br><span class="line">    <span class="attr">todo</span>: []</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">methods</span>: &#123;</span><br><span class="line">    <span class="attr">reverseMessage</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">message</span> = <span class="variable language_">this</span>.<span class="property">message</span>.<span class="title function_">split</span>(<span class="string">&#x27;&#x27;</span>).<span class="title function_">reverse</span>().<span class="title function_">join</span>(<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
 <p>在 html tag 中 加入<code>v-</code>開頭的attributes以實作邏輯</p>
           <!--noindex-->
             <div class="post-button">
@@ -488,7 +487,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="不用免費架站服務的理由"><a href="#不用免費架站服務的理由" class="headerlink" title="不用免費架站服務的理由"></a>不用免費架站服務的理由</h2><p>若只是要純粹建blog，用github page + <a href="/build-hexo-blog/">hexo</a> 即可。</p>
+          <h2 id="不用免費架站服務的理由">不用免費架站服務的理由</h2>
+<p>若只是要純粹建blog，用github page + <a href="/build-hexo-blog/">hexo</a> 即可。</p>
 <p>更簡單的方法就是用痞客邦、Blogger等免費部落格。</p>
 <p>不過自架有以下優點</p>
           <!--noindex-->
@@ -582,8 +582,29 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="import-this"><a href="#import-this" class="headerlink" title="import this"></a>import this</h2><blockquote>
-<p>The Zen of Python, by Tim Peters<br> <br>Beautiful is better than ugly.<br>Explicit is better than implicit.<br>Simple is better than complex.<br>Complex is better than complicated.<br>Flat is better than nested.<br>Sparse is better than dense.<br>Readability counts.<br>Special cases aren’t special enough to break the rules.<br>Although practicality beats purity.<br>Errors should never pass silently.<br>Unless explicitly silenced.<br>In the face of ambiguity, refuse the temptation to guess.<br>There should be one– and preferably only one –obvious way to do it.<br>Although that way may not be obvious at first unless you’re Dutch.<br>Now is better than never.<br>Although never is often better than <em>right</em> now.<br>If the implementation is hard to explain, it’s a bad idea.<br>If the implementation is easy to explain, it may be a good idea.<br>Namespaces are one honking great idea – let’s do more of those!</p>
+          <h2 id="import-this">import this</h2>
+<blockquote>
+<p>The Zen of Python, by Tim Peters<br />
+ <br />
+Beautiful is better than ugly.<br />
+Explicit is better than implicit.<br />
+Simple is better than complex.<br />
+Complex is better than complicated.<br />
+Flat is better than nested.<br />
+Sparse is better than dense.<br />
+Readability counts.<br />
+Special cases aren't special enough to break the rules.<br />
+Although practicality beats purity.<br />
+Errors should never pass silently.<br />
+Unless explicitly silenced.<br />
+In the face of ambiguity, refuse the temptation to guess.<br />
+There should be one-- and preferably only one --obvious way to do it.<br />
+Although that way may not be obvious at first unless you're Dutch.<br />
+Now is better than never.<br />
+Although never is often better than <em>right</em> now.<br />
+If the implementation is hard to explain, it's a bad idea.<br />
+If the implementation is easy to explain, it may be a good idea.<br />
+Namespaces are one honking great idea -- let's do more of those!</p>
 </blockquote>
           <!--noindex-->
             <div class="post-button">
@@ -771,9 +792,12 @@
           <blockquote>
 <p>hexo 都實作得差不多了，純整理</p>
 </blockquote>
-<h2 id="html-tag"><a href="#html-tag" class="headerlink" title="html tag"></a>html tag</h2><h3 id="lt-title-gt"><a href="#lt-title-gt" class="headerlink" title="&lt;title&gt;"></a>&lt;title&gt;</h3><ul>
+<h2 id="html-tag">html tag</h2>
+<h3 id="title">&lt;title&gt;</h3>
+<ul>
 <li>網頁的主題</li>
-<li><code>&lt;title&gt;</code>標記應該放在HTML文件的<code>&lt;head&gt;</code>標記區段中
+<li><code>&lt;title&gt;</code>標記應該放在HTML文件的<code>&lt;head&gt;</code>標記區段中</li>
+</ul>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/seo/#more" rel="contents">
@@ -865,8 +889,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="JSX"><a href="#JSX" class="headerlink" title="JSX"></a>JSX</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> element = <span class="language-xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>hello<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span>;</span><br></pre></td></tr></table></figure>
-
+          <h2 id="JSX">JSX</h2>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> element = <span class="language-xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>hello<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span>;</span><br></pre></td></tr></table></figure>
 <p>這個語法叫做 JSX，是一個 JavaScript 的語法擴充，會產生 <strong>React element</strong></p>
           <!--noindex-->
             <div class="post-button">
@@ -948,7 +972,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>704</span>
+      <span>932</span>
     </span>
 </div>
 
@@ -959,7 +983,11 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="RSS分析"><a href="#RSS分析" class="headerlink" title="RSS分析"></a>RSS分析</h2><p>優點</p>
+          <h2 id="RSS簡介">RSS簡介</h2>
+<p>RSS（英文全稱：RDF Site Summary 或 Really Simple Syndication），中文譯作簡易資訊聚合，是一種訊息來源格式規範，用以聚合多個網站更新的內容並自動通知網站訂閱者。</p>
+<p>使用 RSS 後，網站訂閱者便無需再手動檢視網站是否有新的內容，同時 RSS 可將多個網站更新的內容進行整合，以摘要的形式呈現，有助於訂閱者快速獲取重要資訊。</p>
+<h2 id="RSS分析">RSS分析</h2>
+<p>優點</p>
 <ol>
 <li>不會被推薦演算法<strong>影響閱讀喜好</strong>或<strong>漏掉想看的內容</strong></li>
 <li>統一的閱讀體驗，且沒有廣告</li>
@@ -1062,7 +1090,10 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="編譯速度慢的原因"><a href="#編譯速度慢的原因" class="headerlink" title="編譯速度慢的原因"></a>編譯速度慢的原因</h2><p>因為C++ <code>.h</code> + <code>.cpp</code> 的編譯模型<br>每個cpp檔可能會包含上百甚至上千個<code>.h</code>檔，這些<code>.h</code>檔都會被讀進來一遍，然後被解析一遍。<br>每個編譯單元都會產生一個<code>.obj</code>文件，然後所以這些<code>.obj</code>文件會被link到一起，並且這個過程很難平行。重複load與解析，以及密集的IO，使編譯速度很慢。</p>
+          <h2 id="編譯速度慢的原因">編譯速度慢的原因</h2>
+<p>因為C++ <code>.h</code> + <code>.cpp</code> 的編譯模型<br />
+每個cpp檔可能會包含上百甚至上千個<code>.h</code>檔，這些<code>.h</code>檔都會被讀進來一遍，然後被解析一遍。<br />
+每個編譯單元都會產生一個<code>.obj</code>文件，然後所以這些<code>.obj</code>文件會被link到一起，並且這個過程很難平行。重複load與解析，以及密集的IO，使編譯速度很慢。</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/cpp-compile-speed/#more" rel="contents">
@@ -1143,7 +1174,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>503</span>
+      <span>500</span>
     </span>
 </div>
 
@@ -1154,7 +1185,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h2><p>以目前正在使用的hexo為例，優先度由大到小排列：</p>
+          <h2 id="需求">需求</h2>
+<p>以目前正在使用的hexo為例，優先度由大到小排列：</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/proper-blog-theme-features/#more" rel="contents">
@@ -1205,7 +1237,7 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">473k</span>
+    <span title="總字數">468k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

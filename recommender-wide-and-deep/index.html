@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.2.0">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.webp">
@@ -24,12 +24,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"gitqwerty777.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.12.1","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"show_result":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInDown","sidebar":"fadeInRight"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/config.min.js"></script>
 
-    <meta name="description" content="簡介Wide And Deep 模型由簡單的Wide模型和複雜的Deep模型組成">
+    <meta name="description" content="簡介 Wide And Deep 模型由簡單的Wide模型和複雜的Deep模型組成">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Wide And Deep 論文簡介：快思慢想的神經網路版">
 <meta property="og:url" content="http://gitqwerty777.github.io/recommender-wide-and-deep/index.html">
 <meta property="og:site_name" content="QWERTY">
-<meta property="og:description" content="簡介Wide And Deep 模型由簡單的Wide模型和複雜的Deep模型組成">
+<meta property="og:description" content="簡介 Wide And Deep 模型由簡單的Wide模型和複雜的Deep模型組成">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/recommend/wide-and-deep.webp">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/recommend/wide-and-deep-cross-product.webp">
@@ -311,14 +311,17 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h2><p>Wide And Deep 模型由簡單的Wide模型和複雜的Deep模型組成</p>
+        <h2 id="簡介">簡介</h2>
+<p>Wide And Deep 模型由簡單的Wide模型和複雜的Deep模型組成</p>
 <span id="more"></span>
-
 <ul>
-<li>Wide<ul>
-<li>Memorization(記憶)<ul>
+<li>Wide
+<ul>
+<li>Memorization(記憶)
+<ul>
 <li><strong>Generalized linear model</strong>(e.g., Linear Regression Model)</li>
-<li>適合學習稀疏、簡單的規則<ul>
+<li>適合學習稀疏、簡單的規則
+<ul>
 <li>看了 A 電影的使用者經常喜歡看電影 B，這種「因為 A 所以 B」式的規則</li>
 </ul>
 </li>
@@ -328,8 +331,10 @@
 <li>讓模型記住大量的直接且重要的規則，這正是單層的線性模型所擅長的</li>
 </ul>
 </li>
-<li>Deep<ul>
-<li>Generalization(泛化)<ul>
+<li>Deep
+<ul>
+<li>Generalization(泛化)
+<ul>
 <li><strong>Embedding-based models</strong>(e.g., Deep Neural Network)</li>
 <li>適合學習通用、深層的規則</li>
 </ul>
@@ -337,7 +342,8 @@
 <li>學習新的特徵組合(explore)</li>
 </ul>
 </li>
-<li>合併 Wide and Deep(Jointly Training) <img data-src="/img/recommend/wide-and-deep.webp"><ul>
+<li>合併 Wide and Deep(Jointly Training) <img data-src="/img/recommend/wide-and-deep.webp" alt="" />
+<ul>
 <li>既能快速處理和記憶大量歷史行為特徵，又具有強大的表達能力</li>
 <li>和 Deep-only 比: 準確率高</li>
 <li>和 Wide-only 比: 更好的泛化規則</li>
@@ -345,48 +351,61 @@
 </li>
 <li>當user-item matrix非常稀疏時，例如有獨特愛好的users以及很小眾的items，NN很難為users和items學習到有效的embedding。導致over-generalize，並推薦不怎麼相關的物品。此時Memorization就展示了優勢，它可以「記住」這些特殊的特徵組合</li>
 </ul>
-<h2 id="實作"><a href="#實作" class="headerlink" title="實作"></a>實作</h2><h3 id="Wide"><a href="#Wide" class="headerlink" title="Wide"></a>Wide</h3><ul>
-<li>$y &#x3D; w^Tx+b$</li>
-<li>Cross product transformation<ul>
-<li><img data-src="/img/recommend/wide-and-deep-cross-product.webp"></li>
+<h2 id="實作">實作</h2>
+<h3 id="Wide">Wide</h3>
+<ul>
+<li>$y = w^Tx+b$</li>
+<li>Cross product transformation
+<ul>
+<li><img data-src="/img/recommend/wide-and-deep-cross-product.webp" alt="" /></li>
 </ul>
 </li>
-<li>Optimizer: Follow-the-regularized-leader (FTRL) + L1 regularization<ul>
-<li>FTRL with L1非常注重模型的稀疏性。採用L1 FTRL是想讓Wide部分變得更加稀疏<ul>
+<li>Optimizer: Follow-the-regularized-leader (FTRL) + L1 regularization
+<ul>
+<li>FTRL with L1非常注重模型的稀疏性。採用L1 FTRL是想讓Wide部分變得更加稀疏
+<ul>
 <li>但是兩個id類特徵向量進行組合，在維度爆炸的同時，會讓原本已經非常稀疏的multihot特徵向量，變得更加稀疏。正因如此，wide部分的權重數量其實是海量的。為了不把數量如此之巨的權重都搬到線上進行model serving，採用FTRL過濾掉哪些稀疏特徵無疑是非常好的工程經驗</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Wide的輸入特徵較少<ul>
+<li>Wide的輸入特徵較少
+<ul>
 <li>只有已安裝app和瀏覽過的app</li>
 <li>希望能充份發揮Wide記憶能力強的優勢</li>
 </ul>
 </li>
 </ul>
-<h3 id="Deep"><a href="#Deep" class="headerlink" title="Deep"></a>Deep</h3><ul>
-<li>特徵(節錄)<ul>
-<li>用戶特徵<ul>
+<h3 id="Deep">Deep</h3>
+<ul>
+<li>特徵(節錄)
+<ul>
+<li>用戶特徵
+<ul>
 <li>年齡、國家、語言</li>
-<li>行為特徵<ul>
+<li>行為特徵
+<ul>
 <li>已安裝App個數</li>
 <li>已安裝的App</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>情境特徵<ul>
+<li>情境特徵
+<ul>
 <li>使用裝置</li>
 <li>目前時間(星期，小時)</li>
 </ul>
 </li>
-<li>App特徵<ul>
+<li>App特徵
+<ul>
 <li>發佈時間</li>
 <li>下載數</li>
 </ul>
 </li>
 <li>候選App</li>
-<li>部份特徵有做embedding(Wide完全沒有)<ul>
+<li>部份特徵有做embedding(Wide完全沒有)
+<ul>
 <li>32 dimension</li>
 </ul>
 </li>
@@ -394,25 +413,31 @@
 </li>
 <li>Optimizer: AdaGrad</li>
 </ul>
-<h3 id="Jointly-Training"><a href="#Jointly-Training" class="headerlink" title="Jointly Training"></a>Jointly Training</h3><ul>
-<li>同時更新Wide和Deep的權重<ul>
-<li><img data-src="/img/recommend/wide-and-deep-joint-train.webp"></li>
-</ul>
-</li>
-<li>結構圖<ul>
-<li><img data-src="/img/recommend/wide-and-deep-features.webp"></li>
-</ul>
-</li>
-</ul>
-<h2 id="結果"><a href="#結果" class="headerlink" title="結果"></a>結果</h2><p>實際用於 Google Play Store App 推薦</p>
-<p><img data-src="/img/recommend/wide-and-deep-exp.webp"></p>
+<h3 id="Jointly-Training">Jointly Training</h3>
 <ul>
-<li>Deep雖然離線結果較差，但實際結果仍比Wide好<ul>
+<li>同時更新Wide和Deep的權重
+<ul>
+<li><img data-src="/img/recommend/wide-and-deep-joint-train.webp" alt="" /></li>
+</ul>
+</li>
+<li>結構圖
+<ul>
+<li><img data-src="/img/recommend/wide-and-deep-features.webp" alt="" /></li>
+</ul>
+</li>
+</ul>
+<h2 id="結果">結果</h2>
+<p>實際用於 Google Play Store App 推薦</p>
+<p><img data-src="/img/recommend/wide-and-deep-exp.webp" alt="" /></p>
+<ul>
+<li>Deep雖然離線結果較差，但實際結果仍比Wide好
+<ul>
 <li>深層模型有學習到使用者的隱含喜好，而非直接記憶規則</li>
 </ul>
 </li>
 </ul>
-<h2 id="心得"><a href="#心得" class="headerlink" title="心得"></a>心得</h2><p>這就是<span class="exturl" data-url="aHR0cHM6Ly93d3cubWFuYWdlcnRvZGF5LmNvbS50dy9hcnRpY2xlcy92aWV3LzUwOTA1">快思慢想<i class="fa fa-external-link-alt"></i></span>的神經網路版</p>
+<h2 id="心得">心得</h2>
+<p>這就是<span class="exturl" data-url="aHR0cHM6Ly93d3cubWFuYWdlcnRvZGF5LmNvbS50dy9hcnRpY2xlcy92aWV3LzUwOTA1Pw==">快思慢想<i class="fa fa-external-link-alt"></i></span>的神經網路版</p>
 <p>Wide處理簡單的規則且省力，Deep處理複雜的規則但費力</p>
 <p>和純粹的deep learning相比，適合需要記憶大量簡易規則的情境。如App推薦中，有安裝A就推薦B</p>
 <p>Wide and Deep是一個架構，代表Wide模型和Deep模型可以為任意實作，所以衍生出許多變形，如DeepFM, Deep and Cross等</p>
@@ -429,10 +454,10 @@ actions are sparse and high-rank.
 當user-item matrix非常稀疏時，例如有和獨特愛好的users以及很小眾的items，NN很難為users和items學習到有效的embedding。這種情況下，大部分user-item應該是沒有關聯的，但dense embedding 的方法還是可以得到對所有 user-item pair 的非零預測，因此導致 over-generalize並推薦不怎麼相關的物品。此時Memorization就展示了優勢，它可以“記住”這些特殊的特徵組合。
 https://en.wikipedia.org/wiki/Rank_(linear_algebra)
 -->
-
-<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE2MDYuMDc3OTI=">Cheng, Heng-Tze, et al. “Wide &amp; deep learning for recommender systems.” Proceedings of the 1st workshop on deep learning for recommender systems. 2016.<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9tZWRpdW0uY29tL2RhdGEtc2NpZW50aXN0cy1wbGF5Z3JvdW5kL3dpZGUtZGVlcCVFNiVBOCVBMSVFNSU5RSU4Qi0lRTYlOEUlQTglRTglOTYlQTYlRTclQjMlQkIlRTclQjUlQjEtJUU1JThFJTlGJUU3JTkwJTg2LThiYWRhY2Y3NzdmMw==">https://medium.com/data-scientists-playground/wide-deep%E6%A8%A1%E5%9E%8B-%E6%8E%A8%E8%96%A6%E7%B3%BB%E7%B5%B1-%E5%8E%9F%E7%90%86-8badacf777f3<i class="fa fa-external-link-alt"></i></span></li>
+<h2 id="Reference">Reference</h2>
+<ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE2MDYuMDc3OTI=">Cheng, Heng-Tze, et al. &quot;Wide &amp; deep learning for recommender systems.&quot; Proceedings of the 1st workshop on deep learning for recommender systems. 2016.<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9tZWRpdW0uY29tL2RhdGEtc2NpZW50aXN0cy1wbGF5Z3JvdW5kL3dpZGUtZGVlcCVFNiVBOCVBMSVFNSU5RSU4Qi0lRTYlOEUlQTglRTglOTYlQTYlRTclQjMlQkIlRTclQjUlQjEtJUU1JThFJTlGJUU3JTkwJTg2LThiYWRhY2Y3NzdmMw==">https://medium.com/data-scientists-playground/wide-deep模型-推薦系統-原理-8badacf777f3<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8xNDI5NTg4MzQ=">https://zhuanlan.zhihu.com/p/142958834<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC81MzM2MTUxOQ==">https://zhuanlan.zhihu.com/p/53361519<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
@@ -518,7 +543,7 @@ https://en.wikipedia.org/wiki/Rank_(linear_algebra)
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">473k</span>
+    <span title="總字數">468k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

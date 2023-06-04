@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.2.0">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.webp">
@@ -24,12 +24,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"gitqwerty777.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.12.1","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"show_result":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInDown","sidebar":"fadeInRight"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/config.min.js"></script>
 
-    <meta name="description" content="簡介PTT 上常有支語警察 也常發現 google 翻譯的中文常常會翻譯成中國慣用語(可以參考 Google 翻譯修好了沒？) 所以就寫了一個支語警察的網站：支語警察">
+    <meta name="description" content="簡介 PTT 上常有支語警察 也常發現 google 翻譯的中文常常會翻譯成中國慣用語(可以參考 Google 翻譯修好了沒？) 所以就寫了一個支語警察的網站：支語警察">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何當稱職的支語警察？">
 <meta property="og:url" content="http://gitqwerty777.github.io/foreign-language-police/index.html">
 <meta property="og:site_name" content="QWERTY">
-<meta property="og:description" content="簡介PTT 上常有支語警察 也常發現 google 翻譯的中文常常會翻譯成中國慣用語(可以參考 Google 翻譯修好了沒？) 所以就寫了一個支語警察的網站：支語警察">
+<meta property="og:description" content="簡介 PTT 上常有支語警察 也常發現 google 翻譯的中文常常會翻譯成中國慣用語(可以參考 Google 翻譯修好了沒？) 所以就寫了一個支語警察的網站：支語警察">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/other/foreign-terms-police.webp">
 <meta property="article:published_time" content="2020-09-13T09:25:34.000Z">
@@ -310,65 +310,81 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p><img data-src="/img/other/foreign-terms-police.webp"></p>
-<h2 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h2><p>PTT 上常有支語警察</p>
+        <p><img data-src="/img/other/foreign-terms-police.webp" alt="" /></p>
+<h2 id="簡介">簡介</h2>
+<p>PTT 上常有支語警察</p>
 <p>也常發現 google 翻譯的中文常常會<span class="exturl" data-url="aHR0cHM6Ly93d3cuc2V0bi5jb20vTmV3cy5hc3B4P05ld3NJRD03NDY3OTM=">翻譯成中國慣用語<i class="fa fa-external-link-alt"></i></span>(可以參考 <span class="exturl" data-url="aHR0cHM6Ly9pc2dvb2dsZWZpeGVkLnR3Lw==">Google 翻譯修好了沒？<i class="fa fa-external-link-alt"></i></span>)</p>
 <p>所以就寫了一個支語警察的網站：<a href="/foreign-terms-police">支語警察</a></p>
 <span id="more"></span>
-
-<h2 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h2><ol>
+<h2 id="流程">流程</h2>
+<ol>
 <li>文章分詞</li>
 <li>標出非台灣習慣用語</li>
 <li>從資料庫尋找對應的用語</li>
 <li>若無對應用語則尋找其解釋</li>
 </ol>
-<h2 id="資料庫"><a href="#資料庫" class="headerlink" title="資料庫"></a>資料庫</h2><p>基本上都是使用現有的詞典，其資料都是人工更新的，<strong>目前還沒有自動辨識習慣用語的方法</strong>。</p>
-<h3 id="萌典"><a href="#萌典" class="headerlink" title="萌典"></a>萌典</h3><p>從萌典的兩岸字典獲取用語中台灣和中國的意思不同者(同字不同義，同義不同字)</p>
-<h3 id="開放中文轉換-OpenCC"><a href="#開放中文轉換-OpenCC" class="headerlink" title="開放中文轉換 OpenCC"></a>開放中文轉換 OpenCC</h3><p>支持詞彙級別的轉換、異體字轉換和地區習慣用語及字體轉換（中國大陸、臺灣、香港、日本）。</p>
+<h2 id="資料庫">資料庫</h2>
+<p>基本上都是使用現有的詞典，其資料都是人工更新的，<strong>目前還沒有自動辨識習慣用語的方法</strong>。</p>
+<h3 id="萌典">萌典</h3>
+<p>從萌典的兩岸字典獲取用語中台灣和中國的意思不同者(同字不同義，同義不同字)</p>
+<h3 id="開放中文轉換-OpenCC">開放中文轉換 OpenCC</h3>
+<p>支持詞彙級別的轉換、異體字轉換和地區習慣用語及字體轉換（中國大陸、臺灣、香港、日本）。</p>
 <p>使用詞典對應的方式實作，像是簡體轉台灣繁體就使用<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0JZVm9pZC9PcGVuQ0MvYmxvYi9tYXN0ZXIvZGF0YS9kaWN0aW9uYXJ5L1NUUGhyYXNlcy50eHQ=">此詞典<i class="fa fa-external-link-alt"></i></span>搭配<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0JZVm9pZC9PcGVuQ0MvYmxvYi9tYXN0ZXIvZGF0YS9kaWN0aW9uYXJ5L1RXUGhyYXNlc0lULnR4dA==">習慣用語詞典<i class="fa fa-external-link-alt"></i></span></p>
-<h2 id="實作"><a href="#實作" class="headerlink" title="實作"></a>實作</h2><ul>
-<li>Google Trends<ul>
+<h2 id="實作">實作</h2>
+<ul>
+<li>Google Trends
+<ul>
 <li>使用台灣的搜尋趨勢比較原本用語及對應的外來用語</li>
 </ul>
 </li>
 </ul>
-<h3 id="困難"><a href="#困難" class="headerlink" title="困難"></a>困難</h3><ol>
+<h3 id="困難">困難</h3>
+<ol>
 <li>資料庫通常沒有收錄網路流行語</li>
-<li>同詞不同義<ol>
+<li>同詞不同義
+<ol>
 <li>質量：中國常用於表示「品質」，但兩岸都有「重量」的意思 <span class="exturl" data-url="aHR0cHM6Ly93d3cucHR0LmNjL2Jicy9DX0NoYXQvTS4xNTk1NTU0NDM0LkEuNjc2Lmh0bWw=">範例<i class="fa fa-external-link-alt"></i></span></li>
 <li>土豆：中國為「馬鈴薯」，台灣為「花生」</li>
 </ol>
 </li>
 </ol>
 <!-- BUG:牽手、 -->
-
-<h2 id="心得"><a href="#心得" class="headerlink" title="心得"></a>心得</h2><p>為了避免被貼上「逢中必反」的標籤，介紹幾個常用的詞</p>
-<h3 id="喜歡的支語"><a href="#喜歡的支語" class="headerlink" title="喜歡的支語"></a>喜歡的支語</h3><ol>
-<li>優化(最佳化, optimization)<ol>
+<h2 id="心得">心得</h2>
+<p>為了避免被貼上「逢中必反」的標籤，介紹幾個常用的詞</p>
+<h3 id="喜歡的支語">喜歡的支語</h3>
+<ol>
+<li>優化(最佳化, optimization)
+<ol>
 <li>少一個字，意義也相同</li>
 </ol>
 </li>
-<li>酸奶(優酪乳, yogurt)<ol>
+<li>酸奶(優酪乳, yogurt)
+<ol>
 <li>意譯比較合理</li>
 </ol>
 </li>
 </ol>
-<h3 id="討厭的支語"><a href="#討厭的支語" class="headerlink" title="討厭的支語"></a>討厭的支語</h3><ol>
+<h3 id="討厭的支語">討厭的支語</h3>
+<ol>
 <li>視頻(影片)</li>
 <li>默認(預設, default)</li>
-<li>資訊專有名詞<ol>
+<li>資訊專有名詞
+<ol>
 <li>兆位元組(MB)，千兆(GB)</li>
 <li>面向對象(物件導向, Object-Oriented)</li>
 <li>實在是翻譯的很爛</li>
 </ol>
 </li>
 </ol>
-<h2 id="總結"><a href="#總結" class="headerlink" title="總結"></a>總結</h2><p>也有很多從日本傳入的詞彙，明治維新後有一部份，現在也有，如課金、同接、無料、生放送、通販、等…</p>
+<h2 id="總結">總結</h2>
+<p>也有很多從日本傳入的詞彙，明治維新後有一部份，現在也有，如課金、同接、無料、生放送、通販、等…</p>
 <p>沒有必要過度敏感，但也不要過度放縱。</p>
-<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
+<h2 id="參考資料">參考資料</h2>
+<ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly93d3cubW9lZGljdC50dy8=">萌典<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0JZVm9pZC9PcGVuQ0M=">OpenCC<i class="fa fa-external-link-alt"></i></span></li>
-<li>圖片來源<ul>
+<li>圖片來源
+<ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly9kaXNwLmNjL2IvQUNHL2N5T0Q=">[閒聊] 支語警察是誰畫的？<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly9wdHRnb3BvbGl0aWNzLmNvbS9nb3NzaXBpbmcvTS4xNjAwNjA1ODExLkEuQzJGLmh0bWw=">[問卦] 支語警察怎麼知道哪些詞是支語<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly93d3cuZGNhcmQudHcvZi9tZW1lL3AvMjM3NTQwMDg0">支語警察總整理<i class="fa fa-external-link-alt"></i></span></li>
@@ -462,7 +478,7 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">473k</span>
+    <span title="總字數">468k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

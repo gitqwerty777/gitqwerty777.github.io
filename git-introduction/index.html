@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.2.0">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.webp">
@@ -24,12 +24,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"gitqwerty777.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.12.1","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"show_result":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInDown","sidebar":"fadeInRight"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/config.min.js"></script>
 
-    <meta name="description" content="Git的特點 分散式開發 每個人都有完整的容器，各自獨立 不需要中央管理   非擠壓合併 合併後仍包含所有被合併分支的記錄 git merge&#x2F;pull --squash 強迫擠壓">
+    <meta name="description" content="Git的特點  分散式開發  每個人都有完整的容器，各自獨立 不需要中央管理   非擠壓合併  合併後仍包含所有被合併分支的記錄 git merge&#x2F;pull --squash 強迫擠壓">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git觀念">
 <meta property="og:url" content="http://gitqwerty777.github.io/git-introduction/index.html">
 <meta property="og:site_name" content="QWERTY">
-<meta property="og:description" content="Git的特點 分散式開發 每個人都有完整的容器，各自獨立 不需要中央管理   非擠壓合併 合併後仍包含所有被合併分支的記錄 git merge&#x2F;pull --squash 強迫擠壓">
+<meta property="og:description" content="Git的特點  分散式開發  每個人都有完整的容器，各自獨立 不需要中央管理   非擠壓合併  合併後仍包含所有被合併分支的記錄 git merge&#x2F;pull --squash 強迫擠壓">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://image.slidesharecdn.com/git-getreadytouseit-140228043813-phpapp02/95/git-get-ready-to-use-it-5-638.jpg?cb=1393562489">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/other/artist-test.webp">
@@ -308,102 +308,128 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="Git的特點"><a href="#Git的特點" class="headerlink" title="Git的特點"></a>Git的特點</h2><ul>
-<li>分散式開發<ul>
+        <h2 id="Git的特點">Git的特點</h2>
+<ul>
+<li>分散式開發
+<ul>
 <li>每個人都有完整的容器，各自獨立</li>
 <li>不需要中央管理</li>
 </ul>
 </li>
-<li>非擠壓合併<ul>
+<li>非擠壓合併
+<ul>
 <li>合併後仍包含所有被合併分支的記錄</li>
 <li><code>git merge/pull --squash</code> 強迫擠壓</li>
 </ul>
 </li>
 </ul>
 <span id="more"></span>
-
-<p><img data-src="https://image.slidesharecdn.com/git-getreadytouseit-140228043813-phpapp02/95/git-get-ready-to-use-it-5-638.jpg?cb=1393562489"></p>
-<h2 id="Git安裝"><a href="#Git安裝" class="headerlink" title="Git安裝"></a>Git安裝</h2><ul>
-<li>Debian&#x2F;Ubuntu: 主要: <code>git-core</code> 和 <code>git-doc</code><ul>
-<li>選擇性: <code>git-gui</code>, <code>gitk</code>(圖形化), <code>gitweb</code> …</li>
+<p><img data-src="https://image.slidesharecdn.com/git-getreadytouseit-140228043813-phpapp02/95/git-get-ready-to-use-it-5-638.jpg?cb=1393562489" alt="" /></p>
+<h2 id="Git安裝">Git安裝</h2>
+<ul>
+<li>Debian/Ubuntu: 主要: <code>git-core</code> 和 <code>git-doc</code>
+<ul>
+<li>選擇性: <code>git-gui</code>, <code>gitk</code>(圖形化), <code>gitweb</code> ...</li>
 </ul>
 </li>
 <li>Windows: <code>Cygwin</code>, <code>msysGit</code>, <code>github on windows</code></li>
 </ul>
-<h2 id="Git常用名稱"><a href="#Git常用名稱" class="headerlink" title="Git常用名稱"></a>Git常用名稱</h2><ul>
-<li><p>origin： 遠端(remote) Repository 的別稱，預設即為origin&#x2F;master分支</p>
+<h2 id="Git常用名稱">Git常用名稱</h2>
+<ul>
+<li>
+<p>origin： 遠端(remote) Repository 的別稱，預設即為origin/master分支</p>
 <ul>
 <li><code>git clone</code>的時候會自動設定origin</li>
 </ul>
 </li>
-<li><p>master： 本地(local) Repository 的 master分支</p>
+<li>
+<p>master： 本地(local) Repository 的 master分支</p>
 <ul>
 <li>名為master的分支通常是專案中的主要分支</li>
 </ul>
 </li>
-<li><p>HEAD</p>
+<li>
+<p>HEAD</p>
 <ul>
 <li>目前分支的最新一個提交</li>
 </ul>
 </li>
-<li><p>相對名稱</p>
+<li>
+<p>相對名稱</p>
 <ul>
-<li>HEAD&#x2F;HEAD^&#x2F;HEAD^^&#x2F;HEAD~4<ul>
-<li>代表目前版本&#x2F;前一版&#x2F;前二版&#x2F;前四版的提交</li>
+<li>HEAD/HEAD^/HEAD^^/HEAD~4
+<ul>
+<li>代表目前版本/前一版/前二版/前四版的提交</li>
 </ul>
 </li>
-<li>HEAD^1&#x2F;HEAD^2&#x2F; …<ul>
-<li>代表第一個父提交，第二個父提交 ……</li>
+<li>HEAD^1/HEAD^2/ ...
+<ul>
+<li>代表第一個父提交，第二個父提交 ......</li>
 </ul>
 </li>
-<li>A…B<ul>
+<li>A...B
+<ul>
 <li>A和B的相對差異</li>
 <li>列出A和B的祖先，直到A和B的分歧點</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p><code>git rev-parse HEAD</code>: 取得代稱(HEAD^, HEAD~1, tag)的辨識碼</p>
+<li>
+<p><code>git rev-parse HEAD</code>: 取得代稱(HEAD^, HEAD~1, tag)的辨識碼</p>
 </li>
-<li><p>ORIG_HEAD：合併或重設前的HEAD</p>
+<li>
+<p>ORIG_HEAD：合併或重設前的HEAD</p>
 </li>
-<li><p>FETCH_HEAD：fetch所抓取的HEAD</p>
+<li>
+<p>FETCH_HEAD：fetch所抓取的HEAD</p>
 </li>
-<li><p>MERGE_HEAD：合併時，另一個分支的HEAD</p>
+<li>
+<p>MERGE_HEAD：合併時，另一個分支的HEAD</p>
 </li>
 </ul>
-<h2 id="設定檔"><a href="#設定檔" class="headerlink" title="設定檔"></a>設定檔</h2><ol>
+<h2 id="設定檔">設定檔</h2>
+<ol>
 <li>容器的設定檔 <code>.git/config</code></li>
 <li>使用者的設定檔 <code>~/.gitconfig</code></li>
 <li>全系統的設定檔 <code>/etc/gitconfig</code></li>
 </ol>
 <p>優先級： 1 &gt; 2 &gt; 3</p>
-<h2 id="Git資料結構"><a href="#Git資料結構" class="headerlink" title="Git資料結構"></a>Git資料結構</h2><p>Index 和 Data:[Blobs, Tree, Commits, Tags]</p>
+<h2 id="Git資料結構">Git資料結構</h2>
+<p>Index 和 Data:[Blobs, Tree, Commits, Tags]</p>
 <ul>
-<li>Data<ul>
-<li>Blob(binary large object): 檔案本身<ul>
-<li>新增檔案時，看的是檔案的sha1，而不是檔名<ul>
+<li>Data
+<ul>
+<li>Blob(binary large object): 檔案本身
+<ul>
+<li>新增檔案時，看的是檔案的sha1，而不是檔名
+<ul>
 <li>若有兩個檔案sha1相同，則git只會有一份blob</li>
 </ul>
 </li>
 <li>打包機制(pack file)：找內容相似的檔案，只儲存一份+差異的部分</li>
 </ul>
 </li>
-<li>Tree: 目錄資訊，指向Blobs<ul>
+<li>Tree: 目錄資訊，指向Blobs
+<ul>
 <li>記錄Blob的辨識碼，檔案的資訊(如檔名)，子Tree(子資料夾)等</li>
 <li>Git可以用Tree快速產生兩個版本間的差異</li>
 </ul>
 </li>
-<li>Commit: 更動資訊，新的Commit會指向前一個Commit<ul>
+<li>Commit: 更動資訊，新的Commit會指向前一個Commit
+<ul>
 <li>包含作者，時間，commit對應的目錄(Tree)，commit message</li>
 </ul>
 </li>
-<li>Tag: 記錄commit的別名<ul>
-<li>lightweight tag<ul>
+<li>Tag: 記錄commit的別名
+<ul>
+<li>lightweight tag
+<ul>
 <li>容器私有的</li>
 </ul>
 </li>
-<li>annotated tag<ul>
+<li>annotated tag
+<ul>
 <li>正式的tag，以物件方向儲存</li>
 </ul>
 </li>
@@ -411,34 +437,43 @@
 </li>
 </ul>
 </li>
-<li>Index<ul>
+<li>Index
+<ul>
 <li>即為Staging area(暫存區)</li>
 <li>可視為一顆Tree，在<code>git add</code>之後就將新檔案加入Tree中</li>
 <li>commit時，commit的Tree就是目前的index</li>
 </ul>
 </li>
 </ul>
-<p>版本和Tag都是指標，指向某個commit <img data-src="/img/other/artist-test.webp"></p>
-<h2 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h2><ul>
+<p>版本和Tag都是指標，指向某個commit <img data-src="/img/other/artist-test.webp" alt="" /></p>
+<h2 id="分支">分支</h2>
+<ul>
 <li>可視為指向某個commit的指標</li>
 <li>切換的時候工作目錄(容器所在的資料夾)會被改變</li>
-<li>用途<ul>
-<li>分隔 測試、開發、穩定的版本<br>  - debug分支<br>  - feature分支</li>
+<li>用途
+<ul>
+<li>分隔 測試、開發、穩定的版本<br />
+- debug分支<br />
+- feature分支</li>
 </ul>
 </li>
-<li>命名時可以分層<ul>
+<li>命名時可以分層
+<ul>
 <li><code>bug/...</code></li>
 <li><code>release/...</code></li>
 </ul>
 </li>
 <li>開發時用branch(pointer)，完成後可用tag取代(const pointer)</li>
-<li>分支是local的資訊<ul>
+<li>分支是local的資訊
+<ul>
 <li>平常上傳只會將目前的HEAD和遠端分支的HEAD同步</li>
 </ul>
 </li>
 </ul>
-<h3 id="分支種類"><a href="#分支種類" class="headerlink" title="分支種類"></a>分支種類</h3><ul>
-<li>唯讀<ul>
+<h3 id="分支種類">分支種類</h3>
+<ul>
+<li>唯讀
+<ul>
 <li>遠端追蹤分支：蒐集遠端每個分支的變更</li>
 <li>本地追蹤分支：蒐集本地分支和遠端追蹤分支的變更</li>
 </ul>
@@ -446,12 +481,14 @@
 <li>本地分支：即平常使用的分支</li>
 <li>遠端分支</li>
 </ul>
-<h2 id="合併"><a href="#合併" class="headerlink" title="合併"></a>合併</h2><p>每次提交和合併的時間間隔愈短，每次的衝突愈少，愈容易實作。</p>
-<p>同一條線上的合併  </p>
+<h2 id="合併">合併</h2>
+<p>每次提交和合併的時間間隔愈短，每次的衝突愈少，愈容易實作。</p>
+<p>同一條線上的合併</p>
 <ul>
 <li>不會有新提交，只會移動branch指標</li>
 <li>目前版本比被合併版本新 → Already up to date</li>
-<li>目前版本比被合併版本舊 → fast-forward(快轉)<ul>
+<li>目前版本比被合併版本舊 → fast-forward(快轉)
+<ul>
 <li>將目前版本移動到被合併版本的HEAD</li>
 <li><strong>git只允許fast-forward的push</strong></li>
 </ul>
@@ -459,20 +496,24 @@
 </ul>
 <p>正常的合併</p>
 <ol>
-<li>Resolve(直觀的方法)<ul>
+<li>Resolve(直觀的方法)
+<ul>
 <li>只能用在兩個分支的合併</li>
 <li>以共同的祖先為基礎，套用被合併版本的變更到目前版本</li>
 </ul>
 </li>
-<li>Recursive(預設方法)<ul>
+<li>Recursive(預設方法)
+<ul>
 <li>只能用在兩個分支的合併</li>
-<li>兩個版本有多個共同祖先的時候，先將所有祖先合併成一個暫時性的版本，再以此版本為基礎用Resolve方法<ul>
+<li>兩個版本有多個共同祖先的時候，先將所有祖先合併成一個暫時性的版本，再以此版本為基礎用Resolve方法
+<ul>
 <li>在多個祖先合併時可能也有相同的問題，此時用同方法遞迴</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Octopus<ul>
+<li>Octopus
+<ul>
 <li>多次呼叫Recursive，每次處理一個分支</li>
 <li>可用在多分支的合併</li>
 </ul>
@@ -480,9 +521,13 @@
 </ol>
 <p>特殊合併 <!-- investigate further --></p>
 <ul>
-<li>Ours<ul>
-<li>合併時只採用現在版本的變更<br>  - 但留下歷史記錄(即其他版本的樹仍存在於父節點)<br>  <img data-src="https://image.slidesharecdn.com/paolucci-git-power-routines-150722082712-lva1-app6891/95/git-power-routines-30-638.jpg?cb=1437553811"></li>
-<li>通常用於<ul>
+<li>Ours
+<ul>
+<li>合併時只採用現在版本的變更<br />
+- 但留下歷史記錄(即其他版本的樹仍存在於父節點)<br />
+<img data-src="https://image.slidesharecdn.com/paolucci-git-power-routines-150722082712-lva1-app6891/95/git-power-routines-30-638.jpg?cb=1437553811" alt="" /></li>
+<li>通常用於
+<ul>
 <li>已經有其他版本的變更時</li>
 <li>只想要別人的歷史記錄，不想要其他人的變更</li>
 </ul>
@@ -490,47 +535,59 @@
 </ul>
 </li>
 </ul>
-<h2 id="修改提交"><a href="#修改提交" class="headerlink" title="修改提交"></a>修改提交</h2><p>理由</p>
+<h2 id="修改提交">修改提交</h2>
+<p>理由</p>
 <ul>
-<li>大小適當<ul>
+<li>大小適當
+<ul>
 <li>將大範圍的提交拆解成小的，有主題的變更</li>
 <li>結合相似的變更成為一個大的提交</li>
 </ul>
 </li>
-<li>步驟分明<ul>
+<li>步驟分明
+<ul>
 <li>排序使其更合理</li>
 <li>移除不必要的提交</li>
 </ul>
 </li>
 <li>註：需要在其他開發者取得你的repository之前(git push之前)，以避免歷史不同步</li>
 </ul>
-<p>方法  </p>
+<p>方法</p>
 <ul>
 <li><code>git rebase</code></li>
 </ul>
-<h3 id="回復-git-reset"><a href="#回復-git-reset" class="headerlink" title="回復(git reset)"></a>回復(git reset)</h3><ul>
-<li>–soft: 將HEAD還原至指定commit</li>
-<li>–mixed: 將HEAD和Index(staging area)還原至指定commit，工作目錄不變</li>
-<li>–hard: 將HEAD和Index和工作目錄還原至指定commit</li>
+<h3 id="回復-git-reset">回復(git reset)</h3>
+<ul>
+<li>--soft: 將HEAD還原至指定commit</li>
+<li>--mixed: 將HEAD和Index(staging area)還原至指定commit，工作目錄不變</li>
+<li>--hard: 將HEAD和Index和工作目錄還原至指定commit</li>
 <li>被取代的HEAD會放在ORIG_HEAD</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git reset [--soft/mixed/hard] [commit] <span class="comment"># default is mixed</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 變更上一次的提交</span></span><br><span class="line">git reset HEAD^ <span class="comment"># 此時上一次的提交已經不存在，但是工作目錄中的資料相同</span></span><br><span class="line"><span class="comment"># do some modification</span></span><br><span class="line">git commit <span class="comment"># 會覆蓋上一次的commit</span></span><br></pre></td></tr></table></figure>
 <p>通常用於清除錯誤</p>
 <ul>
-<li>cherry-pick<ul>
+<li>cherry-pick
+<ul>
 <li>拿取指定commit到目前分支</li>
 <li><code>git cherry-pick [commit]</code></li>
-<li>使用時機<ul>
-<li>若有多個branch都找到相同的bug，可以在每個branch都cherry-pick debug的commit<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git checkout release</span><br><span class="line">git cherry-pick develop~2 <span class="comment"># get debug commit from develop branch</span></span><br></pre></td></tr></table></figure></li>
-<li>將某個分支的commit移植到另一個branch<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># in develop: W → X → Y → Z</span></span><br><span class="line">git checkout master</span><br><span class="line">git cherry-pick develop^ <span class="comment"># Y</span></span><br><span class="line">git cherry-pick develop~3 <span class="comment"># W</span></span><br><span class="line">git cherry-pick develop~2 <span class="comment"># X</span></span><br><span class="line">git cherry-pick develop <span class="comment"># Z</span></span><br><span class="line"><span class="comment"># alternative</span></span><br><span class="line">git cherry-pick develop^3..develop</span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-<li>如果要合併多個，可以加上 -n 指令就不會先幫你 commit，這樣可以多選幾個要合併的commit，最後再 git commit即可 <!-- ??? --></li>
+<li>使用時機
+<ul>
+<li>若有多個branch都找到相同的bug，可以在每個branch都cherry-pick debug的commit</li>
 </ul>
 </li>
 </ul>
-<h2 id="容器"><a href="#容器" class="headerlink" title="容器"></a>容器</h2><ul>
-<li>裸容器(bare)<ul>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git checkout release</span><br><span class="line">git cherry-pick develop~2 <span class="comment"># get debug commit from develop branch</span></span><br></pre></td></tr></table></figure>
+<pre><code>	- 將某個分支的commit移植到另一個branch
+</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># in develop: W → X → Y → Z</span></span><br><span class="line">git checkout master</span><br><span class="line">git cherry-pick develop^ <span class="comment"># Y</span></span><br><span class="line">git cherry-pick develop~3 <span class="comment"># W</span></span><br><span class="line">git cherry-pick develop~2 <span class="comment"># X</span></span><br><span class="line">git cherry-pick develop <span class="comment"># Z</span></span><br><span class="line"><span class="comment"># alternative</span></span><br><span class="line">git cherry-pick develop^3..develop</span><br></pre></td></tr></table></figure>
+<pre><code>- 如果要合併多個，可以加上 -n 指令就不會先幫你 commit，這樣可以多選幾個要合併的commit，最後再 git commit即可 &lt;!-- ??? --&gt;
+</code></pre>
+<h2 id="容器">容器</h2>
+<ul>
+<li>裸容器(bare)
+<ul>
 <li>沒有工作目錄、目前分支</li>
 <li>其他人可以用clone及fetch取得資料，push更新</li>
 <li>如github</li>
@@ -539,21 +596,23 @@
 </li>
 <li>開發容器</li>
 </ul>
-<h2 id="建立備份"><a href="#建立備份" class="headerlink" title="建立備份"></a>建立備份</h2><p>自行建立裸容器，並加入remote，即可push, pull了</p>
+<h2 id="建立備份">建立備份</h2>
+<p>自行建立裸容器，並加入remote，即可push, pull了</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># assume mygitrepository is already a git repository</span></span><br><span class="line"><span class="built_in">cd</span> /tmp/Backup <span class="comment"># for example, you may want to put on server</span></span><br><span class="line">git <span class="built_in">clone</span> --bare mygitrepository mygitrepository.git <span class="comment"># create bare repository</span></span><br><span class="line"><span class="comment"># backup repository often use .git suffix</span></span><br><span class="line"><span class="built_in">cd</span> mygitrepository</span><br><span class="line">git remote add origin /tmp/Backup/mygitrepository</span><br><span class="line"><span class="comment"># can use other name to replace &quot;origin&quot;</span></span><br><span class="line">git remote update <span class="comment"># 建立遠端追蹤分支(update remote information)</span></span><br></pre></td></tr></table></figure>
 <!--try it at workstation-->
-
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ssh myhost.com <span class="comment"># build it on server</span></span><br><span class="line"><span class="built_in">cd</span> /git</span><br><span class="line"><span class="built_in">mkdir</span> newrepo.git</span><br><span class="line"><span class="built_in">cd</span> newrepo.git</span><br><span class="line">git init --shared --bare</span><br></pre></td></tr></table></figure>
-
-<h2 id="Git-tag"><a href="#Git-tag" class="headerlink" title="Git tag"></a>Git tag</h2><ul>
-<li>輕量級(lightweight)<ul>
+<h2 id="Git-tag">Git tag</h2>
+<ul>
+<li>輕量級(lightweight)
+<ul>
 <li>像是沒有更動的分支</li>
 <li>指到特定commit的指標</li>
 <li>臨時加註標籤</li>
 <li><code>git tag [tagname] [commit]</code></li>
 </ul>
 </li>
-<li>含附註(annotated)<ul>
+<li>含附註(annotated)
+<ul>
 <li>實際存在Git資料庫上的完整物件</li>
 <li>具備檢查碼、e-mail和日期，也包含標籤訊息</li>
 <li>可以被GNU Privacy Guard (GPG)簽署和驗證</li>
@@ -562,46 +621,57 @@
 </ul>
 </li>
 <li>顯示詳細資訊: <code>git show [tagname]</code></li>
-<li><code>git push</code>指令並不會將標籤傳到遠端伺服器上。必須透過<code>git push origin [tagname]</code>指令<ul>
+<li><code>git push</code>指令並不會將標籤傳到遠端伺服器上。必須透過<code>git push origin [tagname]</code>指令
+<ul>
 <li>push 所有標籤: <code>git push origin --tags</code></li>
 </ul>
 </li>
 </ul>
-<h2 id="Git-Submodule"><a href="#Git-Submodule" class="headerlink" title="Git Submodule"></a>Git Submodule</h2><ul>
-<li>新增 submodule<ul>
+<h2 id="Git-Submodule">Git Submodule</h2>
+<ul>
+<li>新增 submodule
+<ul>
 <li><code>git submodule add [repository path] [local path]</code></li>
 <li>產生 <code>.gitmodules</code> 文件。這是一個設定檔，保存了專案的remote URL和本地目錄</li>
 </ul>
 </li>
 <li><code>git clone</code>並不會下載submodule，需要自己更新</li>
-<li><code>git submodule init</code><ul>
+<li><code>git submodule init</code>
+<ul>
 <li>根據 <code>.gitmodules</code> 的名稱和 URL，將這些資訊註冊到 <code>.git/config</code> 內</li>
 </ul>
 </li>
-<li>更新submodule <ul>
+<li>更新submodule
+<ul>
 <li><code>git submodule update</code></li>
-<li>根據已註冊（也就是 <code>.git/config</code> ）的 submodule 進行更新，例如 clone 遺失的 submodule，所以執行這個指令前最好加上 –init</li>
+<li>根據已註冊（也就是 <code>.git/config</code> ）的 submodule 進行更新，例如 clone 遺失的 submodule，所以執行這個指令前最好加上 --init</li>
 <li>update並不一定是submodule的最新版，而是在主repository的目前版本中，submodule所在的版本</li>
 </ul>
 </li>
-<li>將submodule更新到最新版<ul>
+<li>將submodule更新到最新版
+<ul>
 <li><code>git submodule foreach --recursive git pull origin master</code></li>
 </ul>
 </li>
-<li><code>git submodule sync</code><ul>
+<li><code>git submodule sync</code>
+<ul>
 <li>如果 submodule 的 remote URL 有變動，可以在 <code>.gitmodules</code> 修正 URL，然後執行這個指令，便會將 submodule 的 remote URL 更正。</li>
 </ul>
 </li>
 </ul>
-<h2 id="Git-Server-Hosting"><a href="#Git-Server-Hosting" class="headerlink" title="Git Server Hosting"></a>Git Server Hosting</h2><ul>
-<li>gitlab<ul>
+<h2 id="Git-Server-Hosting">Git Server Hosting</h2>
+<ul>
+<li>gitlab
+<ul>
 <li>功能齊全</li>
 <li>有開源版，可自架</li>
 </ul>
 </li>
-<li>cgit<ul>
+<li>cgit
+<ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly9naXQuengyYzQuY29tL2NnaXQvYWJvdXQv">cgit主網站<i class="fa fa-external-link-alt"></i></span></li>
-<li>需開啟cgi功能<ul>
+<li>需開啟cgi功能
+<ul>
 <li><code>./cgit.cgi</code> 可觀看產生的html</li>
 </ul>
 </li>
@@ -613,28 +683,31 @@
 </ul>
 </li>
 </ul>
-<h2 id="其他工具"><a href="#其他工具" class="headerlink" title="其他工具"></a>其他工具</h2><ul>
-<li>產生容器的統計資料<ul>
+<h2 id="其他工具">其他工具</h2>
+<ul>
+<li>產生容器的統計資料
+<ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2Fyenplbi9naXQtcXVpY2stc3RhdHM=">git quick stats<i class="fa fa-external-link-alt"></i></span></li>
 <li>gitstats</li>
 </ul>
 </li>
 </ul>
-<h2 id="Git-常見錯誤"><a href="#Git-常見錯誤" class="headerlink" title="Git 常見錯誤"></a>Git 常見錯誤</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Error: The following untracked working tree files would be overwritten by merge</span><br></pre></td></tr></table></figure>
-
+<h2 id="Git-常見錯誤">Git 常見錯誤</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Error: The following untracked working tree files would be overwritten by merge</span><br></pre></td></tr></table></figure>
 <ul>
 <li>原因：本地端尚未進版本控制的檔案，在remote branch已經在版本控制中，所以報錯</li>
 <li>解決方法：先將這些檔案放入stash中，等到pull完再還原</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git add * <span class="comment"># 加入 stage</span></span><br><span class="line">git stash <span class="comment"># 執行 stash(stage會將stage的檔案也放入stash)</span></span><br><span class="line">git pull ...</span><br><span class="line">git stash pop <span class="comment"># 還原 stash</span></span><br><span class="line">git reset <span class="comment"># 回復 stage 狀態</span></span><br></pre></td></tr></table></figure>
-
 <p><span class="exturl" data-url="aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvMTc0MDQzMTYvdGhlLWZvbGxvd2luZy11bnRyYWNrZWQtd29ya2luZy10cmVlLWZpbGVzLXdvdWxkLWJlLW92ZXJ3cml0dGVuLWJ5LW1lcmdlLWJ1dC1p">參考資料<i class="fa fa-external-link-alt"></i></span></p>
-<h2 id="Git-lfs"><a href="#Git-lfs" class="headerlink" title="Git lfs"></a>Git lfs</h2><p>Large File Storage (LFS) 是 git管理非文字大檔案的擴充套件，可以將大檔案放在放在git repository之外，這樣可以減少repository的大小，讓repository的clone速度變快。</p>
+<h2 id="Git-lfs">Git lfs</h2>
+<p>Large File Storage (LFS) 是 git管理非文字大檔案的擴充套件，可以將大檔案放在放在git repository之外，這樣可以減少repository的大小，讓repository的clone速度變快。</p>
 <p>需要注意的是，LFS只是一個擴充套件，所以需要額外安裝</p>
-<p>lfs的檔案獨立於repository，只用<code>.gitattributes</code>記錄檔案名，所以需要額外的指令來add&#x2F;push&#x2F;pull</p>
+<p>lfs的檔案獨立於repository，只用<code>.gitattributes</code>記錄檔案名，所以需要額外的指令來add/push/pull</p>
 <p>lfs雖然支援刪除檔案，但在Github中不行，代表所有<strong>曾經</strong>上傳到Github lfs的檔案都會一直占用著Quota，目前還沒有解決方案。</p>
 <p>目前的最佳解是刪除原本的repository，使用<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3J0eWxleS9iZmctcmVwby1jbGVhbmVy">bfg-repo-cleaner<i class="fa fa-external-link-alt"></i></span>將需要刪除的檔案完全從記錄中移除，然後將清理後的repository重新上傳至Github。</p>
-<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
+<h2 id="Reference">Reference</h2>
+<ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS9ib29rL3poLXR3L3YxL0dpdC0lRTUlOUYlQkElRTclQTQlOEUtJUU2JUE4JTk5JUU3JUIxJUE0">Git-基礎-標籤<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cDovL3d3dy5ib29rcy5jb20udHcvcHJvZHVjdHMvMDAxMDU3NDA5MA==">版本控制：使用Git<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly9paG93ZXIudHcvYmxvZy9hcmNoaXZlcy81NDM2">git 設定集<i class="fa fa-external-link-alt"></i></span></li>
@@ -725,7 +798,7 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">473k</span>
+    <span title="總字數">468k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動
