@@ -31,6 +31,7 @@
 <meta property="og:site_name" content="QWERTY">
 <meta property="og:description" content="編寫優秀的文件可以讓使用者不用閱讀原始碼就能理解你模組的精妙之處">
 <meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://res.cloudinary.com/practicaldev/image/fetch/s--S9z45xka--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/uzvoagihuxut9yo5bnyz.jpg">
 <meta property="article:published_time" content="2020-09-06T17:11:22.000Z">
 <meta property="article:modified_time" content="2020-09-06T17:11:22.000Z">
 <meta property="article:author" content="qwerty">
@@ -38,6 +39,7 @@
 <meta property="article:tag" content="文件">
 <meta property="article:tag" content="github">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://res.cloudinary.com/practicaldev/image/fetch/s--S9z45xka--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/uzvoagihuxut9yo5bnyz.jpg">
 
 
 <link rel="canonical" href="http://gitqwerty777.github.io/art-of-readme/">
@@ -359,20 +361,31 @@
 <p>當我想要一個 2D 碰撞檢測模組時我找到了<a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/noffle/collide-2d-aabb-aabb"><code>collide-2d-aabb-aabb</code></a>。</p>
 <p>我開始從頭開始檢查這個模組：</p>
 <ol>
-<li><strong>取名</strong>：名字要能做到“其義自見”。<code>collide-2d-aabb-aabb</code> 聽起來是個不錯的匹配，儘管它假設我知道&quot;aabb&quot;是什麼意思。</li>
-<li><strong>簡介</strong>：透過一句話簡明扼要的說明了這個模組是做什麼的。
+<li>
+<p><strong>取名</strong>：名字要能做到“其義自見”。<code>collide-2d-aabb-aabb</code> 聽起來是個不錯的匹配，儘管它假設我知道&quot;aabb&quot;是什麼意思。</p>
+</li>
+<li>
+<p><strong>簡介</strong>：透過一句話簡明扼要的說明了這個模組是做什麼的。</p>
 <ol>
 <li><code>collide-2d-aabb-aabb</code> 的描述是：</li>
 </ol>
 <blockquote>
-<p>Determines whether a moving axis-aligned bounding box (AABB) collides with other AABBs.<br />
-太棒了 —— 描述了 AABB 的定義是什麼，並且說明了這個模組是做什麼的。</p>
+<p>Determines whether a moving axis-aligned bounding box (AABB) collides with other AABBs.</p>
 </blockquote>
+<p>太棒了 —— 描述了 AABB 的定義是什麼，並且說明了這個模組是做什麼的。</p>
 </li>
-<li><strong>用法</strong>：在開始探究 API 文件之前，最好看看這個模組在實際應用中是什麼樣子。我可以快速決定用js寫的範例程式是否符合我的程式碼樣式和我要解決的問題。</li>
-<li><strong>API</strong>：模組的名字，描述和使用方法都符合我的胃口。在這一點上我很樂意使用這個模組。我需要瀏覽API來確定這就是我需要的，並且很容易整合到我的程式碼中。API 部分應該詳述模組的物件和函式，以及它們的定義、回傳值和事件。</li>
-<li><strong>安裝</strong>：如果不是通用的安裝說明，就需要在這兒進行描述。即使是一句簡單的<code>npm install</code>也好。 對於使用Node的新使用者來說，放一個指向npmjs.org的連結和安裝命令，可以讓使用者快速上手使用模組。</li>
-<li><strong>授權</strong>：大多數模組把這個放在最末尾，但是最好還是往前放一些；非常有可能在把這個模組整合完後才發現授權協議不合適。我通常使用 MIT/BSD/X11/ISC。如果你的協議不是很寬容，最好是放到最前面。</li>
+<li>
+<p><strong>用法</strong>：在開始探究 API 文件之前，最好看看這個模組在實際應用中是什麼樣子。我可以快速決定用js寫的範例程式是否符合我的程式碼樣式和我要解決的問題。</p>
+</li>
+<li>
+<p><strong>API</strong>：模組的名字，描述和使用方法都符合我的胃口。在這一點上我很樂意使用這個模組。我需要瀏覽API來確定這就是我需要的，並且很容易整合到我的程式碼中。API 部分應該詳述模組的物件和函式，以及它們的定義、回傳值和事件。</p>
+</li>
+<li>
+<p><strong>安裝</strong>：如果不是通用的安裝說明，就需要在這兒進行描述。即使是一句簡單的<code>npm install</code>也好。 對於使用Node的新使用者來說，放一個指向npmjs.org的連結和安裝命令，可以讓使用者快速上手使用模組。</p>
+</li>
+<li>
+<p><strong>授權</strong>：大多數模組把這個放在最末尾，但是最好還是往前放一些；非常有可能在把這個模組整合完後才發現授權協議不合適。我通常使用 MIT/BSD/X11/ISC。如果你的協議不是很寬容，最好是放到最前面。</p>
+</li>
 </ol>
 <h3 id="順序：認知漏斗">順序：認知漏斗</h3>
 <p>可以想象成是一個直立的漏斗，越往下移動細節越具體，最寬的部分相關細節最寬泛，只有對你的作品足夠感興趣的人才會關注這部分內容。最後，底部可以放一些作品背景的細節</p>
@@ -396,6 +409,7 @@
 <h3 id="範例檔案">範例檔案</h3>
 <p>範例程式碼在repo中以檔案的形式體現 -- 例如<code>example.js</code>。這樣當用戶clone專案後，就可以直接執行README中提及的程式碼</p>
 <h3 id="徽章-badge">徽章(badge)</h3>
+<p><img data-src="https://res.cloudinary.com/practicaldev/image/fetch/s--S9z45xka--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/uzvoagihuxut9yo5bnyz.jpg" alt="" /></p>
 <p>使用徽章要慎重。經常會被濫用。它們會容易引起爭論。它們在你的README中加入了視覺噪聲，並且只有當用戶在聯網的瀏覽器裡閱讀你的markdown時才能看到徽章，因為圖片是存放在網際網路上的其它地方。對於每一個徽章，需要考慮：README中的徽章提供給典型讀者的真實含義是什麼？用一個CI徽章來顯示build/test狀態？這個訊號更應該發郵件給維護者，或者自動建立一個issue -- 永遠要考慮你的README中的資料的受眾並且自問一下是否有一個流程能夠讓資料更好的送達到目標受眾。</p>
 <h3 id="API">API</h3>
 <p>API 文件格式沒有局限。使用任何你認為是清晰的格式，但是要包含重要的細節：</p>

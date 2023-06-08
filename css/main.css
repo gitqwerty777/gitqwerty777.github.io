@@ -24,42 +24,40 @@
   --highlight-gutter-foreground: #a5babe;
   color-scheme: light;
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --body-bg-color: #282828;
-    --content-bg-color: #333;
-    --card-bg-color: #555;
-    --text-color: #ccc;
-    --blockquote-color: #bbb;
-    --link-color: #ccc;
-    --link-hover-color: #eee;
-    --brand-color: #ddd;
-    --brand-hover-color: #ddd;
-    --table-row-odd-bg-color: #282828;
-    --table-row-hover-bg-color: #363636;
-    --menu-item-bg-color: #555;
-    --theme-color: #222;
-    --btn-default-bg: #222;
-    --btn-default-color: #ccc;
-    --btn-default-border-color: #555;
-    --btn-default-hover-bg: #666;
-    --btn-default-hover-color: #ccc;
-    --btn-default-hover-border-color: #666;
-    --highlight-background: #e3efef;
-    --highlight-foreground: #6d828e;
-    --highlight-gutter-background: #d7e4e5;
-    --highlight-gutter-foreground: #788c97;
-    color-scheme: dark;
-  }
-  img {
-    opacity: 0.75;
-  }
-  img:hover {
-    opacity: 0.9;
-  }
-  iframe {
-    color-scheme: light;
-  }
+:root {
+  --body-bg-color: #282828;
+  --content-bg-color: #333;
+  --card-bg-color: #555;
+  --text-color: #ccc;
+  --blockquote-color: #bbb;
+  --link-color: #ccc;
+  --link-hover-color: #eee;
+  --brand-color: #ddd;
+  --brand-hover-color: #ddd;
+  --table-row-odd-bg-color: #282828;
+  --table-row-hover-bg-color: #363636;
+  --menu-item-bg-color: #555;
+  --theme-color: #222;
+  --btn-default-bg: #222;
+  --btn-default-color: #ccc;
+  --btn-default-border-color: #555;
+  --btn-default-hover-bg: #666;
+  --btn-default-hover-color: #ccc;
+  --btn-default-hover-border-color: #666;
+  --highlight-background: #e3efef;
+  --highlight-foreground: #6d828e;
+  --highlight-gutter-background: #d7e4e5;
+  --highlight-gutter-foreground: #788c97;
+  color-scheme: dark;
+}
+img {
+  opacity: 0.75;
+}
+img:hover {
+  opacity: 0.9;
+}
+iframe {
+  color-scheme: light;
 }
 html {
   line-height: 1.15; /* 1 */
@@ -309,8 +307,12 @@ hr {
   margin: 40px 0;
 }
 blockquote {
-  border-left: 4px solid #ddd;
-  color: var(--blockquote-color);
+  border-left: 0.3em solid #039be5;
+  border-bottom: 0.1em solid #039be5;
+  border-top: 0.1em solid #039be5;
+  border-right: 0.1em solid #039be5;
+  background-color: #e2e3e5;
+  color: #000;
   margin: 0;
   padding: 0 15px;
 }

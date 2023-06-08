@@ -490,7 +490,7 @@
   </entry>
   
   <entry>
-    <title>在Linux系統中 節省硬碟和記憶體用量</title>
+    <title>在Linux中節省硬碟和記憶體用量</title>
     <link href="http://gitqwerty777.github.io/linux-save-memory-disk/"/>
     <id>http://gitqwerty777.github.io/linux-save-memory-disk/</id>
     <published>2020-10-15T07:46:00.000Z</published>
@@ -504,7 +504,7 @@
     <category term="記錄" scheme="http://gitqwerty777.github.io/categories/%E8%A8%98%E9%8C%84/"/>
     
     
-    <category term="Linux" scheme="http://gitqwerty777.github.io/tags/linux/"/>
+    <category term="linux" scheme="http://gitqwerty777.github.io/tags/linux/"/>
     
     <category term="硬碟" scheme="http://gitqwerty777.github.io/tags/%E7%A1%AC%E7%A2%9F/"/>
     

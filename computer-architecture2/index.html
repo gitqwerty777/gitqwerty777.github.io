@@ -37,7 +37,7 @@
 <meta property="og:image" content="http://gitqwerty777.github.io/img/computer-architecture/bubble.webp">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/computer-architecture/2stall.webp">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/computer-architecture/exception-handle.webp">
-<meta property="og:image" content="http://gitqwerty777.github.io/img/computer-architecture/unroll-before.webp">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/computer-architecture/unroll-before.png">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/computer-architecture/unroll-after.webp">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/computer-architecture/dynamic-schedule-CPU.webp">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/computer-architecture/memory-hierarchy.webp">
@@ -420,7 +420,7 @@ Static的是由compiler把要同時執行的instruction包成一包一包的inst
 <p>loop unrolling: 把一次完成多個loop內的iteration來減少loop-control overhead(bne)，並用不同的register來存放(register renaming)(每一份replicate就是原本的loop跑一次)<br />
 避免loop裡面有 anti–dependencies(name dependency): write-after-read<br />
 ex: B=7; A=B+1; B=3 在a=b+1和b=3之間就有anti dependent的關係</p>
-<p><img data-src="/img/computer-architecture/unroll-before.webp" alt="before" /><br />
+<p><img data-src="/img/computer-architecture/unroll-before.png" alt="before" /><br />
 <img data-src="/img/computer-architecture/unroll-after.webp" alt="after" /><br />
 原本：for(load -&gt; 計算 -&gt; save)<br />
 之後：for(load) + for(add) -&gt; for(save)<br />
