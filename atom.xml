@@ -417,31 +417,6 @@
   </entry>
   
   <entry>
-    <title>備忘錄模式(Mementos Pattern)</title>
-    <link href="http://gitqwerty777.github.io/mementos-pattern/"/>
-    <id>http://gitqwerty777.github.io/mementos-pattern/</id>
-    <published>2020-11-05T07:00:00.000Z</published>
-    <updated>2020-11-05T07:00:00.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/img/other/morgana.webp&quot; alt=&quot;Morgana - Persona5&quot; /&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="心得" scheme="http://gitqwerty777.github.io/categories/%E5%BF%83%E5%BE%97/"/>
-    
-    
-    <category term="設計模式" scheme="http://gitqwerty777.github.io/tags/%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F/"/>
-    
-    <category term="備份" scheme="http://gitqwerty777.github.io/tags/%E5%82%99%E4%BB%BD/"/>
-    
-    <category term="備忘錄" scheme="http://gitqwerty777.github.io/tags/%E5%82%99%E5%BF%98%E9%8C%84/"/>
-    
-    <category term="存檔" scheme="http://gitqwerty777.github.io/tags/%E5%AD%98%E6%AA%94/"/>
-    
-  </entry>
-  
-  <entry>
     <title>漢字的異體字及其Unicode編碼</title>
     <link href="http://gitqwerty777.github.io/unicode/"/>
     <id>http://gitqwerty777.github.io/unicode/</id>
@@ -525,7 +500,7 @@
     <summary type="html">&lt;p&gt;&lt;img src=&quot;/img/other/foreign-terms-police.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;h2 id=&quot;簡介&quot;&gt;簡介&lt;/h2&gt;
 &lt;p&gt;PTT 上常有支語警察&lt;/p&gt;
-&lt;p&gt;也常發現 google 翻譯的中文常常會&lt;a href=&quot;https://www.setn.com/News.aspx?NewsID=746793&quot;&gt;翻譯成中國慣用語&lt;/a&gt;(可以參考 &lt;a href=&quot;https://isgooglefixed.tw/&quot;&gt;Google 翻譯修好了沒？&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;也常發現 Google 翻譯的中文常常會&lt;a href=&quot;https://www.setn.com/News.aspx?NewsID=746793&quot;&gt;翻譯成中國慣用語&lt;/a&gt;(可以參考 &lt;a href=&quot;https://isgooglefixed.tw/&quot;&gt;Google 翻譯修好了沒？&lt;/a&gt;)&lt;/p&gt;
 &lt;p&gt;所以就寫了一個支語警察的網站：&lt;a href=&quot;/foreign-terms-police&quot;&gt;支語警察&lt;/a&gt;&lt;/p&gt;</summary>
     
     
@@ -851,6 +826,34 @@ Namespaces are one honking great idea -- let&#39;s do more of those!&lt;/p&gt;
     <category term="hexo" scheme="http://gitqwerty777.github.io/tags/hexo/"/>
     
     <category term="主題" scheme="http://gitqwerty777.github.io/tags/%E4%B8%BB%E9%A1%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Makefile 和 CMake 之間的轉換和實作</title>
+    <link href="http://gitqwerty777.github.io/cmake/"/>
+    <id>http://gitqwerty777.github.io/cmake/</id>
+    <published>2017-01-17T10:12:50.000Z</published>
+    <updated>2017-01-17T10:12:50.000Z</updated>
+    
+    
+    <summary type="html">&lt;!-- RENEW: --&gt;
+&lt;p&gt;http://mqjing.blogspot.tw/2009/09/cmake-how-to-use-cmake.html&lt;br /&gt;
+&lt;a href=&quot;https://itk.org/Wiki/CMake_Useful_Variables&quot;&gt;CMake 常用變數&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;簡介&quot;&gt;簡介&lt;/h2&gt;
+&lt;p&gt;CMake用來產生跨平台的專案建置文件，在windows下它會生成visual studio的專案檔(.sln) codeblock eclipse，在linux下它會生成Makefile。類似工具有autotools和qmake，不過autotools太複雜，qmake只限於qt使用。&lt;/p&gt;
+&lt;p&gt;CMake用更抽象的語法來組織項目。例如用math表示數學庫，而不需要再具體指定到底是math.dll還是libmath.so。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="筆記" scheme="http://gitqwerty777.github.io/categories/%E7%AD%86%E8%A8%98/"/>
+    
+    
+    <category term="CMake" scheme="http://gitqwerty777.github.io/tags/cmake/"/>
+    
+    <category term="Makefile" scheme="http://gitqwerty777.github.io/tags/makefile/"/>
+    
+    <category term="Linux" scheme="http://gitqwerty777.github.io/tags/linux/"/>
     
   </entry>
   
