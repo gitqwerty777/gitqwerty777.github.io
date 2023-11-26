@@ -296,7 +296,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>565</span>
+      <span>601</span>
     </span>
 </div>
 
@@ -317,7 +317,7 @@
 <p><img data-src="https://upload.wikimedia.org/wikipedia/commons/3/38/W3sDesign_Memento_Design_Pattern_UML.jpg?1615662505582" alt="" /></p>
 <p>想法：原類別使用 Memento 備份/還原, 由 Caretaker 管理 Memento</p>
 <ul>
-<li>Originator: 需要備份的類別，產生 Memento 並可用其還原
+<li>Originator: 需要備份的類別，產生 Memento，且可用其還原
 <ul>
 <li><code>Memento CreateMemento()</code></li>
 <li><code>void RestoreFromMemento(Memento)</code></li>
@@ -330,12 +330,12 @@
 </li>
 <li>Caretaker: 管理備份的類別
 <ul>
-<li>呼叫 Originator 以執行 備份/還原</li>
+<li>呼叫 Originator 以產生備份類別/用備份類別還原</li>
 <li>管理備份
 <ul>
-<li>存讀檔案</li>
-<li>設定路徑</li>
-<li>同時管理多份備份</li>
+<li>讀寫檔案</li>
+<li>管理路徑</li>
+<li>管理多份備份</li>
 </ul>
 </li>
 </ul>
@@ -349,14 +349,17 @@
 <h2 id="分析">分析</h2>
 <p>缺點</p>
 <ul>
-<li>Memento 會額外占用記憶體</li>
+<li>Memento 資料會額外占用記憶體，且需要花時間產生</li>
 </ul>
 <h2 id="用途">用途</h2>
 <ul>
 <li>備份/還原(存/讀檔)</li>
 </ul>
 <h2 id="其他">其他</h2>
-<p>Memento 有「印象」、「紀念」的意思，有同名電影譯為「記憶拼圖」，在 Persona5 譯為「印象空間」</p>
+<ul>
+<li>Memento 有「印象」、「紀念」的意思，有同名電影譯為「記憶拼圖」，在 Persona5 譯為「印象空間」</li>
+<li>Memento Mori: 勿忘你終有一死</li>
+</ul>
 <h2 id="參考資料">參考資料</h2>
 <ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTWVtZW50b19wYXR0ZXJu">Wiki: Memento Pattern<i class="fa fa-external-link-alt"></i></span></li>
@@ -365,7 +368,6 @@
 <li>設計模式與遊戲開發的完美結合</li>
 <li><span class="exturl" data-url="aHR0cDovL3R3bWh0LmdpdGh1Yi5pby9ibG9nL3Bvc3RzL2Rlc2lnbi1wYXR0ZXJuL21lbWVudG8uaHRtbA==">技術筆記 - Memento Pattern<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
-<!--TODO: 看三本書,補足 -->
 
     </div>
 
@@ -449,7 +451,7 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">475k</span>
+    <span title="總字數">476k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

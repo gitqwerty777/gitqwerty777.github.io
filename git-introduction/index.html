@@ -24,12 +24,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"gitqwerty777.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.12.1","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"show_result":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInDown","sidebar":"fadeInRight"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.12.1/config.min.js"></script>
 
-    <meta name="description" content="Git的特點  分散式開發  每個人都有完整的容器，各自獨立 不需要中央管理   非擠壓合併  合併後仍包含所有被合併分支的記錄 git merge&#x2F;pull --squash 強迫擠壓">
+    <meta name="description" content="Git的特點  分散式開發  每個人都有完整的容器，各自獨立 不需要中央管理   非擠壓合併  合併後仍包含所有被合併分支的commit記錄 也可以用 git merge&#x2F;pull --squash 強迫擠壓(不推薦)">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git觀念">
 <meta property="og:url" content="http://gitqwerty777.github.io/git-introduction/index.html">
 <meta property="og:site_name" content="QWERTY">
-<meta property="og:description" content="Git的特點  分散式開發  每個人都有完整的容器，各自獨立 不需要中央管理   非擠壓合併  合併後仍包含所有被合併分支的記錄 git merge&#x2F;pull --squash 強迫擠壓">
+<meta property="og:description" content="Git的特點  分散式開發  每個人都有完整的容器，各自獨立 不需要中央管理   非擠壓合併  合併後仍包含所有被合併分支的commit記錄 也可以用 git merge&#x2F;pull --squash 強迫擠壓(不推薦)">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://image.slidesharecdn.com/git-getreadytouseit-140228043813-phpapp02/95/git-get-ready-to-use-it-5-638.jpg?cb=1393562489">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/other/artist-test.webp">
@@ -158,7 +158,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Git%E7%9A%84%E7%89%B9%E9%BB%9E"><span class="nav-number">1.</span> <span class="nav-text">Git的特點</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git%E5%AE%89%E8%A3%9D"><span class="nav-number">2.</span> <span class="nav-text">Git安裝</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git%E5%B8%B8%E7%94%A8%E5%90%8D%E7%A8%B1"><span class="nav-number">3.</span> <span class="nav-text">Git常用名稱</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A8%AD%E5%AE%9A%E6%AA%94"><span class="nav-number">4.</span> <span class="nav-text">設定檔</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git%E8%B3%87%E6%96%99%E7%B5%90%E6%A7%8B"><span class="nav-number">5.</span> <span class="nav-text">Git資料結構</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E6%94%AF"><span class="nav-number">6.</span> <span class="nav-text">分支</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E6%94%AF%E7%A8%AE%E9%A1%9E"><span class="nav-number">6.1.</span> <span class="nav-text">分支種類</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%88%E4%BD%B5"><span class="nav-number">7.</span> <span class="nav-text">合併</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E6%8F%90%E4%BA%A4"><span class="nav-number">8.</span> <span class="nav-text">修改提交</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%9E%E5%BE%A9-git-reset"><span class="nav-number">8.1.</span> <span class="nav-text">回復(git reset)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%B9%E5%99%A8"><span class="nav-number">9.</span> <span class="nav-text">容器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BB%BA%E7%AB%8B%E5%82%99%E4%BB%BD"><span class="nav-number">10.</span> <span class="nav-text">建立備份</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-tag"><span class="nav-number">11.</span> <span class="nav-text">Git tag</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-Submodule"><span class="nav-number">12.</span> <span class="nav-text">Git Submodule</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-Server-Hosting"><span class="nav-number">13.</span> <span class="nav-text">Git Server Hosting</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7"><span class="nav-number">14.</span> <span class="nav-text">其他工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-%E5%B8%B8%E8%A6%8B%E9%8C%AF%E8%AA%A4"><span class="nav-number">15.</span> <span class="nav-text">Git 常見錯誤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-lfs"><span class="nav-number">16.</span> <span class="nav-text">Git lfs</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">17.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Git%E7%9A%84%E7%89%B9%E9%BB%9E"><span class="nav-number">1.</span> <span class="nav-text">Git的特點</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git%E5%AE%89%E8%A3%9D"><span class="nav-number">2.</span> <span class="nav-text">Git安裝</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git%E5%B8%B8%E7%94%A8%E5%90%8D%E7%A8%B1"><span class="nav-number">3.</span> <span class="nav-text">Git常用名稱</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A8%AD%E5%AE%9A%E6%AA%94"><span class="nav-number">4.</span> <span class="nav-text">設定檔</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git%E8%B3%87%E6%96%99%E7%B5%90%E6%A7%8B"><span class="nav-number">5.</span> <span class="nav-text">Git資料結構</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E6%94%AF"><span class="nav-number">6.</span> <span class="nav-text">分支</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E6%94%AF%E7%A8%AE%E9%A1%9E"><span class="nav-number">6.1.</span> <span class="nav-text">分支種類</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%88%E4%BD%B5"><span class="nav-number">7.</span> <span class="nav-text">合併</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E6%8F%90%E4%BA%A4"><span class="nav-number">8.</span> <span class="nav-text">修改提交</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%9E%E5%BE%A9-git-reset"><span class="nav-number">8.1.</span> <span class="nav-text">回復(git reset)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%B9%E5%99%A8"><span class="nav-number">9.</span> <span class="nav-text">容器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BB%BA%E7%AB%8B%E5%82%99%E4%BB%BD"><span class="nav-number">10.</span> <span class="nav-text">建立備份</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-tag"><span class="nav-number">11.</span> <span class="nav-text">Git tag</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-Submodule"><span class="nav-number">12.</span> <span class="nav-text">Git Submodule</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-Server-Hosting"><span class="nav-number">13.</span> <span class="nav-text">Git Server Hosting</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7"><span class="nav-number">14.</span> <span class="nav-text">其他工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-%E5%B8%B8%E8%A6%8B%E9%8C%AF%E8%AA%A4"><span class="nav-number">15.</span> <span class="nav-text">Git 常見錯誤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%A7%E6%AA%94%E6%A1%88%E7%AE%A1%E7%90%86-Git-lfs"><span class="nav-number">16.</span> <span class="nav-text">大檔案管理 - Git lfs</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Commit-Message-%E8%A6%8F%E7%AF%84"><span class="nav-number">17.</span> <span class="nav-text">Commit Message 規範</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%87%E9%9A%B1%E7%A7%81%E6%AA%94%E6%A1%88%E5%92%8Cgit-repository%E5%88%86%E9%96%8B"><span class="nav-number">18.</span> <span class="nav-text">將隱私檔案和git repository分開</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%87%E5%A4%9A%E5%80%8Brepository%E5%90%88%E4%BD%B5%E6%88%90%E4%B8%80%E5%80%8B"><span class="nav-number">19.</span> <span class="nav-text">將多個repository合併成一個</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">20.</span> <span class="nav-text">Reference</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -297,7 +297,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>5.1k</span>
+      <span>6.5k</span>
     </span>
 </div>
 
@@ -318,8 +318,8 @@
 </li>
 <li>非擠壓合併
 <ul>
-<li>合併後仍包含所有被合併分支的記錄</li>
-<li><code>git merge/pull --squash</code> 強迫擠壓</li>
+<li>合併後仍包含所有被合併分支的commit記錄</li>
+<li>也可以用 <code>git merge/pull --squash</code> 強迫擠壓(不推薦)</li>
 </ul>
 </li>
 </ul>
@@ -430,7 +430,7 @@
 </li>
 <li>annotated tag
 <ul>
-<li>正式的tag，以物件方向儲存</li>
+<li>正式的tag，以物件方式儲存</li>
 </ul>
 </li>
 </ul>
@@ -482,7 +482,7 @@
 <li>遠端分支</li>
 </ul>
 <h2 id="合併">合併</h2>
-<p>每次提交和合併的時間間隔愈短，每次的衝突愈少，愈容易實作。</p>
+<p>每次提交合併的時間間隔愈短，每次產生的衝突愈少，愈容易合併。</p>
 <p>同一條線上的合併</p>
 <ul>
 <li>不會有新提交，只會移動branch指標</li>
@@ -505,17 +505,13 @@
 <li>Recursive(預設方法)
 <ul>
 <li>只能用在兩個分支的合併</li>
-<li>兩個版本有多個共同祖先的時候，先將所有祖先合併成一個暫時性的版本，再以此版本為基礎用Resolve方法
-<ul>
-<li>在多個祖先合併時可能也有相同的問題，此時用同方法遞迴</li>
-</ul>
-</li>
+<li>兩個版本有多個共同祖先的時候，先將所有祖先合併成一個暫時性的版本，再以此版本為基礎用Resolve方法</li>
 </ul>
 </li>
 <li>Octopus
 <ul>
-<li>多次呼叫Recursive，每次處理一個分支</li>
 <li>可用在多分支的合併</li>
+<li>多次呼叫Recursive，每次處理一個分支</li>
 </ul>
 </li>
 </ol>
@@ -523,9 +519,12 @@
 <ul>
 <li>Ours
 <ul>
-<li>合併時只採用現在版本的變更<br />
-- 但留下歷史記錄(即其他版本的樹仍存在於父節點)<br />
+<li>合併時只採用現在版本的變更
+<ul>
+<li>但留下歷史記錄(即其他版本的樹仍存在於父節點)<br />
 <img data-src="https://image.slidesharecdn.com/paolucci-git-power-routines-150722082712-lva1-app6891/95/git-power-routines-30-638.jpg?cb=1437553811" alt="" /></li>
+</ul>
+</li>
 <li>通常用於
 <ul>
 <li>已經有其他版本的變更時</li>
@@ -550,7 +549,7 @@
 <li>移除不必要的提交</li>
 </ul>
 </li>
-<li>註：需要在其他開發者取得你的repository之前(git push之前)，以避免歷史不同步</li>
+<li>註：需要在其他開發者取得你的repository之前修改(git push之前)，以避免歷史不同步</li>
 </ul>
 <p>方法</p>
 <ul>
@@ -558,12 +557,12 @@
 </ul>
 <h3 id="回復-git-reset">回復(git reset)</h3>
 <ul>
-<li>--soft: 將HEAD還原至指定commit</li>
-<li>--mixed: 將HEAD和Index(staging area)還原至指定commit，工作目錄不變</li>
-<li>--hard: 將HEAD和Index和工作目錄還原至指定commit</li>
+<li><code>--soft</code>: 將HEAD還原至指定commit</li>
+<li><code>--mixed</code>: 將HEAD和Index(staging area)還原至指定commit，工作目錄不變 (預設選項)</li>
+<li><code>--hard</code>: 將HEAD和Index和工作目錄還原至指定commit</li>
 <li>被取代的HEAD會放在ORIG_HEAD</li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git reset [--soft/mixed/hard] [commit] <span class="comment"># default is mixed</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 變更上一次的提交</span></span><br><span class="line">git reset HEAD^ <span class="comment"># 此時上一次的提交已經不存在，但是工作目錄中的資料相同</span></span><br><span class="line"><span class="comment"># do some modification</span></span><br><span class="line">git commit <span class="comment"># 會覆蓋上一次的commit</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git reset [--soft/mixed/hard] [commit]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 變更上一次的提交</span></span><br><span class="line">git reset HEAD^ <span class="comment"># 此時上一次的提交已經不存在，但是工作目錄中的資料相同</span></span><br><span class="line"><span class="comment"># do some modification</span></span><br><span class="line">git commit <span class="comment"># 會覆蓋上一次的commit</span></span><br></pre></td></tr></table></figure>
 <p>通常用於清除錯誤</p>
 <ul>
 <li>cherry-pick
@@ -581,9 +580,8 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git checkout release</span><br><span class="line">git cherry-pick develop~2 <span class="comment"># get debug commit from develop branch</span></span><br></pre></td></tr></table></figure>
 <pre><code>	- 將某個分支的commit移植到另一個branch
 </code></pre>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># in develop: W → X → Y → Z</span></span><br><span class="line">git checkout master</span><br><span class="line">git cherry-pick develop^ <span class="comment"># Y</span></span><br><span class="line">git cherry-pick develop~3 <span class="comment"># W</span></span><br><span class="line">git cherry-pick develop~2 <span class="comment"># X</span></span><br><span class="line">git cherry-pick develop <span class="comment"># Z</span></span><br><span class="line"><span class="comment"># alternative</span></span><br><span class="line">git cherry-pick develop^3..develop</span><br></pre></td></tr></table></figure>
-<pre><code>- 如果要合併多個，可以加上 -n 指令就不會先幫你 commit，這樣可以多選幾個要合併的commit，最後再 git commit即可 &lt;!-- ??? --&gt;
-</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># in develop: W → X → Y → Z (newest)</span></span><br><span class="line">git checkout master</span><br><span class="line">git cherry-pick develop^ <span class="comment"># Y</span></span><br><span class="line">git cherry-pick develop~3 <span class="comment"># W</span></span><br><span class="line">git cherry-pick develop~2 <span class="comment"># X</span></span><br><span class="line">git cherry-pick develop <span class="comment"># Z</span></span><br><span class="line"><span class="comment"># alternative</span></span><br><span class="line">git cherry-pick develop^3..develop <span class="comment"># from W to Z</span></span><br></pre></td></tr></table></figure>
+<!-- - 如果要合併多個，可以加上 -n 指令就不會先幫你 commit，這樣可以多選幾個要合併的commit，最後再 git commit即可 ??? -->
 <h2 id="容器">容器</h2>
 <ul>
 <li>裸容器(bare)
@@ -700,12 +698,71 @@
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git add * <span class="comment"># 加入 stage</span></span><br><span class="line">git stash <span class="comment"># 執行 stash(stage會將stage的檔案也放入stash)</span></span><br><span class="line">git pull ...</span><br><span class="line">git stash pop <span class="comment"># 還原 stash</span></span><br><span class="line">git reset <span class="comment"># 回復 stage 狀態</span></span><br></pre></td></tr></table></figure>
 <p><span class="exturl" data-url="aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvMTc0MDQzMTYvdGhlLWZvbGxvd2luZy11bnRyYWNrZWQtd29ya2luZy10cmVlLWZpbGVzLXdvdWxkLWJlLW92ZXJ3cml0dGVuLWJ5LW1lcmdlLWJ1dC1p">參考資料<i class="fa fa-external-link-alt"></i></span></p>
-<h2 id="Git-lfs">Git lfs</h2>
+<h2 id="大檔案管理-Git-lfs">大檔案管理 - Git lfs</h2>
 <p>Large File Storage (LFS) 是 git管理非文字大檔案的擴充套件，可以將大檔案放在放在git repository之外，這樣可以減少repository的大小，讓repository的clone速度變快。</p>
-<p>需要注意的是，LFS只是一個擴充套件，所以需要額外安裝</p>
+<p>需要注意的是，LFS是一個擴充套件，所以需要額外安裝</p>
 <p>lfs的檔案獨立於repository，只用<code>.gitattributes</code>記錄檔案名，所以需要額外的指令來add/push/pull</p>
-<p>lfs雖然支援刪除檔案，但在Github中不行，代表所有<strong>曾經</strong>上傳到Github lfs的檔案都會一直占用著Quota，目前還沒有解決方案。</p>
-<p>目前的最佳解是刪除原本的repository，使用<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3J0eWxleS9iZmctcmVwby1jbGVhbmVy">bfg-repo-cleaner<i class="fa fa-external-link-alt"></i></span>將需要刪除的檔案完全從記錄中移除，然後將清理後的repository重新上傳至Github。</p>
+<p>lfs雖然支援刪除檔案，但在Github中不行，代表所有<strong>曾經</strong>上傳到Github lfs的檔案都會一直占用著Quota，目前還沒有解決方案，只能刪除原本的repository。<br />
+或是使用<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3J0eWxleS9iZmctcmVwby1jbGVhbmVy">bfg-repo-cleaner<i class="fa fa-external-link-alt"></i></span>將需要刪除的檔案完全從記錄中移除，然後將清理後的repository重新上傳至Github。</p>
+<h2 id="Commit-Message-規範">Commit Message 規範</h2>
+<p>參考<span class="exturl" data-url="aHR0cHM6Ly93d3cuY29udmVudGlvbmFsY29tbWl0cy5vcmcvZW4vdjEuMC4wLWJldGEuMi8=">Conventional Commit<i class="fa fa-external-link-alt"></i></span><br />
+如果遵守此規則，可以<span class="exturl" data-url="aHR0cHM6Ly9tYXJrZXRwbGFjZS52aXN1YWxzdHVkaW8uY29tL2l0ZW1zP2l0ZW1OYW1lPWF4ZXRyb3kudnNjb2RlLWNoYW5nZWxvZy1nZW5lcmF0b3I=">自動產生一個版本的commit message總結(CHANGELOG)<i class="fa fa-external-link-alt"></i></span>和語意版本號；使CD/CI工具自動觸發。</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-attr">[分類]</span> 描述 (備註)</span><br></pre></td></tr></table></figure>
+<p>分類可參考下列<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
+<ul>
+<li>feat: 新增功能</li>
+<li>update: 修改功能</li>
+<li>fix: 修正bug</li>
+<li>chore: 其它工具的變動（通常是底層library或開發工具)</li>
+<li>refact: 重構、整理程式碼</li>
+<li>style: coding style調整 (format、空格或Tab、逗號等)</li>
+<li>docs: 檔案、註解撰寫</li>
+<li>build: 打包</li>
+</ul>
+<p>描述：這個commit修改了什麼功能，可以用一行的短描述加上詳細描述</p>
+<p>備註：可以是人名(commit作者、reviewer或負責人)，編號(專案代號，issue流水號)，參考資料(相關文件路徑，spec連結)等。<br />
+當然commit作者在commit資訊就有了，大多數的資訊寫在issue tracker即可，寫在commit中只是方便搜尋。</p>
+<p>e.g.,</p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-attr">[feat(search)]</span> 用關鍵字搜尋網站頁面 (<span class="attribute">Reviewer</span>: Alice) (<span class="number">#113</span>) (<span class="attribute">Wiki</span>: PageSearch/Keyword)</span><br><span class="line">(BREAKING <span class="attribute">CHANGE</span>: database webpage的key從datetime改成id)</span><br><span class="line"></span><br><span class="line"><span class="selector-attr">[fix]</span> 修正點擊<span class="selector-tag">xx</span>按鈕時沒有回應的問題 (<span class="attribute">Reviewer</span>: Bob) (Fix <span class="number">#114</span>)</span><br><span class="line"></span><br><span class="line"><span class="selector-attr">[chore]</span> 將<span class="selector-tag">winrar</span>升級至正式版 (<span class="number">#115</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="將隱私檔案和git-repository分開">將隱私檔案和git repository分開</h2>
+<p>隱私檔案：如設定檔、資料庫、內部連結、金鑰、個人資訊、檔案路徑等等</p>
+<p>最簡單的方法就是：不要放在repository內，缺點就是沒有版本控制、取得麻煩、可能會遺失。</p>
+<p>以下提出一些將隱私檔案放在repository的方法</p>
+<ol>
+<li>開兩個不同的repository，<code>public-repo</code>和<code>private-repo</code>(不公開)，將隱私檔案放在<code>private-repo</code>
+<ol>
+<li>需要使用隱私檔案時，clone <code>private-repo</code>，並合併到<code>public-repo</code></li>
+<li>缺點
+<ol>
+<li>合併兩個repository困難，這代表兩個repo需要有相同的資料夾結構，不然不易移動</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>多一個branch<code>private</code>，此branch可以視為完整的repo，包含public的所有內容和隱私檔案
+<ol>
+<li>只要保護 <code>private</code> branch 即可
+<ol>
+<li>將 <code>private</code> branch 設立讀取權限</li>
+</ol>
+</li>
+<li>小缺點：需要額外維護一個branch</li>
+</ol>
+</li>
+<li><code>private-repo</code>作為<code>public-repo</code>的submodule
+<ol>
+<li>缺點：代表隱私檔案需要放在同一個資料夾內</li>
+</ol>
+</li>
+</ol>
+<h2 id="將多個repository合併成一個">將多個repository合併成一個</h2>
+<p>我目前(2023)有六十多個repository，主因是一個專案(包含大學的一門課)就丟一個repository，實在有點難管理。</p>
+<p>可以把多個小專案合併成一個，如<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2dpdHF3ZXJ0eTc3Ny9Ib21ld29yaw==">作業<i class="fa fa-external-link-alt"></i></span>。</p>
+<p>方法<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup></p>
+<ol>
+<li>要移動的repo: 開新branch，把所有檔案移到子資料夾，commit並push</li>
+<li>要接受合併的repo: 在remote中加入這些repo，fetch branch，merge</li>
+</ol>
 <h2 id="Reference">Reference</h2>
 <ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS9ib29rL3poLXR3L3YxL0dpdC0lRTUlOUYlQkElRTclQTQlOEUtJUU2JUE4JTk5JUU3JUIxJUE0">Git-基礎-標籤<i class="fa fa-external-link-alt"></i></span></li>
@@ -716,7 +773,17 @@
 <li><span class="exturl" data-url="aHR0cDovL2Jsb2cuY2hoLnR3L3Bvc3RzL2dpdC1zdWJtb2R1bGUv">Git Submodule 用法筆記<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS9ib29rL3poLXR3L3YxL0dpdC0lRTUlQjclQTUlRTUlODUlQjctJUU1JUFEJTkwJUU2JUE4JUExJUU3JUI1JTg0LVN1Ym1vZHVsZXM=">Git 工具 - 子模組 (Submodules)<i class="fa fa-external-link-alt"></i></span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvMzQ1NzkyMTEvaG93LXRvLWRlbGV0ZS1hLWZpbGUtdHJhY2tlZC1ieS1naXQtbGZzLWFuZC1yZWxlYXNlLXRoZS1zdG9yYWdlLXF1b3Rh">How to delete a file tracked by git-lfs and release the storage quota?<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvMjUxNzcwMTQvbWFrZS1zb21lLWZpbGVzLXByaXZhdGUtaW4tYS1yZXBvc2l0b3J5">Make some files private in a repository<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
+<hr class="footnotes-sep" />
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>https://tiffrrr.medium.com/git-%E6%98%AF%E6%99%82%E5%80%99%E8%A6%8F%E7%AF%84commit-%E8%A8%8A%E6%81%AF%E4%BA%86-bf02f33ed8f5 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>https://stackoverflow.com/a/10548919 <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
 
     </div>
 
@@ -798,7 +865,7 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">475k</span>
+    <span title="總字數">476k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

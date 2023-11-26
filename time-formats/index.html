@@ -349,11 +349,11 @@
 <li>生日</li>
 <li>時間段和時間點</li>
 </ol>
+<!-- 6. 字串格式 -->
 </li>
 </ol>
 <h2 id="時間表示法">時間表示法</h2>
 <p>參照<span class="exturl" data-url="aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvSVNPXzg2MDE=">ISO8601標準<i class="fa fa-external-link-alt"></i></span>，下列以⭐代表標準表示法。</p>
-<p>實際上，使用者沒在管這些標準；預設格式如果不符合使用者的習慣格式就會被嫌棄。</p>
 <h3 id="格式">格式</h3>
 <p>年由4位數字組成YYYY，月、日用兩位數字表示：MM、DD。<br />
 只使用數字為基本格式。使用短橫線&quot;-&quot;間隔開年、月、日為擴展格式。</p>
@@ -671,6 +671,15 @@ TODO: 3. 相對時間：在機器A連線機器B(如ftp)，並顯示機器B的檔
 <p>不管人在何處，都是在同一個日期過生日(雖然實際的時間可能不同)</p>
 <h3 id="時間段和時間點">時間段和時間點</h3>
 <p>通常用Instant代表時間點，Duration代表時間段</p>
+<!--
+### 字串格式
+
+BSD strftime https://www.ibm.com/docs/zh-tw/was-zos/9.0.5?topic=service-strftime-format-conversions
+
+rfc3339
+https://rfc2cn.com/rfc3339.html
+- 1985-04-12T23:20:50.52Z
+- 1996-12-19T16:39:57-08:00 -->
 <h2 id="套件">套件</h2>
 <ul>
 <li>Python
@@ -708,6 +717,7 @@ TODO: 3. 相對時間：在機器A連線機器B(如ftp)，並顯示機器B的檔
 <h2 id="總結">總結</h2>
 <p>時間相關的問題能夠有效的產生一堆bug。</p>
 <p>建議在儲存資料時使用UTC+0時間或TimeStamp，顯示時才切換，以避免許多可能的bug，但是會付出額外的轉換成本。</p>
+<p>實際上，使用者沒在管這些標準；預設格式如果不符合使用者的習慣格式就會被嫌棄。</p>
 <p>當然，貨幣、度量衡、標點符號等習慣用法也有和時間一樣的問題，這些被統稱為本地化(Localization)問題。</p>
 <h2 id="參考資料">參考資料</h2>
 <ul>
@@ -803,7 +813,7 @@ TODO: 3. 相對時間：在機器A連線機器B(如ftp)，並顯示機器B的檔
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">475k</span>
+    <span title="總字數">476k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動
