@@ -93,6 +93,7 @@ abbr[title] {
 b,
 strong {
   font-weight: bolder;
+  border-bottom: 0.1em solid #90ee90;
 }
 code,
 kbd,
