@@ -297,7 +297,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>6.5k</span>
+      <span>6.6k</span>
     </span>
 </div>
 
@@ -725,7 +725,7 @@
 <p>e.g.,</p>
 <figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-attr">[feat(search)]</span> 用關鍵字搜尋網站頁面 (<span class="attribute">Reviewer</span>: Alice) (<span class="number">#113</span>) (<span class="attribute">Wiki</span>: PageSearch/Keyword)</span><br><span class="line">(BREAKING <span class="attribute">CHANGE</span>: database webpage的key從datetime改成id)</span><br><span class="line"></span><br><span class="line"><span class="selector-attr">[fix]</span> 修正點擊<span class="selector-tag">xx</span>按鈕時沒有回應的問題 (<span class="attribute">Reviewer</span>: Bob) (Fix <span class="number">#114</span>)</span><br><span class="line"></span><br><span class="line"><span class="selector-attr">[chore]</span> 將<span class="selector-tag">winrar</span>升級至正式版 (<span class="number">#115</span>)</span><br></pre></td></tr></table></figure>
 <h2 id="將隱私檔案和git-repository分開">將隱私檔案和git repository分開</h2>
-<p>隱私檔案：如設定檔、資料庫、內部連結、金鑰、個人資訊、檔案路徑等等</p>
+<p>隱私檔案：如設定檔、資料庫、內部檔案路徑、金鑰、個人資訊等等</p>
 <p>最簡單的方法就是：不要放在repository內，缺點就是沒有版本控制、取得麻煩、可能會遺失。</p>
 <p>以下提出一些將隱私檔案放在repository的方法</p>
 <ol>
@@ -756,13 +756,26 @@
 </li>
 </ol>
 <h2 id="將多個repository合併成一個">將多個repository合併成一個</h2>
-<p>我目前(2023)有六十多個repository，主因是一個專案(包含大學的一門課)就丟一個repository，實在有點難管理。</p>
+<p>我目前(2023)有六十多個repository(包含private repo)，主因是一個專案就丟一個repository，像是大學的一門課就是一個repo，實在有點難管理。</p>
 <p>可以把多個小專案合併成一個，如<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2dpdHF3ZXJ0eTc3Ny9Ib21ld29yaw==">作業<i class="fa fa-external-link-alt"></i></span>。</p>
 <p>方法<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup></p>
 <ol>
-<li>要移動的repo: 開新branch，把所有檔案移到子資料夾，commit並push</li>
-<li>要接受合併的repo: 在remote中加入這些repo，fetch branch，merge</li>
+<li>要移動的repo
+<ol>
+<li>開新branch</li>
+<li>把所有檔案移動到新的子資料夾</li>
+<li>add 並 commit</li>
 </ol>
+</li>
+<li>要接受合併的repo
+<ol>
+<li>在remote中加入1. 的repo</li>
+<li>fetch branch</li>
+<li>merge (通常需要<code>--allow-unrelated-histories</code>)</li>
+</ol>
+</li>
+</ol>
+<p>此方法可以保留每一個被合併的repo的歷史</p>
 <h2 id="Reference">Reference</h2>
 <ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS9ib29rL3poLXR3L3YxL0dpdC0lRTUlOUYlQkElRTclQTQlOEUtJUU2JUE4JTk5JUU3JUIxJUE0">Git-基礎-標籤<i class="fa fa-external-link-alt"></i></span></li>
