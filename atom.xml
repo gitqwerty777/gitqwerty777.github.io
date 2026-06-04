@@ -378,7 +378,8 @@
       
         
         
-    <summary type="html">&lt;p&gt;優點：減少排版時間、資料為純文字、版本控制容易&lt;/p&gt;
+    <summary type="html">&lt;p&gt;優點：減少排版時間、資料為純文字、版本控制容易&lt;br /&gt;
+缺點：預設排版很奇怪(像是文字置中…)，需要簡單的排版時，不如Marp&lt;/p&gt;
 &lt;p&gt;&lt;a</summary>
         
       
