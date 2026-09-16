@@ -623,7 +623,7 @@ these services, <strong>if needed</strong>, must be implemented in application</
 <li>spyware: can record keystrokes, web sites visited, upload info to collection site</li>
 </ul>
 <p>被感染的電腦可當作botnet(彊屍電腦)，用來寄垃圾郵件，或進行DDoS攻擊</p>
-<p>Denial of Service (DoS): 控制多台電腦，持續提出要求，使伺服器癱瘓<br />
+<p>Denial of Service (DoS): 持續提出大量要求，使伺服器癱瘓(若控制多台電腦一起發動，則稱為 DDoS)<br />
 attackers make resources (server, bandwidth) unavailable to legitimate traffic by overwhelming resource with bogus traffic</p>
 <p>packet “sniffing ”(追蹤)<br />
 從 broadcast media (shared ethernet, wireless) 拿取目的地非自己的封包，以獲得資訊。(正常情況：丟棄)</p>
@@ -778,11 +778,10 @@ timing, throughput, security ,</li>
 <li>request line(method, URL, version..)
 <ul>
 <li>method field</li>
-<li><code>POST</code>: modify file in specified URL</li>
-<li><code>URL</code>: use <code>GET</code></li>
 <li><code>GET</code>: get file content in specified URL</li>
+<li><code>POST</code>: submit data in body to specified URL, server decides how to process it</li>
 <li><code>PUT</code>: replace file in specified URL</li>
-<li><code>HEAD</code>: get information about a resource</li>
+<li><code>HEAD</code>: get information about a resource (response has header only, no body)</li>
 </ul>
 </li>
 <li>header lines(fields)</li>
@@ -977,7 +976,7 @@ ex:(foo.com , mail.bar.foo.com , MX)</p>
 <li>DNS Vulnerabilities(弱點)</li>
 </ol>
 <p>DDoS:發出大量的DNS查詢(ex ICMP ping) 使封包多到塞滿link 讓大多數使用者發出的合法DNS查詢因ink塞滿得不到答案 服務無法被使用<br />
-Not useful in root server(cache in TLD), but useful at TLD</p>
+Not useful in root server(local DNS server 已快取 TLD 位址，且 root server 有流量過濾), but useful at TLD</p>
 <p>DoS(Denial-of-Service) 為一種網路攻擊 讓網路 主機等 無法被合法使用者使用</p>
 <p>man-in-the-middle attack<br />
 DNS poisoning -- send incorrect file to DNS server, which cache</p>
@@ -1140,7 +1139,7 @@ A所傳的Seq是42,對B來講下一個應該要收到43,於是傳回ACK=43,而A�
 <p>SampleRTT: record the time of last transmission<br />
 exponential weighted average let value smoother<br />
 EstimatedRTT = (1- a) x EstimatedRTT + a x SampleRTT (typical a = 0.125)</p>
-<p><img data-src="" alt="devrtt" /><br />
+<p>DevRTT = (1- b) x DevRTT + b x |SampleRTT - EstimatedRTT| (typical b = 0.25)<br />
 將變異數納入考慮: TimeoutInterval = EstimatedRTT + 4*DevRTT</p>
 <p>TCP fast retransmit: 收到三次相同ACK，傳送端就會立刻傳送接收端所預期的封包</p>
 <p>Flow Control (流量控制): 讓reiceiver buffer不致overflow<br />
@@ -1292,7 +1291,7 @@ EstimatedRTT = (1- a) x EstimatedRTT + a x SampleRTT (typical a = 0.125)</p>
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">477k</span>
+    <span title="總字數">486k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

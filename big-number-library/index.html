@@ -155,7 +155,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#BigNumber-%E5%85%A7%E5%AE%B9"><span class="nav-number">1.</span> <span class="nav-text">BigNumber 內容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8NaN%E8%A1%A8%E7%A4%BA%E4%BE%8B%E5%A4%96"><span class="nav-number">2.</span> <span class="nav-text">用NaN表示例外</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%A6%E4%BD%9C%E6%96%B9%E6%B3%95"><span class="nav-number">3.</span> <span class="nav-text">實作方法</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#BigNumber-%E5%85%A7%E5%AE%B9"><span class="nav-number">1.</span> <span class="nav-text">BigNumber 內容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8NaN%E8%A1%A8%E7%A4%BA%E4%BE%8B%E5%A4%96"><span class="nav-number">2.</span> <span class="nav-text">用NaN表示例外</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%A6%E4%BD%9C%E6%96%B9%E6%B3%95"><span class="nav-number">3.</span> <span class="nav-text">實作方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%84%B2%E5%AD%98%E6%96%B9%E5%BC%8F"><span class="nav-number">3.1.</span> <span class="nav-text">儲存方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%9B%E5%89%87%E9%81%8B%E7%AE%97"><span class="nav-number">3.2.</span> <span class="nav-text">四則運算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AF%94%E8%BC%83"><span class="nav-number">3.3.</span> <span class="nav-text">比較</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%82%8A%E7%95%8C%E6%A2%9D%E4%BB%B6"><span class="nav-number">3.4.</span> <span class="nav-text">邊界條件</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -294,7 +294,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>297</span>
+      <span>1k</span>
     </span>
 </div>
 
@@ -328,7 +328,87 @@
 </ul>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">double</span> <span class="built_in">list</span> = <span class="number">0.0</span> / <span class="number">0.0</span>;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%lf\n&quot;</span>, <span class="built_in">list</span>); <span class="comment">// will print -nan</span></span><br></pre></td></tr></table></figure>
 <h2 id="實作方法">實作方法</h2>
-<p>待補充</p>
+<h3 id="儲存方式">儲存方式</h3>
+<ul>
+<li>用陣列存「每一格是一個大進位」，而不是一格存一位十進位數字
+<ul>
+<li>一格存 $10^9$ 剛好塞得進 <code>uint32_t</code>，而且兩格相乘不會溢出 <code>uint64_t</code></li>
+<li>比一格一位數快約 9 倍，而且輸出時直接 <code>printf(&quot;%09u&quot;)</code> 補零就好</li>
+</ul>
+</li>
+<li>低位存在陣列前端(little-endian)
+<ul>
+<li>加法、乘法都是從低位往高位進位，順著索引走比較自然</li>
+<li>進位造成長度變長時，直接 <code>push_back</code> 即可，不用整個搬移</li>
+</ul>
+</li>
+<li>符號另外用一個 <code>bool</code>/<code>int</code> 存，絕對值和符號分開處理
+<ul>
+<li>0 只能有一種表示法(不能有 <code>-0</code>)，否則比較和相等判斷會出錯</li>
+</ul>
+</li>
+</ul>
+<h3 id="四則運算">四則運算</h3>
+<ul>
+<li>加法：逐格相加，<code>carry = sum / BASE</code>, <code>digit = sum % BASE</code></li>
+<li>減法：確保被減數絕對值較大(否則交換並翻轉符號)，借位同理
+<ul>
+<li>結尾要去掉前導的 0 格，不然長度會虛胖，影響後續比較</li>
+</ul>
+</li>
+<li>乘法：依長度分三段選演算法
+<table>
+<thead>
+<tr>
+<th>演算法</th>
+<th>複雜度</th>
+<th>適用長度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>長乘法(schoolbook)</td>
+<td>$O(n^2)$</td>
+<td>幾百位以內</td>
+</tr>
+<tr>
+<td>Karatsuba</td>
+<td>$O(n^{1.585})$</td>
+<td>上千位起才划算</td>
+</tr>
+<tr>
+<td>FFT / NTT</td>
+<td>$O(n \log n)$</td>
+<td>上萬位以上</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>online judge 的大數題幾乎都是長乘法就夠</strong>，遞迴的常數項反而讓 Karatsuba 在短輸入更慢</li>
+</ul>
+</li>
+<li>除法：長除法，每一位用二分搜尋試商
+<ul>
+<li>每次二分約 $\log(\text{BASE})$ 次「乘一位數 + 比較」，所以整體是 $O(n^2 \log B)$</li>
+<li>這是四則運算中最容易寫錯的部份，尤其是餘數的符號(C++ 的 <code>%</code> 對負數是往零截斷)</li>
+</ul>
+</li>
+</ul>
+<h3 id="比較">比較</h3>
+<ul>
+<li>先比符號 → 再比長度 → 最後才從高位往低位逐格比
+<ul>
+<li>前兩步就能短路掉絕大多數情況，不用真的走完整個陣列</li>
+</ul>
+</li>
+</ul>
+<h3 id="邊界條件">邊界條件</h3>
+<ul>
+<li>0 的表示法要唯一</li>
+<li>除以 0 → 這也是本文用 NaN 的理由</li>
+<li>前導零：無論哪個運算，結束前都要 normalize(去掉高位的 0 格)</li>
+<li>字串轉入時要接受 <code>+</code>/<code>-</code> 開頭與前導空白，並且拒絕非數字字元</li>
+</ul>
 
     </div>
 
@@ -411,7 +491,7 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">477k</span>
+    <span title="總字數">486k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

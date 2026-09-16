@@ -31,7 +31,7 @@
 <meta property="og:site_name" content="QWERTY">
 <meta property="og:description" content="雖然說是 Linux，但作業系統是以 Ubuntu 為準  VMware錯誤 Error while powering on: internal error 當VMware開啟的時候不正常關閉會出現的錯誤 法一、刪除記憶體檔案 法二(推薦)、開啓VMware服務 有時只有方法一有效，但方法二比較快">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="http://gitqwerty777.github.io/img/auto/preview.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/auto/preview.webp">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/other/git1.webp">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/other/git2.webp">
 <meta property="article:published_time" content="2014-06-17T18:39:48.000Z">
@@ -44,7 +44,7 @@
 <meta property="article:tag" content="軟體">
 <meta property="article:tag" content="Ubuntu">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://gitqwerty777.github.io/img/auto/preview.png">
+<meta name="twitter:image" content="http://gitqwerty777.github.io/img/auto/preview.webp">
 
 
 <link rel="canonical" href="http://gitqwerty777.github.io/linux-tips/">
@@ -162,7 +162,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#VMware%E9%8C%AF%E8%AA%A4"><span class="nav-number">1.</span> <span class="nav-text">VMware錯誤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Error-while-powering-on-internal-error"><span class="nav-number">1.1.</span> <span class="nav-text">Error while powering on: internal error</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Error-while-opening-the-virtual-machine-Taking-ownership-of-this-virtual-machine-failed"><span class="nav-number">1.2.</span> <span class="nav-text">Error while opening the virtual machine: Taking ownership of this virtual machine failed</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%A3%E7%B7%9A%E5%95%8F%E9%A1%8C"><span class="nav-number">1.3.</span> <span class="nav-text">連線問題</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%8D%E6%96%B0%E5%95%9F%E5%8B%95%E6%9C%8D%E5%8B%99-daemon"><span class="nav-number">2.</span> <span class="nav-text">重新啟動服務(daemon)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A8tty%E4%BB%8B%E9%9D%A2%E4%B8%8B%E9%87%8D%E6%96%B0%E9%96%8B%E5%95%9F%E5%9C%96%E5%BD%A2%E4%BB%8B%E9%9D%A2"><span class="nav-number">3.</span> <span class="nav-text">在tty介面下重新開啟圖形介面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A8%E9%81%A0%E7%AB%AF%E9%80%A3%E7%B7%9A%E4%B8%AD%E9%A1%AF%E7%A4%BA%E5%9C%96%E5%BD%A2%E5%8C%96%E4%BB%8B%E9%9D%A2"><span class="nav-number">4.</span> <span class="nav-text">在遠端連線中顯示圖形化介面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%81%BF%E5%85%8D%E8%AA%A4%E5%88%AA%E6%AA%94%E6%A1%88"><span class="nav-number">5.</span> <span class="nav-text">避免誤刪檔案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tar-%E5%A3%93%E7%B8%AE"><span class="nav-number">6.</span> <span class="nav-text">tar 壓縮</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B8%85%E9%99%A4%E5%9E%83%E5%9C%BE%E7%AD%92"><span class="nav-number">7.</span> <span class="nav-text">清除垃圾筒</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%90%9C%E5%B0%8B%E6%AA%94%E6%A1%88"><span class="nav-number">8.</span> <span class="nav-text">搜尋檔案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8zsh%E5%8F%96%E4%BB%A3bash"><span class="nav-number">9.</span> <span class="nav-text">使用zsh取代bash</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%B4%E6%94%B9%E4%B8%BB%E9%A1%8C"><span class="nav-number">9.1.</span> <span class="nav-text">更改主題</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%95%9F%E7%94%A8plugin"><span class="nav-number">9.2.</span> <span class="nav-text">啟用plugin</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8D%E7%B6%93%E5%AF%86%E7%A2%BC%E7%99%BB%E5%85%A5%E9%81%A0%E7%AB%AF%E6%A9%9F%E5%99%A8-ssh"><span class="nav-number">10.</span> <span class="nav-text">不經密碼登入遠端機器(ssh)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A6%96%E7%AA%97%E7%AE%A1%E7%90%86%E8%BB%9F%E9%AB%94"><span class="nav-number">11.</span> <span class="nav-text">視窗管理軟體</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%87%E6%96%B7ssh%E9%80%A3%E7%B7%9A"><span class="nav-number">12.</span> <span class="nav-text">切斷ssh連線</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install-package-without-Root-access-sudo"><span class="nav-number">13.</span> <span class="nav-text">Install package without Root access(sudo)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%87%E6%8F%9B%E4%BD%BF%E7%94%A8%E8%80%85"><span class="nav-number">14.</span> <span class="nav-text">切換使用者</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%90%9C%E5%B0%8B%E6%AA%94%E6%A1%88%E5%85%A7%E5%AE%B9-grep"><span class="nav-number">15.</span> <span class="nav-text">搜尋檔案內容: grep</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%90%9C%E5%B0%8B%E6%AA%94%E6%A1%88%E5%90%8D%E7%A8%B1-find"><span class="nav-number">16.</span> <span class="nav-text">搜尋檔案名稱: find</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%96%E6%B6%88%E9%8E%96%E5%AE%9A%E7%95%AB%E9%9D%A2"><span class="nav-number">17.</span> <span class="nav-text">取消鎖定畫面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BF%AB%E9%80%9F%E5%88%87%E6%8F%9B%E7%9B%AE%E9%8C%84"><span class="nav-number">18.</span> <span class="nav-text">快速切換目錄</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BE%9E-command-line-%E9%96%8B%E5%95%9F%E6%AA%94%E6%A1%88"><span class="nav-number">19.</span> <span class="nav-text">從 command line 開啟檔案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%AA%E9%99%A4%E7%89%B9%E5%AE%9A%E6%AA%94%E5%90%8D%E4%BB%A5%E5%A4%96%E7%9A%84%E6%AA%94%E6%A1%88"><span class="nav-number">20.</span> <span class="nav-text">刪除特定檔名以外的檔案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%93%B4%E5%85%85%E7%A3%81%E5%8D%80"><span class="nav-number">21.</span> <span class="nav-text">擴充磁區</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#autojump"><span class="nav-number">22.</span> <span class="nav-text">autojump</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%A1%E6%99%82"><span class="nav-number">23.</span> <span class="nav-text">校時</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%82%99%E4%BB%BD"><span class="nav-number">24.</span> <span class="nav-text">備份</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CGroup"><span class="nav-number">25.</span> <span class="nav-text">CGroup</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ulimit"><span class="nav-number">26.</span> <span class="nav-text">ulimit</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#usr-%E5%92%8C-usr-local-%E7%9A%84%E5%B7%AE%E5%88%A5"><span class="nav-number">27.</span> <span class="nav-text">&#x2F;usr 和 &#x2F;usr&#x2F;local 的差別</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%AF%E5%8D%A1%E7%9B%B8%E9%97%9C"><span class="nav-number">28.</span> <span class="nav-text">顯卡相關</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%9Dnvidia%E9%A1%AF%E5%8D%A1%E9%A9%85%E5%8B%95"><span class="nav-number">29.</span> <span class="nav-text">安裝nvidia顯卡驅動</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%9DCUDNN"><span class="nav-number">29.1.</span> <span class="nav-text">安裝CUDNN</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AA%A2%E6%9F%A5cudnn%E7%89%88%E6%9C%AC"><span class="nav-number">29.2.</span> <span class="nav-text">檢查cudnn版本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AA%A2%E6%9F%A5cuda%E7%89%88%E6%9C%AC"><span class="nav-number">29.3.</span> <span class="nav-text">檢查cuda版本</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#mv-cp"><span class="nav-number">30.</span> <span class="nav-text">mv&#x2F;cp</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-number">31.</span> <span class="nav-text">其他</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%8D%E9%96%8B%E7%B6%B2%E8%B7%AF"><span class="nav-number">32.</span> <span class="nav-text">重開網路</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#VMware%E9%8C%AF%E8%AA%A4"><span class="nav-number">1.</span> <span class="nav-text">VMware錯誤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Error-while-powering-on-internal-error"><span class="nav-number">1.1.</span> <span class="nav-text">Error while powering on: internal error</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Error-while-opening-the-virtual-machine-Taking-ownership-of-this-virtual-machine-failed"><span class="nav-number">1.2.</span> <span class="nav-text">Error while opening the virtual machine: Taking ownership of this virtual machine failed</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%A3%E7%B7%9A%E5%95%8F%E9%A1%8C"><span class="nav-number">1.3.</span> <span class="nav-text">連線問題</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%8D%E6%96%B0%E5%95%9F%E5%8B%95%E6%9C%8D%E5%8B%99-daemon"><span class="nav-number">2.</span> <span class="nav-text">重新啟動服務(daemon)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A8tty%E4%BB%8B%E9%9D%A2%E4%B8%8B%E9%87%8D%E6%96%B0%E9%96%8B%E5%95%9F%E5%9C%96%E5%BD%A2%E4%BB%8B%E9%9D%A2"><span class="nav-number">3.</span> <span class="nav-text">在tty介面下重新開啟圖形介面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A8%E9%81%A0%E7%AB%AF%E9%80%A3%E7%B7%9A%E4%B8%AD%E9%A1%AF%E7%A4%BA%E5%9C%96%E5%BD%A2%E5%8C%96%E4%BB%8B%E9%9D%A2"><span class="nav-number">4.</span> <span class="nav-text">在遠端連線中顯示圖形化介面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%81%BF%E5%85%8D%E8%AA%A4%E5%88%AA%E6%AA%94%E6%A1%88"><span class="nav-number">5.</span> <span class="nav-text">避免誤刪檔案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tar-%E5%A3%93%E7%B8%AE"><span class="nav-number">6.</span> <span class="nav-text">tar 壓縮</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B8%85%E9%99%A4%E5%9E%83%E5%9C%BE%E7%AD%92"><span class="nav-number">7.</span> <span class="nav-text">清除垃圾筒</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%90%9C%E5%B0%8B%E6%AA%94%E6%A1%88"><span class="nav-number">8.</span> <span class="nav-text">搜尋檔案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8zsh%E5%8F%96%E4%BB%A3bash"><span class="nav-number">9.</span> <span class="nav-text">使用zsh取代bash</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%B4%E6%94%B9%E4%B8%BB%E9%A1%8C"><span class="nav-number">9.1.</span> <span class="nav-text">更改主題</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%95%9F%E7%94%A8plugin"><span class="nav-number">9.2.</span> <span class="nav-text">啟用plugin</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8D%E7%B6%93%E5%AF%86%E7%A2%BC%E7%99%BB%E5%85%A5%E9%81%A0%E7%AB%AF%E6%A9%9F%E5%99%A8-ssh"><span class="nav-number">10.</span> <span class="nav-text">不經密碼登入遠端機器(ssh)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A6%96%E7%AA%97%E7%AE%A1%E7%90%86%E8%BB%9F%E9%AB%94"><span class="nav-number">11.</span> <span class="nav-text">視窗管理軟體</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%87%E6%96%B7ssh%E9%80%A3%E7%B7%9A"><span class="nav-number">12.</span> <span class="nav-text">切斷ssh連線</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install-package-without-Root-access-sudo"><span class="nav-number">13.</span> <span class="nav-text">Install package without Root access(sudo)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%87%E6%8F%9B%E4%BD%BF%E7%94%A8%E8%80%85"><span class="nav-number">14.</span> <span class="nav-text">切換使用者</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%90%9C%E5%B0%8B%E6%AA%94%E6%A1%88%E5%85%A7%E5%AE%B9-grep"><span class="nav-number">15.</span> <span class="nav-text">搜尋檔案內容: grep</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%90%9C%E5%B0%8B%E6%AA%94%E6%A1%88%E5%90%8D%E7%A8%B1-find"><span class="nav-number">16.</span> <span class="nav-text">搜尋檔案名稱: find</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%96%E6%B6%88%E9%8E%96%E5%AE%9A%E7%95%AB%E9%9D%A2"><span class="nav-number">17.</span> <span class="nav-text">取消鎖定畫面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BF%AB%E9%80%9F%E5%88%87%E6%8F%9B%E7%9B%AE%E9%8C%84"><span class="nav-number">18.</span> <span class="nav-text">快速切換目錄</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%82%B3%E8%BC%B8%E8%B3%87%E6%96%99"><span class="nav-number">19.</span> <span class="nav-text">傳輸資料</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%82%BA%E4%BB%80%E9%BA%BC%E5%88%A5%E5%86%8D%E7%94%A8-scp"><span class="nav-number">19.1.</span> <span class="nav-text">為什麼別再用 scp</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rsync-%E5%B8%B8%E7%94%A8"><span class="nav-number">19.2.</span> <span class="nav-text">rsync 常用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux-%E5%88%B0-Windows"><span class="nav-number">19.3.</span> <span class="nav-text">Linux 到 Windows</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BE%9E-command-line-%E9%96%8B%E5%95%9F%E6%AA%94%E6%A1%88"><span class="nav-number">20.</span> <span class="nav-text">從 command line 開啟檔案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%AA%E9%99%A4%E7%89%B9%E5%AE%9A%E6%AA%94%E5%90%8D%E4%BB%A5%E5%A4%96%E7%9A%84%E6%AA%94%E6%A1%88"><span class="nav-number">21.</span> <span class="nav-text">刪除特定檔名以外的檔案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%93%B4%E5%85%85%E7%A3%81%E5%8D%80"><span class="nav-number">22.</span> <span class="nav-text">擴充磁區</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#autojump"><span class="nav-number">23.</span> <span class="nav-text">autojump</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%A1%E6%99%82"><span class="nav-number">24.</span> <span class="nav-text">校時</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%82%99%E4%BB%BD"><span class="nav-number">25.</span> <span class="nav-text">備份</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CGroup"><span class="nav-number">26.</span> <span class="nav-text">CGroup</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ulimit"><span class="nav-number">27.</span> <span class="nav-text">ulimit</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#usr-%E5%92%8C-usr-local-%E7%9A%84%E5%B7%AE%E5%88%A5"><span class="nav-number">28.</span> <span class="nav-text">&#x2F;usr 和 &#x2F;usr&#x2F;local 的差別</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%AF%E5%8D%A1%E7%9B%B8%E9%97%9C"><span class="nav-number">29.</span> <span class="nav-text">顯卡相關</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%9Dnvidia%E9%A1%AF%E5%8D%A1%E9%A9%85%E5%8B%95"><span class="nav-number">30.</span> <span class="nav-text">安裝nvidia顯卡驅動</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%9DCUDNN"><span class="nav-number">30.1.</span> <span class="nav-text">安裝CUDNN</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AA%A2%E6%9F%A5cudnn%E7%89%88%E6%9C%AC"><span class="nav-number">30.2.</span> <span class="nav-text">檢查cudnn版本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AA%A2%E6%9F%A5cuda%E7%89%88%E6%9C%AC"><span class="nav-number">30.3.</span> <span class="nav-text">檢查cuda版本</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#mv-cp"><span class="nav-number">31.</span> <span class="nav-text">mv&#x2F;cp</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-number">32.</span> <span class="nav-text">其他</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%8D%E9%96%8B%E7%B6%B2%E8%B7%AF"><span class="nav-number">33.</span> <span class="nav-text">重開網路</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -301,7 +301,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>8.3k</span>
+      <span>8.8k</span>
     </span>
 </div>
 
@@ -425,7 +425,7 @@
 <p>powerline主題</p>
 <ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2plcmVteUZyZWVBZ2VudC9vaC1teS16c2gtcG93ZXJsaW5lLXRoZW1l">在github上的repository<i class="fa fa-external-link-alt"></i></span></li>
-<li>可配合git使用，分層也比較好看 <img data-src="/img/auto/preview.png" alt="" /></li>
+<li>可配合git使用，分層也比較好看 <img data-src="/img/auto/preview.webp" alt="" /></li>
 <li>meaning of icons
 <ul>
 <li>previous command failed (✘)</li>
@@ -533,17 +533,58 @@ disadvantage: doesn't automatically resolve dependencies or create the directory
 <li>For exactly two directories, use <code>cd -</code></li>
 <li><code>autojump</code></li>
 </ul>
-<!-- 
-## 傳輸資料
-
-如果只需要同步程式碼的話：![難道你沒有git嗎](/img/.png) TODO: 
-
-- `scp`
-- `rsync`
-- `filezilla`
-others..
-
-linux to windows -->
+<h2 id="傳輸資料">傳輸資料</h2>
+<p>如果只需要同步程式碼的話，你有 git。以下是其他情況：</p>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>適合</th>
+<th>備註</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>scp</code></td>
+<td>單次、少量檔案</td>
+<td><strong>不建議再用</strong>，見下方</td>
+</tr>
+<tr>
+<td><code>sftp</code></td>
+<td>互動式瀏覽遠端</td>
+<td>scp 的官方接班人</td>
+</tr>
+<tr>
+<td><code>rsync</code></td>
+<td>重複同步、大量檔案</td>
+<td>只傳差異，可中斷續傳</td>
+</tr>
+<tr>
+<td>FileZilla</td>
+<td>需要 GUI 拖拉時</td>
+<td>走 SFTP/FTPS</td>
+</tr>
+</tbody>
+</table>
+<h3 id="為什麼別再用-scp">為什麼別再用 scp</h3>
+<p>OpenSSH 從 8.0 起就公開表示 scp 所用的協定「過時、不夠彈性、也難以修補」，建議改用 sftp 或 rsync。<br />
+9.0 之後 <code>scp</code> 這個指令本身改成在底層走 SFTP，行為和以前不完全相同(例如萬用字元的展開)。<br />
+所以現在寫腳本用 <code>scp</code> 沒有好處，直接用 rsync 就好。</p>
+<h3 id="rsync-常用">rsync 常用</h3>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rsync -avzP src/ user@host:/dst/     # 最常用的組合</span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>-a</code> 保留權限、時間、連結(等同 <code>-rlptgoD</code>)</li>
+<li><code>-v</code> 顯示過程、<code>-z</code> 傳輸時壓縮</li>
+<li><code>-P</code> = <code>--partial --progress</code>，斷線後可續傳</li>
+<li><code>--delete</code> 讓目的端和來源端完全一致(會刪檔，先加 <code>-n</code> 空跑確認)</li>
+<li><strong>來源結尾的 <code>/</code> 有意義</strong>：<code>src/</code> 是「把裡面的東西複製過去」，<code>src</code> 是「把整個目錄複製過去」</li>
+</ul>
+<h3 id="Linux-到-Windows">Linux 到 Windows</h3>
+<ul>
+<li>Windows 10 之後內建 OpenSSH client，直接用 <code>scp</code>/<code>sftp</code> 即可</li>
+<li>要用 rsync 的話透過 WSL 最省事</li>
+<li>或反過來，在 Windows 掛載遠端目錄(<code>sshfs-win</code>)，之後就是一般的檔案總管操作</li>
+</ul>
 <h2 id="從-command-line-開啟檔案">從 command line 開啟檔案</h2>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">open [filename]</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">or</span></span><br><span class="line">xdg-open [filename]</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">在gnome-terminal中也可以用</span></span><br><span class="line">gnome-open [filename]</span><br></pre></td></tr></table></figure>
 <h2 id="刪除特定檔名以外的檔案">刪除特定檔名以外的檔案</h2>
@@ -823,7 +864,7 @@ https://q248269673.pixnet.net/blog/post/66596238-linux-ulimit%E5%91%BD%E4%BB%A4<
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">477k</span>
+    <span title="總字數">486k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

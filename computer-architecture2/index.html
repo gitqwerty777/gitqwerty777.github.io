@@ -37,7 +37,7 @@
 <meta property="og:image" content="http://gitqwerty777.github.io/img/computer-architecture/bubble.webp">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/computer-architecture/2stall.webp">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/computer-architecture/exception-handle.webp">
-<meta property="og:image" content="http://gitqwerty777.github.io/img/computer-architecture/unroll-before.png">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/computer-architecture/unroll-before.webp">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/computer-architecture/unroll-after.webp">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/computer-architecture/dynamic-schedule-CPU.webp">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/computer-architecture/memory-hierarchy.webp">
@@ -420,7 +420,7 @@ Static的是由compiler把要同時執行的instruction包成一包一包的inst
 <p>loop unrolling: 把一次完成多個loop內的iteration來減少loop-control overhead(bne)，並用不同的register來存放(register renaming)(每一份replicate就是原本的loop跑一次)<br />
 避免loop裡面有 anti–dependencies(name dependency): write-after-read<br />
 ex: B=7; A=B+1; B=3 在a=b+1和b=3之間就有anti dependent的關係</p>
-<p><img data-src="/img/computer-architecture/unroll-before.png" alt="before" /><br />
+<p><img data-src="/img/computer-architecture/unroll-before.webp" alt="before" /><br />
 <img data-src="/img/computer-architecture/unroll-after.webp" alt="after" /><br />
 原本：for(load -&gt; 計算 -&gt; save)<br />
 之後：for(load) + for(add) -&gt; for(save)<br />
@@ -469,9 +469,13 @@ Dependency限制了平行處理的程度，太過複雜又會導致電耗過高<
 <p><img data-src="/img/computer-architecture/memory-hierarchy.webp" alt="hieraracy" /><br />
 記憶體的層級化: 愈常用的放在愈快拿到的地方</p>
 <ul>
-<li>Static Ram: 0.5ns-2.5ns， 每gb要2000 – 5000元</li>
-<li>Dynamic Ram: 50ns -70ns 每gb要 20- 75元</li>
-<li>硬碟:5-20ms，每gb只要0.2-2元</li>
+<li>Static Ram: 0.5ns-2.5ns，每GB要 $2000 – $5000 美元</li>
+<li>Dynamic Ram: 50ns -70ns，每GB要 $20 – $75 美元</li>
+<li>硬碟:5-20ms，每GB只要 $0.2 – $2 美元
+<ul>
+<li>(P&amp;H 課本數據，約 2012 年價格)</li>
+</ul>
+</li>
 </ul>
 <p>Temporal locality: 最近被存取過的data容易再被存取<br />
 Ex:在loop裡面的程序，或是在loop裡面一直被重複操作的數字</p>
@@ -485,9 +489,11 @@ Valid bit可以很快的判斷一個block裡面是否有資料<br />
 <img data-src="/img/computer-architecture/direct-map.webp" alt="direct map" /></p>
 <p>Q:How many total bits are required for a direct-mapped cache with 16 KB of data and 4-word(16byte) blocks, assuming 32bit address?</p>
 <ul>
-<li>num of sets = 16KB(cache size)/16B(block size) = 2^10</li>
-<li>num of data bits for each set = 16byte data = 4</li>
-<li>num of tag bits for each set = 32-10-4 = 18</li>
+<li>num of blocks = 16KB(cache size)/16B(block size) = 2^10</li>
+<li>num of offset bits = log2(16B block size) = 4</li>
+<li>num of data bits for each block = 16byte data = 128</li>
+<li>num of tag bits for each block = 32-10-4 = 18</li>
+<li>total = 2^10 x (128 + 18 + 1(valid bit)) = 147 Kbits</li>
 </ul>
 <p>Cache Controller FSM<br />
 <img data-src="/img/computer-architecture/cache-controller-fsm.webp" alt="FSM" /></p>
@@ -962,7 +968,7 @@ Behaviors of the applications are different<br />
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">477k</span>
+    <span title="總字數">486k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

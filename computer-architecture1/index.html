@@ -42,9 +42,9 @@
 <meta property="og:image" content="http://gitqwerty777.github.io/img/computer-architecture/BeoKq0T.webp">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/computer-architecture/4lLg4I9.webp">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/computer-architecture/hkO62eV.webp">
-<meta property="og:image" content="http://gitqwerty777.github.io/img/computer-architecture/xfEcDxV.webp">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/nlp/xfEcDxV.webp">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/computer-architecture/RwlzFoo.webp">
-<meta property="og:image" content="http://gitqwerty777.github.io/img/computer-architecture/vSJTU7L.webp">
+<meta property="og:image" content="http://gitqwerty777.github.io/img/ml/vSJTU7L.webp">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/computer-architecture/ev3Iazm.webp">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/computer-architecture/1nBfGuE.webp">
 <meta property="og:image" content="http://gitqwerty777.github.io/img/computer-architecture/VRdEFJz.webp">
@@ -338,7 +338,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>16k</span>
+      <span>17k</span>
     </span>
 </div>
 
@@ -383,10 +383,10 @@ Code B
 for (jj = 0; jj &lt; N; jj = jj+B)
 	for (kk = 0; kk &lt; N; kk = kk+B)
 		for (i = 0; i &lt; N; i = i+1)
-			for (j = jj; j &lt; min(jj+B-1,N); j = j+1)
+			for (j = jj; j &lt; min(jj+B,N); j = j+1)
 			&#123;
 				r = 0;
-				for (k = kk; k &lt; min(kk+B-1,N); k = k+1)
+				for (k = kk; k &lt; min(kk+B,N); k = k+1)
 				&#123;
 					r = r + y[i][k]*z[k][j];
 				&#125;
@@ -470,8 +470,8 @@ Pentium Superscalar (1993)<br />
 Pentium Pro / II / III  Dynamic execution Multimedia instructions 1995-9<br />
 Pentium 4 HyperThreading Deep pipeline (2001)<br />
 Pentium D (2005) Dual core 2 Pentium 4 cores<br />
-AMD big.LITTLE 大核+小核<br />
-<span class="exturl" data-url="aHR0cDovL3d3dy50ZWNoYmFuZy5jb20vcG9zdHMvMTUwMDMtYXJtLW91ci10ZWNobm9sb2d5LXRoYW4tdGhlaXItcml2YWxzLWFoZWFkLW9mLXR3by1nZW5lcmF0aW9ucw==">AMD big.LITTLE<i class="fa fa-external-link-alt"></i></span></p>
+ARM big.LITTLE 大核+小核<br />
+<span class="exturl" data-url="aHR0cDovL3d3dy50ZWNoYmFuZy5jb20vcG9zdHMvMTUwMDMtYXJtLW91ci10ZWNobm9sb2d5LXRoYW4tdGhlaXItcml2YWxzLWFoZWFkLW9mLXR3by1nZW5lcmF0aW9ucw==">ARM big.LITTLE<i class="fa fa-external-link-alt"></i></span></p>
 <h3 id="8-Design-Principle-for-Computer-Architecture-System">8 Design Principle for Computer Architecture/System</h3>
 <ol>
 <li>Design for Moore’s Law</li>
@@ -577,7 +577,7 @@ CINT (integer) and CFP (floating-point)</li>
 <p><strong>SPECRatio</strong><br />
 <strong>Normalize</strong> execution times to reference computer<br />
 performance = time on standard computer/ time on computer being rated<br />
-<img data-src="/img/computer-architecture/xfEcDxV.webp" alt="" /><br />
+<img data-src="/img/nlp/xfEcDxV.webp" alt="" /><br />
 Since ratios, geometric mean is proper</p>
 <h4 id="Power-Benchmark">Power Benchmark</h4>
 <ul>
@@ -588,8 +588,8 @@ Since ratios, geometric mean is proper</p>
 <img data-src="/img/computer-architecture/RwlzFoo.webp" alt="" /></li>
 </ul>
 <p>Amdahl’s Law<br />
-程式的平行化只能將執行時間縮短到一定程度(因為分散運算的overhead)<br />
-<img data-src="/img/computer-architecture/vSJTU7L.webp" alt="" /></p>
+程式的平行化只能將執行時間縮短到一定程度(受限於程式中無法平行化的序列部分)<br />
+<img data-src="/img/ml/vSJTU7L.webp" alt="" /></p>
 <p>Low Power at Idle(x)</p>
 <ul>
 <li>At 100% load: 295W</li>
@@ -619,7 +619,7 @@ Since ratios, geometric mean is proper</p>
 <p>Stanford MIPS be Memory are referenced with byte addresses in MIPScommercialized<br />
 a kind of RISC精簡指令集(Reduced Instruction Set Computing)</p>
 <ul>
-<li>31個 32-bit integer registers (R0 = const 0)<br />
+<li>32個 32-bit integer registers (R0 = const 0)<br />
 <img data-src="/img/computer-architecture/VRdEFJz.webp" alt="" /></li>
 <li>32個 32-bit floating-point registers</li>
 <li>32-bit HI, LO, PC (program counter) -- internal, can't modify<br />
@@ -757,8 +757,8 @@ j L1<br />
 unconditional jump to the address stored in a register<br />
 Provides full 32bits address<br />
 <img data-src="/img/computer-architecture/BQpStOr.webp" alt="" /></p>
-<p>Use J for calling subroutines<br />
-Use Jal for calling functions<br />
+<p>Use J for unconditional jump inside a procedure (不存返回位址，無法用來呼叫再返回)<br />
+Use Jal for calling procedures (返回位址存入 ＄ra)<br />
 Use Jr for ending a subroutine by jumping to the return address (ra)</p>
 <p>slt reg1, reg2, reg3<br />
 =&gt; if reg1 = (reg2 &lt; reg3) ? 1 : 0;</p>
@@ -798,7 +798,7 @@ Computers built on 2 key principles:</p>
 </li>
 <li>func: function field(same operate code with different function code can looked as different argument)
 <ul>
-<li>Ex. <code>add</code>,<code>addu</code>, <code>addi</code></li>
+<li>Ex. <code>add</code>, <code>addu</code>(opcode 同為0，靠 funct 區分；<code>addi</code> 是 I-type，沒有 funct 欄位)</li>
 </ul>
 </li>
 </ul>
@@ -904,17 +904,18 @@ Add ＄fp, ＄sp, <frame-size>-4</li>
 <p><img data-src="/img/computer-architecture/reg.webp" alt="registers" /></p>
 <p><img data-src="" alt="nested procedure" /></p>
 <p>ASCII (American Standard Code for Information Interchange)<br />
-8 bits/character</p>
+7 bits/character(以 1 byte 存放)</p>
 <pre><code>`lb sb`
 </code></pre>
-<p>Unicode (Universal Encoding)<br />
-16 bits/character</p>
-<pre><code>`lf sf`
+<p>Unicode<br />
+早期假設 16 bits/character，實際碼位遠超過 16 bits，須以 UTF-8/UTF-16 等變長編碼表示</p>
+<pre><code>`lh sh`
 </code></pre>
 <p>performance</p>
-<figure class="highlight stan"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Clear1(<span class="type">int</span> <span class="type">array</span>[ ], <span class="type">int</span> <span class="built_in">size</span>)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> i;</span><br><span class="line">	<span class="keyword">for</span> (i=<span class="number">0</span>, i&lt; <span class="built_in">size</span>; i+= <span class="number">1</span>)</span><br><span class="line">	<span class="type">array</span>[i] = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">Clear <span class="number">2</span>(<span class="type">int</span> *<span class="type">array</span>, <span class="type">int</span> <span class="built_in">size</span>)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> *p,</span><br><span class="line">	<span class="keyword">for</span> (p = &amp;<span class="type">array</span>[<span class="number">0</span>]; p &lt; &amp;<span class="type">array</span>[<span class="built_in">size</span>]; p = p+<span class="number">1</span>)</span><br><span class="line">	*p = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight stan"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Clear1(<span class="type">int</span> <span class="type">array</span>[ ], <span class="type">int</span> <span class="built_in">size</span>)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> i;</span><br><span class="line">	<span class="keyword">for</span> (i=<span class="number">0</span>; i&lt; <span class="built_in">size</span>; i+= <span class="number">1</span>)</span><br><span class="line">	<span class="type">array</span>[i] = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">Clear2(<span class="type">int</span> *<span class="type">array</span>, <span class="type">int</span> <span class="built_in">size</span>)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> *p;</span><br><span class="line">	<span class="keyword">for</span> (p = &amp;<span class="type">array</span>[<span class="number">0</span>]; p &lt; &amp;<span class="type">array</span>[<span class="built_in">size</span>]; p = p+<span class="number">1</span>)</span><br><span class="line">	*p = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>Clear2 &gt; Clear1<br />
-pointer is faster than fetching value</p>
+pointer is faster than fetching value<br />
+(僅限未最佳化的編譯結果；P&amp;H 的 Elaboration 指出開啟最佳化後兩者產生的程式碼幾乎相同，陣列寫法一樣快甚至更好，可讀性也較佳)</p>
 <figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">move </span>＄<span class="built_in">t0</span>, ＄<span class="built_in">a0</span> 			<span class="comment"># p = &amp;array[0]</span></span><br><span class="line"><span class="keyword">sll </span>＄<span class="built_in">t1</span>, ＄<span class="built_in">a1</span>, <span class="number">2</span> 		<span class="comment"># t1 = size x 4</span></span><br><span class="line"><span class="keyword">add </span>＄<span class="built_in">t2</span>, ＄<span class="built_in">a0</span>, ＄<span class="built_in">t1</span>		<span class="comment"># t2 = &amp;array[size]</span></span><br><span class="line"><span class="symbol">Loop2:</span> </span><br><span class="line"><span class="keyword">sw </span>＄<span class="built_in">zero</span>, <span class="number">0</span>(＄<span class="built_in">t0</span>) 		<span class="comment"># memory[p] = 0</span></span><br><span class="line"><span class="keyword">addi </span>＄<span class="built_in">t0</span>, ＄<span class="built_in">t0</span>, <span class="number">4</span> 		<span class="comment"># p= p+4</span></span><br><span class="line"><span class="keyword">slt </span>＄<span class="built_in">t3</span>, ＄<span class="built_in">t0</span>, ＄<span class="built_in">t2</span> 		<span class="comment"># compare p &amp; array[size]</span></span><br><span class="line"><span class="keyword">bne </span>＄<span class="built_in">t3</span>, ＄<span class="built_in">zero</span>, Loop2</span><br></pre></td></tr></table></figure>
 <h2 id="Synchronization">Synchronization</h2>
 <p>SWAP: <strong>atomically</strong> interchange a value in a register for a value in memory; nothing else can interpose itself between the read and the write to the memory location</p>
@@ -1305,7 +1306,7 @@ dynamic scheme: history of branch (90% success)</li>
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">477k</span>
+    <span title="總字數">486k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

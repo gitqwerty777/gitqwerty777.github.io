@@ -297,7 +297,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">文章字數：</span>
-      <span>4k</span>
+      <span>4.7k</span>
     </span>
 </div>
 
@@ -377,9 +377,9 @@
 <ol start="3">
 <li>星期日曆表示法：用2位數表示年內第幾個日曆星期，再加上一位數表示日曆星期內第幾天，但日曆星期前要加上一個大寫字母W。每個日曆星期從星期一開始，星期日為第7天
 <ul>
-<li>2022-W21-6 (⭐)</li>
-<li>2022W216 (⭐)</li>
-<li>2022-W01-1是從2022年1月3日開始的，前幾天屬於上年的第53個日曆星期</li>
+<li>2022-W20-6 (⭐)</li>
+<li>2022W206 (⭐)</li>
+<li>2022-W01-1是從2022年1月3日開始的，前幾天屬於上年的第52個日曆星期</li>
 </ul>
 </li>
 </ol>
@@ -416,7 +416,7 @@
 <h3 id="月份">月份</h3>
 <ul>
 <li>01, 02, 03, ... (⭐)</li>
-<li>January, Febuary, March...</li>
+<li>January, February, March...</li>
 <li>Jan, Feb, Mar, ...</li>
 <li>1, 2, 3, ...</li>
 </ul>
@@ -430,9 +430,9 @@
 </ul>
 <p>星期的開始日：會影響日曆的顯示</p>
 <ol>
-<li>星期日(西方國家、日本、港澳)</li>
-<li>星期一(大多亞州國家，⭐)</li>
-<li>星期六(埃及)</li>
+<li>星期日(美國、加拿大、日本、以色列、港澳、多數拉丁美洲國家)</li>
+<li>星期一(歐洲絕大多數國家、中國，⭐)</li>
+<li>星期六(埃及等部分中東、北非國家)</li>
 </ol>
 <h3 id="小時">小時</h3>
 <ul>
@@ -547,8 +547,9 @@
 </ul>
 </li>
 </ul>
-<p>用TimeStamp也無法避免這個問題，會拿到錯的時間<br />
-(有點懷疑是不是我寫錯)</p>
+<p>注意這裡出問題的不是TimeStamp本身，而是<strong>把一個不存在的當地時刻轉成TimeStamp</strong>：<br />
+3/25 03:00~03:59 在 Athens 被跳過，套件只能自行挑一個解釋，於是 03:00 被當成 +03:00(等於 00:00 UTC)，<br />
+反而比前一筆 02:30+02:00(00:30 UTC) 還早，時間軸就倒退了</p>
 <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> arrow</span><br><span class="line"><span class="keyword">from</span> datetime <span class="keyword">import</span> datetime</span><br><span class="line"></span><br><span class="line">timezone = <span class="string">&quot;Europe/Athens&quot;</span> <span class="comment"># 有夏令時間的時區</span></span><br><span class="line"></span><br><span class="line">now = arrow.get(datetime(<span class="number">2018</span>, <span class="number">3</span>, <span class="number">25</span>, <span class="number">2</span>, <span class="number">30</span>, <span class="number">0</span>), timezone) <span class="comment"># 夏令時間前</span></span><br><span class="line"><span class="built_in">print</span>(now)</span><br><span class="line"><span class="built_in">print</span>(now.int_timestamp)</span><br><span class="line">now = arrow.get(datetime(<span class="number">2018</span>, <span class="number">3</span>, <span class="number">25</span>, <span class="number">3</span>, <span class="number">0</span>, <span class="number">0</span>), timezone)  <span class="comment"># 進入夏令時間(實質UTC改變)</span></span><br><span class="line"><span class="built_in">print</span>(now)</span><br><span class="line"><span class="built_in">print</span>(now.int_timestamp)</span><br><span class="line">now = arrow.get(datetime(<span class="number">2018</span>, <span class="number">3</span>, <span class="number">25</span>, <span class="number">3</span>, <span class="number">30</span>, <span class="number">0</span>), timezone) <span class="comment"># 夏令時間後</span></span><br><span class="line"><span class="built_in">print</span>(now)</span><br><span class="line"><span class="built_in">print</span>(now.int_timestamp)</span><br></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">2018-03-25T02:30:00+02:00</span><br><span class="line">1521937800</span><br><span class="line">2018-03-25T03:00:00+03:00</span><br><span class="line">1521936000</span><br><span class="line">2018-03-25T03:30:00+03:00</span><br><span class="line">1521937800</span><br></pre></td></tr></table></figure>
 <p>所以如果要處理上述問題，我目前想到的方法只有在每一次檢查時間時，額外檢查是否進入/離開夏令時間</p>
@@ -593,7 +594,7 @@
 <li>閏年
 <ul>
 <li>真正的閏年，即於原本的曆法中插入一年</li>
-<li>古埃及人在1460個地球公轉週期中加入一整年</li>
+<li>古埃及民用曆固定365日、不置閏，每1460個回歸年會比實際多算出一整年(Sothic 週期)</li>
 </ul>
 </li>
 </ul>
@@ -608,7 +609,11 @@
 <ul>
 <li>使用POSIX時間表示時間的程式</li>
 <li>使用int儲存時間的程式語言，如C語言</li>
-<li>使用int儲存時間的檔案格式，如<code>.zip</code></li>
+<li>使用int儲存時間的檔案格式
+<ul>
+<li>註：<code>.zip</code> 原生用的是 MS-DOS 日期格式(有效範圍 1980~2107)，不算此類；只有其 Unix extended timestamp 欄位才有 2038 問題</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -639,13 +644,15 @@
 </ul>
 <h3 id="Bug">Bug</h3>
 <ol>
-<li><span class="exturl" data-url="aHR0cHM6Ly96aC53aWtpcGVkaWEub3JnL3dpa2kvMjAwMCVFNSVCOSVCNCVFOSU5NyVBRSVFOSVBMiU5OA==">千禧蟲問題<i class="fa fa-external-link-alt"></i></span>
+<li>
+<p><span class="exturl" data-url="aHR0cHM6Ly96aC53aWtpcGVkaWEub3JnL3dpa2kvMjAwMCVFNSVCOSVCNCVFOSU5NyVBRSVFOSVBMiU5OA==">千禧蟲問題<i class="fa fa-external-link-alt"></i></span></p>
 <ul>
 <li>工程師的技術債</li>
 <li>自訂年號的國家會更容易遇到，如民國百年蟲問題、<span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zaWRlLmNvbS50dy9hcnRpY2xlLzE2MjgyLXJlaXctaXMtZW5naW5lZXItY3Vyc2U=">日本更換年號問題<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 </li>
-<li>用戶手動(或惡意)調整時間/時區
+<li>
+<p>用戶手動(或惡意)調整時間/時區</p>
 <ul>
 <li>舊資料的修改時間可能會大於新資料的修改時間</li>
 <li>解法
@@ -659,12 +666,36 @@
 </li>
 </ul>
 </li>
+<li>
+<p>跨機器比較時間：在機器A連線機器B(如ftp)，並顯示機器B的檔案，要顯示誰的時間？🤔</p>
+<ul>
+<li>如果顯示機器B的時間，難以判斷何者較新</li>
+<li>FTP 的 <code>LIST</code> 回的是 server 的本地時間，而且格式裡不帶時區
+<ul>
+<li>半年內的檔案顯示 <code>MMM DD HH:MM</code>，超過半年只顯示 <code>MMM DD YYYY</code>(連時分都沒了)</li>
+<li>也就是說 client 只能猜，猜錯就差好幾小時，甚至差一整年</li>
+<li><code>MLSD</code> (RFC 3659) 才提供 <code>modify=YYYYMMDDHHMMSS</code> 並明定為 UTC，這才是正解</li>
+</ul>
+</li>
+<li>rsync 用 mtime + size 判斷要不要傳
+<ul>
+<li><code>--modify-window=N</code> 這個選項會存在，就是因為現實中兩端的 mtime 一定會差一點
+<ul>
+<li>FAT 的 mtime 精度只有 2 秒</li>
+<li>掛 SMB/NFS 時可能有時區偏移</li>
+</ul>
+</li>
+<li>差一秒就重傳整個檔案的話成本太高，所以這個容忍窗是必要的</li>
+</ul>
+</li>
+<li>結論：要比新舊就一律轉成 epoch/UTC 再比，顯示時才轉回觀看者的本地時間
+<ul>
+<li>不要拿 A 的本地時間直接和 B 的本地時間比大小</li>
+</ul>
+</li>
+</ul>
+</li>
 </ol>
-<!-- 
-TODO: 3. 相對時間：在機器A連線機器B(如ftp)，並顯示機器B的檔案，要顯示誰的時間？🤔
-   - 如果顯示機器B的時間，難以判斷何者較新
-   - rsync
--->
 <h3 id="生日">生日</h3>
 <p>雖然上述的時間大多需要考慮時區，但是生日似乎是個例外</p>
 <p>不管人在何處，都是在當地的日期過生日</p>
@@ -812,7 +843,7 @@ https://rfc2cn.com/rfc3339.html
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">477k</span>
+    <span title="總字數">486k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

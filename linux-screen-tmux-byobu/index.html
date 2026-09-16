@@ -454,7 +454,7 @@
 <tbody>
 <tr>
 <td><code>Alt-F6</code></td>
-<td>使連線到相同視窗的 terminal 離開(除了自己)<!--TODO: ?--></td>
+<td>踢掉連到同一個 session 的其他 client，只留自己</td>
 </tr>
 <tr>
 <td><code>Ctrl-F6</code></td>
@@ -462,11 +462,11 @@
 </tr>
 <tr>
 <td><code>F6</code></td>
-<td>離開 byobu 但不登出(=<code>byobu detach</code>)</td>
+<td>離開 byobu(<code>detach</code>)；若 byobu 是登入時自動啟動的，連線會一起結束</td>
 </tr>
 <tr>
 <td><code>Shift-F6</code></td>
-<td>離開 byobu 且登出(註：不知道差別在哪)</td>
+<td>離開 byobu 但<strong>保持登入</strong>(先寫入 <code>no-logout</code> 旗標再 detach)</td>
 </tr>
 </tbody>
 </table>
@@ -904,7 +904,7 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">477k</span>
+    <span title="總字數">486k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動

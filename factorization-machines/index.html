@@ -346,9 +346,9 @@
 <li>隱向量長度$k$為hyperparameter</li>
 <li>FM將權重矩陣分解為隱向量的內積，破壞了權重的獨立性，所以在稀疏資料中仍能學習
 <ol>
-<li>已知一正定矩陣$W$，必存在$V$使$W=VV^t$</li>
-<li>權重矩陣$W$必為正定</li>
-<li>所以$W$必能分解成隱向量矩陣$V$乘自身的轉置</li>
+<li>已知一半正定矩陣$W$，只要$k$夠大，必存在$V$使$W=VV^t$</li>
+<li>FM 主動把權重矩陣$W$限制在這類低秩半正定矩陣中(這是建模假設，不是$W$本身必有的性質)</li>
+<li>所以$W$可分解成隱向量矩陣$V$乘自身的轉置</li>
 </ol>
 </li>
 <li>原本$W$的大小為$\frac{n^2}{2}$，改成隱向量$V$之後大小為$kn$，$k$通常不會設很大，明顯減少參數數量
@@ -529,7 +529,7 @@ $$FFM(v, x) = ... + \sum^n_{j_1=1}{\sum^n_{j_2=j_1+1}{\langle v_{j_1, f_2}, v_{j
       <i class="fa fa-chart-line"></i>
     </span>
       <span>總字數：</span>
-    <span title="總字數">477k</span>
+    <span title="總字數">486k</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 強力驅動
